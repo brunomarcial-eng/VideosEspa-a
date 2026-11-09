@@ -31,9 +31,9 @@ cuanto-vale-tu-hora/
 datos → aprobar → guion → aprobar → verificar → planos y biblia → primer render → aprobar → producción → cumplimiento → ficha → subida manual programada → análisis.
 
 ## Herramientas
-- Gráficos: Remotion o D3 + ffmpeg.
-- Voz sintética: servicio TTS a elegir (no clonar la voz de Bruno).
-- Imagen IA para ilustraciones: la disponible (Higgsfield u otra), solo con la biblia de estilo como referencia.
+- Gráficos: HTML/SVG renderizado con Chromium + ffmpeg (todo gratuito).
+- Voz sintética: modelos libres y gratuitos en local (Kokoro, Piper); nunca un servicio de pago ni clonar la voz de Bruno.
+- Ilustraciones y personajes: dibujados con código (ver `docs/produccion.md`). Nada de generadores de imagen de pago.
 - Subida: Studio manual y, tras auditoría, YouTube Data API con `publishAt`.
 
 ## Controles anti-masa

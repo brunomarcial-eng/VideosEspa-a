@@ -14,7 +14,8 @@ Nombre de trabajo: **Cuánto Vale Tu Hora**. Alternativas: «El Precio del Tiemp
 6. **Originalidad (política de YouTube).** Un guion distinto por vídeo, nunca una plantilla con huecos. Imágenes ajustadas a cada frase. Menos vídeos pero distintos. Guarda en `archive/<id>/` el guion, las fuentes, los datos crudos y las notas de edición por si hay apelación. Marca «contenido alterado o sintético» cuando corresponda.
 7. **Anonimato.** No uses la voz de Bruno ni su email, nombre, foto ni dispositivos en metadatos o ficheros. Evita sus muletillas y su retórica reconocible («a ver…», frase-espejo). La cuenta de Google es nueva y separada.
 8. **No copiar.** Ni *Aquí no hay quien viva* / *La que se avecina* (comunidad de vecinos y conserje), ni Ecomonos (plátanos), Barrio Sauna, Antihacienda o personajes con derechos. La baraja se diseña desde cero y el «rey» de la baraja no representa a ningún monarca real.
-9. **Lo que hace una persona.** Crear la cuenta y el canal, el consentimiento OAuth, la auditoría de la API, AdSense y la primera subida son pasos humanos (`docs/setup-humano.md`). Hasta pasar la auditoría la subida es manual con publicación programada en Studio.
+9. **Solo gratis.** Ninguna API, app ni servicio de pago (ni ElevenLabs ni similares, ni planes de prueba que luego cobren). Voces con modelos libres en local (Kokoro, Piper), gráficos y personajes con código, datos de APIs públicas gratuitas. Si algo solo existe de pago, se dice y se busca la alternativa gratuita.
+10. **Lo que hace una persona.** Crear la cuenta y el canal, el consentimiento OAuth, la auditoría de la API, AdSense y la primera subida son pasos humanos (`docs/setup-humano.md`). Hasta pasar la auditoría la subida es manual con publicación programada en Studio.
 
 ## Cómo trabajar
 
