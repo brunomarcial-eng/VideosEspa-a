@@ -1,0 +1,34 @@
+# Cuánto Vale Tu Hora — reglas del proyecto
+
+Canal de YouTube anónimo en español (España) que mide la vida económica en **tiempo**: horas de trabajo para comprar algo y días de espera para recibir un servicio, comparando el pasado con hoy, solo con datos oficiales. Tono objetivo y poco crispado. Sin presentador.
+
+Nombre de trabajo: **Cuánto Vale Tu Hora**. Alternativas: «El Precio del Tiempo», «Horas Contadas». No se ha comprobado que estén libres en YouTube.
+
+## Reglas no negociables
+
+1. **Datos.** Solo fuentes oficiales (INE, Eurostat, Banco de España, AEAT, Hacienda/IGAE, Interior, Inclusión, Sanidad, BOE, OCDE). Usa la skill `datos-oficiales-espana`. Cada cifra del vídeo lleva fuente en pantalla. La prensa orienta, nunca es la fuente. Estados: V (leído en la fuente), P (solo prensa), C (cálculo propio con fórmula), X (sin serie oficial). Un vídeo no se renderiza con cifras en P ni X.
+2. **Años base.** Nunca 2020. 2021 es año de rebote: se marca. Años de referencia: **2007** (antes de la crisis), **2016**, **2018-2019** y hoy. Cada comparación muestra al menos tres años. Si la conclusión cambia con el año, se dice en el vídeo.
+3. **Neutralidad.** No se atribuyen causas sin evidencia. Sin partidos, sin políticos reales, sin colores de partido (evita el par rojo/azul de siglas), sin caricaturas. Cada vídeo cierra con «mejora / empeora / depende» y el porqué.
+4. **Medidas.** Nominal y real, bruto y neto, media y mediana, cifra absoluta y tasa: siempre se dice cuál. La metodología de «horas» está en `docs/metodologia-horas.md`.
+5. **Casos judiciales.** No son parte de esta serie. Si alguna vez se tratan: semáforo (S firme, R recurrible, J juicio oral, I investigación, T testigo, ? sin resolución) y nunca se nombra a nadie sin resolución.
+6. **Originalidad (política de YouTube).** Un guion distinto por vídeo, nunca una plantilla con huecos. Imágenes ajustadas a cada frase. Menos vídeos pero distintos. Guarda en `archive/<id>/` el guion, las fuentes, los datos crudos y las notas de edición por si hay apelación. Marca «contenido alterado o sintético» cuando corresponda.
+7. **Anonimato.** No uses la voz de Bruno ni su email, nombre, foto ni dispositivos en metadatos o ficheros. Evita sus muletillas y su retórica reconocible («a ver…», frase-espejo). La cuenta de Google es nueva y separada.
+8. **No copiar.** Ni *Aquí no hay quien viva* / *La que se avecina* (comunidad de vecinos y conserje), ni Ecomonos (plátanos), Barrio Sauna, Antihacienda o personajes con derechos. La baraja se diseña desde cero y el «rey» de la baraja no representa a ningún monarca real.
+9. **Lo que hace una persona.** Crear la cuenta y el canal, el consentimiento OAuth, la auditoría de la API, AdSense y la primera subida son pasos humanos (`docs/setup-humano.md`). Hasta pasar la auditoría la subida es manual con publicación programada en Studio.
+
+## Cómo trabajar
+
+- Modelo: usa el más capaz disponible para guion, verificación y decisiones editoriales.
+- Antes de renderizar, para y pide aprobación en cuatro puntos: (1) tabla de datos, (2) guion, (3) biblia de estilo, (4) primer render.
+- Los gráficos de datos se generan con código a partir de ficheros oficiales, no con IA de imagen.
+- Estructura del repo, agentes y contratos: `docs/agentes-y-pipeline.md`.
+- Identidad visual: `docs/identidad-visual.md`. Test de estilos: `docs/piloto-test.md`. Backlog: `docs/backlog-videos.md`.
+- Contexto previo e investigación: carpeta `research/` (los estados judiciales y cifras hay que re-verificar en la fuente antes de usar).
+
+## Tests de calidad (todo vídeo debe pasarlos)
+
+1. **Fotograma:** el canal se reconoce en un fotograma sin logo.
+2. **Móvil:** se lee a 5 cm de distancia.
+3. **Neutralidad:** no puede verse como favorable a un partido.
+4. **Dato:** cada cifra tiene fuente en pantalla y fichero crudo archivado.
+5. **Sitcom/copia:** no recuerda a otra serie o canal.
