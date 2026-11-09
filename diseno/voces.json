@@ -1,0 +1,32 @@
+{
+  "nota": "Voces libres y gratuitas con uso comercial (Kokoro: Apache-2.0; Piper davefx: CC0; Piper sharvard: CC BY 3.0, citar en la descripción). Ninguna se parece a la de Bruno. La misma persona en dos épocas usa la misma voz: la de antes, algo más aguda y rápida; la de hoy, algo más grave y pausada.",
+  "pendiente_de_eleccion": true,
+  "perfiles": {
+    "mujer": {
+      "motor": "kokoro",
+      "voz": "ef_dora"
+    },
+    "hombre": {
+      "motor": "kokoro",
+      "voz": "em_alex"
+    }
+  },
+  "edad": {
+    "antes": {
+      "tono": 1.05,
+      "velocidad": 1.04
+    },
+    "hoy": {
+      "tono": 0.97,
+      "velocidad": 0.98
+    }
+  },
+  "pausa_turno_s": 0.5,
+  "pausa_mismo_s": 0.3,
+  "creditos": {
+    "kokoro": "Voz: Kokoro-82M (hexgrad, Apache-2.0)",
+    "piper:es_ES-davefx-medium": "Voz: Piper davefx (CC0)",
+    "piper:es_ES-sharvard-medium": "Voz: Piper sharvard (Universidad de Edimburgo, CC BY 3.0)"
+  },
+  "velocidad_base": 0.9
+}

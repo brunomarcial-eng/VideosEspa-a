@@ -1,6 +1,6 @@
 # Propuesta: personajes que discuten (borrador para decidir)
 
-Estado: **propuesta**, no aprobada. Boceto en `archive/personajes-boceto.png` (un plano de diálogo de T1 en los tres estilos).
+Estado: **decidido el 2026-11-09** (ver abajo). Boceto inicial y propuesta, conservados como contexto. Boceto en `archive/personajes-boceto.png` (un plano de diálogo de T1 en los tres estilos).
 
 ## La idea
 Dos personajes que son **la misma persona en dos épocas**: «la de antes» (2016 o 2007, en ocre) y «la de hoy» (en azul). La de antes llega con su recuerdo («yo la compra la pagaba con menos horas»); la de hoy, con su situación («ahora cobro más»). Discuten y **el dato oficial les pone de acuerdo**, con el sello en pantalla. Cierran juntas con «mejora / empeora / depende».
@@ -34,3 +34,11 @@ Se reconoce que es la misma persona por la cara y un lunar. Cambian el peinado, 
 
 ## Lo que no sabemos
 No hay datos firmes de que una cara mejore la retención en Shorts animados: la fuente de `research/` que lo decía tenía conflicto de interés. Lo que sí da un diálogo es una pregunta abierta que invita a quedarse hasta la respuesta. Se medirá con la retención al 50 %.
+
+## Decisión (2026-11-09)
+- **Pizarra (A): sin personas.** Diálogo escrito con tiza, con el nombre de quien habla en el color de su época.
+- **Cápsula (B) y baraja (C): con personajes**, títeres de recortes de papel (collage) con movimiento, volumen y personalidad. Detalles en `docs/produccion.md`.
+- **Protagonistas que rotan** (mujer, hombre…), personas inventadas. T1: mujer (2016 / hoy). T2: hombre (2007 / hoy).
+- **Gancho:** pregunta directa al que ve el vídeo («¿Te cunde más el carro ahora o antes?»). Pregunta abierta al final.
+- **Pocas cifras por imagen:** una o dos (tres en un gráfico); lo controla el verificador.
+- **Sin pagar APIs:** voces libres (Kokoro y Piper) generadas en local.

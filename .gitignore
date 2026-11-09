@@ -8,3 +8,8 @@ pendiente.json
 # Resultados de subida y métricas pueden contener ids; se versionan a propósito.
 __pycache__/
 *.pyc
+videos/*/audio/*.wav
+.tmp_*.wav
+videos/*/render/*.png
+videos/*/render/*.html
+videos/*/render/*-prueba.mp4
