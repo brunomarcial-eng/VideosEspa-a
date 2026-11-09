@@ -1,37 +1,33 @@
-# Guion T1 — ¿Cuántas horas de trabajo cuesta la comida de un mes?
+# Guion T1 — ¿Te cunde más el carro ahora o antes?
 
-Pregunta: ¿Cuántas horas de trabajo cuesta la compra de comida de un mes, en 2016, 2018-19 y hoy?  
+Pregunta: ¿Cuántas horas de trabajo cuesta la compra de comida de un mes, en 2016, 2019 y hoy?  
 Datos: `data/clean/t1_cesta_horas.json` · 2026-11-09 (Paso 1 aprobado: cesta fija EPF 2025, neto y mediana, sin 2007)  
-Duración estimada de la voz: **50 s** (a 2.6 palabras/s) · Años en pantalla: 2016, 2018, 2019, 2024, 2025  
+Duración estimada de la voz: **49 s** (a 2.6 palabras/s) · Años en pantalla: 2016, 2019, 2024  
 Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La columna «Imagen» es la idea del plano; cada estilo la dibuja a su manera en el Paso 3.
 
-| # | Tiempo | Voz | En pantalla | Sello de fuente | Imagen |
-|---|---|---|---|---|---|
-| 1 | 0-4 s | ¿Cuántas horas de trabajo cuesta la comida de un mes? | ¿Cuántas horas de trabajo cuesta la comida de un mes? | — | Una compra de comida corriente (pan, leche, fruta, huevos, aceite) y un reloj que empieza a correr. |
-| 2 | 4-11 s | Una persona gasta de media 188 euros al mes en comida y bebida sin alcohol. | 188 € al mes · gasto medio por persona en alimentos y bebidas sin alcohol · 2025 | DATO OFICIAL · INE · Encuesta de Presupuestos Familiares, tabla 73778 · 2025 | La compra se agrupa en una sola cesta con la etiqueta 188 €. |
-| 3 | 11-15 s | Es la misma compra cada año; solo cambia el precio. | Misma cesta · precio de cada año según el IPC de alimentos | DATO OFICIAL · INE · IPC, tabla 76125 | La misma cesta repetida en tres momentos; solo cambia la etiqueta del precio. |
-| 4 | 15-19 s | La pagamos con el sueldo neto por hora del trabajador mediano. | Sueldo neto por hora, mediana: 10,27 € en 2016 · 12,63 € en 2024 (la mitad cobra más; la otra mitad, menos) | CÁLCULO PROPIO (C) · INE, Encuesta de Estructura Salarial (tablas 28191 y 30046) · Eurostat earn_nt_net | Una hora de reloj convertida en monedas: lo que se cobra por una hora, ya sin impuestos ni cotizaciones. |
-| 5 | 19-30 s | En 2016 costaba 12,8 horas de trabajo. En 2018 y 2019, 12,6. En 2024, 14,5. | 2016: 12,8 h · 2018: 12,6 h · 2019: 12,6 h · 2024: 14,5 h (2024: último año con salarios oficiales del INE) | CÁLCULO PROPIO (C) · horas = cesta ÷ sueldo neto por hora (mediana) · INE y Eurostat | Gráfico generado por código: un reloj o barra por año; pasado en ocre, 2024 en azul. |
-| 6 | 30-40 s | Desde 2016, la compra ha subido un 40 % y el sueldo neto por hora, un 23 %. Unos cien minutos más de trabajo cada mes. | Cesta +40 % · sueldo neto por hora +23 % · +1,7 h al mes (2016 → 2024) | CÁLCULO PROPIO (C) · INE y Eurostat · precios y sueldos nominales | Dos barras que crecen a distinto ritmo; la de la cesta llega más arriba. Después, un reloj que avanza cien minutos. |
-| 7 | 40-47 s | ¿Mejora, empeora o depende? Empeora. Pasa con cualquier año de referencia y con cualquier forma de medir el sueldo. | MEJORA · EMPEORA · DEPENDE → EMPEORA · con 2016, 2018 o 2019 · con sueldo medio o mediano, bruto o neto | — | Panel fijo de cierre con EMPEORA marcado. |
-| 8 | 47-50 s | ¿Qué medimos en horas la próxima vez? | ¿Qué medimos en horas la próxima vez? | — | El reloj se detiene; la cesta queda en pantalla. |
+| # | Tiempo | Quién | Voz | En pantalla | Sello de fuente | Imagen |
+|---|---|---|---|---|---|---|
+| 1 | 0-5 s | hoy (hoy) | Oye, tú: ¿te cunde más el carro ahora o te cundía más antes? | ¿Te cunde más el carro ahora… o antes? | — | Carrito lleno; la de hoy mira a cámara. |
+| 2 | 5-13 s | antes (2016) | Antes, claro. En 2016, la compra del mes de una persona me costaba 12,8 horas de trabajo. | 2016 · 12,8 h de trabajo <br>_Compra del mes: comida y bebida sin alcohol, gasto medio por persona_ | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Aparece la de 2016 con la compra; ficha ocre con la cifra. |
+| 3 | 14-19 s | hoy (hoy) | Pues con los últimos datos, los de 2024, son 14,5. | 2024 · 14,5 h de trabajo | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Ficha azul con la cifra; el reloj avanza más. |
+| 4 | 20-21 s | antes (2016) | ¿Cómo? ¡Si ahora cobras más! | ¿Si ahora cobras más? | — | La de 2016, sorprendida. |
+| 5 | 22-29 s | hoy (hoy) | Sí: mi sueldo neto por hora ha subido un 23 % desde 2016. Pero la misma compra, un 40 %. | Sueldo neto por hora (mediana) +23 % · Compra +40 % | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Dos barras que crecen: el sueldo menos que la compra. |
+| 6 | 30-32 s | antes (2016) | ¿Y en 2019? | ¿Y en 2019? | — | La de 2016 pregunta. |
+| 7 | 32-37 s | hoy (hoy) | 12,6 horas, casi como en tu época. El salto vino después. | 2016 · 12,8 h   2019 · 12,6 h   2024 · 14,5 h | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Gráfico de tres barras: dos ocres casi iguales y la azul más alta. |
+| 8 | 37-39 s | antes (2016) | Entonces, ¿mejora, empeora o depende? | ¿Mejora, empeora o depende? | — | Panel fijo de cierre. |
+| 9 | 40-45 s | hoy (hoy) | Empeora. Mires el año que mires, y midas el sueldo como lo midas. | EMPEORA | — | EMPEORA destacado. |
+| 10 | 45-49 s | hoy (hoy) | ¿Y a ti, te cunde más o menos que antes? Cuéntanoslo. | ¿Y a ti? Cuéntanoslo | — | Las dos miran a cámara. |
 
-**Cierre:** empeora. La misma cesta subió un 40 % y el sueldo neto por hora mediano un 23 % entre 2016 y 2024; ocurre con cualquier año base (2016, 2018, 2019) y con media, mediana, bruto o neto.
+**Cierre:** empeora. La misma compra subió un 40 % y el sueldo neto por hora mediano un 23 % entre 2016 y 2024; ocurre con cualquier año base (2016, 2018, 2019) y con media, mediana, bruto o neto.
 
 ## Cifras verificadas contra los datos
 
 | En el guion | Valor en los datos | Estado | Origen |
 |---|---|---|---|
-| 188 | 188 | V | `cesta_2025_euros_mes` |
-| 10,27 | 10,27 | C | `filas[anyo=2016].salario_neto_hora_mediana` |
-| 12,63 | 12,63 | C | `filas[anyo=2024].salario_neto_hora_mediana` |
 | 12,8 | 12,8 | C | `filas[anyo=2016].horas_neto_mediana` |
-| 12,6 | 12,6 | C | `filas[anyo=2018].horas_neto_mediana` |
-| 12,6 | 12,6 | C | `filas[anyo=2019].horas_neto_mediana` |
 | 14,5 | 14,5 | C | `filas[anyo=2024].horas_neto_mediana` |
-| 40 | 40 | C | `var_pct(filas[anyo=2016].cesta_euros_mes, filas[anyo=2024].cesta_euros_mes)` |
+| 12,6 | 12,6 | C | `filas[anyo=2019].horas_neto_mediana` |
 | 23 | 23 | C | `var_pct(filas[anyo=2016].salario_neto_hora_mediana, filas[anyo=2024].salario_neto_hora_mediana)` |
-| 1,7 | 1,7 | C | `resta(filas[anyo=2016].horas_neto_mediana, filas[anyo=2024].horas_neto_mediana)` |
-| cien minutos | 102.0 (dicho «cien minutos» ≈ 100) | C | `resta(filas[anyo=2016].horas_neto_mediana, filas[anyo=2024].horas_neto_mediana)` |
+| 40 | 40 | C | `var_pct(filas[anyo=2016].cesta_euros_mes, filas[anyo=2024].cesta_euros_mes)` |
 
 Generado por `scripts/verificar_guion.py`. No editar a mano: se edita `guion.json` y se vuelve a ejecutar.

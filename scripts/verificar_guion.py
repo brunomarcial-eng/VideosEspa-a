@@ -21,6 +21,7 @@ import sys
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 RITMO = 2.6  # palabras por segundo de la voz sintética en español (ajustar con el primer render)
+PAUSA_TURNO = 0.35  # segundos de pausa cuando cambia quien habla
 
 VETADO = {
     "2020": "año excluido",
@@ -94,7 +95,7 @@ def verificar(ruta_guion, ritmo=RITMO):
     datos = json.loads((RAIZ / g["datos"]).read_text(encoding="utf-8"))
     fallos, avisos, filas_cifras = [], [], []
 
-    texto_total = " ".join(b["voz"] + " " + b["pantalla"] for b in g["beats"])
+    texto_total = " ".join(b["voz"] + " " + b["pantalla"] + " " + b.get("nota", "") for b in g["beats"])
 
     # 1 y 3: cifras
     declaradas = set()
@@ -118,13 +119,19 @@ def verificar(ruta_guion, ritmo=RITMO):
     # 2 y 4: números sin declarar y sellos
     permitidos = set(g.get("no_dato", []))
     for b in g["beats"]:
-        nums = re.findall(r"\d+(?:,\d+)?", b["voz"] + " " + b["pantalla"])
+        nums = re.findall(r"\d+(?:,\d+)?", b["voz"] + " " + b["pantalla"] + " " + b.get("nota", ""))
         datos_b = [n for n in nums if not (len(n) == 4 and n.startswith("20")) and n not in permitidos]
         for n in datos_b:
             if n not in declaradas:
                 fallos.append(f"plano {b['n']}: el número «{n}» no tiene cifra declarada")
         if datos_b and not b.get("sello"):
             fallos.append(f"plano {b['n']}: tiene cifras y no lleva sello de fuente")
+        # Pocas cifras por imagen: 2, o 3 si el plano es un gráfico.
+        en_pantalla = [n for n in re.findall(r"\d+(?:,\d+)?", b["pantalla"])
+                       if not (len(n) == 4 and n.startswith("20")) and n not in permitidos]
+        maximo = 3 if b.get("grafico") else 2
+        if len(en_pantalla) > maximo:
+            fallos.append(f"plano {b['n']}: {len(en_pantalla)} cifras en pantalla (máximo {maximo})")
 
     # 5: vetados
     todo = (texto_total + " " + " ".join(b.get("sello") or "" for b in g["beats"])).lower() + " "
@@ -135,15 +142,18 @@ def verificar(ruta_guion, ritmo=RITMO):
         fallos.append("usa 2021 sin marcarlo como año de rebote")
 
     # 6: cierre y años
-    if not any("¿Mejora, empeora o depende?" in b["voz"] for b in g["beats"]):
+    if not any("mejora, empeora o depende?" in b["voz"].lower() for b in g["beats"]):
         fallos.append("falta el cierre «¿Mejora, empeora o depende?» en la voz")
     anyos = sorted(set(re.findall(r"\b20\d\d\b", texto_total)))
     if len(anyos) < 3:
         fallos.append(f"solo aparecen {len(anyos)} años: {anyos}")
 
     # 7: duración
-    tiempos, t = [], 0.0
+    tiempos, t, previo = [], 0.0, None
     for b in g["beats"]:
+        if previo is not None and b.get("quien") != previo:
+            t += PAUSA_TURNO
+        previo = b.get("quien")
         d = palabras_habladas(b["voz"]) / ritmo
         tiempos.append((t, t + d))
         t += d
@@ -159,9 +169,12 @@ def a_markdown(g, filas_cifras, tiempos, total, anyos, ritmo):
          f"Datos: `{g['datos']}` · {g['aprobacion_datos']}  ",
          f"Duración estimada de la voz: **{total:.0f} s** (a {ritmo} palabras/s) · Años en pantalla: {', '.join(anyos)}  ",
          "Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La columna «Imagen» es la idea del plano; cada estilo la dibuja a su manera en el Paso 3.",
-         "", "| # | Tiempo | Voz | En pantalla | Sello de fuente | Imagen |", "|---|---|---|---|---|---|"]
+         "", "| # | Tiempo | Quién | Voz | En pantalla | Sello de fuente | Imagen |", "|---|---|---|---|---|---|---|"]
+    quien = {k: f"{k} ({v['anyo']})" for k, v in g.get("personajes", {}).items()}
     for b, (a, z) in zip(g["beats"], tiempos):
-        l.append(f"| {b['n']} | {a:.0f}-{z:.0f} s | {b['voz']} | {b['pantalla']} | {b.get('sello') or '—'} | {b['imagen']} |")
+        pant = b["pantalla"] + (f" <br>_{b['nota']}_" if b.get("nota") else "")
+        l.append(f"| {b['n']} | {a:.0f}-{z:.0f} s | {quien.get(b.get('quien'), b.get('quien', 'voz'))} | {b['voz']} | {pant} | "
+                 f"{b.get('sello') or '—'} | {b['imagen']} |")
     l += ["", f"**Cierre:** {g['cierre']['veredicto']}. {g['cierre']['porque']}", "",
           "## Cifras verificadas contra los datos", "", "| En el guion | Valor en los datos | Estado | Origen |", "|---|---|---|---|"]
     for texto, leido, estado, origen in filas_cifras:
