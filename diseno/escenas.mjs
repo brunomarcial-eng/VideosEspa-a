@@ -319,3 +319,4 @@ export const COMPOSICIONES = {
   C: [["1-as", C.as], ["2-dos-cartas", C.dosCartas], ["3-mano", C.mano], ["4-cierre", C.cierre]],
 };
 export { hojaObjetos };
+export { pagina, sello };
