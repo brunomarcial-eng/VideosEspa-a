@@ -1,6 +1,6 @@
 # Pasos que tiene que hacer una persona
 
-Ninguna IA puede hacerlos por ti. Orden recomendado.
+Ninguna IA puede hacerlos por ti. Orden recomendado. **Guía de clics de los pasos 1-5 y conexión con el código: `docs/youtube-api-conexion.md`.** Borrador de la auditoría: `docs/youtube-auditoria-borrador.md`.
 
 | # | Paso | Detalle |
 |---|---|---|
