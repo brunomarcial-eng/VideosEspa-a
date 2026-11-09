@@ -1,0 +1,272 @@
+{
+  "id": "t2",
+  "titulo": "¿Trabaja hoy más gente que antes de la crisis?",
+  "pregunta": "¿Hay más gente trabajando ahora que en 2007, 2016 y 2018-19?",
+  "datos": "data/clean/t2_empleo.json",
+  "aprobacion_datos": "2026-11-09 (Paso 1 aprobado: EPA T3 contra T3, tasa de empleo 16-64, «depende» frente a 2007)",
+  "beats": [
+    {
+      "n": 1,
+      "funcion": "gancho",
+      "voz": "¿Trabaja hoy más gente que antes de la crisis?",
+      "pantalla": "¿Trabaja hoy más gente que antes de la crisis?",
+      "sello": null,
+      "imagen": "Una fila de figuras genéricas de trabajadores (sin rostros reales) frente a un calendario de 2007."
+    },
+    {
+      "n": 2,
+      "funcion": "respuesta en número",
+      "voz": "Sí: 22,85 millones de personas, la cifra más alta desde 2002.",
+      "pantalla": "22,85 millones de ocupados · 3.er trimestre de 2026 · máximo de la serie (desde 2002)",
+      "sello": "DATO OFICIAL · INE · Encuesta de Población Activa, tabla 65109 · T3 2026",
+      "imagen": "El contador de ocupados sube hasta 22,85 M y se ilumina en azul."
+    },
+    {
+      "n": 3,
+      "funcion": "comparar años",
+      "voz": "Son 2,1 millones más que en 2007 y 4,3 más que en 2016.",
+      "pantalla": "2007: 20,75 M · 2016: 18,53 M · 2018: 19,53 M · 2019: 19,87 M · 2026: 22,85 M (3.er trimestre de cada año)",
+      "sello": "DATO OFICIAL · INE · EPA, tabla 65109 · T3 de cada año",
+      "imagen": "Gráfico generado por código: barras por año; pasado en ocre, 2026 en azul."
+    },
+    {
+      "n": 4,
+      "funcion": "matiz: población",
+      "voz": "Pero también hay 4,8 millones más de personas de 16 años o más que en 2007.",
+      "pantalla": "Población de 16 años o más: 37,92 M (2007) → 42,76 M (2026)",
+      "sello": "CÁLCULO PROPIO (C) · ocupados ÷ tasa de empleo · INE, EPA (tablas 65109 y 65306)",
+      "imagen": "El grupo de figuras se amplía: hay más gente en total, no solo más trabajando."
+    },
+    {
+      "n": 5,
+      "funcion": "tasa de empleo",
+      "voz": "Mejor mirar la tasa: de cada 100 personas de 16 a 64 años, hoy trabajan 69. En 2007, 67.",
+      "pantalla": "Tasa de empleo 16-64 años: 2007: 67,2 % · 2016: 61,1 % · 2018: 64,0 % · 2019: 64,5 % · 2026: 69,1 % (con 16 años o más, que incluye a mayores de 65: 54,7 % en 2007 y 53,5 % hoy)",
+      "sello": "DATO OFICIAL · INE · EPA, tabla 65306 · T3 de cada año",
+      "imagen": "100 figuras; se colorean las que trabajan: 67 en ocre (2007) y 69 en azul (hoy)."
+    },
+    {
+      "n": 6,
+      "funcion": "paro",
+      "voz": "El paro está en el 10,2 %: lejos del 18,9 % de 2016, pero por encima del 8 % de 2007.",
+      "pantalla": "Tasa de paro: 2007: 8,0 % · 2016: 18,9 % · 2018: 14,6 % · 2019: 13,9 % · 2026: 10,2 % · parados: 1,81 M (2007) → 2,59 M (2026)",
+      "sello": "DATO OFICIAL · INE · EPA, tablas 65219 y 65218 · T3 de cada año",
+      "imagen": "Una línea que baja desde 2016 pero se queda por encima de la marca de 2007."
+    },
+    {
+      "n": 7,
+      "funcion": "cierre",
+      "voz": "¿Mejora, empeora o depende? Frente a 2016 y 2019, mejora. Frente a 2007, depende: trabaja más gente, pero hay más paro.",
+      "pantalla": "MEJORA · EMPEORA · DEPENDE → frente a 2016-2019: MEJORA · frente a 2007: DEPENDE (más ocupados y más tasa de empleo; más paro)",
+      "sello": null,
+      "imagen": "Panel fijo de cierre con dos marcas: MEJORA (2016-19) y DEPENDE (2007)."
+    },
+    {
+      "n": 8,
+      "funcion": "pregunta final",
+      "voz": "¿Con qué año lo compararías tú?",
+      "pantalla": "¿Con qué año lo compararías tú?",
+      "sello": null,
+      "imagen": "Calendario con 2007, 2016, 2019 y hoy."
+    }
+  ],
+  "cifras": [
+    {
+      "texto": "22,85",
+      "ruta": "mismo_trimestre.2026T3.ocupados_miles",
+      "escala": 0.001,
+      "decimales": 2,
+      "estado": "V"
+    },
+    {
+      "texto": "2,1",
+      "op": "resta",
+      "rutas": [
+        "mismo_trimestre.2007T3.ocupados_miles",
+        "mismo_trimestre.2026T3.ocupados_miles"
+      ],
+      "escala": 0.001,
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "4,3",
+      "op": "resta",
+      "rutas": [
+        "mismo_trimestre.2016T3.ocupados_miles",
+        "mismo_trimestre.2026T3.ocupados_miles"
+      ],
+      "escala": 0.001,
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "20,75",
+      "ruta": "mismo_trimestre.2007T3.ocupados_miles",
+      "escala": 0.001,
+      "decimales": 2,
+      "estado": "V"
+    },
+    {
+      "texto": "18,53",
+      "ruta": "mismo_trimestre.2016T3.ocupados_miles",
+      "escala": 0.001,
+      "decimales": 2,
+      "estado": "V"
+    },
+    {
+      "texto": "19,53",
+      "ruta": "mismo_trimestre.2018T3.ocupados_miles",
+      "escala": 0.001,
+      "decimales": 2,
+      "estado": "V"
+    },
+    {
+      "texto": "19,87",
+      "ruta": "mismo_trimestre.2019T3.ocupados_miles",
+      "escala": 0.001,
+      "decimales": 2,
+      "estado": "V"
+    },
+    {
+      "texto": "4,8",
+      "op": "resta",
+      "rutas": [
+        "mismo_trimestre.2007T3.poblacion_16_mas_miles",
+        "mismo_trimestre.2026T3.poblacion_16_mas_miles"
+      ],
+      "escala": 0.001,
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "37,92",
+      "ruta": "mismo_trimestre.2007T3.poblacion_16_mas_miles",
+      "escala": 0.001,
+      "decimales": 2,
+      "estado": "C"
+    },
+    {
+      "texto": "42,76",
+      "ruta": "mismo_trimestre.2026T3.poblacion_16_mas_miles",
+      "escala": 0.001,
+      "decimales": 2,
+      "estado": "C"
+    },
+    {
+      "texto": "69",
+      "ruta": "mismo_trimestre.2026T3.tasa_empleo_16_64_pct",
+      "decimales": 0,
+      "estado": "V"
+    },
+    {
+      "texto": "67",
+      "ruta": "mismo_trimestre.2007T3.tasa_empleo_16_64_pct",
+      "decimales": 0,
+      "estado": "V"
+    },
+    {
+      "texto": "67,2",
+      "ruta": "mismo_trimestre.2007T3.tasa_empleo_16_64_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "61,1",
+      "ruta": "mismo_trimestre.2016T3.tasa_empleo_16_64_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "64,0",
+      "ruta": "mismo_trimestre.2018T3.tasa_empleo_16_64_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "64,5",
+      "ruta": "mismo_trimestre.2019T3.tasa_empleo_16_64_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "69,1",
+      "ruta": "mismo_trimestre.2026T3.tasa_empleo_16_64_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "54,7",
+      "ruta": "mismo_trimestre.2007T3.tasa_empleo_16_mas_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "53,5",
+      "ruta": "mismo_trimestre.2026T3.tasa_empleo_16_mas_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "10,2",
+      "ruta": "mismo_trimestre.2026T3.tasa_paro_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "18,9",
+      "ruta": "mismo_trimestre.2016T3.tasa_paro_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "8",
+      "ruta": "mismo_trimestre.2007T3.tasa_paro_pct",
+      "decimales": 0,
+      "estado": "V"
+    },
+    {
+      "texto": "8,0",
+      "ruta": "mismo_trimestre.2007T3.tasa_paro_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "14,6",
+      "ruta": "mismo_trimestre.2018T3.tasa_paro_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "13,9",
+      "ruta": "mismo_trimestre.2019T3.tasa_paro_pct",
+      "decimales": 1,
+      "estado": "V"
+    },
+    {
+      "texto": "1,81",
+      "ruta": "mismo_trimestre.2007T3.parados_miles",
+      "escala": 0.001,
+      "decimales": 2,
+      "estado": "V"
+    },
+    {
+      "texto": "2,59",
+      "ruta": "mismo_trimestre.2026T3.parados_miles",
+      "escala": 0.001,
+      "decimales": 2,
+      "estado": "V"
+    }
+  ],
+  "cierre": {
+    "veredicto": "frente a 2016-2019: mejora · frente a 2007: depende",
+    "porque": "Hay 2,1 millones más de ocupados y la tasa de empleo de 16-64 años es más alta que en 2007, pero la tasa de paro (10,2 %) y el número de parados siguen por encima de 2007 (8,0 %). Frente a 2016-2019 mejoran todas las medidas."
+  },
+  "no_dato": [
+    "3",
+    "16",
+    "64",
+    "65",
+    "100"
+  ]
+}

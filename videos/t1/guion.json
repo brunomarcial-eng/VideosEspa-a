@@ -1,0 +1,164 @@
+{
+  "id": "t1",
+  "titulo": "¿Cuántas horas de trabajo cuesta la comida de un mes?",
+  "pregunta": "¿Cuántas horas de trabajo cuesta la compra de comida de un mes, en 2016, 2018-19 y hoy?",
+  "datos": "data/clean/t1_cesta_horas.json",
+  "aprobacion_datos": "2026-11-09 (Paso 1 aprobado: cesta fija EPF 2025, neto y mediana, sin 2007)",
+  "beats": [
+    {
+      "n": 1,
+      "funcion": "gancho",
+      "voz": "¿Cuántas horas de trabajo cuesta la comida de un mes?",
+      "pantalla": "¿Cuántas horas de trabajo cuesta la comida de un mes?",
+      "sello": null,
+      "imagen": "Una compra de comida corriente (pan, leche, fruta, huevos, aceite) y un reloj que empieza a correr."
+    },
+    {
+      "n": 2,
+      "funcion": "definir la cesta",
+      "voz": "Una persona gasta de media 188 euros al mes en comida y bebida sin alcohol.",
+      "pantalla": "188 € al mes · gasto medio por persona en alimentos y bebidas sin alcohol · 2025",
+      "sello": "DATO OFICIAL · INE · Encuesta de Presupuestos Familiares, tabla 73778 · 2025",
+      "imagen": "La compra se agrupa en una sola cesta con la etiqueta 188 €."
+    },
+    {
+      "n": 3,
+      "funcion": "misma cesta",
+      "voz": "Es la misma compra cada año; solo cambia el precio.",
+      "pantalla": "Misma cesta · precio de cada año según el IPC de alimentos",
+      "sello": "DATO OFICIAL · INE · IPC, tabla 76125",
+      "imagen": "La misma cesta repetida en tres momentos; solo cambia la etiqueta del precio."
+    },
+    {
+      "n": 4,
+      "funcion": "definir el sueldo",
+      "voz": "La pagamos con el sueldo neto por hora del trabajador mediano.",
+      "pantalla": "Sueldo neto por hora, mediana: 10,27 € en 2016 · 12,63 € en 2024 (la mitad cobra más; la otra mitad, menos)",
+      "sello": "CÁLCULO PROPIO (C) · INE, Encuesta de Estructura Salarial (tablas 28191 y 30046) · Eurostat earn_nt_net",
+      "imagen": "Una hora de reloj convertida en monedas: lo que se cobra por una hora, ya sin impuestos ni cotizaciones."
+    },
+    {
+      "n": 5,
+      "funcion": "resultado",
+      "voz": "En 2016 costaba 12,8 horas de trabajo. En 2018 y 2019, 12,6. En 2024, 14,5.",
+      "pantalla": "2016: 12,8 h · 2018: 12,6 h · 2019: 12,6 h · 2024: 14,5 h (2024: último año con salarios oficiales del INE)",
+      "sello": "CÁLCULO PROPIO (C) · horas = cesta ÷ sueldo neto por hora (mediana) · INE y Eurostat",
+      "imagen": "Gráfico generado por código: un reloj o barra por año; pasado en ocre, 2024 en azul."
+    },
+    {
+      "n": 6,
+      "funcion": "por qué en aritmética",
+      "voz": "Desde 2016, la compra ha subido un 40 % y el sueldo neto por hora, un 23 %. Unos cien minutos más de trabajo cada mes.",
+      "pantalla": "Cesta +40 % · sueldo neto por hora +23 % · +1,7 h al mes (2016 → 2024)",
+      "sello": "CÁLCULO PROPIO (C) · INE y Eurostat · precios y sueldos nominales",
+      "imagen": "Dos barras que crecen a distinto ritmo; la de la cesta llega más arriba. Después, un reloj que avanza cien minutos."
+    },
+    {
+      "n": 7,
+      "funcion": "cierre",
+      "voz": "¿Mejora, empeora o depende? Empeora. Pasa con cualquier año de referencia y con cualquier forma de medir el sueldo.",
+      "pantalla": "MEJORA · EMPEORA · DEPENDE → EMPEORA · con 2016, 2018 o 2019 · con sueldo medio o mediano, bruto o neto",
+      "sello": null,
+      "imagen": "Panel fijo de cierre con EMPEORA marcado."
+    },
+    {
+      "n": 8,
+      "funcion": "pregunta final",
+      "voz": "¿Qué medimos en horas la próxima vez?",
+      "pantalla": "¿Qué medimos en horas la próxima vez?",
+      "sello": null,
+      "imagen": "El reloj se detiene; la cesta queda en pantalla."
+    }
+  ],
+  "cifras": [
+    {
+      "texto": "188",
+      "ruta": "cesta_2025_euros_mes",
+      "decimales": 0,
+      "estado": "V"
+    },
+    {
+      "texto": "10,27",
+      "ruta": "filas[anyo=2016].salario_neto_hora_mediana",
+      "decimales": 2,
+      "estado": "C"
+    },
+    {
+      "texto": "12,63",
+      "ruta": "filas[anyo=2024].salario_neto_hora_mediana",
+      "decimales": 2,
+      "estado": "C"
+    },
+    {
+      "texto": "12,8",
+      "ruta": "filas[anyo=2016].horas_neto_mediana",
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "12,6",
+      "ruta": "filas[anyo=2018].horas_neto_mediana",
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "12,6",
+      "ruta": "filas[anyo=2019].horas_neto_mediana",
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "14,5",
+      "ruta": "filas[anyo=2024].horas_neto_mediana",
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "40",
+      "op": "var_pct",
+      "rutas": [
+        "filas[anyo=2016].cesta_euros_mes",
+        "filas[anyo=2024].cesta_euros_mes"
+      ],
+      "decimales": 0,
+      "estado": "C"
+    },
+    {
+      "texto": "23",
+      "op": "var_pct",
+      "rutas": [
+        "filas[anyo=2016].salario_neto_hora_mediana",
+        "filas[anyo=2024].salario_neto_hora_mediana"
+      ],
+      "decimales": 0,
+      "estado": "C"
+    },
+    {
+      "texto": "1,7",
+      "op": "resta",
+      "rutas": [
+        "filas[anyo=2016].horas_neto_mediana",
+        "filas[anyo=2024].horas_neto_mediana"
+      ],
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "cien minutos",
+      "op": "resta",
+      "rutas": [
+        "filas[anyo=2016].horas_neto_mediana",
+        "filas[anyo=2024].horas_neto_mediana"
+      ],
+      "escala": 60,
+      "aprox": 100,
+      "tolerancia_pct": 5,
+      "estado": "C"
+    }
+  ],
+  "cierre": {
+    "veredicto": "empeora",
+    "porque": "La misma cesta subió un 40 % y el sueldo neto por hora mediano un 23 % entre 2016 y 2024; ocurre con cualquier año base (2016, 2018, 2019) y con media, mediana, bruto o neto."
+  },
+  "no_dato": []
+}
