@@ -1,0 +1,43 @@
+{
+ "huella": "ac97d8222ce76879",
+ "semilla": 11001,
+ "texto": "Casi dos horas más de trabajo cada mes… para llevarte lo mismo.",
+ "ev": {
+  "ok": false,
+  "nota": 0.95,
+  "oido": "casi dos horas más de trabajo cada mes para llevarte lo mismo.",
+  "parecido": 1.0,
+  "problemas": [
+   "sin pausa tras «mes…» (0.22 s)"
+  ],
+  "t0": [
+   0.0,
+   0.16,
+   0.4,
+   0.56,
+   0.76,
+   0.86,
+   1.24,
+   1.58,
+   1.9,
+   2.68,
+   3.06,
+   3.16
+  ],
+  "t1": [
+   0.16,
+   0.4,
+   0.56,
+   0.76,
+   0.86,
+   1.24,
+   1.58,
+   1.9,
+   2.68,
+   3.06,
+   3.16,
+   3.4
+  ],
+  "ritmo": 14.0
+ }
+}

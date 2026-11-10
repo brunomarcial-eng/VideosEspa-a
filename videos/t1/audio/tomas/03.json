@@ -1,0 +1,39 @@
+{
+ "huella": "171be80386f31439",
+ "semilla": 3000,
+ "texto": "Este es Dani. Cobra un sueldo normal, de los del medio.",
+ "ev": {
+  "ok": true,
+  "nota": 0.9647,
+  "oido": "Este es Danny, cobra un sueldo normal de los del medio.",
+  "parecido": 0.965,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.26,
+   0.44,
+   1.02,
+   1.34,
+   1.52,
+   1.82,
+   2.18,
+   2.64,
+   2.78,
+   2.9
+  ],
+  "t1": [
+   0.26,
+   0.44,
+   0.608,
+   1.34,
+   1.52,
+   1.82,
+   2.18,
+   2.64,
+   2.78,
+   2.9,
+   3.14
+  ],
+  "ritmo": 12.5
+ }
+}

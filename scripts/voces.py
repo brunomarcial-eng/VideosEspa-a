@@ -127,6 +127,9 @@ def sintetizar(perfil: dict, texto: str, semilla: int = 0, velocidad: float = 1.
         m, ref, txt, prompt = qwen(perfil)
         torch.manual_seed(semilla)
         extra = dict(perfil.get("generacion", {}))
+        # Tope de longitud (el códec va a 12 pasos por segundo): sin él, una toma desbocada puede
+        # seguir hasta 2048 pasos (casi 3 minutos de audio) y tardar media hora.
+        extra.setdefault("max_new_tokens", int(12 * (len(letras(texto)) / 7 + 2.5)))
         if prompt is not None:
             wavs, sr = m.generate_voice_clone(text=texto, language="Spanish", voice_clone_prompt=prompt, **extra)
         else:
@@ -302,8 +305,21 @@ def evaluar(asr, a, texto):
         problemas.append("cifras no oídas: " + ", ".join(cifras))
     if not 8 <= ritmo <= 19:
         problemas.append(f"ritmo raro ({ritmo:.1f} letras/s)")
+    # los puntos suspensivos piden una pausa de verdad (es donde la frase coge aire)
+    r = rms_tramos(a)
+    callado = r <= max(0.006, np.percentile(r, 95) * 0.05)
+    for i, tok in enumerate(tokens[:-1]):
+        if tok.endswith("…"):
+            i0, i1 = int(max(0, t1[i] - 0.25) / 0.02), int((t0[i + 1] + 0.25) / 0.02)
+            hueco, mejor_h = 0, 0
+            for c in callado[i0:i1]:
+                hueco = hueco + 1 if c else 0
+                mejor_h = max(mejor_h, hueco)
+            if mejor_h * 0.02 < 0.3:
+                problemas.append(f"sin pausa tras «{tok}» ({mejor_h * 0.02:.2f} s)")
     parecido = difflib.SequenceMatcher(None, letras(texto), letras(oido), autojunk=False).ratio()
-    nota = parecido - 0.15 * len(perdidas) - 0.01 * max(0, sobra - 6) - 0.3 * len(cifras) - (0.2 if problemas and "ritmo" in problemas[-1] else 0)
+    nota = (parecido - 0.15 * len(perdidas) - 0.01 * max(0, sobra - 6) - 0.3 * len(cifras)
+            - 0.2 * any("ritmo" in x for x in problemas) - 0.05 * sum("pausa" in x for x in problemas))
     return {"ok": not problemas, "nota": round(nota, 4), "oido": oido, "parecido": round(parecido, 3),
             "problemas": problemas, "t0": t0, "t1": t1, "ritmo": round(ritmo, 1)}
 
@@ -316,10 +332,19 @@ def frases_de(texto):
 def generar_linea(perfil, cfg, texto, semilla_base, asr, registro):
     """Mejor toma de una línea: (audio, evaluación, semilla)."""
     intentos = cfg.get("intentos", 5) if perfil["motor"] == "qwen-clon" else 1
-    mejor = None
+    mejor, partir = None, False
     for k in range(intentos):
         semilla = semilla_base + k
-        if perfil["motor"] == "qwen-clon":
+        if perfil["motor"] == "qwen-clon" and partir:
+            # El modelo se salta la pausa de unos «…» a mitad de frase: dice cada trozo por separado
+            # y los une con una pausa de duda.
+            partes = []
+            for i, tr in enumerate(re.split(r"(?<=…)\s+(?=[a-záéíóúñ])", texto)):
+                if i:
+                    partes.append(np.zeros(int(cfg.get("pausa_duda_s", 0.45) * SR), np.float32))
+                partes.append(limpiar(sintetizar(perfil, normalizar(tr), semilla)))
+            a = np.concatenate(partes)
+        elif perfil["motor"] == "qwen-clon":
             a = sintetizar(perfil, normalizar(texto), semilla)
         else:
             partes = []
@@ -338,6 +363,8 @@ def generar_linea(perfil, cfg, texto, semilla_base, asr, registro):
             mejor = (a, ev, semilla)
         if ev["ok"]:
             break
+        if ev["problemas"] and all("sin pausa" in x for x in ev["problemas"]):
+            partir = True
     return mejor
 
 

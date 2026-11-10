@@ -1,0 +1,30 @@
+plano 1: «A ver, pregunta rápida. Llenar el carro de la compra… ¿te cuesta hoy más, o menos, que hace diez años?»
+    toma guardada (semilla 1000): BUENA · «A ver, pregunta rápida. ¿Llenar el caro de la compra? ¿Te cuesta hoy más o menos que hace 10 años?»
+plano 2: «Y ojo, que no te lo cuento en euros. Te lo cuento en horas de tu trabajo.»
+    toma guardada (semilla 2000): BUENA · «Y ojo, que no te lo cuenten euros, te lo cuento en horas de tu trabajo.»
+plano 3: «Este es Dani. Cobra un sueldo normal, de los del medio.»
+    toma guardada (semilla 3000): BUENA · «Este es Danny, cobra un sueldo normal de los del medio.»
+plano 4: «En 2016, la compra del mes le costaba 12,8 horas de trabajo. Día y medio largo, para entendernos.»
+    toma guardada (semilla 4000): BUENA · «En 2016 la compra del mes le costaba 12,8 horas de trabajo, día y medio largo para entendernos.»
+plano 5: «Ahora, avance rápido. Mismo Dani, misma compra, último dato oficial.»
+    toma guardada (semilla 5000): BUENA · «Ahora avance rápido, mismo Dani, misma compra, último dato oficial.»
+plano 6: «¿Cuánto? 14,5 horas. Casi dos días.»
+    toma guardada (semilla 6000): BUENA · «¿Cuánto? 14,5 horas, casi dos días.»
+plano 7: «Y eso que Dani ahora cobra más, ¿eh? Un 23 % más por hora, ya limpio.»
+    toma guardada (semilla 7000): BUENA · «Y eso que Dani ahora cobra más e, un 23% más por hora, ya limpio.»
+plano 8: «¿El problema? Que la misma compra ha subido un 40.»
+    toma guardada (semilla 8000): BUENA · «El problema? Que la misma compra ha subido un 40.»
+plano 9: «¿Y fue poco a poco? Qué va. En 2019 le costaba 12,6. El salto vino después.»
+    toma guardada (semilla 9000): BUENA · «y fue poco a poco. ¿Qué va? En 2019 le costaba 12,6. El salto vino después.»
+plano 10: «Entonces, ¿mejora, empeora o depende? Esta vez, empeora.»
+    toma guardada (semilla 10000): BUENA · «Entonces, mejora, empeora o depende. Esta vez empeora.»
+plano 11: «Casi dos horas más de trabajo cada mes… para llevarte lo mismo.»
+    toma 1 (semilla 11001): mala · 1.0 · 3.6 s · 14.0 l/s · «casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.22 s)
+    toma 2 (semilla 11002): mala · 1.0 · 3.1 s · 16.0 l/s · «casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.22 s)
+    toma 3 (semilla 11003): mala · 1.0 · 3.7 s · 13.4 l/s · «casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.24 s)
+    toma 4 (semilla 11004): mala · 1.0 · 3.1 s · 16.2 l/s · «casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.22 s)
+    toma 5 (semilla 11005): mala · 1.0 · 3.3 s · 15.1 l/s · «Casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.24 s)
+plano 12: «El sueldo sube por la escalera. La compra, en ascensor.»
+    toma guardada (semilla 12000): BUENA · «el sueldo sube por la escalera, la compra en ascensor.»
+plano 13: «¿Y tú? ¿Lo notas en tu carro… o soy yo, que me fijo mucho? Te leo.»
+    toma guardada (semilla 13000): BUENA · «¿Y tú? ¿Lo notas en tu carro o soy yo que me fijo mucho? Te leo.»
