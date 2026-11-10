@@ -19,11 +19,9 @@ plano 9: «¿Y fue poco a poco? Qué va. En 2019 le costaba 12,6. El salto vino 
 plano 10: «Entonces, ¿mejora, empeora o depende? Esta vez, empeora.»
     toma guardada (semilla 10000): BUENA · «Entonces, mejora, empeora o depende. Esta vez empeora.»
 plano 11: «Casi dos horas más de trabajo cada mes… para llevarte lo mismo.»
-    toma 1 (semilla 11001): mala · 1.0 · 3.6 s · 14.0 l/s · «casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.22 s)
-    toma 2 (semilla 11002): mala · 1.0 · 3.1 s · 16.0 l/s · «casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.22 s)
-    toma 3 (semilla 11003): mala · 1.0 · 3.7 s · 13.4 l/s · «casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.24 s)
-    toma 4 (semilla 11004): mala · 1.0 · 3.1 s · 16.2 l/s · «casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.22 s)
-    toma 5 (semilla 11005): mala · 1.0 · 3.3 s · 15.1 l/s · «Casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.24 s)
+    toma 1 (semilla 11002): mala · 1.0 · 3.1 s · 16.0 l/s · «casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.22 s)
+    toma 2 (semilla 11003): mala · 1.0 · 3.5 s · 14.4 l/s · «Casi dos horas más de trabajo cada mes para llevarte lo mismo.» · sin pausa tras «mes…» (0.24 s)
+    toma 3 (semilla 11004): BUENA · 1.0 · 4.0 s · 12.4 l/s · «casi dos horas más de trabajo cada mes para llevarte lo mismo»
 plano 12: «El sueldo sube por la escalera. La compra, en ascensor.»
     toma guardada (semilla 12000): BUENA · «el sueldo sube por la escalera, la compra en ascensor.»
 plano 13: «¿Y tú? ¿Lo notas en tu carro… o soy yo, que me fijo mucho? Te leo.»
