@@ -22,6 +22,11 @@ Nombre de trabajo: **Cuánto Vale Tu Hora**. Alternativas: «El Precio del Tiemp
 - Modelo: usa el más capaz disponible para guion, verificación y decisiones editoriales.
 - Antes de renderizar, para y pide aprobación en cuatro puntos: (1) tabla de datos, (2) guion, (3) biblia de estilo, (4) primer render.
 - Los gráficos de datos se generan con código a partir de ficheros oficiales, no con IA de imagen.
+- **El vídeo cuenta lo que dice la voz.** Es una narración: cada frase tiene su escena con acción (no una diapositiva con audio encima). Referencias visuales de Bruno en `archive/referencias/`. Subtítulo arriba, palabra a palabra; una cifra grande por plano.
+- **Voz en español de España**, nunca con acento de América. Bruno decide las voces de oído: se le mandan muestras cortas antes de renderizar.
+- **Texto humano:** conversación natural, con interjecciones y ritmo irregular, pregunta directa al espectador al empezar y pregunta abierta al final.
+- **Sonido:** música y efectos que acompañen cada acción de la historia.
+- **De uno en uno:** hasta que un estilo esté bien (ahora, el collage), no se producen los demás.
 - Estructura del repo, agentes y contratos: `docs/agentes-y-pipeline.md`.
 - Identidad visual: `docs/identidad-visual.md`. Test de estilos: `docs/piloto-test.md`. Backlog: `docs/backlog-videos.md`.
 - Contexto previo e investigación: carpeta `research/` (los estados judiciales y cifras hay que re-verificar en la fuente antes de usar).
