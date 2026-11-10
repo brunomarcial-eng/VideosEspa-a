@@ -1,10 +1,12 @@
-// Escenas de T1 «¿Te cunde el carro igual que antes?» — una por frase de la narración.
-// Cada escena tiene su decorado (svg) y su acción (fn), que se ejecuta en la página con
-// las utilidades de diseno/historia_runtime.js. Los momentos e.c[...] salen de historia.json.
+// Escenas de T1 (guion v5) en estilo «limpio»: una idea por escena, una tarjeta por dato.
+// Cada escena: decorado (set), dibujo (svg), tarjeta (HTML) y acción (fn, se ejecuta en la página
+// con las utilidades de diseno/limpio_runtime.js). Los momentos e.c[...] salen de historia.json.
 /* eslint-disable no-undef */
 
-import { obj, carroLleno, dani, moneda, euro, caja, hojaCal, nomina, selloCaucho, marcaSello, bocadillo, ticketCuerda,
-  ticketLargo, etiq, chip, fondoSuper, primerTermino, suelo, fondoPapel, fondoOscuro, mostrador, T as TK } from "../../diseno/atrezo.mjs";
+import { C, persona, peon, producto, carro, monedaEuro, reloj, nomina, bocadillo, tarjeta } from "../../diseno/limpio.mjs";
+
+export const ESTILO = "limpio";
+const FUENTE = "Cálculo propio con datos del INE y de Eurostat";
 
 export function datos(t1) {
   const f = (a) => t1.filas.find((x) => x.anyo === a);
@@ -16,244 +18,213 @@ export function datos(t1) {
     h2016: es(f(2016).horas_neto_mediana), h2019: es(f(2019).horas_neto_mediana), h2024: es(f(2024).horas_neto_mediana),
     sueldon: sueldo, compran: compra, sueldo: es(sueldo, 0), compra: es(compra, 0),
     dif: es(f(2024).horas_neto_mediana - f(2016).horas_neto_mediana),
-    c: { ocre: TK.ocre, azulTiza: TK.azul_tiza },
+    c: { ocre: C.ocre, azul: C.azul, ocreTxt: "#8A6316" },
   };
 }
 
+const jornadas = (id, tono, texto) => `<div class="jor" id="${id}"><div class="jb"><b class="t-${tono}" id="${id}0"></b></div><div class="jb"><b class="t-${tono}" id="${id}1"></b></div><span>${texto}</span></div>`;
+
 export function escenas(D) {
-  const REF = 590 + D.h2016n * 40; // hasta dónde llega el ticket de 2016 en el tendedero
+  const ALT = [70, 120, 170, 230, 300, 390, 500];   // fila de sueldos, de menos a más
   return [
-    // 1 · «Oye, una pregunta: ¿a ti el carro te cunde igual que antes?»
-    { n: 1, tono: "neutro",
-      svg: `${fondoSuper("neutro")}${dani("s1-dani", "hoy")}${suelo("neutro")}${primerTermino("neutro")}${carroLleno("s1-carro", 560)}`,
+    // 1 · «A ver, pregunta rápida. Llenar el carro de la compra… ¿te cuesta hoy más, o menos, que hace diez años?»
+    { n: 1, set: "super",
+      svg: `${persona("s1-dani", "hoy")}${carro("s1-carro")}`,
+      tarjeta: tarjeta(1, "La pregunta", `<div class="tit">¿Llenar el carro cuesta <mark id="m1a">más</mark> o <mark id="m1b">menos</mark> que hace 10 años?</div>`),
       fn: function (t, e) {
-        const rueda = q(t) - e.t0 < 0.8, x = ir(t, e.t0, 0.8, -420, 720);
-        T("s1-carro", x, 1092 - (rueda ? Math.abs(boil("bote", t, 7)) : 0), { r: boil("s1c", t, rueda ? 1.6 : 0.3) });
-        const a = e.c["c1-dani"];
-        actor("s1-dani", t, { x: x - 760, y: 521, espejo: true, apar: e.t0 - 1, expr: [[0, "contenta"], [a + 1.1, "duda"]],
-          gesto: [[a, "saludo"], [a + 1.0, "explicar"]], mirada: [[0, -1], [a - 0.15, 0]], semilla: 8 });
+        const fin = e.c["c1-para"], x = ir(t, e.t0, fin - e.t0, 160, 650);
+        T("s1-carro", x, 1410, { s: 1.12 });
+        persona("s1-dani", t, { x: x - 420, y: 1410, anda: [[0, true], [fin, false]], brazo: [[0, "empuja"], [fin + 0.6, "hombros"]],
+          ojos: [[0, "normal"], [fin + 0.6, "grandes"]], boca: [[0, "sonrisa"], [fin + 0.6, "seria"]], mira: [[0, 1], [fin + 0.2, 0]], fase: 1 });
+        marca("m1a", t, e.c["c1-mas"]); marca("m1b", t, e.c["c1-menos"]);
       } },
 
-    // 2 · «Vamos a comprobarlo. Pero sin euros, ¿eh? En horas de curro.»
-    { n: 2, tono: "neutro",
-      svg: `${fondoOscuro()}${euro("s2-euro", 250)}${moneda("s2-reloj", 250, "neutro")}
-        <text id="s2-rot" x="540" y="1290" text-anchor="middle" font-family="Plex" font-weight="700" font-size="64" fill="${TK.papel}">euros</text>`,
+    // 2 · «Y ojo, que no te lo cuento en euros. Te lo cuento en horas de tu trabajo.»
+    { n: 2, set: "liso",
+      svg: `${monedaEuro("s2-euro", 210)}${reloj("s2-reloj", 210)}`,
+      tarjeta: tarjeta(2, "La regla", `<div class="tit">No en euros.<br>En <mark id="m2">horas de trabajo</mark>.</div>`),
       fn: function (t, e) {
-        const cm = e.c["c2-moneda"], cn = e.c["c2-no"], cg = e.c["c2-giro"], k = q(t) - cm;
-        if (k < 0) { ver("s2-euro", false); ver("s2-reloj", false); ver("s2-rot", false); return; }
-        const kc = clamp(k / 0.3);
-        const y = kc < 1 ? 250 + 650 * kc * kc : 900 - Math.max(0, 70 * Math.sin((k - 0.3) * 11)) * Math.exp(-(k - 0.3) * 5);
-        const g = clamp((q(t) - cg) / 0.35), cara = g < 0.5;
-        const no = q(t) >= cn && q(t) < cn + 0.6 ? 13 * Math.sin((q(t) - cn) * 21) : 0;   // la moneda niega con la cabeza
+        const cn = e.c["c2-no"], cg = e.c["c2-giro"], k = t - e.t0;
+        const y = 380 + 640 * fuera(k / 0.45) - Math.max(0, Math.sin((k - 0.45) * 9)) * 40 * Math.exp(-Math.max(0, k - 0.45) * 4);
+        const g = clamp((t - cg) / 0.42), cara = g < 0.5;
+        const no = t >= cn && t < cn + 0.7 ? Math.sin((t - cn) * 18) * 11 * (1 - (t - cn) / 0.7) : 0;   // la moneda dice que no
         ver("s2-euro", cara); ver("s2-reloj", !cara);
-        T(cara ? "s2-euro" : "s2-reloj", 540, y, { sx: Math.max(0.05, Math.abs(Math.cos(g * Math.PI))), sy: 1, r: no + boil("s2m", t, 0.5) });
-        attr("s2-reloj-aguja", "transform", "rotate(" + Math.floor(Math.max(0, t - cg) * FR) * 30 + ")");
-        ver("s2-rot", k > 0.4);
-        txt("s2-rot", cara ? "euros" : "horas de trabajo");
+        T(cara ? "s2-euro" : "s2-reloj", 540, y, { sx: Math.max(0.04, Math.abs(Math.cos(g * Math.PI))), sy: 1, r: no });
+        attr("s2-reloj-m", "transform", "rotate(" + (Math.max(0, t - cg) * 70).toFixed(1) + ")");
+        marca("m2", t, cg + 0.25);
       } },
 
-    // 3 · «Este es Dani. Año 2016.»
-    { n: 3, tono: "pasado",
-      svg: `${fondoSuper("pasado")}${hojaCal("s3-cal", "2016", "pasado")}${dani("s3-dani", "antes")}${suelo("pasado")}${primerTermino("pasado")}
-        ${carroLleno("s3-carro", 420, false)}${etiq("s3-nombre", "DANI", { fuente: "Fraunces", tam: 60, pad: 50 })}`,
+    // 3 · «Este es Dani. Cobra un sueldo normal, de los del medio.»
+    { n: 3, set: "liso",
+      svg: `${ALT.map((h, i) => `<g id="s3-b${i}"><rect x="-52" y="${-h}" width="104" height="${h}" rx="14" fill="${i === 3 ? C.ocre : "#DCE1E5"}"/></g>`).join("")}
+        ${ALT.map((h, i) => (i === 3 ? "" : peon("s3-p" + i, 120 + i * 140, 1410 - h))).join("")}${persona("s3-dani", "antes")}
+        <text x="70" y="1490" class="rot" font-size="38" fill="${C.gris}">← cobran menos</text>
+        <text x="1010" y="1490" class="rot" font-size="38" fill="${C.gris}" text-anchor="end">cobran más →</text>`,
+      tarjeta: tarjeta(3, "El protagonista", `<div class="tit">Dani cobra el <mark id="m3">sueldo mediano</mark></div>
+        <div class="sub" id="c3-sub">La mitad cobra más que él. La otra mitad, menos.</div>`),
       fn: function (t, e) {
-        const cd = e.c["c3-dani"], cc = e.c["c3-cal"];
-        actor("s3-dani", t, { x: ir(t, cd, 0.4, -640, 40), y: 521, apar: e.t0 - 1, expr: [[0, "contenta"]], gesto: [[cd + 0.2, "saludo"], [cd + 1.7, "abajo"]], mirada: 0, semilla: 3 });
-        pop("s3-nombre", t, cd + 0.4, 300, 1190, { r: -5 });
-        pop("s3-cal", t, cc, 800, 690, { r: 7, s: 1.2 });
-        T("s3-carro", ir(t, e.t0, 0.6, 1400, 820), 1110, { r: boil("s3c", t, 0.3) });
-      } },
-
-    // 4 · «Hace la compra del mes: pan, leche, huevos, aceite… lo de siempre.»
-    { n: 4, tono: "pasado",
-      svg: `${fondoSuper("pasado")}${suelo("pasado")}${primerTermino("pasado")}${obj("leche", "s4-leche", 240, "c-leche")}${obj("aceite", "s4-aceite", 240, "c-aceite")}
-        ${obj("pan", "s4-pan", 250, "c-pan")}${obj("huevos", "s4-huevos", 220, "c-huevos")}${obj("manzana", "s4-fruta", 170, "c-manzana")}
-        ${carroLleno("s4-carro", 780, false)}${etiq("s4-nota", ["Comida y bebida sin alcohol", "gasto medio por persona"], { tam: 32 })}`,
-      fn: function (t, e) {
-        T("s4-carro", 540, 1010, { r: boil("s4c", t, 0.25) });
-        caer("s4-leche", t, e.c["c4-leche"], 600, 770, { dx: -280, r: -3, giro: -120 });
-        caer("s4-aceite", t, e.c["c4-aceite"], 700, 760, { dx: 300, r: 5 });
-        caer("s4-pan", t, e.c["c4-pan"], 455, 815, { dx: 300, r: -22 });
-        caer("s4-huevos", t, e.c["c4-huevos"], 780, 830, { dx: -260, r: 6, giro: -90 });
-        caer("s4-fruta", t, e.c["c4-fruta"], 545, 850, { dx: 240, r: 0 });
-        pop("s4-nota", t, e.b + 0.5, 540, 1392, { r: -1.5 });
-      } },
-
-    // 5 · «¿Y cuánto le cuesta? 12,8 horas de trabajo.»
-    { n: 5, tono: "pasado",
-      svg: `${fondoSuper("pasado")}${dani("s5-dani", "antes")}${mostrador()}${caja("s5-caja", "pasado")}
-        ${[0, 1, 2].map((i) => moneda("s5-m" + i, 44, "pasado")).join("")}
-        ${etiq("s5-anyo", "2016", { tam: 46, peso: 700 })}${chip("s5-chip", D.h2016 + " h", "pasado", 130)}`,
-      fn: function (t, e) {
-        const cc = e.c["c5-cuenta"], cd = e.c["c5-dato"], k = clamp((q(t) - cc) / (cd - cc));
-        actor("s5-dani", t, { x: 470, y: 521, apar: e.t0 - 1, expr: [[0, "neutra"], [cd + 0.1, "contenta"]],
-          gesto: [[cd + 0.15, "arriba"], [cd + 1.5, "abajo"]], mirada: [[0, -1], [cd + 0.6, 0]], semilla: 3 });
-        T("s5-caja", 360, 850 + (q(t) - cd >= 0 && q(t) - cd < 1 / FR ? 8 : 0));
-        txt("s5-caja-num", t < cc ? "¿?" : es(D.h2016n * suave(k)) + " h");
-        const h = clamp((q(t) - cd - 0.1) / 0.5) * 170;
-        for (const p of ["r", "l"]) { attr("s5-caja-ticket-" + p, "y", -272 - h); attr("s5-caja-ticket-" + p, "height", h); }
-        for (let i = 0; i < 3; i++) pop("s5-m" + i, t, cd + 0.2 + i * 0.16, 720 + i * 92, 1050, { r: (i - 1) * 9 });
-        pop("s5-anyo", t, cd, 250, 1150, { r: -5 });
-        pop("s5-chip", t, cd, 560, 1262);
-      },
-      cam: function (t, e) { return { z: lin(t, e.t0, e.t1 - e.t0, 1, 1.06), cx: 420, cy: 800 }; } },
-
-    // 6 · «Ahora, el mismo Dani, con el último dato oficial. Mismo carro, ¿vale?»
-    { n: 6, tono: "hoy",
-      svg: `${fondoSuper("pasado")}${fondoSuper("hoy", "s6-fondo-hoy")}${hojaCal("s6-h24", "2024", "hoy")}${hojaCal("s6-h19", "2019", "pasado")}
-        ${hojaCal("s6-h16", "2016", "pasado")}<g id="s6-giro">${dani("s6-antes", "antes")}${dani("s6-hoy", "hoy")}</g>${suelo("neutro")}${primerTermino("neutro")}
-        ${carroLleno("s6-carro", 400)}${etiq("s6-dato", ["último dato oficial", "de salarios"], { tam: 32 })}${etiq("s6-mismo", "el mismo carro", { tam: 36 })}`,
-      fn: function (t, e) {
-        const ch = e.c["c6-hojas"], cd = e.c["c6-dani"], c24 = e.c["c6-2024"], cc = e.c["c6-carro"];
-        $("s6-fondo-hoy").style.opacity = suave(clamp((q(t) - cd) / 0.4));
-        const g = clamp((q(t) - cd) / 0.34);
-        actor("s6-antes", t, { x: 40, y: 521, apar: e.t0 - 1, expr: [[0, "contenta"]], mirada: 1, semilla: 3 });
-        actor("s6-hoy", t, { x: 40, y: 521, apar: e.t0 - 1, expr: [[0, "contenta"]], gesto: [[cd + 0.5, "saludo"], [cd + 1.7, "abajo"]], mirada: 0, semilla: 8 });
-        ver("s6-antes", g < 0.5); ver("s6-hoy", g >= 0.5);
-        attr("s6-giro", "transform", "translate(325 0) scale(" + Math.max(0.05, Math.abs(Math.cos(g * Math.PI))).toFixed(3) + " 1) translate(-325 0)");
-        const vuela = (id, t0, dir) => {
-          const k = clamp((q(t) - t0) / 0.4);
-          if (k >= 1) { ver(id, false); return; }
-          T(id, 800 + dir * 560 * k * k, 630 - 300 * k, { r: 6 + dir * 80 * k, s: 1.15 });
-        };
-        T("s6-h24", 800, 630, { r: 6 + boil("h24", t, 0.4), s: 1.15 });
-        vuela("s6-h19", ch + 0.55, 1);
-        vuela("s6-h16", ch + 0.1, -1);
-        pop("s6-dato", t, c24, 800, 868, { r: -3 });
-        if (q(t) < cc) ver("s6-carro", false); else T("s6-carro", ir(t, cc, 0.6, 1500, 830), 1150, { r: boil("s6c", t, 0.4) });
-        pop("s6-mismo", t, cc + 0.7, 800, 1400, { r: 2 });
-      } },
-
-    // 7 · «Pues… 14,5 horas.»
-    { n: 7, tono: "hoy",
-      svg: `${fondoSuper("hoy")}${dani("s7-dani", "hoy")}${mostrador()}${caja("s7-caja", "hoy")}
-        ${chip("s7-antes", "2016 · " + D.h2016 + " h", "pasado", 44)}${[0, 1, 2, 3].map((i) => moneda("s7-m" + i, 44, "hoy")).join("")}
-        ${etiq("s7-anyo", "2024", { tam: 46, peso: 700 })}${chip("s7-chip", D.h2024 + " h", "hoy", 130)}`,
-      fn: function (t, e) {
-        const cc = e.c["c7-cuenta"], cd = e.c["c7-dato"], k = clamp((q(t) - cc) / (cd - cc));
-        actor("s7-dani", t, { x: 470, y: 521, apar: e.t0 - 1, expr: [[0, "neutra"], [cc + 0.3, "duda"], [cd, "sorpresa"]],
-          gesto: [[cd + 0.1, "arriba"]], mirada: [[0, -1], [cd + 0.9, 0]], semilla: 8 });
-        T("s7-caja", 360, 850 + (q(t) - cd >= 0 && q(t) - cd < 1 / FR ? 10 : 0));
-        txt("s7-caja-num", es(D.h2016n + (D.h2024n - D.h2016n) * suave(k)) + " h");
-        attr("s7-caja-num", "fill", k > 0 ? D.c.azulTiza : D.c.ocre);
-        pop("s7-antes", t, e.t0 + 0.15, 330, 522, { r: -4 });
-        for (let i = 0; i < 4; i++) pop("s7-m" + i, t, cd + 0.2 + i * 0.14, 690 + i * 84, 1050, { r: (i - 1.5) * 8 });
-        pop("s7-anyo", t, cd, 250, 1150, { r: -5 });
-        pop("s7-chip", t, cd, 560, 1262);
-      },
-      cam: function (t, e) {
-        return { z: lin(t, e.t0, e.t1 - e.t0, 1, 1.03) + 0.09 * suave(clamp((t - e.c["c7-dato"]) / 0.2)), cx: 620, cy: 960 };
-      } },
-
-    // 8 · «Y ojo, que Dani ahora cobra más: un 23 % más por hora, ya limpio.»
-    { n: 8, tono: "hoy",
-      svg: `${fondoPapel("hoy")}${dani("s8-dani", "hoy")}${suelo("hoy")}${nomina("s8-nomina")}
-        ${chip("s8-chip", "+" + D.sueldo + " %", "hoy", 100)}${etiq("s8-nota", "Sueldo neto por hora (mediana)", { tam: 30 })}`,
-      fn: function (t, e) {
-        const cn = e.c["c8-nomina"], cs = e.c["c8-sube"], cd = e.c["c8-dato"];
-        actor("s8-dani", t, { x: -20, y: 521, apar: e.t0 - 1, expr: [[0, "contenta"]], gesto: [[cn + 0.3, "arriba"]], mirada: [[0, 0], [cs - 0.2, 1]], semilla: 8 });
-        pop("s8-nomina", t, cn, 775, 835, { r: 3 });
-        const h = 290 * (D.sueldon / 100) * clamp((q(t) - cs) / (cd - cs));
-        attr("s8-nomina-sube", "y", -40 - h); attr("s8-nomina-sube", "height", h);
-        pop("s8-chip", t, cd, 775, 1222);
-        pop("s8-nota", t, cd + 0.35, 540, 1338, { r: -1 });
-      } },
-
-    // 9 · «Lo que pasa es que la compra, la misma, ha subido un 40.»
-    { n: 9, tono: "hoy",
-      svg: `${fondoPapel("hoy")}
-        <g filter="url(#rc)"><rect x="210" y="850" width="220" height="300" fill="url(#rayas-ocre)" stroke="${TK.texto_papel}" stroke-width="4"/>
-          <rect x="210" y="${(850 - 3 * D.sueldon).toFixed(1)}" width="220" height="${(3 * D.sueldon).toFixed(1)}" fill="url(#rayas-azul)" stroke="${TK.texto_papel}" stroke-width="4"/></g>
-        <g id="s9-col" filter="url(#rc)"><rect x="610" y="850" width="220" height="300" fill="url(#rayas-ocre)" stroke="${TK.texto_papel}" stroke-width="4"/>
-          <rect id="s9-sube" x="610" y="850" width="220" height="0" fill="url(#rayas-azul)" stroke="${TK.texto_papel}" stroke-width="4"/></g>
-        <line x1="120" y1="850" x2="960" y2="850" stroke="${TK.texto_papel}" stroke-width="5" stroke-dasharray="16 12"/>
-        <text x="120" y="834" font-family="Plex" font-weight="600" font-size="30" fill="${TK.gris_texto_papel}">2016</text>
-        <line x1="120" y1="1150" x2="960" y2="1150" stroke="${TK.texto_papel}" stroke-width="6"/>
-        ${obj("nomina", "s9-nom", 170)}${carroLleno("s9-carro", 240)}
-        ${etiq("s9-e1", "sueldo por hora", { tam: 30 })}${etiq("s9-e2", "la misma compra", { tam: 30 })}
-        ${chip("s9-c23", "+" + D.sueldo + " %", "hoy", 70)}${chip("s9-c40", "+" + D.compra + " %", "hoy", 100)}`,
-      fn: function (t, e) {
-        const cc = e.c["c9-carro"], cs = e.c["c9-sube"], cd = e.c["c9-dato"];
-        T("s9-nom", 320, 850 - 3 * D.sueldon - 92, { r: -4 + boil("s9n", t, 0.4) });
-        T("s9-e1", 320, 1200, { r: -1 }); T("s9-c23", 320, 1292, { r: boil("s9a", t, 0.3) });
-        const h = 3 * D.compran * clamp((q(t) - cs) / (cd - cs));
-        attr("s9-sube", "y", 850 - h); attr("s9-sube", "height", h);
-        ver("s9-col", q(t) >= cc);
-        pop("s9-e2", t, cc + 0.2, 720, 1200, { r: 1 });
-        if (q(t) < cc) ver("s9-carro", false); else T("s9-carro", ir(t, cc, 0.4, 1300, 720), 850 - h - 94, { r: boil("s9c", t, 0.5) });
-        pop("s9-c40", t, cd, 720, 1296);
-      } },
-
-    // 10 · «¿Y sabes qué? En 2019 todavía le costaba 12,6. El salto vino después.»
-    { n: 10, tono: "neutro",
-      svg: `${fondoPapel("neutro")}<path d="M-20 596 H1100" stroke="#000" stroke-width="10" opacity=".14"/><path d="M-20 590 H1100" stroke="#7A5C43" stroke-width="9"/>
-        <line x1="70" y1="${REF.toFixed(1)}" x2="1010" y2="${REF.toFixed(1)}" stroke="${TK.texto_papel}" stroke-width="5" stroke-dasharray="16 12"/>
-        ${ticketCuerda("s10-t16", "2016", "pasado")}${ticketCuerda("s10-t19", "2019", "pasado")}${ticketCuerda("s10-t24", "2024", "hoy")}`,
-      fn: function (t, e) {
-        const pon = (id, x, largo, k, valor, ref) => {
-          if (k <= 0) { ver(id, false); return; }
-          const total = Math.max(80, largo * k);
-          T(id, x, 590, { r: boil(id, t, 0.45) });
-          attr(id + "-r", "height", total); attr(id + "-l", "height", Math.max(0, total - 100));
-          attr(id + "-z", "transform", "translate(0 " + total.toFixed(1) + ")");
-          const exceso = ref ? Math.max(0, total - ref) : 0;
-          attr(id + "-x", "y", total - exceso); attr(id + "-x", "height", exceso);
-          attr(id + "-v", "y", total - 26 - (exceso > 0 ? exceso : 0)); txt(id + "-v", k >= 1 ? valor : "");
-        };
-        const c = e.c;
-        pon("s10-t16", 215, D.h2016n * 40, clamp((q(t) - c["c10-t16"]) / 0.35 + 0.001), D.h2016 + " h");
-        pon("s10-t19", 540, D.h2019n * 40, clamp((q(t) - c["c10-t19"]) / Math.max(0.3, c["c10-dato19"] - c["c10-t19"])), D.h2019 + " h");
-        pon("s10-t24", 865, D.h2024n * 40, clamp((q(t) - c["c10-t24"]) / Math.max(0.4, c["c10-dato24"] - c["c10-t24"])), D.h2024 + " h", D.h2016n * 40);
-      } },
-
-    // 11 · «Entonces, ¿qué? ¿Mejora, empeora o depende?»
-    { n: 11, tono: "neutro",
-      svg: `${fondoOscuro()}<g filter="url(#rc)"><rect x="-20" y="1040" width="1120" height="46" fill="#6E5D4C"/></g>
-        ${[0, 1, 2].map((i) => selloCaucho("s11-s" + i)).join("")}
-        ${["MEJORA", "EMPEORA", "DEPENDE"].map((p, i) => etiq("s11-e" + i, p, { fuente: "Fraunces", tam: 44 })).join("")}`,
-      fn: function (t, e) {
-        const cs = [e.c["c11-m"], e.c["c11-e"], e.c["c11-d"]];
-        for (let i = 0; i < 3; i++) {
-          const k = q(t) - cs[i], salto = k >= 0 && k < 3 / FR ? [46, 22, 6][Math.round(k * FR)] : 0;
-          if (pop("s11-s" + i, t, e.c["c11-ini"] + 0.08 + i * 0.09, 215 + i * 325, 1040 - salto, { s: 1.45, r: salto ? (i - 1) * 4 : 0 }) < 0) continue;
-          pop("s11-e" + i, t, cs[i], 215 + i * 325, 1180, { r: (i - 1) * 3 });
+        const H = [70, 120, 170, 230, 300, 390, 500], cm = e.c["c3-medio"], cd = e.c["c3-dani"];
+        for (let i = 0; i < 7; i++) {
+          const k = fuera((t - e.c["c3-fila"] - i * 0.07) / 0.45), x = 120 + i * 140;
+          attr("s3-b" + i, "transform", "translate(" + x + " 1410) scale(1 " + Math.max(0.001, k).toFixed(3) + ")");
+          if (i !== 3) { const p = $("s3-p" + i); p.setAttribute("transform", "translate(" + x + " " + (1410 - H[i] * k).toFixed(1) + ")"); p.style.opacity = t >= cm ? 0.5 : 1; }
+          if (i !== 3) $("s3-b" + i).style.opacity = t >= cm ? 0.6 : 1;
         }
+        persona("s3-dani", t, { x: 540, y: 1410 - 230, s: 0.37 * (0.3 + 0.7 * rebote((t - cd) / 0.35)), oculto: t < cd,
+          brazo: [[cd + 0.25, "saluda"], [cd + 1.7, "abajo"]], ojos: "felices", boca: "grande", fase: 2 });
+        marca("m3", t, cm); sube("c3-sub", t, cm + 0.3);
       } },
 
-    // 12 · «Esta vez, empeora. Casi dos horas más de curro al mes… por lo mismo.»
-    { n: 12, tono: "hoy",
-      svg: `${fondoOscuro()}${ticketLargo("s12-ticket", "TICKET · 2024")}${marcaSello("s12-marca", "EMPEORA")}${selloCaucho("s12-sello")}
-        ${chip("s12-chip", "+" + D.dif + " h al mes", "hoy", 76)}
-        <g id="s12-nota" font-family="Plex" font-weight="600" font-size="27" fill="${TK.papel}" text-anchor="middle">
-          <text x="540" y="1316">Con 2016, 2018 o 2019 como referencia</text><text x="540" y="1350">Con sueldo medio o mediano, bruto o neto</text></g>`,
+    // 4 · «En 2016, la compra del mes le costaba 12,8 horas de trabajo. Día y medio largo, para entendernos.»
+    { n: 4, set: "super",
+      svg: `${carro("s4-carro", false)}${persona("s4-dani", "antes")}${["pan", "leche", "huevos", "aceite"].map((p, i) => producto(p, "s4-i" + i)).join("")}`,
+      tarjeta: tarjeta(4, "2016", `<div class="fila"><div class="num t-pasado" id="c4-num"></div><div class="uni">horas de trabajo<small>la compra de un mes</small></div></div>
+        ${jornadas("c4-j", "pasado", "día y medio largo")}`, { tono: "pasado", fuente: FUENTE }),
       fn: function (t, e) {
-        const cs = e.c["c12-sello"], cd = e.c["c12-dato"], k = q(t) - cs;
-        T("s12-ticket", 540, 850, { r: -3 + boil("s12t", t, 0.25) });
-        let x = 770, y = 560 + 12 * Math.sin(q(t) * 5), r = 12;          // el sello espera en alto…
-        if (k >= -1 / FR && k < 0) { x = 640; y = 770; r = 2; }           // …baja…
-        else if (k >= 0 && k < 3 / FR) { x = 540; y = 930; r = -8; }      // …golpea…
-        else if (k >= 3 / FR) { const u = suave(clamp((k - 3 / FR) / 0.45)); x = 540 + 420 * u; y = 930 - 420 * u; r = -8 + 30 * u; } // …y se retira
-        T("s12-sello", x, y, { s: 2, r });
-        if (k >= 0) T("s12-marca", 540, 900, { r: -8, s: 0.82 }); else ver("s12-marca", false);
-        pop("s12-chip", t, cd, 540, 1232);
-        ver("s12-nota", q(t) >= cd + 0.3);
+        const cc = e.c["c4-cuenta"], cd = e.c["c4-dato"], cj = e.c["c4-dia"], k = suave((t - cc) / (cd - cc));
+        T("s4-carro", 300, 1410, { s: 1.1 });
+        persona("s4-dani", t, { x: 520, y: 1410, brazo: [[0, "abajo"], [cd + 0.25, "senala"], [cj + 1.2, "abajo"]], mira: [[0, 1], [cj, 0]],
+          ojos: [[0, "normal"], [cd, "felices"], [cj, "normal"]], boca: [[0, "sonrisa"], [cd, "grande"], [cj, "sonrisa"]], fase: 2 });
+        for (let i = 0; i < 4; i++) salto("s4-i" + i, t, e.c["c4-p" + i], 300, 1170, 742 + i * 56, 1016, { s: 0.6, r: -40 });
+        txt("caja-num", t < cc ? "" : es(D.h2016n * k));
+        txt("c4-num", t < cc ? "?" : es(D.h2016n * k));
+        sube("c4-j", t, cj - 0.1);
+        crece("c4-j0", "width", t, cj, 0.4, 150); crece("c4-j1", "width", t, cj + 0.4, 0.35, 150 * (D.h2016n / 8 - 1));
       },
-      cam: function (t, e) {
-        const k = q(t) - e.c["c12-sello"], g = k >= 0 && k < 3 / FR, p = Math.floor(t * FR);
-        return { z: 1.02 + (g ? 0.03 : 0), dx: g ? azar(3, p) * 16 : 0, dy: g ? azar(4, p) * 16 : 0, r: g ? azar(5, p) * 0.8 : 0 };
+      cam: function () { return { z: 1.12, fx: 640, fy: 1160 }; } },
+
+    // 5 · «Ahora, avance rápido. Mismo Dani, misma compra, último dato oficial.»
+    { n: 5, set: "super",
+      svg: `${persona("s5-antes", "antes")}${persona("s5-hoy", "hoy")}${carro("s5-carro")}`,
+      tarjeta: tarjeta(5, "Avance rápido", `<div class="tit"><span id="c5-anyo">2016</span><br><mark id="m5">último dato oficial</mark></div>
+        <div class="sub" id="c5-sub">Mismo Dani. Misma compra.</div>`),
+      fn: function (t, e) {
+        const cf = e.c["c5-ff"], cd = e.c["c5-dani"], A = [2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024];
+        const ka = clamp((t - cf - 0.15) / 0.95);
+        txt("c5-anyo", String(A[Math.round(ka * (A.length - 1))]));
+        css("c5-anyo", "color", ka >= 1 ? D.c.azul : D.c.ocreTxt);
+        T("s5-carro", 690, 1410, { s: 1.12 });
+        const g = clamp((t - cd) / 0.45), sx = Math.max(0.05, Math.abs(Math.cos(g * Math.PI)));   // Dani se da la vuelta y ya es el de hoy
+        persona("s5-antes", t, { x: 300, y: 1410, oculto: g >= 0.5, sx: sx, fase: 2 });
+        persona("s5-hoy", t, { x: 300, y: 1410, oculto: g < 0.5, sx: sx, brazo: [[cd + 0.5, "saluda"], [cd + 1.7, "abajo"]], ojos: "felices", boca: "grande", fase: 1 });
+        sube("c5-sub", t, cd); marca("m5", t, e.c["c5-dato"]);
       } },
 
-    // 13 · «¿Y a ti? ¿Te cunde más o menos? Te leo.»
-    { n: 13, tono: "hoy",
-      svg: `${fondoSuper("hoy")}${dani("s13-dani", "hoy")}${suelo("hoy")}${primerTermino("hoy")}${carroLleno("s13-carro", 440)}${bocadillo("s13-boc")}
-        ${etiq("s13-q", "¿Y a ti?", { fuente: "Fraunces", tam: 96, pad: 60 })}`,
+    // 6 · «¿Cuánto? 14,5 horas. Casi dos días.»
+    { n: 6, set: "super",
+      svg: `${carro("s6-carro", false)}${persona("s6-dani", "hoy")}${["pan", "leche", "huevos", "aceite"].map((p, i) => producto(p, "s6-i" + i)).join("")}`,
+      tarjeta: tarjeta(6, "2024 · último dato", `<div class="fila"><div class="num t-hoy" id="c6-num"></div><div class="uni">horas de trabajo<small>en 2016 eran ${D.h2016} h</small></div></div>
+        ${jornadas("c6-j", "hoy", "casi dos jornadas")}`, { tono: "hoy", fuente: FUENTE }),
       fn: function (t, e) {
-        actor("s13-dani", t, { x: 40, y: 521, apar: e.t0 - 1, expr: [[0, "contenta"]], gesto: [[e.t0 + 0.2, "saludo"]], mirada: 0, semilla: 8 });
-        T("s13-carro", ir(t, e.t0, 0.5, 1400, 840), 1130, { r: boil("s13c", t, 0.3) });
-        pop("s13-q", t, e.c["c13-ini"] + 0.25, 540, 1392, { r: -2 });
-        const cb = e.c["c13-bocadillo"];
-        if (pop("s13-boc", t, cb, 800, 700, { r: 3 }) >= 0)
-          for (let i = 0; i < 3; i++) attr("s13-boc-p" + i, "cy", -16 * Math.max(0, Math.sin((q(t) - cb) * 9 - i * 0.9)));
+        const cc = e.c["c6-cuenta"], cd = e.c["c6-dato"], cj = e.c["c6-dias"], k = suave((t - cc) / (cd - cc));
+        T("s6-carro", 300, 1410, { s: 1.1 });
+        persona("s6-dani", t, { x: 520, y: 1410, brazo: [[0, "abajo"], [cd, "arriba"], [cj + 0.8, "hombros"]], mira: [[0, 1], [cd + 0.7, 0]],
+          ojos: [[0, "normal"], [cc + 0.4, "grandes"]], boca: [[0, "sonrisa"], [cc + 0.4, "seria"], [cd, "o"]], fase: 1 });
+        for (let i = 0; i < 4; i++) T("s6-i" + i, 742 + i * 56, 1016, { s: 0.6 });
+        const v = D.h2016n + (D.h2024n - D.h2016n) * k;
+        txt("caja-num", es(v)); txt("c6-num", t < cc ? "?" : es(v));
+        sube("c6-j", t, cj - 0.1);
+        crece("c6-j0", "width", t, cj, 0.4, 150); crece("c6-j1", "width", t, cj + 0.4, 0.4, 150 * (D.h2024n / 8 - 1));
+      },
+      cam: function (t, e) { return { z: 1.12 + 0.05 * suave((t - e.c["c6-dato"]) / 0.3), fx: 640, fy: 1160 }; } },
+
+    // 7 · «Y eso que Dani ahora cobra más, ¿eh? Un 23 % más por hora, ya limpio.»
+    { n: 7, set: "super",
+      svg: `${persona("s7-dani", "hoy")}${nomina("s7-nomina")}`,
+      tarjeta: tarjeta(7, "Su sueldo", `<div class="fila"><div class="num t-hoy" id="c7-num"></div><div class="uni">más por hora<small>neto · sueldo mediano · 2016 → 2024</small></div></div>`, { fuente: FUENTE }),
+      fn: function (t, e) {
+        const cn = e.c["c7-nomina"], cs = e.c["c7-sube"], cd = e.c["c7-dato"];
+        persona("s7-dani", t, { x: 440, y: 1410, brazo: [[cn, "piensa"]], ojos: [[0, "normal"], [cn + 0.2, "felices"]], boca: [[0, "sonrisa"], [cn + 0.2, "grande"]], fase: 1 });
+        pop("s7-nomina", t, cn + 0.25, 612, 880, { r: 8 });
+        txt("c7-num", t < cs ? "" : "+" + Math.round(D.sueldon * suave((t - cs) / (cd - cs))) + " %");
+      } },
+
+    // 8 · «¿El problema? Que la misma compra ha subido un 40.»
+    { n: 8, set: "super",
+      svg: `${persona("s8-dani", "hoy")}${carro("s8-carro")}<g id="s8-etq"><path d="M-74 -52 H46 L92 0 L46 52 H-74 Z" fill="${C.marcador}"/><circle cx="54" cy="0" r="10" fill="#fff"/>
+        <text x="-18" y="26" text-anchor="middle" class="rot" font-size="70" fill="${C.tinta}">€</text></g>`,
+      tarjeta: tarjeta(8, "Desde 2016", `<div class="vs"><div class="col"><div class="v" style="color:${C.azulClaro}">+${D.sueldo} %</div><div class="barra" id="c8-b1" style="background:${C.azulClaro}"></div><div class="n">Sueldo por hora</div></div>
+        <div class="contra">vs</div><div class="col"><div class="v t-hoy" id="c8-v2"></div><div class="barra" id="c8-b2" style="background:${C.azul}"></div><div class="n">La misma compra</div></div></div>`, { fuente: FUENTE }),
+      fn: function (t, e) {
+        const cs = e.c["c8-sube"], cd = e.c["c8-dato"], k = suave((t - cs) / (cd - cs));
+        persona("s8-dani", t, { x: 300, y: 1410, mira: 1, ojos: [[0, "normal"], [cs, "grandes"]], boca: [[0, "seria"], [cd, "o"]], brazo: [[cd, "arriba"]], incl: [[cs, -6]], fase: 1 });
+        T("s8-carro", 700, 1410, { s: 1.12 });
+        T("s8-etq", 716, 990 - 40 * k, { s: 1 + (D.compran / 100) * k, r: -10 + Math.sin(t * 2.4) * 3 });   // la etiqueta del precio crece un 40 %
+        css("c8-b1", "height", (D.sueldon * 4.2).toFixed(0) + "px"); css("c8-b2", "height", (D.compran * 4.2 * k).toFixed(0) + "px");
+        txt("c8-v2", t < cs ? "" : "+" + Math.round(D.compran * k) + " %");
+      } },
+
+    // 9 · «¿Y fue poco a poco? Qué va. En 2019 le costaba 12,6. El salto vino después.»
+    { n: 9, set: "super",
+      svg: `${persona("s9-dani", "hoy")}${carro("s9-carro")}`,
+      tarjeta: tarjeta(9, "Año a año", `<div class="b3"><div class="ref" id="c9-ref"></div>
+        ${[0, 1, 2].map((i) => `<div class="col"><div class="v ${i < 2 ? "t-pasado" : "t-hoy"}" id="c9-v${i}"></div><div class="barra" id="c9-b${i}" style="background:${i < 2 ? C.ocre : C.azul}"></div></div>`).join("")}</div>
+        <div class="b3a"><div>2016</div><div>2019</div><div>2024</div></div>`, { fuente: FUENTE }),
+      fn: function (t, e) {
+        const c = e.c, px = 190 / D.h2024n;
+        persona("s9-dani", t, { x: 330, y: 1410, brazo: [[c["c9-b19"], "piensa"], [c["c9-b24"], "arriba"]], ojos: [[0, "normal"], [c["c9-b24"] + 0.2, "grandes"]],
+          boca: [[0, "sonrisa"], [c["c9-b24"] + 0.2, "o"]], fase: 1 });
+        T("s9-carro", 720, 1410, { s: 1.12 });
+        const b = (i, t0, d, h, val) => { const k = suave((t - t0) / d); css("c9-b" + i, "height", (h * px * k).toFixed(0) + "px"); txt("c9-v" + i, k >= 1 ? val : ""); };
+        b(0, c["c9-b16"], 0.4, D.h2016n, D.h2016 + " h");
+        b(1, c["c9-b19"], Math.max(0.3, c["c9-d19"] - c["c9-b19"]), D.h2019n, D.h2019 + " h");
+        b(2, c["c9-b24"], Math.max(0.45, c["c9-d24"] - c["c9-b24"]), D.h2024n, D.h2024 + " h");
+        css("c9-ref", "bottom", (D.h2016n * px).toFixed(0) + "px"); css("c9-ref", "opacity", clamp((t - c["c9-b16"] - 0.4) * 4));
+      } },
+
+    // 10 · «Entonces, ¿mejora, empeora o depende? Esta vez, empeora.»
+    { n: 10, set: "super",
+      svg: `${persona("s10-dani", "hoy")}${carro("s10-carro")}`,
+      tarjeta: tarjeta(10, "El veredicto", `<div class="ops">${["Mejora", "Empeora", "Depende"].map((p, i) => `<div class="op" id="c10-o${i}"><i></i>${p}</div>`).join("")}</div>`),
+      fn: function (t, e) {
+        const c = e.c, cs = c["c10-sello"];
+        ["c10-m", "c10-e", "c10-d"].forEach(function (q, i) { sube("c10-o" + i, t, c[q]); $("c10-o" + i).className = "op" + (t >= cs ? (i === 1 ? " si" : " no") : ""); });
+        persona("s10-dani", t, { x: 330, y: 1410, brazo: [[0, "hombros"], [cs, "abajo"]], ojos: [[0, "grandes"], [cs, "normal"]], boca: "seria", incl: [[0, 6], [cs, 0]], fase: 1 });
+        T("s10-carro", 720, 1410, { s: 1.12 });
+      },
+      cam: function (t, e) { const k = t - e.c["c10-sello"], g = k >= 0 && k < 0.22; return { dx: g ? azar(3, Math.floor(t * 30)) * 9 : 0, dy: g ? azar(4, Math.floor(t * 30)) * 9 : 0 }; } },
+
+    // 11 · «Casi dos horas más de trabajo cada mes… para llevarte lo mismo.»
+    { n: 11, set: "super",
+      svg: `${persona("s11-dani", "hoy")}${carro("s11-carro")}${reloj("s11-r0", 78, C.azul)}${reloj("s11-r1", 78, C.azul)}`,
+      tarjeta: tarjeta(11, "Empeora", `<div class="fila" id="c11-fila"><div class="num t-hoy">+${D.dif}</div><div class="uni">horas de trabajo<small>más cada mes, por la misma compra</small></div></div>
+        <div class="nota" id="c11-nota">Sale igual con 2016, 2018 o 2019 de referencia, y con el sueldo medio o el mediano, bruto o neto.</div>`, { fuente: FUENTE }),
+      fn: function (t, e) {
+        const cd = e.c["c11-dato"];
+        sube("c11-fila", t, cd - 0.2); sube("c11-nota", t, cd + 0.9);
+        persona("s11-dani", t, { x: 300, y: 1410, mira: 1, brazo: [[cd, "senala"]], boca: "seria", fase: 1 });
+        T("s11-carro", 700, 1410, { s: 1.12 });
+        pop("s11-r0", t, e.c["c11-r1"], 640, 960); pop("s11-r1", t, e.c["c11-r2"], 810, 985, { s: 0.7 });   // una hora entera y casi otra
+      } },
+
+    // 12 · «El sueldo sube por la escalera. La compra, en ascensor.»
+    { n: 12, set: "liso",
+      svg: `${[0, 1, 2, 3, 4].map((i) => `<rect x="${110 + i * 80}" y="${1410 - (i + 1) * 46}" width="${400 - i * 80}" height="46" fill="${i % 2 ? "#D9BC8F" : "#CFAE7C"}"/>`).join("")}
+        <rect x="640" y="900" width="280" height="510" rx="18" fill="#E3E8EB" stroke="#B4BEC5" stroke-width="6"/><path d="M780 900 V1180" stroke="#B4BEC5" stroke-width="6"/>
+        <g id="s12-cabina"><rect x="-122" y="-232" width="244" height="232" rx="14" fill="${C.blanco}" stroke="#9AA6AE" stroke-width="6"/><g transform="translate(6 -10) scale(.6)">${carro("s12-carro").replace(/<ellipse[^>]*opacity="\.16"\/>/, "")}</g></g>
+        ${persona("s12-dani", "hoy")}
+        <text x="310" y="1500" class="rot" font-size="44" fill="${C.gris}" text-anchor="middle">el sueldo</text>
+        <text x="780" y="1500" class="rot" font-size="44" fill="${C.gris}" text-anchor="middle">la compra</text>`,
+      tarjeta: tarjeta(12, "En resumen", `<div class="tit">El sueldo, por la <mark id="m12a">escalera</mark>.<br>La compra, en <mark id="m12b">ascensor</mark>.</div>`),
+      fn: function (t, e) {
+        const c1 = e.c["c12-esc"], c2 = e.c["c12-esc2"], ca = e.c["c12-asc"], P = [c1, (c1 + c2) / 2, c2];
+        let x = 70, y = 1410, bote = 0;                      // Dani sube tres peldaños, uno a uno
+        P.forEach(function (tp, i) { const k = clamp((t - tp) / 0.32); if (k > 0) { const x0 = i === 0 ? 70 : 150 + (i - 1) * 80; x = x0 + (150 + i * 80 - x0) * suave(k); y = 1410 - i * 46 - 46 * suave(k); bote = Math.sin(k * Math.PI) * 30; } });
+        persona("s12-dani", t, { x: x, y: y, s: 0.42, sube: bote / 0.42, mira: 1, brazo: [[ca + 0.3, "arriba"]], ojos: [[0, "normal"], [ca + 0.25, "grandes"]], boca: [[0, "sonrisa"], [ca + 0.25, "o"]], fase: 1 });
+        T("s12-cabina", 780, 1410 - 240 * suave((t - ca) / 0.7));   // el carro sube 40 por cada 23 de Dani
+        marca("m12a", t, c2 - 0.15); marca("m12b", t, e.c["c12-fin"] - 0.25);
+      } },
+
+    // 13 · «¿Y tú? ¿Lo notas en tu carro… o soy yo, que me fijo mucho? Te leo.»
+    { n: 13, set: "super",
+      svg: `${persona("s13-dani", "hoy")}${carro("s13-carro")}${bocadillo("s13-boc")}`,
+      tarjeta: tarjeta(13, "Te toca", `<div class="tit">¿Lo notas en <mark id="m13">tu carro</mark>?</div><div class="sub" id="c13-sub">Te leo en los comentarios.</div>`),
+      fn: function (t, e) {
+        const cb = e.c["c13-boc"];
+        persona("s13-dani", t, { x: 320, y: 1410, brazo: [[e.t0 + 0.2, "saluda"], [e.t0 + 2.2, "hombros"], [cb, "senala"]], ojos: [[0, "normal"], [cb, "felices"]], boca: [[0, "sonrisa"], [cb, "grande"]], fase: 1 });
+        T("s13-carro", 710, 1410, { s: 1.12 });
+        marca("m13", t, e.b + 0.9); sube("c13-sub", t, cb - 0.2);
+        if (pop("s13-boc", t, cb, 760, 900) >= 0) for (let i = 0; i < 3; i++) attr("s13-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - cb) * 8 - i * 0.9))).toFixed(1));
       } },
   ];
 }

@@ -12,7 +12,7 @@ Nombre de trabajo: **Cuánto Vale Tu Hora**. Alternativas: «El Precio del Tiemp
 4. **Medidas.** Nominal y real, bruto y neto, media y mediana, cifra absoluta y tasa: siempre se dice cuál. La metodología de «horas» está en `docs/metodologia-horas.md`.
 5. **Casos judiciales.** No son parte de esta serie. Si alguna vez se tratan: semáforo (S firme, R recurrible, J juicio oral, I investigación, T testigo, ? sin resolución) y nunca se nombra a nadie sin resolución.
 6. **Originalidad (política de YouTube).** Un guion distinto por vídeo, nunca una plantilla con huecos. Imágenes ajustadas a cada frase. Menos vídeos pero distintos. Guarda en `archive/<id>/` el guion, las fuentes, los datos crudos y las notas de edición por si hay apelación. Marca «contenido alterado o sintético» cuando corresponda.
-7. **Anonimato.** No uses la voz de Bruno ni su email, nombre, foto ni dispositivos en metadatos o ficheros. Evita sus muletillas y su retórica reconocible («a ver…», frase-espejo). La cuenta de Google es nueva y separada.
+7. **Anonimato.** No uses la voz grabada de Bruno ni su email, nombre, foto ni dispositivos en metadatos o ficheros. La cuenta de Google es nueva y separada. El **texto** sí se escribe con su voz (skill `clon-bruno` al 100 %, decisión de Bruno del 10-11-2026): natural, de persona normal y corriente. Sus opiniones políticas no entran (regla 3).
 8. **No copiar.** Ni *Aquí no hay quien viva* / *La que se avecina* (comunidad de vecinos y conserje), ni Ecomonos (plátanos), Barrio Sauna, Antihacienda o personajes con derechos. La baraja se diseña desde cero y el «rey» de la baraja no representa a ningún monarca real.
 9. **Solo gratis.** Ninguna API, app ni servicio de pago (ni ElevenLabs ni similares, ni planes de prueba que luego cobren). Voces con modelos libres en local (Kokoro, Piper), gráficos y personajes con código, datos de APIs públicas gratuitas. Si algo solo existe de pago, se dice y se busca la alternativa gratuita.
 10. **Lo que hace una persona.** Crear la cuenta y el canal, el consentimiento OAuth, la auditoría de la API, AdSense y la primera subida son pasos humanos (`docs/setup-humano.md`). Hasta pasar la auditoría la subida es manual con publicación programada en Studio.
@@ -24,9 +24,11 @@ Nombre de trabajo: **Cuánto Vale Tu Hora**. Alternativas: «El Precio del Tiemp
 - Los gráficos de datos se generan con código a partir de ficheros oficiales, no con IA de imagen.
 - **El vídeo cuenta lo que dice la voz.** Es una narración: cada frase tiene su escena con acción (no una diapositiva con audio encima). Referencias visuales de Bruno en `archive/referencias/`. Subtítulo arriba, palabra a palabra; una cifra grande por plano.
 - **Voz en español de España**, nunca con acento de América. Bruno decide las voces de oído: se le mandan muestras cortas antes de renderizar.
-- **Texto humano:** conversación natural, con interjecciones y ritmo irregular, pregunta directa al espectador al empezar y pregunta abierta al final.
+- **Texto humano:** conversación natural, con interjecciones y ritmo irregular. Empieza con una pregunta llamativa y directa al espectador («¿llenar el carro te cuesta más o menos que hace 10 años?») y acaba con otra abierta.
+- **Ritmo tranquilo y poca carga:** una idea por escena, pocos elementos, y cada dato se queda en pantalla el tiempo suficiente para leerlo. Mejor 70 segundos claros que 50 con prisa.
+- **Estilo de imagen:** limpio y sencillo como las referencias de `archive/referencias/` (tarjeta blanca con etiqueta y titular, subtítulo grande de 2-3 palabras, barra de progreso, personaje sencillo en un sitio fijo).
 - **Sonido:** música y efectos que acompañen cada acción de la historia.
-- **De uno en uno:** hasta que un estilo esté bien (ahora, el collage), no se producen los demás.
+- **De uno en uno:** hasta que un vídeo esté bien (ahora, T1 en estilo limpio), no se producen los demás. Estado y siguiente paso: `docs/ESTADO.md`.
 - Estructura del repo, agentes y contratos: `docs/agentes-y-pipeline.md`.
 - Identidad visual: `docs/identidad-visual.md`. Test de estilos: `docs/piloto-test.md`. Backlog: `docs/backlog-videos.md`.
 - Contexto previo e investigación: carpeta `research/` (los estados judiciales y cifras hay que re-verificar en la fuente antes de usar).

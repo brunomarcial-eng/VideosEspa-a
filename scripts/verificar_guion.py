@@ -7,9 +7,9 @@ Comprueba un videos/<id>/guion.json y, si pasa, escribe videos/<id>/guion.md:
      los números de la lista «no_dato», como «16 a 64 años»).
   3. Ninguna cifra en estado P o X.
   4. Todo plano con cifras lleva sello de fuente.
-  5. Nada de 2020, ni muletillas ni nombres vetados, ni atribución de causas.
+  5. Nada de 2020, ni nombres vetados, ni partidos, ni atribución de causas.
   6. Cierre «¿Mejora, empeora o depende?» y al menos tres años en pantalla.
-  7. Duración estimada de la voz entre 45 y 60 s.
+  7. Duración estimada de la voz entre 45 y 85 s (ritmo tranquilo: cada dato necesita su tiempo).
 
 Uso: python3 scripts/verificar_guion.py videos/t1/guion.json [--ritmo 2.6]
 Sale con código 1 si algo falla.
@@ -25,7 +25,6 @@ PAUSA_TURNO = 0.35  # segundos de pausa cuando cambia quien habla
 
 VETADO = {
     "2020": "año excluido",
-    "a ver": "muletilla reconocible",
     "bruno": "anonimato", "marcial": "anonimato",
     "psoe": "partido", "pp ": "partido", "vox": "partido", "sumar": "partido", "podemos": "partido",
     "gobierno": "atribución política", "gracias a": "atribución de causa",
@@ -157,8 +156,8 @@ def verificar(ruta_guion, ritmo=RITMO):
         d = palabras_habladas(b["voz"]) / ritmo
         tiempos.append((t, t + d))
         t += d
-    if not 45 <= t <= 60:
-        fallos.append(f"duración estimada {t:.0f} s (debe estar entre 45 y 60)")
+    if not 45 <= t <= 85:
+        fallos.append(f"duración estimada {t:.0f} s (debe estar entre 45 y 85)")
 
     return g, fallos, avisos, filas_cifras, tiempos, t, anyos
 

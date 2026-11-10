@@ -1,25 +1,25 @@
-# Guion T1 — ¿Te cunde el carro igual que antes?
+# Guion T1 — ¿Llenar el carro te cuesta más o menos que hace 10 años?
 
-Pregunta: ¿Cuántas horas de trabajo cuesta la compra de comida de un mes, en 2016, 2019 y hoy?  
+Pregunta: ¿Cuántas horas de trabajo cuesta la compra de comida de un mes, en 2016, 2019 y con el último dato?  
 Datos: `data/clean/t1_cesta_horas.json` · 2026-11-09 (Paso 1 aprobado: cesta fija EPF 2025, neto y mediana, sin 2007)  
-Duración estimada de la voz: **55 s** (a 2.6 palabras/s) · Años en pantalla: 2016, 2018, 2019, 2024  
+Duración estimada de la voz: **69 s** (a 2.6 palabras/s) · Años en pantalla: 2016, 2018, 2019, 2024  
 Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La columna «Imagen» es la idea del plano; cada estilo la dibuja a su manera en el Paso 3.
 
 | # | Tiempo | Quién | Voz | En pantalla | Sello de fuente | Imagen |
 |---|---|---|---|---|---|---|
-| 1 | 0-5 s | narrador (voz) | Oye, una pregunta: ¿a ti el carro te cunde igual que antes? | (subtítulo) | — | Pasillo del súper. Entra el carro lleno; Dani asoma por detrás y mira a cámara. |
-| 2 | 5-9 s | narrador (voz) | Vamos a comprobarlo. Pero sin euros, ¿eh? En horas de curro. | € → horas de trabajo | — | Una moneda de euro gigante cae, gira y se convierte en una moneda-reloj. |
-| 3 | 9-12 s | narrador (voz) | Este es Dani. Año 2016. | DANI · 2016 | — | Dani, joven y sin barba, saluda. Una hoja de calendario con 2016 se pega a su lado. |
-| 4 | 12-16 s | narrador (voz) | Hace la compra del mes: pan, leche, huevos, aceite… lo de siempre. | La compra del mes <br>_Comida y bebida sin alcohol · gasto medio por persona_ | — | El pan, la leche, los huevos y el aceite caen al carro, cada uno cuando se nombra. |
-| 5 | 16-20 s | narrador (voz) | ¿Y cuánto le cuesta? 12,8 horas de trabajo. | 2016 · 12,8 h de trabajo | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | La caja registradora no marca euros: cuenta horas hasta 12,8. Dani paga con monedas-reloj y sale el ticket. |
-| 6 | 20-25 s | narrador (voz) | Ahora, el mismo Dani, con el último dato oficial. Mismo carro, ¿vale? | 2024 · último dato oficial de salarios | — | Vuelan las hojas del calendario hasta 2024. A Dani le sale barba. Entra el mismo carro, idéntico. |
-| 7 | 25-27 s | narrador (voz) | Pues… 14,5 horas. | 2016 · 12,8 h → 2024 · 14,5 h | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | La misma caja: el contador arranca en 12,8 y sigue subiendo hasta 14,5. Dani se queda con la boca abierta. |
-| 8 | 27-32 s | narrador (voz) | Y ojo, que Dani ahora cobra más: un 23 % más por hora, ya limpio. | Sueldo neto por hora (mediana) +23 % | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Su nómina: la barra del sueldo por hora crece un 23 %. Dani, tan contento. |
-| 9 | 32-37 s | narrador (voz) | Lo que pasa es que la compra, la misma, ha subido un 40. | Sueldo +23 % · La misma compra +40 % | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Al lado de la nómina sube el carro sobre su barra: la compra crece un 40 % y deja atrás al sueldo. Dani mira hacia arriba. |
-| 10 | 37-43 s | narrador (voz) | ¿Y sabes qué? En 2019 todavía le costaba 12,6. El salto vino después. | 2016 · 12,8 h   2019 · 12,6 h   2024 · 14,5 h | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Tres tickets tendidos de una cuerda: 2016 y 2019, igual de largos; el de 2024 se desenrolla y pasa la marca. |
-| 11 | 43-46 s | narrador (voz) | Entonces, ¿qué? ¿Mejora, empeora o depende? | MEJORA · EMPEORA · DEPENDE | — | Tres sellos de caucho sobre el mostrador; aparece cada uno cuando se nombra. |
-| 12 | 46-51 s | narrador (voz) | Esta vez, empeora. Casi dos horas más de curro al mes… por lo mismo. | EMPEORA · +1,7 h al mes <br>_Con 2016, 2018 o 2019 · con sueldo medio o mediano, bruto o neto_ | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | El sello de EMPEORA cae de golpe sobre el ticket largo y deja la marca. |
-| 13 | 51-55 s | narrador (voz) | ¿Y a ti? ¿Te cunde más o menos? Te leo. | ¿Y a ti? | — | Dani mira a cámara y aparece un bocadillo de comentario vacío, esperando respuesta. |
+| 1 | 0-8 s | narrador (voz) | A ver, pregunta rápida. Llenar el carro de la compra… ¿te cuesta hoy más, o menos, que hace diez años? | LA PREGUNTA · ¿Más o menos que hace 10 años? | — | El súper. Dani entra empujando el carro, se para y mira a cámara. |
+| 2 | 8-14 s | narrador (voz) | Y ojo, que no te lo cuento en euros. Te lo cuento en horas de tu trabajo. | LA REGLA · No en euros: en horas de trabajo | — | Una moneda de euro se da la vuelta y se convierte en un reloj. |
+| 3 | 14-18 s | narrador (voz) | Este es Dani. Cobra un sueldo normal, de los del medio. | EL PROTAGONISTA · Dani, sueldo mediano · La mitad cobra más y la otra mitad, menos | — | Dani en 2016 saluda. Detrás, una fila de gente: él está justo en el medio. |
+| 4 | 18-27 s | narrador (voz) | En 2016, la compra del mes le costaba 12,8 horas de trabajo. Día y medio largo, para entendernos. | 2016 · 12,8 horas de trabajo · la compra del mes · día y medio largo (jornadas de 8 h) <br>_Compra del mes: comida y bebida sin alcohol, gasto medio por persona_ | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | En la caja, los productos pasan uno a uno y la pantalla cuenta horas hasta 12,8. Después, dos jornadas: una entera y otra a medias. |
+| 5 | 27-31 s | narrador (voz) | Ahora, avance rápido. Mismo Dani, misma compra, último dato oficial. | AVANCE RÁPIDO · 2024, último dato oficial de salarios | — | Las hojas del calendario vuelan de 2016 a 2024. A Dani le cambia la camiseta de ocre a azul y le sale barba. |
+| 6 | 31-34 s | narrador (voz) | ¿Cuánto? 14,5 horas. Casi dos días. | 2024 · 14,5 horas de trabajo · casi dos jornadas · en 2016: 12,8 h | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | La misma caja: la pantalla arranca en 12,8 y sigue subiendo hasta 14,5. Dani abre los ojos como platos. |
+| 7 | 34-40 s | narrador (voz) | Y eso que Dani ahora cobra más, ¿eh? Un 23 % más por hora, ya limpio. | SU SUELDO · +23 % por hora · neto, sueldo mediano, 2016 → 2024 | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Dani enseña su nómina, contento. La barra del sueldo crece. |
+| 8 | 40-43 s | narrador (voz) | ¿El problema? Que la misma compra ha subido un 40. | Sueldo +23 % · La misma compra +40 % | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Dos barras, una al lado de la otra: la de la compra sube más que la del sueldo. Dani mira hacia arriba. |
+| 9 | 43-51 s | narrador (voz) | ¿Y fue poco a poco? Qué va. En 2019 le costaba 12,6. El salto vino después. | AÑO A AÑO · 2016: 12,8 h · 2019: 12,6 h · 2024: 14,5 h | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Tres barras que aparecen una a una: 2016 y 2019 casi iguales; la de 2024 da el salto. |
+| 10 | 51-54 s | narrador (voz) | Entonces, ¿mejora, empeora o depende? Esta vez, empeora. | EL VEREDICTO · Mejora · Empeora · Depende | — | Tres opciones en la tarjeta; la marca cae sobre EMPEORA. |
+| 11 | 54-59 s | narrador (voz) | Casi dos horas más de trabajo cada mes… para llevarte lo mismo. | +1,7 horas al mes · por la misma compra <br>_Con 2016, 2018 o 2019 · con sueldo medio o mediano, bruto o neto_ | CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat | Dani con el mismo carro; a su lado se apilan dos relojes más. |
+| 12 | 59-63 s | narrador (voz) | El sueldo sube por la escalera. La compra, en ascensor. | EN RESUMEN · El sueldo, por la escalera. La compra, en ascensor. | — | Dani sube peldaño a peldaño; a su lado, el carro sube en un ascensor y le adelanta. |
+| 13 | 63-69 s | narrador (voz) | ¿Y tú? ¿Lo notas en tu carro… o soy yo, que me fijo mucho? Te leo. | TE TOCA · ¿Lo notas en tu carro? | — | Dani mira a cámara y aparece un bocadillo de comentario. |
 
 **Cierre:** empeora. La misma compra subió un 40 % y el sueldo neto por hora mediano un 23 % entre 2016 y 2024: 1,7 horas más de trabajo al mes. Ocurre con cualquier año base (2016, 2018, 2019) y con media, mediana, bruto o neto.
 
@@ -34,5 +34,7 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 40 | 40 | C | `var_pct(filas[anyo=2016].cesta_euros_mes, filas[anyo=2024].cesta_euros_mes)` |
 | 1,7 | 1,7 | C | `resta(filas[anyo=2016].horas_neto_mediana, filas[anyo=2024].horas_neto_mediana)` |
 | Casi dos horas | 1.7 (dicho «Casi dos horas» ≈ 2) | C | `resta(filas[anyo=2016].horas_neto_mediana, filas[anyo=2024].horas_neto_mediana)` |
+| Día y medio largo | 1.6 (dicho «Día y medio largo» ≈ 1.5) | C | `filas[anyo=2016].horas_neto_mediana` |
+| Casi dos días | 1.8 (dicho «Casi dos días» ≈ 2) | C | `filas[anyo=2024].horas_neto_mediana` |
 
 Generado por `scripts/verificar_guion.py`. No editar a mano: se edita `guion.json` y se vuelve a ejecutar.
