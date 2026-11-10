@@ -34,7 +34,9 @@ Versiones rechazadas: v1 (tarjetas y bustos, tres estilos), v2 collage (`videos/
 ## 4. Lo que se hizo en esta sesión
 - `diseno/tokens.json` no estaba en git (lo ignoraba la regla `token*.json`) y el render fallaba: se reconstruyó desde `diseno/contraste.md` y se versiona.
 - Estilo limpio: decorado más ancho que el encuadre (sin bordes negros al hacer zoom), subtítulo bajo los pies de Dani (no le tapa), ancho máximo del subtítulo para no meterse bajo los botones de Shorts, gráfico de barras que cabe en la tarjeta, la pantalla de la caja solo enseña cifras donde toca (antes dependía del orden de render), menos rótulos sueltos.
-- `scripts/voces.py`: motor `qwen-clon`; Whisper escucha cada toma (palabras que faltan, repeticiones, cifras, ritmo) y repite con otra semilla; alinea cada palabra con lo que oye Whisper; caché de tomas por línea en `videos/t1/audio/tomas/` con `registro.txt`.
+- `scripts/voces.py`: motor `qwen-clon`; Whisper escucha cada toma (palabras que faltan, repeticiones, cifras, ritmo y pausa tras «…») y repite con otra semilla; alinea cada palabra con lo que oye Whisper; caché de tomas por línea en `videos/t1/audio/tomas/` con `registro.txt`.
+- Voz de T1 generada: las 13 líneas válidas, 69 s en total. La línea 11 («cada mes… para llevarte lo mismo») no hacía la pausa con ninguna semilla: se dice en dos trozos unidos por una pausa de 0,45 s.
+- Primer render limpio: `videos/t1/render/t1-limpio.mp4` (69 s, −14,7 LUFS). Revisado a un fotograma por segundo antes de enviarlo.
 
 ## 5. Voces: lo probado
 | Motor | Licencia | Resultado |
@@ -65,5 +67,6 @@ UV_HTTP_TIMEOUT=300 uv pip install --python ~/.venv-qwen/bin/python qwen-tts fas
 - El verificador (`scripts/verificar_guion.py`) exige fuente en cada plano con cifras y un máximo de 2 cifras por imagen (3 en gráficos).
 - «Hoy» es 2024, el último año con salarios del INE: decirlo siempre en pantalla.
 - Nada de commits con `.wav` de `videos/*/audio/` (están en `.gitignore`).
+- Qwen3-TTS: con «…» a mitad de frase a veces no hace pausa (`voces.py` lo detecta y parte la frase). Sin tope, una toma puede desbocarse hasta 2048 pasos (casi 3 minutos de audio): `voces.py` pone `max_new_tokens` según el largo del texto.
 - Cualquier estado que una escena deje en un elemento compartido (como la pantalla de la caja) hay que fijarlo en cada fotograma: el vídeo se renderiza en cuatro partes y cada una empieza en un sitio distinto.
 - La clave de ElevenLabs sigue guardada en el entorno y no se usa: Bruno puede borrarla en los ajustes del entorno.
