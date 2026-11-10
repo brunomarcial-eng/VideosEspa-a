@@ -2,16 +2,26 @@
 
 Todo es gratuito y local: sin APIs de pago. Los personajes, gráficos y efectos se generan con código; las voces, con modelos libres que permiten uso comercial.
 
-## Flujo
+## Flujo (vídeo narrado, estilo collage)
 ```
 1. Datos        python3 scripts/descargar_datos.py && python3 scripts/calcular_t1_t2.py
 2. Guion        videos/<id>/guion.json  ->  python3 scripts/verificar_guion.py videos/<id>/guion.json
-3. Dirección    videos/<id>/direccion.json (tarjeta y actuación por plano)
+3. Historia     videos/<id>/historia.json (momentos clave anclados a palabras) y escenas.mjs (una escena por frase)
 4. Voz          ~/.venv-voces/bin/python scripts/voces.py videos/<id>/guion.json
-5. Efectos      python3 scripts/mezcla.py videos/<id>
-6. Vídeo        node scripts/render_video.mjs <id> A|B|C          (un fotograma: --fotograma 12.5)
+5. Sonido       python3 scripts/sonido.py videos/<id>        (música, efectos y tiempos de los momentos)
+6. Revisión     node scripts/render_historia.mjs <id> --hoja <carpeta>   (dos fotogramas por plano)
+7. Vídeo        node scripts/render_historia.mjs <id>        (cuatro partes en paralelo)
 ```
-Salida: `videos/<id>/render/<id>-<estilo>.mp4` (1080×1920, 30 fps, audio a −14 LUFS).
+Salida: `videos/<id>/render/<id>-collage.mp4` (1080×1920, 30 fps, audio a −14 LUFS).
+
+**La regla de oro:** el vídeo cuenta lo que dice la voz. Cada frase tiene su escena y las acciones ocurren en la palabra exacta (el pan cae al decir «pan»). Referencias visuales en `archive/referencias/`; storyboard de ejemplo en `videos/t1/storyboard.md`.
+
+Piezas reutilizables:
+- `diseno/atrezo.mjs`: decorados (súper, mostrador, papel, fondo oscuro) y objetos de papel (carro, caja registradora, moneda-reloj, calendario, nómina, tickets, sellos, fichas de cifra).
+- `diseno/historia_runtime.js`: utilidades de animación (`pop`, `caer`, `ir`, `actor`), subtítulos palabra a palabra y sello de fuente.
+- `scripts/sonido.py`: un efecto por tipo de acción y la base musical, todo sintetizado.
+
+El flujo anterior (diálogo de dos bustos, `scripts/render_video.mjs` y `diseno/video.mjs`) queda como histórico: no contaba la historia con la imagen.
 
 ## Controles automáticos
 | Paso | Qué comprueba | Si falla |
@@ -21,8 +31,10 @@ Salida: `videos/<id>/render/<id>-<estilo>.mp4` (1080×1920, 30 fps, audio a −1
 | `voces.py` | Whisper transcribe cada frase y debe oír cada cifra del guion | Sale con error |
 
 ## Voces
-- **Kokoro-82M** (Apache-2.0): `ef_dora` (mujer), `em_alex` y `em_santa` (hombre). Es la opción por defecto.
-- **Piper** (`es_ES-davefx-medium`, CC0; `es_ES-sharvard-medium`, CC BY 3.0 → citar en la descripción).
+- **Piper `es_ES-davefx-medium`** (CC0): voz de España, la que Bruno dio por buena. Hace de narrador sin retocar el tono.
+- Piper `es_ES-sharvard-medium` (CC BY 3.0 → citar en la descripción): provisional para voz de mujer.
+- **Kokoro, descartado:** sus voces en español suenan a América.
+- En pruebas: Chatterbox (MIT, local) clonando el timbre de davefx para ganar naturalidad. Solo se usará si Bruno lo aprueba de oído.
 - La misma persona en dos épocas usa la misma voz: la de antes, tono ×1,05 y algo más rápida; la de hoy, tono ×0,97. Configuración en `diseno/voces.json`.
 - Las cifras se pasan a palabras antes de sintetizar («12,8» → «doce coma ocho»).
 

@@ -78,7 +78,7 @@ function subtitulos(t) {
   const el = $("cap");
   let g = -1;
   for (let i = 0; i < CAPS.length; i++) if (t >= CAPS[i].t0 - 0.1) g = i;
-  if (g < 0 || t > CAPS[g].t1 + 0.7) { if (capPrev !== "") { el.innerHTML = ""; capPrev = ""; } el.style.display = "none"; return; }
+  if (g < 0 || t > CAPS[g].t1 + 0.3) { if (capPrev !== "") { el.innerHTML = ""; capPrev = ""; } el.style.display = "none"; return; }
   const c = CAPS[g];
   let actual = -1;
   for (let i = 0; i < c.w.length; i++) if (t >= c.w[i].t0 - 0.03) actual = i;
