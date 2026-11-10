@@ -119,13 +119,15 @@ export function bocadillo(id) {
 }
 
 // ------------------------------------------------------------------ decorados
+// Pared y suelo, más anchos que el encuadre para que la cámara nunca enseñe el borde.
+const FONDO = `<rect x="-300" y="-300" width="1680" height="1572" fill="url(#g-pared)"/>
+    <rect x="-300" y="1270" width="1680" height="900" fill="${C.suelo}"/><rect x="-300" y="1262" width="1680" height="14" fill="${C.zocalo}"/>`;
 // El súper: una estantería a la izquierda, la caja a la derecha y poco más.
 export function setSuper() {
   const prod = (x, base, w, h, col, tapa) => `<rect x="${x}" y="${base - h}" width="${w}" height="${h}" rx="9" fill="${col}"/>${tapa ? `<rect x="${x + w * 0.3}" y="${base - h - 14}" width="${w * 0.4}" height="16" rx="5" fill="${C.gris}" opacity=".55"/>` : ""}`;
   return `<g id="set-super">
-    <rect width="1080" height="1272" fill="url(#g-pared)"/>
-    <rect y="1270" width="1080" height="650" fill="${C.suelo}"/><rect y="1262" width="1080" height="14" fill="${C.zocalo}"/>
-    <path d="M-40 1920 L300 1276 M1120 1920 L780 1276 M540 1920 V1276" stroke="${C.zocalo}" stroke-width="5" opacity=".55"/>
+    ${FONDO}
+    <path d="M-146 2120 L300 1276 M1226 2120 L780 1276 M540 2120 V1276" stroke="${C.zocalo}" stroke-width="5" opacity=".55"/>
     <rect x="22" y="700" width="330" height="566" rx="16" fill="#8FA893"/><rect x="38" y="716" width="298" height="534" rx="8" fill="#B4C7B6"/>
     ${prod(56, 884, 74, 112, "#F1D9A8")}${prod(146, 884, 46, 126, "#DCE7DD", 1)}${prod(210, 884, 100, 94, "#E9C4A6")}
     ${prod(58, 1064, 52, 118, "#F6EBD6", 1)}${prod(126, 1064, 92, 100, "#EAD7B7")}${prod(236, 1064, 66, 124, "#DCE7DD")}
@@ -135,13 +137,12 @@ export function setSuper() {
     <rect x="872" y="792" width="200" height="150" rx="20" fill="${C.pantalon}"/><rect x="888" y="808" width="168" height="100" rx="12" fill="#111922"/>
     <text id="caja-num" x="972" y="876" text-anchor="middle" font-family="Cap" font-weight="800" font-size="50" fill="${C.blanco}"></text>
     <text x="972" y="930" text-anchor="middle" font-family="Cap" font-weight="800" font-size="17" fill="${C.grisClaro}" letter-spacing="3">HORAS</text>
-    <rect x="706" y="1080" width="400" height="190" fill="${C.madera}"/><rect x="690" y="1046" width="420" height="38" rx="12" fill="${C.maderaClara}"/>
+    <rect x="706" y="1080" width="700" height="190" fill="${C.madera}"/><rect x="690" y="1046" width="720" height="38" rx="12" fill="${C.maderaClara}"/>
     <rect x="700" y="1034" width="236" height="18" rx="9" fill="#3A4654"/>
   </g>`;
 }
 export function setLiso() {
-  return `<g id="set-liso"><rect width="1080" height="1272" fill="url(#g-pared)"/><rect y="1270" width="1080" height="650" fill="${C.suelo}"/>
-    <rect y="1262" width="1080" height="14" fill="${C.zocalo}"/></g>`;
+  return `<g id="set-liso">${FONDO}</g>`;
 }
 
 // ------------------------------------------------------------------ tarjetas (HTML)
@@ -172,10 +173,10 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#111}
 .tit{font:800 72px/1.14 Cap;letter-spacing:-.02em}
 .tit mark,.sub mark{background:linear-gradient(${C.marcador},${C.marcador}) no-repeat 0 82%/var(--m,0%) 44%;color:inherit;padding:0 8px;margin:0 -8px}
 .sub{font:600 37px/1.3 Cap;color:${C.gris};margin-top:14px}
-.fuente{font:600 24px Cap;color:#8A8378;margin-top:20px;display:flex;gap:10px;align-items:center}
+.fuente{font:600 26px Cap;color:#7A7368;margin-top:18px;display:flex;gap:10px;align-items:center}
 .fuente i{width:13px;height:13px;border-radius:50%;background:${C.rojo};flex:none}
 .fila{display:flex;align-items:center;gap:26px}
-.num{font:800 148px/1 Cap;letter-spacing:-.04em}
+.num{font:800 148px/1 Cap;letter-spacing:-.04em;white-space:nowrap}
 .t-pasado{color:#8A6316}.t-hoy{color:${C.azul}}
 .uni{font:800 46px/1.1 Cap}.uni small{display:block;font:600 32px Cap;color:${C.gris};margin-top:6px}
 .jor{display:flex;align-items:center;gap:12px;margin-top:18px;height:56px}
@@ -189,12 +190,12 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#111}
 .vs .v{font:800 84px/1 Cap;letter-spacing:-.03em}
 .vs .n{font:600 32px Cap;color:${C.gris};margin-top:10px}
 .vs .contra{width:86px;height:86px;border-radius:50%;background:${C.tinta};color:#fff;font:800 32px/86px Cap;text-align:center;flex:none;margin-bottom:120px}
-.b3{display:flex;align-items:flex-end;gap:34px;height:330px;position:relative;margin-top:8px;border-bottom:6px solid ${C.tinta}}
+.b3{display:flex;align-items:flex-end;gap:34px;height:230px;position:relative;margin-top:4px;border-bottom:6px solid ${C.tinta}}
 .b3 .col{flex:1;text-align:center;position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end}
 .b3 .barra{border-radius:16px 16px 0 0;height:0}
-.b3 .v{font:800 50px Cap;letter-spacing:-.02em;margin-bottom:8px}
+.b3 .v{font:800 48px/1 Cap;letter-spacing:-.02em;margin-bottom:8px}
 .b3 .ref{position:absolute;left:0;right:0;border-top:5px dashed ${C.grisClaro}}
-.b3a{display:flex;gap:34px;margin-top:10px}.b3a div{flex:1;text-align:center;font:800 40px Cap}
+.b3a{display:flex;gap:34px;margin-top:8px}.b3a div{flex:1;text-align:center;font:800 38px/1.1 Cap}
 .ops{margin-top:4px}
 .op{display:flex;align-items:center;gap:22px;font:800 62px Cap;padding:13px 0;border-top:3px solid #EFE7D8}
 .op:first-child{border-top:0}
@@ -202,9 +203,10 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#111}
 .op.si i{background:${C.tinta};border-color:${C.tinta}}
 .op.si i::after{content:"";position:absolute;left:13px;top:5px;width:13px;height:24px;border:solid #fff;border-width:0 6px 6px 0;transform:rotate(42deg)}
 .op.no{color:#B9BEC4}
-.nota{font:600 27px/1.35 Cap;color:${C.gris};margin-top:12px}
-#sub{position:absolute;left:40px;width:1000px;top:1148px;text-align:center;font:800 100px/1.08 Cap;letter-spacing:-.02em;color:#fff;
+.nota{font:600 28px/1.35 Cap;color:${C.gris};margin-top:12px}
+#sub{position:absolute;left:0;width:1080px;top:1404px;text-align:center;font:800 94px/1.08 Cap;letter-spacing:-.02em;color:#fff;white-space:nowrap;
   -webkit-text-stroke:16px ${C.tinta};paint-order:stroke fill;text-shadow:0 8px 0 rgba(31,42,55,.35);display:none}
+#sub span{display:inline-block}
 .rot{font-family:Cap;font-weight:800}`;
 
 const DEFS = `<linearGradient id="g-pared" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${C.pared1}"/><stop offset="1" stop-color="${C.pared2}"/></linearGradient>`;
@@ -257,7 +259,7 @@ export function construirLimpio({ guion, linea, cues, escenas, D }) {
 ${escenas.map((e) => `<g id="esc-${e.n}" style="display:none">${e.svg}</g>`).join("\n")}</g></svg>
 <div id="prog">${caps.map((c) => `<div style="--f:${(c.t1 - c.t0).toFixed(2)}"><i></i></div>`).join("")}</div>
 ${escenas.map((e) => e.tarjeta).join("\n")}
-<div id="sub"></div></div>
+<div id="sub"><span id="sub-t"></span></div></div>
 <script>
 const D = ${JSON.stringify(D)};
 const CUES = ${JSON.stringify(cues)};

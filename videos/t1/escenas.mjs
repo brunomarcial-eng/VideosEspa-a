@@ -57,9 +57,7 @@ export function escenas(D) {
     // 3 · «Este es Dani. Cobra un sueldo normal, de los del medio.»
     { n: 3, set: "liso",
       svg: `${ALT.map((h, i) => `<g id="s3-b${i}"><rect x="-52" y="${-h}" width="104" height="${h}" rx="14" fill="${i === 3 ? C.ocre : "#DCE1E5"}"/></g>`).join("")}
-        ${ALT.map((h, i) => (i === 3 ? "" : peon("s3-p" + i, 120 + i * 140, 1410 - h))).join("")}${persona("s3-dani", "antes")}
-        <text x="70" y="1490" class="rot" font-size="38" fill="${C.gris}">← cobran menos</text>
-        <text x="1010" y="1490" class="rot" font-size="38" fill="${C.gris}" text-anchor="end">cobran más →</text>`,
+        ${ALT.map((h, i) => (i === 3 ? "" : peon("s3-p" + i, 120 + i * 140, 1410 - h))).join("")}${persona("s3-dani", "antes")}`,
       tarjeta: tarjeta(3, "El protagonista", `<div class="tit">Dani cobra el <mark id="m3">sueldo mediano</mark></div>
         <div class="sub" id="c3-sub">La mitad cobra más que él. La otra mitad, menos.</div>`),
       fn: function (t, e) {
@@ -131,7 +129,7 @@ export function escenas(D) {
     // 7 · «Y eso que Dani ahora cobra más, ¿eh? Un 23 % más por hora, ya limpio.»
     { n: 7, set: "super",
       svg: `${persona("s7-dani", "hoy")}${nomina("s7-nomina")}`,
-      tarjeta: tarjeta(7, "Su sueldo", `<div class="fila"><div class="num t-hoy" id="c7-num"></div><div class="uni">más por hora<small>neto · sueldo mediano · 2016 → 2024</small></div></div>`, { fuente: FUENTE }),
+      tarjeta: tarjeta(7, "Su sueldo", `<div class="fila"><div class="num t-hoy" id="c7-num" style="min-width:400px"></div><div class="uni">más por hora<small>neto · sueldo mediano · 2016 → 2024</small></div></div>`, { fuente: FUENTE }),
       fn: function (t, e) {
         const cn = e.c["c7-nomina"], cs = e.c["c7-sube"], cd = e.c["c7-dato"];
         persona("s7-dani", t, { x: 440, y: 1410, brazo: [[cn, "piensa"]], ojos: [[0, "normal"], [cn + 0.2, "felices"]], boca: [[0, "sonrisa"], [cn + 0.2, "grande"]], fase: 1 });
@@ -161,7 +159,7 @@ export function escenas(D) {
         ${[0, 1, 2].map((i) => `<div class="col"><div class="v ${i < 2 ? "t-pasado" : "t-hoy"}" id="c9-v${i}"></div><div class="barra" id="c9-b${i}" style="background:${i < 2 ? C.ocre : C.azul}"></div></div>`).join("")}</div>
         <div class="b3a"><div>2016</div><div>2019</div><div>2024</div></div>`, { fuente: FUENTE }),
       fn: function (t, e) {
-        const c = e.c, px = 190 / D.h2024n;
+        const c = e.c, px = 160 / D.h2024n;
         persona("s9-dani", t, { x: 330, y: 1410, brazo: [[c["c9-b19"], "piensa"], [c["c9-b24"], "arriba"]], ojos: [[0, "normal"], [c["c9-b24"] + 0.2, "grandes"]],
           boca: [[0, "sonrisa"], [c["c9-b24"] + 0.2, "o"]], fase: 1 });
         T("s9-carro", 720, 1410, { s: 1.12 });
@@ -202,9 +200,7 @@ export function escenas(D) {
       svg: `${[0, 1, 2, 3, 4].map((i) => `<rect x="${110 + i * 80}" y="${1410 - (i + 1) * 46}" width="${400 - i * 80}" height="46" fill="${i % 2 ? "#D9BC8F" : "#CFAE7C"}"/>`).join("")}
         <rect x="640" y="900" width="280" height="510" rx="18" fill="#E3E8EB" stroke="#B4BEC5" stroke-width="6"/><path d="M780 900 V1180" stroke="#B4BEC5" stroke-width="6"/>
         <g id="s12-cabina"><rect x="-122" y="-232" width="244" height="232" rx="14" fill="${C.blanco}" stroke="#9AA6AE" stroke-width="6"/><g transform="translate(6 -10) scale(.6)">${carro("s12-carro").replace(/<ellipse[^>]*opacity="\.16"\/>/, "")}</g></g>
-        ${persona("s12-dani", "hoy")}
-        <text x="310" y="1500" class="rot" font-size="44" fill="${C.gris}" text-anchor="middle">el sueldo</text>
-        <text x="780" y="1500" class="rot" font-size="44" fill="${C.gris}" text-anchor="middle">la compra</text>`,
+        ${persona("s12-dani", "hoy")}`,
       tarjeta: tarjeta(12, "En resumen", `<div class="tit">El sueldo, por la <mark id="m12a">escalera</mark>.<br>La compra, en <mark id="m12b">ascensor</mark>.</div>`),
       fn: function (t, e) {
         const c1 = e.c["c12-esc"], c2 = e.c["c12-esc2"], ca = e.c["c12-asc"], P = [c1, (c1 + c2) / 2, c2];
@@ -224,7 +220,7 @@ export function escenas(D) {
         persona("s13-dani", t, { x: 320, y: 1410, brazo: [[e.t0 + 0.2, "saluda"], [e.t0 + 2.2, "hombros"], [cb, "senala"]], ojos: [[0, "normal"], [cb, "felices"]], boca: [[0, "sonrisa"], [cb, "grande"]], fase: 1 });
         T("s13-carro", 710, 1410, { s: 1.12 });
         marca("m13", t, e.b + 0.9); sube("c13-sub", t, cb - 0.2);
-        if (pop("s13-boc", t, cb, 760, 900) >= 0) for (let i = 0; i < 3; i++) attr("s13-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - cb) * 8 - i * 0.9))).toFixed(1));
+        if (pop("s13-boc", t, cb, 690, 790) >= 0) for (let i = 0; i < 3; i++) attr("s13-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - cb) * 8 - i * 0.9))).toFixed(1));
       } },
   ];
 }

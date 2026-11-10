@@ -98,23 +98,28 @@ function persona(id, t, o) {
 }
 
 // ------------------------------------------------------------------ capas fijas
-let subPrev = -2;
+// El subtítulo va justo debajo de los pies del personaje (no encima de él) y nunca pasa de
+// SUB_ANCHO, para no meterse bajo los botones de la derecha de Shorts.
+const SUB_ANCHO = 800;
+let subPrev = -2, subEscala = 1;
 function subtitulos(t) {
-  const el = $("sub");
+  const el = $("sub"), tx = $("sub-t");
   let g = -1;
   for (let i = 0; i < TROZOS.length; i++) if (t >= TROZOS[i].t0 - 0.04) g = i;
   if (g >= 0 && t > TROZOS[g].t1 + 0.35) g = -1;
   if (g < 0) { el.style.display = "none"; subPrev = -2; return; }
-  if (g !== subPrev) { el.textContent = TROZOS[g].txt; subPrev = g; }
   el.style.display = "block";
+  if (g !== subPrev) { tx.textContent = TROZOS[g].txt; subPrev = g; subEscala = Math.min(1, SUB_ANCHO / tx.offsetWidth); }
   const k = (t - (TROZOS[g].t0 - 0.04)) / 0.12;
-  el.style.transform = `scale(${(0.88 + 0.12 * rebote(k)).toFixed(3)})`;
+  el.style.transform = `scale(${(subEscala * (0.88 + 0.12 * rebote(k))).toFixed(3)})`;
 }
 function progreso(t) {
   const barras = $("prog").children;
   for (let i = 0; i < CAPS.length; i++) barras[i].firstElementChild.style.width = (clamp((t - CAPS[i].t0) / (CAPS[i].t1 - CAPS[i].t0)) * 100).toFixed(1) + "%";
 }
 
+// Todo el decorado sube un poco: los pies quedan en y = 1360 y el subtítulo cabe debajo.
+const SUBE = -50;
 window.render = function (t) {
   let n = 0;
   for (let i = 0; i < ESCENAS.length; i++) if (t >= ESCENAS[i].t0) n = i;
@@ -128,11 +133,12 @@ window.render = function (t) {
   const cam = e.cam ? e.cam(t, e) : {};
   const z = (cam.z ?? 1) * lin(t, e.t0, e.t1 - e.t0, 1, 1.03) * (1 + 0.02 * (1 - fuera((t - e.t0) / 0.35)));
   const fx = cam.fx ?? 540, fy = cam.fy ?? 1150;
-  $("mundo").setAttribute("transform", `translate(${(cam.sx ?? 540) + (cam.dx ?? 0)} ${(cam.sy ?? fy) + (cam.dy ?? 0)}) scale(${z.toFixed(4)}) translate(${-fx} ${-fy})`);
+  $("mundo").setAttribute("transform", `translate(${(cam.sx ?? 540) + (cam.dx ?? 0)} ${(cam.sy ?? fy) + SUBE + (cam.dy ?? 0)}) scale(${z.toFixed(4)}) translate(${-fx} ${-fy})`);
   // La tarjeta baja suavemente al empezar la escena.
   const card = $("card-" + e.n), kc = (t - e.t0 - 0.05) / 0.32;
   card.style.opacity = clamp(kc * 2.2);
   card.style.transform = `translateY(${((1 - fuera(kc)) * -34).toFixed(1)}px)`;
+  txt("caja-num", "");   // la pantalla de la caja solo enseña cifras en las escenas que la usan
   e.fn(t, e);
   subtitulos(t);
   progreso(t);

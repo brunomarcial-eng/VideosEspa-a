@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 // Renderiza un Short narrado (escenas de videos/<id>/escenas.mjs) con Chromium y ffmpeg.
+// Estilo «limpio» o «collage», según lo que exporte escenas.mjs. Salida: videos/<id>/render/<id>-<estilo>.mp4
 //   node scripts/render_historia.mjs t1                 vídeo completo (4 partes en paralelo)
 //   node scripts/render_historia.mjs t1 --hoja DIR      fotogramas de control (2 por plano) en DIR
 //   node scripts/render_historia.mjs t1 --fotograma 12.5 --salida f.png
@@ -11,6 +12,7 @@ import { mkdirSync, readFileSync, writeFileSync, rmSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { construirHistoria } from "../diseno/historia.mjs";
+import { construirLimpio } from "../diseno/limpio.mjs";
 
 const { chromium } = createRequire(import.meta.url)("playwright");
 const YO = fileURLToPath(import.meta.url);
@@ -27,7 +29,10 @@ const linea = leer(path.join(dir, "audio", "linea_tiempo.json"));
 const cues = leer(path.join(dir, "audio", "cues.json"));
 const mod = await import(path.join(dir, "escenas.mjs"));
 const D = mod.datos(leer(path.join(RAIZ, guion.datos)));
-const html = construirHistoria({ guion, linea, cues, escenas: mod.escenas(D), D });
+// El estilo lo decide el vídeo: escenas.mjs exporta ESTILO = "limpio" (tarjeta y subtítulo grande) o nada (collage).
+const ESTILO = mod.ESTILO === "limpio" ? "limpio" : "collage";
+const construir = ESTILO === "limpio" ? construirLimpio : construirHistoria;
+const html = construir({ guion, linea, cues, escenas: mod.escenas(D), D });
 mkdirSync(path.join(dir, "render"), { recursive: true });
 const ficheroHtml = path.join(dir, "render", `${id}-historia.html`);
 
@@ -36,8 +41,9 @@ async function abrir() {
   const pag = await navegador.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
   pag.on("pageerror", (e) => { console.error("Error en la página:", e.message); process.exitCode = 1; });
   await pag.goto("file://" + ficheroHtml);
-  await pag.evaluate(() => Promise.all(["700 20px Fraunces", "900 20px Fraunces", "400 20px Plex", "600 20px Plex", "700 20px Plex",
-    "600 20px Cap", "800 20px Cap"].map((f) => document.fonts.load(f))));
+  const fuentes = ESTILO === "limpio" ? ["600 20px Cap", "800 20px Cap"]
+    : ["700 20px Fraunces", "900 20px Fraunces", "400 20px Plex", "600 20px Plex", "700 20px Plex", "600 20px Cap", "800 20px Cap"];
+  await pag.evaluate((fs) => Promise.all(fs.map((f) => document.fonts.load(f))), fuentes);
   return { navegador, pag };
 }
 
@@ -92,7 +98,7 @@ const codigos = await Promise.all(Array.from({ length: n }, (_, i) => new Promis
 if (codigos.some((c) => c !== 0)) { console.error("Falló alguna parte:", codigos); process.exit(1); }
 const lista = path.join(dir, "render", ".partes.txt");
 writeFileSync(lista, Array.from({ length: n }, (_, i) => `file '.parte-${i}.mp4'`).join("\n"));
-const salida = path.join(dir, "render", `${id}-collage.mp4`);
+const salida = path.join(dir, "render", `${id}-${ESTILO}.mp4`);
 await new Promise((ok) => spawn("ffmpeg", ["-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lista, "-i", path.join(dir, "audio", "mezcla.wav"),
   "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-shortest", "-movflags", "+faststart", salida],
   { stdio: "inherit" }).on("close", ok));

@@ -2,17 +2,19 @@
 
 Todo es gratuito y local: sin APIs de pago. Los personajes, gráficos y efectos se generan con código; las voces, con modelos libres que permiten uso comercial.
 
-## Flujo (vídeo narrado, estilo collage)
+## Flujo (vídeo narrado, estilo limpio)
 ```
 1. Datos        python3 scripts/descargar_datos.py && python3 scripts/calcular_t1_t2.py
 2. Guion        videos/<id>/guion.json  ->  python3 scripts/verificar_guion.py videos/<id>/guion.json
 3. Historia     videos/<id>/historia.json (momentos clave anclados a palabras) y escenas.mjs (una escena por frase)
-4. Voz          ~/.venv-voces/bin/python scripts/voces.py videos/<id>/guion.json
+4. Voz          ~/.venv-qwen/bin/python scripts/voces.py videos/<id>/guion.json   [--rehacer 3,7]
 5. Sonido       python3 scripts/sonido.py videos/<id>        (música, efectos y tiempos de los momentos)
 6. Revisión     node scripts/render_historia.mjs <id> --hoja <carpeta>   (dos fotogramas por plano)
 7. Vídeo        node scripts/render_historia.mjs <id>        (cuatro partes en paralelo)
 ```
-Salida: `videos/<id>/render/<id>-collage.mp4` (1080×1920, 30 fps, audio a −14 LUFS).
+Salida: `videos/<id>/render/<id>-limpio.mp4` (1080×1920, 30 fps, audio a −14 LUFS). El estilo lo decide `escenas.mjs`: si exporta `ESTILO = "limpio"` usa `diseno/limpio.mjs`; si no, el collage antiguo (`diseno/historia.mjs`).
+
+Estilo limpio (como las referencias de Bruno): barra de progreso por capítulos arriba, tarjeta blanca con etiqueta roja y titular (o la cifra grande con su fuente), la escena en el centro y el subtítulo grande de dos o tres palabras justo debajo de los pies del personaje, para no taparle. Piezas en `diseno/limpio.mjs` (Dani, carro, productos, moneda, reloj, nómina, bocadillo, decorados) y `diseno/limpio_runtime.js` (movimiento, subtítulos, cámara). Colores del canal en `diseno/tokens.json`.
 
 **La regla de oro:** el vídeo cuenta lo que dice la voz. Cada frase tiene su escena y las acciones ocurren en la palabra exacta (el pan cae al decir «pan»). Referencias visuales en `archive/referencias/`; storyboard de ejemplo en `videos/t1/storyboard.md`.
 
@@ -28,15 +30,15 @@ El flujo anterior (diálogo de dos bustos, `scripts/render_video.mjs` y `diseno/
 |---|---|---|
 | `verificar_guion.py` | Cada cifra contra `data/clean`, sin números sueltos, sello en cada plano con cifras, máximo 2 cifras por imagen (3 en gráficos), sin 2020 ni vetados, cierre, 3 años, 45-60 s | No se genera `guion.md` |
 | `diseno/video.mjs` | Las cifras de las tarjetas están en la pantalla del guion de ese plano | No se renderiza |
-| `voces.py` | Whisper transcribe cada frase y debe oír cada cifra del guion | Sale con error |
+| `voces.py` | Whisper escucha cada toma: no puede faltar ninguna palabra, sobrar nada (repeticiones) ni faltar una cifra. Si falla, repite con otra semilla (hasta 5) | Sale con error y dice qué línea repetir |
 
 ## Voces
-- **Piper `es_ES-davefx-medium`** (CC0): voz de España, la que Bruno dio por buena. Hace de narrador sin retocar el tono.
-- Piper `es_ES-sharvard-medium` (CC BY 3.0 → citar en la descripción): provisional para voz de mujer.
-- **Kokoro, descartado:** sus voces en español suenan a América.
-- En pruebas: Chatterbox (MIT, local) clonando el timbre de davefx para ganar naturalidad. Solo se usará si Bruno lo aprueba de oído.
-- La misma persona en dos épocas usa la misma voz: la de antes, tono ×1,05 y algo más rápida; la de hoy, tono ×0,97. Configuración en `diseno/voces.json`.
+- **Narrador: la voz 3 del casting** (elegida por Bruno el 10-11-2026): Qwen3-TTS 0.6B (Apache-2.0, local y gratis) clonando la grabación humana `diseno/voces/ref-dave.wav` (CC0). Cada línea del guion se dice de una vez, con su entonación; Whisper la escucha y, si algo falla, se repite. Muestra del casting: `diseno/voces/casting-voz3.wav`.
+- **Voz 5 del casting** (mujer, Qwen3-TTS 1.7B VoiceDesign, `diseno/voces/casting-voz5.wav`): a Bruno le hizo gracia su acento «ruso». Reservada para un segundo personaje o una aparición puntual. Antes de usarla hay que fijarla (una toma de referencia clonada con el modelo base), porque la voz diseñada cambia un poco en cada frase.
+- Las tomas quedan en `videos/<id>/audio/tomas/` (semilla, lo que oyó Whisper y `registro.txt`). Una línea que no cambia no se vuelve a generar; `--rehacer N` la repite con otra semilla.
+- Reserva: Piper `es_ES-davefx-medium` (CC0) y `es_ES-sharvard-medium` (CC BY 3.0, citar). **Kokoro, descartado:** suena a América.
 - Las cifras se pasan a palabras antes de sintetizar («12,8» → «doce coma ocho»).
+- Crédito en la descripción: «Voz: Qwen3-TTS (Apache-2.0) con timbre de una grabación CC0 del proyecto Piper».
 
 ## Personajes (estilos B y C)
 Títeres de recortes de papel (`diseno/titeres.mjs` y `diseno/titeres_runtime.js`):
@@ -52,13 +54,13 @@ Estilo A (pizarra): sin personas. El diálogo se escribe con tiza, con el nombre
 
 ## Instalación en una sesión nueva
 ```
-python3 -m venv ~/.venv-voces
-~/.venv-voces/bin/pip install piper-tts onnxruntime kokoro-onnx faster-whisper soundfile
-# Modelos en ~/.modelos-voz (Hugging Face; con HF_HUB_DISABLE_XET=1):
-#   kokoro/model_quantized.onnx y voices/{ef_dora,em_alex,em_santa}.bin  (onnx-community/Kokoro-82M-v1.0-ONNX)
-#   es_ES-davefx-medium.onnx(.json), es_ES-sharvard-medium.onnx(.json)   (rhasspy/piper-voices)
+uv venv --python /usr/bin/python3.12 ~/.venv-qwen
+UV_HTTP_TIMEOUT=300 uv pip install --python ~/.venv-qwen/bin/python qwen-tts faster-whisper soundfile
 ```
-Para descargar los modelos, el entorno debe permitir `huggingface.co` y `us.aws.cdn.hf.co`. Chromium y Playwright ya vienen instalados.
+Tarda un buen rato (baja PyTorch con CUDA, unos 8 GB, porque el índice de PyTorch solo para CPU está bloqueado). Lánzalo en segundo plano. El modelo de voz (Qwen/Qwen3-TTS-12Hz-0.6B-Base) y Whisper `small` se bajan solos de Hugging Face la primera vez (con `HF_HUB_DISABLE_XET=1`, que el script ya pone). El entorno debe permitir `huggingface.co` y `us.aws.cdn.hf.co`. Chromium y Playwright ya vienen instalados.
+
+Motores de reserva (Piper y Kokoro): `python3 -m venv ~/.venv-voces && ~/.venv-voces/bin/pip install piper-tts onnxruntime kokoro-onnx faster-whisper soundfile`, con los modelos en `~/.modelos-voz`.
 
 ## Tiempos
-Un Short de 50 s tarda unos 8 minutos por estilo (0,3 s por fotograma). Los tres estilos se pueden renderizar en paralelo.
+- Voz: unas 4-5 veces lo que dura (70 s de voz, unos 6 minutos), más las repeticiones.
+- Vídeo: unos 0,3 s por fotograma repartidos en cuatro procesos; un Short de 70 s, unos 10 minutos. No lances la voz y el render a la vez: la máquina tiene 4 núcleos.

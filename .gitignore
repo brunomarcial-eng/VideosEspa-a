@@ -13,3 +13,6 @@ videos/*/audio/*.wav
 videos/*/render/*.png
 videos/*/render/*.html
 videos/*/render/*-prueba.mp4
+# La paleta se llama tokens.json y no es una credencial: se versiona.
+!diseno/tokens.json
+videos/*/audio/tomas/*.wav
