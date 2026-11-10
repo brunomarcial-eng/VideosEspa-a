@@ -78,7 +78,7 @@ def normalizar(texto: str) -> str:
 _kokoro = None
 
 
-def sintetizar(motor: str, voz: str, texto: str, velocidad: float) -> np.ndarray:
+def sintetizar(motor: str, voz: str, texto: str, velocidad: float, perfil: dict | None = None) -> np.ndarray:
     global _kokoro
     if motor == "kokoro":
         if _kokoro is None:
@@ -91,8 +91,15 @@ def sintetizar(motor: str, voz: str, texto: str, velocidad: float) -> np.ndarray
     if motor == "piper":
         modelo, _, hablante = voz.partition("#")
         tmp = RAIZ / ".tmp_piper.wav"
+        extra = []
+        if perfil and "noise_scale" in perfil:
+            extra += ["--noise-scale", str(perfil["noise_scale"])]
+        if perfil and "noise_w" in perfil:
+            extra += ["--noise-w-scale", str(perfil["noise_w"])]
+        if perfil and "silencio_frase" in perfil:
+            extra += ["--sentence-silence", str(perfil["silencio_frase"])]
         subprocess.run([sys.executable, "-m", "piper", "-m", str(MODELOS / f"{modelo}.onnx"),
-                        "-s", hablante or "0", "--length-scale", str(1 / velocidad), "-f", str(tmp)],
+                        "-s", hablante or "0", "--length-scale", str(1 / velocidad), *extra, "-f", str(tmp)],
                        input=texto.encode(), check=True, capture_output=True)
         return a_sr(tmp)
     raise ValueError(motor)
@@ -106,10 +113,10 @@ def a_sr(ruta, filtro=None) -> np.ndarray:
     return np.frombuffer(subprocess.run(cmd, capture_output=True, check=True).stdout, np.float32).copy()
 
 
-def edad(audio: np.ndarray, tono: float, tempo: float) -> np.ndarray:
+def edad(audio: np.ndarray, tono: float, tempo: float, formantes: str = "shifted") -> np.ndarray:
     tmp = RAIZ / ".tmp_edad.wav"
     sf.write(tmp, audio, SR)
-    out = a_sr(tmp, f"rubberband=pitch={tono}:tempo={tempo}")
+    out = a_sr(tmp, f"rubberband=pitch={tono}:tempo={tempo}:formant={formantes}:pitchq=quality")
     tmp.unlink()
     return out
 
@@ -147,13 +154,42 @@ def main(argv):
         quien = b["quien"]
         genero = g["personajes"][quien]["genero"]
         perfil, ed = cfg["perfiles"][genero], cfg["edad"][quien]
+        matiz = b.get("actuacion", {})  # matices de interpretación del plano
         if previo is not None:
-            pausa = cfg["pausa_turno_s"] if quien != previo else cfg["pausa_mismo_s"]
+            pausa = matiz.get("pausa_antes", cfg["pausa_turno_s"] if quien != previo else cfg["pausa_mismo_s"])
             pistas.append(np.zeros(int(pausa * SR), np.float32))
             t += pausa
         texto = normalizar(b["voz"])
-        a = sintetizar(perfil["motor"], perfil["voz"], texto, cfg.get("velocidad_base", 1.0))
-        a = recortar_silencio(edad(a, ed["tono"], ed["velocidad"]))
+        # Frase a frase: cada una con su entonación y una pausa detrás (más larga tras «…»).
+        # Se guarda cuándo empieza cada frase para saber cuándo suena cada palabra.
+        frases = [x for x in re.split(r"(?<=[.?!…])\s+", b["voz"]) if x.strip()]
+        partes, cortes, pos = [], [], 0
+        for i, frase in enumerate(frases):
+            x = recortar_silencio(sintetizar(perfil["motor"], perfil["voz"], normalizar(frase),
+                                             cfg.get("velocidad_base", 1.0), perfil))
+            cortes.append((frase, pos, pos + len(x)))
+            partes.append(x)
+            pos += len(x)
+            if i < len(frases) - 1:
+                pausa_f = cfg.get("pausa_duda_s", 0.4) if frase.endswith("…") else cfg.get("pausa_frase_s", 0.25)
+                partes.append(np.zeros(int(pausa_f * SR), np.float32))
+                pos += int(pausa_f * SR)
+        a = np.concatenate(partes)
+        tono_f, tempo_f = ed["tono"] * matiz.get("tono", 1.0), ed["velocidad"] * matiz.get("velocidad", 1.0)
+        if abs(tono_f - 1) > 1e-3 or abs(tempo_f - 1) > 1e-3:
+            largo = len(a)
+            a = edad(a, tono_f, tempo_f, cfg.get("formantes", "shifted"))
+            cortes = [(f, int(i0 * len(a) / largo), int(i1 * len(a) / largo)) for f, i0, i1 in cortes]
+        # Tiempo de cada palabra: reparto dentro de su frase según lo que tarda en decirse
+        pals = []
+        for nf, (frase, i0, i1) in enumerate(cortes):
+            toks = frase.split()
+            pesos = [len(re.sub(r"[^a-záéíóúñü]", "", normalizar(x).lower())) + 1 for x in toks]
+            acc, tot = 0, sum(pesos)
+            for tok, w in zip(toks, pesos):
+                pals.append({"p": tok, "t0": round(t + (i0 + (i1 - i0) * acc / tot) / SR, 3),
+                             "t1": round(t + (i0 + (i1 - i0) * (acc + w) / tot) / SR, 3), "frase": nf})
+                acc += w
         a = a / max(1e-6, np.abs(a).max()) * 0.89
         sf.write(out / f"voz_{b['n']:02d}.wav", a, SR)
         dur = len(a) / SR
@@ -167,14 +203,15 @@ def main(argv):
         cifras_guion = re.findall(r"\d+(?:,\d+)?", b["voz"])
         norm = lambda s: re.sub(r"[^\w,]", "", s.lower().replace(".", ","))
         cifras_oidas = re.findall(r"\d+(?:,\d+)?", oido.replace(".", ","))
+        oido_plano = re.sub(r"[^0-9,]", " ", oido.replace(".", ","))
         for c in cifras_guion:
-            if c not in cifras_oidas and decir_numero(c) not in oido.lower():
+            if c not in cifras_oidas and decir_numero(c) not in oido.lower() and not re.search(rf"(?<!\d){re.escape(c)}(?!\d)", oido_plano):
                 fallos.append(f"plano {b['n']}: Whisper no oye «{c}» (oído: «{oido}»)")
         parecido = difflib.SequenceMatcher(None, norm(b["voz"]), norm(oido)).ratio()
 
         planos.append({"n": b["n"], "quien": quien, "ini": round(t, 3), "fin": round(t + dur, 3),
                        "texto": b["voz"], "dicho": texto, "oido": oido, "parecido": round(parecido, 3),
-                       "palabras": palabras_t, "_env": envolvente(a)})
+                       "palabras": palabras_t, "pals": pals, "_env": envolvente(a)})
         pistas.append(a)
         t += dur
         previo = quien

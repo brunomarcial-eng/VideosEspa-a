@@ -1,0 +1,57 @@
+{
+  "nota": "Momentos clave de la historia de T1. Cada uno se ancla a una palabra de la narración (o al inicio del plano) y lo usan a la vez la imagen (videos/t1/escenas.mjs) y el sonido (scripts/sonido.py). «dt» son segundos de adelanto o retraso.",
+  "musica": {"bpm": 100, "corte": "c12-sello", "silencio_s": 1.3},
+  "cues": [
+    {"id": "c1-carro", "beat": 1, "en": "inicio", "dt": -0.1, "sfx": "carro", "vol": 0.5},
+    {"id": "c1-dani", "beat": 1, "palabra": "ti", "dt": -0.05, "sfx": "pop", "vol": 0.5},
+
+    {"id": "c2-moneda", "beat": 2, "palabra": "euros", "dt": -0.2, "sfx": "moneda", "vol": 0.45},
+    {"id": "c2-giro", "beat": 2, "palabra": "horas", "dt": -0.15, "sfx": "ting", "vol": 0.5},
+
+    {"id": "c3-dani", "beat": 3, "palabra": "Dani", "dt": -0.1, "sfx": "pop", "vol": 0.5},
+    {"id": "c3-cal", "beat": 3, "palabra": "2016", "dt": -0.05, "sfx": "papel", "vol": 0.6},
+
+    {"id": "c4-pan", "beat": 4, "palabra": "pan", "dt": -0.05, "sfx": "pop", "vol": 0.5, "tono": 1.0},
+    {"id": "c4-leche", "beat": 4, "palabra": "leche", "dt": -0.05, "sfx": "pop", "vol": 0.5, "tono": 1.12},
+    {"id": "c4-huevos", "beat": 4, "palabra": "huevos", "dt": -0.05, "sfx": "pop", "vol": 0.5, "tono": 1.26},
+    {"id": "c4-aceite", "beat": 4, "palabra": "aceite", "dt": -0.05, "sfx": "pop", "vol": 0.5, "tono": 1.41},
+    {"id": "c4-fruta", "beat": 4, "palabra": "siempre", "dt": -0.1, "sfx": "pop", "vol": 0.5, "tono": 1.59},
+
+    {"id": "c5-beep", "beat": 5, "en": "inicio", "dt": 0.1, "sfx": "beep", "vol": 0.3},
+    {"id": "c5-cuenta", "beat": 5, "palabra": "12,8", "dt": -0.85, "sfx": "conteo", "dur": 0.8, "vol": 0.3},
+    {"id": "c5-dato", "beat": 5, "palabra": "12,8", "dt": 0.0, "sfx": "caja", "vol": 0.55},
+
+    {"id": "c6-hojas", "beat": 6, "en": "inicio", "dt": 0.05, "sfx": "hojas", "vol": 0.5},
+    {"id": "c6-dani", "beat": 6, "palabra": "mismo", "dt": -0.05, "sfx": "pop", "vol": 0.5, "tono": 0.8},
+    {"id": "c6-2024", "beat": 6, "palabra": "último", "dt": -0.05, "sfx": "papel", "vol": 0.6},
+    {"id": "c6-carro", "beat": 6, "palabra": "carro", "dt": -0.3, "sfx": "carro", "vol": 0.45},
+
+    {"id": "c7-beep", "beat": 7, "en": "inicio", "dt": 0.0, "sfx": "beep", "vol": 0.3},
+    {"id": "c7-cuenta", "beat": 7, "palabra": "14,5", "dt": -0.8, "sfx": "conteo", "dur": 0.75, "vol": 0.3, "tono": 1.2},
+    {"id": "c7-dato", "beat": 7, "palabra": "14,5", "dt": 0.0, "sfx": "caja", "vol": 0.6, "tono": 0.84},
+
+    {"id": "c8-nomina", "beat": 8, "en": "inicio", "dt": 0.05, "sfx": "papel", "vol": 0.5},
+    {"id": "c8-sube", "beat": 8, "palabra": "23", "dt": -0.5, "sfx": "sube", "dur": 0.5, "hasta": 1.23, "vol": 0.3},
+    {"id": "c8-dato", "beat": 8, "palabra": "23", "dt": 0.0, "sfx": "ding", "vol": 0.45},
+
+    {"id": "c9-carro", "beat": 9, "palabra": "compra", "dt": -0.3, "sfx": "carro", "vol": 0.4},
+    {"id": "c9-sube", "beat": 9, "palabra": "40", "dt": -0.7, "sfx": "sube", "dur": 0.7, "hasta": 1.4, "vol": 0.32},
+    {"id": "c9-dato", "beat": 9, "palabra": "40", "dt": 0.0, "sfx": "ding", "vol": 0.5, "tono": 1.19},
+
+    {"id": "c10-t16", "beat": 10, "en": "inicio", "dt": 0.05, "sfx": "pinza", "vol": 0.5},
+    {"id": "c10-t19", "beat": 10, "palabra": "2019", "dt": -0.1, "sfx": "desenrolla", "dur": 0.5, "vol": 0.45},
+    {"id": "c10-dato19", "beat": 10, "palabra": "12,6", "dt": 0.0, "sfx": "pinza", "vol": 0.5},
+    {"id": "c10-t24", "beat": 10, "palabra": "salto", "dt": -0.1, "sfx": "desenrolla", "dur": 0.75, "vol": 0.5},
+    {"id": "c10-dato24", "beat": 10, "palabra": "después", "dt": 0.0, "sfx": "pinza", "vol": 0.5},
+
+    {"id": "c11-m", "beat": 11, "palabra": "Mejora", "dt": -0.05, "sfx": "pop", "vol": 0.5, "tono": 1.0},
+    {"id": "c11-e", "beat": 11, "palabra": "empeora", "dt": -0.05, "sfx": "pop", "vol": 0.5, "tono": 0.84},
+    {"id": "c11-d", "beat": 11, "palabra": "depende", "dt": -0.05, "sfx": "pop", "vol": 0.5, "tono": 0.94},
+
+    {"id": "c12-sello", "beat": 12, "palabra": "empeora", "dt": 0.05, "sfx": "sello", "vol": 0.9},
+    {"id": "c12-dato", "beat": 12, "palabra": "dos", "dt": 0.0, "sfx": "ding", "vol": 0.4, "tono": 0.75},
+
+    {"id": "c13-ini", "beat": 13, "en": "inicio", "dt": -0.05, "sfx": "pop", "vol": 0.45},
+    {"id": "c13-bocadillo", "beat": 13, "palabra": "leo", "dt": -0.25, "sfx": "notif", "vol": 0.5}
+  ]
+}
