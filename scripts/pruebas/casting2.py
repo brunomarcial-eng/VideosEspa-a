@@ -51,9 +51,32 @@ def chatterbox(salida):
     if getattr(perth, "PerthImplicitWatermarker", None) is None:
         perth.PerthImplicitWatermarker = perth.DummyWatermarker
     from chatterbox.mtl_tts import ChatterboxMultilingualTTS
-    torch.manual_seed(7)
-    m = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+    from huggingface_hub import hf_hub_download
+    # El paquete 0.1.7 carga la V2. La V3 está en el mismo repositorio con otros nombres:
+    # se monta una carpeta con los nombres que espera el cargador.
+    d = os.path.join(os.path.expanduser("~"), ".modelos-voz", "chatterbox-v3")
+    os.makedirs(d, exist_ok=True)
+    s3 = os.path.join(d, "s3gen.pt")
+    if os.path.islink(s3):
+        os.unlink(s3)
+    if not os.path.exists(s3):   # el vocoder V3 viene sin dos tablas fijas (filtros mel y ventana): se toman de la V2
+        v3 = torch.load(hf_hub_download("ResembleAI/chatterbox", "s3gen_v3.pt"), map_location="cpu", weights_only=True)
+        v2 = torch.load(hf_hub_download("ResembleAI/chatterbox", "s3gen.pt"), map_location="cpu", weights_only=True)
+        for k in v2:
+            v3.setdefault(k, v2[k])
+        torch.save(v3, s3)
+    for origen, destino in [("t3_mtl23ls_v3.safetensors", "t3_mtl23ls_v2.safetensors"), ("ve.pt", "ve.pt"),
+                            ("grapheme_mtl_merged_expanded_v1.json", "grapheme_mtl_merged_expanded_v1.json"), ("conds.pt", "conds.pt"),
+                            ("Cangjie5_TC.json", "Cangjie5_TC.json")]:
+        f = hf_hub_download("ResembleAI/chatterbox", origen)
+        if not os.path.exists(os.path.join(d, destino)):
+            os.symlink(f, os.path.join(d, destino))
+    torch.manual_seed(int(os.environ.get("SEMILLA", 7)))
+    m = ChatterboxMultilingualTTS.from_local(d, device="cpu")
+    solo = os.environ.get("SOLO")
     for i, f in enumerate(FRASES, 1):
+        if solo and str(i) != solo:
+            continue
         t0 = time.time()
         wav = m.generate(f, language_id="es", audio_prompt_path=REF)
         guardar(os.path.join(salida, f"chatterbox_{i}.wav"), wav.cpu().numpy(), m.sr)
