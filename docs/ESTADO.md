@@ -7,7 +7,8 @@ Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d
 |---|---|
 | Datos T1 y T2 (INE, Eurostat) | **Aprobados** por Bruno. `videos/piloto/paso-1-datos.md`, `data/clean/` |
 | **T1** | **Aprobado para publicar** (Bruno, 12-11-2026). Vídeo `videos/t1/render/t1-limpio.mp4`. Ficha para Studio `upload/t1.md` (título, descripción con fuentes, etiquetas, casillas), portada `upload/t1-portada.png`. Archivo para apelaciones `archive/t1/`. **La subida la hace Bruno a mano en Studio** |
-| **T2** | Guion **v3** narrado (voz de Bruno, verificado: 13 cifras, unos 78 s) y escaleta escena a escena. **Pendiente de que Bruno los apruebe.** `videos/t2/guion.md`, `videos/t2/escaleta.md` |
+| **T2** | Guion v3 y escaleta **aprobados** (Bruno, 12-11-2026) con el título «¿Hay más gente en paro o trabajando que antes de la crisis?». **Primer render hecho** (`videos/t2/render/t2-limpio.mp4`, 80 s, voz 3): **pendiente de que Bruno lo apruebe** |
+| **Voz más natural** | Bruno pide algo más natural que la voz 3. Investigación en `docs/voces-investigacion.md`: Synthesia, Kits.ai y Fish Audio no sirven (pago o no comercial). **Casting 2 en curso** con motores libres: Qwen3-TTS 1.7B y Chatterbox V3 (`scripts/pruebas/casting2.py`). Opción en la nube si Bruno la acepta: tramo gratis de Google Chirp 3 HD |
 | Voz | **Resuelta: la voz 3 del casting** («nuestra voz, definitivamente», Bruno, 10-11-2026). Qwen3-TTS 0.6B clonando `diseno/voces/ref-dave.wav`. Integrada en `scripts/voces.py` con control de cada toma por Whisper |
 | Voz 5 del casting | A Bruno le hizo gracia (acento «ruso»). **Reservada** para un segundo personaje o una aparición puntual. Perfil `secundario` en `diseno/voces.json`; muestra en `diseno/voces/casting-voz5.wav` |
 | Imagen, estilo «limpio» | **Conectado y probado**: `render_historia.mjs` lo usa cuando `escenas.mjs` exporta `ESTILO = "limpio"`. Fotogramas de las 13 escenas revisados y corregidos |
@@ -28,12 +29,11 @@ Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d
 Versiones rechazadas: v1 (tarjetas y bustos, tres estilos), v2 collage (`videos/t1/render/t1-collage.mp4`: «tiene que mejorar mucho», voces malas, rápido y saturado).
 
 ## 3. Siguiente paso, en orden
-1. Esperar a que Bruno apruebe el **guion v3 de T2** y la **escaleta** (y si quiere la voz 5 en la escena 9).
-2. Voz de T2: `~/.venv-qwen/bin/python scripts/voces.py videos/t2/guion.json`.
-3. Escenas de T2 en estilo limpio (`videos/t2/escenas.mjs` con `ESTILO = "limpio"`) y `videos/t2/historia.json` (momentos anclados a palabras). Piezas nuevas en la escaleta: calle, Marta, multitud, rejilla de 100, contador, línea del paro.
-4. Sonido (`sonido.py videos/t2`), revisar fotogramas, render, revisar fotograma a fotograma y enviar.
-5. Al aprobarlo: `python3 scripts/ficha.py t2` (añadir antes su entrada, método y cierre en `ficha.py`) y `archive/t2/`.
-6. Si Bruno publica T1 y conecta la API (JSON del cliente OAuth), leer métricas con `scripts/youtube/metricas.py`.
+1. Enviar a Bruno el **casting 2** (voz 3 actual, Qwen3-TTS 1.7B y Chatterbox V3 con las mismas dos frases de T2) y esperar a que elija de oído.
+2. Si elige otro motor: integrarlo en `scripts/voces.py` como un motor más (con el mismo control de Whisper) y **rehacer la voz de T2** (las escenas se reutilizan; revisar anclajes y volver a renderizar).
+3. Esperar la aprobación del render de T2. Al aprobarlo: `python3 scripts/ficha.py t2`, portada (como `upload/t1-portada.png`) y `archive/t2/`.
+4. Si Bruno quiere probar Google Chirp 3 HD: necesita su cuenta de Google Cloud, una clave de API y permitir `texttospeech.googleapis.com` en el entorno.
+5. La voz 5 (personaje secundario) está fijada en `diseno/voces/ref-voz5.wav`; falta mandarle a Bruno una muestra si quiere usarla en la escena 9 de T2.
 
 ## 4. Lo que se hizo en esta sesión
 - `diseno/tokens.json` no estaba en git (lo ignoraba la regla `token*.json`) y el render fallaba: se reconstruyó desde `diseno/contraste.md` y se versiona.
