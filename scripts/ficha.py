@@ -49,8 +49,8 @@ ENTRADA = {
            "y 2,6 millones en paro (+43 %).\n\n"
            "O sea: la población y el número de personas trabajando han crecido lo mismo desde 2007. De cada 100 habitantes "
            "trabajan 46, igual que entonces. El paro ha crecido bastante más.\n\n"
-           "Veredicto: frente a 2016, mejora (un 40 % menos de paro). Frente a 2007, depende. Más gente trabajando que nunca "
-           "y más paro que antes de la crisis. Las dos cosas son verdad."),
+           "Veredicto: frente a 2016, mejora (un 40 % menos de paro). Frente a 2007, empeora (un 43 % más de paro). "
+           "Más gente trabajando que nunca y más parados que antes de la crisis. ¿Cómo puede ser?"),
 }
 METODO = {
     "t1": ("Cómo lo calculamos: la «compra del mes» es el gasto medio por persona en alimentos y bebidas sin alcohol "
@@ -66,7 +66,7 @@ METODO = {
            "Seguridad Social."),
 }
 CIERRE = {"t1": "¿Lo notas en tu carro? Te leo en los comentarios.",
-          "t2": "¿Lo notas en tu barrio? Te leo en los comentarios."}
+          "t2": "¿Tú cómo te lo explicas? Te leo en los comentarios."}
 ETIQUETAS = {
     "t1": ["cesta de la compra", "salarios", "IPC", "INE", "precios", "España", "horas de trabajo", "poder adquisitivo",
            "inflación", "sueldo"],

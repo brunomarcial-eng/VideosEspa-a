@@ -8,7 +8,7 @@ Comprueba un videos/<id>/guion.json y, si pasa, escribe videos/<id>/guion.md:
   3. Ninguna cifra en estado P o X.
   4. Todo plano con cifras lleva sello de fuente.
   5. Nada de 2020, ni nombres vetados, ni partidos, ni atribución de causas.
-  6. Cierre «¿Mejora, empeora o depende?» y al menos tres años en pantalla.
+  6. Veredicto «¿Mejora o empeora?» (o «… o depende?» si de verdad no se puede decidir) y al menos tres años en pantalla.
   7. Duración estimada de la voz entre 45 y 85 s (o «duracion_max_s» del guion; ritmo tranquilo: cada dato necesita su tiempo).
 
 Uso: python3 scripts/verificar_guion.py videos/t1/guion.json [--ritmo 2.6]
@@ -144,8 +144,9 @@ def verificar(ruta_guion, ritmo=RITMO):
         fallos.append("usa 2021 sin marcarlo como año de rebote")
 
     # 6: cierre y años
-    if not any("mejora, empeora o depende?" in b["voz"].lower() for b in g["beats"]):
-        fallos.append("falta el cierre «¿Mejora, empeora o depende?» en la voz")
+    # Veredicto claro: «¿Mejora o empeora?» (o, si de verdad no se puede decidir, «¿mejora, empeora o depende?»)
+    if not any(re.search(r"mejora,? (o )?empeora", b["voz"].lower()) for b in g["beats"]):
+        fallos.append("falta el veredicto «¿Mejora o empeora?» en la voz")
     anyos = sorted(set(re.findall(r"\b20\d\d\b", texto_total)))
     if len(anyos) < 3:
         fallos.append(f"solo aparecen {len(anyos)} años: {anyos}")

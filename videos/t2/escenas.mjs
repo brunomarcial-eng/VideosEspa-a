@@ -129,7 +129,7 @@ export function escenas(D) {
     // 6 · «Foto dos: 2016. Ya somos 46,4 millones. Un 3 % más.»
     { n: 6, set: "vacio",
       svg: `<g transform="translate(500 1060) rotate(-6) scale(.95)">${fotoMapa("s6-v", D.fig[0], "2007")}</g>${fotoMapa("s6-f", D.fig[1], "2016")}`,
-      tarjeta: tarjeta(6, "España · 2016", num("c6-num", "pasado", "millones", `de habitantes<b class="t-pasado" id="c6-pct" style="display:inline-block"> · ${pc(D.vPob16)}</b>`, 300),
+      tarjeta: tarjeta(6, "España · 2016", num("c6-num", "pasado", "millones", `de habitantes<b class="t-pasado" id="c6-pct" style="display:inline-block">&nbsp;· ${pc(D.vPob16)}</b>`, 300),
         { tono: "pasado", icono: bandera(34), fuente: F_POB(2016) }),
       fn: function (t, e) {
         const cf = e.c["c6-foto"], cc = e.c["c6-cuenta"], cd = e.c["c6-dato"], k = (t - cf) / 0.5;
@@ -142,7 +142,7 @@ export function escenas(D) {
     // 7 · «Pero trabajando, solo 18,5 millones. Un 11 % menos.»
     { n: 7, set: "vacio",
       svg: `${calle("s7", [["car", -500], ["rop", 20], ["cer", 540], ["tal", 1060]])}${persona("s7-marta", "antes", MARTA)}`,
-      tarjeta: tarjeta(7, "2016 · Trabajando", num("c7-num", "pasado", "millones", `de personas trabajando<b class="t-pasado" id="c7-pct" style="display:inline-block"> · ${pc(D.vOcu16)}</b>`),
+      tarjeta: tarjeta(7, "2016 · Trabajando", num("c7-num", "pasado", "millones", `de personas trabajando<b class="t-pasado" id="c7-pct" style="display:inline-block">&nbsp;· ${pc(D.vOcu16)}</b>`),
         { tono: "pasado", fuente: F_EPA(2016) }),
       fn: function (t, e) {
         trabaja("s7-rop-t", t, { ritmo: 0.7, a: "abajo", b: "sujeta" }); trabaja("s7-car-t", t, { ritmo: 0.42 }); trabaja("s7-tal-t", t, { ritmo: 0.35, a: "sujeta", b: "senala" });
@@ -157,7 +157,7 @@ export function escenas(D) {
     // 8 · «¿Y en paro? 4,3 millones. Más del doble.»
     { n: 8, set: "vacio",
       svg: `${tablon("s8-t")}${colaParo("s8-q", D.cola[1])}`,
-      tarjeta: tarjeta(8, "2016 · En paro", num("c8-num", "pasado", "millones", `de personas en paro<b class="t-pasado" id="c8-pct" style="display:inline-block"> · ${pc(D.vPar16)}</b>`),
+      tarjeta: tarjeta(8, "2016 · En paro", num("c8-num", "pasado", "millones", `de personas en paro<b class="t-pasado" id="c8-pct" style="display:inline-block">&nbsp;· ${pc(D.vPar16)}</b>`),
         { tono: "pasado", fuente: F_EPA(2016) }),
       fn: function (t, e) {
         for (let k = 0; k < D.cola[1]; k++) andar("s8-q-q" + k, t, { x0: 1300 + k * 140, v: -700, hasta: 400 + k * 140, y: 1440, t0: e.t0 + k * 0.18, fase: k });
@@ -182,7 +182,7 @@ export function escenas(D) {
     // 10 · «Foto tres: hoy. Somos 49,8 millones. Un 10 % más que en 2007.»
     { n: 10, set: "vacio",
       svg: `<g transform="translate(490 1070) rotate(-7) scale(.93)">${fotoMapa("s10-v", D.fig[0], "2007")}</g><g transform="translate(570 1050) rotate(4) scale(.94)">${fotoMapa("s10-w", D.fig[1], "2016")}</g>${fotoMapa("s10-f", D.fig[2], "HOY")}`,
-      tarjeta: tarjeta(10, "España · hoy (2026)", num("c10-num", "hoy", "millones", `de habitantes<span id="c10-pct" style="display:inline-block"> · <b class="t-hoy">${pc(D.vPob)}</b> desde 2007</span>`, 300),
+      tarjeta: tarjeta(10, "España · hoy (2026)", num("c10-num", "hoy", "millones", `de habitantes<span id="c10-pct" style="display:inline-block">&nbsp;· <b class="t-hoy">${pc(D.vPob)}</b> desde 2007</span>`, 300),
         { tono: "hoy", icono: bandera(34), fuente: F_POB(2026, " (provisional)") }),
       fn: function (t, e) {
         const cf = e.c["c10-foto"], cc = e.c["c10-cuenta"], cd = e.c["c10-dato"], k = (t - cf) / 0.5;
@@ -195,7 +195,7 @@ export function escenas(D) {
     // 11 · «Trabajando, 22,9 millones. Récord. Y también un 10 % más.»
     { n: 11, set: "vacio",
       svg: `<g id="s11-a">${interiorCafeteria("s11-ca")}${persona("s11-marta", "hoy", MARTA)}</g><g id="s11-b">${interiorOficina("s11-of")}</g><g id="s11-c">${interiorTaller("s11-ta")}</g>`,
-      tarjeta: tarjeta(11, "Hoy · Trabajando", num("c11-num", "hoy", "millones", `<span id="c11-rec" style="display:inline-block">récord de la EPA (serie desde 2002)</span><b class="t-hoy" id="c11-pct" style="display:inline-block"> · ${pc(D.vOcu)}</b>`),
+      tarjeta: tarjeta(11, "Hoy · Trabajando", num("c11-num", "hoy", "millones", `<span id="c11-rec" style="display:inline-block">récord de la EPA (serie desde 2002)</span><b class="t-hoy" id="c11-pct" style="display:inline-block">&nbsp;· ${pc(D.vOcu)}</b>`),
         { tono: "hoy", fuente: F_EPA(2026) }),
       fn: function (t, e) {
         const cr = e.c["c11-record"], ct = e.c["c11-tambien"], cual = t < cr ? 0 : t < ct ? 1 : 2;
@@ -214,7 +214,7 @@ export function escenas(D) {
     // 12 · «En paro, 2,6 millones. Un 43 % más que antes de la crisis.»
     { n: 12, set: "vacio",
       svg: `${tablon("s12-t")}${colaParo("s12-q", D.cola[2])}`,
-      tarjeta: tarjeta(12, "Hoy · En paro", num("c12-num", "hoy", "millones", `de personas en paro<span id="c12-pct" style="display:inline-block"> · <b class="t-hoy">${pc(D.vPar)}</b> desde 2007</span>`),
+      tarjeta: tarjeta(12, "Hoy · En paro", num("c12-num", "hoy", "millones", `de personas en paro<span id="c12-pct" style="display:inline-block">&nbsp;· <b class="t-hoy">${pc(D.vPar)}</b> desde 2007</span>`),
         { tono: "hoy", fuente: F_EPA(2026) }),
       fn: function (t, e) {
         for (let k = 0; k < D.cola[2]; k++) andar("s12-q-q" + k, t, { x0: 1300 + k * 140, v: -650, hasta: 400 + k * 140, y: 1440, t0: e.t0 + k * 0.16, fase: k });
@@ -260,37 +260,38 @@ export function escenas(D) {
         marca("m14", t, c1); sube("c14-n", t, c1 - 0.1); sube("c14-sub", t, e.c["c14-como"]);
       } },
 
-    // 15 · «Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007… depende.»
+    // 15 · «¿Mejora o empeora? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007, empeora: un 43 % más de paro.»
     { n: 15, set: "vacio",
       svg: `${calle("s15", BARRIO)}${persona("s15-marta", "hoy", MARTA)}`,
-      tarjeta: tarjeta(15, "El veredicto", `<div class="tit" style="font-size:56px">¿<mark id="m15a">Mejora</mark>, <mark id="m15b">empeora</mark> o <mark id="m15c">depende</mark>?</div>
+      tarjeta: tarjeta(15, "El veredicto", `<div class="tit" style="font-size:60px">¿<mark id="m15a">Mejora</mark> o <mark id="m15b">empeora</mark>?</div>
         <div class="ops"><div class="op" id="c15-o0"><i></i><span class="lab" style="width:290px">Frente a 2016</span><b>Mejora</b><span style="font:600 30px Cap;color:${C.gris};margin-left:4px;white-space:nowrap">${pc(D.vPar2616)} de paro</span></div>
-        <div class="op" id="c15-o1"><i></i><span class="lab" style="width:290px">Frente a 2007</span><b>Depende</b></div></div>`, { fuente: F_C }),
+        <div class="op" id="c15-o1"><i></i><span class="lab" style="width:290px">Frente a 2007</span><b>Empeora</b><span style="font:600 30px Cap;color:${C.gris};margin-left:4px;white-space:nowrap">${pc(D.vPar)} de paro</span></div></div>`, { fuente: F_C }),
       fn: function (t, e) {
         const c = e.c, cs = c["c15-sello"];
         trabaja("s15-car-t", t, { ritmo: 0.42 }); trabaja("s15-rop-t", t, { ritmo: 0.7, a: "abajo", b: "sujeta" });
         trabaja("s15-caf-t", t, { ritmo: 0.6, a: "sujeta", b: "empuja" }); trabaja("s15-tal-t", t, { ritmo: 0.35, a: "sujeta", b: "senala" });
-        marca("m15a", t, c["c15-m"]); marca("m15b", t, c["c15-e"]); marca("m15c", t, c["c15-d"]);
+        marca("m15a", t, c["c15-m"]); marca("m15b", t, c["c15-e"]);
         sube("c15-o0", t, c["c15-16"]); sube("c15-o1", t, c["c15-07"]);
         $("c15-o0").className = "op" + (t >= c["c15-mejora"] ? " si" : "");
         $("c15-o1").className = "op" + (t >= cs ? " si" : "");
-        persona("s15-marta", t, { x: 540, y: 1420, s: 1, brazo: [[0, "abajo"], [c["c15-mejora"], "arriba"], [cs, "hombros"]],
-          ojos: [[0, "normal"], [c["c15-mejora"], "felices"], [cs, "normal"]], boca: [[0, "seria"], [c["c15-mejora"], "grande"], [cs, "seria"]], incl: [[cs, 6]], fase: 1 });
+        persona("s15-marta", t, { x: 540, y: 1420, s: 1, brazo: [[0, "abajo"], [c["c15-mejora"], "arriba"], [cs, "abajo"]],
+          ojos: [[0, "normal"], [c["c15-mejora"], "felices"], [cs, "normal"]], boca: [[0, "seria"], [c["c15-mejora"], "grande"], [cs, "seria"]], incl: [[cs, -5]], fase: 1 });
       },
       cam: function (t, e) { const k = t - e.c["c15-sello"], g = k >= 0 && k < 0.22; return { z: 0.56, dx: g ? azar(3, Math.floor(t * 30)) * 9 : 0, dy: g ? azar(4, Math.floor(t * 30)) * 9 : 0 }; } },
 
-    // 16 · «Más gente trabajando que nunca. Y más paro que antes de la crisis. Las dos cosas son verdad. ¿Y tú? ¿Lo notas en tu barrio?»
+    // 16 · «Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser? ¿Tú cómo te lo explicas?»
     { n: 16, set: "vacio",
       svg: `${calle("s16", BARRIO)}${persona("s16-marta", "hoy", MARTA)}${bocadillo("s16-boc")}`,
-      tarjeta: tarjeta(16, "Te toca", `<div class="tit">Más gente trabajando que <mark id="m16a">nunca</mark>. Y más paro que <mark id="m16b">antes de la crisis</mark>.</div>
-        <div class="sub" id="c16-sub">¿Lo notas en tu barrio? Te leo en los comentarios.</div>`),
+      tarjeta: tarjeta(16, "Te toca", `<div class="tit">Más gente trabajando que <mark id="m16a">nunca</mark>. Y más parados que <mark id="m16b">antes de la crisis</mark>.</div>
+        <div class="sub" id="c16-sub" style="font-weight:800;color:${C.tinta}">¿Cómo puede ser? Te leo en los comentarios.</div>`),
       fn: function (t, e) {
-        const c = e.c, cb = c["c16-boc"];
+        const c = e.c, cb = c["c16-boc"], cc = c["c16-como"];
         trabaja("s16-car-t", t, { ritmo: 0.42 }); trabaja("s16-rop-t", t, { ritmo: 0.7, a: "abajo", b: "sujeta" });
         trabaja("s16-caf-t", t, { ritmo: 0.6, a: "sujeta", b: "empuja" }); trabaja("s16-tal-t", t, { ritmo: 0.35, a: "sujeta", b: "senala" });
-        persona("s16-marta", t, { x: 420, y: 1420, s: 1, mira: [[0, 0], [c["c16-trab"], -1], [c["c16-paro"], 1], [c["c16-verdad"], 0]],
-          brazo: [[0, "abajo"], [c["c16-verdad"], "hombros"], [cb, "abajo"]], ojos: [[0, "normal"], [cb, "felices"]], boca: [[0, "sonrisa"], [cb, "grande"]], fase: 1 });
-        marca("m16a", t, c["c16-trab"] + 0.5); marca("m16b", t, c["c16-paro"] + 0.5); sube("c16-sub", t, cb - 0.2);
+        persona("s16-marta", t, { x: 420, y: 1420, s: 1, mira: [[0, 0], [c["c16-trab"], -1], [c["c16-paro"], 1], [cc, 0]],
+          brazo: [[0, "abajo"], [cc, "hombros"], [cb, "abajo"]], ojos: [[0, "normal"], [cc, "grandes"], [cb, "felices"]], boca: [[0, "sonrisa"], [cc, "o"], [cb, "grande"]],
+          incl: [[cc, 6], [cb, 0]], fase: 1 });
+        marca("m16a", t, c["c16-trab"] + 0.5); marca("m16b", t, c["c16-paro"] + 0.5); sube("c16-sub", t, cc - 0.1);
         if (pop("s16-boc", t, cb, 900, 1000, { s: 1.5 }) >= 0) for (let i = 0; i < 3; i++) attr("s16-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - cb) * 8 - i * 0.9))).toFixed(1));
       },
       cam: function () { return { z: 0.56 }; } },

@@ -1,67 +1,521 @@
 {
  "nota": "Momentos clave de T2 (guion v4). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t2/escenas.mjs) y el sonido (scripts/sonido.py). «dt» son segundos de adelanto o retraso; «n» es la enésima vez que aparece la palabra en el plano.",
- "musica": {"bpm": 96, "corte": "c15-sello", "silencio_s": 1.3},
+ "musica": {
+  "bpm": 96,
+  "corte": "c15-sello",
+  "silencio_s": 1.3
+ },
  "cues": [
-  {"id": "c1-pers", "beat": 1, "en": "inicio", "dt": 0.15, "sfx": "persiana", "dur": 1.1, "vol": 0.5},
-  {"id": "c1-paro", "beat": 1, "palabra": "paro", "dt": -0.05, "sfx": "pop", "vol": 0.4},
-  {"id": "c1-trab", "beat": 1, "palabra": "trabajando", "dt": -0.05, "sfx": "pop", "vol": 0.4, "tono": 0.84},
-  {"id": "c1-espana", "beat": 1, "palabra": "España.", "dt": -0.1, "sfx": "ting", "vol": 0.4},
-  {"id": "c1-fotos", "beat": 1, "palabra": "fotos.", "dt": -0.1, "sfx": "papel", "vol": 0.35},
-  {"id": "c2-foto", "beat": 2, "en": "inicio", "dt": 0.0, "sfx": "papel", "vol": 0.45},
-  {"id": "c2-cuenta", "beat": 2, "palabra": "45,2", "dt": -1.0, "sfx": "conteo", "dur": 1.0, "vol": 0.3},
-  {"id": "c2-dato", "beat": 2, "palabra": "45,2", "dt": 0.0, "sfx": "ding", "vol": 0.45},
-  {"id": "c3-entra", "beat": 3, "en": "inicio", "dt": 0.1, "sfx": "campanilla", "vol": 0.6},
-  {"id": "c3-dato", "beat": 3, "palabra": "20,8", "dt": 0.0, "sfx": "ding", "vol": 0.45},
-  {"id": "c3-golpe", "beat": 3, "palabra": "millones.", "dt": 0.25, "sfx": "golpe", "vol": 0.45},
-  {"id": "c4-ini", "beat": 4, "en": "inicio", "dt": 0.0, "sfx": "calle", "dur": 1.4, "vol": 0.35},
-  {"id": "c4-dato", "beat": 4, "palabra": "1,8", "dt": 0.0, "sfx": "pop", "vol": 0.45},
-  {"id": "c5-cien", "beat": 5, "palabra": "100", "dt": -0.2, "sfx": "desenrolla", "dur": 0.6, "vol": 0.35},
-  {"id": "c5-46", "beat": 5, "palabra": "46.", "dt": -0.8, "sfx": "sube", "dur": 0.8, "hasta": 1.25, "vol": 0.3},
-  {"id": "c5-dato", "beat": 5, "palabra": "46.", "dt": 0.0, "sfx": "ding", "vol": 0.45},
-  {"id": "c6-foto", "beat": 6, "en": "inicio", "dt": 0.0, "sfx": "papel", "vol": 0.45},
-  {"id": "c6-cuenta", "beat": 6, "palabra": "46,4", "dt": -0.7, "sfx": "conteo", "dur": 0.7, "vol": 0.3},
-  {"id": "c6-dato", "beat": 6, "palabra": "46,4", "dt": 0.0, "sfx": "ding", "vol": 0.4},
-  {"id": "c6-pct", "beat": 6, "palabra": "3", "dt": -0.05, "sfx": "pop", "vol": 0.4},
-  {"id": "c7-anda", "beat": 7, "en": "inicio", "dt": 0.0, "sfx": "calle", "dur": 2.0, "vol": 0.35},
-  {"id": "c7-dato", "beat": 7, "palabra": "18,5", "dt": 0.0, "sfx": "ding", "vol": 0.4, "tono": 0.8},
-  {"id": "c7-pct", "beat": 7, "palabra": "11", "dt": -0.05, "sfx": "pop", "vol": 0.4, "tono": 0.8},
-  {"id": "c7-entra", "beat": 7, "palabra": "menos.", "dt": 0.1, "sfx": "campanilla", "vol": 0.5},
-  {"id": "c8-ini", "beat": 8, "en": "inicio", "dt": 0.0, "sfx": "calle", "dur": 1.2, "vol": 0.3},
-  {"id": "c8-dato", "beat": 8, "palabra": "4,3", "dt": 0.0, "sfx": "pop", "vol": 0.45},
-  {"id": "c8-doble", "beat": 8, "palabra": "doble.", "dt": -0.3, "sfx": "sube", "dur": 0.5, "hasta": 1.3, "vol": 0.3},
-  {"id": "c9-ini", "beat": 9, "en": "inicio", "dt": 0.0, "sfx": "desenrolla", "dur": 0.5, "vol": 0.3},
-  {"id": "c9-40", "beat": 9, "palabra": "40.", "dt": -0.6, "sfx": "sube", "dur": 0.6, "hasta": 0.8, "vol": 0.3},
-  {"id": "c9-dato", "beat": 9, "palabra": "40.", "dt": 0.0, "sfx": "ding", "vol": 0.4, "tono": 0.8},
-  {"id": "c9-seis", "beat": 9, "palabra": "Seis", "dt": -0.05, "sfx": "pinza", "vol": 0.4},
-  {"id": "c10-foto", "beat": 10, "en": "inicio", "dt": 0.0, "sfx": "papel", "vol": 0.45},
-  {"id": "c10-cuenta", "beat": 10, "palabra": "49,8", "dt": -0.9, "sfx": "conteo", "dur": 0.9, "vol": 0.3, "tono": 1.2},
-  {"id": "c10-dato", "beat": 10, "palabra": "49,8", "dt": 0.0, "sfx": "ding", "vol": 0.45, "tono": 1.19},
-  {"id": "c10-pct", "beat": 10, "palabra": "10", "dt": -0.05, "sfx": "pop", "vol": 0.4},
-  {"id": "c11-ini", "beat": 11, "en": "inicio", "dt": 0.1, "sfx": "vapor", "dur": 0.9, "vol": 0.5},
-  {"id": "c11-dato", "beat": 11, "palabra": "22,9", "dt": 0.0, "sfx": "ding", "vol": 0.5, "tono": 1.19},
-  {"id": "c11-record", "beat": 11, "palabra": "Récord.", "dt": -0.1, "sfx": "ting", "vol": 0.45},
-  {"id": "c11-tambien", "beat": 11, "palabra": "también", "dt": -0.1, "sfx": "pop", "vol": 0.35},
-  {"id": "c11-pct", "beat": 11, "palabra": "10", "dt": -0.05, "sfx": "pop", "vol": 0.4},
-  {"id": "c12-ini", "beat": 12, "en": "inicio", "dt": 0.0, "sfx": "calle", "dur": 1.2, "vol": 0.3},
-  {"id": "c12-dato", "beat": 12, "palabra": "2,6", "dt": 0.0, "sfx": "pop", "vol": 0.45},
-  {"id": "c12-pct", "beat": 12, "palabra": "43", "dt": -0.05, "sfx": "pop", "vol": 0.4, "tono": 1.1},
-  {"id": "c13-barras", "beat": 13, "palabra": "barras:", "dt": -0.1, "sfx": "sube", "dur": 0.7, "hasta": 1.1, "vol": 0.3},
-  {"id": "c13-mismo", "beat": 13, "palabra": "mismo.", "dt": -0.1, "sfx": "pinza", "vol": 0.45},
-  {"id": "c13-paro", "beat": 13, "palabra": "paro,", "dt": -0.1, "sfx": "sube", "dur": 0.8, "hasta": 1.4, "vol": 0.3},
-  {"id": "c14-ini", "beat": 14, "en": "inicio", "dt": 0.0, "sfx": "desenrolla", "dur": 0.5, "vol": 0.3},
-  {"id": "c14-46", "beat": 14, "palabra": "46.", "dt": -0.7, "sfx": "sube", "dur": 0.7, "hasta": 1.25, "vol": 0.3},
-  {"id": "c14-dato", "beat": 14, "palabra": "46.", "dt": 0.0, "sfx": "ding", "vol": 0.45},
-  {"id": "c14-como", "beat": 14, "palabra": "Como", "dt": -0.05, "sfx": "ting", "vol": 0.4},
-  {"id": "c15-m", "beat": 15, "palabra": "mejora,", "dt": -0.05, "sfx": "pinza", "vol": 0.45},
-  {"id": "c15-e", "beat": 15, "palabra": "empeora", "dt": -0.05, "sfx": "pinza", "vol": 0.45},
-  {"id": "c15-d", "beat": 15, "palabra": "depende?", "dt": -0.05, "sfx": "pinza", "vol": 0.45},
-  {"id": "c15-16", "beat": 15, "palabra": "2016,", "dt": -0.1},
-  {"id": "c15-mejora", "beat": 15, "palabra": "mejora:", "n": 2, "dt": 0.0, "sfx": "ding", "vol": 0.45},
-  {"id": "c15-07", "beat": 15, "palabra": "2007…", "dt": -0.1},
-  {"id": "c15-sello", "beat": 15, "palabra": "depende.", "n": 2, "dt": 0.02, "sfx": "sello", "vol": 0.9},
-  {"id": "c16-trab", "beat": 16, "palabra": "trabajando", "dt": -0.1, "sfx": "pop", "vol": 0.45},
-  {"id": "c16-paro", "beat": 16, "palabra": "paro", "dt": -0.1, "sfx": "pop", "vol": 0.45, "tono": 0.8},
-  {"id": "c16-verdad", "beat": 16, "palabra": "verdad.", "dt": -0.05, "sfx": "ting", "vol": 0.4},
-  {"id": "c16-boc", "beat": 16, "palabra": "barrio?", "dt": -0.3, "sfx": "notif", "vol": 0.5}
+  {
+   "id": "c1-pers",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 0.15,
+   "sfx": "persiana",
+   "dur": 1.1,
+   "vol": 0.5
+  },
+  {
+   "id": "c1-paro",
+   "beat": 1,
+   "palabra": "paro",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c1-trab",
+   "beat": 1,
+   "palabra": "trabajando",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 0.84
+  },
+  {
+   "id": "c1-espana",
+   "beat": 1,
+   "palabra": "España.",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.4
+  },
+  {
+   "id": "c1-fotos",
+   "beat": 1,
+   "palabra": "fotos.",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.35
+  },
+  {
+   "id": "c2-foto",
+   "beat": 2,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "papel",
+   "vol": 0.45
+  },
+  {
+   "id": "c2-cuenta",
+   "beat": 2,
+   "palabra": "45,2",
+   "dt": -1.0,
+   "sfx": "conteo",
+   "dur": 1.0,
+   "vol": 0.3
+  },
+  {
+   "id": "c2-dato",
+   "beat": 2,
+   "palabra": "45,2",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.45
+  },
+  {
+   "id": "c3-entra",
+   "beat": 3,
+   "en": "inicio",
+   "dt": 0.1,
+   "sfx": "campanilla",
+   "vol": 0.6
+  },
+  {
+   "id": "c3-dato",
+   "beat": 3,
+   "palabra": "20,8",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.45
+  },
+  {
+   "id": "c3-golpe",
+   "beat": 3,
+   "palabra": "millones.",
+   "dt": 0.25,
+   "sfx": "golpe",
+   "vol": 0.45
+  },
+  {
+   "id": "c4-ini",
+   "beat": 4,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "calle",
+   "dur": 1.4,
+   "vol": 0.35
+  },
+  {
+   "id": "c4-dato",
+   "beat": 4,
+   "palabra": "1,8",
+   "dt": 0.0,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c5-cien",
+   "beat": 5,
+   "palabra": "100",
+   "dt": -0.2,
+   "sfx": "desenrolla",
+   "dur": 0.6,
+   "vol": 0.35
+  },
+  {
+   "id": "c5-46",
+   "beat": 5,
+   "palabra": "46.",
+   "dt": -0.8,
+   "sfx": "sube",
+   "dur": 0.8,
+   "hasta": 1.25,
+   "vol": 0.3
+  },
+  {
+   "id": "c5-dato",
+   "beat": 5,
+   "palabra": "46.",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.45
+  },
+  {
+   "id": "c6-foto",
+   "beat": 6,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "papel",
+   "vol": 0.45
+  },
+  {
+   "id": "c6-cuenta",
+   "beat": 6,
+   "palabra": "46,4",
+   "dt": -0.7,
+   "sfx": "conteo",
+   "dur": 0.7,
+   "vol": 0.3
+  },
+  {
+   "id": "c6-dato",
+   "beat": 6,
+   "palabra": "46,4",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c6-pct",
+   "beat": 6,
+   "palabra": "3",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c7-anda",
+   "beat": 7,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "calle",
+   "dur": 2.0,
+   "vol": 0.35
+  },
+  {
+   "id": "c7-dato",
+   "beat": 7,
+   "palabra": "18,5",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.4,
+   "tono": 0.8
+  },
+  {
+   "id": "c7-pct",
+   "beat": 7,
+   "palabra": "11",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 0.8
+  },
+  {
+   "id": "c7-entra",
+   "beat": 7,
+   "palabra": "menos.",
+   "dt": 0.1,
+   "sfx": "campanilla",
+   "vol": 0.5
+  },
+  {
+   "id": "c8-ini",
+   "beat": 8,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "calle",
+   "dur": 1.2,
+   "vol": 0.3
+  },
+  {
+   "id": "c8-dato",
+   "beat": 8,
+   "palabra": "4,3",
+   "dt": 0.0,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c8-doble",
+   "beat": 8,
+   "palabra": "doble.",
+   "dt": -0.3,
+   "sfx": "sube",
+   "dur": 0.5,
+   "hasta": 1.3,
+   "vol": 0.3
+  },
+  {
+   "id": "c9-ini",
+   "beat": 9,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "desenrolla",
+   "dur": 0.5,
+   "vol": 0.3
+  },
+  {
+   "id": "c9-40",
+   "beat": 9,
+   "palabra": "40.",
+   "dt": -0.6,
+   "sfx": "sube",
+   "dur": 0.6,
+   "hasta": 0.8,
+   "vol": 0.3
+  },
+  {
+   "id": "c9-dato",
+   "beat": 9,
+   "palabra": "40.",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.4,
+   "tono": 0.8
+  },
+  {
+   "id": "c9-seis",
+   "beat": 9,
+   "palabra": "Seis",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.4
+  },
+  {
+   "id": "c10-foto",
+   "beat": 10,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "papel",
+   "vol": 0.45
+  },
+  {
+   "id": "c10-cuenta",
+   "beat": 10,
+   "palabra": "49,8",
+   "dt": -0.9,
+   "sfx": "conteo",
+   "dur": 0.9,
+   "vol": 0.3,
+   "tono": 1.2
+  },
+  {
+   "id": "c10-dato",
+   "beat": 10,
+   "palabra": "49,8",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.45,
+   "tono": 1.19
+  },
+  {
+   "id": "c10-pct",
+   "beat": 10,
+   "palabra": "10",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c11-ini",
+   "beat": 11,
+   "en": "inicio",
+   "dt": 0.1,
+   "sfx": "vapor",
+   "dur": 0.9,
+   "vol": 0.5
+  },
+  {
+   "id": "c11-dato",
+   "beat": 11,
+   "palabra": "22,9",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.5,
+   "tono": 1.19
+  },
+  {
+   "id": "c11-record",
+   "beat": 11,
+   "palabra": "Récord.",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.45
+  },
+  {
+   "id": "c11-tambien",
+   "beat": 11,
+   "palabra": "también",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.35
+  },
+  {
+   "id": "c11-pct",
+   "beat": 11,
+   "palabra": "10",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c12-ini",
+   "beat": 12,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "calle",
+   "dur": 1.2,
+   "vol": 0.3
+  },
+  {
+   "id": "c12-dato",
+   "beat": 12,
+   "palabra": "2,6",
+   "dt": 0.0,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c12-pct",
+   "beat": 12,
+   "palabra": "43",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.1
+  },
+  {
+   "id": "c13-barras",
+   "beat": 13,
+   "palabra": "barras:",
+   "dt": -0.1,
+   "sfx": "sube",
+   "dur": 0.7,
+   "hasta": 1.1,
+   "vol": 0.3
+  },
+  {
+   "id": "c13-mismo",
+   "beat": 13,
+   "palabra": "mismo.",
+   "dt": -0.1,
+   "sfx": "pinza",
+   "vol": 0.45
+  },
+  {
+   "id": "c13-paro",
+   "beat": 13,
+   "palabra": "paro,",
+   "dt": -0.1,
+   "sfx": "sube",
+   "dur": 0.8,
+   "hasta": 1.4,
+   "vol": 0.3
+  },
+  {
+   "id": "c14-ini",
+   "beat": 14,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "desenrolla",
+   "dur": 0.5,
+   "vol": 0.3
+  },
+  {
+   "id": "c14-46",
+   "beat": 14,
+   "palabra": "46.",
+   "dt": -0.7,
+   "sfx": "sube",
+   "dur": 0.7,
+   "hasta": 1.25,
+   "vol": 0.3
+  },
+  {
+   "id": "c14-dato",
+   "beat": 14,
+   "palabra": "46.",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.45
+  },
+  {
+   "id": "c14-como",
+   "beat": 14,
+   "palabra": "Como",
+   "dt": -0.05,
+   "sfx": "ting",
+   "vol": 0.4
+  },
+  {
+   "id": "c15-m",
+   "beat": 15,
+   "palabra": "¿Mejora",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.45
+  },
+  {
+   "id": "c15-e",
+   "beat": 15,
+   "palabra": "empeora?",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.45
+  },
+  {
+   "id": "c15-16",
+   "beat": 15,
+   "palabra": "2016,",
+   "dt": -0.1
+  },
+  {
+   "id": "c15-mejora",
+   "beat": 15,
+   "palabra": "mejora:",
+   "n": 2,
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.45
+  },
+  {
+   "id": "c15-07",
+   "beat": 15,
+   "palabra": "2007,",
+   "dt": -0.1
+  },
+  {
+   "id": "c15-sello",
+   "beat": 15,
+   "palabra": "empeora:",
+   "n": 2,
+   "dt": 0.02,
+   "sfx": "sello",
+   "vol": 0.9
+  },
+  {
+   "id": "c16-trab",
+   "beat": 16,
+   "palabra": "trabajando",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c16-paro",
+   "beat": 16,
+   "palabra": "parados",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.45,
+   "tono": 0.8
+  },
+  {
+   "id": "c16-como",
+   "beat": 16,
+   "palabra": "¿Cómo",
+   "dt": -0.05,
+   "sfx": "ting",
+   "vol": 0.4
+  },
+  {
+   "id": "c16-boc",
+   "beat": 16,
+   "palabra": "explicas?",
+   "dt": -0.3,
+   "sfx": "notif",
+   "vol": 0.5
+  }
  ]
 }

@@ -1,5 +1,5 @@
 plano 1: «¿Hay más gente en paro o trabajando que antes de la crisis? Hablamos de España. En tres fotos.»
-    toma 1 (semilla 1001): BUENA · 1.0 · 5.2 s · 14.0 l/s · «¿Hay más gente en paro o trabajando que antes de la crisis? Hablamos de España en tres fotos.»
+    toma guardada (semilla 1001): BUENA · «¿Hay más gente en paro o trabajando que antes de la crisis? Hablamos de España en tres fotos.»
 plano 2: «Foto uno: 2007, antes de la crisis. En España vivíamos 45,2 millones.»
     toma guardada (semilla 2000): BUENA · «Foto 1, 2007, antes de la crisis. En España vivíamos 45,2 millones.»
 plano 3: «Trabajando, 20,8 millones.»
@@ -26,7 +26,7 @@ plano 13: «Mira las barras: población y trabajo crecen lo mismo. El paro, much
     toma guardada (semilla 13000): BUENA · «Mira las barras, población y trabajo crecen lo mismo. El paro mucho más.»
 plano 14: «Por eso hoy, de cada 100 habitantes, trabajan 46. Como en 2007.»
     toma guardada (semilla 14000): BUENA · «Por eso hoy de cada 100 habitantes trabajan 46, como en 2007.»
-plano 15: «¿Mejora, empeora o depende? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007… depende.»
-    toma guardada (semilla 15001): BUENA · «Mejora, empeora o depende, frente a 2016 mejora, un 40% menos de paro, frente a 2007, depende.»
-plano 16: «Más gente trabajando que nunca. Y más paro que antes de la crisis. Las dos cosas son verdad. ¿Lo notas en tu barrio?»
-    toma guardada (semilla 16000): BUENA · «Más gente trabajando que nunca, y más paro que antes de la crisis. Las dos cosas son verdad, lo notas en tu barrio.»
+plano 15: «¿Mejora o empeora? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007, empeora: un 43 % más de paro.»
+    toma 1 (semilla 15000): BUENA · 1.0 · 10.1 s · 12.9 l/s · «Mejora o empeora. Frente a 2016, mejora. Un 40% menos de paro. Frente a 2007, empeora. Un 43% más de paro.»
+plano 16: «Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser? ¿Tú cómo te lo explicas?»
+    toma 1 (semilla 16000): BUENA · 1.0 · 6.8 s · 12.5 l/s · «Más gente trabajando que nunca y más parados que antes de la crisis. ¿Cómo puede ser? ¿Tú cómo te lo explicas?»

@@ -200,19 +200,19 @@
    "actuacion": {
     "pausa_antes": 0.5
    },
-   "voz": "¿Mejora, empeora o depende? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007… depende.",
-   "pantalla": "EL VEREDICTO · Frente a 2016: MEJORA (−40 % de paro) · Frente a 2007: DEPENDE",
+   "voz": "¿Mejora o empeora? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007, empeora: un 43 % más de paro.",
+   "pantalla": "EL VEREDICTO · ¿Mejora o empeora? · Frente a 2016: MEJORA (−40 % de paro) · Frente a 2007: EMPEORA (+43 % de paro)",
    "sello": "CÁLCULO PROPIO con datos del INE (EPA y población residente)",
-   "imagen": "Tarjeta con dos filas; la marca cae en MEJORA (2016) y luego en DEPENDE (2007)."
+   "imagen": "El barrio con todos los comercios abiertos. Tarjeta con dos filas: la marca cae en MEJORA (2016) y luego en EMPEORA (2007). Marta levanta los brazos en «mejora» y se pone seria en «empeora»."
   },
   {
    "n": 16,
    "quien": "narrador",
-   "funcion": "resumen y pregunta abierta",
-   "voz": "Más gente trabajando que nunca. Y más paro que antes de la crisis. Las dos cosas son verdad. ¿Lo notas en tu barrio?",
-   "pantalla": "TE TOCA · ¿Lo notas en tu barrio?",
+   "funcion": "resumen y pregunta para el debate",
+   "voz": "Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser? ¿Tú cómo te lo explicas?",
+   "pantalla": "TE TOCA · Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser?",
    "sello": null,
-   "imagen": "La calle del barrio, con todos los comercios abiertos y gente trabajando dentro. Marta mira a cámara y aparece un bocadillo de comentario."
+   "imagen": "La calle del barrio, con todos los comercios abiertos y gente trabajando dentro. Marta se encoge de hombros en «¿Cómo puede ser?» y aparece un bocadillo de comentario."
   }
  ],
  "no_dato": [
@@ -404,11 +404,12 @@
   "Habitantes: población residente a 1 de julio (primer día del 3.er trimestre). 2007 y 2016, dato definitivo; 2026, provisional. Incluye todas las edades: por eso «de cada 100 habitantes» no es la tasa de empleo oficial (que se mide sobre 16 años o más) ni la tasa de paro (sobre población activa: 8,0 %, 18,9 % y 10,2 %)."
  ],
  "cierre": {
-  "veredicto": "frente a 2016: mejora · frente a 2007: depende",
-  "porque": "Frente a 2016 hay 4,3 millones más trabajando y un 40 % menos de parados. Frente a 2007, la población y el número de personas trabajando han crecido lo mismo (un 10 %): de cada 100 habitantes trabajan 46, igual que entonces; pero hay un 43 % más de parados (unos 785.000 más)."
+  "veredicto": "frente a 2016: mejora · frente a 2007: empeora (por el paro)",
+  "porque": "Frente a 2016 hay 4,3 millones más trabajando y un 40 % menos de parados. Frente a 2007, de cada 100 habitantes trabajan los mismos (46), pero hay un 43 % más de parados (unos 785.000 más). El vídeo no entra en causas: la pregunta final («¿Cómo puede ser?») se deja para los comentarios."
  },
  "aprobacion_guion": null,
  "historial": [
-  "v3 aprobado el 12-11-2026 y luego rechazado por Bruno el mismo día: no se entiende; falta decir que es España (y la bandera), las cifras no tienen base (¿4,8 millones más sobre cuánto?), las imágenes de gente paseando no aportan; pide comercios con gente trabajando y gráficos de un vistazo (rosquilla, quesito, barras)."
+  "v3 aprobado el 12-11-2026 y luego rechazado por Bruno el mismo día: no se entiende; falta decir que es España (y la bandera), las cifras no tienen base (¿4,8 millones más sobre cuánto?), las imágenes de gente paseando no aportan; pide comercios con gente trabajando y gráficos de un vistazo (rosquilla, quesito, barras).",
+  "v4 (12-11-2026): Bruno la ve «mucho mejor». Pide quitar las barbas sin bigote (salvo la del carnicero), tonos de piel más claros (población de España; algún hispanoamericano) y un final sin «depende», con veredicto claro y una pregunta que abra debate. Cambian los planos 15 y 16."
  ]
 }

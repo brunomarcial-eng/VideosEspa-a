@@ -24,7 +24,10 @@ export const ROPAS = {
   blanco: ["#F4F1EA", "#D9D4C8"], salvia: [C.salvia, "#5F7D61"], vino: ["#9B5A5A", "#7D4444"], mostaza: ["#C2A24E", "#9E8236"],
   lila: ["#8E7CA8", "#6F5F88"], mono: ["#5D7A8C", "#46606F"], gris: ["#8A9199", "#6D747C"], teja: ["#C98F6B", "#A8724F"],
 };
-export const PIELES = ["#EDBE96", "#D9A47E", "#C68A62", "#F1C9A5", "#B97E58"];
+// Tonos de piel de la gente del barrio: sobre todo claros (población mayoritaria en España) y algún tono
+// algo más moreno (hispanoamericanos, la comunidad extranjera más numerosa). Decisión de Bruno, 12-11-2026.
+export const PIELES = ["#F3D2B5", "#EDBE96", "#F1C9A5", "#E4B48F", "#DCA883"];
+export const PELOS = ["#6B4A32", "#3B2A20", "#A0784F", "#2A1E16", "#C9A066"];
 // Delantal (encima del cuerpo) y gorros sencillos.
 export const DELANTAL = (col = "#FFFDF8") => `<path d="M-60 -330 H60 V-150 Q60 -128 38 -128 H-38 Q-60 -128 -60 -150 Z" fill="${col}"/><path d="M-60 -330 L-40 -372 M60 -330 L40 -372" stroke="${col}" stroke-width="10"/>`;
 export const GORRO_BLANCO = `<path d="M-86 -540 Q-90 -606 0 -610 Q90 -606 86 -540 Z" fill="#FFFDF8"/><rect x="-92" y="-552" width="184" height="22" rx="10" fill="#EEE9DF"/>`;
@@ -121,23 +124,23 @@ export function acera(x0 = -1200, ancho = 3600) {
 // Cada uno con su trabajador; el id del trabajador es <id>-t.
 export const ESCAPARATE = {
   carniceria: (id) => `<rect x="0" y="0" width="330" height="380" fill="#EAF2F4"/>${Array.from({ length: 8 }, (_, i) => `<line x1="${i * 44}" x2="${i * 44}" y1="0" y2="380" stroke="#D3E2E8" stroke-width="3"/><line x1="0" x2="330" y1="${i * 44}" y2="${i * 44}" stroke="#D3E2E8" stroke-width="3"/>`).join("")}
-    <g transform="translate(200 470) scale(.42)">${persona(id + "-t", "hoy", { ropa: ROPAS.blanco, encima: DELANTAL("#FFFDF8"), gorro: GORRO_BLANCO, piel: PIELES[2], piel2: "#B5784F", mano: CUCHILLO })}</g>
+    <g transform="translate(200 470) scale(.42)">${persona(id + "-t", "hoy", { ropa: ROPAS.blanco, encima: DELANTAL("#FFFDF8"), gorro: GORRO_BLANCO, piel: PIELES[1], piel2: "#DCA67C", barba: true, mano: CUCHILLO })}</g>
     <rect x="0" y="290" width="330" height="90" fill="#C9D3D8"/><rect x="0" y="282" width="330" height="14" fill="#AEB9BF"/>
     ${[40, 110, 180, 250].map((x) => `<ellipse cx="${x}" cy="318" rx="28" ry="15" fill="#D9776B"/><path d="M${x - 20} 314 q20 -10 40 0" stroke="#F6E1DA" stroke-width="5" fill="none"/>`).join("")}`,
   ropa: (id) => `<rect x="0" y="0" width="330" height="380" fill="#F6EEDF"/><rect x="20" y="70" width="290" height="8" rx="4" fill="${C.madera}"/>
     ${["#C98F6B", C.salvia, "#8E7CA8", "#C2A24E", "#6F8FA6"].map((c, i) => `<path d="M${46 + i * 58} 78 v16" stroke="#9AA6AE" stroke-width="4"/><g transform="translate(${46 + i * 58} 140) scale(.62)">${CAMISETA(c)}</g>`).join("")}
-    <g transform="translate(150 470) scale(.42)">${persona(id + "-t", "hoy", { pelo: "largo", ropa: ROPAS.lila, piel: PIELES[3], colorPelo: "#6B4A32", mano: `<g transform="translate(-60 10)">${CAMISETA("#E9C46A")}</g>` })}</g>
+    <g transform="translate(150 470) scale(.42)">${persona(id + "-t", "hoy", { pelo: "largo", ropa: ROPAS.lila, piel: PIELES[2], colorPelo: PELOS[2], mano: `<g transform="translate(-60 10)">${CAMISETA("#E9C46A")}</g>` })}</g>
     <rect x="0" y="300" width="330" height="80" fill="${C.maderaClara}"/><rect x="-10" y="292" width="350" height="16" rx="6" fill="${C.madera}"/>
     ${[0, 1, 2].map((k) => `<rect x="${200 + k * 6}" y="${270 - k * 14}" width="90" height="14" rx="4" fill="${["#6F8FA6", "#C98F6B", C.salvia][k]}"/>`).join("")}`,
   cafeteria: (id) => `<rect x="0" y="0" width="330" height="380" fill="#F3E3CC"/><rect x="20" y="40" width="160" height="110" rx="8" fill="#2F3B35"/>
     ${texto(100, 84, "CAFÉ", 30, "#FFFDF8")}${texto(100, 124, "TOSTADA", 22, "#E7C47A")}
-    <g transform="translate(240 470) scale(.42)">${persona(id + "-t", "hoy", { ropa: ROPAS.vino, encima: DELANTAL("#3B2A20"), piel: PIELES[1], colorPelo: "#1E1410" })}</g>
+    <g transform="translate(240 470) scale(.42)">${persona(id + "-t", "hoy", { pelo: "largo", ropa: ROPAS.vino, encima: DELANTAL("#3B2A20"), piel: PIELES[3], colorPelo: PELOS[3] })}</g>
     <rect x="0" y="300" width="330" height="80" fill="${C.madera}"/><rect x="-10" y="292" width="350" height="16" rx="6" fill="${C.maderaClara}"/>
     <rect x="30" y="226" width="110" height="68" rx="10" fill="#B8C0C6"/><rect x="44" y="238" width="82" height="20" rx="5" fill="#8A9399"/>`,
   taller: (id) => `<rect x="0" y="0" width="330" height="380" fill="#D6D9DB"/><rect x="0" y="330" width="330" height="50" fill="#9AA0A6"/>
     <g transform="translate(60 210)"><path d="M-40 60 Q-36 10 10 4 L60 -30 H170 L220 4 Q262 10 266 60 Z" fill="#6F8FA6"/><circle cx="20" cy="66" r="30" fill="${C.tinta}"/><circle cx="200" cy="66" r="30" fill="${C.tinta}"/>
       <path d="M70 -22 H120 V4 H50 Z M128 -22 H164 L198 4 H128 Z" fill="#CFE0E8"/></g>
-    <g transform="translate(250 470) scale(.42)">${persona(id + "-t", "hoy", { ropa: ROPAS.mono, piel: PIELES[4], colorPelo: "#2A1E16", gorro: GORRA("#46606F"), mano: LLAVE })}</g>`,
+    <g transform="translate(250 470) scale(.42)">${persona(id + "-t", "hoy", { ropa: ROPAS.mono, piel: PIELES[0], colorPelo: PELOS[0], barba: false, canas: false, gorro: GORRA("#46606F"), mano: LLAVE })}</g>`,
 };
 
 // ------------------------------------------------------------------ interiores (plano completo)
@@ -153,7 +156,7 @@ export function interiorCarniceria(id) {
   return `<g id="${id}"><rect x="-400" y="-300" width="1880" height="1600" fill="#EAF2F4"/>${azulejos}${suelo()}
     ${rotuloPared(240, 770, "CARNICERÍA", "#7D4444")}
     <rect x="470" y="652" width="620" height="12" rx="6" fill="#8A9399"/>${chorizo(520)}${chorizo(590)}${jamon(900)}${chorizo(1010)}
-    <g id="${id}-t" transform="translate(720 1300) scale(.8)">${persona(id + "-tp", "hoy", { ropa: ROPAS.blanco, encima: DELANTAL("#FFFDF8"), gorro: GORRO_BLANCO, piel: PIELES[2], piel2: "#B5784F", mano: CUCHILLO })}</g>
+    <g id="${id}-t" transform="translate(720 1300) scale(.8)">${persona(id + "-tp", "hoy", { ropa: ROPAS.blanco, encima: DELANTAL("#FFFDF8"), gorro: GORRO_BLANCO, piel: PIELES[1], piel2: "#DCA67C", barba: true, mano: CUCHILLO })}</g>
     <rect x="430" y="1060" width="740" height="250" fill="#C9D3D8"/><rect x="430" y="1040" width="740" height="26" rx="8" fill="#AEB9BF"/>
     <rect x="450" y="1086" width="700" height="110" rx="10" fill="#DCEFF5" opacity=".9"/>
     ${[520, 640, 760, 880, 1000].map((x, i) => `<ellipse cx="${x}" cy="1160" rx="48" ry="24" fill="${i % 2 ? "#D9776B" : "#C9604F"}"/><path d="M${x - 34} 1154 q34 -16 68 0" stroke="#F6E1DA" stroke-width="7" fill="none"/>`).join("")}
@@ -163,7 +166,7 @@ export function interiorCafeteria(id) {
   return `<g id="${id}"><rect x="-400" y="-300" width="1880" height="1600" fill="#F3E3CC"/>${suelo("#C9B79A")}
     ${rotuloPared(240, 770, "CAFETERÍA", "#2F3B35")}
     <rect x="500" y="772" width="340" height="12" rx="6" fill="${C.madera}"/>${[540, 600, 660, 720, 780].map((x) => `<rect x="${x - 20}" y="732" width="40" height="40" rx="8" fill="#FFFDF8" stroke="#D9DEE2" stroke-width="3"/>`).join("")}
-    <g id="${id}-t" transform="translate(800 1300) scale(.8)">${persona(id + "-tp", "hoy", { ropa: ROPAS.vino, encima: DELANTAL("#3B2A20"), piel: PIELES[1], colorPelo: "#1E1410", mano: TAZA_P })}</g>
+    <g id="${id}-t" transform="translate(800 1300) scale(.8)">${persona(id + "-tp", "hoy", { pelo: "largo", ropa: ROPAS.vino, encima: DELANTAL("#3B2A20"), piel: PIELES[3], colorPelo: PELOS[3], mano: TAZA_P })}</g>
     <rect x="560" y="900" width="200" height="170" rx="18" fill="#B8C0C6"/><rect x="580" y="920" width="160" height="44" rx="8" fill="#8A9399"/>
     <rect x="600" y="1000" width="22" height="40" fill="#5B6470"/><rect x="698" y="1000" width="22" height="40" fill="#5B6470"/>
     <g id="${id}-vapor" fill="#FFFFFF">${[0, 1, 2].map((k) => `<circle id="${id}-v${k}" cx="611" cy="980" r="16" opacity=".8"/>`).join("")}</g>
@@ -171,7 +174,7 @@ export function interiorCafeteria(id) {
   </g>`;
 }
 export function interiorOficina(id) {
-  const mesa = (x, k) => `<g id="${id}-m${k}"><g transform="translate(${x} 1300) scale(.74)">${persona(`${id}-p${k}`, "hoy", { pelo: k ? "corto" : "largo", ropa: k ? ROPAS.teja : ROPAS.salvia, piel: PIELES[k ? 4 : 0], colorPelo: k ? "#2A1E16" : "#6B4A32" })}</g>
+  const mesa = (x, k) => `<g id="${id}-m${k}"><g transform="translate(${x} 1300) scale(.74)">${persona(`${id}-p${k}`, "hoy", { pelo: k ? "corto" : "largo", ropa: k ? ROPAS.teja : ROPAS.salvia, piel: PIELES[k ? 4 : 0], colorPelo: k ? PELOS[3] : PELOS[4], barba: false, canas: false })}</g>
     <rect x="${x - 150}" y="1040" width="190" height="130" rx="12" fill="${C.tinta}"/><rect x="${x - 140}" y="1050" width="170" height="104" rx="6" fill="#8FC1E3"/>
     <rect x="${x - 70}" y="1170" width="30" height="40" fill="${C.tinta}"/>
     <rect x="${x - 230}" y="1200" width="420" height="24" rx="8" fill="${C.maderaClara}"/><rect x="${x - 210}" y="1222" width="380" height="90" fill="${C.madera}"/></g>`;
@@ -193,7 +196,7 @@ export function interiorTaller(id) {
     <g transform="translate(560 900)"><path d="M-60 120 Q-54 50 10 40 L90 -10 H260 L340 40 Q404 50 410 120 Z" fill="#6F8FA6"/>
       <path d="M100 0 H170 V40 H70 Z M180 0 H240 L300 40 H180 Z" fill="#CFE0E8"/><circle cx="30" cy="130" r="46" fill="${C.tinta}"/><circle cx="30" cy="130" r="18" fill="#9AA6AE"/>
       <circle cx="320" cy="130" r="46" fill="${C.tinta}"/><circle cx="320" cy="130" r="18" fill="#9AA6AE"/></g>
-    <g id="${id}-t" transform="translate(470 1410) scale(.8)">${persona(id + "-tp", "hoy", { ropa: ROPAS.mono, piel: PIELES[4], colorPelo: "#2A1E16", gorro: GORRA("#46606F"), mano: LLAVE })}</g>
+    <g id="${id}-t" transform="translate(470 1410) scale(.8)">${persona(id + "-tp", "hoy", { ropa: ROPAS.mono, piel: PIELES[0], colorPelo: PELOS[0], barba: false, canas: false, gorro: GORRA("#46606F"), mano: LLAVE })}</g>
   </g>`;
 }
 
@@ -214,7 +217,7 @@ export function tablon(id) {
 // n personas de espaldas mirando el tablón, en fila (la primera con lupa).
 export function colaParo(id, n) {
   let s = "";
-  for (let k = n - 1; k >= 0; k--) s += paseante(`${id}-q${k}`, ["#8A9199", "#9B8E7E", "#7F8C94", "#A3907B", "#8E8A9A", "#998F80"][k % 6], PIELES[(k * 2) % 5], 1.4);
+  for (let k = n - 1; k >= 0; k--) s += paseante(`${id}-q${k}`, ["#8A9199", "#9B8E7E", "#7F8C94", "#A3907B", "#8E8A9A", "#998F80"][k % 6], PIELES[(k * 2) % 5], 1.4, PELOS[k % 5]);
   return s + lupa(`${id}-lupa`, 1.6);
 }
 

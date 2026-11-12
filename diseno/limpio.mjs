@@ -88,11 +88,11 @@ export function figura(id, x, y, s = 1, color = "#C9CED3", extra = "") {
 }
 
 // Persona que pasa andando por la calle: cuerpo, cabeza y dos piernas que se mueven. Origen: los pies.
-export function paseante(id, color, piel, s = 1) {
+export function paseante(id, color, piel, s = 1, pelo = C.pelo) {
   return `<g id="${id}"><g transform="scale(${s})"><ellipse cx="0" cy="3" rx="44" ry="8" fill="#3C2814" opacity=".14"/>
     <g id="${id}-c"><rect id="${id}-pi" x="-20" y="-86" width="17" height="86" rx="8" fill="${C.pantalon}"/><rect id="${id}-pd" x="3" y="-86" width="17" height="86" rx="8" fill="#34495E"/>
     <rect x="-31" y="-170" width="62" height="96" rx="26" fill="${color}"/><circle cx="0" cy="-196" r="27" fill="${piel}"/>
-    <path d="M-27 -200 C-30 -228 -10 -232 0 -231 C14 -232 31 -226 27 -198 C20 -214 8 -218 0 -218 C-10 -218 -22 -214 -27 -200 Z" fill="${C.pelo}"/></g></g></g>`;
+    <path d="M-27 -200 C-30 -228 -10 -232 0 -231 C14 -232 31 -226 27 -198 C20 -214 8 -218 0 -218 C-10 -218 -22 -214 -27 -200 Z" fill="${pelo}"/></g></g></g>`;
 }
 
 // Figura genérica (peón), para la fila de «todos los sueldos».

@@ -2,7 +2,7 @@
 
 Pregunta: En España: ¿cuántos vivimos, cuántos trabajan y cuántos están en paro en 2007, 2016 y hoy? ¿Crece el trabajo al ritmo de la población? ¿Y el paro?  
 Datos: `data/clean/t2_empleo.json` · EPA aprobada el 09-11-2026; población residente (INE, ECP320, 1 de julio) añadida el 12-11-2026, pendiente de aprobar  
-Duración estimada de la voz: **71 s** (a 3.05 palabras/s) · Años en pantalla: 2002, 2007, 2016, 2026  
+Duración estimada de la voz: **73 s** (a 3.05 palabras/s) · Años en pantalla: 2002, 2007, 2016, 2026  
 Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La columna «Imagen» es la idea del plano; cada estilo la dibuja a su manera en el Paso 3.
 
 | # | Tiempo | Quién | Voz | En pantalla | Sello de fuente | Imagen |
@@ -21,10 +21,10 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 12 | 42-48 s | narrador (voz) | En paro, 2,6 millones. Un 43 % más que en 2007. | EN PARO · 2,6 millones · +43 % desde 2007 | DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2026 | El tablón: tres personas. Menos cola que en 2016, más que en 2007. |
 | 13 | 48-52 s | narrador (voz) | Mira las barras: población y trabajo crecen lo mismo. El paro, mucho más. | DESDE 2007 · Habitantes +10 % · Trabajando +10 % · En paro +43 % | CÁLCULO PROPIO con datos del INE (EPA y población residente) | Tres barras horizontales que crecen a la vez: habitantes y trabajando se paran a la misma altura (10 %); la de paro sigue hasta 43 %. |
 | 14 | 52-57 s | narrador (voz) | Por eso hoy, de cada 100 habitantes, trabajan 46. Como en 2007. | HOY · De cada 100 habitantes, trabajan 46 · en 2007: 46 | CÁLCULO PROPIO con datos del INE (EPA y población residente) | La rosquilla vuelve a crecer de 40 a 46 y toca justo la marca de 2007. |
-| 15 | 57-64 s | narrador (voz) | ¿Mejora, empeora o depende? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007… depende. | EL VEREDICTO · Frente a 2016: MEJORA (−40 % de paro) · Frente a 2007: DEPENDE | CÁLCULO PROPIO con datos del INE (EPA y población residente) | Tarjeta con dos filas; la marca cae en MEJORA (2016) y luego en DEPENDE (2007). |
-| 16 | 64-71 s | narrador (voz) | Más gente trabajando que nunca. Y más paro que antes de la crisis. Las dos cosas son verdad. ¿Lo notas en tu barrio? | TE TOCA · ¿Lo notas en tu barrio? | — | La calle del barrio, con todos los comercios abiertos y gente trabajando dentro. Marta mira a cámara y aparece un bocadillo de comentario. |
+| 15 | 57-66 s | narrador (voz) | ¿Mejora o empeora? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007, empeora: un 43 % más de paro. | EL VEREDICTO · ¿Mejora o empeora? · Frente a 2016: MEJORA (−40 % de paro) · Frente a 2007: EMPEORA (+43 % de paro) | CÁLCULO PROPIO con datos del INE (EPA y población residente) | El barrio con todos los comercios abiertos. Tarjeta con dos filas: la marca cae en MEJORA (2016) y luego en EMPEORA (2007). Marta levanta los brazos en «mejora» y se pone seria en «empeora». |
+| 16 | 66-73 s | narrador (voz) | Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser? ¿Tú cómo te lo explicas? | TE TOCA · Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser? | — | La calle del barrio, con todos los comercios abiertos y gente trabajando dentro. Marta se encoge de hombros en «¿Cómo puede ser?» y aparece un bocadillo de comentario. |
 
-**Cierre:** frente a 2016: mejora · frente a 2007: depende. Frente a 2016 hay 4,3 millones más trabajando y un 40 % menos de parados. Frente a 2007, la población y el número de personas trabajando han crecido lo mismo (un 10 %): de cada 100 habitantes trabajan 46, igual que entonces; pero hay un 43 % más de parados (unos 785.000 más).
+**Cierre:** frente a 2016: mejora · frente a 2007: empeora (por el paro). Frente a 2016 hay 4,3 millones más trabajando y un 40 % menos de parados. Frente a 2007, de cada 100 habitantes trabajan los mismos (46), pero hay un 43 % más de parados (unos 785.000 más). El vídeo no entra en causas: la pregunta final («¿Cómo puede ser?») se deja para los comentarios.
 
 ## Cifras verificadas contra los datos
 
