@@ -1,0 +1,41 @@
+{
+ "huella": "5a25b4bf25045a13",
+ "semilla": 14000,
+ "texto": "¿Y tú? ¿Lo notas a tu alrededor… o no tanto? Te leo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Y tú lo notas a tu alrededor, o no tanto, te leo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.26,
+   0.58,
+   0.92,
+   1.02,
+   1.06,
+   1.8,
+   2.16,
+   2.26,
+   2.94,
+   3.14
+  ],
+  "t1": [
+   0.12,
+   0.26,
+   0.58,
+   0.92,
+   1.02,
+   1.06,
+   1.44,
+   2.16,
+   2.26,
+   2.52,
+   3.14,
+   3.42
+  ],
+  "ritmo": 9.9
+ }
+}

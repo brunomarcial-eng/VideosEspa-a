@@ -1,0 +1,49 @@
+{
+ "huella": "0c723ccbe978a70a",
+ "semilla": 13000,
+ "texto": "Más gente trabajando que nunca. Y más paro que en 2007. Las dos cosas son verdad.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Más gente trabajando que nunca, y más paro que en 2007. Las dos cosas son verdad.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.24,
+   0.44,
+   0.84,
+   1.14,
+   1.72,
+   2.2,
+   2.34,
+   2.7,
+   2.78,
+   2.86,
+   4.18,
+   4.46,
+   4.64,
+   4.96,
+   5.16
+  ],
+  "t1": [
+   0.24,
+   0.44,
+   0.84,
+   1.14,
+   1.4,
+   2.2,
+   2.34,
+   2.7,
+   2.78,
+   2.86,
+   3.38,
+   4.46,
+   4.64,
+   4.96,
+   5.16,
+   5.36
+  ],
+  "ritmo": 12.5
+ }
+}

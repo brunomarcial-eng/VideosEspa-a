@@ -1,35 +1,33 @@
 {
  "huella": "3794efdfc9057ce9",
- "semilla": 9000,
+ "semilla": 9002,
  "texto": "Hasta aquí, todo mejora. Pero… ¿y el paro?",
  "ev": {
-  "ok": false,
-  "nota": 0.95,
+  "ok": true,
+  "nota": 1.0,
   "oido": "Hasta aquí todo mejora, pero ¿y el paro?",
   "parecido": 1.0,
-  "problemas": [
-   "sin pausa tras «Pero…» (0.16 s)"
-  ],
+  "problemas": [],
   "t0": [
    0.0,
-   0.26,
-   0.52,
-   1.1,
-   2.0,
-   2.32,
-   2.72,
-   2.84
+   0.2,
+   0.42,
+   0.74,
+   1.64,
+   1.88,
+   2.48,
+   2.6
   ],
   "t1": [
-   0.26,
-   0.52,
-   1.1,
-   1.94,
-   2.32,
-   2.72,
-   2.84,
-   3.14
+   0.2,
+   0.42,
+   0.74,
+   1.6,
+   1.88,
+   2.48,
+   2.6,
+   2.9
   ],
-  "ritmo": 8.3
+  "ritmo": 9.7
  }
 }

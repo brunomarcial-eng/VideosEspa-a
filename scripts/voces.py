@@ -310,7 +310,8 @@ def evaluar(asr, a, texto):
     callado = r <= max(0.006, np.percentile(r, 95) * 0.05)
     for i, tok in enumerate(tokens[:-1]):
         if tok.endswith("…"):
-            i0, i1 = int(max(0, t1[i] - 0.25) / 0.02), int((t0[i + 1] + 0.25) / 0.02)
+            # entre el principio de la palabra con «…» y el final de la siguiente (Whisper alarga los finales sobre el silencio)
+            i0, i1 = int(max(0, t0[i]) / 0.02), int((t1[i + 1] + 0.1) / 0.02)
             hueco, mejor_h = 0, 0
             for c in callado[i0:i1]:
                 hueco = hueco + 1 if c else 0

@@ -1,0 +1,43 @@
+{
+ "huella": "85f2fa7faf0c0f64",
+ "semilla": 12000,
+ "texto": "Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007… depende.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007, depende.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.56,
+   1.18,
+   1.5,
+   1.62,
+   2.68,
+   2.88,
+   3.02,
+   3.82,
+   4.56,
+   4.92,
+   5.06,
+   5.92
+  ],
+  "t1": [
+   0.44,
+   1.02,
+   1.5,
+   1.62,
+   1.88,
+   2.88,
+   3.02,
+   3.48,
+   4.3,
+   4.92,
+   5.06,
+   5.54,
+   6.3
+  ],
+  "ritmo": 11.0
+ }
+}
