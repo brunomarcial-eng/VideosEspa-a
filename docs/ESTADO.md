@@ -7,8 +7,8 @@ Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d
 |---|---|
 | Datos T1 y T2 (INE, Eurostat) | **Aprobados** por Bruno. `videos/piloto/paso-1-datos.md`, `data/clean/` |
 | **T1** | **Aprobado para publicar** (Bruno, 12-11-2026). Vídeo `videos/t1/render/t1-limpio.mp4`. Ficha para Studio `upload/t1.md` (título, descripción con fuentes, etiquetas, casillas), portada `upload/t1-portada.png`. Archivo para apelaciones `archive/t1/`. **La subida la hace Bruno a mano en Studio** |
-| **T2** | Guion v3 y escaleta **aprobados** (Bruno, 12-11-2026) con el título «¿Hay más gente en paro o trabajando que antes de la crisis?». **Primer render hecho** (`videos/t2/render/t2-limpio.mp4`, 80 s, voz 3): **pendiente de que Bruno lo apruebe** |
-| **Voz más natural** | Bruno pide algo más natural que la voz 3. Investigación en `docs/voces-investigacion.md`: Synthesia, Kits.ai y Fish Audio no sirven (pago o no comercial). **Casting 2 en curso** con motores libres: Qwen3-TTS 1.7B y Chatterbox V3 (`scripts/pruebas/casting2.py`). Opción en la nube si Bruno la acepta: tramo gratis de Google Chirp 3 HD |
+| **T2** | **Aprobado para publicar** (Bruno, 12-11-2026). Vídeo `videos/t2/render/t2-limpio.mp4` (80 s). Ficha para Studio `upload/t2.md`, portada `upload/t2-portada.png`, archivo para apelaciones `archive/t2/`. **La subida la hace Bruno a mano en Studio** |
+| **Voz** | Tras el casting 2 de motores (`videos/casting/casting-motores.mp4`), Bruno **se queda con la voz 1, la actual** (voz 3 del primer casting, Qwen3-TTS 0.6B), el 12-11-2026. Investigación en `docs/voces-investigacion.md`. Queda abierta la prueba de Google Chirp 3 HD si Bruno da una clave de Google Cloud |
 | Voz | **Resuelta: la voz 3 del casting** («nuestra voz, definitivamente», Bruno, 10-11-2026). Qwen3-TTS 0.6B clonando `diseno/voces/ref-dave.wav`. Integrada en `scripts/voces.py` con control de cada toma por Whisper |
 | Voz 5 del casting | A Bruno le hizo gracia (acento «ruso»). **Reservada** para un segundo personaje o una aparición puntual. Perfil `secundario` en `diseno/voces.json`; muestra en `diseno/voces/casting-voz5.wav` |
 | Imagen, estilo «limpio» | **Conectado y probado**: `render_historia.mjs` lo usa cuando `escenas.mjs` exporta `ESTILO = "limpio"`. Fotogramas de las 13 escenas revisados y corregidos |
@@ -23,17 +23,17 @@ Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d
 4. **Texto con su voz** (`/anthropic-skills:clon-bruno` al 100 %), de persona normal, con gancho llamativo. Sin sus opiniones políticas.
 5. **Más tranquilo y menos cargado.** Una idea por escena. No recortar las pausas naturales de la voz; cada tarjeta con dato se queda en pantalla un segundo más.
 6. **Retención**: preguntas llamativas al empezar.
-7. **De uno en uno**: ahora T2, hasta que esté bien.
+7. **De uno en uno**: T1 y T2 aprobados; el siguiente vídeo, cuando Bruno lo elija.
 8. Lee en el **móvil**: mensajes cortos y con el resultado primero. Revisar los fotogramas antes de enviar nada.
 
 Versiones rechazadas: v1 (tarjetas y bustos, tres estilos), v2 collage (`videos/t1/render/t1-collage.mp4`: «tiene que mejorar mucho», voces malas, rápido y saturado).
 
 ## 3. Siguiente paso, en orden
-1. Enviar a Bruno el **casting 2** (voz 3 actual, Qwen3-TTS 1.7B y Chatterbox V3 con las mismas dos frases de T2) y esperar a que elija de oído.
-2. Si elige otro motor: integrarlo en `scripts/voces.py` como un motor más (con el mismo control de Whisper) y **rehacer la voz de T2** (las escenas se reutilizan; revisar anclajes y volver a renderizar).
-3. Esperar la aprobación del render de T2. Al aprobarlo: `python3 scripts/ficha.py t2`, portada (como `upload/t1-portada.png`) y `archive/t2/`.
-4. Si Bruno quiere probar Google Chirp 3 HD: necesita su cuenta de Google Cloud, una clave de API y permitir `texttospeech.googleapis.com` en el entorno.
-5. La voz 5 (personaje secundario) está fijada en `diseno/voces/ref-voz5.wav`; falta mandarle a Bruno una muestra si quiere usarla en la escena 9 de T2.
+1. Bruno sube T1 y T2 a mano en Studio con `upload/t1.md` y `upload/t2.md` (contenido sintético: sí; no es para niños).
+2. Elegir con Bruno el tercer vídeo del backlog (`docs/backlog-videos.md`) y repetir el flujo: datos → guion (clon-bruno) y escaleta → aprobación → voz, escenas, sonido → fotogramas → render.
+3. Si Bruno quiere probar Google Chirp 3 HD: necesita su cuenta de Google Cloud, una clave de API y permitir `texttospeech.googleapis.com` en el entorno.
+4. La voz 5 (personaje secundario) está fijada en `diseno/voces/ref-voz5.wav`; se usará cuando Bruno lo pida, con una muestra previa.
+5. Cuando Bruno conecte la API de YouTube (JSON del cliente OAuth), leer métricas con `scripts/youtube/metricas.py`.
 
 ## 4. Lo que se hizo en esta sesión
 - `diseno/tokens.json` no estaba en git (lo ignoraba la regla `token*.json`) y el render fallaba: se reconstruyó desde `diseno/contraste.md` y se versiona.

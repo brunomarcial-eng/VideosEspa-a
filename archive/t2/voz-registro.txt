@@ -1,0 +1,28 @@
+plano 1: «¿Hoy trabaja en España más gente que antes de la crisis… o menos? Piénsalo, que tiene truco.»
+    toma guardada (semilla 1000): BUENA · «Hoy trabaja en España más gente que antes de la crisis. O menos, piénsalo, que tiene truco.»
+plano 2: «2007, justo antes de la crisis: 20,75 millones de personas trabajando.»
+    toma guardada (semilla 2000): BUENA · «2007, justo antes de la crisis, 20,75 millones de personas trabajando.»
+plano 3: «En 2016, 18,53 millones.»
+    toma guardada (semilla 3000): BUENA · «En 2016, 18,53 millones.»
+plano 4: «¿Y hoy? 22,85 millones. Récord de la serie.»
+    toma guardada (semilla 4000): BUENA · «Y hoy 22,85 millones, récord de la serie.»
+plano 5: «Ojo, que también somos más: 4,8 millones más de personas de 16 años o más.»
+    toma guardada (semilla 5000): BUENA · «Ojo, que también somos más, 4,8 millones más de personas de 16 años o más.»
+plano 6: «Así que, en proporción: imagina 100 personas de 16 a 64 años.»
+    toma guardada (semilla 6000): BUENA · «Así que en proporción imagina 100 personas de 16 a 64 años.»
+plano 7: «En 2007 trabajaban 67. En 2016, 61.»
+    toma guardada (semilla 7000): BUENA · «en 2007 trabajaban 67, en 2016 61.»
+plano 8: «¿Y hoy? 69. Más que antes de la crisis.»
+    toma guardada (semilla 8000): BUENA · «Y hoy, 69, más que antes de la crisis.»
+plano 9: «Hasta aquí, todo mejora. Pero… ¿y el paro?»
+    toma 1 (semilla 9002): BUENA · 1.0 · 3.1 s · 9.7 l/s · «Hasta aquí todo mejora, pero ¿y el paro?»
+plano 10: «De cada 100 que trabajan o buscan trabajo, hoy 10 no lo encuentran. En 2007, 8.»
+    toma guardada (semilla 10000): BUENA · «de cada 100 que trabajan o buscan trabajo. Hoy 10 no lo encuentran, en 2007-08.»
+plano 11: «En 2016 eran 19. Ha bajado mucho… pero no ha vuelto a 2007.»
+    toma guardada (semilla 11000): BUENA · «En 2016 eran 19, ha bajado mucho, pero no ha vuelto a 2007.»
+plano 12: «Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007… depende.»
+    toma guardada (semilla 12000): BUENA · «Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007, depende.»
+plano 13: «Más gente trabajando que nunca. Y más paro que en 2007. Las dos cosas son verdad.»
+    toma guardada (semilla 13000): BUENA · «Más gente trabajando que nunca, y más paro que en 2007. Las dos cosas son verdad.»
+plano 14: «¿Y tú? ¿Lo notas a tu alrededor… o no tanto? Te leo.»
+    toma guardada (semilla 14000): BUENA · «Y tú lo notas a tu alrededor, o no tanto, te leo.»
