@@ -1,123 +1,205 @@
 {
   "id": "t2",
-  "version": 2,
+  "version": 3,
   "titulo": "¿Hoy trabaja más gente que antes de la crisis?",
-  "pregunta": "¿Hay más gente trabajando ahora que en 2007 y en 2016?",
+  "pregunta": "¿Hay más gente trabajando ahora que en 2007 y en 2016? ¿Y en proporción? ¿Y el paro?",
   "datos": "data/clean/t2_empleo.json",
   "aprobacion_datos": "2026-11-09 (Paso 1 aprobado: EPA T3 contra T3, tasa de empleo 16-64, «depende» frente a 2007)",
-  "formato": "Diálogo de la misma persona en dos épocas. Estilo A sin personajes (solo voces); B y C con personajes.",
+  "formato": "Narración con una sola voz (la voz 3), en el estilo oral de Bruno (skill clon-bruno al 100 %). Estilo limpio, como T1: una idea por escena y cada dato con su tarjeta. Protagonista inventada: Marta.",
   "personajes": {
-    "antes": {
-      "anyo": "2007",
-      "genero": "hombre",
-      "edad": "unos 28 años"
-    },
-    "hoy": {
-      "anyo": "hoy",
-      "genero": "hombre",
-      "edad": "unos 47 años"
+    "narrador": {
+      "anyo": "voz",
+      "genero": "hombre"
     }
   },
+  "protagonista": {
+    "nombre": "Marta",
+    "nota": "Persona inventada (los protagonistas rotan: en T1 fue Dani). En 2007 lleva camiseta ocre; hoy, azul y alguna cana. Es una de las 100 personas de la rejilla."
+  },
+  "capitulos": [
+    {
+      "nombre": "La pregunta",
+      "beats": [
+        1
+      ]
+    },
+    {
+      "nombre": "Antes",
+      "beats": [
+        2,
+        3
+      ]
+    },
+    {
+      "nombre": "Hoy",
+      "beats": [
+        4,
+        5
+      ]
+    },
+    {
+      "nombre": "De cada 100",
+      "beats": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "nombre": "El paro",
+      "beats": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "nombre": "Veredicto",
+      "beats": [
+        12,
+        13,
+        14
+      ]
+    }
+  ],
   "beats": [
     {
       "n": 1,
-      "quien": "hoy",
+      "quien": "narrador",
       "funcion": "gancho al espectador",
-      "voz": "¿Tú crees que hoy trabaja más gente que antes de la crisis… o menos?",
-      "pantalla": "¿Hoy trabaja más gente que antes de la crisis?",
+      "voz": "¿Hoy trabaja en España más gente que antes de la crisis… o menos? Piénsalo, que tiene truco.",
+      "pantalla": "LA PREGUNTA · ¿Trabaja más gente que antes de la crisis?",
       "sello": null,
-      "imagen": "El de hoy mira a cámara."
+      "imagen": "Una calle a primera hora. Marta sale de un portal con el café en la mano, se para y mira a cámara."
     },
     {
       "n": 2,
-      "quien": "antes",
-      "funcion": "recuerdo",
-      "voz": "¿Más que en 2007? Imposible. Éramos 20,75 millones trabajando.",
-      "pantalla": "2007 · 20,75 millones de ocupados",
-      "sello": "DATO OFICIAL · INE · EPA, 3.er trimestre de 2007",
-      "imagen": "Aparece el de 2007; ficha ocre."
+      "quien": "narrador",
+      "funcion": "dato de 2007",
+      "voz": "2007, justo antes de la crisis: 20,75 millones de personas trabajando.",
+      "pantalla": "2007 · 20,75 millones trabajando · 3.er trimestre",
+      "sello": "DATO OFICIAL · INE · EPA, ocupados, 3.er trimestre de 2007",
+      "imagen": "La calle se llena de gente camino del trabajo; un contador sube hasta 20,75 millones. Marta, con camiseta ocre, entre ellos."
     },
     {
       "n": 3,
-      "quien": "hoy",
-      "funcion": "dato de hoy",
-      "voz": "Pues hoy somos 22,85 millones. Récord desde que hay serie.",
-      "pantalla": "Hoy · 22,85 millones · récord desde 2002",
-      "sello": "DATO OFICIAL · INE · EPA, 3.er trimestre de 2026",
-      "imagen": "Ficha azul; el contador supera al de 2007."
+      "quien": "narrador",
+      "funcion": "dato de 2016",
+      "voz": "En 2016, 18,53 millones.",
+      "pantalla": "2016 · 18,53 millones trabajando · 3.er trimestre",
+      "sello": "DATO OFICIAL · INE · EPA, ocupados, 3.er trimestre de 2016",
+      "imagen": "Vuelan las hojas del calendario hasta 2016. La calle se queda más vacía y el contador baja a 18,53."
     },
     {
       "n": 4,
-      "quien": "antes",
-      "funcion": "objeción",
-      "voz": "Ya, pero también habrá más gente.",
-      "pantalla": "¿Y no hay más gente?",
-      "sello": null,
-      "imagen": "El de 2007, escéptico."
+      "quien": "narrador",
+      "funcion": "dato de hoy",
+      "actuacion": {
+        "pausa_antes": 0.5
+      },
+      "voz": "¿Y hoy? 22,85 millones. Récord de la serie.",
+      "pantalla": "Hoy · 22,85 millones trabajando · récord desde 2002",
+      "nota": "3.er trimestre de 2026. Es el valor más alto de la serie trimestral de la EPA, que empieza en 2002",
+      "sello": "DATO OFICIAL · INE · EPA, ocupados, 3.er trimestre de 2026",
+      "imagen": "La calle, llena hasta los bordes. El contador pasa la marca de 2007 y se para en 22,85. Marta, ahora de azul, levanta las cejas."
     },
     {
       "n": 5,
-      "quien": "hoy",
-      "funcion": "población",
-      "voz": "Sí: 4,8 millones más de personas de 16 años o más. Por eso miro la tasa.",
-      "pantalla": "+4,8 millones de personas de 16 años o más",
+      "quien": "narrador",
+      "funcion": "el truco: hay más población",
+      "voz": "Ojo, que también somos más: 4,8 millones más de personas de 16 años o más.",
+      "pantalla": "+4,8 millones de personas de 16 años o más · desde 2007",
       "sello": "CÁLCULO PROPIO (C) · INE, EPA (ocupados ÷ tasa de empleo)",
-      "imagen": "El grupo de figuras se amplía."
+      "imagen": "La acera se alarga hacia los lados y aparece más gente en general, no solo trabajando. Marta mira a los lados."
     },
     {
       "n": 6,
-      "quien": "hoy",
-      "funcion": "tasa de empleo",
-      "voz": "De cada 100 personas de 16 a 64 años, trabajan 69. En tu época, 67.",
-      "pantalla": "Trabajan 67 de cada 100 (2007) → 69 de cada 100 (hoy) · 16 a 64 años",
-      "sello": "DATO OFICIAL · INE · EPA, 3.er trimestre",
-      "imagen": "100 figuras; se colorean las que trabajan."
+      "quien": "narrador",
+      "funcion": "cambio de medida",
+      "voz": "Así que, en proporción: imagina 100 personas de 16 a 64 años.",
+      "pantalla": "DE CADA 100 · personas de 16 a 64 años",
+      "sello": null,
+      "imagen": "La cámara sube y la calle se convierte en una rejilla de 100 figuras grises, de 10 en 10. Marta es una de ellas."
     },
     {
       "n": 7,
-      "quien": "antes",
-      "funcion": "pregunta",
-      "voz": "Vale. ¿Y el paro?",
-      "pantalla": "¿Y el paro?",
-      "sello": null,
-      "imagen": "El de 2007 se cruza de brazos."
+      "quien": "narrador",
+      "funcion": "tasa de empleo 2007 y 2016",
+      "voz": "En 2007 trabajaban 67. En 2016, 61.",
+      "pantalla": "Trabajan, de cada 100 · 2007: 67 · 2016: 61",
+      "sello": "DATO OFICIAL · INE · EPA, tasa de empleo de 16 a 64 años, 3.er trimestre",
+      "imagen": "Se encienden 67 figuras en ocre. Luego se apagan 6: quedan 61."
     },
     {
       "n": 8,
-      "quien": "hoy",
-      "funcion": "paro, tres años",
-      "voz": "Ahí ganas tú: hoy, el 10,2 %. En 2007, el 8 %. Aunque en 2016 llegó al 18,9 %.",
-      "pantalla": "Paro · 2007: 8,0 %   2016: 18,9 %   hoy: 10,2 %",
-      "grafico": true,
-      "sello": "DATO OFICIAL · INE · EPA, 3.er trimestre",
-      "imagen": "Línea del paro: sube hasta 2016 y baja sin llegar a 2007."
+      "quien": "narrador",
+      "funcion": "tasa de empleo hoy",
+      "voz": "¿Y hoy? 69. Más que antes de la crisis.",
+      "pantalla": "Hoy · 69 de cada 100 · en 2007: 67",
+      "sello": "DATO OFICIAL · INE · EPA, tasa de empleo de 16 a 64 años, 3.er trimestre",
+      "imagen": "Las figuras se encienden en azul hasta 69; una raya marca dónde llegaba 2007. Marta, encendida, sonríe."
     },
     {
       "n": 9,
-      "quien": "antes",
-      "funcion": "cierre (pregunta)",
-      "voz": "¿Mejora, empeora o depende?",
-      "pantalla": "¿Mejora, empeora o depende?",
+      "quien": "narrador",
+      "funcion": "giro: el paro",
+      "actuacion": {
+        "pausa_antes": 0.5
+      },
+      "voz": "Hasta aquí, todo mejora. Pero… ¿y el paro?",
+      "pantalla": "¿Y EL PARO?",
       "sello": null,
-      "imagen": "Panel fijo de cierre."
+      "imagen": "Una de las figuras grises levanta la mano. (Opción: el «¿y el paro?» lo dice la voz 5 desde esa figura.)"
     },
     {
       "n": 10,
-      "quien": "hoy",
-      "funcion": "cierre (veredicto)",
-      "voz": "Frente a 2016, mejora. Frente a 2007, depende: más gente trabajando, pero más paro.",
-      "pantalla": "Frente a 2016: MEJORA · Frente a 2007: DEPENDE",
-      "sello": null,
-      "imagen": "Dos marcas en el panel."
+      "quien": "narrador",
+      "funcion": "paro hoy frente a 2007",
+      "voz": "De cada 100 que trabajan o buscan trabajo, hoy 10 no lo encuentran. En 2007, 8.",
+      "pantalla": "Paro · hoy: 10,2 % · 2007: 8,0 %",
+      "nota": "Tasa de paro: parados entre quienes trabajan o buscan trabajo (población activa)",
+      "sello": "DATO OFICIAL · INE · EPA, tasa de paro, 3.er trimestre",
+      "imagen": "Nueva rejilla de 100 (los que trabajan o buscan): 10 figuras sin color, con una lupa. Al lado, la de 2007 con 8."
     },
     {
       "n": 11,
-      "quien": "hoy",
-      "funcion": "pregunta abierta",
-      "voz": "¿Y tú, con qué año lo comparas? Cuéntanoslo.",
-      "pantalla": "¿Y tú? Cuéntanoslo",
+      "quien": "narrador",
+      "funcion": "tercer año del paro",
+      "voz": "En 2016 eran 19. Ha bajado mucho… pero no ha vuelto a 2007.",
+      "pantalla": "PARO · 2016: 18,9 % · hoy: 10,2 %",
+      "grafico": true,
+      "sello": "DATO OFICIAL · INE · EPA, tasa de paro, 3.er trimestre",
+      "imagen": "Una línea une 2007, 2016 y hoy: sube hasta 2016 y baja sin llegar a la altura de 2007."
+    },
+    {
+      "n": 12,
+      "quien": "narrador",
+      "funcion": "cierre (veredicto)",
+      "actuacion": {
+        "pausa_antes": 0.5
+      },
+      "voz": "Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007… depende.",
+      "pantalla": "EL VEREDICTO · Frente a 2016: MEJORA · Frente a 2007: DEPENDE",
       "sello": null,
-      "imagen": "Los dos miran a cámara."
+      "imagen": "Tarjeta con dos filas; la marca cae en MEJORA (2016) y luego en DEPENDE (2007)."
+    },
+    {
+      "n": 13,
+      "quien": "narrador",
+      "funcion": "frase-espejo",
+      "voz": "Más gente trabajando que nunca. Y más paro que en 2007. Las dos cosas son verdad.",
+      "pantalla": "EN RESUMEN · Más gente trabajando que nunca. Más paro que en 2007.",
+      "sello": null,
+      "imagen": "Pantalla partida: a la izquierda, la calle llena; a la derecha, la rejilla del paro. Marta en medio, encogiéndose de hombros."
+    },
+    {
+      "n": 14,
+      "quien": "narrador",
+      "funcion": "pregunta abierta",
+      "voz": "¿Y tú? ¿Lo notas a tu alrededor… o no tanto? Te leo.",
+      "pantalla": "TE TOCA · ¿Lo notas a tu alrededor?",
+      "sello": null,
+      "imagen": "Marta mira a cámara y aparece un bocadillo de comentario."
     }
   ],
   "no_dato": [
@@ -130,6 +212,13 @@
     {
       "texto": "20,75",
       "ruta": "mismo_trimestre.2007T3.ocupados_miles",
+      "escala": 0.001,
+      "decimales": 2,
+      "estado": "V"
+    },
+    {
+      "texto": "18,53",
+      "ruta": "mismo_trimestre.2016T3.ocupados_miles",
       "escala": 0.001,
       "decimales": 2,
       "estado": "V"
@@ -153,14 +242,26 @@
       "estado": "C"
     },
     {
+      "texto": "67",
+      "ruta": "mismo_trimestre.2007T3.tasa_empleo_16_64_pct",
+      "decimales": 0,
+      "estado": "V"
+    },
+    {
+      "texto": "61",
+      "ruta": "mismo_trimestre.2016T3.tasa_empleo_16_64_pct",
+      "decimales": 0,
+      "estado": "V"
+    },
+    {
       "texto": "69",
       "ruta": "mismo_trimestre.2026T3.tasa_empleo_16_64_pct",
       "decimales": 0,
       "estado": "V"
     },
     {
-      "texto": "67",
-      "ruta": "mismo_trimestre.2007T3.tasa_empleo_16_64_pct",
+      "texto": "10",
+      "ruta": "mismo_trimestre.2026T3.tasa_paro_pct",
       "decimales": 0,
       "estado": "V"
     },
@@ -183,14 +284,24 @@
       "estado": "V"
     },
     {
+      "texto": "19",
+      "ruta": "mismo_trimestre.2016T3.tasa_paro_pct",
+      "decimales": 0,
+      "estado": "V"
+    },
+    {
       "texto": "18,9",
       "ruta": "mismo_trimestre.2016T3.tasa_paro_pct",
       "decimales": 1,
       "estado": "V"
     }
   ],
+  "comprobaciones": [
+    "«Récord de toda la serie, desde 2002»: 22.852,6 miles en 2026T3 es el máximo de los 99 trimestres de EPA387796 (2002T1-2026T3) en data/raw/ine_65109_epa_ocupados.json (V).",
+    "«El máximo de entonces»: 2007T3 (20.753,4 miles) es el valor más alto de la serie hasta 2008 (V)."
+  ],
   "cierre": {
     "veredicto": "frente a 2016: mejora · frente a 2007: depende",
-    "porque": "Hay 2,1 millones más de ocupados y la tasa de empleo de 16-64 años es más alta que en 2007, pero la tasa de paro (10,2 %) sigue por encima de 2007 (8,0 %). Frente a 2016 mejoran todas las medidas."
+    "porque": "Hay 2,1 millones más de ocupados que en 2007 y la tasa de empleo de 16 a 64 años es más alta (69 frente a 67 de cada 100), pero la tasa de paro (10,2 %) sigue por encima de la de 2007 (8,0 %). Frente a 2016 mejoran todas las medidas."
   }
 }

@@ -1,4 +1,4 @@
-# Estado del proyecto y traspaso (10-11-2026, segunda sesión)
+# Estado del proyecto y traspaso (12-11-2026)
 
 Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d47-rj6s55`; no está en `main`). Léelo junto con `CLAUDE.md` y `docs/produccion.md`.
 
@@ -6,13 +6,14 @@ Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d
 | Pieza | Estado |
 |---|---|
 | Datos T1 y T2 (INE, Eurostat) | **Aprobados** por Bruno. `videos/piloto/paso-1-datos.md`, `data/clean/` |
-| Guion T1 **v5** (narración, voz de Bruno al 100 %) | Escrito y verificado. **Pendiente de que Bruno lo apruebe** (se le envía junto con el primer render). `videos/t1/guion.md` |
+| **T1** | **Aprobado para publicar** (Bruno, 12-11-2026). Vídeo `videos/t1/render/t1-limpio.mp4`. Ficha para Studio `upload/t1.md` (título, descripción con fuentes, etiquetas, casillas), portada `upload/t1-portada.png`. Archivo para apelaciones `archive/t1/`. **La subida la hace Bruno a mano en Studio** |
+| **T2** | Guion **v3** narrado (voz de Bruno, verificado: 13 cifras, unos 78 s) y escaleta escena a escena. **Pendiente de que Bruno los apruebe.** `videos/t2/guion.md`, `videos/t2/escaleta.md` |
 | Voz | **Resuelta: la voz 3 del casting** («nuestra voz, definitivamente», Bruno, 10-11-2026). Qwen3-TTS 0.6B clonando `diseno/voces/ref-dave.wav`. Integrada en `scripts/voces.py` con control de cada toma por Whisper |
 | Voz 5 del casting | A Bruno le hizo gracia (acento «ruso»). **Reservada** para un segundo personaje o una aparición puntual. Perfil `secundario` en `diseno/voces.json`; muestra en `diseno/voces/casting-voz5.wav` |
 | Imagen, estilo «limpio» | **Conectado y probado**: `render_historia.mjs` lo usa cuando `escenas.mjs` exporta `ESTILO = "limpio"`. Fotogramas de las 13 escenas revisados y corregidos |
 | Sonido (música y efectos por código) | A Bruno **le gusta**. `scripts/sonido.py` |
 | YouTube | Código y guías listos (`scripts/youtube/`, `docs/youtube-api-conexion.md`). Falta que Bruno adjunte el JSON del cliente OAuth |
-| T2, pizarra y baraja | **Aparcados** hasta que T1 esté bien |
+| Pizarra y baraja | Aparcados. El estilo del canal es el limpio |
 
 ## 2. Lo que Bruno ha pedido (no repetir errores)
 1. **El vídeo cuenta lo que dice la voz.** Nada de diapositivas con audio. Referencias en `archive/referencias/` (ref-1 a ref-9): escena por frase, tarjeta blanca con etiqueta y titular, subtítulo grande de 2-3 palabras, barra de progreso, personaje sencillo en un sitio fijo.
@@ -21,15 +22,18 @@ Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d
 4. **Texto con su voz** (`/anthropic-skills:clon-bruno` al 100 %), de persona normal, con gancho llamativo. Sin sus opiniones políticas.
 5. **Más tranquilo y menos cargado.** Una idea por escena. No recortar las pausas naturales de la voz; cada tarjeta con dato se queda en pantalla un segundo más.
 6. **Retención**: preguntas llamativas al empezar.
-7. **De uno en uno**: solo T1 hasta que esté bien.
+7. **De uno en uno**: ahora T2, hasta que esté bien.
 8. Lee en el **móvil**: mensajes cortos y con el resultado primero. Revisar los fotogramas antes de enviar nada.
 
 Versiones rechazadas: v1 (tarjetas y bustos, tres estilos), v2 collage (`videos/t1/render/t1-collage.mp4`: «tiene que mejorar mucho», voces malas, rápido y saturado).
 
 ## 3. Siguiente paso, en orden
-1. Esperar la opinión de Bruno sobre el **guion v5** y el **primer render limpio** (`videos/t1/render/t1-limpio.mp4`).
-2. Corregir lo que pida. Una línea de voz concreta se repite con `~/.venv-qwen/bin/python scripts/voces.py videos/t1/guion.json --rehacer N`; las demás se reutilizan.
-3. Cuando T1 esté aprobado: ficha de subida (`upload/`), archivo para apelaciones (`archive/t1/`) y, solo entonces, pasar a T2.
+1. Esperar a que Bruno apruebe el **guion v3 de T2** y la **escaleta** (y si quiere la voz 5 en la escena 9).
+2. Voz de T2: `~/.venv-qwen/bin/python scripts/voces.py videos/t2/guion.json`.
+3. Escenas de T2 en estilo limpio (`videos/t2/escenas.mjs` con `ESTILO = "limpio"`) y `videos/t2/historia.json` (momentos anclados a palabras). Piezas nuevas en la escaleta: calle, Marta, multitud, rejilla de 100, contador, línea del paro.
+4. Sonido (`sonido.py videos/t2`), revisar fotogramas, render, revisar fotograma a fotograma y enviar.
+5. Al aprobarlo: `python3 scripts/ficha.py t2` (añadir antes su entrada, método y cierre en `ficha.py`) y `archive/t2/`.
+6. Si Bruno publica T1 y conecta la API (JSON del cliente OAuth), leer métricas con `scripts/youtube/metricas.py`.
 
 ## 4. Lo que se hizo en esta sesión
 - `diseno/tokens.json` no estaba en git (lo ignoraba la regla `token*.json`) y el render fallaba: se reconstruyó desde `diseno/contraste.md` y se versiona.

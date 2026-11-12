@@ -10,7 +10,7 @@ Continúas el proyecto «Cuánto Vale Tu Hora» (canal de YouTube con datos ofic
 2. Lee `CLAUDE.md`, `docs/ESTADO.md` y `docs/produccion.md` enteros. `docs/ESTADO.md` dice dónde estamos, qué he rechazado y por qué, y el siguiente paso.
 3. Mira mis referencias visuales en `archive/referencias/`.
 
-Dónde lo dejamos: solo trabajamos el vídeo T1 («¿llenar el carro te cuesta más o menos que hace 10 años?»). La voz es la 3 del casting. Hay un primer render en estilo limpio (`videos/t1/render/t1-limpio.mp4`) y te diré qué cambiar del guion v5 y del vídeo.
+Dónde lo dejamos: T1 está aprobado y listo para subir (`upload/t1.md`). Ahora trabajamos T2 («¿hoy trabaja más gente que antes de la crisis?»): el guion v3 y la escaleta están escritos (`videos/t2/guion.md`, `videos/t2/escaleta.md`) y te diré qué cambiar.
 
 Sigue los pasos del apartado 3 de `docs/ESTADO.md`, en ese orden.
 
@@ -19,9 +19,9 @@ Reglas que no se discuten:
 - Voz natural y con acento de España. Mándame muestras cortas y **espera mi respuesta** antes de renderizar.
 - El vídeo cuenta lo que dice la voz: una escena con acción por frase, tranquilo y con pocos elementos, como mis referencias.
 - Texto con mi voz (`/anthropic-skills:clon-bruno` al 100 %), sin opiniones políticas.
-- De uno en uno: nada de T2, pizarra ni baraja hasta que T1 esté bien.
+- De uno en uno: nada de T3, pizarra ni baraja hasta que T2 esté bien.
 - Te leo en el móvil: mensajes cortos, con el resultado primero. Revisa los fotogramas tú antes de enviarme nada.
 
-Mis comentarios sobre el guion v5 y el render: [escríbelos aquí].
+Mis comentarios sobre el guion v3 y la escaleta de T2: [escríbelos aquí].
 
 ---

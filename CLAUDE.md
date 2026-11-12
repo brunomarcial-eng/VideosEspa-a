@@ -28,7 +28,7 @@ Nombre de trabajo: **Cuánto Vale Tu Hora**. Alternativas: «El Precio del Tiemp
 - **Ritmo tranquilo y poca carga:** una idea por escena, pocos elementos, y cada dato se queda en pantalla el tiempo suficiente para leerlo. Mejor 70 segundos claros que 50 con prisa.
 - **Estilo de imagen:** limpio y sencillo como las referencias de `archive/referencias/` (tarjeta blanca con etiqueta y titular, subtítulo grande de 2-3 palabras, barra de progreso, personaje sencillo en un sitio fijo).
 - **Sonido:** música y efectos que acompañen cada acción de la historia.
-- **De uno en uno:** hasta que un vídeo esté bien (ahora, T1 en estilo limpio), no se producen los demás. Estado y siguiente paso: `docs/ESTADO.md`.
+- **De uno en uno:** hasta que un vídeo esté bien, no se producen los demás. T1 aprobado el 12-11-2026; ahora, T2 en estilo limpio. Estado y siguiente paso: `docs/ESTADO.md`.
 - Estructura del repo, agentes y contratos: `docs/agentes-y-pipeline.md`.
 - Identidad visual: `docs/identidad-visual.md`. Test de estilos: `docs/piloto-test.md`. Backlog: `docs/backlog-videos.md`.
 - Contexto previo e investigación: carpeta `research/` (los estados judiciales y cifras hay que re-verificar en la fuente antes de usar).
