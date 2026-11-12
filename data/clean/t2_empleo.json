@@ -7,7 +7,8 @@
     "EPA387800": "Total Nacional. Ambos sexos. Total. Parados. Valor absoluto.",
     "EPA423474": "Total Nacional. Tasa de paro de la población. Ambos sexos. Total.",
     "EPA441060": "Total Nacional. Tasa de empleo de la población. Ambos sexos. Total.",
-    "EPA441257": "De 16 a 64 años. Ambos sexos. Total Nacional. Tasa de empleo de la población."
+    "EPA441257": "De 16 a 64 años. Ambos sexos. Total Nacional. Tasa de empleo de la población.",
+    "ECP320": "Total Nacional. Todas las edades. Total. Población. Número."
   },
   "mismo_trimestre": {
     "2007T3": {
@@ -16,7 +17,9 @@
       "tasa_paro_pct": 8.01,
       "tasa_empleo_16_mas_pct": 54.73,
       "tasa_empleo_16_64_pct": 67.18,
-      "poblacion_16_mas_miles": 37919.6
+      "poblacion_16_mas_miles": 37919.6,
+      "poblacion_total_miles": 45236.004,
+      "poblacion_total_dato": "1 de julio de 2007 (definitivo)"
     },
     "2016T3": {
       "ocupados_miles": 18527.5,
@@ -24,7 +27,9 @@
       "tasa_paro_pct": 18.91,
       "tasa_empleo_16_mas_pct": 48.07,
       "tasa_empleo_16_64_pct": 61.12,
-      "poblacion_16_mas_miles": 38542.8
+      "poblacion_16_mas_miles": 38542.8,
+      "poblacion_total_miles": 46427.1,
+      "poblacion_total_dato": "1 de julio de 2016 (definitivo)"
     },
     "2018T3": {
       "ocupados_miles": 19528.0,
@@ -32,7 +37,9 @@
       "tasa_paro_pct": 14.55,
       "tasa_empleo_16_mas_pct": 50.18,
       "tasa_empleo_16_64_pct": 64.01,
-      "poblacion_16_mas_miles": 38915.9
+      "poblacion_16_mas_miles": 38915.9,
+      "poblacion_total_miles": 46715.383,
+      "poblacion_total_dato": "1 de julio de 2018 (definitivo)"
     },
     "2019T3": {
       "ocupados_miles": 19874.3,
@@ -40,7 +47,9 @@
       "tasa_paro_pct": 13.92,
       "tasa_empleo_16_mas_pct": 50.54,
       "tasa_empleo_16_64_pct": 64.54,
-      "poblacion_16_mas_miles": 39323.9
+      "poblacion_16_mas_miles": 39323.9,
+      "poblacion_total_miles": 47087.778,
+      "poblacion_total_dato": "1 de julio de 2019 (definitivo)"
     },
     "2026T3": {
       "ocupados_miles": 22852.6,
@@ -48,7 +57,9 @@
       "tasa_paro_pct": 10.18,
       "tasa_empleo_16_mas_pct": 53.45,
       "tasa_empleo_16_64_pct": 69.1,
-      "poblacion_16_mas_miles": 42755.1
+      "poblacion_16_mas_miles": 42755.1,
+      "poblacion_total_miles": 49805.419,
+      "poblacion_total_dato": "1 de julio de 2026 (provisional)"
     }
   },
   "media_anual": {
@@ -119,7 +130,7 @@
       "tasa_paro_15_74_UE27": 6.0
     }
   },
-  "nota_poblacion": "poblacion_16_mas = ocupados / tasa de empleo 16+ (C)",
+  "nota_poblacion": "poblacion_16_mas = ocupados / tasa de empleo 16+ (C). poblacion_total = habitantes de todas las edades a 1 de julio (INE, ECP320, V)",
   "fuentes": {
     "eurostat_lfsi_emp_a.json": {
       "descripcion": "Eurostat. Tasa de empleo 20-64 años (anual)",
@@ -162,6 +173,13 @@
       "api": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/65306?tip=A&nult=110",
       "consultado": "2026-11-09T16:41:26Z",
       "sha256": "95c3cf947d84ea48c2b28841a82c244f4df2ef83991c980383d0ce78cfaa375e"
+    },
+    "ine_ecp320_poblacion.json": {
+      "descripcion": "INE ECP. Población residente en España, total nacional, todas las edades (serie ECP320, semestral desde 1971 y trimestral desde 2021)",
+      "web": "https://www.ine.es/jaxiT3/Tabla.htm?t=56934",
+      "api": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECP320?tip=A&nult=300",
+      "consultado": "2026-11-12T20:00:09Z",
+      "sha256": "9c1e4640dbad7439e67684fbf831b0d93248845c15c3e96675e077a37aa39233"
     }
   }
 }

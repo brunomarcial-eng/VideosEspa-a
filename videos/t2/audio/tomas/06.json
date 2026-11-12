@@ -1,41 +1,37 @@
 {
- "huella": "6eddb2fe406c90f5",
+ "huella": "b41c95ad16aa81ba",
  "semilla": 6000,
- "texto": "Así que, en proporción: imagina 100 personas de 16 a 64 años.",
+ "texto": "Foto dos: 2016. Somos 46,4 millones. Un 3 % más.",
  "ev": {
   "ok": true,
   "nota": 1.0,
-  "oido": "Así que en proporción imagina 100 personas de 16 a 64 años.",
+  "oido": "Foto 2 2016, somos 46,4 millones, un 3% más.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.22,
-   0.4,
-   0.5,
-   1.3,
-   1.78,
-   1.96,
-   2.36,
-   2.52,
-   3.02,
-   3.52,
-   4.12
+   0.26,
+   0.52,
+   1.84,
+   2.34,
+   3.64,
+   4.54,
+   4.72,
+   4.88,
+   5.22
   ],
   "t1": [
-   0.22,
-   0.4,
-   0.5,
-   1.3,
-   1.78,
-   1.96,
-   2.36,
-   2.52,
-   3.02,
-   3.52,
-   4.12,
-   4.48
+   0.26,
+   0.52,
+   1.36,
+   2.34,
+   3.64,
+   3.98,
+   4.72,
+   4.88,
+   5.22,
+   5.56
   ],
-  "ritmo": 14.5
+  "ritmo": 13.4
  }
 }

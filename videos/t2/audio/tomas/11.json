@@ -1,43 +1,37 @@
 {
- "huella": "489fae2899fafefd",
+ "huella": "b681ca4b4630d4e2",
  "semilla": 11000,
- "texto": "En 2016 eran 19. Ha bajado mucho… pero no ha vuelto a 2007.",
+ "texto": "Trabajando, 22,9 millones. Récord. Y también un 10 % más.",
  "ev": {
   "ok": true,
   "nota": 1.0,
-  "oido": "En 2016 eran 19, ha bajado mucho, pero no ha vuelto a 2007.",
+  "oido": "Trabajando 22,9 millones, record, y también un 10% más.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.14,
-   0.9,
-   1.56,
-   2.58,
-   2.74,
-   3.04,
-   3.92,
-   4.16,
-   4.32,
-   4.4,
-   4.9,
-   5.04
+   0.6,
+   1.58,
+   2.36,
+   3.1,
+   3.16,
+   3.44,
+   3.76,
+   3.98,
+   4.26
   ],
   "t1": [
-   0.14,
-   0.9,
-   1.56,
-   2.0,
-   2.74,
-   3.04,
-   3.34,
-   4.16,
-   4.32,
-   4.4,
-   4.9,
-   5.04,
-   5.32
+   0.6,
+   1.58,
+   1.98,
+   2.7,
+   3.16,
+   3.44,
+   3.76,
+   3.98,
+   4.26,
+   4.56
   ],
-  "ritmo": 12.0
+  "ritmo": 14.5
  }
 }

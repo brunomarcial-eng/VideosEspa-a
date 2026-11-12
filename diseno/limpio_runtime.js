@@ -97,6 +97,23 @@ function persona(id, t, o) {
   for (const m of $(id + "-b").children) m.style.display = m.dataset.b === boca ? "" : "none";
 }
 
+// Alguien trabajando (carnicero, camarera, mecánico…): alterna dos posturas del brazo a un ritmo fijo.
+// El personaje está dibujado dentro de un grupo que ya lo coloca: por eso x = y = 0 y s = 1 por defecto.
+function trabaja(id, t, o = {}) {
+  const per = o.ritmo ?? 0.5, fa = o.fase ?? 0, f = Math.floor((t + fa) / per), t1 = f * per - fa;
+  const a = o.a ?? "empuja", b = o.b ?? "senala";
+  persona(id, t, { x: o.x ?? 0, y: o.y ?? 0, s: o.s ?? 1, espejo: o.espejo, oculto: o.oculto,
+    brazo: [[t1 - per, f % 2 ? a : b], [t1, f % 2 ? b : a]], mira: o.mira ?? 0, ojos: o.ojos ?? "normal",
+    boca: o.boca ?? "sonrisa", incl: o.incl ?? 0, fase: fa });
+}
+// Vapor que sube (cafetera): círculos que suben, crecen y se desvanecen.
+function vapor(p, n, t, x, y) {
+  for (let k = 0; k < n; k++) {
+    const f = ((t * 0.9 + k / n) % 1);
+    attr(p + k, "cx", (x + Math.sin((t + k) * 3) * 8).toFixed(1)); attr(p + k, "cy", (y - f * 170).toFixed(1));
+    attr(p + k, "r", (12 + f * 22).toFixed(1)); css(p + k, "opacity", (0.8 * (1 - f)).toFixed(2));
+  }
+}
 // Persona que cruza andando: entra por un lado y sale por el otro (o se para en «hasta»).
 // o: {x0, v (px/s), y, t0 (cuándo empieza a andar), hasta (x donde se para, opcional), fase}
 function andar(id, t, o) {

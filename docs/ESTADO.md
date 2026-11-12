@@ -5,9 +5,9 @@ Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d
 ## 1. Dónde estamos
 | Pieza | Estado |
 |---|---|
-| Datos T1 y T2 (INE, Eurostat) | **Aprobados** por Bruno. `videos/piloto/paso-1-datos.md`, `data/clean/` |
+| Datos T1 y T2 (INE, Eurostat) | **Aprobados** por Bruno. `videos/piloto/paso-1-datos.md`, `data/clean/`. Para T2 v4 se añade la población residente a 1 de julio (INE, serie ECP320, `data/raw/ine_ecp320_poblacion.json`): **pendiente de aprobar** |
 | **T1** | **Aprobado para publicar** (Bruno, 12-11-2026). Vídeo `videos/t1/render/t1-limpio.mp4`. Ficha para Studio `upload/t1.md` (título, descripción con fuentes, etiquetas, casillas), portada `upload/t1-portada.png`. Archivo para apelaciones `archive/t1/`. **La subida la hace Bruno a mano en Studio** |
-| **T2** | **Aprobado para publicar** (Bruno, 12-11-2026). Vídeo `videos/t2/render/t2-limpio.mp4` (80 s). Ficha para Studio `upload/t2.md`, portada `upload/t2-portada.png`, archivo para apelaciones `archive/t2/`. **La subida la hace Bruno a mano en Studio** |
+| **T2** | **Rehecho (v4), pendiente de aprobar.** Bruno aprobó la v3 y luego la rechazó el 12-11-2026: no se entendía. Faltaba decir que es España y la bandera, las cifras no tenían base («¿4,8 millones más sobre cuánto?») y la gente paseando no aportaba. La v4 son tres «fotos» (2007, 2016 y hoy) con habitantes, trabajando y en paro en cifras absolutas, comercios con gente trabajando, un tablón de empleo, rosquillas y barras. Guion `videos/t2/guion.md`, escaleta `videos/t2/escaleta.md`, vídeo `videos/t2/render/t2-limpio.mp4` (94 s). **No subir hasta que Bruno apruebe la v4.** `archive/t2/` aún tiene la v3 |
 | **Voz** | Tras el casting 2 de motores (`videos/casting/casting-motores.mp4`), Bruno **se queda con la voz 1, la actual** (voz 3 del primer casting, Qwen3-TTS 0.6B), el 12-11-2026. Investigación en `docs/voces-investigacion.md`. Queda abierta la prueba de Google Chirp 3 HD si Bruno da una clave de Google Cloud |
 | Voz | **Resuelta: la voz 3 del casting** («nuestra voz, definitivamente», Bruno, 10-11-2026). Qwen3-TTS 0.6B clonando `diseno/voces/ref-dave.wav`. Integrada en `scripts/voces.py` con control de cada toma por Whisper |
 | Voz 5 del casting | A Bruno le hizo gracia (acento «ruso»). **Reservada** para un segundo personaje o una aparición puntual. Perfil `secundario` en `diseno/voces.json`; muestra en `diseno/voces/casting-voz5.wav` |
@@ -23,13 +23,15 @@ Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d
 4. **Texto con su voz** (`/anthropic-skills:clon-bruno` al 100 %), de persona normal, con gancho llamativo. Sin sus opiniones políticas.
 5. **Más tranquilo y menos cargado.** Una idea por escena. No recortar las pausas naturales de la voz; cada tarjeta con dato se queda en pantalla un segundo más.
 6. **Retención**: preguntas llamativas al empezar.
-7. **De uno en uno**: T1 y T2 aprobados; el siguiente vídeo, cuando Bruno lo elija.
+7. **De uno en uno**: T1 aprobado; T2 rehecho y pendiente; el siguiente vídeo, cuando Bruno lo elija.
+9. **Que se entienda (T2, 12-11-2026):** decir siempre de qué país hablamos (España, con la bandera al empezar). Cifras absolutas con su base («antes éramos X, ahora Y»). Gráficos que se lean de un vistazo (rosquilla, quesito, barras). Escenas que enseñen la idea (gente trabajando en comercios, no gente paseando). El título exacto que diga Bruno.
 8. Lee en el **móvil**: mensajes cortos y con el resultado primero. Revisar los fotogramas antes de enviar nada.
 
 Versiones rechazadas: v1 (tarjetas y bustos, tres estilos), v2 collage (`videos/t1/render/t1-collage.mp4`: «tiene que mejorar mucho», voces malas, rápido y saturado).
 
 ## 3. Siguiente paso, en orden
-1. Bruno sube T1 y T2 a mano en Studio con `upload/t1.md` y `upload/t2.md` (contenido sintético: sí; no es para niños).
+1. Bruno revisa la v4 de T2 (vídeo, datos nuevos de población y guion). Si la aprueba: `python3 scripts/ficha.py t2`, portada y `archive/t2/` con la v4.
+1. Bruno sube T1 (y T2 cuando esté aprobado) a mano en Studio con `upload/<id>.md` (contenido sintético: sí; no es para niños).
 2. Elegir con Bruno el tercer vídeo del backlog (`docs/backlog-videos.md`) y repetir el flujo: datos → guion (clon-bruno) y escaleta → aprobación → voz, escenas, sonido → fotogramas → render.
 3. Si Bruno quiere probar Google Chirp 3 HD: necesita su cuenta de Google Cloud, una clave de API y permitir `texttospeech.googleapis.com` en el entorno.
 4. La voz 5 (personaje secundario) está fijada en `diseno/voces/ref-voz5.wav`; se usará cuando Bruno lo pida, con una muestra previa.
@@ -74,3 +76,10 @@ UV_HTTP_TIMEOUT=300 uv pip install --python ~/.venv-qwen/bin/python qwen-tts fas
 - Qwen3-TTS: con «…» a mitad de frase a veces no hace pausa (`voces.py` lo detecta y parte la frase). Sin tope, una toma puede desbocarse hasta 2048 pasos (casi 3 minutos de audio): `voces.py` pone `max_new_tokens` según el largo del texto.
 - Cualquier estado que una escena deje en un elemento compartido (como la pantalla de la caja) hay que fijarlo en cada fotograma: el vídeo se renderiza en cuatro partes y cada una empieza en un sitio distinto.
 - La clave de ElevenLabs sigue guardada en el entorno y no se usa: Bruno puede borrarla en los ajustes del entorno.
+
+## 8. Piezas nuevas (T2 v4)
+- `diseno/barrio.mjs`: bandera (icono de tarjeta), mapa de España con figuritas (`diseno/mapa_espana.json`, Natural Earth, dominio público), fachadas de comercio con alguien trabajando en el escaparate y persiana, interiores (carnicería, cafetería, agencia de viajes, taller), tablón de ofertas de empleo con cola, rosquilla «de cada 100».
+- `persona()` admite ropa, delantal, gorro, piel y pelo propios; el runtime tiene `trabaja()` (alterna posturas del brazo) y `vapor()`.
+- `sonido.py`: campanilla de puerta, persiana, vapor y golpe.
+- `verificar_guion.py`: operación `pct_de` (a como % de b) y `duracion_max_s` por guion.
+- `descargar_datos.py` acepta nombres de fichero para bajar solo esos.

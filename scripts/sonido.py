@@ -311,13 +311,46 @@ def s_calle(dur=1.6, **_):
     return bordes(norm(y) * np.minimum(1, np.minimum(tiempo(dur), dur - tiempo(dur)) / 0.25), 0.01, 0.05)
 
 
+def s_campanilla(**_):
+    """Campanilla de la puerta de una tienda: dos golpes de campana pequeña."""
+    y = np.zeros(int(0.9 * SR), np.float32)
+    for k, f in enumerate((2637, 3136)):
+        c = campana(f, 0.7, [(1, 1, 0.22), (2.3, 0.35, 0.1), (3.9, 0.15, 0.05)])
+        i = int(k * 0.12 * SR)
+        y[i:i + len(c)] += c[: len(y) - i] * (1 - 0.3 * k)
+    return norm(y)
+
+
+def s_persiana(dur=1.0, **_):
+    """Persiana metálica que sube: traqueteo de lamas."""
+    t = tiempo(dur)
+    lamas = 0.55 + 0.45 * np.sign(np.sin(2 * np.pi * (18 + 8 * t / dur) * t))
+    y = ruido(dur, 300, 4000) * lamas * np.sin(np.pi * t / dur) ** 0.6
+    return bordes(norm(y), 0.02, 0.08)
+
+
+def s_vapor(dur=0.9, **_):
+    """Vaporizador de la cafetera."""
+    t = tiempo(dur)
+    y = ruido(dur, 2500, 9000) * (np.minimum(1, t / 0.08)) * np.exp(-np.maximum(0, t - dur * 0.6) / 0.08)
+    return bordes(norm(y), 0.01, 0.05)
+
+
+def s_golpe(**_):
+    """Golpe seco (el cuchillo de carnicero en la tabla)."""
+    t = tiempo(0.18)
+    y = np.sin(2 * np.pi * (90 + 70 * np.exp(-t / 0.015)) * t) * np.exp(-t / 0.04) + ruido(0.18, 300, 3000) * np.exp(-t / 0.01) * 0.5
+    return bordes(norm(y), 0.001, 0.03)
+
+
 EFECTOS = {"calle": s_calle, "pop": s_pop, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
            "carro": s_carro, "beep": s_beep, "conteo": s_conteo, "caja": s_caja, "sube": s_sube, "pinza": s_pinza,
-           "desenrolla": s_desenrolla, "sello": s_sello, "notif": s_notif, "fwip": s_fwip}
+           "desenrolla": s_desenrolla, "sello": s_sello, "notif": s_notif, "fwip": s_fwip,
+           "campanilla": s_campanilla, "persiana": s_persiana, "vapor": s_vapor, "golpe": s_golpe}
 # Ganancia de cada efecto para que ninguno tape la voz
 NIVEL = {"calle": 0.22, "pop": 0.30, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
          "beep": 0.12, "conteo": 0.16, "caja": 0.30, "sube": 0.13, "pinza": 0.26, "desenrolla": 0.22,
-         "sello": 0.40, "notif": 0.24, "fwip": 0.10}
+         "sello": 0.40, "notif": 0.24, "fwip": 0.10, "campanilla": 0.18, "persiana": 0.16, "vapor": 0.10, "golpe": 0.22}
 
 
 # ------------------------------------------------------------------ cues

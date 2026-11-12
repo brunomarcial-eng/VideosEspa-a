@@ -1,25 +1,23 @@
 {
- "huella": "69c04c7657711955",
+ "huella": "53e73cf706e2bb8c",
  "semilla": 3000,
- "texto": "En 2016, 18,53 millones.",
+ "texto": "Trabajando, 20,8 millones.",
  "ev": {
   "ok": true,
   "nota": 1.0,
-  "oido": "En 2016, 18,53 millones.",
+  "oido": "Trabajando 20,8 millones.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.12,
-   1.06,
-   2.2
+   0.56,
+   1.52
   ],
   "t1": [
-   0.12,
-   0.82,
-   2.2,
-   2.58
+   0.56,
+   1.52,
+   1.76
   ],
-  "ritmo": 17.4
+  "ritmo": 15.8
  }
 }

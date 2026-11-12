@@ -5,7 +5,8 @@ Cada descarga queda registrada en data/raw/MANIFEST.csv con el enlace, la
 fecha de consulta y la huella SHA-256, para poder demostrar de dónde sale cada
 cifra si hay una apelación.
 
-Uso: python3 scripts/descargar_datos.py
+Uso: python3 scripts/descargar_datos.py [fichero ...]
+Sin argumentos baja todo; con nombres de fichero, solo esos (los demás no se tocan).
 """
 import csv
 import hashlib
@@ -64,6 +65,10 @@ DESCARGAS = [
     ("ine_65306_epa_tasa_empleo.json", INE.format(id=65306, n=110),
      "INE EPA. Tasas de empleo de 16 y más y de 16 a 64 años por sexo y CCAA (trimestral)",
      "https://www.ine.es/jaxiT3/Tabla.htm?t=65306"),
+    # --- T2: población residente (Estadística Continua de Población; antes, Cifras de Población) ---
+    ("ine_ecp320_poblacion.json", "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECP320?tip=A&nult=300",
+     "INE ECP. Población residente en España, total nacional, todas las edades (serie ECP320, semestral desde 1971 y trimestral desde 2021)",
+     "https://www.ine.es/jaxiT3/Tabla.htm?t=56934"),
     # --- Eurostat (contraste) ---
     ("eurostat_lfsi_emp_a.json",
      EUROSTAT.format(ds="lfsi_emp_a", extra="&age=Y20-64&sex=T&indic_em=EMP_LFS&unit=PC_POP"),
@@ -95,7 +100,10 @@ def main() -> int:
             filas = list(csv.DictReader(f))
     por_fichero = {r["fichero"]: r for r in filas}
     errores = 0
+    solo = set(sys.argv[1:])
     for fichero, url, desc, web in DESCARGAS:
+        if solo and fichero not in solo:
+            continue
         try:
             datos = bajar(url)
             json.loads(datos)  # comprobar que es JSON válido

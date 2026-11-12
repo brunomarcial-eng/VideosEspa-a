@@ -1,0 +1,53 @@
+{
+ "huella": "0f0117569c97b827",
+ "semilla": 15001,
+ "texto": "¿Mejora, empeora o depende? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007… depende.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Mejora, empeora o depende, frente a 2016 mejora, un 40% menos de paro, frente a 2007, depende.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.92,
+   1.38,
+   1.5,
+   2.36,
+   2.54,
+   2.7,
+   3.2,
+   4.3,
+   4.42,
+   4.76,
+   5.12,
+   5.48,
+   5.68,
+   6.28,
+   6.62,
+   6.74,
+   7.7
+  ],
+  "t1": [
+   0.66,
+   1.38,
+   1.5,
+   1.84,
+   2.54,
+   2.7,
+   3.2,
+   4.16,
+   4.42,
+   4.76,
+   5.12,
+   5.48,
+   5.68,
+   6.06,
+   6.62,
+   6.74,
+   7.28,
+   8.1
+  ],
+  "ritmo": 12.5
+ }
+}

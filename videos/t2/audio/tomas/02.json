@@ -1,39 +1,41 @@
 {
- "huella": "6b5929c41def4d31",
+ "huella": "186062c7dae13feb",
  "semilla": 2000,
- "texto": "2007, justo antes de la crisis: 20,75 millones de personas trabajando.",
+ "texto": "Foto uno: 2007, antes de la crisis. En España vivíamos 45,2 millones.",
  "ev": {
   "ok": true,
   "nota": 1.0,
-  "oido": "2007, justo antes de la crisis, 20,75 millones de personas trabajando.",
+  "oido": "Foto 1, 2007, antes de la crisis. En España vivíamos 45,2 millones.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   1.14,
-   1.38,
-   1.68,
+   0.24,
+   0.74,
    1.82,
-   1.92,
-   2.66,
-   3.76,
-   4.36,
-   4.58,
-   4.9
+   2.0,
+   2.14,
+   2.24,
+   3.02,
+   3.16,
+   3.42,
+   3.86,
+   5.08
   ],
   "t1": [
-   0.68,
-   1.38,
-   1.68,
-   1.82,
-   1.92,
-   2.2,
-   3.76,
-   4.36,
-   4.58,
-   4.9,
-   5.26
+   0.24,
+   0.44000000000000006,
+   1.4,
+   2.0,
+   2.14,
+   2.24,
+   2.52,
+   3.16,
+   3.42,
+   3.86,
+   5.08,
+   5.28
   ],
-  "ritmo": 14.5
+  "ritmo": 12.6
  }
 }

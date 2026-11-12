@@ -9,7 +9,7 @@ Comprueba un videos/<id>/guion.json y, si pasa, escribe videos/<id>/guion.md:
   4. Todo plano con cifras lleva sello de fuente.
   5. Nada de 2020, ni nombres vetados, ni partidos, ni atribución de causas.
   6. Cierre «¿Mejora, empeora o depende?» y al menos tres años en pantalla.
-  7. Duración estimada de la voz entre 45 y 85 s (ritmo tranquilo: cada dato necesita su tiempo).
+  7. Duración estimada de la voz entre 45 y 85 s (o «duracion_max_s» del guion; ritmo tranquilo: cada dato necesita su tiempo).
 
 Uso: python3 scripts/verificar_guion.py videos/t1/guion.json [--ritmo 2.6]
 Sale con código 1 si algo falla.
@@ -49,6 +49,9 @@ def valor_cifra(datos, c):
     if c.get("op") == "var_pct":
         a, b = (resolver(datos, r) for r in c["rutas"])
         v = 100 * (b / a - 1)
+    elif c.get("op") == "pct_de":   # a como porcentaje de b
+        a, b = (resolver(datos, r) for r in c["rutas"])
+        v = 100 * a / b
     elif c.get("op") == "resta":
         a, b = (resolver(datos, r) for r in c["rutas"])
         v = b - a
@@ -156,8 +159,9 @@ def verificar(ruta_guion, ritmo=RITMO):
         d = palabras_habladas(b["voz"]) / ritmo
         tiempos.append((t, t + d))
         t += d
-    if not 45 <= t <= 85:
-        fallos.append(f"duración estimada {t:.0f} s (debe estar entre 45 y 85)")
+    maximo_s = g.get("duracion_max_s", 85)
+    if not 45 <= t <= maximo_s:
+        fallos.append(f"duración estimada {t:.0f} s (debe estar entre 45 y {maximo_s})")
 
     return g, fallos, avisos, filas_cifras, tiempos, t, anyos
 

@@ -1,47 +1,33 @@
 {
- "huella": "aefa692f3849b994",
+ "huella": "1a8660b3938a08c6",
  "semilla": 5000,
- "texto": "Ojo, que también somos más: 4,8 millones más de personas de 16 años o más.",
+ "texto": "O sea, de cada 100 habitantes, trabajaban 46.",
  "ev": {
   "ok": true,
   "nota": 1.0,
-  "oido": "Ojo, que también somos más, 4,8 millones más de personas de 16 años o más.",
+  "oido": "O sea, ¿de cada 100 habitantes trabajaban 46?",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.62,
-   0.68,
-   0.98,
-   1.2,
-   1.86,
-   3.04,
-   3.46,
-   3.88,
-   4.02,
-   4.32,
-   4.5,
-   4.94,
-   5.3,
-   5.62
+   0.1,
+   0.48,
+   0.72,
+   0.92,
+   1.12,
+   1.64,
+   2.22
   ],
   "t1": [
-   0.26,
-   0.68,
-   0.98,
-   1.2,
-   1.5,
-   3.04,
-   3.46,
-   3.88,
-   4.02,
-   4.32,
-   4.5,
-   4.94,
-   5.3,
-   5.62,
-   5.8
+   0.1,
+   0.24,
+   0.72,
+   0.92,
+   1.12,
+   1.64,
+   2.22,
+   2.62
   ],
-  "ritmo": 12.5
+  "ritmo": 15.3
  }
 }

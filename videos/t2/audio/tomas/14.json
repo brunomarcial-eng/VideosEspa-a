@@ -1,41 +1,41 @@
 {
- "huella": "5a25b4bf25045a13",
+ "huella": "b034b653a2a8930b",
  "semilla": 14000,
- "texto": "¿Y tú? ¿Lo notas a tu alrededor… o no tanto? Te leo.",
+ "texto": "Por eso hoy, de cada 100 habitantes, trabajan 46. Como en 2007.",
  "ev": {
   "ok": true,
   "nota": 1.0,
-  "oido": "Y tú lo notas a tu alrededor, o no tanto, te leo.",
+  "oido": "Por eso hoy de cada 100 habitantes trabajan 46, como en 2007.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
    0.12,
-   0.26,
-   0.58,
-   0.92,
-   1.02,
-   1.06,
-   1.8,
-   2.16,
-   2.26,
-   2.94,
-   3.14
+   0.3,
+   0.52,
+   0.64,
+   0.78,
+   0.98,
+   1.6,
+   2.18,
+   3.36,
+   3.8,
+   3.92
   ],
   "t1": [
    0.12,
-   0.26,
-   0.58,
-   0.92,
-   1.02,
-   1.06,
-   1.44,
-   2.16,
-   2.26,
-   2.52,
-   3.14,
-   3.42
+   0.30000000000000004,
+   0.52,
+   0.64,
+   0.78,
+   0.98,
+   1.6,
+   2.18,
+   2.74,
+   3.8,
+   3.92,
+   4.4
   ],
-  "ritmo": 9.9
+  "ritmo": 11.9
  }
 }

@@ -1,31 +1,35 @@
 {
- "huella": "882574bfa9be18ff",
+ "huella": "501f63f7895be6ae",
  "semilla": 7000,
- "texto": "En 2007 trabajaban 67. En 2016, 61.",
+ "texto": "Pero trabajando, solo 18,5 millones. Un 11 % menos.",
  "ev": {
   "ok": true,
   "nota": 1.0,
-  "oido": "en 2007 trabajaban 67, en 2016 61.",
+  "oido": "Pero trabajando solo 18,5 millones, un 11% menos.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.14,
+   0.16,
    0.58,
-   1.24,
-   2.42,
-   2.68,
-   3.24
+   1.34,
+   2.66,
+   3.52,
+   3.82,
+   3.98,
+   4.36
   ],
   "t1": [
-   0.14,
-   0.5800000000000001,
-   1.24,
-   1.8600000000000003,
-   2.68,
-   3.24,
-   4.5
+   0.16,
+   0.58,
+   1.34,
+   2.66,
+   3.08,
+   3.82,
+   3.98,
+   4.36,
+   4.74
   ],
-  "ritmo": 13.5
+  "ritmo": 10.6
  }
 }

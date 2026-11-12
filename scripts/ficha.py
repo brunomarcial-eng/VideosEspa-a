@@ -25,10 +25,10 @@ FUENTES = {
         ("Eurostat · Ganancias netas por tipo de hogar (earn_nt_net)", "https://ec.europa.eu/eurostat/databrowser/view/earn_nt_net/default/table"),
     ],
     "t2": [
+        ("INE · Población residente en España, a 1 de julio (Estadística Continua de Población, tabla 56934)", "https://www.ine.es/jaxiT3/Tabla.htm?t=56934"),
         ("INE · Encuesta de Población Activa, ocupados (tabla 65109)", "https://www.ine.es/jaxiT3/Tabla.htm?t=65109"),
         ("INE · EPA, parados (tabla 65218)", "https://www.ine.es/jaxiT3/Tabla.htm?t=65218"),
         ("INE · EPA, tasas de paro (tabla 65219)", "https://www.ine.es/jaxiT3/Tabla.htm?t=65219"),
-        ("INE · EPA, tasas de empleo (tabla 65306)", "https://www.ine.es/jaxiT3/Tabla.htm?t=65306"),
     ],
 }
 
@@ -41,13 +41,15 @@ ENTRADA = {
            "la misma compra, un 40 %.\n\n"
            "Veredicto: empeora. Casi dos horas más de trabajo cada mes por llevarte lo mismo. Y sale igual "
            "con 2016, 2018 o 2019 de referencia, y con el sueldo medio o el mediano, bruto o neto."),
-    "t2": ("¿Hay más gente en paro o trabajando que antes de la crisis? Lo miramos con la Encuesta de Población Activa "
-           "del INE, siempre en el tercer trimestre de cada año.\n\n"
-           "Trabajando: 20,75 millones en 2007, 18,53 en 2016 y 22,85 hoy (3.er trimestre de 2026), el récord de la serie, "
-           "que empieza en 2002. Ojo, que también somos más: 4,8 millones más de personas de 16 años o más que en 2007. "
-           "En proporción, de cada 100 personas de 16 a 64 años trabajaban 67 en 2007, 61 en 2016 y 69 hoy.\n\n"
-           "Paro: 8,0 % en 2007, 18,9 % en 2016 y 10,2 % hoy.\n\n"
-           "Veredicto: frente a 2016, mejora en todo. Frente a 2007, depende: más gente trabajando que nunca, "
+    "t2": ("¿Hay más gente en paro o trabajando que antes de la crisis? En España, las dos cosas. "
+           "Te lo enseño en tres fotos, con datos del INE.\n\n"
+           "2007, antes de la crisis: 45,2 millones de habitantes, 20,8 millones trabajando y 1,8 millones en paro.\n"
+           "2016: 46,4 millones de habitantes (+3 %), 18,5 millones trabajando (−11 %) y 4,3 millones en paro (más del doble).\n"
+           "Hoy (2026): 49,8 millones de habitantes (+10 % desde 2007), 22,9 millones trabajando (+10 %, récord de la EPA) "
+           "y 2,6 millones en paro (+43 %).\n\n"
+           "O sea: la población y el número de personas trabajando han crecido lo mismo desde 2007. De cada 100 habitantes "
+           "trabajan 46, igual que entonces. El paro ha crecido bastante más.\n\n"
+           "Veredicto: frente a 2016, mejora (un 40 % menos de paro). Frente a 2007, depende. Más gente trabajando que nunca "
            "y más paro que antes de la crisis. Las dos cosas son verdad."),
 }
 METODO = {
@@ -56,17 +58,19 @@ METODO = {
            "neto por hora del trabajador mediano (salario por hora de la EAES; neto según el modelo de impuestos de la "
            "OCDE publicado por Eurostat, soltero sin hijos). Es un cálculo propio con datos oficiales. 2024 es el último "
            "año con salarios oficiales del INE."),
-    "t2": ("Cómo lo comparamos: tercer trimestre de cada año en la Encuesta de Población Activa (INE), para evitar la "
-           "estacionalidad. «Hoy» es el 3.er trimestre de 2026. La tasa de empleo es la de 16 a 64 años; la tasa de paro, "
-           "parados entre quienes trabajan o buscan trabajo. La población de 16 años o más es un cálculo propio: "
-           "ocupados ÷ tasa de empleo. Ocupados (EPA) no es lo mismo que afiliados a la Seguridad Social."),
+    "t2": ("Cómo lo comparamos: trabajando y en paro, Encuesta de Población Activa (INE), 3.er trimestre de cada año "
+           "(«hoy» es el 3.er trimestre de 2026). Habitantes: población residente a 1 de julio de cada año (INE; la de 2026 "
+           "es provisional). «De cada 100 habitantes» es un cálculo propio (ocupados ÷ habitantes de todas las edades): no "
+           "es la tasa de empleo oficial. La tasa de paro oficial, que se calcula sobre quien trabaja o busca trabajo, fue "
+           "del 8,0 % en 2007, del 18,9 % en 2016 y del 10,2 % hoy. Ocupados (EPA) no es lo mismo que afiliados a la "
+           "Seguridad Social."),
 }
 CIERRE = {"t1": "¿Lo notas en tu carro? Te leo en los comentarios.",
-          "t2": "¿Lo notas a tu alrededor? Te leo en los comentarios."}
+          "t2": "¿Lo notas en tu barrio? Te leo en los comentarios."}
 ETIQUETAS = {
     "t1": ["cesta de la compra", "salarios", "IPC", "INE", "precios", "España", "horas de trabajo", "poder adquisitivo",
            "inflación", "sueldo"],
-    "t2": ["empleo", "paro", "EPA", "INE", "crisis 2008", "España", "ocupados", "mercado laboral", "tasa de paro",
+    "t2": ["empleo", "paro", "EPA", "INE", "crisis 2008", "España", "ocupados", "población", "mercado laboral",
            "trabajo"],
 }
 

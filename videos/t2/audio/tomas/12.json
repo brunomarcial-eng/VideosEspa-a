@@ -1,43 +1,39 @@
 {
- "huella": "85f2fa7faf0c0f64",
+ "huella": "ddf147abff75e202",
  "semilla": 12000,
- "texto": "Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007… depende.",
+ "texto": "En paro, 2,6 millones. Un 43 % más que en 2007.",
  "ev": {
   "ok": true,
   "nota": 1.0,
-  "oido": "Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007, depende.",
+  "oido": "En paro, 2,6 millones, un 43% más que en 2007.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.56,
-   1.18,
-   1.5,
-   1.62,
-   2.68,
+   0.16,
+   0.9,
+   1.52,
+   2.2,
+   2.48,
    2.88,
-   3.02,
-   3.82,
-   4.56,
-   4.92,
-   5.06,
-   5.92
+   3.58,
+   3.8,
+   3.94,
+   4.02
   ],
   "t1": [
-   0.44,
-   1.02,
-   1.5,
-   1.62,
-   1.88,
+   0.16,
+   0.5,
+   1.52,
+   1.8,
+   2.48,
    2.88,
-   3.02,
-   3.48,
-   4.3,
-   4.92,
-   5.06,
-   5.54,
-   6.3
+   3.58,
+   3.8,
+   3.94,
+   4.02,
+   4.3
   ],
-  "ritmo": 11.0
+  "ritmo": 14.3
  }
 }

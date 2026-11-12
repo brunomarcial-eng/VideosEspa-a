@@ -242,6 +242,13 @@ def t2(man):
         return out
 
     trimestre = {f"{a}{hoy_per}": bloque(a, hoy_per) for a in ANYOS_T2 + [hoy_anyo]}
+    # Habitantes de España (todas las edades) a 1 de julio, el primer día del 3.er trimestre.
+    pob = json.loads((RAW / "ine_ecp320_poblacion.json").read_text(encoding="utf-8"))
+    nombres[pob["COD"]] = pob["Nombre"].strip()
+    for a in ANYOS_T2 + [hoy_anyo]:
+        p = next(x for x in pob["Data"] if x["Anyo"] == a and x["T3_Periodo"] == "1 de julio de")
+        trimestre[f"{a}{hoy_per}"]["poblacion_total_miles"] = r(p["Valor"] / 1000, 3)
+        trimestre[f"{a}{hoy_per}"]["poblacion_total_dato"] = f"1 de julio de {a} ({p['T3_TipoDato'].lower()})"
     media_anual = {str(a): bloque(a) for a in ANYOS_T2 + [hoy_anyo - 1]}
 
     ids, eu_emp = eurostat("eurostat_lfsi_emp_a.json")
@@ -257,7 +264,7 @@ def t2(man):
 
     fuentes = {k: {"descripcion": v["descripcion"], "web": v["url_web"], "api": v["url_api"],
                    "consultado": v["consultado_utc"], "sha256": v["sha256"]}
-               for k, v in man.items() if k.startswith(("ine_65", "eurostat_lfsi", "eurostat_une"))}
+               for k, v in man.items() if k.startswith(("ine_65", "ine_ecp", "eurostat_lfsi", "eurostat_une"))}
     return {
         "tema": "T2 — ¿Hay más gente trabajando ahora que antes de la crisis?",
         "ultimo_dato": f"{hoy_anyo} {hoy_per}",
@@ -266,7 +273,7 @@ def t2(man):
         "mismo_trimestre": trimestre,
         "media_anual": media_anual,
         "eurostat_contraste": contraste,
-        "nota_poblacion": "poblacion_16_mas = ocupados / tasa de empleo 16+ (C)",
+        "nota_poblacion": "poblacion_16_mas = ocupados / tasa de empleo 16+ (C). poblacion_total = habitantes de todas las edades a 1 de julio (INE, ECP320, V)",
         "fuentes": fuentes,
     }
 
