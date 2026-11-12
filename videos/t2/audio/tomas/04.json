@@ -1,0 +1,33 @@
+{
+ "huella": "44d26c66d30dba47",
+ "semilla": 4000,
+ "texto": "¿Y hoy? 22,85 millones. Récord de la serie.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Y hoy 22,85 millones, récord de la serie.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.28,
+   1.92,
+   3.02,
+   3.42,
+   3.54,
+   3.6
+  ],
+  "t1": [
+   0.12,
+   0.28,
+   1.92,
+   2.36,
+   3.42,
+   3.54,
+   3.6,
+   3.8
+  ],
+  "ritmo": 13.1
+ }
+}

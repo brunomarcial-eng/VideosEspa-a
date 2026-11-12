@@ -1,0 +1,47 @@
+{
+ "huella": "aefa692f3849b994",
+ "semilla": 5000,
+ "texto": "Ojo, que también somos más: 4,8 millones más de personas de 16 años o más.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Ojo, que también somos más, 4,8 millones más de personas de 16 años o más.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.62,
+   0.68,
+   0.98,
+   1.2,
+   1.86,
+   3.04,
+   3.46,
+   3.88,
+   4.02,
+   4.32,
+   4.5,
+   4.94,
+   5.3,
+   5.62
+  ],
+  "t1": [
+   0.26,
+   0.68,
+   0.98,
+   1.2,
+   1.5,
+   3.04,
+   3.46,
+   3.88,
+   4.02,
+   4.32,
+   4.5,
+   4.94,
+   5.3,
+   5.62,
+   5.8
+  ],
+  "ritmo": 12.5
+ }
+}

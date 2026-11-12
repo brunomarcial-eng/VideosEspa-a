@@ -1,0 +1,51 @@
+{
+ "huella": "3948cb29973aefbf",
+ "semilla": 1000,
+ "texto": "¿Hoy trabaja en España más gente que antes de la crisis… o menos? Piénsalo, que tiene truco.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Hoy trabaja en España más gente que antes de la crisis. O menos, piénsalo, que tiene truco.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   0.58,
+   0.66,
+   0.9,
+   1.18,
+   1.38,
+   1.56,
+   1.74,
+   1.86,
+   1.96,
+   2.56,
+   2.78,
+   3.44,
+   4.2,
+   4.26,
+   4.5
+  ],
+  "t1": [
+   0.16,
+   0.58,
+   0.66,
+   0.9,
+   1.18,
+   1.38,
+   1.56,
+   1.74,
+   1.86,
+   1.96,
+   2.32,
+   2.78,
+   3.02,
+   3.92,
+   4.26,
+   4.5,
+   4.88
+  ],
+  "ritmo": 14.1
+ }
+}

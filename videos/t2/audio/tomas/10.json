@@ -1,0 +1,49 @@
+{
+ "huella": "149f319a59c716dd",
+ "semilla": 10000,
+ "texto": "De cada 100 que trabajan o buscan trabajo, hoy 10 no lo encuentran. En 2007, 8.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "de cada 100 que trabajan o buscan trabajo. Hoy 10 no lo encuentran, en 2007-08.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.3,
+   0.56,
+   0.72,
+   1.32,
+   1.44,
+   1.76,
+   2.66,
+   2.84,
+   3.18,
+   3.56,
+   3.64,
+   4.32,
+   4.48,
+   5.04
+  ],
+  "t1": [
+   0.14,
+   0.3,
+   0.56,
+   0.72,
+   1.32,
+   1.44,
+   1.76,
+   2.2,
+   2.84,
+   3.18,
+   3.56,
+   3.64,
+   4.16,
+   4.48,
+   5.04,
+   5.72
+  ],
+  "ritmo": 11.9
+ }
+}

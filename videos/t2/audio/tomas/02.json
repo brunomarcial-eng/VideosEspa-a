@@ -1,0 +1,39 @@
+{
+ "huella": "6b5929c41def4d31",
+ "semilla": 2000,
+ "texto": "2007, justo antes de la crisis: 20,75 millones de personas trabajando.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "2007, justo antes de la crisis, 20,75 millones de personas trabajando.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   1.14,
+   1.38,
+   1.68,
+   1.82,
+   1.92,
+   2.66,
+   3.76,
+   4.36,
+   4.58,
+   4.9
+  ],
+  "t1": [
+   0.68,
+   1.38,
+   1.68,
+   1.82,
+   1.92,
+   2.2,
+   3.76,
+   4.36,
+   4.58,
+   4.9,
+   5.26
+  ],
+  "ritmo": 14.5
+ }
+}
