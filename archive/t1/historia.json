@@ -1,0 +1,393 @@
+{
+ "nota": "Momentos clave de T1 (guion v5). Cada uno se ancla a una palabra de la narración o al inicio del plano; lo usan a la vez la imagen (videos/t1/escenas.mjs) y el sonido (scripts/sonido.py). «dt» son segundos de adelanto o retraso; «n» es la enésima vez que aparece la palabra en el plano.",
+ "musica": {
+  "bpm": 96,
+  "corte": "c10-sello",
+  "silencio_s": 1.3
+ },
+ "cues": [
+  {
+   "id": "c1-carro",
+   "beat": 1,
+   "en": "inicio",
+   "dt": -0.1,
+   "sfx": "carro",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-para",
+   "beat": 1,
+   "palabra": "Llenar",
+   "dt": -0.15
+  },
+  {
+   "id": "c1-mas",
+   "beat": 1,
+   "palabra": "más",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c1-menos",
+   "beat": 1,
+   "palabra": "menos",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 0.84
+  },
+  {
+   "id": "c2-moneda",
+   "beat": 2,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "moneda",
+   "vol": 0.45
+  },
+  {
+   "id": "c2-no",
+   "beat": 2,
+   "palabra": "euros",
+   "dt": -0.05
+  },
+  {
+   "id": "c2-giro",
+   "beat": 2,
+   "palabra": "horas",
+   "dt": -0.15,
+   "sfx": "ting",
+   "vol": 0.5
+  },
+  {
+   "id": "c3-fila",
+   "beat": 3,
+   "en": "inicio",
+   "dt": 0.05,
+   "sfx": "hojas",
+   "vol": 0.35
+  },
+  {
+   "id": "c3-dani",
+   "beat": 3,
+   "palabra": "Dani",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.5
+  },
+  {
+   "id": "c3-medio",
+   "beat": 3,
+   "palabra": "medio",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-p0",
+   "beat": 4,
+   "en": "inicio",
+   "dt": 0.15,
+   "sfx": "beep",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-p1",
+   "beat": 4,
+   "en": "inicio",
+   "dt": 0.55,
+   "sfx": "beep",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-p2",
+   "beat": 4,
+   "en": "inicio",
+   "dt": 0.95,
+   "sfx": "beep",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-p3",
+   "beat": 4,
+   "en": "inicio",
+   "dt": 1.35,
+   "sfx": "beep",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-cuenta",
+   "beat": 4,
+   "palabra": "12,8",
+   "dt": -0.95,
+   "sfx": "conteo",
+   "dur": 0.9,
+   "vol": 0.3
+  },
+  {
+   "id": "c4-dato",
+   "beat": 4,
+   "palabra": "12,8",
+   "dt": 0.0,
+   "sfx": "caja",
+   "vol": 0.55
+  },
+  {
+   "id": "c4-dia",
+   "beat": 4,
+   "palabra": "Día",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c5-ff",
+   "beat": 5,
+   "en": "inicio",
+   "dt": 0.05,
+   "sfx": "hojas",
+   "vol": 0.5
+  },
+  {
+   "id": "c5-dani",
+   "beat": 5,
+   "palabra": "Mismo",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.5,
+   "tono": 0.8
+  },
+  {
+   "id": "c5-dato",
+   "beat": 5,
+   "palabra": "último",
+   "dt": -0.05,
+   "sfx": "papel",
+   "vol": 0.5
+  },
+  {
+   "id": "c6-cuenta",
+   "beat": 6,
+   "palabra": "14,5",
+   "dt": -0.95,
+   "sfx": "conteo",
+   "dur": 0.9,
+   "vol": 0.3,
+   "tono": 1.2
+  },
+  {
+   "id": "c6-dato",
+   "beat": 6,
+   "palabra": "14,5",
+   "dt": 0.0,
+   "sfx": "caja",
+   "vol": 0.6,
+   "tono": 0.84
+  },
+  {
+   "id": "c6-dias",
+   "beat": 6,
+   "palabra": "Casi",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c7-nomina",
+   "beat": 7,
+   "palabra": "cobra",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.5
+  },
+  {
+   "id": "c7-sube",
+   "beat": 7,
+   "palabra": "23",
+   "dt": -0.55,
+   "sfx": "sube",
+   "dur": 0.55,
+   "hasta": 1.23,
+   "vol": 0.3
+  },
+  {
+   "id": "c7-dato",
+   "beat": 7,
+   "palabra": "23",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.45
+  },
+  {
+   "id": "c8-sube",
+   "beat": 8,
+   "palabra": "40",
+   "dt": -0.75,
+   "sfx": "sube",
+   "dur": 0.75,
+   "hasta": 1.4,
+   "vol": 0.32
+  },
+  {
+   "id": "c8-dato",
+   "beat": 8,
+   "palabra": "40",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.5,
+   "tono": 1.19
+  },
+  {
+   "id": "c9-b16",
+   "beat": 9,
+   "en": "inicio",
+   "dt": 0.25,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c9-b19",
+   "beat": 9,
+   "palabra": "2019",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.1
+  },
+  {
+   "id": "c9-d19",
+   "beat": 9,
+   "palabra": "12,6",
+   "dt": 0.0,
+   "sfx": "pinza",
+   "vol": 0.5
+  },
+  {
+   "id": "c9-b24",
+   "beat": 9,
+   "palabra": "salto",
+   "dt": -0.15,
+   "sfx": "sube",
+   "dur": 0.6,
+   "hasta": 1.3,
+   "vol": 0.3
+  },
+  {
+   "id": "c9-d24",
+   "beat": 9,
+   "palabra": "después",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.45
+  },
+  {
+   "id": "c10-m",
+   "beat": 10,
+   "palabra": "mejora",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.45
+  },
+  {
+   "id": "c10-e",
+   "beat": 10,
+   "palabra": "empeora",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.45
+  },
+  {
+   "id": "c10-d",
+   "beat": 10,
+   "palabra": "depende",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.45
+  },
+  {
+   "id": "c10-sello",
+   "beat": 10,
+   "palabra": "empeora",
+   "n": 2,
+   "dt": 0.02,
+   "sfx": "sello",
+   "vol": 0.9
+  },
+  {
+   "id": "c11-dato",
+   "beat": 11,
+   "palabra": "dos",
+   "dt": 0.0,
+   "sfx": "ding",
+   "vol": 0.4,
+   "tono": 0.75
+  },
+  {
+   "id": "c11-r1",
+   "beat": 11,
+   "palabra": "dos",
+   "dt": 0.15,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c11-r2",
+   "beat": 11,
+   "palabra": "dos",
+   "dt": 0.45,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.15
+  },
+  {
+   "id": "c12-esc",
+   "beat": 12,
+   "palabra": "sube",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.5
+  },
+  {
+   "id": "c12-esc2",
+   "beat": 12,
+   "palabra": "escalera",
+   "dt": 0.0,
+   "sfx": "pinza",
+   "vol": 0.5
+  },
+  {
+   "id": "c12-asc",
+   "beat": 12,
+   "palabra": "ascensor",
+   "dt": -0.45,
+   "sfx": "sube",
+   "dur": 0.6,
+   "hasta": 1.4,
+   "vol": 0.32
+  },
+  {
+   "id": "c12-fin",
+   "beat": 12,
+   "palabra": "ascensor",
+   "dt": 0.2,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c13-ini",
+   "beat": 13,
+   "en": "inicio",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c13-boc",
+   "beat": 13,
+   "palabra": "leo",
+   "dt": -0.3,
+   "sfx": "notif",
+   "vol": 0.5
+  }
+ ]
+}
