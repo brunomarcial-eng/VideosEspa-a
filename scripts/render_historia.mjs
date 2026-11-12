@@ -32,7 +32,7 @@ const D = mod.datos(leer(path.join(RAIZ, guion.datos)));
 // El estilo lo decide el vídeo: escenas.mjs exporta ESTILO = "limpio" (tarjeta y subtítulo grande) o nada (collage).
 const ESTILO = mod.ESTILO === "limpio" ? "limpio" : "collage";
 const construir = ESTILO === "limpio" ? construirLimpio : construirHistoria;
-const html = construir({ guion, linea, cues, escenas: mod.escenas(D), D });
+const html = construir({ guion, linea, cues, escenas: mod.escenas(D), D, capas: mod.capas ? mod.capas(D) : "" });
 mkdirSync(path.join(dir, "render"), { recursive: true });
 const ficheroHtml = path.join(dir, "render", `${id}-historia.html`);
 

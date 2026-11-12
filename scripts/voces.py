@@ -339,7 +339,7 @@ def generar_linea(perfil, cfg, texto, semilla_base, asr, registro):
             # El modelo se salta la pausa de unos «…» a mitad de frase: dice cada trozo por separado
             # y los une con una pausa de duda.
             partes = []
-            for i, tr in enumerate(re.split(r"(?<=…)\s+(?=[a-záéíóúñ])", texto)):
+            for i, tr in enumerate(re.split(r"(?<=…)\s+(?=[¿¡]?[a-záéíóúñ])", texto)):
                 if i:
                     partes.append(np.zeros(int(cfg.get("pausa_duda_s", 0.45) * SR), np.float32))
                 partes.append(limpiar(sintetizar(perfil, normalizar(tr), semilla)))

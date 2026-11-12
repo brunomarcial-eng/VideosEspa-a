@@ -41,6 +41,14 @@ ENTRADA = {
            "la misma compra, un 40 %.\n\n"
            "Veredicto: empeora. Casi dos horas más de trabajo cada mes por llevarte lo mismo. Y sale igual "
            "con 2016, 2018 o 2019 de referencia, y con el sueldo medio o el mediano, bruto o neto."),
+    "t2": ("¿Hay más gente en paro o trabajando que antes de la crisis? Lo miramos con la Encuesta de Población Activa "
+           "del INE, siempre en el tercer trimestre de cada año.\n\n"
+           "Trabajando: 20,75 millones en 2007, 18,53 en 2016 y 22,85 hoy (3.er trimestre de 2026), el récord de la serie, "
+           "que empieza en 2002. Ojo, que también somos más: 4,8 millones más de personas de 16 años o más que en 2007. "
+           "En proporción, de cada 100 personas de 16 a 64 años trabajaban 67 en 2007, 61 en 2016 y 69 hoy.\n\n"
+           "Paro: 8,0 % en 2007, 18,9 % en 2016 y 10,2 % hoy.\n\n"
+           "Veredicto: frente a 2016, mejora en todo. Frente a 2007, depende: más gente trabajando que nunca, "
+           "y más paro que antes de la crisis. Las dos cosas son verdad."),
 }
 METODO = {
     "t1": ("Cómo lo calculamos: la «compra del mes» es el gasto medio por persona en alimentos y bebidas sin alcohol "
@@ -48,12 +56,18 @@ METODO = {
            "neto por hora del trabajador mediano (salario por hora de la EAES; neto según el modelo de impuestos de la "
            "OCDE publicado por Eurostat, soltero sin hijos). Es un cálculo propio con datos oficiales. 2024 es el último "
            "año con salarios oficiales del INE."),
+    "t2": ("Cómo lo comparamos: tercer trimestre de cada año en la Encuesta de Población Activa (INE), para evitar la "
+           "estacionalidad. «Hoy» es el 3.er trimestre de 2026. La tasa de empleo es la de 16 a 64 años; la tasa de paro, "
+           "parados entre quienes trabajan o buscan trabajo. La población de 16 años o más es un cálculo propio: "
+           "ocupados ÷ tasa de empleo. Ocupados (EPA) no es lo mismo que afiliados a la Seguridad Social."),
 }
-CIERRE = {"t1": "¿Lo notas en tu carro? Te leo en los comentarios."}
+CIERRE = {"t1": "¿Lo notas en tu carro? Te leo en los comentarios.",
+          "t2": "¿Lo notas a tu alrededor? Te leo en los comentarios."}
 ETIQUETAS = {
     "t1": ["cesta de la compra", "salarios", "IPC", "INE", "precios", "España", "horas de trabajo", "poder adquisitivo",
            "inflación", "sueldo"],
-    "t2": ["empleo", "paro", "EPA", "INE", "crisis 2008", "España", "ocupados", "mercado laboral"],
+    "t2": ["empleo", "paro", "EPA", "INE", "crisis 2008", "España", "ocupados", "mercado laboral", "tasa de paro",
+           "trabajo"],
 }
 
 

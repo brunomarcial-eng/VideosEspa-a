@@ -1,7 +1,7 @@
 {
   "id": "t2",
   "version": 3,
-  "titulo": "¿Hoy trabaja más gente que antes de la crisis?",
+  "titulo": "¿Hay más gente en paro o trabajando que antes de la crisis?",
   "pregunta": "¿Hay más gente trabajando ahora que en 2007 y en 2016? ¿Y en proporción? ¿Y el paro?",
   "datos": "data/clean/t2_empleo.json",
   "aprobacion_datos": "2026-11-09 (Paso 1 aprobado: EPA T3 contra T3, tasa de empleo 16-64, «depende» frente a 2007)",
@@ -166,7 +166,7 @@
       "quien": "narrador",
       "funcion": "tercer año del paro",
       "voz": "En 2016 eran 19. Ha bajado mucho… pero no ha vuelto a 2007.",
-      "pantalla": "PARO · 2016: 18,9 % · hoy: 10,2 %",
+      "pantalla": "PARO · 2007: 8,0 % · 2016: 18,9 % · hoy: 10,2 %",
       "grafico": true,
       "sello": "DATO OFICIAL · INE · EPA, tasa de paro, 3.er trimestre",
       "imagen": "Una línea une 2007, 2016 y hoy: sube hasta 2016 y baja sin llegar a la altura de 2007."
@@ -303,5 +303,7 @@
   "cierre": {
     "veredicto": "frente a 2016: mejora · frente a 2007: depende",
     "porque": "Hay 2,1 millones más de ocupados que en 2007 y la tasa de empleo de 16 a 64 años es más alta (69 frente a 67 de cada 100), pero la tasa de paro (10,2 %) sigue por encima de la de 2007 (8,0 %). Frente a 2016 mejoran todas las medidas."
-  }
+  },
+  "titulo_alternativo": "¿Hay más gente en paro o trabajando que hace 10 años?",
+  "aprobacion_guion": "2026-11-12: Bruno aprueba el guion v3 y la escaleta; pide este título."
 }

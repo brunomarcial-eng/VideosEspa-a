@@ -21,10 +21,14 @@ export const C = {
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
 
 // ------------------------------------------------------------------ personaje
-// Dani de cuerpo entero. El origen (0,0) está entre los pies. Mide unos 600 px.
-export function persona(id, epoca) {
+// Protagonista de cuerpo entero (Dani en T1, Marta en T2). El origen (0,0) está entre los pies. Mide unos 600 px.
+// Opciones: pelo "corto" (Dani) o "largo" (Marta); barba y canas (por defecto, solo hoy y con pelo corto);
+// mano: dibujo que sujeta en la mano derecha (por ejemplo, un café).
+export function persona(id, epoca, o = {}) {
   const [cam, cam2] = epoca === "antes" ? [C.ocre, "#A9781F"] : [C.azul, "#184B6E"];
   const hoy = epoca !== "antes";
+  const largo = o.pelo === "largo";
+  const barba = o.barba ?? (hoy && !largo), canas = o.canas ?? hoy;
   return `<g id="${id}">
   <ellipse cx="0" cy="4" rx="120" ry="18" fill="#3C2814" opacity=".16"/>
   <g id="${id}-c">
@@ -35,11 +39,15 @@ export function persona(id, epoca) {
     <path d="M-82 -236 Q0 -208 82 -236 V-226 Q82 -168 24 -168 H-24 Q-82 -168 -82 -226 Z" fill="${cam2}" opacity=".5"/>
     <rect x="-22" y="-406" width="44" height="42" rx="12" fill="${C.piel2}"/>
     <g id="${id}-h">
+      ${largo ? `<path d="M-108 -500 C-118 -606 -40 -616 0 -612 C44 -616 118 -606 108 -500 L114 -372 Q114 -350 92 -350 H-92 Q-114 -350 -114 -372 Z" fill="${C.pelo}"/>` : ""}
       <circle cx="-93" cy="-482" r="19" fill="${C.piel2}"/><circle cx="93" cy="-482" r="19" fill="${C.piel2}"/>
       <circle cx="0" cy="-486" r="96" fill="${C.piel}"/>
-      ${hoy ? `<path d="M-86 -456 C-84 -404 -44 -386 0 -386 C44 -386 84 -404 86 -456 C66 -428 34 -420 0 -420 C-34 -420 -66 -428 -86 -456 Z" fill="${C.pelo}"/>` : ""}
-      <path d="M-97 -498 C-106 -592 -44 -602 0 -600 C52 -604 110 -578 97 -492 C84 -540 44 -554 4 -550 C-36 -554 -82 -538 -97 -498 Z" fill="${C.pelo}"/>
-      ${hoy ? `<path d="M-97 -498 C-99 -520 -94 -538 -84 -552 C-86 -534 -86 -516 -90 -500 Z" fill="#C4BDB0"/><path d="M97 -492 C99 -516 94 -536 84 -550 C86 -532 87 -514 90 -496 Z" fill="#C4BDB0"/>` : ""}
+      ${barba ? `<path d="M-86 -456 C-84 -404 -44 -386 0 -386 C44 -386 84 -404 86 -456 C66 -428 34 -420 0 -420 C-34 -420 -66 -428 -86 -456 Z" fill="${C.pelo}"/>` : ""}
+      ${largo
+        ? `<path d="M-100 -470 C-112 -590 -40 -608 4 -604 C60 -606 114 -576 100 -470 C92 -522 66 -544 34 -550 C12 -522 -32 -508 -74 -508 C-88 -502 -96 -488 -100 -470 Z" fill="${C.pelo}"/>
+           ${canas ? `<path d="M40 -548 C60 -540 78 -526 88 -506 C80 -516 66 -528 48 -536 Z" fill="#D9D3C7"/>` : ""}`
+        : `<path d="M-97 -498 C-106 -592 -44 -602 0 -600 C52 -604 110 -578 97 -492 C84 -540 44 -554 4 -550 C-36 -554 -82 -538 -97 -498 Z" fill="${C.pelo}"/>
+           ${canas ? `<path d="M-97 -498 C-99 -520 -94 -538 -84 -552 C-86 -534 -86 -516 -90 -500 Z" fill="#C4BDB0"/><path d="M97 -492 C99 -516 94 -536 84 -550 C86 -532 87 -514 90 -496 Z" fill="#C4BDB0"/>` : ""}`}
       <circle cx="-58" cy="-454" r="15" fill="#F0977F" opacity=".45"/><circle cx="58" cy="-454" r="15" fill="#F0977F" opacity=".45"/>
       <g id="${id}-cj"><path d="M-50 -518 Q-34 -528 -18 -520" fill="none" stroke="${C.pelo}" stroke-width="8" stroke-linecap="round"/>
         <path d="M18 -520 Q34 -528 50 -518" fill="none" stroke="${C.pelo}" stroke-width="8" stroke-linecap="round"/></g>
@@ -54,8 +62,32 @@ export function persona(id, epoca) {
         <path data-b="seria" d="M-18 -444 H18" fill="none" stroke="#7A3E2E" stroke-width="7" stroke-linecap="round" style="display:none"/>
       </g>
     </g>
-    <g id="${id}-bd"><rect x="62" y="-362" width="36" height="152" rx="18" fill="${cam}"/><circle cx="80" cy="-204" r="21" fill="${C.piel}"/></g>
+    <g id="${id}-bd"><rect x="62" y="-362" width="36" height="152" rx="18" fill="${cam}"/>${o.mano ? `<g transform="translate(80 -204)">${o.mano}</g>` : ""}<circle cx="80" cy="-204" r="21" fill="${C.piel}"/></g>
   </g></g>`;
+}
+
+// Una taza de café para la mano (persona(..., {mano: TAZA})).
+export const TAZA = `<g transform="translate(14 -8)"><rect x="-17" y="-40" width="34" height="44" rx="7" fill="#FFFDF8" stroke="#D9DEE2" stroke-width="3"/>
+  <rect x="-17" y="-28" width="34" height="13" fill="${C.salvia}"/><path d="M17 -30 q16 0 16 13 q0 13 -16 13" fill="none" stroke="#FFFDF8" stroke-width="6"/></g>`;
+
+// Lupa pequeña (paro: quien busca trabajo).
+export function lupa(id, s = 1) {
+  return `<g id="${id}"><g transform="scale(${s})"><circle r="15" fill="#FFFDF8" fill-opacity=".6" stroke="${C.tinta}" stroke-width="6"/>
+    <line x1="11" y1="11" x2="26" y2="26" stroke="${C.tinta}" stroke-width="8" stroke-linecap="round"/></g></g>`;
+}
+
+// Figura sencilla (icono de persona) cuyo color se cambia en la página (atributo fill del grupo).
+// Origen: los pies. Mide 96 × 60 px.
+export function figura(id, x, y, s = 1, color = "#C9CED3", extra = "") {
+  return `<g id="${id}" transform="translate(${x} ${y}) scale(${s})" fill="${color}">${extra}<rect x="-30" y="-50" width="60" height="50" rx="22"/><circle cx="0" cy="-74" r="22"/></g>`;
+}
+
+// Persona que pasa andando por la calle: cuerpo, cabeza y dos piernas que se mueven. Origen: los pies.
+export function paseante(id, color, piel, s = 1) {
+  return `<g id="${id}"><g transform="scale(${s})"><ellipse cx="0" cy="3" rx="44" ry="8" fill="#3C2814" opacity=".14"/>
+    <g id="${id}-c"><rect id="${id}-pi" x="-20" y="-86" width="17" height="86" rx="8" fill="${C.pantalon}"/><rect id="${id}-pd" x="3" y="-86" width="17" height="86" rx="8" fill="#34495E"/>
+    <rect x="-31" y="-170" width="62" height="96" rx="26" fill="${color}"/><circle cx="0" cy="-196" r="27" fill="${piel}"/>
+    <path d="M-27 -200 C-30 -228 -10 -232 0 -231 C14 -232 31 -226 27 -198 C20 -214 8 -218 0 -218 C-10 -218 -22 -214 -27 -200 Z" fill="${C.pelo}"/></g></g></g>`;
 }
 
 // Figura genérica (peón), para la fila de «todos los sueldos».
@@ -141,6 +173,29 @@ export function setSuper() {
     <rect x="700" y="1034" width="236" height="18" rx="9" fill="#3A4654"/>
   </g>`;
 }
+// Una calle a primera hora: dos fachadas, un portal a la izquierda y la acera.
+export function setCalle() {
+  const ventanas = (x0, x1, col) => {
+    let v = "";
+    for (let y = 120; y < 980; y += 210) for (let x = x0 + 40; x + 110 <= x1 - 20; x += 170)
+      v += `<rect x="${x}" y="${y}" width="110" height="140" rx="10" fill="${col}"/><rect x="${x - 8}" y="${y + 140}" width="126" height="14" rx="5" fill="#FFFDF8" opacity=".7"/>`;
+    return v;
+  };
+  return `<g id="set-calle">
+    <rect x="-300" y="-300" width="900" height="1572" fill="#EBC9A6"/><rect x="600" y="-300" width="780" height="1572" fill="#DCC7AA"/>
+    <rect x="596" y="-300" width="10" height="1572" fill="#C9AE8C"/>
+    ${ventanas(-300, 600, "#9EB9C7")}${ventanas(606, 1380, "#A9C2CE")}
+    <rect x="150" y="960" width="210" height="312" rx="16" fill="#7A5638"/><rect x="170" y="980" width="170" height="292" rx="10" fill="#8E6644"/>
+    <circle cx="318" cy="1130" r="9" fill="#E9C46A"/><rect x="130" y="940" width="250" height="24" rx="8" fill="#C9AE8C"/>
+    <rect x="-300" y="1262" width="1680" height="14" fill="#BFB3A2"/>
+    <rect x="-300" y="1270" width="1680" height="900" fill="#D9D2C5"/>
+    <path d="M-146 2120 L300 1276 M1226 2120 L780 1276 M540 2120 V1276 M-300 1520 H1380" stroke="#C7BEAF" stroke-width="5" opacity=".7"/>
+  </g>`;
+}
+// Fondo sin suelo, para los gráficos que ocupan toda la escena (la rejilla de 100 personas).
+export function setVacio() {
+  return `<g id="set-vacio"><rect x="-300" y="-300" width="1680" height="2500" fill="url(#g-pared)"/></g>`;
+}
 export function setLiso() {
   return `<g id="set-liso">${FONDO}</g>`;
 }
@@ -203,6 +258,9 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#111}
 .op.si i{background:${C.tinta};border-color:${C.tinta}}
 .op.si i::after{content:"";position:absolute;left:13px;top:5px;width:13px;height:24px;border:solid #fff;border-width:0 6px 6px 0;transform:rotate(42deg)}
 .op.no{color:#B9BEC4}
+.op .lab{font:600 38px Cap;color:${C.gris};width:330px;flex:none}
+.op b{font:800 62px Cap}
+.linea{display:block;margin-top:6px}
 .nota{font:600 28px/1.35 Cap;color:${C.gris};margin-top:12px}
 #sub{position:absolute;left:0;width:1080px;top:1404px;text-align:center;font:800 94px/1.08 Cap;letter-spacing:-.02em;color:#fff;white-space:nowrap;
   -webkit-text-stroke:16px ${C.tinta};paint-order:stroke fill;text-shadow:0 8px 0 rgba(31,42,55,.35);display:none}
@@ -242,7 +300,7 @@ function comprobar(escenas, guion) {
   if (fallos.length) throw new Error(fallos.join("\n"));
 }
 
-export function construirLimpio({ guion, linea, cues, escenas, D }) {
+export function construirLimpio({ guion, linea, cues, escenas, D, capas = "" }) {
   comprobar(escenas, guion);
   const planos = linea.planos;
   const inicio = (i) => (i === 0 ? 0 : planos[i].ini - ADELANTO);
@@ -255,7 +313,8 @@ export function construirLimpio({ guion, linea, cues, escenas, D }) {
   });
   return `<!doctype html><html lang="es"><head><meta charset="utf-8"><style>${CSS}</style></head><body><div class="marco">
 <svg id="lienzo" width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg"><defs>${DEFS}</defs>
-<g id="mundo">${setSuper()}${setLiso()}
+<g id="mundo">${setSuper()}${setLiso()}${setCalle()}${setVacio()}
+${capas}
 ${escenas.map((e) => `<g id="esc-${e.n}" style="display:none">${e.svg}</g>`).join("\n")}</g></svg>
 <div id="prog">${caps.map((c) => `<div style="--f:${(c.t1 - c.t0).toFixed(2)}"><i></i></div>`).join("")}</div>
 ${escenas.map((e) => e.tarjeta).join("\n")}
@@ -264,6 +323,7 @@ ${escenas.map((e) => e.tarjeta).join("\n")}
 const D = ${JSON.stringify(D)};
 const CUES = ${JSON.stringify(cues)};
 const TROZOS = ${JSON.stringify(trozos(planos))};
+const SETS = ["super", "liso", "calle", "vacio"];
 const CAPS = ${JSON.stringify(caps)};
 const ESCENAS = [${esc2}];
 ${RT}

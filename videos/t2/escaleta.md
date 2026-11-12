@@ -1,6 +1,6 @@
-# Escaleta T2 · «¿Hoy trabaja más gente que antes de la crisis?»
+# Escaleta T2 · «¿Hay más gente en paro o trabajando que antes de la crisis?»
 
-Borrador para aprobar. Guion completo y cifras verificadas: `videos/t2/guion.md` (v3).
+Aprobada por Bruno el 12-11-2026 (título alternativo: «… que hace 10 años?»). Guion completo y cifras verificadas: `videos/t2/guion.md` (v3).
 
 - **Formato:** como T1. Narra la voz 3, estilo limpio: tarjeta blanca arriba, la escena en medio y el subtítulo grande debajo.
 - **Duración:** unos 78 s con la voz 3 (T1 dura 69 s).

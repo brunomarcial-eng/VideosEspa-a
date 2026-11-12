@@ -97,6 +97,38 @@ function persona(id, t, o) {
   for (const m of $(id + "-b").children) m.style.display = m.dataset.b === boca ? "" : "none";
 }
 
+// Persona que cruza andando: entra por un lado y sale por el otro (o se para en «hasta»).
+// o: {x0, v (px/s), y, t0 (cuándo empieza a andar), hasta (x donde se para, opcional), fase}
+function andar(id, t, o) {
+  const el = $(id);
+  if (!el) return;
+  const dt = t - (o.t0 ?? 0);
+  if (dt < 0 && !o.antes) { el.style.display = "none"; return; }
+  el.style.display = "";
+  let x = o.x0 + o.v * Math.max(0, dt), parado = false;
+  if (o.hasta !== undefined && (o.v > 0 ? x >= o.hasta : x <= o.hasta)) { x = o.hasta; parado = true; }
+  const f = (o.fase ?? 0) + t * 8.5, paso = parado ? 0 : Math.sin(f) * 22;
+  const s = o.s ?? 1;
+  el.setAttribute("transform", `translate(${x.toFixed(1)} ${o.y}) scale(${((o.dir ?? o.v) < 0 ? -s : s).toFixed(3)} ${s.toFixed(3)})`);
+  attr(id + "-c", "transform", `translate(0 ${parado ? 0 : (-Math.abs(Math.sin(f)) * 6).toFixed(1)})`);
+  attr(id + "-pi", "transform", `rotate(${paso.toFixed(1)} -12 -86)`);
+  attr(id + "-pd", "transform", `rotate(${(-paso).toFixed(1)} 12 -86)`);
+  if (o.op !== undefined) el.style.opacity = o.op;
+}
+// Gente que cruza la calle en dos carriles (ida y vuelta). Cada persona tiene su sitio en un bucle de ancho W.
+// o.op(i): opacidad de la persona i (para que alguien entre o se vaya).
+function gentio(p, n, t, o = {}) {
+  const W = o.W ?? 1500;
+  for (let i = 0; i < n; i++) {
+    const carril = i % 2, v = carril ? -58 : 66, y = carril ? 1338 : 1300, s = carril ? 1.06 : 0.96;
+    const x0 = ((i * 0.618034 + carril * 0.31) % 1) * W;
+    const x = ((((x0 + v * t) % W) + W) % W) - 210;
+    andar(p + "-w" + i, t, { x0: x, v: 0, dir: v, y: y, s: s, fase: i * 1.7, op: o.op ? o.op(i) : 1 });
+  }
+}
+// Cambia el color de una figura de la rejilla.
+function pinta(id, color) { const el = $(id); if (el && el.getAttribute("fill") !== color) el.setAttribute("fill", color); }
+
 // ------------------------------------------------------------------ capas fijas
 // El subtítulo va justo debajo de los pies del personaje (no encima de él) y nunca pasa de
 // SUB_ANCHO, para no meterse bajo los botones de la derecha de Shorts.
@@ -128,7 +160,7 @@ window.render = function (t) {
     $("esc-" + ESCENAS[i].n).style.display = i === n ? "" : "none";
     $("card-" + ESCENAS[i].n).style.display = i === n ? "block" : "none";
   }
-  ver("set-super", e.set === "super"); ver("set-liso", e.set !== "super");
+  for (const s of SETS) ver("set-" + s, e.set === s);
   // Cámara: encuadre de la escena y un acercamiento muy lento.
   const cam = e.cam ? e.cam(t, e) : {};
   const z = (cam.z ?? 1) * lin(t, e.t0, e.t1 - e.t0, 1, 1.03) * (1 + 0.02 * (1 - fuera((t - e.t0) / 0.35)));
@@ -139,6 +171,7 @@ window.render = function (t) {
   card.style.opacity = clamp(kc * 2.2);
   card.style.transform = `translateY(${((1 - fuera(kc)) * -34).toFixed(1)}px)`;
   txt("caja-num", "");   // la pantalla de la caja solo enseña cifras en las escenas que la usan
+  for (const el of document.querySelectorAll(".capa")) el.style.display = "none";   // las capas compartidas, solo si la escena las pide
   e.fn(t, e);
   subtitulos(t);
   progreso(t);

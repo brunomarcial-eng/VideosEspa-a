@@ -299,11 +299,23 @@ def s_fwip(**_):
     return bordes(ruido(0.11, 1800, 9000) * np.sin(np.pi * t / 0.11) ** 2, 0.003, 0.01)
 
 
-EFECTOS = {"pop": s_pop, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
+def s_calle(dur=1.6, **_):
+    """Gente andando por la acera: pasos suaves que se cruzan y un murmullo de fondo."""
+    y = ruido(dur, 250, 1800) * 0.12 * (0.7 + 0.3 * np.sin(2 * np.pi * 0.7 * tiempo(dur)))
+    tp = tiempo(0.07)
+    paso = (np.sin(2 * np.pi * 95 * tp) * np.exp(-tp / 0.018) + ruido(0.07, 600, 3500) * np.exp(-tp / 0.008) * 0.35)
+    for voz, ritmo in enumerate((0.48, 0.55, 0.62)):
+        for tt in np.arange(rng.uniform(0, 0.3), dur - 0.08, ritmo):
+            i = int(tt * SR)
+            y[i:i + len(paso)] += paso * (0.5 - 0.12 * voz)
+    return bordes(norm(y) * np.minimum(1, np.minimum(tiempo(dur), dur - tiempo(dur)) / 0.25), 0.01, 0.05)
+
+
+EFECTOS = {"calle": s_calle, "pop": s_pop, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
            "carro": s_carro, "beep": s_beep, "conteo": s_conteo, "caja": s_caja, "sube": s_sube, "pinza": s_pinza,
            "desenrolla": s_desenrolla, "sello": s_sello, "notif": s_notif, "fwip": s_fwip}
 # Ganancia de cada efecto para que ninguno tape la voz
-NIVEL = {"pop": 0.30, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
+NIVEL = {"calle": 0.22, "pop": 0.30, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
          "beep": 0.12, "conteo": 0.16, "caja": 0.30, "sube": 0.13, "pinza": 0.26, "desenrolla": 0.22,
          "sello": 0.40, "notif": 0.24, "fwip": 0.10}
 

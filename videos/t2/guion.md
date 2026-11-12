@@ -1,4 +1,4 @@
-# Guion T2 — ¿Hoy trabaja más gente que antes de la crisis?
+# Guion T2 — ¿Hay más gente en paro o trabajando que antes de la crisis?
 
 Pregunta: ¿Hay más gente trabajando ahora que en 2007 y en 2016? ¿Y en proporción? ¿Y el paro?  
 Datos: `data/clean/t2_empleo.json` · 2026-11-09 (Paso 1 aprobado: EPA T3 contra T3, tasa de empleo 16-64, «depende» frente a 2007)  
@@ -17,7 +17,7 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 8 | 39-43 s | narrador (voz) | ¿Y hoy? 69. Más que antes de la crisis. | Hoy · 69 de cada 100 · en 2007: 67 | DATO OFICIAL · INE · EPA, tasa de empleo de 16 a 64 años, 3.er trimestre | Las figuras se encienden en azul hasta 69; una raya marca dónde llegaba 2007. Marta, encendida, sonríe. |
 | 9 | 43-47 s | narrador (voz) | Hasta aquí, todo mejora. Pero… ¿y el paro? | ¿Y EL PARO? | — | Una de las figuras grises levanta la mano. (Opción: el «¿y el paro?» lo dice la voz 5 desde esa figura.) |
 | 10 | 47-53 s | narrador (voz) | De cada 100 que trabajan o buscan trabajo, hoy 10 no lo encuentran. En 2007, 8. | Paro · hoy: 10,2 % · 2007: 8,0 % <br>_Tasa de paro: parados entre quienes trabajan o buscan trabajo (población activa)_ | DATO OFICIAL · INE · EPA, tasa de paro, 3.er trimestre | Nueva rejilla de 100 (los que trabajan o buscan): 10 figuras sin color, con una lupa. Al lado, la de 2007 con 8. |
-| 11 | 53-60 s | narrador (voz) | En 2016 eran 19. Ha bajado mucho… pero no ha vuelto a 2007. | PARO · 2016: 18,9 % · hoy: 10,2 % | DATO OFICIAL · INE · EPA, tasa de paro, 3.er trimestre | Una línea une 2007, 2016 y hoy: sube hasta 2016 y baja sin llegar a la altura de 2007. |
+| 11 | 53-60 s | narrador (voz) | En 2016 eran 19. Ha bajado mucho… pero no ha vuelto a 2007. | PARO · 2007: 8,0 % · 2016: 18,9 % · hoy: 10,2 % | DATO OFICIAL · INE · EPA, tasa de paro, 3.er trimestre | Una línea une 2007, 2016 y hoy: sube hasta 2016 y baja sin llegar a la altura de 2007. |
 | 12 | 60-67 s | narrador (voz) | Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007… depende. | EL VEREDICTO · Frente a 2016: MEJORA · Frente a 2007: DEPENDE | — | Tarjeta con dos filas; la marca cae en MEJORA (2016) y luego en DEPENDE (2007). |
 | 13 | 67-73 s | narrador (voz) | Más gente trabajando que nunca. Y más paro que en 2007. Las dos cosas son verdad. | EN RESUMEN · Más gente trabajando que nunca. Más paro que en 2007. | — | Pantalla partida: a la izquierda, la calle llena; a la derecha, la rejilla del paro. Marta en medio, encogiéndose de hombros. |
 | 14 | 73-78 s | narrador (voz) | ¿Y tú? ¿Lo notas a tu alrededor… o no tanto? Te leo. | TE TOCA · ¿Lo notas a tu alrededor? | — | Marta mira a cámara y aparece un bocadillo de comentario. |
