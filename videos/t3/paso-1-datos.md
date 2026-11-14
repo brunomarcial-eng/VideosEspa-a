@@ -47,6 +47,49 @@ Fuente: Ministerio de Vivienda, valor tasado medio de la vivienda libre en munic
 - Idealista tiene el histórico por distrito, pero es precio de anuncio (no oficial) y bloquea las descargas automáticas.
 - Si se quiere el dato de Hortaleza, Bruno puede mandar una captura de la página «Evolución del precio» de idealista para Hortaleza. Saldría en pantalla como «precio de oferta, idealista».
 
+## 0 bis. Comprobación (Bruno no se cree lo de Valladolid, 14-11-2026)
+**El valor tasado exagera la bajada.** El INE tiene un índice oficial hecho con las compraventas reales ante notario, ajustado por calidad (Índice de Precios de Vivienda, tabla 25171, desde 2007). Con ese índice, la caída de precios que daba la tasación desaparece:
+
+| Precio de la vivienda, 2007 → 2025 | Valor tasado (Ministerio) | **Índice del INE (compraventas reales)** |
+|---|---|---|
+| Valladolid / Castilla y León | −23 % (Valladolid ciudad) | **+6 %** (Castilla y León) |
+| Córdoba / Andalucía | −29 % (Córdoba ciudad) | **+36 %** (Andalucía) |
+| Madrid | +30 % (ciudad) | **+26 %** (Comunidad) |
+| España | — | **+20 %** |
+
+**Por qué no coinciden:**
+- En 2006 y 2007 se tasaba mucha obra nueva, más cara; hoy se tasa sobre todo vivienda usada.
+- En la burbuja las tasaciones iban altas; hoy van por debajo del precio de mercado.
+- **Para comparar en el tiempo vale el índice del INE.** El valor tasado sirve para dar una cifra en euros de hoy.
+
+**Lo corregido, con el índice del INE y el sueldo mediano (Encuesta Anual de Estructura Salarial), 2008 → 2024:**
+
+| | Vivienda | Sueldo mediano | Años de sueldo para la misma casa |
+|---|---|---|---|
+| España | +8 % | +34 % (18.244 → 24.497 €) | **−19 %** |
+| Castilla y León | −9 % | +31 % (17.247 → 22.567 €) | **−30 %** |
+| Andalucía | +18 % | +24 % (17.372 → 21.557 €) | **−5 %** |
+| Comunidad de Madrid | +18 % | +38 % (20.270 → 28.038 €) | **−15 %** |
+
+- Las dos fuentes oficiales apuntan en la misma dirección: frente al pico de la burbuja, hoy hacen falta algo menos de años de sueldo. Pero la mejora es mucho menor de lo que daba la tasación, y en Andalucía casi no hay mejora.
+- **Ojo con 2025 y 2026:** la vivienda sube entre un 12 y un 14 % al año y los sueldos, un 5 %. A ese ritmo, esa ventaja desaparece en uno o dos años.
+
+## 0 ter. Hace 40 años (Banco de España, desde 1987)
+| | 1987 | 1990 | 2006 | Hoy (junio de 2026) |
+|---|---|---|---|---|
+| Precio de la vivienda ÷ renta bruta de un hogar | **2,9 años** (1.er trimestre) | 4,2 | 8,8 | **8,4** |
+| Parte de la renta del hogar que se come la cuota | **42 %** (1.er trimestre); 53 % a final de año | **70 %** | 46 % | **38 %** |
+| Tipo de interés de las hipotecas | sin dato (la serie empieza en 1989: 14,3 %) | 16–17 % | 4,2 % | 2,9 % |
+| m² según las sociedades de tasación | 257 € (diciembre de 1985); 409 € (diciembre de 1987) | 702 € | 2.068–2.153 € | 2.085 € (diciembre de 2025) |
+
+Fuente: Banco de España, indicadores del mercado de la vivienda (V).
+
+**Lo que dice:** hace 40 años la casa era barata (3 años de renta) pero el dinero era carísimo. Con hipotecas por encima del 14 %, la cuota se llevaba casi la mitad de la renta, y en 1990, el 70 %. Hoy la casa cuesta el triple en años de renta, pero la cuota se come menos porque el dinero está barato.
+
+**Lo que falta para 1986:**
+- El sueldo de una persona. El INE lo tiene en su antigua encuesta de salarios, que no está en su API; habría que sacarlo de los anuarios.
+- El dato por ciudad.
+
 ## 1. La casa (media de España)
 | Dato | 2006 | 2016 | Hoy | Fuente | Estado |
 |---|---|---|---|---|---|
