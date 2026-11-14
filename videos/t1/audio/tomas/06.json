@@ -1,0 +1,29 @@
+{
+ "huella": "e9a65134067bf1c5",
+ "semilla": 6000,
+ "texto": "¿Cuánto? 14,5 horas. Casi dos días.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "¿Cuánto? 14,5 horas, casi dos días.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.74,
+   1.26,
+   1.86,
+   2.06,
+   2.34
+  ],
+  "t1": [
+   0.34,
+   1.26,
+   1.56,
+   2.06,
+   2.34,
+   2.52
+  ],
+  "ritmo": 14.4
+ }
+}

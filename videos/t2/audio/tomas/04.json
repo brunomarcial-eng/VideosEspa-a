@@ -1,0 +1,27 @@
+{
+ "huella": "9312d7267c5c1473",
+ "semilla": 4000,
+ "texto": "Y en paro, 1,8 millones.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "y en paro 1,8 millones.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.22,
+   0.58,
+   1.62
+  ],
+  "t1": [
+   0.12,
+   0.22,
+   0.58,
+   1.62,
+   1.88
+  ],
+  "ritmo": 11.1
+ }
+}

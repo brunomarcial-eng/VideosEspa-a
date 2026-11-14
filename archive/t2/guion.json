@@ -1,0 +1,415 @@
+{
+ "id": "t2",
+ "version": 4,
+ "titulo": "¿Hay más gente en paro o trabajando que antes de la crisis?",
+ "titulo_alternativo": "¿Hay más gente en paro o trabajando que hace 10 años?",
+ "pregunta": "En España: ¿cuántos vivimos, cuántos trabajan y cuántos están en paro en 2007, 2016 y hoy? ¿Crece el trabajo al ritmo de la población? ¿Y el paro?",
+ "datos": "data/clean/t2_empleo.json",
+ "aprobacion_datos": "EPA aprobada el 09-11-2026; población residente (INE, ECP320, 1 de julio) añadida el 12-11-2026, pendiente de aprobar",
+ "formato": "Narración con una sola voz (la voz 3), en el estilo oral de Bruno (skill clon-bruno al 100 %). Estilo limpio. Tres «fotos» (2007, 2016, hoy) con las mismas tres cifras absolutas: habitantes, trabajando y en paro; cada foto acaba en un gráfico (rosquilla o barras). Protagonista inventada: Marta, que entra en comercios donde se ve a gente trabajando.",
+ "duracion_max_s": 90,
+ "personajes": {
+  "narrador": {
+   "anyo": "voz",
+   "genero": "hombre"
+  }
+ },
+ "protagonista": {
+  "nombre": "Marta",
+  "nota": "Persona inventada. Recorre su barrio: carnicería (2007), tienda de ropa (2016), cafetería, agencia de viajes y taller (hoy)."
+ },
+ "capitulos": [
+  {
+   "nombre": "La pregunta",
+   "beats": [
+    1
+   ]
+  },
+  {
+   "nombre": "Foto 1 · 2007",
+   "beats": [
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "nombre": "Foto 2 · 2016",
+   "beats": [
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "nombre": "Foto 3 · hoy",
+   "beats": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "nombre": "Veredicto",
+   "beats": [
+    15,
+    16
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "narrador",
+   "funcion": "gancho al espectador + España",
+   "voz": "¿Hay más gente en paro o trabajando que antes de la crisis? Hablamos de España. En tres fotos.",
+   "pantalla": "ESPAÑA · ¿Hay más gente en paro o trabajando que antes de la crisis?",
+   "sello": null,
+   "imagen": "Bandera de España ondeando junto a la tarjeta con el título exacto. Detrás, la calle del barrio de Marta: una carnicería, una tienda de ropa, una cafetería y un taller, con las persianas subiendo. Marta sale del portal."
+  },
+  {
+   "n": 2,
+   "quien": "narrador",
+   "funcion": "foto 1 · habitantes 2007",
+   "voz": "Foto uno: 2007, antes de la crisis. En España vivíamos 45,2 millones.",
+   "pantalla": "2007 · España: 45,2 millones de habitantes",
+   "sello": "DATO OFICIAL · INE · Población residente en España a 1 de julio de 2007",
+   "imagen": "Cae una foto de esquinas blancas con «2007». Dentro, el mapa de España (península, Baleares y Canarias) se llena de figuritas (una por cada medio millón de habitantes: 90); el contador sube hasta 45,2 millones."
+  },
+  {
+   "n": 3,
+   "quien": "narrador",
+   "funcion": "foto 1 · trabajando 2007",
+   "voz": "Trabajando, 20,8 millones.",
+   "pantalla": "TRABAJANDO · 20,8 millones",
+   "sello": "DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2007",
+   "imagen": "Marta entra en la carnicería. El carnicero, con delantal, corta y envuelve; suena la campanilla de la puerta."
+  },
+  {
+   "n": 4,
+   "quien": "narrador",
+   "funcion": "foto 1 · en paro 2007",
+   "voz": "Y en paro, 1,8 millones.",
+   "pantalla": "EN PARO · 1,8 millones",
+   "sello": "DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2007",
+   "imagen": "Fuera, un tablón de «Ofertas de empleo». Llegan dos personas y lo repasan; la primera, con una lupa (una persona por cada 0,87 millones de parados, sin rotular)."
+  },
+  {
+   "n": 5,
+   "quien": "narrador",
+   "funcion": "foto 1 · gráfico (quesito)",
+   "voz": "O sea, de cada 100 habitantes, trabajaban 46.",
+   "pantalla": "2007 · De cada 100 habitantes, trabajan 46",
+   "sello": "CÁLCULO PROPIO con datos del INE (EPA y población residente)",
+   "grafico": true,
+   "imagen": "Gráfico de rosquilla: 100 casillas; se rellenan 46 en ocre («trabajan»). El resto, gris claro: niños, estudiantes, jubilados, parados…"
+  },
+  {
+   "n": 6,
+   "quien": "narrador",
+   "funcion": "foto 2 · habitantes 2016",
+   "voz": "Foto dos: 2016. Somos 46,4 millones. Un 3 % más.",
+   "pantalla": "2016 · España: 46,4 millones · +3 %",
+   "sello": "DATO OFICIAL · INE · Población residente en España a 1 de julio de 2016",
+   "imagen": "Segunda foto, «2016». El mapa, algo más lleno; el contador pasa de 45,2 a 46,4 y aparece la etiqueta +3 %."
+  },
+  {
+   "n": 7,
+   "quien": "narrador",
+   "funcion": "foto 2 · trabajando 2016",
+   "voz": "Pero trabajando, solo 18,5 millones. Un 11 % menos.",
+   "pantalla": "TRABAJANDO · 18,5 millones · −11 %",
+   "sello": "DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2016",
+   "imagen": "Marta entra en la tienda de ropa. Una dependienta dobla camisetas. Al lado, el local vecino con la persiana bajada y un cartel de «Se alquila»."
+  },
+  {
+   "n": 8,
+   "quien": "narrador",
+   "funcion": "foto 2 · en paro 2016",
+   "voz": "En paro, 4,3 millones. Más del doble.",
+   "pantalla": "EN PARO · 4,3 millones · +139 %",
+   "sello": "DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2016",
+   "imagen": "El mismo tablón, ahora con cola: cinco personas."
+  },
+  {
+   "n": 9,
+   "quien": "narrador",
+   "funcion": "foto 2 · gráfico (quesito)",
+   "voz": "De cada 100 habitantes, trabajan 40. Seis menos.",
+   "pantalla": "2016 · De cada 100 habitantes, trabajan 40 · en 2007: 46",
+   "sello": "CÁLCULO PROPIO con datos del INE (EPA y población residente)",
+   "grafico": true,
+   "imagen": "La misma rosquilla: el trozo ocre se encoge de 46 a 40; una marca fina queda donde llegaba 2007."
+  },
+  {
+   "n": 10,
+   "quien": "narrador",
+   "funcion": "foto 3 · habitantes hoy",
+   "voz": "Foto tres: hoy. Somos 49,8 millones. Un 10 % más que en 2007.",
+   "pantalla": "HOY (2026) · España: 49,8 millones · +10 % desde 2007",
+   "sello": "DATO OFICIAL · INE · Población residente en España a 1 de julio de 2026 (provisional)",
+   "imagen": "Tercera foto, «hoy». El mapa, más lleno todavía; el contador llega a 49,8 millones."
+  },
+  {
+   "n": 11,
+   "quien": "narrador",
+   "funcion": "foto 3 · trabajando hoy",
+   "voz": "Trabajando, 22,9 millones. Récord. Y también un 10 % más.",
+   "pantalla": "TRABAJANDO · 22,9 millones · +10 %",
+   "nota": "Récord: el valor más alto de la serie de la EPA (desde 2002)",
+   "sello": "DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2026",
+   "imagen": "Tres cortes rápidos: Marta pide un café en la cafetería (la camarera con la cafetera echando vapor); pasa por una agencia de viajes con dos personas al ordenador; y un mecánico debajo de un coche en el taller."
+  },
+  {
+   "n": 12,
+   "quien": "narrador",
+   "funcion": "foto 3 · en paro hoy",
+   "voz": "En paro, 2,6 millones. Un 43 % más que en 2007.",
+   "pantalla": "EN PARO · 2,6 millones · +43 % desde 2007",
+   "sello": "DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2026",
+   "imagen": "El tablón: tres personas. Menos cola que en 2016, más que en 2007."
+  },
+  {
+   "n": 13,
+   "quien": "narrador",
+   "funcion": "gráfico de barras: crecimiento desde 2007",
+   "voz": "Mira las barras: población y trabajo crecen lo mismo. El paro, mucho más.",
+   "pantalla": "DESDE 2007 · Habitantes +10 % · Trabajando +10 % · En paro +43 %",
+   "sello": "CÁLCULO PROPIO con datos del INE (EPA y población residente)",
+   "grafico": true,
+   "imagen": "Tres barras horizontales que crecen a la vez: habitantes y trabajando se paran a la misma altura (10 %); la de paro sigue hasta 43 %."
+  },
+  {
+   "n": 14,
+   "quien": "narrador",
+   "funcion": "foto 3 · gráfico (quesito)",
+   "voz": "Por eso hoy, de cada 100 habitantes, trabajan 46. Como en 2007.",
+   "pantalla": "HOY · De cada 100 habitantes, trabajan 46 · en 2007: 46",
+   "sello": "CÁLCULO PROPIO con datos del INE (EPA y población residente)",
+   "grafico": true,
+   "imagen": "La rosquilla vuelve a crecer de 40 a 46 y toca justo la marca de 2007."
+  },
+  {
+   "n": 15,
+   "quien": "narrador",
+   "funcion": "cierre (veredicto)",
+   "actuacion": {
+    "pausa_antes": 0.5
+   },
+   "voz": "¿Mejora o empeora? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007, empeora: un 43 % más de paro.",
+   "pantalla": "EL VEREDICTO · ¿Mejora o empeora? · Frente a 2016: MEJORA (−40 % de paro) · Frente a 2007: EMPEORA (+43 % de paro)",
+   "sello": "CÁLCULO PROPIO con datos del INE (EPA y población residente)",
+   "imagen": "El barrio con todos los comercios abiertos. Tarjeta con dos filas: la marca cae en MEJORA (2016) y luego en EMPEORA (2007). Marta levanta los brazos en «mejora» y se pone seria en «empeora»."
+  },
+  {
+   "n": 16,
+   "quien": "narrador",
+   "funcion": "resumen y pregunta para el debate",
+   "voz": "Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser? ¿Tú cómo te lo explicas?",
+   "pantalla": "TE TOCA · Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser?",
+   "sello": null,
+   "imagen": "La calle del barrio, con todos los comercios abiertos y gente trabajando dentro. Marta se encoge de hombros en «¿Cómo puede ser?» y aparece un bocadillo de comentario."
+  }
+ ],
+ "no_dato": [
+  "100",
+  "1",
+  "3"
+ ],
+ "cifras": [
+  {
+   "texto": "45,2",
+   "ruta": "mismo_trimestre.2007T3.poblacion_total_miles",
+   "escala": 0.001,
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "20,8",
+   "ruta": "mismo_trimestre.2007T3.ocupados_miles",
+   "escala": 0.001,
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "1,8",
+   "ruta": "mismo_trimestre.2007T3.parados_miles",
+   "escala": 0.001,
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "46",
+   "op": "pct_de",
+   "rutas": [
+    "mismo_trimestre.2007T3.ocupados_miles",
+    "mismo_trimestre.2007T3.poblacion_total_miles"
+   ],
+   "escala": 1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "46,4",
+   "ruta": "mismo_trimestre.2016T3.poblacion_total_miles",
+   "escala": 0.001,
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "3",
+   "op": "var_pct",
+   "rutas": [
+    "mismo_trimestre.2007T3.poblacion_total_miles",
+    "mismo_trimestre.2016T3.poblacion_total_miles"
+   ],
+   "escala": 1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "18,5",
+   "ruta": "mismo_trimestre.2016T3.ocupados_miles",
+   "escala": 0.001,
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "11",
+   "op": "var_pct",
+   "rutas": [
+    "mismo_trimestre.2007T3.ocupados_miles",
+    "mismo_trimestre.2016T3.ocupados_miles"
+   ],
+   "escala": -1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "4,3",
+   "ruta": "mismo_trimestre.2016T3.parados_miles",
+   "escala": 0.001,
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "139",
+   "op": "var_pct",
+   "rutas": [
+    "mismo_trimestre.2007T3.parados_miles",
+    "mismo_trimestre.2016T3.parados_miles"
+   ],
+   "escala": 1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "40",
+   "op": "pct_de",
+   "rutas": [
+    "mismo_trimestre.2016T3.ocupados_miles",
+    "mismo_trimestre.2016T3.poblacion_total_miles"
+   ],
+   "escala": 1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "49,8",
+   "ruta": "mismo_trimestre.2026T3.poblacion_total_miles",
+   "escala": 0.001,
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "10",
+   "op": "var_pct",
+   "rutas": [
+    "mismo_trimestre.2007T3.poblacion_total_miles",
+    "mismo_trimestre.2026T3.poblacion_total_miles"
+   ],
+   "escala": 1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "22,9",
+   "ruta": "mismo_trimestre.2026T3.ocupados_miles",
+   "escala": 0.001,
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "10",
+   "op": "var_pct",
+   "rutas": [
+    "mismo_trimestre.2007T3.ocupados_miles",
+    "mismo_trimestre.2026T3.ocupados_miles"
+   ],
+   "escala": 1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "2,6",
+   "ruta": "mismo_trimestre.2026T3.parados_miles",
+   "escala": 0.001,
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "43",
+   "op": "var_pct",
+   "rutas": [
+    "mismo_trimestre.2007T3.parados_miles",
+    "mismo_trimestre.2026T3.parados_miles"
+   ],
+   "escala": 1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "46",
+   "op": "pct_de",
+   "rutas": [
+    "mismo_trimestre.2026T3.ocupados_miles",
+    "mismo_trimestre.2026T3.poblacion_total_miles"
+   ],
+   "escala": 1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "40",
+   "op": "var_pct",
+   "rutas": [
+    "mismo_trimestre.2016T3.parados_miles",
+    "mismo_trimestre.2026T3.parados_miles"
+   ],
+   "escala": -1,
+   "decimales": 0,
+   "estado": "C"
+  }
+ ],
+ "comprobaciones": [
+  "«Récord»: 22.852,6 miles en 2026T3 es el máximo de los 99 trimestres de EPA387796 (2002T1-2026T3) en data/raw/ine_65109_epa_ocupados.json (V).",
+  "«Más del doble»: parados 2016T3 / 2007T3 = 4.320,8 / 1.806,2 = 2,39 (C).",
+  "«Seis menos»: 46 − 40 de cada 100 habitantes (45,88 − 39,91 = 5,97) (C).",
+  "«Crecen lo mismo»: habitantes +10,10 % y ocupados +10,11 % entre 2007T3 y 2026T3 (C).",
+  "«Como en 2007»: ocupados por cada 100 habitantes, 45,88 en 2007 y 45,88 en 2026 (C).",
+  "Habitantes: población residente a 1 de julio (primer día del 3.er trimestre). 2007 y 2016, dato definitivo; 2026, provisional. Incluye todas las edades: por eso «de cada 100 habitantes» no es la tasa de empleo oficial (que se mide sobre 16 años o más) ni la tasa de paro (sobre población activa: 8,0 %, 18,9 % y 10,2 %)."
+ ],
+ "cierre": {
+  "veredicto": "frente a 2016: mejora · frente a 2007: empeora (por el paro)",
+  "porque": "Frente a 2016 hay 4,3 millones más trabajando y un 40 % menos de parados. Frente a 2007, de cada 100 habitantes trabajan los mismos (46), pero hay un 43 % más de parados (unos 785.000 más). El vídeo no entra en causas: la pregunta final («¿Cómo puede ser?») se deja para los comentarios."
+ },
+ "aprobacion_guion": null,
+ "historial": [
+  "v3 aprobado el 12-11-2026 y luego rechazado por Bruno el mismo día: no se entiende; falta decir que es España (y la bandera), las cifras no tienen base (¿4,8 millones más sobre cuánto?), las imágenes de gente paseando no aportan; pide comercios con gente trabajando y gráficos de un vistazo (rosquilla, quesito, barras).",
+  "v4 (12-11-2026): Bruno la ve «mucho mejor». Pide quitar las barbas sin bigote (salvo la del carnicero), tonos de piel más claros (población de España; algún hispanoamericano) y un final sin «depende», con veredicto claro y una pregunta que abra debate. Cambian los planos 15 y 16."
+ ]
+}

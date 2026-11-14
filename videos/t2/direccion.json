@@ -1,0 +1,234 @@
+{
+  "nota": "Dirección de T2: hombre en 2007 y hoy. Las cifras de las tarjetas deben estar en la «pantalla» del mismo plano del guion.",
+  "personajes": {
+    "antes": {
+      "piel": "#D9A784",
+      "pelo": "#2E2620",
+      "semilla": 5
+    },
+    "hoy": {
+      "piel": "#D29F7B",
+      "pelo": "#3A322B",
+      "semilla": 11
+    }
+  },
+  "planos": {
+    "1": {
+      "tarjeta": {
+        "tipo": "pregunta",
+        "texto": "¿Hoy trabaja más gente que antes de la crisis?",
+        "objeto": "calendario"
+      },
+      "actores": {
+        "hoy": {
+          "expr": "contenta",
+          "gesto": "explicar",
+          "mirada": 0
+        }
+      }
+    },
+    "2": {
+      "tarjeta": {
+        "tipo": "cifra",
+        "anyo": "2007",
+        "valor": "20,75 M",
+        "sub": "ocupados",
+        "tono": "pasado"
+      },
+      "sello": true,
+      "actores": {
+        "antes": {
+          "expr": "contenta",
+          "gesto": "explicar"
+        },
+        "hoy": {
+          "expr": "duda"
+        }
+      }
+    },
+    "3": {
+      "tarjeta": {
+        "tipo": "cifra",
+        "anyo": "HOY",
+        "valor": "22,85 M",
+        "sub": "ocupados · récord desde 2002",
+        "tono": "hoy"
+      },
+      "sello": true,
+      "actores": {
+        "hoy": {
+          "expr": "contenta",
+          "gesto": "explicar"
+        },
+        "antes": {
+          "expr": "sorpresa"
+        }
+      }
+    },
+    "4": {
+      "tarjeta": {
+        "tipo": "mantener"
+      },
+      "actores": {
+        "antes": {
+          "expr": "duda",
+          "gesto": "arriba"
+        },
+        "hoy": {
+          "expr": "neutra"
+        }
+      }
+    },
+    "5": {
+      "tarjeta": {
+        "tipo": "cifra",
+        "anyo": "2007 → hoy",
+        "valor": "+4,8 M",
+        "sub": "personas de 16 años o más",
+        "tono": "hoy"
+      },
+      "sello": true,
+      "actores": {
+        "hoy": {
+          "expr": "explicando",
+          "gesto": "explicar"
+        },
+        "antes": {
+          "expr": "duda"
+        }
+      }
+    },
+    "6": {
+      "tarjeta": {
+        "tipo": "dos",
+        "a": {
+          "anyo": "2007",
+          "valor": "67 de cada 100",
+          "tono": "pasado"
+        },
+        "b": {
+          "anyo": "HOY",
+          "valor": "69 de cada 100",
+          "tono": "hoy"
+        },
+        "sub": "trabajan · de 16 a 64 años"
+      },
+      "sello": true,
+      "actores": {
+        "hoy": {
+          "expr": "explicando",
+          "gesto": "explicar"
+        },
+        "antes": {
+          "expr": "seria"
+        }
+      }
+    },
+    "7": {
+      "tarjeta": {
+        "tipo": "mantener"
+      },
+      "actores": {
+        "antes": {
+          "expr": "duda",
+          "gesto": "abajo"
+        },
+        "hoy": {
+          "expr": "neutra"
+        }
+      }
+    },
+    "8": {
+      "tarjeta": {
+        "tipo": "grafico3",
+        "barras": [
+          {
+            "anyo": "2007",
+            "num": 8.0,
+            "texto": "8,0 %",
+            "tono": "pasado"
+          },
+          {
+            "anyo": "2016",
+            "num": 18.9,
+            "texto": "18,9 %",
+            "tono": "pasado"
+          },
+          {
+            "anyo": "HOY",
+            "num": 10.2,
+            "texto": "10,2 %",
+            "tono": "hoy"
+          }
+        ]
+      },
+      "sello": true,
+      "actores": {
+        "hoy": {
+          "expr": "explicando",
+          "gesto": "explicar"
+        },
+        "antes": {
+          "expr": "contenta"
+        }
+      }
+    },
+    "9": {
+      "tarjeta": {
+        "tipo": "cierre",
+        "marcar": null
+      },
+      "actores": {
+        "antes": {
+          "expr": "duda",
+          "gesto": "abajo",
+          "mirada": 0
+        },
+        "hoy": {
+          "expr": "neutra"
+        }
+      }
+    },
+    "10": {
+      "tarjeta": {
+        "tipo": "cierre",
+        "marcas": [
+          {
+            "palabra": "MEJORA",
+            "texto": "frente a 2016"
+          },
+          {
+            "palabra": "DEPENDE",
+            "texto": "frente a 2007"
+          }
+        ]
+      },
+      "actores": {
+        "hoy": {
+          "expr": "seria",
+          "gesto": "explicar"
+        },
+        "antes": {
+          "expr": "seria"
+        }
+      }
+    },
+    "11": {
+      "tarjeta": {
+        "tipo": "pregunta",
+        "texto": "¿Y tú? Cuéntanoslo"
+      },
+      "actores": {
+        "hoy": {
+          "expr": "contenta",
+          "gesto": "saludo",
+          "mirada": 0
+        },
+        "antes": {
+          "expr": "contenta",
+          "mirada": 0
+        }
+      }
+    }
+  }
+}

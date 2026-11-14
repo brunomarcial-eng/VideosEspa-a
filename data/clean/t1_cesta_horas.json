@@ -1,0 +1,305 @@
+{
+  "tema": "T1 — ¿Cuántas horas de trabajo cuesta la compra de comida de un mes?",
+  "definicion_cesta": "Gasto medio por persona en alimentos y bebidas no alcohólicas (EPF 2025, gasto total) / 12, a precios de cada año con el IPC de alimentos y bebidas no alcohólicas (misma cesta, cambia el precio).",
+  "cesta_2025_euros_mes": 187.88,
+  "epf_gasto_anual_persona": {
+    "2016": 1654.37,
+    "2017": 1650.54,
+    "2018": 1699.6,
+    "2019": 1722.43,
+    "2021": 1915.53,
+    "2022": 2022.71,
+    "2023": 2145.97,
+    "2024": 2157.59,
+    "2025": 2254.62
+  },
+  "formulas": {
+    "cesta_euros_mes(año)": "EPF2025/12 x IPCalim(año)/IPCalim(2025)",
+    "salario_bruto_hora_mediana": "salario medio por hora (EAES) x mediana anual / media anual (EAES)",
+    "ratio_neto_bruto": "neto/bruto de soltero sin hijos con la ganancia anual mediana, interpolado en Eurostat earn_nt_net",
+    "horas": "cesta_euros_mes / salario_neto_hora_mediana"
+  },
+  "series": {
+    "EAES738": "Ambos sexos. Total Nacional. Dato base. Mediana.",
+    "EAES741": "Ambos sexos. Total Nacional. Dato base. Media.",
+    "EAES2013": "Salario medio por hora",
+    "IPC290755": "Nacional. Alimentos y bebidas no alcohólicas. Índice.",
+    "IPC290751": "Nacional. Índice general. Índice.",
+    "EPF534996": "Alimentos y bebidas no alcohólicas. Dato base. Gasto total. Gasto medio por persona. Precios corrientes.",
+    "ETCL6966": "Ambas jornadas. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial total por hora. Total Nacional. Costes salariales. (retrospectivas). Euros.",
+    "ETCL1767": "Ambas jornadas. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial total por hora. Total Nacional. Costes salariales. Euros."
+  },
+  "filas": [
+    {
+      "anyo": 2007,
+      "ipc_alimentos_media_anual": 61.198,
+      "ipc_general_media_anual": 70.105,
+      "cesta_euros_mes": 114.98,
+      "salario_bruto_hora_media": 12.9,
+      "ganancia_anual_mediana": 17399.24,
+      "ganancia_anual_media": 20869.69,
+      "ratio_mediana_media": 0.8337,
+      "salario_bruto_hora_mediana": 10.76,
+      "ratio_neto_bruto_mediana": 0.8173,
+      "ratio_neto_bruto_media": 0.7988,
+      "interpolacion_neto_mediana": {
+        "entre": [
+          "P1_NCH_AW67",
+          "P1_NCH_AW80"
+        ],
+        "bruto": [
+          14732.82,
+          17591.42
+        ],
+        "neto": [
+          12321.94,
+          14356.52
+        ]
+      },
+      "salario_neto_hora_mediana": 8.79,
+      "salario_neto_hora_media": 10.31,
+      "horas_neto_mediana": 13.1,
+      "horas_neto_media": 11.2,
+      "horas_bruto_mediana": 10.7,
+      "estado_salario": "C",
+      "nota_salario": "EAES 2008 x ETCL 2007/2008 (12.713/13.33); corte de serie CNAE-93 -> CNAE-09"
+    },
+    {
+      "anyo": 2016,
+      "ipc_alimentos_media_anual": 69.767,
+      "ipc_general_media_anual": 78.725,
+      "cesta_euros_mes": 131.08,
+      "salario_bruto_hora_media": 14.88,
+      "ganancia_anual_mediana": 19432.62,
+      "ganancia_anual_media": 23156.34,
+      "ratio_mediana_media": 0.8392,
+      "salario_bruto_hora_mediana": 12.49,
+      "ratio_neto_bruto_mediana": 0.8227,
+      "ratio_neto_bruto_media": 0.8024,
+      "interpolacion_neto_mediana": {
+        "entre": [
+          "P1_NCH_AW67",
+          "P1_NCH_AW80"
+        ],
+        "bruto": [
+          17720.7,
+          21159.05
+        ],
+        "neto": [
+          14769.53,
+          17216.74
+        ]
+      },
+      "salario_neto_hora_mediana": 10.27,
+      "salario_neto_hora_media": 11.94,
+      "horas_neto_mediana": 12.8,
+      "horas_neto_media": 11.0,
+      "horas_bruto_mediana": 10.5,
+      "estado_salario": "V",
+      "nota_salario": "EAES: salario medio por hora y ganancia anual (V)",
+      "epf_gasto_real_mes": 137.86,
+      "horas_neto_mediana_gasto_real": 13.4
+    },
+    {
+      "anyo": 2018,
+      "ipc_alimentos_media_anual": 71.788,
+      "ipc_general_media_anual": 81.609,
+      "cesta_euros_mes": 134.88,
+      "salario_bruto_hora_media": 15.54,
+      "ganancia_anual_mediana": 20078.44,
+      "ganancia_anual_media": 24009.12,
+      "ratio_mediana_media": 0.8363,
+      "salario_bruto_hora_mediana": 13.0,
+      "ratio_neto_bruto_mediana": 0.8206,
+      "ratio_neto_bruto_media": 0.8001,
+      "interpolacion_neto_mediana": {
+        "entre": [
+          "P1_NCH_AW67",
+          "P1_NCH_AW80"
+        ],
+        "bruto": [
+          18037.58,
+          21537.41
+        ],
+        "neto": [
+          15014.6,
+          17522.08
+        ]
+      },
+      "salario_neto_hora_mediana": 10.66,
+      "salario_neto_hora_media": 12.43,
+      "horas_neto_mediana": 12.6,
+      "horas_neto_media": 10.8,
+      "horas_bruto_mediana": 10.4,
+      "estado_salario": "V",
+      "nota_salario": "EAES: salario medio por hora y ganancia anual (V)",
+      "epf_gasto_real_mes": 141.63,
+      "horas_neto_mediana_gasto_real": 13.3
+    },
+    {
+      "anyo": 2019,
+      "ipc_alimentos_media_anual": 72.531,
+      "ipc_general_media_anual": 82.18,
+      "cesta_euros_mes": 136.27,
+      "salario_bruto_hora_media": 15.85,
+      "ganancia_anual_mediana": 20351.02,
+      "ganancia_anual_media": 24395.98,
+      "ratio_mediana_media": 0.8342,
+      "salario_bruto_hora_mediana": 13.22,
+      "ratio_neto_bruto_mediana": 0.8208,
+      "ratio_neto_bruto_media": 0.7997,
+      "interpolacion_neto_mediana": {
+        "entre": [
+          "P1_NCH_AW67",
+          "P1_NCH_AW80"
+        ],
+        "bruto": [
+          18285.95,
+          21833.98
+        ],
+        "neto": [
+          15227.74,
+          17764.05
+        ]
+      },
+      "salario_neto_hora_mediana": 10.85,
+      "salario_neto_hora_media": 12.67,
+      "horas_neto_mediana": 12.6,
+      "horas_neto_media": 10.8,
+      "horas_bruto_mediana": 10.3,
+      "estado_salario": "V",
+      "nota_salario": "EAES: salario medio por hora y ganancia anual (V)",
+      "epf_gasto_real_mes": 143.54,
+      "horas_neto_mediana_gasto_real": 13.2
+    },
+    {
+      "anyo": 2024,
+      "ipc_alimentos_media_anual": 97.616,
+      "ipc_general_media_anual": 97.396,
+      "cesta_euros_mes": 183.41,
+      "salario_bruto_hora_media": 18.77,
+      "ganancia_anual_mediana": 24497.17,
+      "ganancia_anual_media": 29540.26,
+      "ratio_mediana_media": 0.8293,
+      "salario_bruto_hora_mediana": 15.57,
+      "ratio_neto_bruto_mediana": 0.8112,
+      "ratio_neto_bruto_media": 0.7887,
+      "interpolacion_neto_mediana": {
+        "entre": [
+          "P1_NCH_AW67",
+          "P1_NCH_AW80"
+        ],
+        "bruto": [
+          22817.52,
+          27244.8
+        ],
+        "neto": [
+          18727.17,
+          21745.63
+        ]
+      },
+      "salario_neto_hora_mediana": 12.63,
+      "salario_neto_hora_media": 14.8,
+      "horas_neto_mediana": 14.5,
+      "horas_neto_media": 12.4,
+      "horas_bruto_mediana": 11.8,
+      "estado_salario": "V",
+      "nota_salario": "EAES: salario medio por hora y ganancia anual (V)",
+      "epf_gasto_real_mes": 179.8,
+      "horas_neto_mediana_gasto_real": 14.2
+    },
+    {
+      "anyo": 2025,
+      "ipc_alimentos_media_anual": 100.0,
+      "ipc_general_media_anual": 100.0,
+      "cesta_euros_mes": 187.88,
+      "salario_bruto_hora_media": 19.38,
+      "ganancia_anual_mediana": 25295.84,
+      "ganancia_anual_media": 30503.35,
+      "ratio_mediana_media": 0.8293,
+      "salario_bruto_hora_mediana": 16.07,
+      "ratio_neto_bruto_mediana": 0.8074,
+      "ratio_neto_bruto_media": 0.7851,
+      "interpolacion_neto_mediana": {
+        "entre": [
+          "P1_NCH_AW67",
+          "P1_NCH_AW80"
+        ],
+        "bruto": [
+          23500.92,
+          28060.8
+        ],
+        "neto": [
+          19208.46,
+          22297.38
+        ]
+      },
+      "salario_neto_hora_mediana": 12.98,
+      "salario_neto_hora_media": 15.22,
+      "horas_neto_mediana": 14.5,
+      "horas_neto_media": 12.3,
+      "horas_bruto_mediana": 11.7,
+      "estado_salario": "C",
+      "nota_salario": "EAES 2024 x ETCL 2025/2024 (18.608/18.02)",
+      "epf_gasto_real_mes": 187.88,
+      "horas_neto_mediana_gasto_real": 14.5
+    }
+  ],
+  "ipc_alimentos_ultimo_mes": {
+    "fecha": "2026-09",
+    "indice": 101.934,
+    "var_interanual_pct": 2.7
+  },
+  "ipc_alimentos_ultimos_12_meses_media": 101.848,
+  "fuentes": {
+    "eurostat_earn_nt_net.json": {
+      "descripcion": "Eurostat. Ganancias netas anuales por tipo de hogar (para contrastar el cálculo del neto)",
+      "web": "https://ec.europa.eu/eurostat/databrowser/view/earn_nt_net/default/table",
+      "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_nt_net?format=JSON&lang=EN&geo=ES&geo=EU27_2020&currency=EUR",
+      "consultado": "2026-11-09T16:41:27Z",
+      "sha256": "47f9d8dbd61f51f788cb4203ff60fd78be1d1f3969e82e18dbdbf1bfc6200eb5"
+    },
+    "ine_28191_eaes_medias_percentiles.json": {
+      "descripcion": "INE EAES. Ganancia anual por trabajador: medias y percentiles por sexo y CCAA",
+      "web": "https://www.ine.es/jaxiT3/Tabla.htm?t=28191",
+      "api": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/28191?tip=A&nult=40",
+      "consultado": "2026-11-09T16:40:56Z",
+      "sha256": "78b8353789512b57efd8e15da0480ebb43dfa94cfd5355d5f7c969729daf784d"
+    },
+    "ine_30046_eaes_salario_por_hora.json": {
+      "descripcion": "INE EAES. Ingreso medio por hora por sexo y sectores",
+      "web": "https://www.ine.es/jaxiT3/Tabla.htm?t=30046",
+      "api": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/30046?tip=A&nult=40",
+      "consultado": "2026-11-09T16:40:58Z",
+      "sha256": "fb2f1e49cf8a606e6f048f548b8485672b381c44bb4d15d0f00b50dca345968d"
+    },
+    "ine_6040_etcl_coste_salarial_hora_2008.json": {
+      "descripcion": "INE ETCL. Coste salarial por hora efectiva, tipo de jornada y sectores (CNAE-09, desde 2008)",
+      "web": "https://www.ine.es/jaxiT3/Tabla.htm?t=6040",
+      "api": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/6040?tip=A&nult=80",
+      "consultado": "2026-11-09T16:41:01Z",
+      "sha256": "37e08684eed8d4ade05474bbe5f85149862b201859246709ca58ee3955d72db5"
+    },
+    "ine_6078_etcl_coste_salarial_hora.json": {
+      "descripcion": "INE ETCL. Coste salarial por hora efectiva, tipo de jornada y sectores (desde 2000)",
+      "web": "https://www.ine.es/jaxiT3/Tabla.htm?t=6078",
+      "api": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/6078?tip=A&nult=120",
+      "consultado": "2026-11-09T16:41:00Z",
+      "sha256": "4d04f016108e452df632b475c6a134ffbad5605e046900e47f3d93ccd1b047e4"
+    },
+    "ine_73778_epf_gasto_grupos.json": {
+      "descripcion": "INE EPF base 2016. Gasto por grupos de gasto (2 dígitos)",
+      "web": "https://www.ine.es/jaxiT3/Tabla.htm?t=73778",
+      "api": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/73778?tip=A&nult=20",
+      "consultado": "2026-11-09T16:41:18Z",
+      "sha256": "eb4008708fd139b8c64f78a7f978b57e85f0fe575ecc3aec3f8ada139f04d3aa"
+    },
+    "ine_76125_ipc_grupos.json": {
+      "descripcion": "INE IPC. Índices nacionales: general y grupos ECOICOP ver.2 (mensual, desde 2002)",
+      "web": "https://www.ine.es/jaxiT3/Tabla.htm?t=76125",
+      "api": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/76125?tip=A&nult=320",
+      "consultado": "2026-11-09T16:41:04Z",
+      "sha256": "592faee02a4377ff568df05911dd160913263771461d52e8535fbc7cefd98724"
+    }
+  }
+}

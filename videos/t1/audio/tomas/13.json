@@ -1,0 +1,49 @@
+{
+ "huella": "3ff296bf83fdba5c",
+ "semilla": 13000,
+ "texto": "¿Y tú? ¿Lo notas en tu carro… o soy yo, que me fijo mucho? Te leo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "¿Y tú? ¿Lo notas en tu carro o soy yo que me fijo mucho? Te leo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.1,
+   0.98,
+   1.12,
+   1.44,
+   1.56,
+   1.66,
+   1.92,
+   2.58,
+   2.72,
+   2.94,
+   3.12,
+   3.24,
+   3.48,
+   4.2,
+   4.3
+  ],
+  "t1": [
+   0.1,
+   0.26,
+   1.12,
+   1.44,
+   1.56,
+   1.66,
+   1.92,
+   2.58,
+   2.72,
+   2.94,
+   3.12,
+   3.24,
+   3.48,
+   3.72,
+   4.3,
+   4.66
+  ],
+  "ritmo": 9.2
+ }
+}

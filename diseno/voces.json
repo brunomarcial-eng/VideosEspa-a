@@ -1,0 +1,61 @@
+{
+ "nota": "Solo voces gratuitas, locales y de España. Narrador: la voz 3 del casting (Qwen3-TTS 0.6B, Apache-2.0, clonando la grabación humana CC0 diseno/voces/ref-dave.wav), elegida por Bruno el 10-11-2026. La voz 5 del casting (mujer, Qwen3-TTS 1.7B VoiceDesign) le hizo gracia por su acento «ruso»: queda reservada para un segundo personaje o una aparición puntual. Piper y Kokoro quedan como motores de reserva.",
+ "perfiles": {
+  "hombre": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-dave.wav",
+   "ref_txt": "diseno/voces/ref-dave.txt"
+  },
+  "secundario": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-voz5.wav",
+   "ref_txt": "diseno/voces/ref-voz5.txt",
+   "estado": "en prueba: muestra para Bruno (T2, escena 9)",
+   "nota": "Voz 5 del casting (mujer, acento «ruso» según Bruno). Se fija clonando su propia toma del casting (ref-voz5.wav, 9,8 s) con el mismo motor que el narrador, para que suene igual en cada frase."
+  },
+  "piper_hombre": {
+   "motor": "piper",
+   "voz": "es_ES-davefx-medium",
+   "noise_scale": 0.62,
+   "noise_w": 0.5
+  },
+  "piper_mujer": {
+   "motor": "piper",
+   "voz": "es_ES-sharvard-medium#1",
+   "noise_scale": 0.62,
+   "noise_w": 0.5
+  }
+ },
+ "edad": {
+  "antes": {
+   "tono": 1.07,
+   "velocidad": 0.98
+  },
+  "hoy": {
+   "tono": 0.97,
+   "velocidad": 0.97
+  },
+  "narrador": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  }
+ },
+ "velocidad_base": 0.95,
+ "pausa_turno_s": 0.45,
+ "pausa_mismo_s": 0.45,
+ "creditos": {
+  "piper:es_ES-davefx-medium": "Voz: Piper davefx (CC0)",
+  "piper:es_ES-sharvard-medium": "Voz: Piper sharvard (Universidad de Edimburgo, CC BY 3.0)",
+  "qwen:Qwen3-TTS-12Hz-0.6B-Base": "Voz: Qwen3-TTS (Apache-2.0) con timbre de una grabación CC0 del proyecto Piper/Nabu Casa"
+ },
+ "pausa_frase_s": 0.26,
+ "pausa_duda_s": 0.45,
+ "formantes": "preserved",
+ "intentos": 5,
+ "hueco_max_s": 1.0,
+ "hueco_queda_s": 0.75,
+ "pausa_tras_dato_s": 1.0,
+ "nota_pausas": "Pausas: las naturales de la voz no se tocan (solo se acortan silencios de más de 1 s, que son fallos del modelo). Entre líneas, 0,45 s; tras una línea con dato en la tarjeta, 1 s, para que dé tiempo a leerlo."
+}
