@@ -18,3 +18,5 @@ videos/*/render/*-prueba.mp4
 videos/*/audio/tomas/*.wav
 videos/*/render/.parte-*
 videos/*/render/.partes.txt
+# microdatos del INE (grandes): se bajan con scripts/descargar_datos.py
+data/raw/microdatos/

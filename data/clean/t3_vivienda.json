@@ -1,0 +1,1214 @@
+{
+ "tema": "T3 — ¿Comprar casa es más difícil hoy que hace 20 años? (2006 frente a hoy; 2016 de control)",
+ "supuestos": {
+  "vivienda_m2": 90,
+  "entrada_pct": 20.0,
+  "gastos_compra_pct": 10.0
+ },
+ "sueldos_ees_microdatos": {
+  "2006": {
+   "media": 19686.0,
+   "mediana": 15739.0,
+   "moda": 13775.0,
+   "moda_bw500": 13925.0,
+   "moda_bw1500": 13775.0,
+   "trabajadores_millones": 12.19,
+   "registros": 235272
+  },
+  "2022": {
+   "media": 26949.0,
+   "mediana": 22383.0,
+   "moda": 16875.0,
+   "moda_bw500": 16775.0,
+   "moda_bw1500": 17125.0,
+   "trabajadores_millones": 14.15,
+   "registros": 240490
+  },
+  "metodo": "ganancia anual = (365 / días pagados) × (salario bruto anual + especie); ponderado con FACTOTAL",
+  "estado": "C (cálculo propio con microdatos oficiales del INE)"
+ },
+ "sueldos_eaes": {
+  "media": {
+   "2008": 21883.42,
+   "2016": 23156.34,
+   "2022": 26948.87,
+   "2023": 28049.94,
+   "2024": 29540.26
+  },
+  "percentil 10": {
+   "2008": 8903.52,
+   "2016": 8095.44,
+   "2022": 10657.37,
+   "2023": 11466.88,
+   "2024": 12018.46
+  },
+  "cuartil inferior": {
+   "2008": 13342.53,
+   "2016": 13369.74,
+   "2022": 15913.52,
+   "2023": 16632.97,
+   "2024": 17457.47
+  },
+  "mediana": {
+   "2008": 18244.4,
+   "2016": 19432.62,
+   "2022": 22383.11,
+   "2023": 23349.0,
+   "2024": 24497.17
+  },
+  "cuartil superior": {
+   "2008": 26874.02,
+   "2016": 29191.56,
+   "2022": 33561.62,
+   "2023": 34991.64,
+   "2024": 36969.61
+  },
+  "percentil 90": {
+   "2008": 38558.29,
+   "2016": 41855.38,
+   "2022": 48217.21,
+   "2023": 49836.0,
+   "2024": 52515.27
+  }
+ },
+ "ipc": {
+  "2006": {
+   "media": 68.205,
+   "meses": 12
+  },
+  "2016": {
+   "media": 78.725,
+   "meses": 12
+  },
+  "2022": {
+   "media": 91.534,
+   "meses": 12
+  },
+  "2024": {
+   "media": 97.396,
+   "meses": 12
+  },
+  "2025": {
+   "media": 100.0,
+   "meses": 12
+  },
+  "2026": {
+   "media": 103.054,
+   "meses": 9
+  }
+ },
+ "deflactor_desde_2006": {
+  "2016": 1.154,
+  "2022": 1.342,
+  "2024": 1.428,
+  "2025": 1.466,
+  "2026": 1.511
+ },
+ "bde_vivienda": {
+  "precio_m2_tasado": {
+   "serie": "Estadísticas Generales. Edificación y vivienda. Precio medio m2 de viviendas libres tasadas. Total nacional",
+   "por_anyo": {
+    "2005": {
+     "media": 1761.0,
+     "n": 4,
+     "ultimo": "DIC 2005: 1824.3"
+    },
+    "2006": {
+     "media": 1944.28,
+     "n": 4,
+     "ultimo": "DIC 2006: 1990.5"
+    },
+    "2007": {
+     "media": 2056.35,
+     "n": 4,
+     "ultimo": "DIC 2007: 2085.5"
+    },
+    "2008": {
+     "media": 2071.07,
+     "n": 4,
+     "ultimo": "DIC 2008: 2018.5"
+    },
+    "2009": {
+     "media": 1917.03,
+     "n": 4,
+     "ultimo": "DIC 2009: 1892.3"
+    },
+    "2010": {
+     "media": 1843.03,
+     "n": 4,
+     "ultimo": "DIC 2010: 1825.5"
+    },
+    "2011": {
+     "media": 1740.2,
+     "n": 4,
+     "ultimo": "DIC 2011: 1701.8"
+    },
+    "2012": {
+     "media": 1588.12,
+     "n": 4,
+     "ultimo": "DIC 2012: 1531.2"
+    },
+    "2013": {
+     "media": 1495.35,
+     "n": 4,
+     "ultimo": "DIC 2013: 1466.9"
+    },
+    "2014": {
+     "media": 1459.4,
+     "n": 4,
+     "ultimo": "DIC 2014: 1463.1"
+    },
+    "2015": {
+     "media": 1475.2,
+     "n": 4,
+     "ultimo": "DIC 2015: 1490.1"
+    },
+    "2016": {
+     "media": 1502.62,
+     "n": 4,
+     "ultimo": "DIC 2016: 1512.0"
+    },
+    "2017": {
+     "media": 1538.62,
+     "n": 4,
+     "ultimo": "DIC 2017: 1558.7"
+    },
+    "2018": {
+     "media": 1590.7,
+     "n": 4,
+     "ultimo": "DIC 2018: 1618.8"
+    },
+    "2019": {
+     "media": 1641.2,
+     "n": 4,
+     "ultimo": "DIC 2019: 1652.8"
+    },
+    "2020": {
+     "media": 1623.1,
+     "n": 4,
+     "ultimo": "DIC 2020: 1622.3"
+    },
+    "2021": {
+     "media": 1657.58,
+     "n": 4,
+     "ultimo": "DIC 2021: 1694.1"
+    },
+    "2022": {
+     "media": 1740.97,
+     "n": 4,
+     "ultimo": "DIC 2022: 1749.2"
+    },
+    "2023": {
+     "media": 1809.08,
+     "n": 4,
+     "ultimo": "DIC 2023: 1842.3"
+    },
+    "2024": {
+     "media": 1913.62,
+     "n": 4,
+     "ultimo": "DIC 2024: 1972.1"
+    },
+    "2025": {
+     "media": 2127.57,
+     "n": 4,
+     "ultimo": "DIC 2025: 2230.0"
+    },
+    "2026": {
+     "media": 2335.35,
+     "n": 2,
+     "ultimo": "JUN 2026: 2355.0"
+    }
+   }
+  },
+  "precio_renta_hogar_anos": {
+   "serie": "Estadísticas Generales. Edificación y vivienda. Accesibilidad a la vivienda. Precio de la vivienda/renta bruta por hogar",
+   "por_anyo": {
+    "2005": {
+     "media": 8.13,
+     "n": 4,
+     "ultimo": "DIC 2005: 8.4"
+    },
+    "2006": {
+     "media": 8.84,
+     "n": 4,
+     "ultimo": "DIC 2006: 9.11"
+    },
+    "2007": {
+     "media": 9.36,
+     "n": 4,
+     "ultimo": "DIC 2007: 9.32"
+    },
+    "2008": {
+     "media": 9.05,
+     "n": 4,
+     "ultimo": "DIC 2008: 8.76"
+    },
+    "2009": {
+     "media": 8.62,
+     "n": 4,
+     "ultimo": "DIC 2009: 8.72"
+    },
+    "2010": {
+     "media": 8.69,
+     "n": 4,
+     "ultimo": "DIC 2010: 8.71"
+    },
+    "2011": {
+     "media": 8.11,
+     "n": 4,
+     "ultimo": "DIC 2011: 7.76"
+    },
+    "2012": {
+     "media": 7.27,
+     "n": 4,
+     "ultimo": "DIC 2012: 7.19"
+    },
+    "2013": {
+     "media": 6.71,
+     "n": 4,
+     "ultimo": "DIC 2013: 6.66"
+    },
+    "2014": {
+     "media": 6.73,
+     "n": 4,
+     "ultimo": "DIC 2014: 6.71"
+    },
+    "2015": {
+     "media": 6.64,
+     "n": 4,
+     "ultimo": "DIC 2015: 6.64"
+    },
+    "2016": {
+     "media": 6.68,
+     "n": 4,
+     "ultimo": "DIC 2016: 6.69"
+    },
+    "2017": {
+     "media": 6.8,
+     "n": 4,
+     "ultimo": "DIC 2017: 6.83"
+    },
+    "2018": {
+     "media": 6.91,
+     "n": 4,
+     "ultimo": "DIC 2018: 6.96"
+    },
+    "2019": {
+     "media": 6.87,
+     "n": 4,
+     "ultimo": "DIC 2019: 6.8"
+    },
+    "2020": {
+     "media": 7.0,
+     "n": 4,
+     "ultimo": "DIC 2020: 7.11"
+    },
+    "2021": {
+     "media": 7.14,
+     "n": 4,
+     "ultimo": "DIC 2021: 7.26"
+    },
+    "2022": {
+     "media": 7.37,
+     "n": 4,
+     "ultimo": "DIC 2022: 7.36"
+    },
+    "2023": {
+     "media": 7.12,
+     "n": 4,
+     "ultimo": "DIC 2023: 6.97"
+    },
+    "2024": {
+     "media": 7.05,
+     "n": 4,
+     "ultimo": "DIC 2024: 7.18"
+    },
+    "2025": {
+     "media": 7.6,
+     "n": 4,
+     "ultimo": "DIC 2025: 7.86"
+    },
+    "2026": {
+     "media": 8.21,
+     "n": 2,
+     "ultimo": "JUN 2026: 8.36"
+    }
+   }
+  },
+  "esfuerzo_teorico_pct": {
+   "serie": "Estadísticas Generales. Edificación y vivienda. Accesibilidad a la vivienda. Esfuerzo teórico anual sin deducciones",
+   "por_anyo": {
+    "2005": {
+     "media": 40.2,
+     "n": 4,
+     "ultimo": "DIC 2005: 41.1"
+    },
+    "2006": {
+     "media": 46.46,
+     "n": 4,
+     "ultimo": "DIC 2006: 49.63"
+    },
+    "2007": {
+     "media": 53.16,
+     "n": 4,
+     "ultimo": "DIC 2007: 54.2"
+    },
+    "2008": {
+     "media": 53.62,
+     "n": 4,
+     "ultimo": "DIC 2008: 53.26"
+    },
+    "2009": {
+     "media": 39.59,
+     "n": 4,
+     "ultimo": "DIC 2009: 37.35"
+    },
+    "2010": {
+     "media": 37.41,
+     "n": 4,
+     "ultimo": "DIC 2010: 38.28"
+    },
+    "2011": {
+     "media": 39.23,
+     "n": 4,
+     "ultimo": "DIC 2011: 38.83"
+    },
+    "2012": {
+     "media": 35.44,
+     "n": 4,
+     "ultimo": "DIC 2012: 33.89"
+    },
+    "2013": {
+     "media": 32.58,
+     "n": 4,
+     "ultimo": "DIC 2013: 32.63"
+    },
+    "2014": {
+     "media": 33.29,
+     "n": 4,
+     "ultimo": "DIC 2014: 32.43"
+    },
+    "2015": {
+     "media": 31.03,
+     "n": 4,
+     "ultimo": "DIC 2015: 30.85"
+    },
+    "2016": {
+     "media": 30.54,
+     "n": 4,
+     "ultimo": "DIC 2016: 30.29"
+    },
+    "2017": {
+     "media": 30.34,
+     "n": 4,
+     "ultimo": "DIC 2017: 30.27"
+    },
+    "2018": {
+     "media": 30.7,
+     "n": 4,
+     "ultimo": "DIC 2018: 30.93"
+    },
+    "2019": {
+     "media": 30.25,
+     "n": 4,
+     "ultimo": "DIC 2019: 29.18"
+    },
+    "2020": {
+     "media": 29.7,
+     "n": 4,
+     "ultimo": "DIC 2020: 29.69"
+    },
+    "2021": {
+     "media": 29.04,
+     "n": 4,
+     "ultimo": "DIC 2021: 29.16"
+    },
+    "2022": {
+     "media": 31.34,
+     "n": 4,
+     "ultimo": "DIC 2022: 33.99"
+    },
+    "2023": {
+     "media": 36.51,
+     "n": 4,
+     "ultimo": "DIC 2023: 36.21"
+    },
+    "2024": {
+     "media": 34.55,
+     "n": 4,
+     "ultimo": "DIC 2024: 34.01"
+    },
+    "2025": {
+     "media": 34.31,
+     "n": 4,
+     "ultimo": "DIC 2025: 34.97"
+    },
+    "2026": {
+     "media": 37.07,
+     "n": 2,
+     "ultimo": "JUN 2026: 38.01"
+    }
+   }
+  },
+  "tipo_prestamos_vivienda_pct": {
+   "serie": "Tipos de interés. Tipo de los préstamos libres para adquisición de vivienda de hogares",
+   "por_anyo": {
+    "2005": {
+     "media": 3.37,
+     "n": 12,
+     "ultimo": "DIC 2005: 3.46"
+    },
+    "2006": {
+     "media": 4.23,
+     "n": 12,
+     "ultimo": "DIC 2006: 4.74"
+    },
+    "2007": {
+     "media": 5.25,
+     "n": 12,
+     "ultimo": "DIC 2007: 5.53"
+    },
+    "2008": {
+     "media": 5.82,
+     "n": 12,
+     "ultimo": "DIC 2008: 5.83"
+    },
+    "2009": {
+     "media": 3.36,
+     "n": 12,
+     "ultimo": "DIC 2009: 2.62"
+    },
+    "2010": {
+     "media": 2.6,
+     "n": 12,
+     "ultimo": "DIC 2010: 2.66"
+    },
+    "2011": {
+     "media": 3.46,
+     "n": 12,
+     "ultimo": "DIC 2011: 3.66"
+    },
+    "2012": {
+     "media": 3.4,
+     "n": 12,
+     "ultimo": "DIC 2012: 2.93"
+    },
+    "2013": {
+     "media": 3.19,
+     "n": 12,
+     "ultimo": "DIC 2013: 3.16"
+    },
+    "2014": {
+     "media": 3.11,
+     "n": 12,
+     "ultimo": "DIC 2014: 2.64"
+    },
+    "2015": {
+     "media": 2.5,
+     "n": 12,
+     "ultimo": "DIC 2015: 2.31"
+    },
+    "2016": {
+     "media": 2.32,
+     "n": 12,
+     "ultimo": "DIC 2016: 2.19"
+    },
+    "2017": {
+     "media": 2.19,
+     "n": 12,
+     "ultimo": "DIC 2017: 2.05"
+    },
+    "2018": {
+     "media": 2.21,
+     "n": 12,
+     "ultimo": "DIC 2018: 2.24"
+    },
+    "2019": {
+     "media": 2.22,
+     "n": 12,
+     "ultimo": "DIC 2019: 1.93"
+    },
+    "2020": {
+     "media": 1.92,
+     "n": 12,
+     "ultimo": "DIC 2020: 1.67"
+    },
+    "2021": {
+     "media": 1.62,
+     "n": 12,
+     "ultimo": "DIC 2021: 1.5"
+    },
+    "2022": {
+     "media": 2.09,
+     "n": 12,
+     "ultimo": "DIC 2022: 3.12"
+    },
+    "2023": {
+     "media": 3.89,
+     "n": 12,
+     "ultimo": "DIC 2023: 3.97"
+    },
+    "2024": {
+     "media": 3.46,
+     "n": 12,
+     "ultimo": "DIC 2024: 3.02"
+    },
+    "2025": {
+     "media": 2.78,
+     "n": 12,
+     "ultimo": "DIC 2025: 2.64"
+    },
+    "2026": {
+     "media": 2.9,
+     "n": 9,
+     "ultimo": "SEP 2026: 3.04"
+    }
+   }
+  },
+  "plazo_hipotecas_meses": {
+   "serie": "Estadísticas Generales. Edificación y vivienda. Accesibilidad a la vivienda. Plazo medio de las hipotecas. Meses",
+   "por_anyo": {
+    "2005": {
+     "media": 303.5,
+     "n": 4,
+     "ultimo": "DIC 2005: 309.0"
+    },
+    "2006": {
+     "media": 324.0,
+     "n": 4,
+     "ultimo": "DIC 2006: 332.0"
+    },
+    "2007": {
+     "media": 336.75,
+     "n": 4,
+     "ultimo": "DIC 2007: 336.0"
+    },
+    "2008": {
+     "media": 319.25,
+     "n": 4,
+     "ultimo": "DIC 2008: 307.0"
+    },
+    "2009": {
+     "media": 292.5,
+     "n": 4,
+     "ultimo": "DIC 2009: 296.0"
+    },
+    "2010": {
+     "media": 301.25,
+     "n": 4,
+     "ultimo": "DIC 2010: 302.0"
+    },
+    "2011": {
+     "media": 294.5,
+     "n": 4,
+     "ultimo": "DIC 2011: 285.0"
+    },
+    "2012": {
+     "media": 278.75,
+     "n": 4,
+     "ultimo": "DIC 2012: 279.0"
+    },
+    "2013": {
+     "media": 266.75,
+     "n": 4,
+     "ultimo": "DIC 2013: 267.0"
+    },
+    "2014": {
+     "media": 271.75,
+     "n": 4,
+     "ultimo": "DIC 2014: 273.0"
+    },
+    "2015": {
+     "media": 273.75,
+     "n": 4,
+     "ultimo": "DIC 2015: 271.0"
+    },
+    "2016": {
+     "media": 277.5,
+     "n": 4,
+     "ultimo": "DIC 2016: 278.0"
+    },
+    "2017": {
+     "media": 280.25,
+     "n": 4,
+     "ultimo": "DIC 2017: 282.0"
+    },
+    "2018": {
+     "media": 283.25,
+     "n": 4,
+     "ultimo": "DIC 2018: 289.0"
+    },
+    "2019": {
+     "media": 283.0,
+     "n": 4,
+     "ultimo": "DIC 2019: 279.0"
+    },
+    "2020": {
+     "media": 286.5,
+     "n": 4,
+     "ultimo": "DIC 2020: 295.0"
+    },
+    "2021": {
+     "media": 294.75,
+     "n": 4,
+     "ultimo": "DIC 2021: 294.0"
+    },
+    "2022": {
+     "media": 293.5,
+     "n": 4,
+     "ultimo": "DIC 2022: 296.0"
+    },
+    "2023": {
+     "media": 293.75,
+     "n": 4,
+     "ultimo": "DIC 2023: 290.0"
+    },
+    "2024": {
+     "media": 296.5,
+     "n": 4,
+     "ultimo": "DIC 2024: 304.0"
+    },
+    "2025": {
+     "media": 304.5,
+     "n": 4,
+     "ultimo": "DIC 2025: 307.0"
+    },
+    "2026": {
+     "media": 305.0,
+     "n": 2,
+     "ultimo": "JUN 2026: 305.0"
+    }
+   }
+  },
+  "pct_prestamos_rpv_mas_80": {
+   "serie": "Estadísticas Generales. Edificación y vivienda. Accesibilidad a la vivienda. Porcentaje de préstamos con RPV>80%",
+   "por_anyo": {
+    "2005": {
+     "media": 15.75,
+     "n": 4,
+     "ultimo": "DIC 2005: 16.6"
+    },
+    "2006": {
+     "media": 17.02,
+     "n": 4,
+     "ultimo": "DIC 2006: 15.9"
+    },
+    "2007": {
+     "media": 14.3,
+     "n": 4,
+     "ultimo": "DIC 2007: 12.9"
+    },
+    "2008": {
+     "media": 10.97,
+     "n": 4,
+     "ultimo": "DIC 2008: 10.5"
+    },
+    "2009": {
+     "media": 10.62,
+     "n": 4,
+     "ultimo": "DIC 2009: 10.6"
+    },
+    "2010": {
+     "media": 11.95,
+     "n": 4,
+     "ultimo": "DIC 2010: 11.9"
+    },
+    "2011": {
+     "media": 12.5,
+     "n": 4,
+     "ultimo": "DIC 2011: 13.4"
+    },
+    "2012": {
+     "media": 15.7,
+     "n": 4,
+     "ultimo": "DIC 2012: 15.8"
+    },
+    "2013": {
+     "media": 14.88,
+     "n": 4,
+     "ultimo": "DIC 2013: 13.6"
+    },
+    "2014": {
+     "media": 13.4,
+     "n": 4,
+     "ultimo": "DIC 2014: 14.1"
+    },
+    "2015": {
+     "media": 14.55,
+     "n": 4,
+     "ultimo": "DIC 2015: 15.6"
+    },
+    "2016": {
+     "media": 14.3,
+     "n": 4,
+     "ultimo": "DIC 2016: 13.8"
+    },
+    "2017": {
+     "media": 14.03,
+     "n": 4,
+     "ultimo": "DIC 2017: 14.5"
+    },
+    "2018": {
+     "media": 14.82,
+     "n": 4,
+     "ultimo": "DIC 2018: 14.9"
+    },
+    "2019": {
+     "media": 12.12,
+     "n": 4,
+     "ultimo": "DIC 2019: 8.9"
+    },
+    "2020": {
+     "media": 9.05,
+     "n": 4,
+     "ultimo": "DIC 2020: 9.4"
+    },
+    "2021": {
+     "media": 8.93,
+     "n": 4,
+     "ultimo": "DIC 2021: 8.9"
+    },
+    "2022": {
+     "media": 8.7,
+     "n": 4,
+     "ultimo": "DIC 2022: 8.3"
+    },
+    "2023": {
+     "media": 6.53,
+     "n": 4,
+     "ultimo": "DIC 2023: 6.1"
+    },
+    "2024": {
+     "media": 7.72,
+     "n": 4,
+     "ultimo": "DIC 2024: 8.6"
+    },
+    "2025": {
+     "media": 11.3,
+     "n": 4,
+     "ultimo": "DIC 2025: 11.2"
+    },
+    "2026": {
+     "media": 10.05,
+     "n": 2,
+     "ultimo": "JUN 2026: 9.6"
+    }
+   }
+  },
+  "tenencia_propiedad_pct": {
+   "serie": "Estadísticas Generales. Edificación y vivienda. Censos de viviendas. Régimen de tenencia de la vivienda principal. Propiedad",
+   "por_anyo": {
+    "2005": {
+     "media": 80.5,
+     "n": 1,
+     "ultimo": "DIC 2005: 80.5"
+    },
+    "2006": {
+     "media": 79.5,
+     "n": 1,
+     "ultimo": "DIC 2006: 79.5"
+    },
+    "2007": {
+     "media": 80.1,
+     "n": 1,
+     "ultimo": "DIC 2007: 80.1"
+    },
+    "2008": {
+     "media": 79.6,
+     "n": 1,
+     "ultimo": "DIC 2008: 79.6"
+    },
+    "2009": {
+     "media": 79.3,
+     "n": 1,
+     "ultimo": "DIC 2009: 79.3"
+    },
+    "2010": {
+     "media": 79.4,
+     "n": 1,
+     "ultimo": "DIC 2010: 79.4"
+    },
+    "2011": {
+     "media": 79.6,
+     "n": 1,
+     "ultimo": "DIC 2011: 79.6"
+    },
+    "2012": {
+     "media": 79.2,
+     "n": 1,
+     "ultimo": "DIC 2012: 79.2"
+    },
+    "2013": {
+     "media": 77.7,
+     "n": 1,
+     "ultimo": "DIC 2013: 77.7"
+    },
+    "2014": {
+     "media": 78.0,
+     "n": 1,
+     "ultimo": "DIC 2014: 78.0"
+    },
+    "2015": {
+     "media": 77.3,
+     "n": 1,
+     "ultimo": "DIC 2015: 77.3"
+    },
+    "2016": {
+     "media": 77.1,
+     "n": 1,
+     "ultimo": "DIC 2016: 77.1"
+    },
+    "2017": {
+     "media": 76.7,
+     "n": 1,
+     "ultimo": "DIC 2017: 76.7"
+    },
+    "2018": {
+     "media": 76.1,
+     "n": 1,
+     "ultimo": "DIC 2018: 76.1"
+    },
+    "2019": {
+     "media": 75.9,
+     "n": 1,
+     "ultimo": "DIC 2019: 75.9"
+    },
+    "2020": {
+     "media": 75.2,
+     "n": 1,
+     "ultimo": "DIC 2020: 75.2"
+    },
+    "2021": {
+     "media": 75.8,
+     "n": 1,
+     "ultimo": "DIC 2021: 75.8"
+    },
+    "2022": {
+     "media": 75.9,
+     "n": 1,
+     "ultimo": "DIC 2022: 75.9"
+    },
+    "2023": {
+     "media": 75.1,
+     "n": 1,
+     "ultimo": "DIC 2023: 75.1"
+    },
+    "2024": {
+     "media": 73.6,
+     "n": 1,
+     "ultimo": "DIC 2024: 73.6"
+    },
+    "2025": {
+     "media": 73.3,
+     "n": 1,
+     "ultimo": "DIC 2025: 73.3"
+    }
+   }
+  },
+  "tenencia_alquiler_pct": {
+   "serie": "Estadísticas Generales. Edificación y vivienda. Censos de viviendas. Régimen de tenencia de la vivienda principal. Alquiler",
+   "por_anyo": {
+    "2005": {
+     "media": 13.0,
+     "n": 1,
+     "ultimo": "DIC 2005: 13.0"
+    },
+    "2006": {
+     "media": 13.5,
+     "n": 1,
+     "ultimo": "DIC 2006: 13.5"
+    },
+    "2007": {
+     "media": 13.6,
+     "n": 1,
+     "ultimo": "DIC 2007: 13.6"
+    },
+    "2008": {
+     "media": 14.2,
+     "n": 1,
+     "ultimo": "DIC 2008: 14.2"
+    },
+    "2009": {
+     "media": 14.6,
+     "n": 1,
+     "ultimo": "DIC 2009: 14.6"
+    },
+    "2010": {
+     "media": 14.5,
+     "n": 1,
+     "ultimo": "DIC 2010: 14.5"
+    },
+    "2011": {
+     "media": 14.9,
+     "n": 1,
+     "ultimo": "DIC 2011: 14.9"
+    },
+    "2012": {
+     "media": 14.5,
+     "n": 1,
+     "ultimo": "DIC 2012: 14.5"
+    },
+    "2013": {
+     "media": 15.4,
+     "n": 1,
+     "ultimo": "DIC 2013: 15.4"
+    },
+    "2014": {
+     "media": 14.9,
+     "n": 1,
+     "ultimo": "DIC 2014: 14.9"
+    },
+    "2015": {
+     "media": 15.6,
+     "n": 1,
+     "ultimo": "DIC 2015: 15.6"
+    },
+    "2016": {
+     "media": 16.3,
+     "n": 1,
+     "ultimo": "DIC 2016: 16.3"
+    },
+    "2017": {
+     "media": 16.9,
+     "n": 1,
+     "ultimo": "DIC 2017: 16.9"
+    },
+    "2018": {
+     "media": 17.5,
+     "n": 1,
+     "ultimo": "DIC 2018: 17.5"
+    },
+    "2019": {
+     "media": 18.1,
+     "n": 1,
+     "ultimo": "DIC 2019: 18.1"
+    },
+    "2020": {
+     "media": 18.0,
+     "n": 1,
+     "ultimo": "DIC 2020: 18.0"
+    },
+    "2021": {
+     "media": 18.0,
+     "n": 1,
+     "ultimo": "DIC 2021: 18.0"
+    },
+    "2022": {
+     "media": 18.1,
+     "n": 1,
+     "ultimo": "DIC 2022: 18.1"
+    },
+    "2023": {
+     "media": 18.7,
+     "n": 1,
+     "ultimo": "DIC 2023: 18.7"
+    },
+    "2024": {
+     "media": 20.4,
+     "n": 1,
+     "ultimo": "DIC 2024: 20.4"
+    },
+    "2025": {
+     "media": 20.2,
+     "n": 1,
+     "ultimo": "DIC 2025: 20.2"
+    }
+   }
+  }
+ },
+ "hoy_vivienda": "2026",
+ "calculos": {
+  "vivienda_90m2": {
+   "2006": 174985.0,
+   "2016": 135236.0,
+   "2022": 156687.0,
+   "2024": 172226.0,
+   "2026": 210182.0
+  },
+  "entrada_y_gastos": {
+   "2006": 52496.0,
+   "2016": 40571.0,
+   "2022": 47006.0,
+   "2024": 51668.0,
+   "2026": 63054.0
+  },
+  "sueldo_bruto_anual": {
+   "media": {
+    "2006": 19686.0,
+    "2022": 26949.0,
+    "2024": 29540.26
+   },
+   "mediana": {
+    "2006": 15739.0,
+    "2022": 22383.0,
+    "2024": 24497.17
+   },
+   "moda": {
+    "2006": 13775.0,
+    "2022": 16875.0
+   }
+  },
+  "anos_de_sueldo_bruto": {
+   "media": {
+    "2006": {
+     "vivienda": 8.9,
+     "entrada_y_gastos": 2.7
+    },
+    "2022": {
+     "vivienda": 5.8,
+     "entrada_y_gastos": 1.7
+    },
+    "2024": {
+     "vivienda": 5.8,
+     "entrada_y_gastos": 1.7
+    }
+   },
+   "mediana": {
+    "2006": {
+     "vivienda": 11.1,
+     "entrada_y_gastos": 3.3
+    },
+    "2022": {
+     "vivienda": 7.0,
+     "entrada_y_gastos": 2.1
+    },
+    "2024": {
+     "vivienda": 7.0,
+     "entrada_y_gastos": 2.1
+    }
+   },
+   "moda": {
+    "2006": {
+     "vivienda": 12.7,
+     "entrada_y_gastos": 3.8
+    },
+    "2022": {
+     "vivienda": 9.3,
+     "entrada_y_gastos": 2.8
+    }
+   }
+  },
+  "variacion_real_pct": {
+   "media": {
+    "2022": 2.0,
+    "2024": 5.1
+   },
+   "mediana": {
+    "2022": 6.0,
+    "2024": 9.0
+   },
+   "moda": {
+    "2022": -8.7
+   },
+   "vivienda_90m2": {
+    "2016": -33.0,
+    "2024": -31.1,
+    "2026": -20.5
+   },
+   "ocio_hogar_2006_2025": -30.0
+  }
+ },
+ "hogares_epa": {
+  "2006T3": {
+   "hogares_miles": 16229.8,
+   "sin_ocupados_miles": 4537.9,
+   "un_ocupado_miles": 5333.6,
+   "dos_o_mas_ocupados_miles": 6358.3,
+   "pct_dos_o_mas_entre_hogares_con_ocupados": 54.4,
+   "pct_un_ocupado_entre_hogares_con_ocupados": 45.6
+  },
+  "2016T3": {
+   "hogares_miles": 18455.8,
+   "sin_ocupados_miles": 6512.9,
+   "un_ocupado_miles": 6293.0,
+   "dos_o_mas_ocupados_miles": 5649.9,
+   "pct_dos_o_mas_entre_hogares_con_ocupados": 47.3,
+   "pct_un_ocupado_entre_hogares_con_ocupados": 52.7
+  },
+  "2026T3": {
+   "hogares_miles": 20073.9,
+   "sin_ocupados_miles": 6347.0,
+   "un_ocupado_miles": 6611.2,
+   "dos_o_mas_ocupados_miles": 7115.7,
+   "pct_dos_o_mas_entre_hogares_con_ocupados": 51.8,
+   "pct_un_ocupado_entre_hogares_con_ocupados": 48.2
+  }
+ },
+ "gasto_hogares_epf": {
+  "2006": {
+   "gasto_monetario_hogar": 24764.18,
+   "ocio_cultura": 2082.41,
+   "restaurantes_hoteles": 2913.65,
+   "comunicaciones": 861.69,
+   "suma_ocio": 5857.75,
+   "pct_ocio_sobre_gasto": 23.65
+  },
+  "2025": {
+   "gasto_monetario_hogar": 27084.0,
+   "ocio_cultura": 1771.4,
+   "restaurantes_hoteles": 3166.61,
+   "comunicaciones": 1075.85,
+   "suma_ocio": 6013.86,
+   "pct_ocio_sobre_gasto": 22.2
+  },
+  "nota": "EPF base 2006 (COICOP) y base 2016 (ECOICOP): los grupos no son idénticos. «Ocio» = ocio y cultura + restaurantes y hoteles + comunicaciones. Gasto monetario (sin alquiler imputado)."
+ },
+ "edad_emancipacion_eurostat": {
+  "EU27_2020": {
+   "2000": null,
+   "2001": null,
+   "2002": 26.5,
+   "2003": 26.3,
+   "2004": 26.7,
+   "2005": 26.7,
+   "2006": 26.8,
+   "2007": 26.7,
+   "2008": 26.7,
+   "2009": 26.5,
+   "2010": 26.5,
+   "2011": 26.5,
+   "2012": 26.5,
+   "2013": 26.4,
+   "2014": 26.5,
+   "2015": 26.4,
+   "2016": 26.4,
+   "2017": 26.3,
+   "2018": 26.3,
+   "2019": 26.1,
+   "2020": 26.4,
+   "2021": 26.6,
+   "2022": 26.4,
+   "2023": 26.4,
+   "2024": 26.2,
+   "2025": 26.3
+  },
+  "ES": {
+   "2000": 29.4,
+   "2001": 29.4,
+   "2002": 29.3,
+   "2003": 29.1,
+   "2004": 29.0,
+   "2005": 28.6,
+   "2006": 28.7,
+   "2007": 28.4,
+   "2008": 28.4,
+   "2009": 28.3,
+   "2010": 28.4,
+   "2011": 28.5,
+   "2012": 28.7,
+   "2013": 28.9,
+   "2014": 29.1,
+   "2015": 29.0,
+   "2016": 29.4,
+   "2017": 29.3,
+   "2018": 29.5,
+   "2019": 29.5,
+   "2020": 29.8,
+   "2021": 30.2,
+   "2022": 30.5,
+   "2023": 30.4,
+   "2024": 30.0,
+   "2025": 30.2
+  }
+ }
+}

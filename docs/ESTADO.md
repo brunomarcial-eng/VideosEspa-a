@@ -32,7 +32,7 @@ Versiones rechazadas: v1 (tarjetas y bustos, tres estilos), v2 collage (`videos/
 
 ## 3. Siguiente paso, en orden
 1. Bruno sube T1 (y T2 cuando esté aprobado) a mano en Studio con `upload/<id>.md` (contenido sintético: sí; no es para niños).
-2. Tercer vídeo: propuesta a Bruno (14-11-2026) «¿Pagar la hipoteca te cuesta más horas de trabajo que antes de la crisis?», con datos del INE (Estadística de Hipotecas: importe medio, tipo y plazo; salarios). Alternativas que necesitan abrir dominios en el entorno: listas de espera quirúrgica (sanidad.gob.es) y años de sueldo para comprar una casa (bde.es). Desde aquí solo llegan INE, Eurostat y AEAT. Cuando elija, repetir el flujo: datos → guion (clon-bruno) y escaleta → aprobación → voz, escenas, sonido → fotogramas → render.
+2. **T3 (en curso):** «¿Comprar casa es más difícil hoy que hace 20 años?», 2006 frente a hoy (Bruno, 14-11-2026). Tabla de datos pendiente de aprobar: `videos/t3/paso-1-datos.md` (`data/clean/t3_vivienda.json`, `scripts/calcular_t3.py`). Se ha abierto `www.bde.es` en el entorno. Sueldos de 2006 y 2022 con microdatos del INE (no se versionan: `data/raw/microdatos/`). Después: guion (clon-bruno) y escaleta → aprobación → voz, escenas, sonido → fotogramas → render.
 3. Si Bruno quiere probar Google Chirp 3 HD: necesita su cuenta de Google Cloud, una clave de API y permitir `texttospeech.googleapis.com` en el entorno.
 4. La voz 5 (personaje secundario) está fijada en `diseno/voces/ref-voz5.wav`; se usará cuando Bruno lo pida, con una muestra previa.
 5. Cuando Bruno conecte la API de YouTube (JSON del cliente OAuth), leer métricas con `scripts/youtube/metricas.py`.

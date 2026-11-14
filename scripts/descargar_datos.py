@@ -69,6 +69,26 @@ DESCARGAS = [
     ("ine_ecp320_poblacion.json", "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/ECP320?tip=A&nult=300",
      "INE ECP. Población residente en España, total nacional, todas las edades (serie ECP320, semestral desde 1971 y trimestral desde 2021)",
      "https://www.ine.es/jaxiT3/Tabla.htm?t=56934"),
+    # --- T3: vivienda y coste de la vida, 2006 frente a hoy ---
+    ("bde_si_1_5_vivienda.csv", "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/si_1_5.csv",
+     "Banco de España. Indicadores del mercado de la vivienda (precio m2 tasado, precio/renta por hogar, esfuerzo teórico, tipos, plazos, tenencia)",
+     "https://www.bde.es/webbe/es/estadisticas/temas/vivienda.html"),
+    ("ine_65270_epa_hogares_ocupados.json", INE.format(id=65270, n=100),
+     "INE EPA. Hogares por número de ocupados y número de personas (miles, trimestral)",
+     "https://www.ine.es/jaxiT3/Tabla.htm?t=65270"),
+    ("ine_10627_epf2006_grupos.json", INE.format(id=10627, n=20),
+     "INE EPF base 2006. Gasto total monetario y gastos medios por grupos de gasto (2006-2015)",
+     "https://www.ine.es/jaxiT3/Tabla.htm?t=10627"),
+    ("eurostat_yth_demo_030.json",
+     "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/yth_demo_030?format=JSON&lang=EN&geo=ES&geo=EU27_2020&sex=T",
+     "Eurostat. Edad media a la que los jóvenes se van de casa de sus padres",
+     "https://ec.europa.eu/eurostat/databrowser/view/yth_demo_030/default/table"),
+    ("microdatos/ees_cuatrienal_2006.zip", "https://www.ine.es/ftp/microdatos/salarial/datos_salarial06.zip",
+     "INE. Encuesta Cuatrienal de Estructura Salarial 2006, microdatos (no se versiona: 72 MB)",
+     "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177025&menu=resultados&idp=1254735976596"),
+    ("microdatos/ees_cuatrienal_2022.zip", "https://www.ine.es/ftp/microdatos/salarial/datos_2022.zip",
+     "INE. Encuesta Cuatrienal de Estructura Salarial 2022, microdatos (no se versiona: 77 MB)",
+     "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177025&menu=resultados&idp=1254735976596"),
     # --- Eurostat (contraste) ---
     ("eurostat_lfsi_emp_a.json",
      EUROSTAT.format(ds="lfsi_emp_a", extra="&age=Y20-64&sex=T&indic_em=EMP_LFS&unit=PC_POP"),
@@ -106,11 +126,13 @@ def main() -> int:
             continue
         try:
             datos = bajar(url)
-            json.loads(datos)  # comprobar que es JSON válido
+            if fichero.endswith(".json"):
+                json.loads(datos)  # comprobar que es JSON válido
         except Exception as e:  # noqa: BLE001
             print(f"ERROR {fichero}: {e}", file=sys.stderr)
             errores += 1
             continue
+        (RAW / fichero).parent.mkdir(parents=True, exist_ok=True)
         (RAW / fichero).write_bytes(datos)
         por_fichero[fichero] = {
             "fichero": fichero,
