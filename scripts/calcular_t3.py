@@ -10,7 +10,7 @@ con los días pagados). Con ese método, la media y la mediana de 2022 coinciden
 El «sueldo más frecuente» (moda) es la cumbre del histograma ponderado, suavizado con una campana de
 1.000 € (se dan también las de 500 y 1.500 € para ver lo que se mueve).
 
-Uso: python3 scripts/calcular_t3.py
+Uso: ~/.venv-qwen/bin/python scripts/calcular_t3.py   (necesita numpy y xlrd para el Excel del Ministerio)
 """
 import csv
 import io
@@ -94,6 +94,58 @@ def eaes():
         if n.startswith("Ambos sexos. Total Nacional. Dato base."):
             k = n.split(".")[3].strip().lower()
             out[k] = {str(p["Anyo"]): p["Valor"] for p in s["Data"] if p["Valor"] is not None}
+    return out
+
+
+def sueldos_zona():
+    """Sueldo medio, mediano y más frecuente por zona NUTS1 (2006 y 2022), con el mismo método."""
+    f6 = leer_zip("ees_cuatrienal_2006.zip", "EES_cuatrienal_2006.csv")
+    dias = num(f6, "MESCOMA") * 30.42 + num(f6, "DIACOMA")
+    dias = np.where(dias <= 0, 365, np.minimum(dias, 365))
+    s06, w06 = (365 / dias) * (num(f6, "SALBRUTO") + num(f6, "VESP")), num(f6, "FACTOTAL")
+    z06 = np.array([f["NUTS1"].strip() for f in f6])
+    f22 = leer_zip("ees_cuatrienal_2022.zip", "EES_2022.tab")
+    dias = np.minimum(num(f22, "DRELABAM") * 30.42 + num(f22, "DRELABAD"), 365) - num(f22, "DSIESPA2") - num(f22, "DSIESPA4")
+    dias = np.where(dias <= 0, 365, dias)
+    s22 = (365 / dias) * (num(f22, "RETRINOIN") + num(f22, "RETRIIN") + num(f22, "VESPNOIN") + num(f22, "VESPIN"))
+    w22, z22 = num(f22, "FACTOTAL"), np.array([f["NUTS1"].strip() for f in f22])
+    zonas = {"3": "Comunidad de Madrid", "4": "Centro (Castilla y León, Castilla-La Mancha, Extremadura)",
+             "6": "Sur (Andalucía, Murcia, Ceuta y Melilla)"}
+    return {k: {"zona": n, "2006": resumen(s06[z06 == k], w06[z06 == k]), "2022": resumen(s22[z22 == k], w22[z22 == k])} for k, n in zonas.items()}
+
+
+def ciudades():
+    """Valor tasado medio (€/m²) por municipio, Ministerio de Vivienda. Media de los trimestres de cada año."""
+    import xlrd
+    b = xlrd.open_workbook(str(RAW / "mivau_35103500_valor_tasado_municipios.xls"))
+    nombres = ["Madrid", "Córdoba", "Valladolid", "Palencia", "Ciudad Real"]
+    serie = defaultdict(dict)
+    for h in b.sheets():
+        m = re.match(r"T(\d)A(\d{4})", h.name.strip())
+        if not m:
+            continue
+        jm = jt = None
+        for f in range(min(30, h.nrows)):
+            fila = [str(c).strip() for c in h.row_values(f)]
+            if "Municipio" in fila:
+                jm = fila.index("Municipio")
+            if jm is not None and jt is None and "Total" in fila:
+                jt = fila.index("Total")
+        for f in range(h.nrows):
+            fila = h.row_values(f)
+            if jm is not None and len(fila) > jt and str(fila[jm]).strip() in nombres:
+                try:
+                    serie[str(fila[jm]).strip()][f"{m.group(2)}T{m.group(1)}"] = float(fila[jt])
+                except ValueError:
+                    pass
+    out = {}
+    for c, s in serie.items():
+        anual = {}
+        for a in ("2006", "2016", "2022", "2024", "2025", "2026"):
+            v = [s[f"{a}T{q}"] for q in range(1, 5) if f"{a}T{q}" in s]
+            if v:
+                anual[a] = {"m2": r(sum(v) / len(v), 1), "trimestres": len(v), "piso_90m2": r(sum(v) / len(v) * M2, 0)}
+        out[c] = {"anual": anual, "ultimo": max(s.items())}
     return out
 
 
@@ -214,7 +266,24 @@ def main():
         "bde_vivienda": B, "hoy_vivienda": hoy,
         "calculos": {**calc, "sueldo_bruto_anual": sueldo, "anos_de_sueldo_bruto": anos, "variacion_real_pct": real},
         "hogares_epa": hogares(), "gasto_hogares_epf": O, "edad_emancipacion_eurostat": emancipacion(),
+        "ciudades_valor_tasado": ciudades(), "sueldos_zona_ees_microdatos": sueldos_zona(),
     }
+    # Años de sueldo mediano para un piso de 90 m² en cada ciudad (sueldo de su zona; 2024 y 2016, de su comunidad).
+    ca = {"Madrid": ("3", "madrid, comunidad de"), "Córdoba": ("6", "andalucía"), "Valladolid": ("4", "castilla y león")}
+    eaes_ccaa = {}
+    for s_ in json.loads((RAW / "ine_28191_eaes_medias_percentiles.json").read_text(encoding="utf-8")):
+        n = s_["Nombre"].lower()
+        if n.startswith("ambos sexos") and "dato base. mediana" in n:
+            eaes_ccaa[n.split(".")[1].strip()] = {str(p["Anyo"]): p["Valor"] for p in s_["Data"] if p["Valor"] is not None}
+    anos_ciudad = {}
+    for c, (z, cc) in ca.items():
+        pr = out["ciudades_valor_tasado"][c]["anual"]
+        med = {"2006": out["sueldos_zona_ees_microdatos"][z]["2006"]["mediana"], "2016": eaes_ccaa[cc]["2016"], "2024": eaes_ccaa[cc]["2024"]}
+        anos_ciudad[c] = {"sueldo_mediano": med,
+                          "anos": {"2006": r(pr["2006"]["piso_90m2"] / med["2006"], 1), "2016": r(pr["2016"]["piso_90m2"] / med["2016"], 1),
+                                   "2024": r(pr["2024"]["piso_90m2"] / med["2024"], 1), "2026_con_sueldo_2024": r(pr["2026"]["piso_90m2"] / med["2024"], 1)},
+                          "precio_real_2026_vs_2006_pct": r(100 * (pr["2026"]["m2"] / (pr["2006"]["m2"] * deflactor("2006", "2026")) - 1), 1)}
+    out["anos_sueldo_mediano_por_ciudad"] = anos_ciudad
     CLEAN.mkdir(parents=True, exist_ok=True)
     (CLEAN / "t3_vivienda.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print("escrito", CLEAN / "t3_vivienda.json")

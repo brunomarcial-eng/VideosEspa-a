@@ -4,14 +4,50 @@ Para aprobar por Bruno. Datos consultados el 14-11-2026. Ficheros crudos en `dat
 
 ```
 python3 scripts/descargar_datos.py bde_si_1_5_vivienda.csv ine_65270_epa_hogares_ocupados.json ine_10627_epf2006_grupos.json eurostat_yth_demo_030.json microdatos/ees_cuatrienal_2006.zip microdatos/ees_cuatrienal_2022.zip
-python3 scripts/calcular_t3.py      # → data/clean/t3_vivienda.json
+python3 scripts/descargar_datos.py mivau_35103500_valor_tasado_municipios.xls
+~/.venv-qwen/bin/python scripts/calcular_t3.py      # → data/clean/t3_vivienda.json
 ```
 
 Bruno pidió comparar solo 2006 con hoy (hace 20 años). Añado 2016 como control porque **la conclusión cambia con el año** (regla 2): 2006 fue el pico de la burbuja.
 
 Estados: **V** leído en la fuente oficial · **C** cálculo propio con fórmula. Nada en P ni en X.
 
-## 1. La casa
+## 0. Por ciudad (lo que pidió Bruno el 14-11-2026)
+El piso de 210.000 € de la versión anterior era la **media de toda España**. Por ciudad:
+
+| Piso de 90 m² (valor tasado) | 2006 | 2016 | Hoy (2026, 1.er semestre) | Hoy frente a 2006, descontando la inflación |
+|---|---|---|---|---|
+| **Madrid (ciudad)** | **333.000 €** (3.701 €/m²) | 232.000 € | **490.000 €** (5.442 €/m²) | −3 % |
+| **Córdoba** | **180.000 €** (1.995 €/m²) | 114.000 € | **159.000 €** (1.765 €/m²) | −41 % |
+| **Valladolid** | **180.000 €** (1.999 €/m²) | 109.000 € | **171.000 €** (1.896 €/m²) | −37 % |
+| Palencia | 148.000 € | 100.000 € | 127.000 € | |
+| Ciudad Real | 170.000 € | 89.000 € | 135.000 € | |
+
+Fuente: Ministerio de Vivienda, valor tasado medio de la vivienda libre en municipios de más de 25.000 habitantes (V). El precio por 90 m² es un cálculo propio (C).
+
+| Años de sueldo mediano para ese piso | 2006 | 2016 | 2024 | Precio de 2026 con el sueldo de 2024 |
+|---|---|---|---|---|
+| Madrid | **18,8** | 11,0 | 13,6 | **17,5** |
+| Córdoba | 12,3 | 6,3 | 6,1 | 7,4 |
+| Valladolid | 12,7 | 5,8 | 6,2 | 7,6 |
+
+- **Sueldo mediano de 2006 por zona:** Madrid 17.690 €, Sur 14.615 € y Centro 14.210 €. Son microdatos del INE; en 2006 solo se pueden separar zonas grandes, así que Córdoba va con «Sur» y Valladolid con «Centro» (C).
+- **Sueldo mediano de 2016 y 2024 por comunidad:** Madrid 21.165 y 28.038 €; Andalucía 18.052 y 21.557 €; Castilla y León 18.595 y 22.567 € (Encuesta Anual de Estructura Salarial, INE; V).
+- **Sueldo más frecuente en la Comunidad de Madrid:** unos 13.800 € en 2006 y unos 15.700 € en 2022. Descontando la inflación, compra un **15 % menos** (C).
+- **Comprobación del método:** con los microdatos de 2022, la media y la mediana de Madrid dan lo mismo que publica el INE (31.231 y 25.202 €).
+
+**Lo que dice:**
+- En **Madrid**, un piso cuesta hoy casi los mismos años de sueldo que en 2006, el pico de la burbuja (17,5 frente a 18,8). Frente a 2016 ha empeorado muchísimo (de 11 a 17,5).
+- En **Córdoba y Valladolid**, el piso cuesta hoy menos que en 2006, incluso en euros sin descontar la inflación.
+
+**Tasación frente a precio de anuncio:** el valor tasado es el que da el banco, y suele quedar por debajo del precio que piden en los anuncios, sobre todo cuando los precios suben deprisa, como en Madrid ahora.
+
+**Hortaleza y Vicálvaro (por barrio):**
+- No he encontrado una serie oficial por distrito que llegue a 2006: el Ministerio da el dato por municipio, y el panel de datos abiertos del Ayuntamiento no trae precios.
+- Idealista tiene el histórico por distrito, pero es precio de anuncio (no oficial) y bloquea las descargas automáticas.
+- Si se quiere el dato de Hortaleza, Bruno puede mandar una captura de la página «Evolución del precio» de idealista para Hortaleza. Saldría en pantalla como «precio de oferta, idealista».
+
+## 1. La casa (media de España)
 | Dato | 2006 | 2016 | Hoy | Fuente | Estado |
 |---|---|---|---|---|---|
 | Precio medio del m² (vivienda libre tasada) | 1.944 € | 1.503 € | 2.335 € (1.er semestre de 2026; junio: 2.355 €) | Banco de España, indicadores de vivienda (dato del Ministerio de Vivienda) | V |
