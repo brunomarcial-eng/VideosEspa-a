@@ -108,6 +108,56 @@
   "precio_m2_tasado": {
    "serie": "Estadísticas Generales. Edificación y vivienda. Precio medio m2 de viviendas libres tasadas. Total nacional",
    "por_anyo": {
+    "1995": {
+     "media": 683.02,
+     "n": 4,
+     "ultimo": "DIC 1995: 692.7"
+    },
+    "1996": {
+     "media": 692.3,
+     "n": 4,
+     "ultimo": "DIC 1996: 694.4"
+    },
+    "1997": {
+     "media": 711.65,
+     "n": 4,
+     "ultimo": "DIC 1997: 702.8"
+    },
+    "1998": {
+     "media": 752.95,
+     "n": 4,
+     "ultimo": "DIC 1998: 756.7"
+    },
+    "1999": {
+     "media": 810.65,
+     "n": 4,
+     "ultimo": "DIC 1999: 829.2"
+    },
+    "2000": {
+     "media": 880.23,
+     "n": 4,
+     "ultimo": "DIC 2000: 893.3"
+    },
+    "2001": {
+     "media": 967.0,
+     "n": 4,
+     "ultimo": "DIC 2001: 992.7"
+    },
+    "2002": {
+     "media": 1119.1,
+     "n": 4,
+     "ultimo": "DIC 2002: 1164.6"
+    },
+    "2003": {
+     "media": 1316.28,
+     "n": 4,
+     "ultimo": "DIC 2003: 1380.3"
+    },
+    "2004": {
+     "media": 1545.95,
+     "n": 4,
+     "ultimo": "DIC 2004: 1618.0"
+    },
     "2005": {
      "media": 1761.0,
      "n": 4,
@@ -223,6 +273,96 @@
   "precio_renta_hogar_anos": {
    "serie": "Estadísticas Generales. Edificación y vivienda. Accesibilidad a la vivienda. Precio de la vivienda/renta bruta por hogar",
    "por_anyo": {
+    "1987": {
+     "media": 3.09,
+     "n": 4,
+     "ultimo": "DIC 1987: 3.35"
+    },
+    "1988": {
+     "media": 3.63,
+     "n": 4,
+     "ultimo": "DIC 1988: 3.79"
+    },
+    "1989": {
+     "media": 4.09,
+     "n": 4,
+     "ultimo": "DIC 1989: 4.2"
+    },
+    "1990": {
+     "media": 4.31,
+     "n": 4,
+     "ultimo": "DIC 1990: 4.23"
+    },
+    "1991": {
+     "media": 4.42,
+     "n": 4,
+     "ultimo": "DIC 1991: 4.53"
+    },
+    "1992": {
+     "media": 4.09,
+     "n": 4,
+     "ultimo": "DIC 1992: 3.98"
+    },
+    "1993": {
+     "media": 3.9,
+     "n": 4,
+     "ultimo": "DIC 1993: 3.84"
+    },
+    "1994": {
+     "media": 3.83,
+     "n": 4,
+     "ultimo": "DIC 1994: 3.8"
+    },
+    "1995": {
+     "media": 3.72,
+     "n": 4,
+     "ultimo": "DIC 1995: 3.63"
+    },
+    "1996": {
+     "media": 3.55,
+     "n": 4,
+     "ultimo": "DIC 1996: 3.52"
+    },
+    "1997": {
+     "media": 3.51,
+     "n": 4,
+     "ultimo": "DIC 1997: 3.5"
+    },
+    "1998": {
+     "media": 3.57,
+     "n": 4,
+     "ultimo": "DIC 1998: 3.65"
+    },
+    "1999": {
+     "media": 3.85,
+     "n": 4,
+     "ultimo": "DIC 1999: 3.96"
+    },
+    "2000": {
+     "media": 4.15,
+     "n": 4,
+     "ultimo": "DIC 2000: 4.28"
+    },
+    "2001": {
+     "media": 4.55,
+     "n": 4,
+     "ultimo": "DIC 2001: 4.72"
+    },
+    "2002": {
+     "media": 5.24,
+     "n": 4,
+     "ultimo": "DIC 2002: 5.6"
+    },
+    "2003": {
+     "media": 6.14,
+     "n": 4,
+     "ultimo": "DIC 2003: 6.52"
+    },
+    "2004": {
+     "media": 7.19,
+     "n": 4,
+     "ultimo": "DIC 2004: 7.67"
+    },
     "2005": {
      "media": 8.13,
      "n": 4,
@@ -338,6 +478,96 @@
   "esfuerzo_teorico_pct": {
    "serie": "Estadísticas Generales. Edificación y vivienda. Accesibilidad a la vivienda. Esfuerzo teórico anual sin deducciones",
    "por_anyo": {
+    "1987": {
+     "media": 47.3,
+     "n": 4,
+     "ultimo": "DIC 1987: 52.65"
+    },
+    "1988": {
+     "media": 56.24,
+     "n": 4,
+     "ultimo": "DIC 1988: 57.88"
+    },
+    "1989": {
+     "media": 65.22,
+     "n": 4,
+     "ultimo": "DIC 1989: 68.41"
+    },
+    "1990": {
+     "media": 71.43,
+     "n": 4,
+     "ultimo": "DIC 1990: 70.08"
+    },
+    "1991": {
+     "media": 70.51,
+     "n": 4,
+     "ultimo": "DIC 1991: 69.31"
+    },
+    "1992": {
+     "media": 60.64,
+     "n": 4,
+     "ultimo": "DIC 1992: 58.9"
+    },
+    "1993": {
+     "media": 53.88,
+     "n": 4,
+     "ultimo": "DIC 1993: 47.82"
+    },
+    "1994": {
+     "media": 43.1,
+     "n": 4,
+     "ultimo": "DIC 1994: 41.8"
+    },
+    "1995": {
+     "media": 42.44,
+     "n": 4,
+     "ultimo": "DIC 1995: 40.94"
+    },
+    "1996": {
+     "media": 35.96,
+     "n": 4,
+     "ultimo": "DIC 1996: 33.25"
+    },
+    "1997": {
+     "media": 29.31,
+     "n": 4,
+     "ultimo": "DIC 1997: 27.89"
+    },
+    "1998": {
+     "media": 26.35,
+     "n": 4,
+     "ultimo": "DIC 1998: 25.92"
+    },
+    "1999": {
+     "media": 25.6,
+     "n": 4,
+     "ultimo": "DIC 1999: 26.21"
+    },
+    "2000": {
+     "media": 29.13,
+     "n": 4,
+     "ultimo": "DIC 2000: 31.07"
+    },
+    "2001": {
+     "media": 31.26,
+     "n": 4,
+     "ultimo": "DIC 2001: 30.64"
+    },
+    "2002": {
+     "media": 32.26,
+     "n": 4,
+     "ultimo": "DIC 2002: 33.2"
+    },
+    "2003": {
+     "media": 33.23,
+     "n": 4,
+     "ultimo": "DIC 2003: 34.02"
+    },
+    "2004": {
+     "media": 36.66,
+     "n": 4,
+     "ultimo": "DIC 2004: 38.86"
+    },
     "2005": {
      "media": 40.2,
      "n": 4,
@@ -453,6 +683,86 @@
   "tipo_prestamos_vivienda_pct": {
    "serie": "Tipos de interés. Tipo de los préstamos libres para adquisición de vivienda de hogares",
    "por_anyo": {
+    "1989": {
+     "media": 15.13,
+     "n": 12,
+     "ultimo": "DIC 1989: 15.81"
+    },
+    "1990": {
+     "media": 16.5,
+     "n": 12,
+     "ultimo": "DIC 1990: 16.92"
+    },
+    "1991": {
+     "media": 16.17,
+     "n": 12,
+     "ultimo": "DIC 1991: 15.24"
+    },
+    "1992": {
+     "media": 15.1,
+     "n": 12,
+     "ultimo": "DIC 1992: 15.44"
+    },
+    "1993": {
+     "media": 14.1,
+     "n": 12,
+     "ultimo": "DIC 1993: 11.89"
+    },
+    "1994": {
+     "media": 10.54,
+     "n": 12,
+     "ultimo": "DIC 1994: 10.39"
+    },
+    "1995": {
+     "media": 11.28,
+     "n": 12,
+     "ultimo": "DIC 1995: 11.19"
+    },
+    "1996": {
+     "media": 9.66,
+     "n": 12,
+     "ultimo": "DIC 1996: 8.41"
+    },
+    "1997": {
+     "media": 7.05,
+     "n": 12,
+     "ultimo": "DIC 1997: 6.4"
+    },
+    "1998": {
+     "media": 5.74,
+     "n": 12,
+     "ultimo": "DIC 1998: 5.16"
+    },
+    "1999": {
+     "media": 4.78,
+     "n": 12,
+     "ultimo": "DIC 1999: 4.97"
+    },
+    "2000": {
+     "media": 5.79,
+     "n": 12,
+     "ultimo": "DIC 2000: 6.38"
+    },
+    "2001": {
+     "media": 5.84,
+     "n": 12,
+     "ultimo": "DIC 2001: 4.99"
+    },
+    "2002": {
+     "media": 4.85,
+     "n": 12,
+     "ultimo": "DIC 2002: 4.36"
+    },
+    "2003": {
+     "media": 3.75,
+     "n": 12,
+     "ultimo": "DIC 2003: 3.46"
+    },
+    "2004": {
+     "media": 3.41,
+     "n": 12,
+     "ultimo": "DIC 2004: 3.39"
+    },
     "2005": {
      "media": 3.37,
      "n": 12,
@@ -568,6 +878,11 @@
   "plazo_hipotecas_meses": {
    "serie": "Estadísticas Generales. Edificación y vivienda. Accesibilidad a la vivienda. Plazo medio de las hipotecas. Meses",
    "por_anyo": {
+    "2004": {
+     "media": 290.67,
+     "n": 3,
+     "ultimo": "DIC 2004: 293.0"
+    },
     "2005": {
      "media": 303.5,
      "n": 4,
@@ -683,6 +998,11 @@
   "pct_prestamos_rpv_mas_80": {
    "serie": "Estadísticas Generales. Edificación y vivienda. Accesibilidad a la vivienda. Porcentaje de préstamos con RPV>80%",
    "por_anyo": {
+    "2004": {
+     "media": 15.68,
+     "n": 4,
+     "ultimo": "DIC 2004: 15.3"
+    },
     "2005": {
      "media": 15.75,
      "n": 4,
@@ -798,6 +1118,101 @@
   "tenencia_propiedad_pct": {
    "serie": "Estadísticas Generales. Edificación y vivienda. Censos de viviendas. Régimen de tenencia de la vivienda principal. Propiedad",
    "por_anyo": {
+    "1986": {
+     "media": 77.09,
+     "n": 1,
+     "ultimo": "DIC 1986: 77.09"
+    },
+    "1987": {
+     "media": 76.54,
+     "n": 1,
+     "ultimo": "DIC 1987: 76.54"
+    },
+    "1988": {
+     "media": 76.96,
+     "n": 1,
+     "ultimo": "DIC 1988: 76.96"
+    },
+    "1989": {
+     "media": 77.9,
+     "n": 1,
+     "ultimo": "DIC 1989: 77.9"
+    },
+    "1990": {
+     "media": 78.6,
+     "n": 1,
+     "ultimo": "DIC 1990: 78.6"
+    },
+    "1991": {
+     "media": 79.3,
+     "n": 1,
+     "ultimo": "DIC 1991: 79.3"
+    },
+    "1992": {
+     "media": 78.5,
+     "n": 1,
+     "ultimo": "DIC 1992: 78.5"
+    },
+    "1993": {
+     "media": 77.8,
+     "n": 1,
+     "ultimo": "DIC 1993: 77.8"
+    },
+    "1994": {
+     "media": 78.8,
+     "n": 1,
+     "ultimo": "DIC 1994: 78.8"
+    },
+    "1995": {
+     "media": 79.5,
+     "n": 1,
+     "ultimo": "DIC 1995: 79.5"
+    },
+    "1996": {
+     "media": 80.1,
+     "n": 1,
+     "ultimo": "DIC 1996: 80.1"
+    },
+    "1997": {
+     "media": 81.0,
+     "n": 1,
+     "ultimo": "DIC 1997: 81.0"
+    },
+    "1998": {
+     "media": 82.02,
+     "n": 1,
+     "ultimo": "DIC 1998: 82.02"
+    },
+    "1999": {
+     "media": 82.72,
+     "n": 1,
+     "ultimo": "DIC 1999: 82.72"
+    },
+    "2000": {
+     "media": 84.07,
+     "n": 1,
+     "ultimo": "DIC 2000: 84.07"
+    },
+    "2001": {
+     "media": 84.54,
+     "n": 1,
+     "ultimo": "DIC 2001: 84.54"
+    },
+    "2002": {
+     "media": 84.72,
+     "n": 1,
+     "ultimo": "DIC 2002: 84.72"
+    },
+    "2003": {
+     "media": 84.08,
+     "n": 1,
+     "ultimo": "DIC 2003: 84.08"
+    },
+    "2004": {
+     "media": 79.5,
+     "n": 1,
+     "ultimo": "DIC 2004: 79.5"
+    },
     "2005": {
      "media": 80.5,
      "n": 1,
@@ -908,6 +1323,101 @@
   "tenencia_alquiler_pct": {
    "serie": "Estadísticas Generales. Edificación y vivienda. Censos de viviendas. Régimen de tenencia de la vivienda principal. Alquiler",
    "por_anyo": {
+    "1986": {
+     "media": 15.95,
+     "n": 1,
+     "ultimo": "DIC 1986: 15.95"
+    },
+    "1987": {
+     "media": 15.92,
+     "n": 1,
+     "ultimo": "DIC 1987: 15.92"
+    },
+    "1988": {
+     "media": 15.57,
+     "n": 1,
+     "ultimo": "DIC 1988: 15.57"
+    },
+    "1989": {
+     "media": 14.96,
+     "n": 1,
+     "ultimo": "DIC 1989: 14.96"
+    },
+    "1990": {
+     "media": 14.5,
+     "n": 1,
+     "ultimo": "DIC 1990: 14.5"
+    },
+    "1991": {
+     "media": 13.5,
+     "n": 1,
+     "ultimo": "DIC 1991: 13.5"
+    },
+    "1992": {
+     "media": 14.4,
+     "n": 1,
+     "ultimo": "DIC 1992: 14.4"
+    },
+    "1993": {
+     "media": 15.0,
+     "n": 1,
+     "ultimo": "DIC 1993: 15.0"
+    },
+    "1994": {
+     "media": 14.4,
+     "n": 1,
+     "ultimo": "DIC 1994: 14.4"
+    },
+    "1995": {
+     "media": 13.9,
+     "n": 1,
+     "ultimo": "DIC 1995: 13.9"
+    },
+    "1996": {
+     "media": 13.7,
+     "n": 1,
+     "ultimo": "DIC 1996: 13.7"
+    },
+    "1997": {
+     "media": 12.5,
+     "n": 1,
+     "ultimo": "DIC 1997: 12.5"
+    },
+    "1998": {
+     "media": 11.21,
+     "n": 1,
+     "ultimo": "DIC 1998: 11.21"
+    },
+    "1999": {
+     "media": 10.58,
+     "n": 1,
+     "ultimo": "DIC 1999: 10.58"
+    },
+    "2000": {
+     "media": 9.86,
+     "n": 1,
+     "ultimo": "DIC 2000: 9.86"
+    },
+    "2001": {
+     "media": 9.59,
+     "n": 1,
+     "ultimo": "DIC 2001: 9.59"
+    },
+    "2002": {
+     "media": 9.7,
+     "n": 1,
+     "ultimo": "DIC 2002: 9.7"
+    },
+    "2003": {
+     "media": 10.64,
+     "n": 1,
+     "ultimo": "DIC 2003: 10.64"
+    },
+    "2004": {
+     "media": 13.9,
+     "n": 1,
+     "ultimo": "DIC 2004: 13.9"
+    },
     "2005": {
      "media": 13.0,
      "n": 1,
@@ -1547,5 +2057,17 @@
    },
    "precio_real_2026_vs_2006_pct": -37.2
   }
+ },
+ "padre_hijo": {
+  "piso_hoy_eur": 210182.0,
+  "anos_sueldo_medio_hoy": 7.1,
+  "anos_sueldo_medio_1986": 3.4,
+  "sueldo_medio_real_1986_2024_pct": 16.0,
+  "piso_real_veces_1986_hoy": 2.28,
+  "esfuerzo_1987_pct": 47.3,
+  "esfuerzo_hoy_pct": 38.01,
+  "tipo_hipoteca_1989_media_pct": 15.13,
+  "anos_sueldo_medio_2006": 8.9,
+  "nota": "Piso de 90 m²: 1986, m² de las sociedades de tasación (Banco de España); hoy, valor tasado medio de España (Ministerio de Vivienda vía Banco de España), 1.er semestre de 2026. Sueldo medio bruto: 1986, industria y servicios (anuarios del INE); hoy, 2024 (Encuesta Anual de Estructura Salarial)."
  }
 }

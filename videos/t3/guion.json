@@ -1,0 +1,263 @@
+{
+ "id": "t3",
+ "version": 1,
+ "titulo": "¿Quién lo tuvo más difícil para comprar casa: tu padre o tú?",
+ "titulo_alternativo": "¿Los jóvenes no compran casa porque se lo gastan todo en Netflix y viajes?",
+ "pregunta": "Padre (62) contra hijo (31): ¿comprar casa es más difícil hoy que en 1986?",
+ "datos": "data/clean/t3_vivienda.json",
+ "aprobacion_datos": "14-11-2026: Bruno aprueba los datos (1986, 2006 y hoy) y pide dos vídeos de un minuto, en formato discusión padre-hijo, con más polémica",
+ "formato": "Discusión entre un padre de 62 años y su hijo de 31 (dos voces). Texto en el estilo oral de Bruno (clon-bruno). Estilo limpio: tarjeta con el dato, subtítulo grande, dos personajes en una cocina. Un minuto.",
+ "duracion_max_s": 70,
+ "personajes": {
+  "padre": {
+   "anyo": "62 años",
+   "genero": "padre"
+  },
+  "hijo": {
+   "anyo": "31 años",
+   "genero": "hombre"
+  }
+ },
+ "capitulos": [
+  {
+   "nombre": "La bronca",
+   "beats": [
+    1
+   ]
+  },
+  {
+   "nombre": "1986",
+   "beats": [
+    2,
+    3
+   ]
+  },
+  {
+   "nombre": "Hoy",
+   "beats": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "nombre": "La hipoteca",
+   "beats": [
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "nombre": "Veredicto",
+   "beats": [
+    11,
+    12,
+    13
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "padre",
+   "funcion": "gancho: la acusación",
+   "voz": "¡Es que no ahorráis nada! Bali, Netflix, cañas, restaurantes… Así, normal que no os compréis una casa.",
+   "pantalla": "¿Quién lo tuvo más difícil para comprar casa?",
+   "sello": null,
+   "imagen": "Cocina de una casa. El padre (62 años, bigote, canas, camisa de cuadros) señala al hijo (31, sudadera) con el móvil; en el móvil del hijo, una foto de playa. Iconos que saltan sobre el hijo: avión, tele, caña, plato."
+  },
+  {
+   "n": 2,
+   "quien": "hijo",
+   "funcion": "dato: 1986",
+   "voz": "Papá, en 1986 un piso de 90 metros costaba cuatro millones y medio de pesetas. Tres años y medio de un sueldo medio.",
+   "pantalla": "1986 · Piso de 90 m²: 4,5 millones de pesetas · 3,4 años de sueldo medio",
+   "sello": "BANCO DE ESPAÑA (sociedades de tasación) · INE (anuarios: salario por hora y jornada de 1986) · cálculo propio",
+   "imagen": "Foto antigua (sepia) que cae: el padre joven delante de un bloque de pisos con un Seat aparcado. Barra de 3,4 años de sueldo."
+  },
+  {
+   "n": 3,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "Y me lo pagué. A base de esfuerzo.",
+   "pantalla": "«A base de esfuerzo»",
+   "sello": null,
+   "imagen": "El padre se cruza de brazos, orgulloso."
+  },
+  {
+   "n": 4,
+   "quien": "hijo",
+   "funcion": "dato: hoy",
+   "voz": "Hoy ese mismo piso cuesta 210.000 euros. Siete años de sueldo. El doble.",
+   "pantalla": "HOY · Piso de 90 m²: 210.000 € · 7,1 años de sueldo medio",
+   "nota": "En 2006, en plena burbuja: 8,9 años",
+   "sello": "BANCO DE ESPAÑA / MINISTERIO DE VIVIENDA (valor tasado, 1.er semestre de 2026) · INE (Encuesta Anual de Estructura Salarial 2024) · cálculo propio",
+   "imagen": "Foto de hoy al lado de la de 1986. La barra de años crece hasta 7,1, el doble que la de 1986."
+  },
+  {
+   "n": 5,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "Ya, pero vosotros cobráis mucho más.",
+   "pantalla": "«Pero cobráis más»",
+   "sello": null,
+   "imagen": "El padre levanta una ceja."
+  },
+  {
+   "n": 6,
+   "quien": "hijo",
+   "funcion": "dato: sueldo frente a piso",
+   "voz": "Quitando la inflación, el sueldo ha subido un 16 %. El piso cuesta 2,3 veces más.",
+   "pantalla": "Desde 1986, descontada la inflación · Sueldo medio: +16 % · Piso: ×2,3",
+   "sello": "CÁLCULO PROPIO con datos del INE (IPC, salarios) y del Banco de España",
+   "grafico": true,
+   "imagen": "Dos barras: la del sueldo apenas crece; la del piso se dispara hasta salirse de la tarjeta."
+  },
+  {
+   "n": 7,
+   "quien": "padre",
+   "funcion": "contraataque",
+   "voz": "¡Pero yo pagaba la hipoteca al 15 %!",
+   "pantalla": "Hipotecas en 1989: 15 %",
+   "sello": "DATO OFICIAL · BANCO DE ESPAÑA (tipo medio de los préstamos para vivienda, 1989; la serie empieza ese año)",
+   "imagen": "El padre da un golpe en la mesa; salta un «15 %» rojo."
+  },
+  {
+   "n": 8,
+   "quien": "hijo",
+   "funcion": "concesión con dato",
+   "voz": "Ahí te doy la razón: la cuota se comía casi la mitad de lo que entraba en casa. Hoy, el 38 %.",
+   "pantalla": "La cuota se comía · 1987: 47 % · hoy: 38 % de la renta del hogar",
+   "sello": "DATO OFICIAL · BANCO DE ESPAÑA (esfuerzo teórico sin deducciones)",
+   "imagen": "Dos quesitos: en 1987, casi la mitad del sueldo de casa para la cuota; hoy, algo más de un tercio."
+  },
+  {
+   "n": 9,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "¿Lo ves? Y aun así, ahorrábamos.",
+   "pantalla": "«Y aun así, ahorrábamos»",
+   "sello": null,
+   "imagen": "El padre sonríe, triunfal."
+  },
+  {
+   "n": 10,
+   "quien": "hijo",
+   "funcion": "frase espejo",
+   "voz": "Vosotros pagabais intereses. Nosotros pagamos ladrillo.",
+   "pantalla": "Antes: intereses · Hoy: ladrillo",
+   "sello": null,
+   "imagen": "Pantalla partida: a la izquierda, un billete que se lleva el banco; a la derecha, un ladrillo enorme."
+  },
+  {
+   "n": 11,
+   "quien": "hijo",
+   "funcion": "veredicto",
+   "voz": "Así que, ¿mejora o empeora? Comprar casa, empeora: el doble de años de sueldo. La cuota, mejora.",
+   "pantalla": "EL VEREDICTO · Comprar casa frente a 1986: EMPEORA (3,4 → 7,1 años de sueldo) · La cuota: MEJORA",
+   "sello": "CÁLCULO PROPIO con datos del INE y del Banco de España",
+   "imagen": "Tarjeta con dos filas: EMPEORA (rojo no; marca gruesa) y MEJORA."
+  },
+  {
+   "n": 12,
+   "quien": "padre",
+   "funcion": "remate cómico",
+   "voz": "Ya… ¿Y los 50 euros de la cena de anoche, qué?",
+   "pantalla": "",
+   "sello": null,
+   "imagen": "El padre saca un tique de restaurante; el hijo pone los ojos en blanco."
+  },
+  {
+   "n": 13,
+   "quien": "hijo",
+   "funcion": "pregunta para el debate",
+   "voz": "¿Quién tiene razón? Te leo.",
+   "pantalla": "¿Quién tiene razón: el padre o el hijo?",
+   "sello": null,
+   "imagen": "Los dos miran a cámara. Dos botones: «PADRE» e «HIJO», y un bocadillo de comentario."
+  }
+ ],
+ "no_dato": [
+  "90",
+  "50"
+ ],
+ "cifras": [
+  {
+   "texto": "4,5",
+   "ruta": "hace_40_anos.piso_90m2_1986_pts",
+   "escala": 1e-06,
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "3,4",
+   "ruta": "padre_hijo.anos_sueldo_medio_1986",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "210.000",
+   "ruta": "padre_hijo.piso_hoy_eur",
+   "redondeo": -3,
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "7,1",
+   "ruta": "padre_hijo.anos_sueldo_medio_hoy",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "8,9",
+   "ruta": "padre_hijo.anos_sueldo_medio_2006",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "16",
+   "ruta": "padre_hijo.sueldo_medio_real_1986_2024_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "2,3",
+   "ruta": "padre_hijo.piso_real_veces_1986_hoy",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "15",
+   "ruta": "padre_hijo.tipo_hipoteca_1989_media_pct",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "47",
+   "ruta": "padre_hijo.esfuerzo_1987_pct",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "38",
+   "ruta": "padre_hijo.esfuerzo_hoy_pct",
+   "decimales": 0,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "«Tres años y medio de un sueldo medio»: 27.135 € (piso de 1986) ÷ 7.947 € (sueldo medio de 1986) = 3,4 (C).",
+  "«Siete años de sueldo. El doble»: 210.182 € ÷ 29.540 € = 7,1; 7,1 ÷ 3,4 = 2,1 (C).",
+  "«Casi la mitad de lo que entraba en casa»: esfuerzo teórico medio de 1987, 47,3 % de la renta bruta del hogar (Banco de España; V).",
+  "Sueldo de 1986: 740 pesetas por hora trabajada (industria y servicios) × 1.786,8 horas de jornada pactada = 1,32 millones de pesetas al año (C con datos de los anuarios del INE de 1987 y 1988).",
+  "Piso de 1986: 301,5 €/m² (media de junio y diciembre de 1986, sociedades de tasación, Banco de España) × 90 m² = 27.135 € = 4,5 millones de pesetas (C).",
+  "Los 50 euros de la cena son un chiste del guion, no un dato."
+ ],
+ "cierre": {
+  "veredicto": "frente a 1986: comprar casa empeora · la cuota mensual mejora",
+  "porque": "Un piso de 90 m² costaba 3,4 años de sueldo medio en 1986 y 7,1 hoy; descontada la inflación, el sueldo medio sube un 16 % y el piso se multiplica por 2,3. Pero en 1987 la cuota se comía el 47 % de la renta del hogar (hipotecas al 15 % en 1989) y hoy el 38 %. En 2006, en plena burbuja, eran 8,9 años de sueldo."
+ },
+ "aprobacion_guion": null
+}

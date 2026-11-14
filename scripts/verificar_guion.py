@@ -60,8 +60,13 @@ def valor_cifra(datos, c):
     return v * c.get("escala", 1)
 
 
-def es_num(v, dec):
+def es_num(v, dec, miles=False):
+    if miles:   # 210.000 (punto de miles, sin decimales)
+        return f"{round(v):,}".replace(",", ".")
     return f"{v:.{dec}f}".replace(".", ",")
+
+
+NUM = r"\d{1,3}(?:\.\d{3})+(?:,\d+)?|\d+(?:,\d+)?"   # 210.000 · 4,5 · 1986
 
 
 # ------------------------------------------------------------ duración
@@ -79,12 +84,12 @@ def palabras_entero(n):
 def palabras_habladas(texto):
     total = 0
     for tok in texto.split():
-        nums = re.findall(r"\d+(?:,\d+)?", tok)
+        nums = re.findall(NUM, tok)
         if not nums:
             total += 1 if re.search(r"\w", tok) else 0
             continue
         for n in nums:
-            ent, _, dec = n.partition(",")
+            ent, _, dec = n.replace(".", "").partition(",")
             total += palabras_entero(int(ent)) + ((1 + palabras_entero(int(dec))) if dec else 0)
         if "%" in tok:
             total += 2
@@ -109,7 +114,7 @@ def verificar(ruta_guion, ritmo=RITMO):
             ok = abs(v - c["aprox"]) <= c["aprox"] * c.get("tolerancia_pct", 5) / 100
             leido = f"{v:.1f} (dicho «{c['texto']}» ≈ {c['aprox']})"
         else:
-            leido = es_num(v, c.get("decimales", 0))
+            leido = es_num(round(v, c["redondeo"]) if "redondeo" in c else v, c.get("decimales", 0), c.get("miles", False))
             ok = leido == c["texto"]
             declaradas.add(c["texto"])
         if not ok:
@@ -121,16 +126,16 @@ def verificar(ruta_guion, ritmo=RITMO):
     # 2 y 4: números sin declarar y sellos
     permitidos = set(g.get("no_dato", []))
     for b in g["beats"]:
-        nums = re.findall(r"\d+(?:,\d+)?", b["voz"] + " " + b["pantalla"] + " " + b.get("nota", ""))
-        datos_b = [n for n in nums if not (len(n) == 4 and n.startswith("20")) and n not in permitidos]
+        nums = re.findall(NUM, b["voz"] + " " + b["pantalla"] + " " + b.get("nota", ""))
+        datos_b = [n for n in nums if not re.fullmatch(r"(19|20)\d\d", n) and n not in permitidos]
         for n in datos_b:
             if n not in declaradas:
                 fallos.append(f"plano {b['n']}: el número «{n}» no tiene cifra declarada")
         if datos_b and not b.get("sello"):
             fallos.append(f"plano {b['n']}: tiene cifras y no lleva sello de fuente")
         # Pocas cifras por imagen: 2, o 3 si el plano es un gráfico.
-        en_pantalla = [n for n in re.findall(r"\d+(?:,\d+)?", b["pantalla"])
-                       if not (len(n) == 4 and n.startswith("20")) and n not in permitidos]
+        en_pantalla = [n for n in re.findall(NUM, b["pantalla"])
+                       if not re.fullmatch(r"(19|20)\d\d", n) and n not in permitidos]
         maximo = 3 if b.get("grafico") else 2
         if len(en_pantalla) > maximo:
             fallos.append(f"plano {b['n']}: {len(en_pantalla)} cifras en pantalla (máximo {maximo})")
@@ -147,7 +152,7 @@ def verificar(ruta_guion, ritmo=RITMO):
     # Veredicto claro: «¿Mejora o empeora?» (o, si de verdad no se puede decidir, «¿mejora, empeora o depende?»)
     if not any(re.search(r"mejora,? (o )?empeora", b["voz"].lower()) for b in g["beats"]):
         fallos.append("falta el veredicto «¿Mejora o empeora?» en la voz")
-    anyos = sorted(set(re.findall(r"\b20\d\d\b", texto_total)))
+    anyos = sorted(set(re.findall(r"\b(?:19|20)\d\d\b", texto_total)))
     if len(anyos) < 3:
         fallos.append(f"solo aparecen {len(anyos)} años: {anyos}")
 

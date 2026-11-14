@@ -187,7 +187,7 @@ def bde():
     for k, texto in claves.items():
         nombre, s = serie(texto)
         out[k] = {"serie": nombre, "por_anyo": {a: {"media": r(sum(v for _, v in s[a]) / len(s[a]), 2), "n": len(s[a]),
-                                                     "ultimo": f"{s[a][-1][0]} {a}: {s[a][-1][1]}"} for a in sorted(s) if a >= "2005"}}
+                                                     "ultimo": f"{s[a][-1][0]} {a}: {s[a][-1][1]}"} for a in sorted(s) if a >= "1986"}}
     return out
 
 
@@ -332,6 +332,21 @@ def main():
                                    "2024": r(pr["2024"]["piso_90m2"] / med["2024"], 1), "2026_con_sueldo_2024": r(pr["2026"]["piso_90m2"] / med["2024"], 1)},
                           "precio_real_2026_vs_2006_pct": r(100 * (pr["2026"]["m2"] / (pr["2006"]["m2"] * deflactor("2006", "2026")) - 1), 1)}
     out["anos_sueldo_mediano_por_ciudad"] = anos_ciudad
+    # Para el guion padre-hijo (T3): 1986 frente a hoy, en cifras redondas.
+    H = out["hace_40_anos"]
+    media24 = sueldo["media"]["2024"]
+    out["padre_hijo"] = {
+        "piso_hoy_eur": r(precio(hoy), 0),
+        "anos_sueldo_medio_hoy": r(precio(hoy) / media24, 1),
+        "anos_sueldo_medio_1986": H["anos_sueldo_medio_1986"],
+        "sueldo_medio_real_1986_2024_pct": r(100 * (media24 / H["sueldo_1986"]["en_euros_de_2024"] - 1), 1),
+        "piso_real_veces_1986_hoy": r(precio(hoy) / H["piso_real_en_euros_de_2026"], 2),
+        "esfuerzo_1987_pct": B["esfuerzo_teorico_pct"]["por_anyo"]["1987"]["media"],
+        "esfuerzo_hoy_pct": float(B["esfuerzo_teorico_pct"]["por_anyo"][hoy]["ultimo"].split(": ")[1]),
+        "tipo_hipoteca_1989_media_pct": B["tipo_prestamos_vivienda_pct"]["por_anyo"]["1989"]["media"],   # la serie empieza en 1989
+        "anos_sueldo_medio_2006": anos["media"]["2006"]["vivienda"],
+        "nota": "Piso de 90 m²: 1986, m² de las sociedades de tasación (Banco de España); hoy, valor tasado medio de España (Ministerio de Vivienda vía Banco de España), 1.er semestre de 2026. Sueldo medio bruto: 1986, industria y servicios (anuarios del INE); hoy, 2024 (Encuesta Anual de Estructura Salarial).",
+    }
     CLEAN.mkdir(parents=True, exist_ok=True)
     (CLEAN / "t3_vivienda.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print("escrito", CLEAN / "t3_vivienda.json")

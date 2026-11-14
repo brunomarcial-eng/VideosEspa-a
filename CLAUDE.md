@@ -25,7 +25,8 @@ Nombre de trabajo: **Cuánto Vale Tu Hora**. Alternativas: «El Precio del Tiemp
 - **El vídeo cuenta lo que dice la voz.** Es una narración: cada frase tiene su escena con acción (no una diapositiva con audio encima). Referencias visuales de Bruno en `archive/referencias/`. Subtítulo arriba, palabra a palabra; una cifra grande por plano.
 - **Voz en español de España**, nunca con acento de América. Bruno decide las voces de oído: se le mandan muestras cortas antes de renderizar.
 - **Texto humano:** conversación natural, con interjecciones y ritmo irregular. Empieza con una pregunta llamativa y directa al espectador («¿llenar el carro te cuesta más o menos que hace 10 años?») y acaba con otra abierta.
-- **Ritmo tranquilo y poca carga:** una idea por escena, pocos elementos, y cada dato se queda en pantalla el tiempo suficiente para leerlo. Mejor 70 segundos claros que 50 con prisa.
+- **Ritmo tranquilo y poca carga:** una idea por escena, pocos elementos, y cada dato se queda en pantalla el tiempo suficiente para leerlo. **Duración de referencia: 1 minuto** (Bruno, 14-11-2026); si el tema da para más, se parte en dos vídeos.
+- **Debate:** más polémica y más pregunta al espectador, que es lo que trae comentarios. Vale el formato de discusión entre dos personajes (p. ej. padre e hijo), cada uno con su dato. La polémica es de generaciones o de bolsillo, nunca de partidos, y el vídeo no da causas.
 - **Personajes:** gente representativa de España: sobre todo tonos de piel claros, y alguno algo más moreno (hispanoamericanos). Nada de barbas sin bigote; la barba, solo si encaja (el carnicero). Siempre inventados.
 - **Estilo de imagen:** limpio y sencillo como las referencias de `archive/referencias/` (tarjeta blanca con etiqueta y titular, subtítulo grande de 2-3 palabras, barra de progreso, personaje sencillo en un sitio fijo).
 - **Sonido:** música y efectos que acompañen cada acción de la historia.
