@@ -1,45 +1,53 @@
 # Guion T2 — ¿Hay más gente en paro o trabajando que antes de la crisis?
 
-Pregunta: ¿Hay más gente trabajando ahora que en 2007 y en 2016? ¿Y en proporción? ¿Y el paro?  
-Datos: `data/clean/t2_empleo.json` · 2026-11-09 (Paso 1 aprobado: EPA T3 contra T3, tasa de empleo 16-64, «depende» frente a 2007)  
-Duración estimada de la voz: **78 s** (a 2.6 palabras/s) · Años en pantalla: 2002, 2007, 2016, 2026  
+Pregunta: En España: ¿cuántos vivimos, cuántos trabajan y cuántos están en paro en 2007, 2016 y hoy? ¿Crece el trabajo al ritmo de la población? ¿Y el paro?  
+Datos: `data/clean/t2_empleo.json` · EPA aprobada el 09-11-2026; población residente (INE, ECP320, 1 de julio) añadida el 12-11-2026, pendiente de aprobar  
+Duración estimada de la voz: **73 s** (a 3.05 palabras/s) · Años en pantalla: 2002, 2007, 2016, 2026  
 Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La columna «Imagen» es la idea del plano; cada estilo la dibuja a su manera en el Paso 3.
 
 | # | Tiempo | Quién | Voz | En pantalla | Sello de fuente | Imagen |
 |---|---|---|---|---|---|---|
-| 1 | 0-7 s | narrador (voz) | ¿Hoy trabaja en España más gente que antes de la crisis… o menos? Piénsalo, que tiene truco. | LA PREGUNTA · ¿Trabaja más gente que antes de la crisis? | — | Una calle a primera hora. Marta sale de un portal con el café en la mano, se para y mira a cámara. |
-| 2 | 7-13 s | narrador (voz) | 2007, justo antes de la crisis: 20,75 millones de personas trabajando. | 2007 · 20,75 millones trabajando · 3.er trimestre | DATO OFICIAL · INE · EPA, ocupados, 3.er trimestre de 2007 | La calle se llena de gente camino del trabajo; un contador sube hasta 20,75 millones. Marta, con camiseta ocre, entre ellos. |
-| 3 | 13-17 s | narrador (voz) | En 2016, 18,53 millones. | 2016 · 18,53 millones trabajando · 3.er trimestre | DATO OFICIAL · INE · EPA, ocupados, 3.er trimestre de 2016 | Vuelan las hojas del calendario hasta 2016. La calle se queda más vacía y el contador baja a 18,53. |
-| 4 | 17-22 s | narrador (voz) | ¿Y hoy? 22,85 millones. Récord de la serie. | Hoy · 22,85 millones trabajando · récord desde 2002 <br>_3.er trimestre de 2026. Es el valor más alto de la serie trimestral de la EPA, que empieza en 2002_ | DATO OFICIAL · INE · EPA, ocupados, 3.er trimestre de 2026 | La calle, llena hasta los bordes. El contador pasa la marca de 2007 y se para en 22,85. Marta, ahora de azul, levanta las cejas. |
-| 5 | 22-28 s | narrador (voz) | Ojo, que también somos más: 4,8 millones más de personas de 16 años o más. | +4,8 millones de personas de 16 años o más · desde 2007 | CÁLCULO PROPIO (C) · INE, EPA (ocupados ÷ tasa de empleo) | La acera se alarga hacia los lados y aparece más gente en general, no solo trabajando. Marta mira a los lados. |
-| 6 | 28-33 s | narrador (voz) | Así que, en proporción: imagina 100 personas de 16 a 64 años. | DE CADA 100 · personas de 16 a 64 años | — | La cámara sube y la calle se convierte en una rejilla de 100 figuras grises, de 10 en 10. Marta es una de ellas. |
-| 7 | 33-39 s | narrador (voz) | En 2007 trabajaban 67. En 2016, 61. | Trabajan, de cada 100 · 2007: 67 · 2016: 61 | DATO OFICIAL · INE · EPA, tasa de empleo de 16 a 64 años, 3.er trimestre | Se encienden 67 figuras en ocre. Luego se apagan 6: quedan 61. |
-| 8 | 39-43 s | narrador (voz) | ¿Y hoy? 69. Más que antes de la crisis. | Hoy · 69 de cada 100 · en 2007: 67 | DATO OFICIAL · INE · EPA, tasa de empleo de 16 a 64 años, 3.er trimestre | Las figuras se encienden en azul hasta 69; una raya marca dónde llegaba 2007. Marta, encendida, sonríe. |
-| 9 | 43-47 s | narrador (voz) | Hasta aquí, todo mejora. Pero… ¿y el paro? | ¿Y EL PARO? | — | Una de las figuras grises levanta la mano. (Opción: el «¿y el paro?» lo dice la voz 5 desde esa figura.) |
-| 10 | 47-53 s | narrador (voz) | De cada 100 que trabajan o buscan trabajo, hoy 10 no lo encuentran. En 2007, 8. | Paro · hoy: 10,2 % · 2007: 8,0 % <br>_Tasa de paro: parados entre quienes trabajan o buscan trabajo (población activa)_ | DATO OFICIAL · INE · EPA, tasa de paro, 3.er trimestre | Nueva rejilla de 100 (los que trabajan o buscan): 10 figuras sin color, con una lupa. Al lado, la de 2007 con 8. |
-| 11 | 53-60 s | narrador (voz) | En 2016 eran 19. Ha bajado mucho… pero no ha vuelto a 2007. | PARO · 2007: 8,0 % · 2016: 18,9 % · hoy: 10,2 % | DATO OFICIAL · INE · EPA, tasa de paro, 3.er trimestre | Una línea une 2007, 2016 y hoy: sube hasta 2016 y baja sin llegar a la altura de 2007. |
-| 12 | 60-67 s | narrador (voz) | Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007… depende. | EL VEREDICTO · Frente a 2016: MEJORA · Frente a 2007: DEPENDE | — | Tarjeta con dos filas; la marca cae en MEJORA (2016) y luego en DEPENDE (2007). |
-| 13 | 67-73 s | narrador (voz) | Más gente trabajando que nunca. Y más paro que en 2007. Las dos cosas son verdad. | EN RESUMEN · Más gente trabajando que nunca. Más paro que en 2007. | — | Pantalla partida: a la izquierda, la calle llena; a la derecha, la rejilla del paro. Marta en medio, encogiéndose de hombros. |
-| 14 | 73-78 s | narrador (voz) | ¿Y tú? ¿Lo notas a tu alrededor… o no tanto? Te leo. | TE TOCA · ¿Lo notas a tu alrededor? | — | Marta mira a cámara y aparece un bocadillo de comentario. |
+| 1 | 0-6 s | narrador (voz) | ¿Hay más gente en paro o trabajando que antes de la crisis? Hablamos de España. En tres fotos. | ESPAÑA · ¿Hay más gente en paro o trabajando que antes de la crisis? | — | Bandera de España ondeando junto a la tarjeta con el título exacto. Detrás, la calle del barrio de Marta: una carnicería, una tienda de ropa, una cafetería y un taller, con las persianas subiendo. Marta sale del portal. |
+| 2 | 6-12 s | narrador (voz) | Foto uno: 2007, antes de la crisis. En España vivíamos 45,2 millones. | 2007 · España: 45,2 millones de habitantes | DATO OFICIAL · INE · Población residente en España a 1 de julio de 2007 | Cae una foto de esquinas blancas con «2007». Dentro, el mapa de España (península, Baleares y Canarias) se llena de figuritas (una por cada medio millón de habitantes: 90); el contador sube hasta 45,2 millones. |
+| 3 | 12-13 s | narrador (voz) | Trabajando, 20,8 millones. | TRABAJANDO · 20,8 millones | DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2007 | Marta entra en la carnicería. El carnicero, con delantal, corta y envuelve; suena la campanilla de la puerta. |
+| 4 | 13-16 s | narrador (voz) | Y en paro, 1,8 millones. | EN PARO · 1,8 millones | DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2007 | Fuera, un tablón de «Ofertas de empleo». Llegan dos personas y lo repasan; la primera, con una lupa (una persona por cada 0,87 millones de parados, sin rotular). |
+| 5 | 16-19 s | narrador (voz) | O sea, de cada 100 habitantes, trabajaban 46. | 2007 · De cada 100 habitantes, trabajan 46 | CÁLCULO PROPIO con datos del INE (EPA y población residente) | Gráfico de rosquilla: 100 casillas; se rellenan 46 en ocre («trabajan»). El resto, gris claro: niños, estudiantes, jubilados, parados… |
+| 6 | 19-24 s | narrador (voz) | Foto dos: 2016. Somos 46,4 millones. Un 3 % más. | 2016 · España: 46,4 millones · +3 % | DATO OFICIAL · INE · Población residente en España a 1 de julio de 2016 | Segunda foto, «2016». El mapa, algo más lleno; el contador pasa de 45,2 a 46,4 y aparece la etiqueta +3 %. |
+| 7 | 24-27 s | narrador (voz) | Pero trabajando, solo 18,5 millones. Un 11 % menos. | TRABAJANDO · 18,5 millones · −11 % | DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2016 | Marta entra en la tienda de ropa. Una dependienta dobla camisetas. Al lado, el local vecino con la persiana bajada y un cartel de «Se alquila». |
+| 8 | 27-30 s | narrador (voz) | En paro, 4,3 millones. Más del doble. | EN PARO · 4,3 millones · +139 % | DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2016 | El mismo tablón, ahora con cola: cinco personas. |
+| 9 | 30-33 s | narrador (voz) | De cada 100 habitantes, trabajan 40. Seis menos. | 2016 · De cada 100 habitantes, trabajan 40 · en 2007: 46 | CÁLCULO PROPIO con datos del INE (EPA y población residente) | La misma rosquilla: el trozo ocre se encoge de 46 a 40; una marca fina queda donde llegaba 2007. |
+| 10 | 33-39 s | narrador (voz) | Foto tres: hoy. Somos 49,8 millones. Un 10 % más que en 2007. | HOY (2026) · España: 49,8 millones · +10 % desde 2007 | DATO OFICIAL · INE · Población residente en España a 1 de julio de 2026 (provisional) | Tercera foto, «hoy». El mapa, más lleno todavía; el contador llega a 49,8 millones. |
+| 11 | 39-42 s | narrador (voz) | Trabajando, 22,9 millones. Récord. Y también un 10 % más. | TRABAJANDO · 22,9 millones · +10 % <br>_Récord: el valor más alto de la serie de la EPA (desde 2002)_ | DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2026 | Tres cortes rápidos: Marta pide un café en la cafetería (la camarera con la cafetera echando vapor); pasa por una agencia de viajes con dos personas al ordenador; y un mecánico debajo de un coche en el taller. |
+| 12 | 42-48 s | narrador (voz) | En paro, 2,6 millones. Un 43 % más que en 2007. | EN PARO · 2,6 millones · +43 % desde 2007 | DATO OFICIAL · INE · Encuesta de Población Activa, 3.er trimestre de 2026 | El tablón: tres personas. Menos cola que en 2016, más que en 2007. |
+| 13 | 48-52 s | narrador (voz) | Mira las barras: población y trabajo crecen lo mismo. El paro, mucho más. | DESDE 2007 · Habitantes +10 % · Trabajando +10 % · En paro +43 % | CÁLCULO PROPIO con datos del INE (EPA y población residente) | Tres barras horizontales que crecen a la vez: habitantes y trabajando se paran a la misma altura (10 %); la de paro sigue hasta 43 %. |
+| 14 | 52-57 s | narrador (voz) | Por eso hoy, de cada 100 habitantes, trabajan 46. Como en 2007. | HOY · De cada 100 habitantes, trabajan 46 · en 2007: 46 | CÁLCULO PROPIO con datos del INE (EPA y población residente) | La rosquilla vuelve a crecer de 40 a 46 y toca justo la marca de 2007. |
+| 15 | 57-66 s | narrador (voz) | ¿Mejora o empeora? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007, empeora: un 43 % más de paro. | EL VEREDICTO · ¿Mejora o empeora? · Frente a 2016: MEJORA (−40 % de paro) · Frente a 2007: EMPEORA (+43 % de paro) | CÁLCULO PROPIO con datos del INE (EPA y población residente) | El barrio con todos los comercios abiertos. Tarjeta con dos filas: la marca cae en MEJORA (2016) y luego en EMPEORA (2007). Marta levanta los brazos en «mejora» y se pone seria en «empeora». |
+| 16 | 66-73 s | narrador (voz) | Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser? ¿Tú cómo te lo explicas? | TE TOCA · Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser? | — | La calle del barrio, con todos los comercios abiertos y gente trabajando dentro. Marta se encoge de hombros en «¿Cómo puede ser?» y aparece un bocadillo de comentario. |
 
-**Cierre:** frente a 2016: mejora · frente a 2007: depende. Hay 2,1 millones más de ocupados que en 2007 y la tasa de empleo de 16 a 64 años es más alta (69 frente a 67 de cada 100), pero la tasa de paro (10,2 %) sigue por encima de la de 2007 (8,0 %). Frente a 2016 mejoran todas las medidas.
+**Cierre:** frente a 2016: mejora · frente a 2007: empeora (por el paro). Frente a 2016 hay 4,3 millones más trabajando y un 40 % menos de parados. Frente a 2007, de cada 100 habitantes trabajan los mismos (46), pero hay un 43 % más de parados (unos 785.000 más). El vídeo no entra en causas: la pregunta final («¿Cómo puede ser?») se deja para los comentarios.
 
 ## Cifras verificadas contra los datos
 
 | En el guion | Valor en los datos | Estado | Origen |
 |---|---|---|---|
-| 20,75 | 20,75 | V | `mismo_trimestre.2007T3.ocupados_miles` |
-| 18,53 | 18,53 | V | `mismo_trimestre.2016T3.ocupados_miles` |
-| 22,85 | 22,85 | V | `mismo_trimestre.2026T3.ocupados_miles` |
-| 4,8 | 4,8 | C | `resta(mismo_trimestre.2007T3.poblacion_16_mas_miles, mismo_trimestre.2026T3.poblacion_16_mas_miles)` |
-| 67 | 67 | V | `mismo_trimestre.2007T3.tasa_empleo_16_64_pct` |
-| 61 | 61 | V | `mismo_trimestre.2016T3.tasa_empleo_16_64_pct` |
-| 69 | 69 | V | `mismo_trimestre.2026T3.tasa_empleo_16_64_pct` |
-| 10 | 10 | V | `mismo_trimestre.2026T3.tasa_paro_pct` |
-| 10,2 | 10,2 | V | `mismo_trimestre.2026T3.tasa_paro_pct` |
-| 8 | 8 | V | `mismo_trimestre.2007T3.tasa_paro_pct` |
-| 8,0 | 8,0 | V | `mismo_trimestre.2007T3.tasa_paro_pct` |
-| 19 | 19 | V | `mismo_trimestre.2016T3.tasa_paro_pct` |
-| 18,9 | 18,9 | V | `mismo_trimestre.2016T3.tasa_paro_pct` |
+| 45,2 | 45,2 | V | `mismo_trimestre.2007T3.poblacion_total_miles` |
+| 20,8 | 20,8 | V | `mismo_trimestre.2007T3.ocupados_miles` |
+| 1,8 | 1,8 | V | `mismo_trimestre.2007T3.parados_miles` |
+| 46 | 46 | C | `pct_de(mismo_trimestre.2007T3.ocupados_miles, mismo_trimestre.2007T3.poblacion_total_miles)` |
+| 46,4 | 46,4 | V | `mismo_trimestre.2016T3.poblacion_total_miles` |
+| 3 | 3 | C | `var_pct(mismo_trimestre.2007T3.poblacion_total_miles, mismo_trimestre.2016T3.poblacion_total_miles)` |
+| 18,5 | 18,5 | V | `mismo_trimestre.2016T3.ocupados_miles` |
+| 11 | 11 | C | `var_pct(mismo_trimestre.2007T3.ocupados_miles, mismo_trimestre.2016T3.ocupados_miles)` |
+| 4,3 | 4,3 | V | `mismo_trimestre.2016T3.parados_miles` |
+| 139 | 139 | C | `var_pct(mismo_trimestre.2007T3.parados_miles, mismo_trimestre.2016T3.parados_miles)` |
+| 40 | 40 | C | `pct_de(mismo_trimestre.2016T3.ocupados_miles, mismo_trimestre.2016T3.poblacion_total_miles)` |
+| 49,8 | 49,8 | V | `mismo_trimestre.2026T3.poblacion_total_miles` |
+| 10 | 10 | C | `var_pct(mismo_trimestre.2007T3.poblacion_total_miles, mismo_trimestre.2026T3.poblacion_total_miles)` |
+| 22,9 | 22,9 | V | `mismo_trimestre.2026T3.ocupados_miles` |
+| 10 | 10 | C | `var_pct(mismo_trimestre.2007T3.ocupados_miles, mismo_trimestre.2026T3.ocupados_miles)` |
+| 2,6 | 2,6 | V | `mismo_trimestre.2026T3.parados_miles` |
+| 43 | 43 | C | `var_pct(mismo_trimestre.2007T3.parados_miles, mismo_trimestre.2026T3.parados_miles)` |
+| 46 | 46 | C | `pct_de(mismo_trimestre.2026T3.ocupados_miles, mismo_trimestre.2026T3.poblacion_total_miles)` |
+| 40 | 40 | C | `var_pct(mismo_trimestre.2016T3.parados_miles, mismo_trimestre.2026T3.parados_miles)` |
 
 Generado por `scripts/verificar_guion.py`. No editar a mano: se edita `guion.json` y se vuelve a ejecutar.

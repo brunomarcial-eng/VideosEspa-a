@@ -135,3 +135,16 @@ Nada para el Short. Para el vídeo largo: horas trabajadas, parcialidad y tempor
 2. **Años de T1:** 2016, 2018-19 y 2024. 2007 queda fuera del Short por ser una estimación con corte de serie.
 3. **Medida principal de T1:** neto y mediana (C). La alternativa es la media por hora, con todas las entradas en V, que da 11,0 → 12,4 h.
 4. **T2:** comparación T3 contra T3 y cierre «depende» frente a 2007, «mejora» frente a 2016-19. Tasa de empleo principal: 16-64 años.
+
+---
+
+## T2 v4 · Población residente (añadida para la v4, aprobada por Bruno el 14-11-2026)
+| Año | Habitantes a 1 de julio | Estado | Fuente |
+|---|---|---|---|
+| 2007 | 45.236.004 | V (definitivo) | INE, serie ECP320 ([tabla 56934](https://www.ine.es/jaxiT3/Tabla.htm?t=56934)) |
+| 2016 | 46.427.100 | V (definitivo) | INE, ECP320 |
+| 2026 | 49.805.419 | V (provisional) | INE, ECP320 |
+
+- Consultado el 12-11-2026. Fichero crudo: `datos-crudos/ine_ecp320_poblacion.json`.
+- Se usa el 1 de julio porque es el primer día del 3.er trimestre, que es el periodo de la EPA que se compara.
+- «De cada 100 habitantes, trabajan…» = ocupados de la EPA (3.er trimestre) ÷ habitantes de todas las edades × 100 (C): 45,88 en 2007, 39,91 en 2016 y 45,88 en 2026. No es la tasa de empleo oficial, que se mide sobre la población de 16 años o más.

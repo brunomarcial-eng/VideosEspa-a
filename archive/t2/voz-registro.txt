@@ -1,28 +1,32 @@
-plano 1: «¿Hoy trabaja en España más gente que antes de la crisis… o menos? Piénsalo, que tiene truco.»
-    toma guardada (semilla 1000): BUENA · «Hoy trabaja en España más gente que antes de la crisis. O menos, piénsalo, que tiene truco.»
-plano 2: «2007, justo antes de la crisis: 20,75 millones de personas trabajando.»
-    toma guardada (semilla 2000): BUENA · «2007, justo antes de la crisis, 20,75 millones de personas trabajando.»
-plano 3: «En 2016, 18,53 millones.»
-    toma guardada (semilla 3000): BUENA · «En 2016, 18,53 millones.»
-plano 4: «¿Y hoy? 22,85 millones. Récord de la serie.»
-    toma guardada (semilla 4000): BUENA · «Y hoy 22,85 millones, récord de la serie.»
-plano 5: «Ojo, que también somos más: 4,8 millones más de personas de 16 años o más.»
-    toma guardada (semilla 5000): BUENA · «Ojo, que también somos más, 4,8 millones más de personas de 16 años o más.»
-plano 6: «Así que, en proporción: imagina 100 personas de 16 a 64 años.»
-    toma guardada (semilla 6000): BUENA · «Así que en proporción imagina 100 personas de 16 a 64 años.»
-plano 7: «En 2007 trabajaban 67. En 2016, 61.»
-    toma guardada (semilla 7000): BUENA · «en 2007 trabajaban 67, en 2016 61.»
-plano 8: «¿Y hoy? 69. Más que antes de la crisis.»
-    toma guardada (semilla 8000): BUENA · «Y hoy, 69, más que antes de la crisis.»
-plano 9: «Hasta aquí, todo mejora. Pero… ¿y el paro?»
-    toma 1 (semilla 9002): BUENA · 1.0 · 3.1 s · 9.7 l/s · «Hasta aquí todo mejora, pero ¿y el paro?»
-plano 10: «De cada 100 que trabajan o buscan trabajo, hoy 10 no lo encuentran. En 2007, 8.»
-    toma guardada (semilla 10000): BUENA · «de cada 100 que trabajan o buscan trabajo. Hoy 10 no lo encuentran, en 2007-08.»
-plano 11: «En 2016 eran 19. Ha bajado mucho… pero no ha vuelto a 2007.»
-    toma guardada (semilla 11000): BUENA · «En 2016 eran 19, ha bajado mucho, pero no ha vuelto a 2007.»
-plano 12: «Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007… depende.»
-    toma guardada (semilla 12000): BUENA · «Entonces, ¿mejora, empeora o depende? Frente a 2016, mejora. Frente a 2007, depende.»
-plano 13: «Más gente trabajando que nunca. Y más paro que en 2007. Las dos cosas son verdad.»
-    toma guardada (semilla 13000): BUENA · «Más gente trabajando que nunca, y más paro que en 2007. Las dos cosas son verdad.»
-plano 14: «¿Y tú? ¿Lo notas a tu alrededor… o no tanto? Te leo.»
-    toma guardada (semilla 14000): BUENA · «Y tú lo notas a tu alrededor, o no tanto, te leo.»
+plano 1: «¿Hay más gente en paro o trabajando que antes de la crisis? Hablamos de España. En tres fotos.»
+    toma guardada (semilla 1001): BUENA · «¿Hay más gente en paro o trabajando que antes de la crisis? Hablamos de España en tres fotos.»
+plano 2: «Foto uno: 2007, antes de la crisis. En España vivíamos 45,2 millones.»
+    toma guardada (semilla 2000): BUENA · «Foto 1, 2007, antes de la crisis. En España vivíamos 45,2 millones.»
+plano 3: «Trabajando, 20,8 millones.»
+    toma guardada (semilla 3000): BUENA · «Trabajando 20,8 millones.»
+plano 4: «Y en paro, 1,8 millones.»
+    toma guardada (semilla 4000): BUENA · «y en paro 1,8 millones.»
+plano 5: «O sea, de cada 100 habitantes, trabajaban 46.»
+    toma guardada (semilla 5000): BUENA · «O sea, ¿de cada 100 habitantes trabajaban 46?»
+plano 6: «Foto dos: 2016. Somos 46,4 millones. Un 3 % más.»
+    toma guardada (semilla 6000): BUENA · «Foto 2 2016, somos 46,4 millones, un 3% más.»
+plano 7: «Pero trabajando, solo 18,5 millones. Un 11 % menos.»
+    toma guardada (semilla 7000): BUENA · «Pero trabajando solo 18,5 millones, un 11% menos.»
+plano 8: «En paro, 4,3 millones. Más del doble.»
+    toma guardada (semilla 8000): BUENA · «En paro 4,3 millones más del doble.»
+plano 9: «De cada 100 habitantes, trabajan 40. Seis menos.»
+    toma guardada (semilla 9000): BUENA · «De cada 100 habitantes trabajan 40, 6 menos.»
+plano 10: «Foto tres: hoy. Somos 49,8 millones. Un 10 % más que en 2007.»
+    toma guardada (semilla 10000): BUENA · «¿Foto 3? Hoy. Somos 49,8 millones. Un 10% más que en 2007.»
+plano 11: «Trabajando, 22,9 millones. Récord. Y también un 10 % más.»
+    toma guardada (semilla 11000): BUENA · «Trabajando 22,9 millones, record, y también un 10% más.»
+plano 12: «En paro, 2,6 millones. Un 43 % más que en 2007.»
+    toma guardada (semilla 12000): BUENA · «En paro, 2,6 millones, un 43% más que en 2007.»
+plano 13: «Mira las barras: población y trabajo crecen lo mismo. El paro, mucho más.»
+    toma guardada (semilla 13000): BUENA · «Mira las barras, población y trabajo crecen lo mismo. El paro mucho más.»
+plano 14: «Por eso hoy, de cada 100 habitantes, trabajan 46. Como en 2007.»
+    toma guardada (semilla 14000): BUENA · «Por eso hoy de cada 100 habitantes trabajan 46, como en 2007.»
+plano 15: «¿Mejora o empeora? Frente a 2016, mejora: un 40 % menos de paro. Frente a 2007, empeora: un 43 % más de paro.»
+    toma 1 (semilla 15000): BUENA · 1.0 · 10.1 s · 12.9 l/s · «Mejora o empeora. Frente a 2016, mejora. Un 40% menos de paro. Frente a 2007, empeora. Un 43% más de paro.»
+plano 16: «Más gente trabajando que nunca. Y más parados que antes de la crisis. ¿Cómo puede ser? ¿Tú cómo te lo explicas?»
+    toma 1 (semilla 16000): BUENA · 1.0 · 6.8 s · 12.5 l/s · «Más gente trabajando que nunca y más parados que antes de la crisis. ¿Cómo puede ser? ¿Tú cómo te lo explicas?»
