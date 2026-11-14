@@ -1468,6 +1468,42 @@
    }
   }
  },
+ "hace_40_anos": {
+  "ipc_media_anual": {
+   "1986": 30.397,
+   "1987": 31.994,
+   "2006": 68.205,
+   "2016": 78.725,
+   "2024": 97.396,
+   "2025": 100.0,
+   "2026": 103.314
+  },
+  "deflactor_1986": {
+   "2006": 2.244,
+   "2024": 3.204,
+   "2025": 3.29,
+   "2026": 3.399
+  },
+  "sueldo_1986": {
+   "retribucion_hora_pts": 740,
+   "jornada_pactada_horas": 1786.8,
+   "anual_pts": 1322232.0,
+   "anual_eur": 7947.0,
+   "en_euros_de_2024": 25463.0,
+   "ambito": "industria y servicios (Encuesta de Salarios del INE); no incluye agricultura ni Administraciones públicas",
+   "estado": "V (retribución por hora y jornada, leídas en los anuarios del INE) · C (sueldo anual = hora × jornada)"
+  },
+  "smi_1986": {
+   "mes_pts": 40140,
+   "anual_14_pagas_eur": 3377.0,
+   "en_euros_de_2026": 11479.0
+  },
+  "m2_tasacion_1986_eur": 301.5,
+  "piso_90m2_1986_eur": 27135.0,
+  "piso_90m2_1986_pts": 4510000.0,
+  "anos_sueldo_medio_1986": 3.4,
+  "piso_real_en_euros_de_2026": 92227.0
+ },
  "anos_sueldo_mediano_por_ciudad": {
   "Madrid": {
    "sueldo_mediano": {

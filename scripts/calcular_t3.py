@@ -237,6 +237,54 @@ def emancipacion():
     return {g: {tm[i]: d["value"].get(str(gi * nt + i)) for i in range(nt)} for g, gi in geo.items()}
 
 
+# ------------------------------------------------------------------ hace 40 años
+PTS = 166.386   # pesetas por euro
+def ipc_largo():
+    """IPC mensual enlazado hacia atrás desde 2002 con las tasas de variación anual oficiales (1962-2001)."""
+    num = lambda x: float(x.replace(".", "").replace(",", "."))
+    idx, var = {}, {}
+    for f in csv.reader((RAW / "ine_24077_ipc_indice.csv").read_text(encoding="utf-8-sig").splitlines(), delimiter=";"):
+        if len(f) >= 4 and f[1] == "Índice" and f[3].strip() not in ("", '""'):
+            idx[f[2]] = num(f[3])
+    for f in csv.reader((RAW / "ine_76134_ipc_variaciones_desde_1961.csv").read_text(encoding="utf-8-sig").splitlines(), delimiter=";"):
+        if len(f) >= 4 and f[0] == "Variación anual" and f[3].strip() not in ("", '""'):
+            var[f[2]] = float(f[3].replace(",", "."))
+    I = dict(idx)
+    for y in range(2001, 1961, -1):
+        for m in range(1, 13):
+            I[f"{y}M{m:02d}"] = I[f"{y + 1}M{m:02d}"] / (1 + var[f"{y + 1}M{m:02d}"] / 100)
+    def media(y):
+        v = [I[f"{y}M{m:02d}"] for m in range(1, 13) if f"{y}M{m:02d}" in I]
+        return sum(v) / len(v)
+    return {str(y): r(media(y), 3) for y in (1986, 1987, 2006, 2016, 2024, 2025, 2026)}
+
+
+def hace40():
+    """1986: sueldo medio de la industria y los servicios (Anuario del INE de 1987, Encuesta de Salarios) por la jornada
+    media pactada en convenio (Anuario de 1988). Valores transcritos de los PDF de data/raw/."""
+    hora_pts, jornada_h, smi_mes_pts = 740, 1786.8, 40140
+    anual_pts = hora_pts * jornada_h
+    I = ipc_largo()
+    B = defaultdict(list)
+    filas = list(csv.reader((RAW / "bde_si_1_5_vivienda.csv").read_text(encoding="latin-1").splitlines()))
+    j = next(i for i, d in enumerate(filas[3]) if "Precio del metro cuadrado. Según sociedad de tasación" in d)
+    for f in filas[6:]:
+        if f and re.match(r"[A-Z]{3} \d{4}$", f[0].strip()) and f[j].strip() not in ("", "_"):
+            B[f[0].strip()[-4:]].append(float(f[j]))
+    m2_86 = sum(B["1986"]) / len(B["1986"])
+    return {"ipc_media_anual": I,
+            "deflactor_1986": {a: r(I[a] / I["1986"], 3) for a in ("2006", "2024", "2025", "2026")},
+            "sueldo_1986": {"retribucion_hora_pts": hora_pts, "jornada_pactada_horas": jornada_h,
+                            "anual_pts": r(anual_pts, 0), "anual_eur": r(anual_pts / PTS, 0), "en_euros_de_2024": r(anual_pts / PTS * I["2024"] / I["1986"], 0),
+                            "ambito": "industria y servicios (Encuesta de Salarios del INE); no incluye agricultura ni Administraciones públicas",
+                            "estado": "V (retribución por hora y jornada, leídas en los anuarios del INE) · C (sueldo anual = hora × jornada)"},
+            "smi_1986": {"mes_pts": smi_mes_pts, "anual_14_pagas_eur": r(smi_mes_pts * 14 / PTS, 0),
+                         "en_euros_de_2026": r(smi_mes_pts * 14 / PTS * I["2026"] / I["1986"], 0)},
+            "m2_tasacion_1986_eur": r(m2_86, 1), "piso_90m2_1986_eur": r(m2_86 * M2, 0), "piso_90m2_1986_pts": r(m2_86 * M2 * PTS, -4),
+            "anos_sueldo_medio_1986": r(m2_86 * M2 / (anual_pts / PTS), 1),
+            "piso_real_en_euros_de_2026": r(m2_86 * M2 * I["2026"] / I["1986"], 0)}
+
+
 # ------------------------------------------------------------------ cálculos
 def main():
     S, E, I, B = sueldos(), eaes(), ipc(), bde()
@@ -266,7 +314,7 @@ def main():
         "bde_vivienda": B, "hoy_vivienda": hoy,
         "calculos": {**calc, "sueldo_bruto_anual": sueldo, "anos_de_sueldo_bruto": anos, "variacion_real_pct": real},
         "hogares_epa": hogares(), "gasto_hogares_epf": O, "edad_emancipacion_eurostat": emancipacion(),
-        "ciudades_valor_tasado": ciudades(), "sueldos_zona_ees_microdatos": sueldos_zona(),
+        "ciudades_valor_tasado": ciudades(), "sueldos_zona_ees_microdatos": sueldos_zona(), "hace_40_anos": hace40(),
     }
     # Años de sueldo mediano para un piso de 90 m² en cada ciudad (sueldo de su zona; 2024 y 2016, de su comunidad).
     ca = {"Madrid": ("3", "madrid, comunidad de"), "Córdoba": ("6", "andalucía"), "Valladolid": ("4", "castilla y león")}

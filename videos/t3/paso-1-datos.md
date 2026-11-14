@@ -86,9 +86,27 @@ Fuente: Banco de España, indicadores del mercado de la vivienda (V).
 
 **Lo que dice:** hace 40 años la casa era barata (3 años de renta) pero el dinero era carísimo. Con hipotecas por encima del 14 %, la cuota se llevaba casi la mitad de la renta, y en 1990, el 70 %. Hoy la casa cuesta el triple en años de renta, pero la cuota se come menos porque el dinero está barato.
 
-**Lo que falta para 1986:**
-- El sueldo de una persona. El INE lo tiene en su antigua encuesta de salarios, que no está en su API; habría que sacarlo de los anuarios.
-- El dato por ciudad.
+**1986, el sueldo de una persona (Anuarios del INE, 14-11-2026):**
+
+| | 1986 | 2006 | Hoy |
+|---|---|---|---|
+| Sueldo medio bruto al año | **1,32 millones de pesetas ≈ 7.950 €** (25.460 € de 2024) | 19.686 € | **29.540 €** (2024) |
+| Sueldo medio, descontando la inflación (frente a 1986) | — | | **+16 %** |
+| Piso de 90 m² | **4,5 millones de pesetas ≈ 27.100 €** (92.000 € de 2026) | 175.000 € | **210.000 €** (media de España, 2026) |
+| Piso, descontando la inflación (frente a 1986) | — | | **×2,3** |
+| Años de sueldo medio para el piso | **3,4** | 8,9 | **7,1** |
+| Salario mínimo | 40.140 pesetas al mes (≈ 11.480 € de 2026 al año, 14 pagas) | | |
+
+**Fuentes de 1986:**
+- **Sueldo:** retribución media por hora trabajada en 1986, en la industria y los servicios: **740 pesetas**. Incluye pagas extra y horas extra (Anuario Estadístico de España 1987, cap. VIII, Encuesta de Salarios; V). Multiplicada por la **jornada media pactada en convenio en 1986: 1.786,8 horas** (Anuario de 1988, cap. VII; V), sale el sueldo anual (C). No incluye la agricultura ni las Administraciones públicas.
+- **Salario mínimo:** Anuario de 1987 (fuente: Ministerio de Trabajo; V).
+- **Piso:** precio del m² según las sociedades de tasación, Banco de España: **285 €** en junio de 1986 y **318 €** en diciembre (V). La media del año (301,5 €) por 90 m² es un cálculo propio (C).
+- **Inflación de 1986 a hoy:** ×3,40. Es el IPC del INE enlazado hacia atrás con sus tasas oficiales de variación anual desde 1961 (C; error de enlace por debajo del 0,1 %).
+
+**Lo que dice:**
+- **Hace 40 años, un piso costaba unos 3 años y medio de sueldo medio. Hoy, unos 7.** Descontando la inflación, el piso cuesta 2,3 veces más y el sueldo medio, solo un 16 % más.
+- **Pero el dinero era carísimo:** con hipotecas por encima del 14 %, la cuota se comía entre el 42 % y el 53 % de la renta del hogar en 1987. Hoy, el 38 %.
+
 
 ## 1. La casa (media de España)
 | Dato | 2006 | 2016 | Hoy | Fuente | Estado |
