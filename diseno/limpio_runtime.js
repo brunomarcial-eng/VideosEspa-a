@@ -106,6 +106,12 @@ function trabaja(id, t, o = {}) {
     brazo: [[t1 - per, f % 2 ? a : b], [t1, f % 2 ? b : a]], mira: o.mira ?? 0, ojos: o.ojos ?? "normal",
     boca: o.boca ?? "sonrisa", incl: o.incl ?? 0, fase: fa });
 }
+// Boca de quien habla: se abre y se cierra mientras suena su frase (e.b → e.f); si no, sonríe o lo que se pida.
+function habla(t, e, quieto) {
+  if (t < e.b || t > e.f) return quieto ?? "sonrisa";
+  const k = Math.floor((t - e.b) * 8.5) % 4;
+  return k === 0 ? "o" : k === 1 ? "grande" : k === 2 ? "o" : "seria";
+}
 // Vapor que sube (cafetera): círculos que suben, crecen y se desvanecen.
 function vapor(p, n, t, x, y) {
   for (let k = 0; k < n; k++) {

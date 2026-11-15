@@ -1,17 +1,18 @@
 {
  "id": "t3",
- "version": 1,
+ "version": 2,
  "titulo": "¿Quién lo tuvo más difícil para comprar casa: tu padre o tú?",
  "titulo_alternativo": "¿Los jóvenes no compran casa porque se lo gastan todo en Netflix y viajes?",
  "pregunta": "Padre (62) contra hijo (31): ¿comprar casa es más difícil hoy que en 1986?",
  "datos": "data/clean/t3_vivienda.json",
  "aprobacion_datos": "14-11-2026: Bruno aprueba los datos (1986, 2006 y hoy) y pide dos vídeos de un minuto, en formato discusión padre-hijo, con más polémica",
- "formato": "Discusión entre un padre de 62 años y su hijo de 31 (dos voces). Texto en el estilo oral de Bruno (clon-bruno). Estilo limpio: tarjeta con el dato, subtítulo grande, dos personajes en una cocina. Un minuto.",
+ "formato": "Discusión entre un padre de 62 años y su hijo de 31 (dos voces). Texto en el estilo oral de Bruno (clon-bruno). Estilo limpio: tarjeta con el dato, subtítulo grande, dos personajes en una cocina. Un minuto. Diálogo con expresiones de la calle (Bruno, 15-11-2026): «un duro», «findes», «a pulmón», «pavos», «un pastón», «te la compro».",
  "duracion_max_s": 70,
  "personajes": {
   "padre": {
    "anyo": "62 años",
-   "genero": "padre"
+   "genero": "padre",
+   "voz": "padre (opción C, elegida por Bruno el 15-11-2026)"
   },
   "hijo": {
    "anyo": "31 años",
@@ -63,7 +64,7 @@
    "n": 1,
    "quien": "padre",
    "funcion": "gancho: la acusación",
-   "voz": "¡Es que no ahorráis nada! Bali, Netflix, cañas, restaurantes… Así, normal que no os compréis una casa.",
+   "voz": "¡Es que no ahorráis un duro! Tanto viajecito, cañas todos los findes, que si Netflix, que si Disney, que si Uber… En mis tiempos salíamos a comer una vez al mes, ¡y da gracias! Y vosotros, todos los días de jarana.",
    "pantalla": "¿Quién lo tuvo más difícil para comprar casa?",
    "sello": null,
    "imagen": "Cocina de una casa. El padre (62 años, bigote, canas, camisa de cuadros) señala al hijo (31, sudadera) con el móvil; en el móvil del hijo, una foto de playa. Iconos que saltan sobre el hijo: avión, tele, caña, plato."
@@ -72,7 +73,7 @@
    "n": 2,
    "quien": "hijo",
    "funcion": "dato: 1986",
-   "voz": "Papá, en 1986 un piso de 90 metros costaba cuatro millones y medio de pesetas. Tres años y medio de un sueldo medio.",
+   "voz": "Pero papá, ¿qué me estás contando? En 1986, un piso de 90 metros costaba cuatro millones y medio de pesetas. Tres años y medio de sueldo.",
    "pantalla": "1986 · Piso de 90 m²: 4,5 millones de pesetas · 3,4 años de sueldo medio",
    "sello": "BANCO DE ESPAÑA (sociedades de tasación) · INE (anuarios: salario por hora y jornada de 1986) · cálculo propio",
    "imagen": "Foto antigua (sepia) que cae: el padre joven delante de un bloque de pisos con un Seat aparcado. Barra de 3,4 años de sueldo."
@@ -81,8 +82,8 @@
    "n": 3,
    "quien": "padre",
    "funcion": "réplica",
-   "voz": "Y me lo pagué. A base de esfuerzo.",
-   "pantalla": "«A base de esfuerzo»",
+   "voz": "¡Y me lo pagué a pulmón, chaval!",
+   "pantalla": "«A pulmón»",
    "sello": null,
    "imagen": "El padre se cruza de brazos, orgulloso."
   },
@@ -90,18 +91,19 @@
    "n": 4,
    "quien": "hijo",
    "funcion": "dato: hoy",
-   "voz": "Hoy ese mismo piso cuesta 210.000 euros. Siete años de sueldo. El doble.",
-   "pantalla": "HOY · Piso de 90 m²: 210.000 € · 7,1 años de sueldo medio",
+   "voz": "Ya. Pues hoy ese piso cuesta 210.000 pavos. Siete años de sueldo. El doble.",
+   "pantalla": "HOY · Piso de 90 m²: 210.000 € · 7,1 años de sueldo medio (en 1986: 3,4)",
    "nota": "En 2006, en plena burbuja: 8,9 años",
    "sello": "BANCO DE ESPAÑA / MINISTERIO DE VIVIENDA (valor tasado, 1.er semestre de 2026) · INE (Encuesta Anual de Estructura Salarial 2024) · cálculo propio",
+   "grafico": true,
    "imagen": "Foto de hoy al lado de la de 1986. La barra de años crece hasta 7,1, el doble que la de 1986."
   },
   {
    "n": 5,
    "quien": "padre",
    "funcion": "réplica",
-   "voz": "Ya, pero vosotros cobráis mucho más.",
-   "pantalla": "«Pero cobráis más»",
+   "voz": "Venga, hombre, que ahora cobráis un pastón.",
+   "pantalla": "«Ahora cobráis un pastón»",
    "sello": null,
    "imagen": "El padre levanta una ceja."
   },
@@ -109,7 +111,7 @@
    "n": 6,
    "quien": "hijo",
    "funcion": "dato: sueldo frente a piso",
-   "voz": "Quitando la inflación, el sueldo ha subido un 16 %. El piso cuesta 2,3 veces más.",
+   "voz": "¿Un pastón? Quitando la inflación, el sueldo ha subido un 16 %. El piso, 2,3 veces.",
    "pantalla": "Desde 1986, descontada la inflación · Sueldo medio: +16 % · Piso: ×2,3",
    "sello": "CÁLCULO PROPIO con datos del INE (IPC, salarios) y del Banco de España",
    "grafico": true,
@@ -119,7 +121,7 @@
    "n": 7,
    "quien": "padre",
    "funcion": "contraataque",
-   "voz": "¡Pero yo pagaba la hipoteca al 15 %!",
+   "voz": "¡Pero yo pagaba la hipoteca al 15 %, que era un atraco!",
    "pantalla": "Hipotecas en 1989: 15 %",
    "sello": "DATO OFICIAL · BANCO DE ESPAÑA (tipo medio de los préstamos para vivienda, 1989; la serie empieza ese año)",
    "imagen": "El padre da un golpe en la mesa; salta un «15 %» rojo."
@@ -128,7 +130,7 @@
    "n": 8,
    "quien": "hijo",
    "funcion": "concesión con dato",
-   "voz": "Ahí te doy la razón: la cuota se comía casi la mitad de lo que entraba en casa. Hoy, el 38 %.",
+   "voz": "Ahí te la compro: la cuota se comía casi la mitad de lo que entraba en casa. Hoy, el 38 %.",
    "pantalla": "La cuota se comía · 1987: 47 % · hoy: 38 % de la renta del hogar",
    "sello": "DATO OFICIAL · BANCO DE ESPAÑA (esfuerzo teórico sin deducciones)",
    "imagen": "Dos quesitos: en 1987, casi la mitad del sueldo de casa para la cuota; hoy, algo más de un tercio."
@@ -155,7 +157,7 @@
    "n": 11,
    "quien": "hijo",
    "funcion": "veredicto",
-   "voz": "Así que, ¿mejora o empeora? Comprar casa, empeora: el doble de años de sueldo. La cuota, mejora.",
+   "voz": "O sea, ¿mejora o empeora? La casa, empeora: el doble de años de sueldo. La cuota, mejora.",
    "pantalla": "EL VEREDICTO · Comprar casa frente a 1986: EMPEORA (3,4 → 7,1 años de sueldo) · La cuota: MEJORA",
    "sello": "CÁLCULO PROPIO con datos del INE y del Banco de España",
    "imagen": "Tarjeta con dos filas: EMPEORA (rojo no; marca gruesa) y MEJORA."
@@ -164,8 +166,8 @@
    "n": 12,
    "quien": "padre",
    "funcion": "remate cómico",
-   "voz": "Ya… ¿Y los 50 euros de la cena de anoche, qué?",
-   "pantalla": "",
+   "voz": "Ya… ¿Y los 50 euros de la cena de anoche, qué, listillo?",
+   "pantalla": "«¿Y los 50 euros de la cena?»",
    "sello": null,
    "imagen": "El padre saca un tique de restaurante; el hijo pone los ojos en blanco."
   },

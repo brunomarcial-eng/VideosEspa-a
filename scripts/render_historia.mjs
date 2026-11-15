@@ -25,8 +25,9 @@ const FPS = 30;
 const dir = path.join(RAIZ, "videos", id);
 const leer = (f) => JSON.parse(readFileSync(f, "utf8"));
 const guion = leer(path.join(dir, "guion.json"));
-const linea = leer(path.join(dir, "audio", "linea_tiempo.json"));
-const cues = leer(path.join(dir, "audio", "cues.json"));
+// --linea y --cues permiten probar las escenas con una línea de tiempo de prueba (antes de tener la voz).
+const linea = leer(val("--linea", path.join(dir, "audio", "linea_tiempo.json")));
+const cues = leer(val("--cues", path.join(dir, "audio", "cues.json")));
 const mod = await import(path.join(dir, "escenas.mjs"));
 const D = mod.datos(leer(path.join(RAIZ, guion.datos)));
 // El estilo lo decide el vídeo: escenas.mjs exporta ESTILO = "limpio" (tarjeta y subtítulo grande) o nada (collage).

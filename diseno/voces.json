@@ -26,6 +26,14 @@
    "voz": "es_ES-sharvard-medium#1",
    "noise_scale": 0.62,
    "noise_w": 0.5
+  },
+  "padre": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-padre.wav",
+   "ref_txt": "diseno/voces/ref-padre.txt",
+   "estado": "elegida por Bruno el 15-11-2026 (opción C del casting del padre)",
+   "nota": "Padre de T3 (62 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/padre_voz.py, opción C), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador."
   }
  },
  "edad": {
@@ -38,6 +46,14 @@
    "velocidad": 0.97
   },
   "narrador": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "padre": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "hijo": {
    "tono": 1.0,
    "velocidad": 1.0
   }

@@ -46,6 +46,7 @@ export function persona(id, epoca, o = {}) {
       ${largo ? `<path d="M-108 -500 C-118 -606 -40 -616 0 -612 C44 -616 118 -606 108 -500 L114 -372 Q114 -350 92 -350 H-92 Q-114 -350 -114 -372 Z" fill="${pelo}"/>` : ""}
       <circle cx="-93" cy="-482" r="19" fill="${piel2}"/><circle cx="93" cy="-482" r="19" fill="${piel2}"/>
       <circle cx="0" cy="-486" r="96" fill="${piel}"/>
+      ${o.bigote ? `<path d="M-46 -458 Q-24 -478 0 -467 Q24 -478 46 -458 Q24 -451 0 -459 Q-24 -451 -46 -458 Z" fill="${o.colorBigote ?? pelo}"/>` : ""}
       ${barba ? `<path d="M-86 -456 C-84 -404 -44 -386 0 -386 C44 -386 84 -404 86 -456 C66 -428 34 -420 0 -420 C-34 -420 -66 -428 -86 -456 Z" fill="${pelo}"/>` : ""}
       ${largo
         ? `<path d="M-100 -470 C-112 -590 -40 -608 4 -604 C60 -606 114 -576 100 -470 C92 -522 66 -544 34 -550 C12 -522 -32 -508 -74 -508 C-88 -502 -96 -488 -100 -470 Z" fill="${pelo}"/>
@@ -299,7 +300,7 @@ function comprobar(escenas, guion) {
     const b = guion.beats.find((x) => x.n === e.n);
     const permitido = b.pantalla + " " + (b.nota || "") + " " + (guion.no_dato || []).join(" ");
     const texto = (e.tarjeta + " " + e.svg).replace(/<style[\s\S]*?<\/style>/g, "").replace(/<[^>]+>/g, " ");
-    const nums = (texto.match(/\d+(?:,\d+)?/g) || []).filter((n) => !/^20\d\d$/.test(n));
+    const nums = (texto.match(/\d+(?:,\d+)?/g) || []).filter((n) => !/^(19|20)\d\d$/.test(n));
     for (const n of nums) if (!permitido.includes(n)) fallos.push(`escena ${e.n}: muestra «${n}», que no está en la pantalla del guion`);
     if (nums.some((n) => !(guion.no_dato || []).includes(n)) && !e.tarjeta.includes('class="fuente"')) fallos.push(`escena ${e.n}: hay cifras y falta la fuente en la tarjeta`);
   }
@@ -310,7 +311,7 @@ export function construirLimpio({ guion, linea, cues, escenas, D, capas = "" }) 
   comprobar(escenas, guion);
   const planos = linea.planos;
   const inicio = (i) => (i === 0 ? 0 : planos[i].ini - ADELANTO);
-  const esc2 = escenas.map((e, i) => `{n:${e.n},set:${JSON.stringify(e.set || "super")},t0:${inicio(i).toFixed(3)},t1:${(i + 1 < escenas.length ? inicio(i + 1) : linea.duracion).toFixed(3)},b:${planos[i].ini},c:CUES,
+  const esc2 = escenas.map((e, i) => `{n:${e.n},set:${JSON.stringify(e.set || "super")},t0:${inicio(i).toFixed(3)},t1:${(i + 1 < escenas.length ? inicio(i + 1) : linea.duracion).toFixed(3)},b:${planos[i].ini},f:${planos[i].fin},c:CUES,
     fn:${e.fn.toString()},cam:${e.cam ? e.cam.toString() : "null"}}`).join(",\n");
   const caps = (guion.capitulos || [{ beats: planos.map((p) => p.n) }]).map((c, i, arr) => {
     const t0 = i === 0 ? 0 : planos.find((p) => p.n === c.beats[0]).ini - ADELANTO;
