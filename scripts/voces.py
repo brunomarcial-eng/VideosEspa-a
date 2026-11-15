@@ -108,17 +108,41 @@ def a_sr(ruta, filtro=None, sr_in=None) -> np.ndarray:
 
 
 def qwen(perfil):
-    clave = perfil["modelo"]
-    if clave not in _qwen:
+    """Modelo (uno por nombre) y voz de referencia (una por perfil). Antes la caché iba solo por modelo y
+    el primer personaje que hablaba prestaba su voz a todos los demás (fallo de T3, 15-11-2026)."""
+    modelo = perfil["modelo"]
+    if modelo not in _qwen:
         import torch
         from qwen_tts import Qwen3TTSModel
         torch.set_num_threads(os.cpu_count() or 4)
-        m = Qwen3TTSModel.from_pretrained(clave, device_map="cpu", dtype=torch.float32)
+        _qwen[modelo] = Qwen3TTSModel.from_pretrained(modelo, device_map="cpu", dtype=torch.float32)
+    m = _qwen[modelo]
+    clave = (modelo, perfil["ref"], perfil["ref_txt"])
+    if clave not in _qwen:
         ref = str(RAIZ / perfil["ref"])
         txt = (RAIZ / perfil["ref_txt"]).read_text(encoding="utf-8").strip()
         prompt = m.create_voice_clone_prompt(ref_audio=ref, ref_text=txt) if hasattr(m, "create_voice_clone_prompt") else None
         _qwen[clave] = (m, ref, txt, prompt)
     return _qwen[clave]
+
+
+# Parecido de la voz con la de referencia del personaje (Resemblyzer, Apache-2.0): evita que una toma
+# salga con otro timbre. Si el paquete no está, no se comprueba.
+_enc, _emb_ref = None, {}
+def parecido_voz(perfil, a):
+    global _enc
+    if perfil.get("motor") != "qwen-clon":
+        return None
+    try:
+        from resemblyzer import VoiceEncoder, preprocess_wav
+    except ImportError:
+        return None
+    if _enc is None:
+        _enc = VoiceEncoder("cpu", verbose=False)
+    if perfil["ref"] not in _emb_ref:
+        r, sr = sf.read(str(RAIZ / perfil["ref"]), dtype="float32")
+        _emb_ref[perfil["ref"]] = _enc.embed_utterance(preprocess_wav(r if r.ndim == 1 else r.mean(1), source_sr=sr))
+    return float(_enc.embed_utterance(preprocess_wav(a, source_sr=SR)) @ _emb_ref[perfil["ref"]])
 
 
 def sintetizar(perfil: dict, texto: str, semilla: int = 0, velocidad: float = 1.0) -> np.ndarray:
@@ -359,7 +383,14 @@ def generar_linea(perfil, cfg, texto, semilla_base, asr, registro):
             a = np.concatenate(partes)
         a = limpiar(a, cfg.get("hueco_max_s", 0.5), cfg.get("hueco_queda_s", 0.38))
         ev = evaluar(asr, a, texto)
-        registro.append(f"    toma {k + 1} (semilla {semilla}): {'BUENA' if ev['ok'] else 'mala'} · {ev['parecido']} · "
+        pv = parecido_voz(perfil, a)
+        if pv is not None:
+            ev["voz"] = round(pv, 3)
+            if pv < cfg.get("parecido_voz_min", 0.85):
+                ev["problemas"].append(f"voz distinta ({pv:.2f})")
+                ev["ok"] = False
+            ev["nota"] = round(ev["nota"] + 0.5 * (pv - 0.85), 4)
+        registro.append(f"    toma {k + 1} (semilla {semilla}): {'BUENA' if ev['ok'] else 'mala'} · {ev['parecido']} · voz {ev.get('voz', '-')} · "
                         f"{len(a) / SR:.1f} s · {ev['ritmo']} l/s · «{ev['oido']}»" + (f" · {'; '.join(ev['problemas'])}" if ev["problemas"] else ""))
         print(registro[-1], flush=True)
         if mejor is None or (ev["ok"], ev["nota"]) > (mejor[1]["ok"], mejor[1]["nota"]):

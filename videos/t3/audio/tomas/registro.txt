@@ -1,12 +1,11 @@
 plano 1: «¡Es que no ahorráis un duro! Viajecitos, cañas cada finde, Netflix, Uber… ¡Siempre de jarana! Nosotros comíamos fuera una vez al mes, y da gracias.»
-    toma 1 (semilla 1000): mala · 0.996 · 10.2 s · 11.1 l/s · «Es que no ahorráis un duro. Viajecitos, cañas cada fin de Netflix, Uber, siempre dejarán. Nosotros comíamos fuera una vez al mes y da gracias.» · sin pausa tras «Uber…» (0.26 s)
-    toma 2 (semilla 1001): BUENA · 0.996 · 10.0 s · 11.3 l/s · «Es que no ahorrais un duro. Viajecitos, cañas cada fin de Netflix Uber, siempre dejarán. Nosotros comíamos fuera una vez al mes y da gracias.»
+    toma guardada (semilla 1001): BUENA · «Es que no ahorrais un duro. Viajecitos, cañas cada fin de Netflix Uber, siempre dejarán. Nosotros comíamos fuera una vez al mes y da gracias.»
 plano 2: «Pero papá, ¿qué me estás contando? En 1986, un piso de 90 metros costaba cuatro millones y medio de pesetas. Tres años y medio de sueldo.»
     toma guardada (semilla 2001): BUENA · «Pero papá, ¿qué me estás contando? En 1986, un piso de 90 metros costaba 4 millones y medio de pesetas, 3 años y medio de sueldo.»
 plano 3: «¡Y me lo pagué a pulmón, chaval!»
     toma guardada (semilla 3000): BUENA · «¡Y me lo pagué a pulmón, chaval!»
 plano 4: «Ya. Pues hoy ese piso cuesta 210.000 pavos. Siete años de sueldo. El doble.»
-    toma 1 (semilla 4001): BUENA · 1.0 · 6.4 s · 12.6 l/s · «Ya, pues hoy ese piso cuesta 210.000 pavos, 7 años de sueldo, el doble.»
+    toma guardada (semilla 4001): BUENA · «Ya, pues hoy ese piso cuesta 210.000 pavos, 7 años de sueldo, el doble.»
 plano 5: «Venga, hombre, que ahora cobráis un pastón.»
     toma guardada (semilla 5000): BUENA · «¡Venga hombre, que ahora cobráis un pastón!»
 plano 6: «¿Un pastón? Quitando la inflación, el sueldo ha subido un 16 %. El piso, 2,3 veces.»
@@ -14,12 +13,8 @@ plano 6: «¿Un pastón? Quitando la inflación, el sueldo ha subido un 16 %. El
 plano 7: «¡Pero yo pagaba la hipoteca al 15 %, que era un atraco!»
     toma guardada (semilla 7000): mala · «pero yo pagaba la hipoteca al 15%, que era un atraco.»
 plano 8: «Ahí te la compro: la cuota se comía casi la mitad de lo que entraba en casa. Hoy, el 38 %.»
-    toma guardada (semilla 8000): BUENA · «Ahí te la compro. La cuota se comía casi la mitad de lo que entraba en casa. Hoy el 38%.»
+    toma guardada (semilla 8000): BUENA · «Ahí te la compro. La cuota se comía casi la mitad de lo que entraba en casa. Hoy, el 38%.»
 plano 10: «Vosotros pagabais intereses. Nosotros pagamos ladrillo.»
-    toma guardada (semilla 10000): BUENA · «vosotros pagabais intereses, nosotros pagamos ladrillo.»
-plano 11: «O sea, ¿mejora o empeora? La casa, empeora. La cuota, mejora.»
-    toma 1 (semilla 11000): BUENA · 1.0 · 5.4 s · 8.2 l/s · «O sea, mejora o empeora? La casa empeora. La cuota mejora.»
-plano 12: «Ya… ¿Y los 50 euros de la cena de anoche, qué, listillo?»
-    toma guardada (semilla 12000): BUENA · «Ya... y los 50 euros de la cena de anoche, ¡qué listillo!»
-plano 13: «¿Quién tiene razón? Te leo.»
-    toma guardada (semilla 13000): BUENA · «¿Quién tiene razón? Te leo.»
+    toma guardada (semilla 10106): BUENA · «vosotros pagabais intereses, nosotros pagamos ladrillo.»
+plano 11: «¿Quién lo tuvo más fácil? ¿Tú qué opinas?»
+    toma guardada (semilla 11106): BUENA · «¿Quién lo tuvo más fácil? ¿Tú qué opinas?»

@@ -6,7 +6,7 @@
 
 import { C, persona, bocadillo, tarjeta } from "../../diseno/limpio.mjs";
 import { bandera } from "../../diseno/barrio.mjs";
-import { cocina, icono, foto, billete, banco, ladrillo, tique, boton, quesito } from "../../diseno/casa.mjs";
+import { cocina, icono, foto, billete, banco, ladrillo, boton, quesito } from "../../diseno/casa.mjs";
 
 export const ESTILO = "limpio";
 const F_86 = "Banco de España (m² de 1986, sociedades de tasación) e INE (sueldo de 1986, anuarios). Cálculo propio";
@@ -172,46 +172,17 @@ export function escenas(D) {
       },
       cam: function (t, e) { const k = t - e.c["c10-lad"] - 0.3, g = k >= 0 && k < 0.18; return { dx: 0, dy: g ? azar(7, Math.floor(t * 30)) * 9 : 0 }; } },
 
-    // 11 · Hijo: «O sea, ¿mejora o empeora? La casa, empeora. La cuota, mejora.»
+    // 11 · Hijo: «¿Quién lo tuvo más fácil? ¿Tú qué opinas?»
     { n: 11, set: "vacio",
-      svg: `${pareja("s11")}`,
-      tarjeta: tarjeta(11, "El veredicto · frente a 1986", `<div class="tit" style="font-size:58px">¿<mark id="m11a">Mejora</mark> o <mark id="m11b">empeora</mark>?</div>
-        <div class="ops"><div class="op" id="c11-o0"><i></i><span class="lab" style="width:270px">Comprar casa</span><b>Empeora</b><span style="font:600 30px Cap;color:${C.gris};margin-left:6px;white-space:nowrap">${es(D.anos86)} → ${es(D.anosHoy)} años</span></div>
-        <div class="op" id="c11-o1"><i></i><span class="lab" style="width:270px">La cuota</span><b>Mejora</b></div></div>`, { fuente: F_C }),
+      svg: `${pareja("s11")}${boton("s11-bp", "PADRE", "#8C6F5A")}${boton("s11-bh", "HIJO", "#56738A")}${bocadillo("s11-boc")}`,
+      tarjeta: tarjeta(11, "Te toca", `<div class="tit">¿Quién lo tuvo más <mark id="m11">fácil</mark>: el padre o el hijo?</div><div class="sub" id="c11-sub">¿Tú qué opinas? Te leo en los comentarios.</div>`),
       fn: function (t, e) {
         const c = e.c;
-        marca("m11a", t, c["c11-m"]); marca("m11b", t, c["c11-e"]);
-        sube("c11-o0", t, c["c11-casa"] - 0.5); sube("c11-o1", t, c["c11-cuota"] - 0.6);
-        $("c11-o0").className = "op" + (t >= c["c11-casa"] ? " si" : "");
-        $("c11-o1").className = "op" + (t >= c["c11-cuota"] ? " si" : "");
-        persona("s11-padre", t, { x: 210, y: 1440, s: 0.78, mira: 1, boca: [[0, "seria"], [c["c11-cuota"], "sonrisa"]], brazo: [[0, "abajo"], [c["c11-cuota"], "arriba"]], fase: 1 });
-        persona("s11-hijo", t, { x: 870, y: 1440, s: 0.78, mira: 0, boca: habla(t, e), brazo: [[0, "abajo"], [c["c11-casa"], "senala"], [c["c11-cuota"], "hombros"]], espejo: true, fase: 2 });
-      },
-      cam: function (t, e) { const k = t - e.c["c11-casa"], g = k >= 0 && k < 0.22; return { dx: g ? azar(3, Math.floor(t * 30)) * 9 : 0, dy: g ? azar(4, Math.floor(t * 30)) * 9 : 0 }; } },
-
-    // 12 · Padre: «Ya… ¿Y los 50 euros de la cena de anoche, qué, listillo?»
-    { n: 12, set: "vacio",
-      svg: `${pareja("s12")}${tique("s12-t", "50 €")}`,
-      tarjeta: tarjeta(12, "Padre", `<div class="tit">«¿Y los 50 euros de la <mark id="m12">cena</mark>?»</div>`, { tono: "pasado" }),
-      fn: function (t, e) {
-        const c = e.c;
-        pop("s12-t", t, c["c12-tique"], 430, 860, { r: -8, s: 1.1 });
-        marca("m12", t, c["c12-tique"] + 0.3);
-        persona("s12-padre", t, { x: 210, y: 1440, s: 0.78, mira: 1, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c12-tique"] - 0.1, "senala"]], ojos: [[0, "normal"], [c["c12-listillo"], "felices"]], fase: 1 });
-        persona("s12-hijo", t, { x: 870, y: 1440, s: 0.78, mira: [[0, -1], [c["c12-listillo"], 0]], boca: [[0, "seria"], [c["c12-listillo"], "o"]], ojos: [[0, "normal"], [c["c12-listillo"], "grandes"]], incl: [[c["c12-listillo"], 8]], espejo: true, fase: 2 });
-      } },
-
-    // 13 · Hijo: «¿Quién tiene razón? Te leo.»
-    { n: 13, set: "vacio",
-      svg: `${pareja("s13")}${boton("s13-bp", "PADRE", "#8C6F5A")}${boton("s13-bh", "HIJO", "#56738A")}${bocadillo("s13-boc")}`,
-      tarjeta: tarjeta(13, "Te toca", `<div class="tit">¿Quién tiene <mark id="m13">razón</mark>: el padre o el hijo?</div><div class="sub" id="c13-sub">Te leo en los comentarios.</div>`),
-      fn: function (t, e) {
-        const c = e.c;
-        pop("s13-bp", t, c["c13-botones"], 220, 900); pop("s13-bh", t, c["c13-botones"] + 0.15, 860, 900);
-        if (pop("s13-boc", t, c["c13-boc"], 540, 700, { s: 1.0 }) >= 0) for (let i = 0; i < 3; i++) attr("s13-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - c["c13-boc"]) * 8 - i * 0.9))).toFixed(1));
-        marca("m13", t, c["c13-botones"] + 0.3); sube("c13-sub", t, c["c13-boc"] - 0.2);
-        persona("s13-padre", t, { x: 210, y: 1440, s: 0.78, mira: 0, boca: "sonrisa", brazo: [[0, "abajo"], [c["c13-botones"], "arriba"]], fase: 1 });
-        persona("s13-hijo", t, { x: 870, y: 1440, s: 0.78, mira: 0, boca: habla(t, e), brazo: [[0, "abajo"], [c["c13-botones"] + 0.15, "arriba"]], espejo: true, fase: 2 });
+        pop("s11-bp", t, c["c11-botones"], 220, 900); pop("s11-bh", t, c["c11-botones"] + 0.15, 860, 900);
+        if (pop("s11-boc", t, c["c11-boc"], 540, 700, { s: 1.0 }) >= 0) for (let i = 0; i < 3; i++) attr("s11-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - c["c11-boc"]) * 8 - i * 0.9))).toFixed(1));
+        marca("m11", t, c["c11-botones"] + 0.3); sube("c11-sub", t, c["c11-boc"] - 0.2);
+        persona("s11-padre", t, { x: 210, y: 1440, s: 0.78, mira: 0, boca: "sonrisa", brazo: [[0, "abajo"], [c["c11-botones"], "arriba"]], fase: 1 });
+        persona("s11-hijo", t, { x: 870, y: 1440, s: 0.78, mira: 0, boca: habla(t, e), brazo: [[0, "abajo"], [c["c11-botones"] + 0.15, "arriba"]], espejo: true, fase: 2 });
       } },
   ];
 }

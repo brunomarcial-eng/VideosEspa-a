@@ -150,7 +150,9 @@ def verificar(ruta_guion, ritmo=RITMO):
 
     # 6: cierre y años
     # Veredicto claro: «¿Mejora o empeora?» (o, si de verdad no se puede decidir, «¿mejora, empeora o depende?»)
-    if not any(re.search(r"mejora,? (o )?empeora", b["voz"].lower()) for b in g["beats"]):
+    if g.get("sin_veredicto"):
+        avisos.append("sin veredicto hablado: " + g["sin_veredicto"])
+    elif not any(re.search(r"mejora,? (o )?empeora", b["voz"].lower()) for b in g["beats"]):
         fallos.append("falta el veredicto «¿Mejora o empeora?» en la voz")
     anyos = sorted(set(re.findall(r"\b(?:19|20)\d\d\b", texto_total)))
     if len(anyos) < 3:

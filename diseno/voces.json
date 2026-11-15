@@ -34,6 +34,14 @@
    "ref_txt": "diseno/voces/ref-padre.txt",
    "estado": "elegida por Bruno el 15-11-2026 (opción C del casting del padre)",
    "nota": "Padre de T3 (62 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/padre_voz.py, opción C), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador."
+  },
+  "hijo": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-hijo.wav",
+   "ref_txt": "diseno/voces/ref-hijo.txt",
+   "estado": "elegida por Bruno el 15-11-2026 (la voz del hijo en los primeros 45 s de T3)",
+   "nota": "Hijo de T3 (31 años). Salió al clonar la voz del padre con otras semillas; Bruno la da por buena. Se fija clonando su propia toma (línea 2 de T3)."
   }
  },
  "edad": {
@@ -73,5 +81,6 @@
  "hueco_max_s": 1.0,
  "hueco_queda_s": 0.75,
  "pausa_tras_dato_s": 1.0,
- "nota_pausas": "Pausas: las naturales de la voz no se tocan (solo se acortan silencios de más de 1 s, que son fallos del modelo). Entre líneas, 0,45 s; tras una línea con dato en la tarjeta, 1 s, para que dé tiempo a leerlo."
+ "nota_pausas": "Pausas: las naturales de la voz no se tocan (solo se acortan silencios de más de 1 s, que son fallos del modelo). Entre líneas, 0,45 s; tras una línea con dato en la tarjeta, 1 s, para que dé tiempo a leerlo.",
+ "parecido_voz_min": 0.85
 }

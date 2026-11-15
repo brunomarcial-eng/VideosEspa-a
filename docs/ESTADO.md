@@ -83,3 +83,12 @@ UV_HTTP_TIMEOUT=300 uv pip install --python ~/.venv-qwen/bin/python qwen-tts fas
 - `sonido.py`: campanilla de puerta, persiana, vapor y golpe.
 - `verificar_guion.py`: operación `pct_de` (a como % de b) y `duracion_max_s` por guion.
 - `descargar_datos.py` acepta nombres de fichero para bajar solo esos.
+
+## 9. Voces con varios personajes (T3, 15-11-2026)
+- **Fallo corregido en `scripts/voces.py`:** la voz de referencia se guardaba por modelo, no por personaje, así que el primero que hablaba prestaba su voz a todos. Ahora va por perfil.
+- **Control nuevo:** `voces.py` mide el parecido de cada toma con la voz de su personaje (Resemblyzer). Por debajo de 0,85 la repite con otra semilla.
+- **Elegir entre varias tomas:** `scripts/pruebas/elegir_toma.py` saca varias tomas de una línea y se queda con la más parecida a su personaje y menos al otro.
+- **Voces de T3:**
+  - Padre: `diseno/voces/ref-padre.wav`, la opción C, inventada con VoiceDesign.
+  - Hijo: `diseno/voces/ref-hijo.wav`, su propia toma de los primeros 45 s, que Bruno da por buena.
+- **Final de T3 sin veredicto hablado:** Bruno pidió quitar «¿mejora o empeora?» y acabar con «¿Quién lo tuvo más fácil? ¿Tú qué opinas?». El veredicto queda en la descripción.

@@ -2,7 +2,7 @@
 
 Pregunta: Padre (62) contra hijo (31): ¿comprar casa es más difícil hoy que en 1986?  
 Datos: `data/clean/t3_vivienda.json` · 14-11-2026: Bruno aprueba los datos (1986, 2006 y hoy) y pide dos vídeos de un minuto, en formato discusión padre-hijo, con más polémica  
-Duración estimada de la voz: **59 s** (a 3.05 palabras/s) · Años en pantalla: 1986, 1987, 1989, 2006  
+Duración estimada de la voz: **51 s** (a 3.05 palabras/s) · Años en pantalla: 1986, 1987, 1989, 2006  
 Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La columna «Imagen» es la idea del plano; cada estilo la dibuja a su manera en el Paso 3.
 
 | # | Tiempo | Quién | Voz | En pantalla | Sello de fuente | Imagen |
@@ -16,9 +16,7 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 7 | 36-39 s | padre (62 años) | ¡Pero yo pagaba la hipoteca al 15 %, que era un atraco! | Hipotecas en 1989: 15 % | DATO OFICIAL · BANCO DE ESPAÑA (tipo medio de los préstamos para vivienda, 1989; la serie empieza ese año) | El padre da un golpe en la mesa; salta un «15 %» rojo. |
 | 8 | 39-47 s | hijo (31 años) | Ahí te la compro: la cuota se comía casi la mitad de lo que entraba en casa. Hoy, el 38 %. | La cuota se comía · 1987: 47 % · hoy: 38 % de la renta del hogar | DATO OFICIAL · BANCO DE ESPAÑA (esfuerzo teórico sin deducciones) | Dos quesitos: en 1987, casi la mitad del sueldo de casa para la cuota; hoy, algo más de un tercio. |
 | 10 | 47-49 s | hijo (31 años) | Vosotros pagabais intereses. Nosotros pagamos ladrillo. | Antes: intereses · Hoy: ladrillo | — | Pantalla partida: a la izquierda, un billete que se lleva el banco; a la derecha, un ladrillo enorme. |
-| 11 | 49-52 s | hijo (31 años) | O sea, ¿mejora o empeora? La casa, empeora. La cuota, mejora. | EL VEREDICTO · Comprar casa frente a 1986: EMPEORA (3,4 → 7,1 años de sueldo) · La cuota: MEJORA | CÁLCULO PROPIO con datos del INE y del Banco de España | Tarjeta con dos filas: EMPEORA (rojo no; marca gruesa) y MEJORA. |
-| 12 | 53-57 s | padre (62 años) | Ya… ¿Y los 50 euros de la cena de anoche, qué, listillo? | «¿Y los 50 euros de la cena?» | — | El padre saca un tique de restaurante; el hijo pone los ojos en blanco. |
-| 13 | 57-59 s | hijo (31 años) | ¿Quién tiene razón? Te leo. | ¿Quién tiene razón: el padre o el hijo? | — | Los dos miran a cámara. Dos botones: «PADRE» e «HIJO», y un bocadillo de comentario. |
+| 11 | 49-51 s | hijo (31 años) | ¿Quién lo tuvo más fácil? ¿Tú qué opinas? | ¿Quién lo tuvo más fácil: el padre o el hijo? | — | Los dos miran a cámara. Aparecen dos botones, «PADRE» e «HIJO», y un bocadillo de comentario. |
 
 **Cierre:** frente a 1986: comprar casa empeora · la cuota mensual mejora. Un piso de 90 m² costaba 3,4 años de sueldo medio en 1986 y 7,1 hoy; descontada la inflación, el sueldo medio sube un 16 % y el piso se multiplica por 2,3. Pero en 1987 la cuota se comía el 47 % de la renta del hogar (hipotecas al 15 % en 1989) y hoy el 38 %. En 2006, en plena burbuja, eran 8,9 años de sueldo.
 

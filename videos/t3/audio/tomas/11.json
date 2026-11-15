@@ -1,39 +1,35 @@
 {
- "huella": "d45673d6a4f2ce63",
- "semilla": 11000,
- "texto": "O sea, ¿mejora o empeora? La casa, empeora. La cuota, mejora.",
+ "huella": "97aee24f27bdb43b",
+ "semilla": 11106,
+ "texto": "¿Quién lo tuvo más fácil? ¿Tú qué opinas?",
  "ev": {
   "ok": true,
   "nota": 1.0,
-  "oido": "O sea, mejora o empeora? La casa empeora. La cuota mejora.",
+  "oido": "¿Quién lo tuvo más fácil? ¿Tú qué opinas?",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
    0.2,
-   0.64,
-   1.04,
-   1.12,
-   2.24,
-   2.42,
-   2.76,
-   3.9,
-   4.4,
-   4.78
+   0.3,
+   0.46,
+   0.66,
+   1.64,
+   1.88,
+   1.98
   ],
   "t1": [
    0.2,
+   0.3,
    0.46,
-   1.04,
-   1.12,
-   1.54,
-   2.42,
-   2.76,
-   3.5,
-   4.4,
-   4.78,
-   5.28
+   0.66,
+   1.0,
+   1.88,
+   1.98,
+   2.36
   ],
-  "ritmo": 8.2
- }
+  "ritmo": 11.9,
+  "voz": 0.915
+ },
+ "eleccion": "elegida a mano entre 8 tomas: la más parecida a la voz del hijo y bien pronunciada (hijo 0.915, padre 0.888)"
 }

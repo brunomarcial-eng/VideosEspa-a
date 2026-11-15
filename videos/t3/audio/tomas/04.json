@@ -1,5 +1,5 @@
 {
- "huella": "c62f1313fd8ed5d1",
+ "huella": "ec2f45ef78d9b920",
  "semilla": 4001,
  "texto": "Ya. Pues hoy ese piso cuesta 210.000 pavos. Siete años de sueldo. El doble.",
  "ev": {
@@ -41,5 +41,6 @@
    6.24
   ],
   "ritmo": 12.6
- }
+ },
+ "nota_voz": "toma dada por buena por Bruno (primeros 45 s); es la referencia de la voz del hijo"
 }

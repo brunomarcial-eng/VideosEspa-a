@@ -1,6 +1,6 @@
 {
  "id": "t3",
- "version": 3,
+ "version": 4,
  "titulo": "¿Quién lo tuvo más difícil para comprar casa: tu padre o tú?",
  "titulo_alternativo": "¿Los jóvenes no compran casa porque se lo gastan todo en Netflix y viajes?",
  "pregunta": "Padre (62) contra hijo (31): ¿comprar casa es más difícil hoy que en 1986?",
@@ -16,7 +16,8 @@
   },
   "hijo": {
    "anyo": "31 años",
-   "genero": "hombre"
+   "genero": "hijo",
+   "voz": "hijo (la de los primeros 45 s, fijada el 15-11-2026)"
   }
  },
  "capitulos": [
@@ -50,11 +51,9 @@
    ]
   },
   {
-   "nombre": "Veredicto",
+   "nombre": "¿Tú qué opinas?",
    "beats": [
-    11,
-    12,
-    13
+    11
    ]
   }
  ],
@@ -146,34 +145,15 @@
   {
    "n": 11,
    "quien": "hijo",
-   "funcion": "veredicto",
-   "voz": "O sea, ¿mejora o empeora? La casa, empeora. La cuota, mejora.",
-   "pantalla": "EL VEREDICTO · Comprar casa frente a 1986: EMPEORA (3,4 → 7,1 años de sueldo) · La cuota: MEJORA",
-   "sello": "CÁLCULO PROPIO con datos del INE y del Banco de España",
-   "imagen": "Tarjeta con dos filas: EMPEORA (rojo no; marca gruesa) y MEJORA."
-  },
-  {
-   "n": 12,
-   "quien": "padre",
-   "funcion": "remate cómico",
-   "voz": "Ya… ¿Y los 50 euros de la cena de anoche, qué, listillo?",
-   "pantalla": "«¿Y los 50 euros de la cena?»",
+   "funcion": "pregunta para el debate (sin veredicto: decisión de Bruno, 15-11-2026)",
+   "voz": "¿Quién lo tuvo más fácil? ¿Tú qué opinas?",
+   "pantalla": "¿Quién lo tuvo más fácil: el padre o el hijo?",
    "sello": null,
-   "imagen": "El padre saca un tique de restaurante; el hijo pone los ojos en blanco."
-  },
-  {
-   "n": 13,
-   "quien": "hijo",
-   "funcion": "pregunta para el debate",
-   "voz": "¿Quién tiene razón? Te leo.",
-   "pantalla": "¿Quién tiene razón: el padre o el hijo?",
-   "sello": null,
-   "imagen": "Los dos miran a cámara. Dos botones: «PADRE» e «HIJO», y un bocadillo de comentario."
+   "imagen": "Los dos miran a cámara. Aparecen dos botones, «PADRE» e «HIJO», y un bocadillo de comentario."
   }
  ],
  "no_dato": [
-  "90",
-  "50"
+  "90"
  ],
  "cifras": [
   {
@@ -244,8 +224,7 @@
   "«Siete años de sueldo. El doble»: 210.182 € ÷ 29.540 € = 7,1; 7,1 ÷ 3,4 = 2,1 (C).",
   "«Casi la mitad de lo que entraba en casa»: esfuerzo teórico medio de 1987, 47,3 % de la renta bruta del hogar (Banco de España; V).",
   "Sueldo de 1986: 740 pesetas por hora trabajada (industria y servicios) × 1.786,8 horas de jornada pactada = 1,32 millones de pesetas al año (C con datos de los anuarios del INE de 1987 y 1988).",
-  "Piso de 1986: 301,5 €/m² (media de junio y diciembre de 1986, sociedades de tasación, Banco de España) × 90 m² = 27.135 € = 4,5 millones de pesetas (C).",
-  "Los 50 euros de la cena son un chiste del guion, no un dato."
+  "Piso de 1986: 301,5 €/m² (media de junio y diciembre de 1986, sociedades de tasación, Banco de España) × 90 m² = 27.135 € = 4,5 millones de pesetas (C)."
  ],
  "cierre": {
   "veredicto": "frente a 1986: comprar casa empeora · la cuota mensual mejora",
@@ -256,5 +235,6 @@
   "pausa_turno_s": 0.3,
   "pausa_mismo_s": 0.3,
   "pausa_tras_dato_s": 0.6
- }
+ },
+ "sin_veredicto": "Bruno, 15-11-2026: quitar la frase «¿mejora o empeora?» y acabar con «¿Quién lo tuvo más fácil? ¿Tú qué opinas?». El veredicto queda en el guion (cierre) y en la descripción."
 }

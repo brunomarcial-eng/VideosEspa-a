@@ -1,5 +1,5 @@
 {
- "huella": "dab5dfc86a6e5bdc",
+ "huella": "99da02237a639b6c",
  "semilla": 2001,
  "texto": "Pero papá, ¿qué me estás contando? En 1986, un piso de 90 metros costaba cuatro millones y medio de pesetas. Tres años y medio de sueldo.",
  "ev": {
@@ -65,5 +65,6 @@
    10.72
   ],
   "ritmo": 12.3
- }
+ },
+ "nota_voz": "toma dada por buena por Bruno (primeros 45 s); es la referencia de la voz del hijo"
 }

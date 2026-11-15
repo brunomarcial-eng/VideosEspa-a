@@ -1,5 +1,5 @@
 {
- "huella": "01706b314173a325",
+ "huella": "9185a558cee53f3f",
  "semilla": 6000,
  "texto": "¿Un pastón? Quitando la inflación, el sueldo ha subido un 16 %. El piso, 2,3 veces.",
  "ev": {
@@ -47,5 +47,6 @@
    6.98
   ],
   "ritmo": 11.7
- }
+ },
+ "nota_voz": "toma dada por buena por Bruno (primeros 45 s); es la referencia de la voz del hijo"
 }
