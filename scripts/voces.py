@@ -79,6 +79,7 @@ def decir_numero(txt: str) -> str:
 
 
 def normalizar(texto: str) -> str:
+    texto = re.sub(r"\b(\d{1,3})\.(\d{3})\b", r"\1\2", texto)   # 210.000 → 210000 (punto de miles)
     texto = re.sub(r"(\d+(?:,\d+)?)\s*%", lambda m: decir_numero(m.group(1)) + " por ciento", texto)
     texto = re.sub(r"(\d+(?:,\d+)?)\s*€", lambda m: decir_numero(m.group(1)) + " euros", texto)
     texto = re.sub(r"\d+(?:,\d+)?", lambda m: decir_numero(m.group(0)), texto)
@@ -89,7 +90,8 @@ def letras(s: str) -> str:
     """Forma hablada de un texto, solo letras y sin tildes (para comparar con Whisper)."""
     s = re.sub(r"(\d)[.](\d)", r"\1,\2", s)
     s = re.sub(r"(\d)\.(?=\d{3}\b)", r"\1", s)
-    s = unicodedata.normalize("NFD", normalizar(s).lower())
+    # un «%» o «€» suelto (la palabra siguiente al número, como en «15 %,») se dice igual
+    s = unicodedata.normalize("NFD", normalizar(s).replace("%", " por ciento ").replace("€", " euros ").lower())
     return re.sub(r"[^a-zñ]", "", "".join(c for c in s if unicodedata.category(c) != "Mn" or c == "̃"))
 
 
@@ -406,6 +408,7 @@ def main(argv):
     ruta = pathlib.Path(argv[1])
     g = json.loads(ruta.read_text(encoding="utf-8"))
     cfg = json.loads((RAIZ / "diseno" / "voces.json").read_text(encoding="utf-8"))
+    cfg.update(g.get("voz_pausas", {}))   # un diálogo puede pedir pausas más cortas que una narración
     out = ruta.parent / "audio"
     tomas = out / "tomas"
     tomas.mkdir(parents=True, exist_ok=True)

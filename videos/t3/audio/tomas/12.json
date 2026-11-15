@@ -1,0 +1,41 @@
+{
+ "huella": "fd583b5bfcc93326",
+ "semilla": 12000,
+ "texto": "Ya… ¿Y los 50 euros de la cena de anoche, qué, listillo?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Ya... y los 50 euros de la cena de anoche, ¡qué listillo!",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.49999999999999967,
+   0.9,
+   1.2,
+   1.32,
+   1.62,
+   2.02,
+   2.18,
+   2.26,
+   2.42,
+   2.56,
+   3.14,
+   3.22
+  ],
+  "t1": [
+   0.9,
+   1.2,
+   1.32,
+   1.62,
+   2.02,
+   2.18,
+   2.26,
+   2.42,
+   2.56,
+   2.94,
+   3.22,
+   3.76
+  ],
+  "ritmo": 11.8
+ }
+}

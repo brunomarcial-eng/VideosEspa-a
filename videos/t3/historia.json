@@ -1,39 +1,283 @@
 {
  "nota": "Momentos clave de T3 (padre contra hijo). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t3/escenas.mjs) y el sonido (scripts/sonido.py).",
- "musica": {"bpm": 100, "corte": "c11-casa", "silencio_s": 1.2},
+ "musica": {
+  "bpm": 100,
+  "corte": "c11-casa",
+  "silencio_s": 1.2
+ },
  "cues": [
-  {"id": "c1-viaje", "beat": 1, "palabra": "viajecito,", "dt": -0.1, "sfx": "pop", "vol": 0.4},
-  {"id": "c1-cana", "beat": 1, "palabra": "cañas", "dt": -0.1, "sfx": "pop", "vol": 0.4, "tono": 1.1},
-  {"id": "c1-netflix", "beat": 1, "palabra": "Netflix,", "dt": -0.1, "sfx": "pop", "vol": 0.4, "tono": 1.2},
-  {"id": "c1-uber", "beat": 1, "palabra": "Uber…", "dt": -0.1, "sfx": "pop", "vol": 0.4, "tono": 1.3},
-  {"id": "c1-mes", "beat": 1, "palabra": "mes,", "dt": -0.1, "sfx": "pinza", "vol": 0.4},
-  {"id": "c1-jarana", "beat": 1, "palabra": "jarana.", "dt": -0.15, "sfx": "ting", "vol": 0.35},
-  {"id": "c2-foto", "beat": 2, "palabra": "1986,", "dt": -0.2, "sfx": "papel", "vol": 0.45},
-  {"id": "c2-pts", "beat": 2, "palabra": "pesetas.", "dt": -0.3, "sfx": "ding", "vol": 0.4},
-  {"id": "c2-anos", "beat": 2, "palabra": "Tres", "dt": -0.05, "sfx": "sube", "dur": 0.6, "hasta": 1.1, "vol": 0.3},
-  {"id": "c3-ini", "beat": 3, "en": "inicio", "dt": 0.0, "sfx": "golpe", "vol": 0.3},
-  {"id": "c4-foto", "beat": 4, "palabra": "hoy", "dt": -0.15, "sfx": "papel", "vol": 0.45},
-  {"id": "c4-precio", "beat": 4, "palabra": "210.000", "dt": 0.0, "sfx": "ding", "vol": 0.45, "tono": 1.2},
-  {"id": "c4-anos", "beat": 4, "palabra": "Siete", "dt": -0.05, "sfx": "sube", "dur": 0.7, "hasta": 1.35, "vol": 0.3},
-  {"id": "c4-doble", "beat": 4, "palabra": "doble.", "dt": -0.05, "sfx": "ting", "vol": 0.4},
-  {"id": "c5-paston", "beat": 5, "palabra": "pastón.", "dt": -0.1, "sfx": "moneda", "vol": 0.4},
-  {"id": "c6-sueldo", "beat": 6, "palabra": "sueldo", "dt": -0.05, "sfx": "sube", "dur": 0.5, "hasta": 1.05, "vol": 0.3},
-  {"id": "c6-piso", "beat": 6, "palabra": "piso,", "dt": -0.05, "sfx": "sube", "dur": 0.8, "hasta": 1.5, "vol": 0.3},
-  {"id": "c6-veces", "beat": 6, "palabra": "veces.", "dt": -0.05, "sfx": "ding", "vol": 0.4},
-  {"id": "c7-15", "beat": 7, "palabra": "15", "dt": -0.05, "sfx": "golpe", "vol": 0.6},
-  {"id": "c7-atraco", "beat": 7, "palabra": "atraco!", "dt": -0.1, "sfx": "pop", "vol": 0.4, "tono": 0.8},
-  {"id": "c8-mitad", "beat": 8, "palabra": "mitad", "dt": -0.3, "sfx": "sube", "dur": 0.6, "hasta": 1.2, "vol": 0.3},
-  {"id": "c8-hoy", "beat": 8, "palabra": "Hoy,", "dt": -0.1, "sfx": "pinza", "vol": 0.4},
-  {"id": "c9-ini", "beat": 9, "en": "inicio", "dt": 0.0},
-  {"id": "c10-int", "beat": 10, "palabra": "intereses.", "dt": -0.3, "sfx": "caja", "vol": 0.35},
-  {"id": "c10-lad", "beat": 10, "palabra": "ladrillo.", "dt": -0.15, "sfx": "golpe", "vol": 0.6},
-  {"id": "c11-m", "beat": 11, "palabra": "¿mejora", "dt": -0.05, "sfx": "pinza", "vol": 0.45},
-  {"id": "c11-e", "beat": 11, "palabra": "empeora?", "dt": -0.05, "sfx": "pinza", "vol": 0.45},
-  {"id": "c11-casa", "beat": 11, "palabra": "empeora:", "n": 2, "dt": 0.02, "sfx": "sello", "vol": 0.9},
-  {"id": "c11-cuota", "beat": 11, "palabra": "mejora.", "n": 2, "dt": -0.05, "sfx": "ding", "vol": 0.45},
-  {"id": "c12-tique", "beat": 12, "palabra": "50", "dt": -0.15, "sfx": "caja", "vol": 0.45},
-  {"id": "c12-listillo", "beat": 12, "palabra": "listillo?", "dt": -0.1, "sfx": "pop", "vol": 0.35},
-  {"id": "c13-botones", "beat": 13, "palabra": "¿Quién", "dt": -0.05, "sfx": "pop", "vol": 0.45},
-  {"id": "c13-boc", "beat": 13, "palabra": "leo.", "dt": -0.2, "sfx": "notif", "vol": 0.5}
+  {
+   "id": "c1-viaje",
+   "beat": 1,
+   "palabra": "Viajecitos,",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c1-cana",
+   "beat": 1,
+   "palabra": "cañas",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.1
+  },
+  {
+   "id": "c1-netflix",
+   "beat": 1,
+   "palabra": "Netflix,",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.2
+  },
+  {
+   "id": "c1-uber",
+   "beat": 1,
+   "palabra": "Uber…",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.3
+  },
+  {
+   "id": "c1-mes",
+   "beat": 1,
+   "palabra": "mes,",
+   "dt": -0.1,
+   "sfx": "pinza",
+   "vol": 0.4
+  },
+  {
+   "id": "c1-jarana",
+   "beat": 1,
+   "palabra": "jarana!",
+   "dt": -0.15,
+   "sfx": "ting",
+   "vol": 0.35
+  },
+  {
+   "id": "c2-foto",
+   "beat": 2,
+   "palabra": "1986,",
+   "dt": -0.2,
+   "sfx": "papel",
+   "vol": 0.45
+  },
+  {
+   "id": "c2-pts",
+   "beat": 2,
+   "palabra": "cuatro",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c2-anos",
+   "beat": 2,
+   "palabra": "Tres",
+   "dt": -0.05,
+   "sfx": "sube",
+   "dur": 0.6,
+   "hasta": 1.1,
+   "vol": 0.3
+  },
+  {
+   "id": "c3-ini",
+   "beat": 3,
+   "en": "inicio",
+   "dt": 0.0,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-foto",
+   "beat": 4,
+   "palabra": "hoy",
+   "dt": -0.15,
+   "sfx": "papel",
+   "vol": 0.45
+  },
+  {
+   "id": "c4-precio",
+   "beat": 4,
+   "palabra": "210.000",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.45,
+   "tono": 1.2
+  },
+  {
+   "id": "c4-anos",
+   "beat": 4,
+   "palabra": "Siete",
+   "dt": -0.05,
+   "sfx": "sube",
+   "dur": 0.7,
+   "hasta": 1.35,
+   "vol": 0.3
+  },
+  {
+   "id": "c4-doble",
+   "beat": 4,
+   "palabra": "doble.",
+   "dt": -0.05,
+   "sfx": "ting",
+   "vol": 0.4
+  },
+  {
+   "id": "c5-paston",
+   "beat": 5,
+   "palabra": "pastón.",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.4
+  },
+  {
+   "id": "c6-sueldo",
+   "beat": 6,
+   "palabra": "sueldo",
+   "dt": -0.05,
+   "sfx": "sube",
+   "dur": 0.5,
+   "hasta": 1.05,
+   "vol": 0.3
+  },
+  {
+   "id": "c6-piso",
+   "beat": 6,
+   "palabra": "piso,",
+   "dt": -0.05,
+   "sfx": "sube",
+   "dur": 0.8,
+   "hasta": 1.5,
+   "vol": 0.3
+  },
+  {
+   "id": "c6-veces",
+   "beat": 6,
+   "palabra": "veces.",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c7-15",
+   "beat": 7,
+   "palabra": "15",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.6
+  },
+  {
+   "id": "c7-atraco",
+   "beat": 7,
+   "palabra": "atraco!",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 0.8
+  },
+  {
+   "id": "c8-mitad",
+   "beat": 8,
+   "palabra": "mitad",
+   "dt": -0.3,
+   "sfx": "sube",
+   "dur": 0.6,
+   "hasta": 1.2,
+   "vol": 0.3
+  },
+  {
+   "id": "c8-hoy",
+   "beat": 8,
+   "palabra": "Hoy,",
+   "dt": -0.1,
+   "sfx": "pinza",
+   "vol": 0.4
+  },
+  {
+   "id": "c10-int",
+   "beat": 10,
+   "palabra": "intereses.",
+   "dt": -0.3,
+   "sfx": "caja",
+   "vol": 0.35
+  },
+  {
+   "id": "c10-lad",
+   "beat": 10,
+   "palabra": "ladrillo.",
+   "dt": -0.15,
+   "sfx": "golpe",
+   "vol": 0.6
+  },
+  {
+   "id": "c11-m",
+   "beat": 11,
+   "palabra": "¿mejora",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.45
+  },
+  {
+   "id": "c11-e",
+   "beat": 11,
+   "palabra": "empeora?",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.45
+  },
+  {
+   "id": "c11-casa",
+   "beat": 11,
+   "palabra": "empeora:",
+   "n": 2,
+   "dt": 0.02,
+   "sfx": "sello",
+   "vol": 0.9
+  },
+  {
+   "id": "c11-cuota",
+   "beat": 11,
+   "palabra": "mejora.",
+   "n": 2,
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.45
+  },
+  {
+   "id": "c12-tique",
+   "beat": 12,
+   "palabra": "50",
+   "dt": -0.15,
+   "sfx": "caja",
+   "vol": 0.45
+  },
+  {
+   "id": "c12-listillo",
+   "beat": 12,
+   "palabra": "listillo?",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.35
+  },
+  {
+   "id": "c13-botones",
+   "beat": 13,
+   "palabra": "¿Quién",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c13-boc",
+   "beat": 13,
+   "palabra": "leo.",
+   "dt": -0.2,
+   "sfx": "notif",
+   "vol": 0.5
+  }
  ]
 }

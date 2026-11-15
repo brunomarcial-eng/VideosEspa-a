@@ -1,0 +1,31 @@
+{
+ "huella": "1d279a3d7827c854",
+ "semilla": 5000,
+ "texto": "Venga, hombre, que ahora cobráis un pastón.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "¡Venga hombre, que ahora cobráis un pastón!",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.38,
+   1.14,
+   1.26,
+   1.48,
+   1.92,
+   2.04
+  ],
+  "t1": [
+   0.38,
+   0.64,
+   1.26,
+   1.48,
+   1.92,
+   2.04,
+   2.4
+  ],
+  "ritmo": 13.8
+ }
+}

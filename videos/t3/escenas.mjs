@@ -36,7 +36,7 @@ export function escenas(D) {
   // Lo que se repite en cada escena: los dos en su sitio; quien habla mueve la boca.
   // (Se escribe dentro de cada fn porque las funciones se ejecutan en la página.)
   return [
-    // 1 · Padre: «¡Es que no ahorráis un duro! Tanto viajecito, cañas todos los findes, que si Netflix…»
+    // 1 · Padre: «¡Es que no ahorráis un duro! Viajecitos, cañas cada finde, Netflix, Uber… ¡Siempre de jarana!…»
     { n: 1, set: "vacio",
       svg: `${pareja("s1")}${["avion", "cana", "tele", "coche"].map((k, i) => icono("s1-i" + i, k, 1.1)).join("")}${icono("s1-plato", "plato", 1.1)}`,
       tarjeta: tarjeta(1, "Padre contra hijo", `<div class="tit" style="font-size:62px">¿Quién lo tuvo más difícil para comprar <mark id="m1">casa</mark>?</div>`, { icono: bandera(44) }),
@@ -154,16 +154,6 @@ export function escenas(D) {
         persona("s8-hijo", t, { x: 870, y: 1440, s: 0.78, mira: -1, boca: habla(t, e), brazo: [[0, "hombros"], [c["c8-hoy"], "senala"]], espejo: true, fase: 2 });
       } },
 
-    // 9 · Padre: «¿Lo ves? Y aun así, ahorrábamos.»
-    { n: 9, set: "vacio",
-      svg: `${pareja("s9")}`,
-      tarjeta: tarjeta(9, "Padre", `<div class="tit">«¿Lo ves? Y aun así, <mark id="m9">ahorrábamos</mark>»</div>`, { tono: "pasado" }),
-      fn: function (t, e) {
-        marca("m9", t, e.b + 0.5);
-        persona("s9-padre", t, { x: 210, y: 1440, s: 0.78, mira: 1, boca: habla(t, e, "grande"), brazo: [[0, "arriba"]], ojos: [[0, "felices"]], incl: [[0, -6]], fase: 1 });
-        persona("s9-hijo", t, { x: 870, y: 1440, s: 0.78, mira: -1, boca: "seria", espejo: true, incl: [[0, 4]], fase: 2 });
-      } },
-
     // 10 · Hijo: «Vosotros pagabais intereses. Nosotros pagamos ladrillo.»
     { n: 10, set: "vacio",
       svg: `${pareja("s10")}${banco("s10-banco")}${billete("s10-bill")}${ladrillo("s10-lad")}`,
@@ -182,7 +172,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { const k = t - e.c["c10-lad"] - 0.3, g = k >= 0 && k < 0.18; return { dx: 0, dy: g ? azar(7, Math.floor(t * 30)) * 9 : 0 }; } },
 
-    // 11 · Hijo: «O sea, ¿mejora o empeora? La casa, empeora: el doble de años de sueldo. La cuota, mejora.»
+    // 11 · Hijo: «O sea, ¿mejora o empeora? La casa, empeora. La cuota, mejora.»
     { n: 11, set: "vacio",
       svg: `${pareja("s11")}`,
       tarjeta: tarjeta(11, "El veredicto · frente a 1986", `<div class="tit" style="font-size:58px">¿<mark id="m11a">Mejora</mark> o <mark id="m11b">empeora</mark>?</div>

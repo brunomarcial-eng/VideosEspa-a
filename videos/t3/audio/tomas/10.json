@@ -1,0 +1,29 @@
+{
+ "huella": "601a40c45c248858",
+ "semilla": 10000,
+ "texto": "Vosotros pagabais intereses. Nosotros pagamos ladrillo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "vosotros pagabais intereses, nosotros pagamos ladrillo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.4,
+   0.86,
+   1.8,
+   2.02,
+   2.48
+  ],
+  "t1": [
+   0.4,
+   0.86,
+   1.62,
+   2.02,
+   2.48,
+   2.92
+  ],
+  "ritmo": 15.6
+ }
+}

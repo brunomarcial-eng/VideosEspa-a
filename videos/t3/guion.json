@@ -1,6 +1,6 @@
 {
  "id": "t3",
- "version": 2,
+ "version": 3,
  "titulo": "¿Quién lo tuvo más difícil para comprar casa: tu padre o tú?",
  "titulo_alternativo": "¿Los jóvenes no compran casa porque se lo gastan todo en Netflix y viajes?",
  "pregunta": "Padre (62) contra hijo (31): ¿comprar casa es más difícil hoy que en 1986?",
@@ -46,7 +46,6 @@
    "beats": [
     7,
     8,
-    9,
     10
    ]
   },
@@ -64,7 +63,7 @@
    "n": 1,
    "quien": "padre",
    "funcion": "gancho: la acusación",
-   "voz": "¡Es que no ahorráis un duro! Tanto viajecito, cañas todos los findes, que si Netflix, que si Disney, que si Uber… En mis tiempos salíamos a comer una vez al mes, ¡y da gracias! Y vosotros, todos los días de jarana.",
+   "voz": "¡Es que no ahorráis un duro! Viajecitos, cañas cada finde, Netflix, Uber… ¡Siempre de jarana! Nosotros comíamos fuera una vez al mes, y da gracias.",
    "pantalla": "¿Quién lo tuvo más difícil para comprar casa?",
    "sello": null,
    "imagen": "Cocina de una casa. El padre (62 años, bigote, canas, camisa de cuadros) señala al hijo (31, sudadera) con el móvil; en el móvil del hijo, una foto de playa. Iconos que saltan sobre el hijo: avión, tele, caña, plato."
@@ -136,15 +135,6 @@
    "imagen": "Dos quesitos: en 1987, casi la mitad del sueldo de casa para la cuota; hoy, algo más de un tercio."
   },
   {
-   "n": 9,
-   "quien": "padre",
-   "funcion": "réplica",
-   "voz": "¿Lo ves? Y aun así, ahorrábamos.",
-   "pantalla": "«Y aun así, ahorrábamos»",
-   "sello": null,
-   "imagen": "El padre sonríe, triunfal."
-  },
-  {
    "n": 10,
    "quien": "hijo",
    "funcion": "frase espejo",
@@ -157,7 +147,7 @@
    "n": 11,
    "quien": "hijo",
    "funcion": "veredicto",
-   "voz": "O sea, ¿mejora o empeora? La casa, empeora: el doble de años de sueldo. La cuota, mejora.",
+   "voz": "O sea, ¿mejora o empeora? La casa, empeora. La cuota, mejora.",
    "pantalla": "EL VEREDICTO · Comprar casa frente a 1986: EMPEORA (3,4 → 7,1 años de sueldo) · La cuota: MEJORA",
    "sello": "CÁLCULO PROPIO con datos del INE y del Banco de España",
    "imagen": "Tarjeta con dos filas: EMPEORA (rojo no; marca gruesa) y MEJORA."
@@ -261,5 +251,10 @@
   "veredicto": "frente a 1986: comprar casa empeora · la cuota mensual mejora",
   "porque": "Un piso de 90 m² costaba 3,4 años de sueldo medio en 1986 y 7,1 hoy; descontada la inflación, el sueldo medio sube un 16 % y el piso se multiplica por 2,3. Pero en 1987 la cuota se comía el 47 % de la renta del hogar (hipotecas al 15 % en 1989) y hoy el 38 %. En 2006, en plena burbuja, eran 8,9 años de sueldo."
  },
- "aprobacion_guion": null
+ "aprobacion_guion": null,
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.6
+ }
 }
