@@ -1,38 +1,40 @@
 {
- "huella": "4e9694f8e0435cab",
+ "huella": "e69b98d82d46dedf",
  "semilla": 5000,
- "texto": "Pues pedid la hipoteca, que el banco os la da.",
+ "texto": "¡Pues mejor me lo pones! ¿Dónde se os va la pasta?",
  "ev": {
   "ok": true,
-  "nota": 1.0293,
-  "oido": "pues pedid la hipoteca que el banco os la da.",
+  "nota": 1.0196,
+  "oido": "Pues mejor me lo pones. ¿Dónde se os va la pasta?",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
    0.12,
-   0.52,
-   0.64,
-   1.22,
-   1.42,
-   1.56,
-   1.86,
-   2.08,
-   2.22
+   0.44,
+   0.58,
+   0.68,
+   1.74,
+   2.06,
+   2.24,
+   2.34,
+   2.48,
+   2.56
   ],
   "t1": [
    0.12,
-   0.52,
-   0.64,
-   1.22,
-   1.42,
-   1.56,
-   1.86,
-   2.08,
-   2.22,
-   2.38
+   0.44,
+   0.58,
+   0.68,
+   1.02,
+   2.06,
+   2.24,
+   2.34,
+   2.48,
+   2.56,
+   2.84
   ],
-  "ritmo": 13.4,
-  "voz": 0.909
+  "ritmo": 11.9,
+  "voz": 0.889
  }
 }

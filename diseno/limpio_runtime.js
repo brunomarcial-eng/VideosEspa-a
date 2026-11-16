@@ -149,6 +149,39 @@ function gentio(p, n, t, o = {}) {
     andar(p + "-w" + i, t, { x0: x, v: 0, dir: v, y: y, s: s, fase: i * 1.7, op: o.op ? o.op(i) : 1 });
   }
 }
+// Cambio de decorado «como en un sueño»: el decorado anterior se deshace en ondas mientras aparece el nuevo.
+// Los decorados son capas compartidas (class="capa") con id «amb-<nombre>» dentro del grupo «amb», que lleva
+// el filtro de ondas «f-sueno»; «amb-bruma» es un velo blanco. Devuelve el avance del cambio (0..1).
+function ambiente(actual, anterior, t, t0, d = 0.9) {
+  const a = $("amb-" + actual), grupo = $("amb"), bruma = $("amb-bruma");
+  if (!a) return 1;
+  a.style.display = ""; a.style.opacity = 1;
+  const k = anterior ? clamp((t - t0) / d) : 1;
+  if (k >= 1) { if (grupo) grupo.removeAttribute("filter"); return 1; }
+  const p = $("amb-" + anterior);
+  p.style.display = "";
+  // El que va después en el dibujo queda encima: ese es el que se funde.
+  if (a.compareDocumentPosition(p) & 4) p.style.opacity = (1 - suave(k)).toFixed(3);
+  else { p.style.opacity = 1; a.style.opacity = suave(k).toFixed(3); }
+  const onda = Math.sin(k * Math.PI);
+  grupo.setAttribute("filter", "url(#f-sueno)");
+  attr("f-sueno-d", "scale", (120 * onda).toFixed(1));
+  attr("f-sueno-t", "baseFrequency", (0.004 + 0.002 * k).toFixed(4) + " " + (0.009 + 0.004 * k).toFixed(4));
+  if (bruma) { bruma.style.display = ""; bruma.style.opacity = (0.6 * onda).toFixed(3); }
+  return k;
+}
+// La cámara respira con el cambio de decorado: se acerca un poco y vuelve.
+function camSueno(t, t0, d = 0.9) { return { z: 1 + 0.08 * Math.sin(clamp((t - t0) / d) * Math.PI) }; }
+// Barra «de cada 100 €» de una tarjeta: reparte el ancho entre comida, casa y ocio (el resto queda de fondo).
+// a y b: {comida, casa, ocio} en %; k: avance de a hacia b (0..1); foco: el trozo que se resalta.
+function barra100(p, a, b, k, foco) {
+  for (const x of ["comida", "casa", "ocio"]) {
+    const el = $(p + "-s-" + x);
+    if (!el) continue;
+    el.style.width = (a[x] + (b[x] - a[x]) * k).toFixed(2) + "%";
+    el.style.opacity = x === foco ? 1 : 0.28;
+  }
+}
 // Cambia el color de una figura de la rejilla.
 function pinta(id, color) { const el = $(id); if (el && el.getAttribute("fill") !== color) el.setAttribute("fill", color); }
 

@@ -343,14 +343,29 @@ def s_golpe(**_):
     return bordes(norm(y), 0.001, 0.03)
 
 
+def s_sueno(dur=1.0, **_):
+    """Cambio de decorado «como en un sueño»: un arpegio de campanitas que sube y un soplo de aire."""
+    n = int(dur * SR)
+    y = np.zeros(n)
+    for i, f in enumerate((1047, 1319, 1568, 1976, 2349, 3136)):      # do-mi-sol-si-re-sol, hacia arriba
+        nota = campana(f, 0.7, [(1, 1, 0.22), (2.0, 0.35, 0.12), (3.01, 0.15, 0.07)]) * (0.9 - 0.08 * i)
+        i0 = int((0.05 + 0.085 * i) * SR)
+        m = min(len(nota), n - i0)
+        if m > 0:
+            y[i0:i0 + m] += nota[:m]
+    t = tiempo(dur)
+    soplo = ruido(dur, 700, 5200)[:n] * np.sin(np.pi * t[:n] / dur) ** 2 * 0.35
+    return bordes(norm(y + soplo), 0.004, 0.08)
+
+
 EFECTOS = {"calle": s_calle, "pop": s_pop, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
            "carro": s_carro, "beep": s_beep, "conteo": s_conteo, "caja": s_caja, "sube": s_sube, "pinza": s_pinza,
            "desenrolla": s_desenrolla, "sello": s_sello, "notif": s_notif, "fwip": s_fwip,
-           "campanilla": s_campanilla, "persiana": s_persiana, "vapor": s_vapor, "golpe": s_golpe}
+           "campanilla": s_campanilla, "persiana": s_persiana, "vapor": s_vapor, "golpe": s_golpe, "sueno": s_sueno}
 # Ganancia de cada efecto para que ninguno tape la voz
 NIVEL = {"calle": 0.22, "pop": 0.30, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
          "beep": 0.12, "conteo": 0.16, "caja": 0.30, "sube": 0.13, "pinza": 0.26, "desenrolla": 0.22,
-         "sello": 0.40, "notif": 0.24, "fwip": 0.10, "campanilla": 0.18, "persiana": 0.16, "vapor": 0.10, "golpe": 0.22}
+         "sello": 0.40, "notif": 0.24, "fwip": 0.10, "campanilla": 0.18, "persiana": 0.16, "vapor": 0.10, "golpe": 0.22, "sueno": 0.20}
 
 
 # ------------------------------------------------------------------ cues
