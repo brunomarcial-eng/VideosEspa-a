@@ -1,6 +1,6 @@
 {
  "id": "t4",
- "version": 2,
+ "version": 3,
  "titulo": "¿De verdad los jóvenes se lo gastan todo en Netflix?",
  "titulo_alternativo": "Padre contra hijo (2): ¿os lo gastáis todo en caprichos?",
  "pregunta": "Padre (62) contra hijo (31), segunda parte: ¿no ahorráis porque os lo gastáis todo en ocio?",
@@ -30,13 +30,6 @@
    "beats": [
     1,
     2
-   ]
-  },
-  {
-   "nombre": "Dos sueldos",
-   "beats": [
-    3,
-    4
    ]
   },
   {
@@ -89,24 +82,6 @@
    "sello": "INE · Encuesta de Presupuestos Familiares (gasto monetario) · cálculo propio",
    "grafico": true,
    "imagen": "Dos quesitos (2006 y hoy) con la parte del gasto que va a ocio; luego una flecha hacia abajo con «−30 %»."
-  },
-  {
-   "n": 3,
-   "quien": "padre",
-   "funcion": "réplica",
-   "voz": "Ya, pero antes con un sueldo tirabas palante con toda la familia.",
-   "pantalla": "«Antes, con un sueldo…»",
-   "sello": null,
-   "imagen": "El padre levanta un dedo."
-  },
-  {
-   "n": 4,
-   "quien": "hijo",
-   "funcion": "dato: dos sueldos",
-   "voz": "Ni de coña. En 2006, el 54 % de las casas con trabajo ya tenían dos sueldos. Hoy, el 52 %.",
-   "pantalla": "Casas con dos sueldos o más · 2006: 54 % · hoy: 52 %",
-   "sello": "INE · Encuesta de Población Activa (hogares con algún ocupado, 3.er trimestre) · cálculo propio",
-   "imagen": "Dos casitas con dos figuras dentro; debajo, 54 % y 52 %."
   },
   {
    "n": 5,
@@ -227,18 +202,6 @@
    "escala": -1
   },
   {
-   "texto": "54",
-   "ruta": "dos_sueldos_pct.2006",
-   "decimales": 0,
-   "estado": "C"
-  },
-  {
-   "texto": "52",
-   "ruta": "dos_sueldos_pct.2026",
-   "decimales": 0,
-   "estado": "C"
-  },
-  {
    "texto": "17",
    "ruta": "hipotecas_mas_80_pct.2006",
    "decimales": 0,
@@ -298,13 +261,13 @@
  ],
  "comprobaciones": [
   "«Una de cada seis»: 17,0 % de las hipotecas de 2006 superaban el 80 % del valor (Banco de España); «una de cada diez»: 10,1 % en 2026.",
-  "«Más de la mitad»: 54,4 % de los hogares con algún ocupado tenían dos o más en el 3.er trimestre de 2006 (EPA).",
   "«31 y medio»: 31,52 años de edad media al primer hijo en 2024 (INE).",
-  "«¿Casualidad?»: es una pregunta, no una causa. El vídeo no atribuye la natalidad a la vivienda (regla 3)."
+  "«¿Casualidad?»: es una pregunta, no una causa. El vídeo no atribuye la natalidad a la vivienda (regla 3).",
+  "Quitado el intercambio de «antes, con un sueldo» (v3): el padre habla de su época (1986) y el dato de hogares con dos sueldos solo compara 2006 con hoy; no le contesta."
  ],
  "cierre": {
-  "veredicto": "frente a 2006: no se gasta más en ocio (se gasta menos), dos sueldos ya eran lo normal, el banco presta menos y el sueldo más frecuente compra menos",
-  "porque": "Ocio, restaurantes, hoteles y comunicaciones: 23,7 % del gasto de los hogares en 2006 y 22,2 % en 2025 (−30 % descontada la inflación). Hogares con dos sueldos: 54 % y 52 %. Hipotecas de más del 80 %: 17 % y 10 %. Sueldo más frecuente: −9 % real entre 2006 y 2022. Emancipación: 30,2 años (UE: 26). Primer hijo: 26 años en 1986 y 31,5 en 2024."
+  "veredicto": "frente a 2006: no se gasta más en ocio (se gasta menos), el banco presta menos por encima del 80 % y el sueldo más frecuente compra menos",
+  "porque": "Ocio, restaurantes, hoteles y comunicaciones: 23,7 % del gasto de los hogares en 2006 y 22,2 % en 2025 (−30 % descontada la inflación). Hipotecas de más del 80 %: 17 % y 10 %. Sueldo más frecuente: −9 % real entre 2006 y 2022. Emancipación: 30,2 años (UE: 26). Primer hijo: 26 años en 1986 y 31,5 en 2024."
  },
  "aprobacion_guion": "16-11-2026: Bruno aprueba el borrador («Me gusta ese vídeo») y pide añadir lo de independizarse tarde y la natalidad"
 }

@@ -6,11 +6,10 @@
 
 import { C, persona, bocadillo, tarjeta, nomina } from "../../diseno/limpio.mjs";
 import { bandera } from "../../diseno/barrio.mjs";
-import { cocina, icono, banco, boton, quesito, casita, casaDos, barraEdad, banderaES, banderaUE, reglaEdad, cuna, cocido } from "../../diseno/casa.mjs";
+import { cocina, icono, banco, boton, quesito, casita, barraEdad, reglaEdad, cuna, cocido } from "../../diseno/casa.mjs";
 
 export const ESTILO = "limpio";
 const F_EPF = "INE, Encuesta de Presupuestos Familiares (gasto por hogar). Cálculo propio";
-const F_EPA = "INE, Encuesta de Población Activa (3.er trimestre). Cálculo propio";
 const F_BDE = "Dato oficial: Banco de España (préstamos para vivienda)";
 const F_EES = "INE, microdatos de la Encuesta de Estructura Salarial 2006 y 2022. Cálculo propio";
 const F_EUR = "Dato oficial: Eurostat (2025)";
@@ -19,7 +18,6 @@ const F_INE = "Dato oficial: INE (Indicadores Demográficos Básicos)";
 export function datos(t4) {
   return {
     ocio06: t4.ocio_pct_gasto["2006"], ocioHoy: t4.ocio_pct_gasto["2025"], ocioReal: t4.ocio_real_2006_2025_pct,
-    dos06: t4.dos_sueldos_pct["2006"], dosHoy: t4.dos_sueldos_pct["2026"],
     hip06: t4.hipotecas_mas_80_pct["2006"], hipHoy: t4.hipotecas_mas_80_pct["2026"],
     moda: t4.sueldo_mas_frecuente["2022"], modaReal: t4.sueldo_mas_frecuente.real_2006_2022_pct,
     emaES: t4.edad_emancipacion.ES_2025, emaUE: t4.edad_emancipacion.UE_2025,
@@ -77,31 +75,6 @@ export function escenas(D) {
         marca("m2", t, c["c2-30"] + 0.1);
         persona("s2-padre", t, { x: 210, y: 1440, s: 0.78, mira: 1, boca: [[0, "seria"], [c["c2-30"], "o"]], ojos: [[0, "normal"], [c["c2-30"], "grandes"]], fase: 1 });
         persona("s2-hijo", t, { x: 870, y: 1440, s: 0.78, mira: -1, boca: habla(t, e), brazo: [[0, "abajo"], [c["c2-hoy"], "senala"], [c["c2-30"] + 0.6, "hombros"]], espejo: true, fase: 2 });
-      } },
-
-    // 3 · Padre: «Ya, pero antes con un sueldo tirabas palante con toda la familia.»
-    { n: 3, set: "vacio",
-      svg: `${pareja("s3")}${nomina("s3-nom")}`,
-      tarjeta: tarjeta(3, "Padre", `<div class="tit">«Antes, con <mark id="m3">un sueldo</mark>…»</div>`, { tono: "pasado" }),
-      fn: function (t, e) {
-        const c = e.c;
-        pop("s3-nom", t, c["c3-sueldo"], 470, 830 + 6 * Math.sin(t * 3), { s: 1.15, r: -6 });
-        marca("m3", t, c["c3-sueldo"]);
-        persona("s3-padre", t, { x: 210, y: 1440, s: 0.78, mira: 1, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c3-sueldo"] - 0.2, "arriba"]], incl: [[0, -4]], fase: 1 });
-        persona("s3-hijo", t, { x: 870, y: 1440, s: 0.78, mira: -1, boca: "seria", espejo: true, fase: 2 });
-      } },
-
-    // 4 · Hijo: «Ni de coña. En 2006, más de la mitad de las casas con trabajo ya tenían dos sueldos: el 54 %. Hoy, el 52 %.»
-    { n: 4, set: "vacio",
-      svg: `${pareja("s4")}${casaDos("s4-casa")}`,
-      tarjeta: tarjeta(4, "Casas con dos sueldos o más", `<div class="vs"><div class="col" id="c4-a"><div class="v t-pasado">${pct(D.dos06)}</div><div class="n">en 2006</div></div>
-        <div class="col" id="c4-b"><div class="v t-hoy">${pct(D.dosHoy)}</div><div class="n">hoy</div></div></div><div class="nota">de los hogares con alguien trabajando</div>`, { fuente: F_EPA }),
-      fn: function (t, e) {
-        const c = e.c;
-        pop("s4-casa", t, c["c4-casa"], 540, 960, { s: 1.05 });
-        sube("c4-a", t, c["c4-54"]); sube("c4-b", t, c["c4-52"]);
-        persona("s4-padre", t, { x: 210, y: 1440, s: 0.78, mira: 1, boca: [[0, "seria"], [c["c4-54"], "o"]], ojos: [[0, "normal"], [c["c4-54"], "grandes"]], fase: 1 });
-        persona("s4-hijo", t, { x: 870, y: 1440, s: 0.78, mira: -1, boca: habla(t, e), brazo: [[0, "abajo"], [c["c4-casa"], "senala"]], espejo: true, fase: 2 });
       } },
 
     // 5 · Padre: «Pues pedid la hipoteca, que el banco os la da.»
