@@ -1,0 +1,274 @@
+{
+ "nota": "Momentos clave de T4 (padre contra hijo, 2.ª parte). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t4/escenas.mjs) y el sonido (scripts/sonido.py).",
+ "musica": {
+  "bpm": 100,
+  "corte": "c12-cas",
+  "silencio_s": 1.2
+ },
+ "cues": [
+  {
+   "id": "c1-netflix",
+   "beat": 1,
+   "palabra": "Netflix,",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c1-disney",
+   "beat": 1,
+   "palabra": "Disney,",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.1
+  },
+  {
+   "id": "c1-glovo",
+   "beat": 1,
+   "palabra": "Glovo,",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.2
+  },
+  {
+   "id": "c1-gim",
+   "beat": 1,
+   "palabra": "gimnasio,",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.3
+  },
+  {
+   "id": "c1-fest",
+   "beat": 1,
+   "palabra": "festivales…",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.4
+  },
+  {
+   "id": "c1-ahorre",
+   "beat": 1,
+   "palabra": "ahorre!",
+   "dt": -0.15,
+   "sfx": "ting",
+   "vol": 0.35
+  },
+  {
+   "id": "c2-hoy",
+   "beat": 2,
+   "palabra": "22",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.6,
+   "hasta": 1.1
+  },
+  {
+   "id": "c2-2006",
+   "beat": 2,
+   "palabra": "2006,",
+   "dt": -0.2,
+   "sfx": "papel",
+   "vol": 0.45
+  },
+  {
+   "id": "c2-30",
+   "beat": 2,
+   "palabra": "30",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.4
+  },
+  {
+   "id": "c3-sueldo",
+   "beat": 3,
+   "palabra": "sueldo",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-casa",
+   "beat": 4,
+   "palabra": "casas",
+   "dt": -0.15,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-54",
+   "beat": 4,
+   "palabra": "54",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-52",
+   "beat": 4,
+   "palabra": "52",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4,
+   "tono": 1.2
+  },
+  {
+   "id": "c5-banco",
+   "beat": 5,
+   "palabra": "banco",
+   "dt": -0.15,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c6-seis",
+   "beat": 6,
+   "palabra": "seis",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c6-diez",
+   "beat": 6,
+   "palabra": "diez.",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.2
+  },
+  {
+   "id": "c6-pulmon",
+   "beat": 6,
+   "palabra": "pulmón…",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.45
+  },
+  {
+   "id": "c7-listo",
+   "beat": 7,
+   "palabra": "listo?",
+   "dt": -0.1,
+   "sfx": "pinza",
+   "vol": 0.4
+  },
+  {
+   "id": "c8-nomina",
+   "beat": 8,
+   "palabra": "16.900",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.45
+  },
+  {
+   "id": "c8-9",
+   "beat": 8,
+   "palabra": "9",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.5,
+   "hasta": 0.8
+  },
+  {
+   "id": "c9-tacos",
+   "beat": 9,
+   "palabra": "tacos?",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c10-es",
+   "beat": 10,
+   "palabra": "30,2",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.7,
+   "hasta": 1.35
+  },
+  {
+   "id": "c10-ue",
+   "beat": 10,
+   "palabra": "26.",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.6,
+   "hasta": 1.15
+  },
+  {
+   "id": "c11-nietos",
+   "beat": 11,
+   "palabra": "nietos",
+   "dt": -0.1,
+   "sfx": "campanilla",
+   "vol": 0.35
+  },
+  {
+   "id": "c12-86",
+   "beat": 12,
+   "palabra": "1986,",
+   "dt": -0.2,
+   "sfx": "papel",
+   "vol": 0.45
+  },
+  {
+   "id": "c12-26",
+   "beat": 12,
+   "palabra": "26",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c12-hoy",
+   "beat": 12,
+   "palabra": "Hoy,",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.9,
+   "hasta": 1.4
+  },
+  {
+   "id": "c12-cas",
+   "beat": 12,
+   "palabra": "¿Casualidad?",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.5
+  },
+  {
+   "id": "c13-comes",
+   "beat": 13,
+   "palabra": "comes",
+   "dt": -0.1,
+   "sfx": "vapor",
+   "vol": 0.35
+  },
+  {
+   "id": "c14-botones",
+   "beat": 14,
+   "palabra": "¿Quién",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c14-boc",
+   "beat": 14,
+   "palabra": "opinas?",
+   "dt": -0.25,
+   "sfx": "notif",
+   "vol": 0.5
+  }
+ ]
+}

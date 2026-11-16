@@ -1,0 +1,37 @@
+{
+ "tema": "T4 — ¿De verdad os lo gastáis todo en Netflix? (padre contra hijo, 2.ª parte)",
+ "ocio_pct_gasto": {
+  "2006": 23.65,
+  "2025": 22.2
+ },
+ "ocio_real_2006_2025_pct": -30.0,
+ "dos_sueldos_pct": {
+  "2006": 54.4,
+  "2026": 51.8
+ },
+ "hipotecas_mas_80_pct": {
+  "2006": 17.02,
+  "2026": 10.05
+ },
+ "sueldo_mas_frecuente": {
+  "2006": 13775.0,
+  "2022": 16875.0,
+  "real_2006_2022_pct": -8.7
+ },
+ "edad_emancipacion": {
+  "ES_2006": 28.7,
+  "ES_2025": 30.2,
+  "UE_2025": 26.3
+ },
+ "edad_primer_hijo": {
+  "1986": 25.9,
+  "2006": 29.32,
+  "2024": 31.52
+ },
+ "hijos_por_mujer": {
+  "1986": 1.55,
+  "2006": 1.36,
+  "2024": 1.1
+ },
+ "nota": "Ocio = ocio y cultura + restaurantes y hoteles + comunicaciones (gasto monetario de los hogares, EPF). Dos sueldos = hogares con 2 o más ocupados entre los hogares con algún ocupado (EPA, 3.er trimestre). Hipotecas de más del 80 % del valor (Banco de España, media del año; 2026: dos trimestres). Sueldo más frecuente: microdatos de la Encuesta de Estructura Salarial (INE). Emancipación: Eurostat. Primer hijo e hijos por mujer: INE."
+}
