@@ -1,0 +1,36 @@
+{
+ "huella": "e199b0670c8f7de6",
+ "semilla": 9000,
+ "texto": "¿Y por eso seguís en casa con treinta tacos?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0033,
+  "oido": "Y por eso seguís en casa con 30 atacos?",
+  "parecido": 0.986,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.32,
+   0.48,
+   0.86,
+   0.96,
+   1.22,
+   1.5,
+   1.7966666666666666
+  ],
+  "t1": [
+   0.14,
+   0.32000000000000006,
+   0.48,
+   0.8600000000000001,
+   0.96,
+   1.22,
+   1.5,
+   1.72,
+   2.18
+  ],
+  "ritmo": 14.8,
+  "voz": 0.886
+ }
+}
