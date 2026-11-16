@@ -30,6 +30,13 @@ FUENTES = {
         ("INE · EPA, parados (tabla 65218)", "https://www.ine.es/jaxiT3/Tabla.htm?t=65218"),
         ("INE · EPA, tasas de paro (tabla 65219)", "https://www.ine.es/jaxiT3/Tabla.htm?t=65219"),
     ],
+    "t3": [
+        ("Banco de España · Indicadores del mercado de la vivienda (precio del m², esfuerzo teórico, tipos de interés)", "https://www.bde.es/webbe/es/estadisticas/temas/vivienda.html"),
+        ("Ministerio de Vivienda · Valor tasado de la vivienda libre", "https://www.mivau.gob.es/el-ministerio/informacion-estadistica/vivienda-suelo-y-urbanismo/valor-tasado-de-la-vivienda"),
+        ("INE · Anuarios Estadísticos de España de 1987 y 1988 (salarios de 1986 y jornada pactada)", "https://www.ine.es/inebaseweb/libros.do?tntp=25687"),
+        ("INE · Encuesta Anual de Estructura Salarial (tabla 28191)", "https://www.ine.es/jaxiT3/Tabla.htm?t=28191"),
+        ("INE · IPC, variaciones desde 1961 (tabla 76134)", "https://www.ine.es/jaxiT3/Tabla.htm?t=76134"),
+    ],
 }
 
 # Texto de la descripción: con la voz del canal (clon-bruno), sin opiniones ni causas.
@@ -51,6 +58,14 @@ ENTRADA = {
            "trabajan 46, igual que entonces. El paro ha crecido bastante más.\n\n"
            "Veredicto: frente a 2016, mejora (un 40 % menos de paro). Frente a 2007, empeora (un 43 % más de paro). "
            "Más gente trabajando que nunca y más parados que antes de la crisis. ¿Cómo puede ser?"),
+    "t3": ("¿Quién lo tuvo más difícil para comprar casa: tu padre o tú? Padre e hijo discuten con datos oficiales.\n\n"
+           "1986: un piso de 90 m² costaba unos 4,5 millones de pesetas (unos 27.100 €), 3,4 años de sueldo medio. "
+           "Hoy (2026): unos 210.000 €, 7,1 años de sueldo medio. Descontando la inflación, el sueldo medio ha subido un 16 % "
+           "desde 1986 y el piso cuesta 2,3 veces más.\n\n"
+           "Pero el dinero era carísimo: en 1989 las hipotecas iban al 15 %, y en 1987 la cuota se comía el 47 % de la renta "
+           "de un hogar. Hoy, el 38 %.\n\n"
+           "En resumen: comprar casa cuesta el doble de años de sueldo que en 1986; pagar la cuota, algo menos. "
+           "En 2006, en plena burbuja, eran 8,9 años de sueldo.")
 }
 METODO = {
     "t1": ("Cómo lo calculamos: la «compra del mes» es el gasto medio por persona en alimentos y bebidas sin alcohol "
@@ -64,14 +79,23 @@ METODO = {
            "es la tasa de empleo oficial. La tasa de paro oficial, que se calcula sobre quien trabaja o busca trabajo, fue "
            "del 8,0 % en 2007, del 18,9 % en 2016 y del 10,2 % hoy. Ocupados (EPA) no es lo mismo que afiliados a la "
            "Seguridad Social."),
+    "t3": ("Cómo lo calculamos: piso de 90 m² (supuesto). 1986: precio del m² de las sociedades de tasación (Banco de España). "
+           "Hoy: valor tasado medio de la vivienda libre en España, 1.er semestre de 2026 (Ministerio de Vivienda, vía Banco de "
+           "España). Sueldo medio bruto: 1986, industria y servicios (740 pesetas por hora trabajada × 1.786,8 horas de jornada "
+           "pactada; anuarios del INE de 1987 y 1988); hoy, 2024 (Encuesta Anual de Estructura Salarial, INE). La inflación se "
+           "descuenta con el IPC del INE. «La cuota» es el esfuerzo teórico del Banco de España (préstamo del 80 % del valor, "
+           "sin deducciones). Es la media de España: en Madrid, el piso cuesta bastante más.")
 }
 CIERRE = {"t1": "¿Lo notas en tu carro? Te leo en los comentarios.",
-          "t2": "¿Tú cómo te lo explicas? Te leo en los comentarios."}
+          "t2": "¿Tú cómo te lo explicas? Te leo en los comentarios.",
+          "t3": "¿Quién lo tuvo más fácil, el padre o el hijo? ¿Tú qué opinas? Te leo en los comentarios."}
 ETIQUETAS = {
     "t1": ["cesta de la compra", "salarios", "IPC", "INE", "precios", "España", "horas de trabajo", "poder adquisitivo",
            "inflación", "sueldo"],
     "t2": ["empleo", "paro", "EPA", "INE", "crisis 2008", "España", "ocupados", "población", "mercado laboral",
            "trabajo"],
+    "t3": ["vivienda", "comprar casa", "hipoteca", "precio de la vivienda", "sueldo", "jóvenes", "boomers", "España",
+           "INE", "Banco de España"],
 }
 
 
@@ -86,6 +110,8 @@ def main():
     g = json.loads((RAIZ / "videos" / vid / "guion.json").read_text(encoding="utf-8"))
     voces = json.loads((RAIZ / "diseno" / "voces.json").read_text(encoding="utf-8"))
     def credito(perfil):
+        if "credito" in perfil:
+            return perfil["credito"]
         if perfil["motor"].startswith("qwen"):
             return voces["creditos"]["qwen:" + perfil["modelo"].split("/")[-1]]
         return voces["creditos"][f"{perfil['motor']}:{perfil['voz'].partition('#')[0]}"]
@@ -101,7 +127,7 @@ def main():
         cuando = datetime.fromisoformat(a.publicar).replace(tzinfo=ZoneInfo("Europe/Madrid")).isoformat()
     fuentes = "\n".join(f"· {n}: {u}" for n, u in FUENTES[vid])
     desc = (f"{ENTRADA.get(vid, g['titulo'])}\n\n{METODO[vid]}\n\nFuentes oficiales:\n{fuentes}\n\n"
-            f"Voz e imágenes generadas por ordenador; {g['protagonista']['nombre']} es un personaje inventado. {creditos}.\n\n"
+            f"Voz e imágenes generadas por ordenador; {(g['protagonista']['nombre'] + ' es un personaje inventado') if 'protagonista' in g else 'los personajes son inventados'}. {creditos}.\n\n"
             f"{CIERRE.get(vid, '')}\n\n#Shorts #economía #España")
     ficha = {
         "id": vid, "estilo": a.estilo, "video": video, "titulo": g["titulo"], "descripcion": desc,

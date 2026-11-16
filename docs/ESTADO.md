@@ -23,7 +23,7 @@ Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d
 4. **Texto con su voz** (`/anthropic-skills:clon-bruno` al 100 %), de persona normal, con gancho llamativo. Sin sus opiniones políticas.
 5. **Más tranquilo y menos cargado.** Una idea por escena. No recortar las pausas naturales de la voz; cada tarjeta con dato se queda en pantalla un segundo más.
 6. **Retención**: preguntas llamativas al empezar.
-7. **De uno en uno**: T1 y T2 aprobados; el tercero, cuando Bruno elija tema (propuesta del 14-11-2026: la hipoteca en horas de trabajo).
+7. **De uno en uno**: T1, T2 y T3 aprobados; T4 propuesto el 16-11-2026.
 10. **Personajes y final (T2 v4, 12-11-2026):** piel sobre todo clara, algún hispanoamericano; sin barbas sin bigote (solo el carnicero). Nada de «depende» por defecto: veredicto claro (mejora o empeora) y una pregunta final que abra debate («¿Cómo puede ser? ¿Tú cómo te lo explicas?»).
 9. **Que se entienda (T2, 12-11-2026):** decir siempre de qué país hablamos (España, con la bandera al empezar). Cifras absolutas con su base («antes éramos X, ahora Y»). Gráficos que se lean de un vistazo (rosquilla, quesito, barras). Escenas que enseñen la idea (gente trabajando en comercios, no gente paseando). El título exacto que diga Bruno.
 8. Lee en el **móvil**: mensajes cortos y con el resultado primero. Revisar los fotogramas antes de enviar nada.
@@ -32,7 +32,7 @@ Versiones rechazadas: v1 (tarjetas y bustos, tres estilos), v2 collage (`videos/
 
 ## 3. Siguiente paso, en orden
 1. Bruno sube T1 (y T2 cuando esté aprobado) a mano en Studio con `upload/<id>.md` (contenido sintético: sí; no es para niños).
-2. **T3 (en producción):** «¿Quién lo tuvo más difícil para comprar casa: tu padre o tú?». Es una discusión de un minuto entre un padre de 62 años y su hijo de 31: 1986 frente a hoy, con datos del Banco de España y del INE aprobados el 14-11-2026. El guion v2 lleva expresiones de la calle (Bruno, 15-11-2026). Voz del padre: opción C (Qwen3-TTS VoiceDesign, inventada), fijada en `diseno/voces/ref-padre.wav`. Escenas: `videos/t3/escenas.mjs` y `diseno/casa.mjs` (cocina, iconos, fotos, ladrillo, tique). Pendiente: voz completa → sonido → fotogramas → render → aprobación. Después, **T4** con los mismos personajes sobre «Netflix y Bali» (gasto en ocio, la entrada, el sueldo más frecuente y la edad de emancipación; todo ya está en `data/clean/t3_vivienda.json`).
+2. **T3 aprobado (16-11-2026):** «¿Quién lo tuvo más difícil para comprar casa: tu padre o tú?», 62 s. Ficha `upload/t3.md`, portada `upload/t3-portada.png`, archivo `archive/t3/`. Siguiente: T4, propuesto el 16-11-2026.
 3. Si Bruno quiere probar Google Chirp 3 HD: necesita su cuenta de Google Cloud, una clave de API y permitir `texttospeech.googleapis.com` en el entorno.
 4. La voz 5 (personaje secundario) está fijada en `diseno/voces/ref-voz5.wav`; se usará cuando Bruno lo pida, con una muestra previa.
 5. Cuando Bruno conecte la API de YouTube (JSON del cliente OAuth), leer métricas con `scripts/youtube/metricas.py`.
