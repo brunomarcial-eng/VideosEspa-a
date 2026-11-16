@@ -61,8 +61,8 @@ export function escenas(D) {
     { n: 2, set: "vacio",
       svg: `${pareja("s2")}${quesito("s2-a", 430, 1010, 70, 40, C.ocre, "2006")}${quesito("s2-b", 650, 1010, 70, 40, C.azul, "HOY")}
         <g id="s2-baja"><path d="M0 -60 V40 M-34 8 L0 44 L34 8" fill="none" stroke="${C.rojo}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></g>`,
-      tarjeta: tarjeta(2, "Ocio, bares, hoteles y teléfono", `<div class="vs"><div class="col" id="c2-a"><div class="v t-pasado">${pct(D.ocio06)}</div><div class="n">en 2006</div></div>
-        <div class="col" id="c2-b"><div class="v t-hoy">${pct(D.ocioHoy)}</div><div class="n">hoy</div></div></div>
+      tarjeta: tarjeta(2, "Ocio, bares, hoteles y teléfono", `<div class="vs"><div class="col"><div class="v t-pasado" id="c2-a">${pct(D.ocio06)}</div><div class="n">en 2006</div></div>
+        <div class="col"><div class="v t-hoy" id="c2-b">${pct(D.ocioHoy)}</div><div class="n">hoy</div></div></div>
         <div class="sub" id="c2-real" style="margin-top:10px">del gasto de las familias · descontada la inflación, <mark id="m2">−${Math.abs(Math.round(D.ocioReal))} %</mark> por hogar</div>`, { fuente: F_EPF }),
       fn: function (t, e) {
         const c = e.c;
@@ -94,8 +94,8 @@ export function escenas(D) {
       svg: `${pareja("s6")}<g id="s6-f1">${fila("s6-a", 6)}</g><g id="s6-f2">${fila("s6-b", 10)}</g>
         <text id="s6-l1" x="0" y="0" font-family="Cap" font-weight="800" font-size="38" fill="#8A6316">2006</text>
         <text id="s6-l2" x="0" y="0" font-family="Cap" font-weight="800" font-size="38" fill="${C.azul}">HOY</text>`,
-      tarjeta: tarjeta(6, "Hipotecas de más del 80 % del valor", `<div class="vs"><div class="col" id="c6-a"><div class="v t-pasado" style="font-size:66px">1 de cada 6</div><div class="n">en 2006 (${pct(D.hip06)})</div></div>
-        <div class="col" id="c6-b"><div class="v t-hoy" style="font-size:66px">1 de cada 10</div><div class="n">hoy (${pct(D.hipHoy)})</div></div></div>`, { fuente: F_BDE }),
+      tarjeta: tarjeta(6, "Hipotecas de más del 80 % del valor", `<div class="vs"><div class="col"><div id="c6-a"><div class="v t-pasado" style="font-size:66px">1 de cada 6</div><div class="n">${pct(D.hip06)} de las hipotecas</div></div><div class="n">en 2006</div></div>
+        <div class="col"><div id="c6-b"><div class="v t-hoy" style="font-size:66px">1 de cada 10</div><div class="n">${pct(D.hipHoy)} de las hipotecas</div></div><div class="n">hoy</div></div></div>`, { fuente: F_BDE }),
       fn: function (t, e) {
         const c = e.c;
         // Fila de 2006 (6 casas) y fila de hoy (10 casas); la primera de cada fila, en rojo.
@@ -147,8 +147,8 @@ export function escenas(D) {
     // 10 · Hijo: «Con 30,2 de media. En Europa, a los 26.»
     { n: 10, set: "vacio",
       svg: `${pareja("s10")}${barraEdad("s10-es", "España", C.rojo)}${barraEdad("s10-ue", "Unión Europea", C.azul)}`,
-      tarjeta: tarjeta(10, "Edad media al irse de casa", `<div class="vs"><div class="col" id="c10-a"><div class="v t-hoy">${es(D.emaES)}</div><div class="n">España</div></div>
-        <div class="col" id="c10-b"><div class="v t-hoy">${es(D.emaUE)}</div><div class="n">Unión Europea</div></div></div>`, { tono: "hoy", fuente: F_EUR, icono: bandera(44) }),
+      tarjeta: tarjeta(10, "Edad media al irse de casa", `<div class="vs"><div class="col"><div class="v t-hoy" id="c10-a">${es(D.emaES)}</div><div class="n">España</div></div>
+        <div class="col"><div class="v t-hoy" id="c10-b">${es(D.emaUE)}</div><div class="n">Unión Europea</div></div></div>`, { tono: "hoy", fuente: F_EUR, icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c, ancho = (edad) => 460 * edad / 35;
         T("s10-es", 330, 800); T("s10-ue", 330, 960);
@@ -177,8 +177,8 @@ export function escenas(D) {
     { n: 12, set: "vacio",
       svg: `${pareja("s12")}${reglaEdad("s12-regla", R0, R1, RW)}${cuna("s12-cuna", C.azulClaro)}
         <g id="s12-p86"><circle r="12" fill="#8A6316"/><text y="-28" text-anchor="middle" font-family="Cap" font-weight="800" font-size="34" fill="#8A6316">1986</text></g>`,
-      tarjeta: tarjeta(12, "Edad media de la madre al primer hijo", `<div class="vs"><div class="col" id="c12-a"><div class="v t-pasado">${Math.round(D.hijo86)} años</div><div class="n">en 1986</div></div>
-        <div class="col" id="c12-b"><div class="v t-hoy">${es(D.hijoHoy)} años</div><div class="n">hoy (2024)</div></div></div>`, { fuente: F_INE }),
+      tarjeta: tarjeta(12, "Edad media de la madre al primer hijo", `<div class="vs"><div class="col"><div class="v t-pasado" id="c12-a">${Math.round(D.hijo86)} años</div><div class="n">en 1986</div></div>
+        <div class="col"><div class="v t-hoy" id="c12-b">${es(D.hijoHoy)} años</div><div class="n">hoy (2024)</div></div></div>`, { fuente: F_INE }),
       fn: function (t, e) {
         const c = e.c, RX = (edad) => 240 + (edad - 20) * 40;   // la misma escala que reglaEdad(20, 35, 600)
         pop("s12-regla", t, c["c12-86"], 540, 820, { s: 1 });
