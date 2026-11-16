@@ -1,0 +1,30 @@
+{
+ "huella": "bc49e1a67659e5d6",
+ "semilla": 11002,
+ "texto": "¿Y los nietos pa cuándo, eh?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0016,
+  "oido": "Y los nietos pa' cuándo, ¿eh?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.28,
+   0.72,
+   0.98,
+   1.36
+  ],
+  "t1": [
+   0.12,
+   0.28,
+   0.72,
+   0.88,
+   1.32,
+   1.44
+  ],
+  "ritmo": 12.3,
+  "voz": 0.853
+ }
+}
