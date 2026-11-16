@@ -177,7 +177,7 @@ export function escenas(D) {
     { n: 12, set: "vacio",
       svg: `${pareja("s12")}${reglaEdad("s12-regla", R0, R1, RW)}${cuna("s12-cuna", C.azulClaro)}
         <g id="s12-p86"><circle r="12" fill="#8A6316"/><text y="-28" text-anchor="middle" font-family="Cap" font-weight="800" font-size="34" fill="#8A6316">1986</text></g>`,
-      tarjeta: tarjeta(12, "Edad media al tener el primer hijo", `<div class="vs"><div class="col" id="c12-a"><div class="v t-pasado">${Math.round(D.hijo86)} años</div><div class="n">en 1986</div></div>
+      tarjeta: tarjeta(12, "Edad media de la madre al primer hijo", `<div class="vs"><div class="col" id="c12-a"><div class="v t-pasado">${Math.round(D.hijo86)} años</div><div class="n">en 1986</div></div>
         <div class="col" id="c12-b"><div class="v t-hoy">${es(D.hijoHoy)} años</div><div class="n">hoy (2024)</div></div></div>`, { fuente: F_INE }),
       fn: function (t, e) {
         const c = e.c, RX = (edad) => 240 + (edad - 20) * 40;   // la misma escala que reglaEdad(20, 35, 600)

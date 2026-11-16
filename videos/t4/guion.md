@@ -16,7 +16,7 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 9 | 37-40 s | padre (62 años) | ¿Y por eso seguís en casa con treinta tacos? | «¿Con treinta tacos en casa?» | — | El padre señala la casa. |
 | 10 | 40-44 s | hijo (31 años) | Con 30,2 de media. En Europa, a los 26. | Edad media al irse de casa de los padres · España: 30,2 · UE: 26,3 | DATO OFICIAL · EUROSTAT (2025) | Dos barras de edad con su bandera: España y la Unión Europea. |
 | 11 | 44-46 s | padre (62 años) | ¿Y los nietos pa cuándo, eh? | «¿Y los nietos?» | — | El padre mece unos brazos vacíos. |
-| 12 | 46-54 s | hijo (31 años) | ¿Nietos? En 1986, el primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio. ¿Casualidad? | Edad media al primer hijo · 1986: 26 · hoy: 31,5 <br>_Regla de edades en pantalla (20, 25, 30, 35 años): solo es la escala del dibujo._ | DATO OFICIAL · INE (Indicadores Demográficos Básicos, 2024) | Una cuna que se desplaza por una regla de edades: de 26 a 31,5. |
+| 12 | 46-54 s | hijo (31 años) | ¿Nietos? En 1986, el primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio. ¿Casualidad? | Edad media de la madre al primer hijo · 1986: 26 · hoy: 31,5 <br>_Regla de edades en pantalla (20, 25, 30, 35 años): solo es la escala del dibujo._ | DATO OFICIAL · INE (Indicadores Demográficos Básicos, 2024) | Una cuna que se desplaza por una regla de edades: de 26 a 31,5. |
 | 13 | 54-57 s | padre (62 años) | Pues aquí estás muy bien, majo. Y comes caliente. | «Aquí estás muy bien, majo» | — | El padre sirve un plato de cocido. |
 | 14 | 58-60 s | hijo (31 años) | ¿Quién tiene razón? ¿Tú qué opinas? | ¿Quién tiene razón: el padre o el hijo? | — | Los dos a cámara; botones «PADRE» e «HIJO» y un bocadillo. |
 

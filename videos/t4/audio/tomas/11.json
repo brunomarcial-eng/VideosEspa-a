@@ -1,10 +1,10 @@
 {
  "huella": "bc49e1a67659e5d6",
- "semilla": 11002,
+ "semilla": 11103,
  "texto": "¿Y los nietos pa cuándo, eh?",
  "ev": {
   "ok": true,
-  "nota": 1.0016,
+  "nota": 1.0,
   "oido": "Y los nietos pa' cuándo, ¿eh?",
   "parecido": 1.0,
   "problemas": [],
@@ -12,19 +12,20 @@
    0.0,
    0.12,
    0.28,
-   0.72,
-   0.98,
-   1.36
+   0.68,
+   0.94,
+   1.42
   ],
   "t1": [
    0.12,
    0.28,
-   0.72,
-   0.88,
-   1.32,
-   1.44
+   0.6800000000000002,
+   0.86,
+   1.4,
+   1.52
   ],
-  "ritmo": 12.3,
-  "voz": 0.853
- }
+  "ritmo": 11.9,
+  "voz": 0.822
+ },
+ "eleccion": "la más parecida a su voz y menos a la de hijo entre 6 tomas (diferencia -0.006)"
 }

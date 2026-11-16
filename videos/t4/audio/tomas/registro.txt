@@ -1,30 +1,24 @@
 plano 1: «¡Es que os lo fundís todo! Netflix, Glovo, el gimnasio, festivales… ¡Así no hay quien ahorre!»
-    toma 1 (semilla 1000): mala · 0.986 · voz 0.954 · 6.3 s · 11.0 l/s · «es que os lo fundís todo. Netflix, Globo, El Gimnasio, Festivales, así no hay quien ahorre.» · sin pausa tras «festivales…» (0.26 s)
-    toma 2 (semilla 1001): mala · 0.971 · voz 0.921 · 5.9 s · 11.9 l/s · «es que os lo fundís todo. Netflix, globo, el gimnasio, festivales. Así no hay quien ahorra.» · sin pausa tras «festivales…» (0.24 s)
-    toma 3 (semilla 1002): BUENA · 0.986 · voz 0.937 · 7.0 s · 10.0 l/s · «es que os lo fundís todo. Netflix, Globo, El Gimnasio, Festivales, así no hay quien ahorre.»
+    toma guardada (semilla 1002): BUENA · «es que os lo fundís todo. Netflix, Globo, El Gimnasio, Festivales, así no hay quien ahorre.»
 plano 2: «¿Seguro? Ocio, bares, hoteles y teléfono: hoy, el 22 % del gasto de las familias. En 2006, el 24 %. Y quitando la inflación, un 30 % menos.»
-    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.941 · 11.8 s · 13.0 l/s · «seguro, ocio, bares, hoteles y teléfono. Hoy el 22% del gasto de las familias, en 2006 el 24% y quitando la inflación un 30% menos.»
-plano 3: «Ya, pero antes con un sueldo tirabas palante con toda la familia.»
-    toma guardada (semilla 3000): BUENA · «Ya, pero antes con un sueldo tirabaspalante con toda la familia.»
-plano 4: «Ni de coña. En 2006, el 54 % de las casas con trabajo ya tenían dos sueldos. Hoy, el 52 %.»
-    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.943 · 9.1 s · 12.3 l/s · «ni de coña. En 2006, el 54% de las casas con trabajo ya tenían dos sueldos. Hoy, el 52%»
+    toma guardada (semilla 2000): BUENA · «seguro, ocio, bares, hoteles y teléfono. Hoy el 22% del gasto de las familias, en 2006 el 24% y quitando la inflación un 30% menos.»
 plano 5: «Pues pedid la hipoteca, que el banco os la da.»
     toma guardada (semilla 5000): BUENA · «pues pedid la hipoteca que el banco os la da.»
 plano 6: «En 2006, una de cada seis hipotecas pasaba del 80 % del piso. Hoy, una de cada diez. La entrada, a pulmón… como tú.»
-    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.937 · 9.7 s · 10.7 l/s · «En 2006, una de cada seis hipotecas pasaba del 80% del piso. Hoy, una de cada diez. La entrada a pulmón como tú.»
+    toma guardada (semilla 6000): BUENA · «En 2006, una de cada seis hipotecas pasaba del 80% del piso. Hoy, una de cada diez. La entrada a pulmón como tú.»
 plano 7: «¿Y cuánto cobras tú, listo?»
     toma guardada (semilla 7000): BUENA · «¿Y cuánto cobras tú? ¿Listo?»
 plano 8: «El sueldo más común: unos 16.900 euros brutos al año. Quitando la inflación, un 9 % menos que en 2006.»
-    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.942 · 8.4 s · 13.7 l/s · «El sueldo más común, unos 16.900 euros brutos al año, quitando la inflación un 9% menos que en 2006.»
+    toma guardada (semilla 8000): BUENA · «El sueldo más común, unos 16.900 euros brutos al año, quitando la inflación un 9% menos que en 2006.»
 plano 9: «¿Y por eso seguís en casa con treinta tacos?»
-    toma guardada (semilla 9000): BUENA · «Y por eso seguís en casa con 30 atacos?»
+    toma guardada (semilla 9100): BUENA · «Y por eso seguís en casa con 30 atacos.»
 plano 10: «Con 30,2 de media. En Europa, a los 26.»
     toma guardada (semilla 10000): BUENA · «con 30,2 de media, en Europa a los 26.»
 plano 11: «¿Y los nietos pa cuándo, eh?»
-    toma guardada (semilla 11002): BUENA · «Y los nietos pa' cuándo, ¿eh?»
+    toma guardada (semilla 11103): BUENA · «Y los nietos pa' cuándo, ¿eh?»
 plano 12: «¿Nietos? En 1986, el primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio. ¿Casualidad?»
-    toma 1 (semilla 12000): BUENA · 1.0 · voz 0.93 · 8.7 s · 11.6 l/s · «nietos, en 1986 el primer hijo llegaba a los 26, hoy a los 31 y medio. Casualidad»
+    toma guardada (semilla 12000): BUENA · «nietos, en 1986 el primer hijo llegaba a los 26, hoy a los 31 y medio. Casualidad»
 plano 13: «Pues aquí estás muy bien, majo. Y comes caliente.»
-    toma guardada (semilla 13000): BUENA · «Pues aquí estás muy bien, majo, y come es caliente.»
+    toma guardada (semilla 13102): BUENA · «Pues aquí estás muy bien, majo, y come es caliente.»
 plano 14: «¿Quién tiene razón? ¿Tú qué opinas?»
-    toma guardada (semilla 14001): BUENA · «¿Quién tiene razón? ¿Tú qué opinas?»
+    toma guardada (semilla 14101): BUENA · «¿Quién tiene razón? ¿Tú qué opinas?»

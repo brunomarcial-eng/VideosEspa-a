@@ -29,4 +29,4 @@ Frente a 2006:
 - **El banco presta menos** por encima del 80 % (17 % → 10 % de las hipotecas).
 - **El sueldo más frecuente compra un 9 % menos.**
 - **Emancipación:** a los 30,2 años en España, frente a 26,3 en la UE.
-- **Primer hijo:** a los 26 años en 1986 y a los 31,5 en 2024.
+- **Primer hijo (edad de la madre):** 26 años en 1986 y 31,5 en 2024.

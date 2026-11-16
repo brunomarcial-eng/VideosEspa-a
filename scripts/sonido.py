@@ -390,10 +390,10 @@ def main(argv):
 
     # ---- música: entra sola, suma capas y se corta en seco con el sello
     m = historia["musica"]
-    planos = {p["n"]: p for p in linea["planos"]}
+    orden = linea["planos"]   # las capas entran en el 2.º, 3.er y 5.º plano (por orden: un guion puede saltarse números)
     t_corte = cues[m["corte"]]
     mus = Pista(dur)
-    musica(mus, 0.0, t_corte, m["bpm"], {"bajo": planos[2]["ini"], "shaker": planos[3]["ini"], "bombo": planos[5]["ini"]})
+    musica(mus, 0.0, t_corte, m["bpm"], {"bajo": orden[1]["ini"], "shaker": orden[2]["ini"], "bombo": orden[min(4, len(orden) - 1)]["ini"]})
     fin = Pista(dur)
     t_vuelve = t_corte + m["silencio_s"]
     musica(fin, t_vuelve, dur - 0.05, m["bpm"], {"bajo": t_vuelve, "shaker": t_vuelve}, fundido_fin=1.2)

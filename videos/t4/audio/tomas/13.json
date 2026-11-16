@@ -1,36 +1,37 @@
 {
  "huella": "6e7b67749df5fcdf",
- "semilla": 13000,
+ "semilla": 13102,
  "texto": "Pues aquí estás muy bien, majo. Y comes caliente.",
  "ev": {
   "ok": true,
-  "nota": 1.0073,
+  "nota": 0.987,
   "oido": "Pues aquí estás muy bien, majo, y come es caliente.",
   "parecido": 0.987,
   "problemas": [],
   "t0": [
    0.0,
-   0.12,
-   0.34,
-   0.58,
-   0.84,
-   1.14,
-   1.98,
-   2.06,
-   2.42
+   0.14,
+   0.38,
+   0.7,
+   0.98,
+   1.36,
+   2.14,
+   2.38,
+   2.76
   ],
   "t1": [
-   0.12,
-   0.34,
-   0.58,
-   0.84,
-   1.1,
-   1.44,
-   2.06,
-   2.42,
-   2.8
+   0.14,
+   0.38,
+   0.7,
+   0.98,
+   1.28,
+   1.64,
+   2.38,
+   2.76,
+   3.22
   ],
-  "ritmo": 12.7,
-  "voz": 0.891
- }
+  "ritmo": 11.0,
+  "voz": 0.913
+ },
+ "eleccion": "la más parecida a su voz y menos a la de hijo entre 6 tomas (diferencia 0.001)"
 }
