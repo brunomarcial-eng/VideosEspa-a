@@ -1,0 +1,28 @@
+{
+ "huella": "a3b9fdc072dc24fb",
+ "semilla": 7000,
+ "texto": "¿Y cuánto cobras tú, listo?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0051,
+  "oido": "¿Y cuánto cobras tú? ¿Listo?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.66,
+   0.94,
+   1.48
+  ],
+  "t1": [
+   0.14,
+   0.66,
+   0.94,
+   1.16,
+   1.82
+  ],
+  "ritmo": 9.8,
+  "voz": 0.86
+ }
+}
