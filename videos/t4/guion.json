@@ -1,6 +1,6 @@
 {
  "id": "t4",
- "version": 1,
+ "version": 2,
  "titulo": "¿De verdad los jóvenes se lo gastan todo en Netflix?",
  "titulo_alternativo": "Padre contra hijo (2): ¿os lo gastáis todo en caprichos?",
  "pregunta": "Padre (62) contra hijo (31), segunda parte: ¿no ahorráis porque os lo gastáis todo en ocio?",
@@ -21,7 +21,7 @@
  "voz_pausas": {
   "pausa_turno_s": 0.3,
   "pausa_mismo_s": 0.3,
-  "pausa_tras_dato_s": 0.6
+  "pausa_tras_dato_s": 0.45
  },
  "sin_veredicto": "Formato padre-hijo: acaba con la pregunta al espectador (Bruno, 15-11-2026). El veredicto va en la descripción.",
  "capitulos": [
@@ -75,7 +75,7 @@
    "n": 1,
    "quien": "padre",
    "funcion": "gancho: la acusación",
-   "voz": "Vale, la casa está cara. ¡Pero es que os lo fundís todo! Netflix, Disney, Glovo, el gimnasio, festivales… ¡Así no hay quien ahorre!",
+   "voz": "¡Es que os lo fundís todo! Netflix, Glovo, el gimnasio, festivales… ¡Así no hay quien ahorre!",
    "pantalla": "¿De verdad os lo gastáis todo en Netflix?",
    "sello": null,
    "imagen": "La cocina de T3. El padre enumera con los dedos; sobre el hijo saltan iconos: tele, bolsa de reparto, pesa, nota musical."
@@ -84,7 +84,7 @@
    "n": 2,
    "quien": "hijo",
    "funcion": "dato: gasto en ocio",
-   "voz": "¿Seguro? Hoy las familias gastan en ocio, bares, hoteles y teléfono el 22 % de lo que gastan. En 2006, el 24 %. Y quitando la inflación, un 30 % menos.",
+   "voz": "¿Seguro? Ocio, bares, hoteles y teléfono: hoy, el 22 % del gasto de las familias. En 2006, el 24 %. Y quitando la inflación, un 30 % menos.",
    "pantalla": "Ocio, bares, hoteles y teléfono · 2006: 24 % · hoy: 22 % del gasto · −30 % descontada la inflación",
    "sello": "INE · Encuesta de Presupuestos Familiares (gasto monetario) · cálculo propio",
    "grafico": true,
@@ -103,7 +103,7 @@
    "n": 4,
    "quien": "hijo",
    "funcion": "dato: dos sueldos",
-   "voz": "Ni de coña. En 2006, más de la mitad de las casas con trabajo ya tenían dos sueldos: el 54 %. Hoy, el 52 %.",
+   "voz": "Ni de coña. En 2006, el 54 % de las casas con trabajo ya tenían dos sueldos. Hoy, el 52 %.",
    "pantalla": "Casas con dos sueldos o más · 2006: 54 % · hoy: 52 %",
    "sello": "INE · Encuesta de Población Activa (hogares con algún ocupado, 3.er trimestre) · cálculo propio",
    "imagen": "Dos casitas con dos figuras dentro; debajo, 54 % y 52 %."
@@ -121,7 +121,7 @@
    "n": 6,
    "quien": "hijo",
    "funcion": "dato: hipotecas de más del 80 %",
-   "voz": "En 2006, una de cada seis hipotecas pasaba del 80 % del valor del piso. Hoy, una de cada diez. La entrada, a pulmón… como tú.",
+   "voz": "En 2006, una de cada seis hipotecas pasaba del 80 % del piso. Hoy, una de cada diez. La entrada, a pulmón… como tú.",
    "pantalla": "Hipotecas de más del 80 % del valor del piso · 2006: 17 % · hoy: 10 %",
    "sello": "DATO OFICIAL · BANCO DE ESPAÑA (préstamos con relación préstamo-valor superior al 80 %)",
    "imagen": "Dos filas de casitas: en 2006, una de cada seis en color; hoy, una de cada diez."
@@ -139,7 +139,7 @@
    "n": 8,
    "quien": "hijo",
    "funcion": "dato: sueldo más frecuente",
-   "voz": "El sueldo más común en España: unos 16.900 euros brutos al año. Quitando la inflación, un 9 % menos que en 2006.",
+   "voz": "El sueldo más común: unos 16.900 euros brutos al año. Quitando la inflación, un 9 % menos que en 2006.",
    "pantalla": "Sueldo más frecuente: 16.900 € brutos al año (2022) · −9 % frente a 2006",
    "sello": "INE · microdatos de la Encuesta de Estructura Salarial 2006 y 2022 · cálculo propio",
    "imagen": "Una nómina que encoge un poco."
@@ -175,7 +175,7 @@
    "n": 12,
    "quien": "hijo",
    "funcion": "dato: primer hijo",
-   "voz": "¿Nietos? En 1986, el primer hijo llegaba a los 26 años. Hoy, a los treinta y uno y medio. ¿Casualidad?",
+   "voz": "¿Nietos? En 1986, el primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio. ¿Casualidad?",
    "pantalla": "Edad media al primer hijo · 1986: 26 · hoy: 31,5",
    "sello": "DATO OFICIAL · INE (Indicadores Demográficos Básicos, 2024)",
    "imagen": "Una cuna que se desplaza por una regla de edades: de 26 a 31,5.",

@@ -44,12 +44,12 @@ export function escenas(D) {
   return [
     // 1 · Padre: «Vale, la casa está cara. ¡Pero es que os lo fundís todo! Netflix, Disney, Glovo, el gimnasio, festivales…»
     { n: 1, set: "vacio",
-      svg: `${pareja("s1")}${["tele", "tele", "reparto", "pesa", "musica"].map((k, i) => icono("s1-i" + i, k, 1.05)).join("")}`,
+      svg: `${pareja("s1")}${["tele", "reparto", "pesa", "musica"].map((k, i) => icono("s1-i" + i, k, 1.05)).join("")}`,
       tarjeta: tarjeta(1, "Padre contra hijo · Segunda parte", `<div class="tit" style="font-size:64px">¿De verdad os lo gastáis todo en <mark id="m1">Netflix</mark>?</div>`, { icono: bandera(44) }),
       fn: function (t, e) {
-        const c = e.c, cues = [c["c1-netflix"], c["c1-disney"], c["c1-glovo"], c["c1-gim"], c["c1-fest"]];
-        const P = [[560, 900], [700, 800], [860, 760], [1000, 860], [430, 780]];
-        for (let i = 0; i < 5; i++) {
+        const c = e.c, cues = [c["c1-netflix"], c["c1-glovo"], c["c1-gim"], c["c1-fest"]];
+        const P = [[600, 880], [780, 790], [960, 860], [440, 790]];
+        for (let i = 0; i < 4; i++) {
           const k = pop("s1-i" + i, t, cues[i], P[i][0], P[i][1] + Math.sin(t * 3 + i) * 6, { s: 1.05 });
           if (k >= 0 && t > c["c1-ahorre"]) T("s1-i" + i, P[i][0] + Math.sin(t * 22 + i) * 5, P[i][1], { s: 1.05 });
         }

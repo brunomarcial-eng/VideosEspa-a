@@ -1,0 +1,30 @@
+{
+ "huella": "9844eda76e5ff036",
+ "semilla": 14001,
+ "texto": "¿Quién tiene razón? ¿Tú qué opinas?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0098,
+  "oido": "¿Quién tiene razón? ¿Tú qué opinas?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.22,
+   0.4,
+   1.48,
+   1.72,
+   1.84
+  ],
+  "t1": [
+   0.22000000000000003,
+   0.4,
+   0.7,
+   1.72,
+   1.84,
+   2.26
+  ],
+  "ritmo": 11.0,
+  "voz": 0.87
+ }
+}
