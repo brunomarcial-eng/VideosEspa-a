@@ -1,0 +1,18 @@
+plano 1: «¡Es que antes tu madre se quedaba en casa con los niños!»
+    toma guardada (semilla 1000): BUENA · «es que antes tu madre se quedaba en casa con los niños.»
+plano 2: «En 1986 trabajaban 26 de cada 100 mujeres. Hoy, 63.»
+    toma guardada (semilla 2000): BUENA · «En 1986 trabajaban 26 de cada 100 mujeres, hoy 63.»
+plano 3: «¡Pues ahí lo tienes!»
+    toma guardada (semilla 3203): BUENA · «Pues ahí lo tienes.»
+plano 4: «No tan rápido. Entre 1995 y 2008 trabajaban cada vez más mujeres… y nacían más niños: de 1,16 a 1,45 hijos por mujer.»
+    toma guardada (semilla 4001): BUENA · «No tan rápido, entre 1995 y 2008 trabajaban cada vez más mujeres y nacían más niños de 1,16 a 1,45 hijos por mujer.»
+plano 5: «¿Entonces qué ha cambiado?»
+    toma guardada (semilla 5203): BUENA · «Entonces, ¿qué ha cambiado?»
+plano 6: «En 1986, el padre tenía 2 días de permiso y la madre, 14 semanas. Hoy, 19 semanas cada uno.»
+    toma guardada (semilla 6000): BUENA · «En 1986, el padre tenía dos días de permiso y la madre 14 semanas. Hoy, 19 semanas cada uno.»
+plano 7: «¡Diecinueve semanas! Yo, cuando naciste tú, tuve dos días y de vuelta al tajo.»
+    toma guardada (semilla 7000): BUENA · «19 semanas. Yo, cuando naciste tú, tuve dos días y de vuelta al tajo.»
+plano 8: «Y aun así, desde 2008 hemos bajado de 1,45 a 1,1 hijos por mujer.»
+    toma guardada (semilla 8000): BUENA · «Y aún así, desde 2008 hemos bajado de 1,45 a 1,1 hijos por mujer.»
+plano 9: «¿Qué hace falta para tener hijos: tiempo, dinero o casa? ¿Tú qué opinas?»
+    toma guardada (semilla 9000): BUENA · «¿Qué hace falta para tener hijos? Tiempo, dinero o casa. ¿Tú qué opinas?»
