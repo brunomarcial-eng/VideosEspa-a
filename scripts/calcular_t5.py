@@ -112,6 +112,12 @@ def europa():
     return res
 
 
+def vivienda_bde():
+    """Precio del piso medio en años de renta bruta de un hogar (Banco de España, ya calculado para T4)."""
+    t4 = json.loads((CLEAN / "t4_netflix.json").read_text(encoding="utf-8"))["bde_accesibilidad"]["precio_entre_renta_hogar_anos"]
+    return {"1987": t4["1987"], "2006": t4["2006"], "2016": t4["2016"], "2019": t4["2019"], "2026": t4["2026_ultimo"]}
+
+
 def main():
     out = {
         "tema": "T5 — ¿Y los nietos pa cuándo? (padre contra hijo, 3.ª parte): natalidad y envejecimiento",
@@ -125,6 +131,7 @@ def main():
         "empleo_1986": epa_1986(),
         "europa_empleo_mujeres_y_fecundidad": europa(),
         "paro_20_24_eurostat": eurostat("eurostat_lfsa_urgan_es_20_24.json")({"geo": "ES"}),
+        "vivienda_bde": vivienda_bde(),
         "permisos": {
             "1986": {"padre_dias": 2, "madre_semanas": 14, "fuente": "Ley 8/1980, Estatuto de los Trabajadores, arts. 37.3.b y 48.4 (BOE 14-03-1980)"},
             "hoy": {"cada_progenitor_semanas": 19, "fuente": "Real Decreto-ley 9/2025, de 29 de julio (BOE-A-2025-15741)"},

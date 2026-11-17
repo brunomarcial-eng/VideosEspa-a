@@ -119,6 +119,49 @@ function parque() {
     ${Array.from({ length: 16 }, (_, i) => `<ellipse cx="${-300 + i * 120 + (i % 3) * 30}" cy="${1380 + (i % 4) * 90}" rx="40" ry="8" fill="#D9C491" opacity=".7"/>`).join("")}`;
 }
 
+// ------------------------------------------------------------------ boda (jardín con arco de flores)
+function boda() {
+  const flor = (x, y, c, r = 18) => `<circle cx="${x}" cy="${y}" r="${r}" fill="${c}"/><circle cx="${x}" cy="${y}" r="${r * 0.35}" fill="#F4D06F"/>`;
+  const flores = Array.from({ length: 22 }, (_, i) => {
+    const a = Math.PI * (i / 21), x = 540 - Math.cos(a) * 250, y = 900 - Math.sin(a) * 300;
+    return flor(x, y, ["#F2B3AC", "#FFFDF8", "#E79C96", "#F4E4C8"][i % 4], 20 + (i % 3) * 4);
+  }).join("");
+  const guirnalda = (y0, y1) => {
+    let d = "", b = "";
+    for (let i = 0; i <= 12; i++) {
+      const x = -60 + i * 100, y = y0 + Math.sin(i * 0.9) * 12 + (y1 - y0) * (i / 12);
+      d += (i ? " L" : "M") + x + " " + y;
+      b += `<circle id="amb-boda-l${i}" cx="${x}" cy="${y + 16}" r="11" fill="${["#E9C46A", "#F2B3AC", "#9ED0E6", "#B7D1A8"][i % 4]}"/>`;
+    }
+    return `<path d="${d}" fill="none" stroke="#8A6A48" stroke-width="4"/>${b}`;
+  };
+  return `<rect x="${X0}" y="-400" width="${ANCHO}" height="1720" fill="#DDEFF6"/>
+    <ellipse cx="200" cy="1340" rx="700" ry="200" fill="#C9DDB9"/><ellipse cx="960" cy="1350" rx="640" ry="180" fill="#BCD3AC"/>
+    ${guirnalda(470, 520)}
+    <path d="M290 1300 V900 A250 300 0 0 1 790 900 V1300" fill="none" stroke="#FFFDF8" stroke-width="26"/>${flores}
+    <rect x="80" y="1110" width="150" height="16" rx="6" fill="#FFFDF8"/><rect x="92" y="1126" width="12" height="174" fill="#E3D6BF"/><rect x="206" y="1126" width="12" height="174" fill="#E3D6BF"/>
+    <rect x="98" y="1050" width="114" height="60" rx="8" fill="#FFFDF8" stroke="#E3D6BF" stroke-width="4"/><rect x="116" y="1000" width="78" height="50" rx="8" fill="#FFFDF8" stroke="#E3D6BF" stroke-width="4"/>
+    <rect x="132" y="964" width="46" height="36" rx="8" fill="#FFFDF8" stroke="#E3D6BF" stroke-width="4"/>${flor(155, 958, "#F2B3AC", 12)}
+    <rect x="${X0}" y="1300" width="${ANCHO}" height="1000" fill="#E9DFC8"/>
+    <rect x="390" y="1300" width="300" height="1000" fill="#F2B3AC" opacity=".55"/>`;
+}
+
+// ------------------------------------------------------------------ sala de cunas (casi vacía)
+function cunas() {
+  const cunita = (x, y, llena) => `<g transform="translate(${x} ${y})"><rect x="-56" y="-60" width="112" height="60" rx="10" fill="#FFFDF8" stroke="#C9D1D6" stroke-width="5"/>
+    ${[-36, -12, 12, 36].map((d) => `<line x1="${d}" y1="-60" x2="${d}" y2="0" stroke="#C9D1D6" stroke-width="4"/>`).join("")}
+    <rect x="-60" y="0" width="10" height="34" fill="#C9D1D6"/><rect x="50" y="0" width="10" height="34" fill="#C9D1D6"/>
+    ${llena ? `<circle cx="0" cy="-74" r="20" fill="#F1C9A5"/><path d="M-30 -60 Q0 -96 30 -60 Z" fill="#9ED0E6"/>` : ""}</g>`;
+  return `${pared("#EAF2F7")}
+    <rect x="${X0}" y="860" width="${ANCHO}" height="440" fill="#DDE9F0"/>
+    <rect x="300" y="380" width="480" height="300" rx="18" fill="#FFFDF8"/><rect x="318" y="398" width="444" height="264" rx="10" fill="#CFE6F2"/>
+    <line x1="540" y1="398" x2="540" y2="662" stroke="#FFFDF8" stroke-width="10"/>
+    ${[0, 1, 2, 3, 4, 5].map((i) => `<circle cx="${100 + i * 180}" cy="300" r="16" fill="${["#F2B3AC", "#9ED0E6", "#F4D06F"][i % 3]}"/>`).join("")}
+    ${[-200, 30, 260, 490, 720, 950, 1180].map((x, i) => cunita(x, 1060, i === 3)).join("")}
+    <rect x="${X0}" y="1300" width="${ANCHO}" height="1000" fill="#E4E9EC"/>
+    ${Array.from({ length: 14 }, (_, i) => `<line x1="${X0 + i * 140}" y1="1300" x2="${X0 - 60 + i * 140}" y2="2300" stroke="#D2D9DE" stroke-width="4"/>`).join("")}`;
+}
+
 // Todas las capas de decorado, con el filtro de ondas y la bruma del cambio. Va en «capas» de escenas.mjs.
 export function ambientes() {
   const capa = (nombre, dibujo) => `<g id="amb-${nombre}" class="capa">${dibujo}</g>`;
@@ -127,7 +170,8 @@ export function ambientes() {
       <feDisplacementMap id="f-sueno-d" in="SourceGraphic" in2="ruido" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>
     <radialGradient id="g-bruma"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".35"/></radialGradient></defs>
     <g id="amb">${capa("cocina", cocina("amb-cocina-d"))}${capa("bar", bar())}${capa("super", superMercado())}${capa("calle", calle())}
-      ${capa("piso", piso())}${capa("cuarto", cuarto())}${capa("parque", parque())}</g>
+      ${capa("piso", piso())}${capa("cuarto", cuarto())}${capa("parque", parque())}
+      ${capa("boda", boda())}${capa("cunas", cunas())}</g>
     <rect id="amb-bruma" class="capa" x="${X0}" y="-400" width="${ANCHO}" height="2700" fill="url(#g-bruma)" opacity="0"/>`;
 }
 
@@ -190,3 +234,33 @@ export function osito(id) {
 }
 
 export { persona };
+
+// Anillo de boda. Origen: el centro.
+export function anillo(id) {
+  return `<g id="${id}"><circle r="34" fill="none" stroke="#E9C46A" stroke-width="12"/><path d="M-12 -40 L0 -58 L12 -40 Z" fill="#CFE6F2" stroke="#FFFFFF" stroke-width="3"/></g>`;
+}
+// Contador grande de edad (el número lo pone la página en <id>-n). Origen: el centro.
+export function contador(id, rotulo) {
+  return `<g id="${id}"><rect x="-150" y="-90" width="300" height="190" rx="24" fill="#FFFDF8" stroke="#E3D6BF" stroke-width="6"/>
+    <text x="0" y="-46" text-anchor="middle" font-family="Cap" font-weight="800" font-size="30" fill="${C.gris}" letter-spacing="3">${rotulo}</text>
+    <text id="${id}-n" x="0" y="62" text-anchor="middle" font-family="Cap" font-weight="800" font-size="118" fill="${C.azul}"></text></g>`;
+}
+// Bebé (cabeza y mantita). Origen: la base. Con clip, se puede enseñar solo una parte (0..1) de izquierda a derecha.
+export function bebe(id, color = "#9ED0E6") {
+  return `<g id="${id}"><defs><clipPath id="${id}-clip"><rect id="${id}-r" x="-60" y="-140" width="120" height="150"/></clipPath></defs>
+    <g clip-path="url(#${id}-clip)"><ellipse cx="0" cy="-40" rx="52" ry="42" fill="${color}"/><circle cx="0" cy="-98" r="36" fill="#F1C9A5"/>
+    <circle cx="-12" cy="-102" r="5" fill="${C.tinta}"/><circle cx="12" cy="-102" r="5" fill="${C.tinta}"/><path d="M-10 -86 Q0 -78 10 -86" fill="none" stroke="#7A3E2E" stroke-width="4" stroke-linecap="round"/></g>
+    <g opacity=".22"><ellipse cx="0" cy="-40" rx="52" ry="42" fill="${C.gris}"/><circle cx="0" cy="-98" r="36" fill="${C.gris}"/></g></g>`;
+}
+// Mujer (figura sencilla). Origen: los pies.
+export function mujer(id, color) {
+  return `<g id="${id}"><path d="M-46 0 L-34 -150 Q0 -176 34 -150 L46 0 Z" fill="${color}"/><circle cx="0" cy="-196" r="34" fill="#EDBE96"/>
+    <path d="M-36 -196 Q-40 -244 0 -242 Q40 -244 36 -196 Q30 -222 0 -222 Q-30 -222 -36 -196 Z" fill="#6B4A32"/></g>`;
+}
+// Maletín (trabajo) y moneda (dinero). Origen: el centro.
+export function maletin(id) {
+  return `<g id="${id}"><rect x="-70" y="-46" width="140" height="96" rx="14" fill="#8A6A48"/><rect x="-26" y="-66" width="52" height="24" rx="8" fill="none" stroke="#6B5A48" stroke-width="10"/><rect x="-70" y="-6" width="140" height="10" fill="#6B4A32"/></g>`;
+}
+export function moneda(id) {
+  return `<g id="${id}"><circle r="54" fill="#E9C46A" stroke="#C8902E" stroke-width="8"/><text y="22" text-anchor="middle" font-family="Cap" font-weight="800" font-size="64" fill="#8A6316">€</text></g>`;
+}

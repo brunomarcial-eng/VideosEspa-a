@@ -1,0 +1,304 @@
+{
+ "id": "t5",
+ "version": 1,
+ "titulo": "¿Y los nietos pa cuándo?",
+ "titulo_alternativo": "Padre contra hijo (3): ¿por qué ya no nacen niños?",
+ "pregunta": "Padre (62) contra hijo (31), tercera parte: ¿por qué los hijos llegan tan tarde?",
+ "datos": "data/clean/t5_natalidad.json",
+ "aprobacion_datos": "Tabla y guion aprobados por Bruno el 17-11-2026 (videos/t5/paso-1-datos.md v2, sin el ejemplo de Francia)",
+ "formato": "Tercera parte de la discusión padre-hijo: mismos personajes y voces. El decorado cambia con la conversación, como en un sueño (cocina, calle, boda, sala de cunas, cocina). Sin veredicto hablado: acaba con la pregunta.",
+ "duracion_max_s": 80,
+ "personajes": {
+  "padre": {
+   "anyo": "62 años",
+   "genero": "padre"
+  },
+  "hijo": {
+   "anyo": "31 años",
+   "genero": "hijo"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "Formato padre-hijo: acaba con la pregunta al espectador (Bruno, 15-11-2026). El veredicto va en la descripción.",
+ "capitulos": [
+  {
+   "nombre": "Los nietos",
+   "beats": [
+    1
+   ]
+  },
+  {
+   "nombre": "La casa",
+   "beats": [
+    2,
+    3
+   ]
+  },
+  {
+   "nombre": "La boda",
+   "beats": [
+    4,
+    5
+   ]
+  },
+  {
+   "nombre": "Los hijos",
+   "beats": [
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    10
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "padre",
+   "funcion": "gancho",
+   "voz": "¿Y los nietos pa cuándo, eh? ¡Que tu madre y yo, a tu edad, ya te teníamos en brazos!",
+   "pantalla": "¿Y los nietos pa cuándo?",
+   "sello": null,
+   "imagen": "La cocina. El padre hace el gesto de acunar; sobre su cabeza aparece un bocadillo con una cuna."
+  },
+  {
+   "n": 2,
+   "quien": "hijo",
+   "funcion": "dato: la casa",
+   "voz": "Papá, primero hace falta casa. En 1987, un piso costaba 3 años de lo que ganaba un hogar. Hoy, más de 8.",
+   "pantalla": "Un piso, en años de lo que gana un hogar · 1987: 3,1 · hoy: 8,4",
+   "nota": "En 2006: 8,8. En 2016: 6,7",
+   "sello": "DATO OFICIAL · BANCO DE ESPAÑA (precio de la vivienda entre la renta bruta de un hogar)",
+   "imagen": "Como en un sueño, la cocina se deshace y están en la calle. Un bloque crece planta a planta: 3 plantas en 1987 y 8 hoy (una planta, un año de ingresos)."
+  },
+  {
+   "n": 3,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "¡Pues casaos y a vivir!",
+   "pantalla": "«¡Pues casaos!»",
+   "sello": null,
+   "imagen": "En la calle. Dos anillos saltan y brillan."
+  },
+  {
+   "n": 4,
+   "quien": "hijo",
+   "funcion": "dato: la boda",
+   "voz": "Vosotros os casabais a los 26. Ahora, a los 36.",
+   "pantalla": "Edad media al primer matrimonio · 1986: 26 · hoy: 36,2",
+   "nota": "En 2007: 31. En 2016: 34",
+   "sello": "DATO OFICIAL · INE (Indicadores Demográficos Básicos)",
+   "imagen": "La calle se deshace y están en una boda: arco de flores, guirnaldas y la tarta. Un contador de edad pasa de 26 a 36."
+  },
+  {
+   "n": 5,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "¡Si es que ahora las bodas son un festival!",
+   "pantalla": "«¡Las bodas son un festival!»",
+   "sello": null,
+   "imagen": "En la boda. Se encienden luces de colores, cae confeti y saltan notas musicales."
+  },
+  {
+   "n": 6,
+   "quien": "hijo",
+   "funcion": "dato: primer hijo",
+   "voz": "El primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio.",
+   "pantalla": "Edad media de la madre al primer hijo · 1986: 26 · hoy: 31,5",
+   "nota": "En 2007: 29,4. En 2016: 30,8",
+   "sello": "DATO OFICIAL · INE (Indicadores Demográficos Básicos)",
+   "imagen": "La boda se deshace y están en una sala de cunas, casi todas vacías. Una cuna avanza por una regla de edades de 26 a 31,5."
+  },
+  {
+   "n": 7,
+   "quien": "hijo",
+   "funcion": "dato: hijos por mujer",
+   "voz": "Y de 1,55 hijos por mujer hemos pasado a 1,1.",
+   "pantalla": "Hijos por mujer · 1986: 1,55 · hoy: 1,10",
+   "nota": "En 2007: 1,38. En 2016: 1,33",
+   "sello": "DATO OFICIAL · INE (Indicadores Demográficos Básicos)",
+   "imagen": "En la sala de cunas. Dos filas de bebés: en 1986, uno y medio; hoy, uno y poco."
+  },
+  {
+   "n": 8,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "¡Porque no queréis!",
+   "pantalla": "«¡Porque no queréis!»",
+   "sello": null,
+   "imagen": "El padre señala al hijo; el hijo niega con la cabeza."
+  },
+  {
+   "n": 9,
+   "quien": "hijo",
+   "funcion": "dato: lo que dicen ellas",
+   "voz": "Casi tres de cada cuatro mujeres querrían al menos dos. Y las que tienen menos de los que querían, a partir de los 35, dicen que es por el trabajo y el dinero.",
+   "pantalla": "Casi 3 de cada 4 mujeres querrían tener al menos dos hijos · Desde los 35, las que tienen menos de los que querían: razones laborales o de conciliación, y económicas",
+   "sello": "DATO OFICIAL · INE (Encuesta de Fecundidad 2018)",
+   "imagen": "En la sala de cunas. Cuatro mujeres; casi tres se iluminan con un bocadillo de dos bebés. Luego aparecen un maletín y una moneda."
+  },
+  {
+   "n": 10,
+   "quien": "hijo",
+   "funcion": "pregunta para el debate",
+   "voz": "Casa, boda, hijos… todo llega más tarde. ¿Casualidad? ¿Tú qué opinas?",
+   "pantalla": "Casa, boda, hijos: todo llega más tarde. ¿Casualidad?",
+   "sello": null,
+   "imagen": "La sala se deshace y vuelven a la cocina. Los dos a cámara; botones «PADRE» e «HIJO» y un bocadillo."
+  }
+ ],
+ "no_dato": [
+  "4",
+  "20",
+  "25",
+  "30",
+  "35"
+ ],
+ "cifras": [
+  {
+   "texto": "3",
+   "ruta": "vivienda_bde.1987",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "3,1",
+   "ruta": "vivienda_bde.1987",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "8,4",
+   "ruta": "vivienda_bde.2026",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "8",
+   "ruta": "vivienda_bde.2026",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "8,8",
+   "ruta": "vivienda_bde.2006",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "6,7",
+   "ruta": "vivienda_bde.2016",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "26",
+   "ruta": "edad_primer_matrimonio.1986",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "36",
+   "ruta": "edad_primer_matrimonio.2024",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "36,2",
+   "ruta": "edad_primer_matrimonio.2024",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "31",
+   "ruta": "edad_primer_matrimonio.2007",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "34",
+   "ruta": "edad_primer_matrimonio.2016",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "26",
+   "ruta": "edad_primer_hijo.1986",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "31,5",
+   "ruta": "edad_primer_hijo.2024",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "29,4",
+   "ruta": "edad_primer_hijo.2007",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "30,8",
+   "ruta": "edad_primer_hijo.2016",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "1,55",
+   "ruta": "hijos_por_mujer.1986",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "1,1",
+   "ruta": "hijos_por_mujer.2024",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "1,10",
+   "ruta": "hijos_por_mujer.2024",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "1,38",
+   "ruta": "hijos_por_mujer.2007",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "1,33",
+   "ruta": "hijos_por_mujer.2016",
+   "decimales": 2,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "«3 años… más de 8»: precio de la vivienda entre la renta bruta por hogar (Banco de España): 3,09 de media en 1987 y 8,36 en junio de 2026.",
+  "«A los 26… a los 36»: edad media al primer matrimonio, hombres y mujeres (INE): 26,03 en 1986 y 36,19 en 2024.",
+  "«El primer hijo… 26… treinta y uno y medio»: edad media de la madre al primer hijo (INE): 25,9 en 1986 y 31,52 en 2024.",
+  "«De 1,55 a 1,1»: indicador coyuntural de fecundidad (INE): 1,55 en 1986 y 1,10 en 2024.",
+  "«Casi tres de cada cuatro mujeres querrían al menos dos»: titular literal de la Encuesta de Fecundidad 2018 del INE («Casi tres de cada cuatro mujeres desearían tener al menos dos hijos»).",
+  "«A partir de los 35… el trabajo y el dinero»: la nota del INE dice que «a partir de los 35 años, las razones laborales o de conciliación de la vida familiar y laboral y las económicas son las más importantes por las que las mujeres han tenido menos hijos de los deseados». Es lo que declaran ellas; el vídeo no lo afirma como causa (regla 3).",
+  "«Todo llega más tarde»: boda, 10 años más tarde; primer hijo, 5,6 años más tarde. No se dice «diez años» para todo.",
+  "«¡Las bodas son un festival!»: chiste del padre, sin cifras (no hay dato oficial del coste de una boda)."
+ ],
+ "cierre": {
+  "veredicto": "frente a 1986, empeora: la casa cuesta casi tres veces más años de ingresos, la boda llega diez años más tarde, el primer hijo cinco años y medio más tarde y hay casi un tercio menos de hijos por mujer",
+  "porque": "Banco de España: piso medio, 3,1 años de renta bruta de un hogar en 1987 y 8,4 en 2026. INE: primer matrimonio a los 26 en 1986 y a los 36,2 en 2024; primer hijo a los 25,9 y a los 31,5; hijos por mujer, 1,55 y 1,10. Encuesta de Fecundidad 2018: casi tres de cada cuatro mujeres desearían al menos dos hijos; desde los 35, las que tienen menos de los deseados lo atribuyen sobre todo a razones laborales o de conciliación y económicas."
+ },
+ "aprobacion_guion": "17-11-2026: Bruno aprueba la propuesta (sin el ejemplo de Francia, que era de T6) y pide producir T5."
+}
