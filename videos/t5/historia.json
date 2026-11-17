@@ -31,6 +31,14 @@
    "vol": 0.5
   },
   {
+   "id": "c2-casa",
+   "beat": 2,
+   "palabra": "casa.",
+   "dt": -0.15,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
    "id": "c2-3",
    "beat": 2,
    "palabra": "3",

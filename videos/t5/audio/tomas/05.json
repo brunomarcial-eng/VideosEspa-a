@@ -1,36 +1,37 @@
 {
  "huella": "05cc5760c7df9bdb",
- "semilla": 5000,
+ "semilla": 5204,
  "texto": "¡Si es que ahora las bodas son un festival!",
  "ev": {
   "ok": true,
-  "nota": 1.0311,
+  "nota": 1.0,
   "oido": "Si es que ahora las bodas son un festival.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.24,
-   0.48,
-   0.62,
-   0.86,
-   1.08,
-   1.6,
-   1.78,
-   1.92
+   0.2,
+   0.4,
+   0.54,
+   0.76,
+   1.0,
+   1.42,
+   1.58,
+   1.68
   ],
   "t1": [
-   0.24,
-   0.48,
-   0.62,
-   0.86,
-   1.08,
-   1.6,
-   1.78,
-   1.92,
-   2.08
+   0.2,
+   0.4,
+   0.54,
+   0.76,
+   1.0,
+   1.42,
+   1.58,
+   1.68,
+   1.88
   ],
-  "ritmo": 13.0,
-  "voz": 0.912
- }
+  "ritmo": 14.3,
+  "voz": 0.894
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo, entre 5 tomas (diferencia 0.012)"
 }

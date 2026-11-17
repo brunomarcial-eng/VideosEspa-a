@@ -67,7 +67,7 @@ export function escenas(D) {
         T("s2-blo", 540, 1300);
         let alto = 0;
         for (let k = 0; k < 8; k++) {
-          const t0 = k < 3 ? c["c2-3"] + k * 0.12 : c["c2-8"] + (k - 3) * 0.16, v = fuera((t - t0) / 0.22);
+          const t0 = k === 0 ? c["c2-casa"] : k < 3 ? c["c2-3"] + (k - 1) * 0.12 : c["c2-8"] + (k - 3) * 0.16, v = fuera((t - t0) / 0.22);
           if (t < t0) { ver("s2-blo-p" + k, false); continue; }
           T("s2-blo-p" + k, 0, -70 * k, { sx: 1, sy: Math.max(0.02, v) });
           alto += 70 * v;

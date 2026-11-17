@@ -1,26 +1,31 @@
 {
- "huella": "cfbf4ff3e0d22af5",
- "semilla": 8003,
- "texto": "¡Porque no queréis!",
+ "huella": "389a769dc37d6bac",
+ "semilla": 8201,
+ "texto": "¡Eso es que no queréis, hombre!",
  "ev": {
-  "ok": false,
-  "nota": 0.9909,
-  "oido": "¿Por qué no queréis?",
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Eso es que no queréis, hombre.",
   "parecido": 1.0,
-  "problemas": [
-   "voz distinta (0.83)"
-  ],
+  "problemas": [],
   "t0": [
    0.0,
-   0.36,
-   0.6
+   0.24,
+   0.46,
+   0.6,
+   0.74,
+   1.18
   ],
   "t1": [
-   0.36,
+   0.24,
+   0.46,
    0.6,
-   1.06
+   0.74,
+   1.12,
+   1.34
   ],
-  "ritmo": 11.2,
-  "voz": 0.832
- }
+  "ritmo": 14.6,
+  "voz": 0.878
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.014; parecido 0.876)"
 }

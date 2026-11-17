@@ -1,25 +1,20 @@
 plano 1: «¿Y los nietos pa cuándo, eh? ¡Que tu madre y yo, a tu edad, ya te teníamos en brazos!»
-    toma 1 (semilla 1000): BUENA · 0.992 · voz 0.9 · 5.0 s · 12.0 l/s · «los nietos pa' cuándo, ¿eh? Que tu madre y yo a tu edad ya te teníamos en brazos.»
+    toma guardada (semilla 1200): BUENA · «Y los nietos pa' cuándo, eh? Que tu madre y yo a tu edad ya te teníamos en brazos.»
 plano 2: «Papá, primero hace falta casa. En 1987, un piso costaba 3 años de lo que ganaba un hogar. Hoy, más de 8.»
-    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.961 · 9.0 s · 11.8 l/s · «Papá, primero hace falta casa. En 1987, un piso costaba tres años de lo que ganaba un hogar. Hoy más de ocho.»
+    toma guardada (semilla 2000): BUENA · «Papá, primero hace falta casa. En 1987, un piso costaba tres años de lo que ganaba un hogar. Hoy más de ocho.»
 plano 3: «¡Pues casaos y a vivir!»
-    toma 1 (semilla 3000): BUENA · 0.941 · voz 0.868 · 1.4 s · 12.0 l/s · «Pues cazaos y a vivir.»
+    toma guardada (semilla 3204): BUENA · «¡Pues cazaos y a vivir!»
 plano 4: «Vosotros os casabais a los 26. Ahora, a los 36.»
-    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.919 · 4.8 s · 11.1 l/s · «Vosotros os casabais a los 26, ahora a los 36.»
+    toma guardada (semilla 4000): BUENA · «Vosotros os casabais a los 26, ahora a los 36.»
 plano 5: «¡Si es que ahora las bodas son un festival!»
-    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.912 · 2.5 s · 13.0 l/s · «Si es que ahora las bodas son un festival.»
+    toma guardada (semilla 5204): BUENA · «Si es que ahora las bodas son un festival.»
 plano 6: «El primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio.»
-    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.891 · 4.3 s · 13.4 l/s · «El primer hijo llegaba a los 26, hoy a los 31 y medio.»
+    toma guardada (semilla 6000): BUENA · «El primer hijo llegaba a los 26, hoy a los 31 y medio.»
 plano 7: «Y de 1,55 hijos por mujer hemos pasado a 1,1.»
-    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.877 · 4.3 s · 13.9 l/s · «y de 1,55 hijos por mujer hemos pasado a 1,1.»
-plano 8: «¡Porque no queréis!»
-    toma 1 (semilla 8000): mala · 1.0 · voz 0.826 · 0.9 s · 17.4 l/s · «porque no queréis.» · voz distinta (0.83)
-    toma 2 (semilla 8001): mala · 1.0 · voz 0.685 · 1.0 s · 14.7 l/s · «¿Por qué no queréis?» · voz distinta (0.69)
-    toma 3 (semilla 8002): mala · 1.0 · voz 0.734 · 1.0 s · 15.6 l/s · «porque no queréis.» · voz distinta (0.73)
-    toma 4 (semilla 8003): mala · 1.0 · voz 0.832 · 1.3 s · 11.2 l/s · «¿Por qué no queréis?» · voz distinta (0.83)
-    toma 5 (semilla 8004): mala · 1.0 · voz 0.822 · 1.0 s · 15.0 l/s · «porque no queréis.» · voz distinta (0.82)
+    toma guardada (semilla 7000): BUENA · «y de 1,55 hijos por mujer hemos pasado a 1,1.»
+plano 8: «¡Eso es que no queréis, hombre!»
+    toma guardada (semilla 8201): BUENA · «Eso es que no queréis, hombre.»
 plano 9: «Casi tres de cada cuatro mujeres querrían al menos dos. Y las que tienen menos de los que querían, a partir de los 35, dicen que es por el trabajo y el dinero.»
-    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.92 · 9.1 s · 14.8 l/s · «Casi tres de cada cuatro mujeres querrían al menos dos, y las que tienen menos de los que querían, a partir de los 35, dicen que es por el trabajo y el dinero.»
+    toma guardada (semilla 9000): BUENA · «Casi tres de cada cuatro mujeres querrían al menos dos, y las que tienen menos de los que querían, a partir de los 35, dicen que es por el trabajo y el dinero.»
 plano 10: «Casa, boda, hijos… todo llega más tarde. ¿Casualidad? ¿Tú qué opinas?»
-    toma 1 (semilla 10000): mala · 1.0 · voz 0.925 · 5.0 s · 10.2 l/s · «Casa, boda, hijos, todo llega más tarde. Casualidad, tú qué opinas.» · sin pausa tras «hijos…» (0.26 s)
-    toma 2 (semilla 10001): BUENA · 1.0 · voz 0.898 · 5.6 s · 9.1 l/s · «Casa, boda, hijos. Todo llega más tarde. Casualidad, tú que opinas.»
+    toma guardada (semilla 10001): BUENA · «Casa, boda, hijos. Todo llega más tarde. Casualidad, tú que opinas.»
