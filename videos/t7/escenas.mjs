@@ -61,7 +61,8 @@ export function escenas(D) {
     const x = 400 + i * 140, h = 230 * v / D.ropa[0];
     return `<g id="${p}-m${i}"><rect x="${x - 50}" y="${1190 - h}" width="100" height="${h}" rx="12" fill="${["#C8902E", "#D9A75A", "#1F5F8B"][i]}"/>
       <g transform="translate(${x} ${1190 - h - 40})">${CAMISETA(["#E9C4A6", "#E9C4A6", "#9ED0E6"][i], 0.62)}</g>
-      ${rot(x, 1190 - h - 92, r(v), 50, i === 2 ? C.azul : "#8A6316")}${rot(x, 1234, ["1986", "2006", "HOY"][i], 30, C.gris)}</g>`;
+      ${rot(x, 1190 - h - 92, r(v), 50, i === 2 ? C.azul : "#8A6316")}</g>${rot(x, 1234, ["1986", "2006", "HOY"][i], 30, C.gris)}
+      <rect x="${x - 50}" y="1186" width="100" height="6" rx="3" fill="#E3D6BF"/>`;
   }).join("");
   const botes = (p) => D.cuid.map((v, i) => `<g transform="translate(${400 + i * 140} 1190)"><g id="${p}-b${i}">${bote(p + "-bb" + i, ["#F2B3AC", "#E9C4A6", "#9ED0E6"][i])}</g>
       ${rot(0, 44, ["1986", "2006", "HOY"][i], 30, C.gris)}<g id="${p}-v${i}">${rot(0, -10, es(v), 46, i === 2 ? C.azul : "#8A6316")}</g></g>`).join("");
