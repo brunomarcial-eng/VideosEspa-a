@@ -418,7 +418,7 @@
   {
    "id": "c16-cap",
    "beat": 16,
-   "palabra": "Caprichos",
+   "palabra": "caprichosos",
    "dt": -0.05,
    "sfx": "pop",
    "vol": 0.35
@@ -426,7 +426,7 @@
   {
    "id": "c16-vida",
    "beat": 16,
-   "palabra": "vida",
+   "palabra": "ahora?",
    "dt": -0.05,
    "sfx": "pop",
    "vol": 0.35,

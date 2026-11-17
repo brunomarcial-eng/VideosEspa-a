@@ -28,5 +28,5 @@ plano 14: «¡Y todo a domicilio!»
     toma guardada (semilla 14202): BUENA · «Y todo a domicilio.»
 plano 15: «Comprar por internet: en 2006, uno de cada diez; hoy, seis. Y uno de cada cuatro pide comida a casa.»
     toma guardada (semilla 15000): BUENA · «Comprar por internet en 2006, uno de cada 10. Hoy, 6. Y uno de cada 4 pide comida a casa.»
-plano 16: «¿Caprichos o la vida de hoy? ¿Tú qué opinas?»
-    toma guardada (semilla 16000): BUENA · «¿Caprichos o la vida de hoy? ¿Tú qué opinas?»
+plano 16: «¿Somos más caprichosos ahora? ¿Tú qué opinas?»
+    toma 1 (semilla 16000): BUENA · 1.0 · voz 0.898 · 3.1 s · 11.4 l/s · «¿Somos más caprichosos ahora? ¿Tú qué opinas?»

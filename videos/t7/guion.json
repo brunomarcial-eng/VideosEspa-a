@@ -230,10 +230,10 @@
    "n": 16,
    "quien": "hijo",
    "funcion": "pregunta para el debate",
-   "voz": "¿Caprichos o la vida de hoy? ¿Tú qué opinas?",
-   "pantalla": "¿Caprichos o la vida de hoy?",
+   "voz": "¿Somos más caprichosos ahora? ¿Tú qué opinas?",
+   "pantalla": "¿Somos más caprichosos ahora?",
    "sello": null,
-   "imagen": "La calle se deshace y vuelven a la cocina. Dos botones: CAPRICHOS y LA VIDA DE HOY. El padre y el hijo se cruzan de brazos, cada uno al lado de uno."
+   "imagen": "La calle se deshace y vuelven a la cocina. Dos botones: SÍ y NO. El padre señala el SÍ, el hijo el NO, y al final los dos miran a cámara."
   }
  ],
  "no_dato": [
@@ -446,5 +446,5 @@
   "veredicto": "en parte, el padre tiene razón: hoy se gasta el doble que en 1986 en cuidado personal (de 1,5 a 3 de cada 100 €), casi uno de cada tres paga un gimnasio y uno de cada cuatro pide comida a casa. Pero la ropa pesa mucho menos (de 11 a 4 de cada 100 €) y es más barata, los discos casi han desaparecido (de 72 € al año por hogar en 2006 a 10) y el cine cuesta en minutos de trabajo casi lo mismo que en 1986",
   "porque": "INE (Encuesta de Presupuestos Familiares de 1986, 2006 y 2025; IPC), Ministerio de Cultura (cine y Encuesta de Hábitos y Prácticas Culturales), Ministerio de Educación, FP y Deportes (Encuesta de Hábitos Deportivos 2024/25) y Eurostat (compras por internet)."
  },
- "aprobacion_guion": "Borrador aprobado por Bruno el 17-11-2026; bloque de música y cine añadido a petición suya el mismo día, sin nueva aprobación («no hace falta mi aprobación»)"
+ "aprobacion_guion": "Borrador aprobado por Bruno el 17-11-2026; bloque de música y cine añadido a petición suya el mismo día, sin nueva aprobación («no hace falta mi aprobación»); frase final cambiada por Bruno el 17-11-2026: «¿Somos más caprichosos ahora?»"
 }

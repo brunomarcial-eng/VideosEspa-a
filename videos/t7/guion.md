@@ -2,7 +2,7 @@
 
 Pregunta: Padre (62) contra hijo (31), quinta parte: ¿en qué gastamos ahora y en qué gastaban en 1986?  
 Datos: `data/clean/t7_consumo.json` · Datos y borrador aprobados por Bruno el 17-11-2026 (videos/t7/paso-1-datos.md); el bloque de música, discos, cine y conciertos lo pidió el mismo día y dijo que no hacía falta volver a aprobar  
-Duración estimada de la voz: **85 s** (a 2.6 palabras/s) · Años en pantalla: 1986, 2006, 2015, 2016, 2019, 2022, 2024, 2025  
+Duración estimada de la voz: **84 s** (a 2.6 palabras/s) · Años en pantalla: 1986, 2006, 2015, 2016, 2019, 2022, 2024, 2025  
 Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La columna «Imagen» es la idea del plano; cada estilo la dibuja a su manera en el Paso 3.
 
 | # | Tiempo | Quién | Voz | En pantalla | Sello de fuente | Imagen |
@@ -22,7 +22,7 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 13 | 65-70 s | hijo (31 años) | Y a conciertos va uno de cada tres, más que hace diez años. | Fueron a un concierto (pop, rock…) en un año · 2015: 24,5 % · 2019: 30,1 % · 2025: 32,1 % | DATO OFICIAL · MINISTERIO DE CULTURA (Encuesta de Hábitos y Prácticas Culturales) | La pantalla del cine se convierte en un escenario con focos; el padre se levanta y mueve la cabeza al ritmo. |
 | 14 | 71-72 s | padre (62 años) | ¡Y todo a domicilio! | «¡Y todo a domicilio!» | — | El escenario se deshace y están en la calle. Pasa un repartidor en bici; el padre se aparta de un salto. |
 | 15 | 73-81 s | hijo (31 años) | Comprar por internet: en 2006, uno de cada diez; hoy, seis. Y uno de cada cuatro pide comida a casa. | Compraron por internet en tres meses · 2006: 10 % · 2016: 35 % · 2025: 60 % <br>_Piden comida de restaurantes por internet: 25 % (2024). Personas de 16 a 74 años_ | DATO OFICIAL · EUROSTAT | Cajas que se apilan delante de un portal; una bolsa de comida a domicilio aterriza encima. |
-| 16 | 81-85 s | hijo (31 años) | ¿Caprichos o la vida de hoy? ¿Tú qué opinas? | ¿Caprichos o la vida de hoy? | — | La calle se deshace y vuelven a la cocina. Dos botones: CAPRICHOS y LA VIDA DE HOY. El padre y el hijo se cruzan de brazos, cada uno al lado de uno. |
+| 16 | 81-84 s | hijo (31 años) | ¿Somos más caprichosos ahora? ¿Tú qué opinas? | ¿Somos más caprichosos ahora? | — | La calle se deshace y vuelven a la cocina. Dos botones: SÍ y NO. El padre señala el SÍ, el hijo el NO, y al final los dos miran a cámara. |
 
 **Cierre:** en parte, el padre tiene razón: hoy se gasta el doble que en 1986 en cuidado personal (de 1,5 a 3 de cada 100 €), casi uno de cada tres paga un gimnasio y uno de cada cuatro pide comida a casa. Pero la ropa pesa mucho menos (de 11 a 4 de cada 100 €) y es más barata, los discos casi han desaparecido (de 72 € al año por hogar en 2006 a 10) y el cine cuesta en minutos de trabajo casi lo mismo que en 1986. INE (Encuesta de Presupuestos Familiares de 1986, 2006 y 2025; IPC), Ministerio de Cultura (cine y Encuesta de Hábitos y Prácticas Culturales), Ministerio de Educación, FP y Deportes (Encuesta de Hábitos Deportivos 2024/25) y Eurostat (compras por internet).
 

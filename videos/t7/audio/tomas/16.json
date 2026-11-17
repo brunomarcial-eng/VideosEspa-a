@@ -1,36 +1,32 @@
 {
- "huella": "0860a5419fe818e7",
+ "huella": "6eb3fd9d341bdd4a",
  "semilla": 16000,
- "texto": "¿Caprichos o la vida de hoy? ¿Tú qué opinas?",
+ "texto": "¿Somos más caprichosos ahora? ¿Tú qué opinas?",
  "ev": {
   "ok": true,
-  "nota": 1.0071,
-  "oido": "¿Caprichos o la vida de hoy? ¿Tú qué opinas?",
+  "nota": 1.0239,
+  "oido": "¿Somos más caprichosos ahora? ¿Tú qué opinas?",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
+   0.3,
    0.56,
-   0.78,
-   0.88,
-   1.06,
-   1.24,
-   1.92,
-   2.18,
-   2.26
+   1.1,
+   2.1,
+   2.38,
+   2.46
   ],
   "t1": [
+   0.3,
    0.56,
-   0.78,
-   0.88,
-   1.06,
-   1.24,
-   1.4,
-   2.18,
-   2.26,
-   2.6
+   1.1,
+   1.42,
+   2.38,
+   2.46,
+   2.84
   ],
-  "ritmo": 11.9,
-  "voz": 0.864
+  "ritmo": 11.4,
+  "voz": 0.898
  }
 }
