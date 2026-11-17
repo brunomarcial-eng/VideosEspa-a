@@ -204,3 +204,9 @@ Más datos: en 1989 las hipotecas iban al 15 %. En 2006, en plena burbuja, el pi
 1. Confirmar el nombre de usuario (`valetuhora` u otro).
 2. Confirmar orden (T1-T2-T3 o empezar por T3) y horas.
 3. Decir si alguno ya está subido a YouTube.
+
+## 8. Comprobación de «Status España» (17-11-2026)
+- **No se puede confirmar desde el entorno:** la red bloquea tiktok.com y x.com. Una búsqueda web no encuentra cuentas `statusespana`, `status_espana` ni «Status España» en TikTok ni en X. Que no salgan en la búsqueda **no prueba que estén libres**.
+- Los nombres de usuario no admiten «ñ». Candidatos, de mejor a peor: `statusespana` (12 caracteres, cabe en X), `status_espana` (13), `statusesp` (9), `status.espana` (solo TikTok; X no admite el punto).
+- Comprobación válida: el formulario de registro o «Editar perfil» de cada red, que avisa al momento (ver sección 2).
+- Contexto: el 10-11-2026 el Gobierno pidió suspender TikTok en España de forma cautelar; la AEPD lo descartó porque la autoridad competente es la irlandesa. Conviene seguirlo antes de invertir en TikTok.
