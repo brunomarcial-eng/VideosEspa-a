@@ -1,36 +1,21 @@
 plano 1: «¡Es que os lo fundís todo! Netflix, Glovo, el gimnasio, festivales… ¡Así no hay quien ahorre!»
     toma guardada (semilla 1002): BUENA · «es que os lo fundís todo. Netflix, Globo, El Gimnasio, Festivales, así no hay quien ahorre.»
-plano 2: «Vale, ahí te doy algo. De cada 100 euros, en ocio, bares y móvil se van hoy 17. En 1986, 12.»
-    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.946 · 7.9 s · 12.3 l/s · «Vale, ahí te doy algo. De cada 100 euros, en ocio, bares y móvil se van hoy 17. En 1986, 12.»
-plano 3: «¡Ajá! ¿Lo ves? ¡Si es que lo sabía!»
-    toma 1 (semilla 3000): mala · 1.0 · voz 0.854 · 3.3 s · 6.7 l/s · «¡Aja! ¿Lo ves? ¡Si es que lo sabía!» · ritmo raro (6.7 letras/s)
-    toma 2 (semilla 3001): mala · 1.0 · voz 0.82 · 3.5 s · 6.3 l/s · «¡Aja! ¿Lo ves? Si es que lo sabía.» · ritmo raro (6.3 letras/s); voz distinta (0.82)
-    toma 3 (semilla 3002): mala · 1.0 · voz 0.839 · 3.0 s · 7.2 l/s · «¡Ajá! ¿Lo ves? Sí es que lo sabía.» · ritmo raro (7.2 letras/s); voz distinta (0.84)
-    toma 4 (semilla 3003): mala · 1.0 · voz 0.83 · 2.5 s · 8.8 l/s · «Ajá, ¿lo ves? Si es que lo sabía.» · voz distinta (0.83)
-    toma 5 (semilla 3004): mala · 1.0 · voz 0.811 · 3.7 s · 6.0 l/s · «¡Aja! ¿Lo ves? ¡Si es que lo sabía!» · ritmo raro (6.0 letras/s); voz distinta (0.81)
+plano 2: «Vale, ahí te doy algo. De cada 100 euros, en ocio, bares y móvil se iban 12 en 1986. Hoy, 17.»
+    toma 1 (semilla 2000): BUENA · 0.98 · voz 0.936 · 9.2 s · 10.7 l/s · «Vale, ahí te doy algo. De cada 100 euros, en Osio, bares y móviles se iban 12 en 1986. Hoy, 17.»
 plano 4: «Pero vente al súper. En 1986, la comida se llevaba 28 de cada 100. Hoy, 16.»
-    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.932 · 7.0 s · 13.4 l/s · «Pero vente al súper. En 1986, la comida se llevaba 28 de cada 100. Hoy 16.»
+    toma guardada (semilla 4000): BUENA · «Pero vente al súper. En 1986, la comida se llevaba 28 de cada 100. Hoy 16.»
 plano 5: «¡Pues mejor me lo pones! ¿Dónde se os va la pasta?»
-    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.889 · 3.0 s · 11.9 l/s · «Pues mejor me lo pones. ¿Dónde se os va la pasta?»
+    toma guardada (semilla 5000): BUENA · «Pues mejor me lo pones. ¿Dónde se os va la pasta?»
 plano 6: «En la casa, papá. En 1986, 19 de cada 100. Hoy, 33. Un tercio de todo lo que gastas.»
-    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.96 · 8.8 s · 11.4 l/s · «En la Casa Papá. En 1986, 19 de cada 100. Hoy, 33. Un tercio de todo lo que gastas.»
+    toma guardada (semilla 6000): BUENA · «En la Casa Papá. En 1986, 19 de cada 100. Hoy, 33. Un tercio de todo lo que gastas.»
 plano 7: «Pues alquila algo, que no es para tanto.»
-    toma 1 (semilla 7000): mala · 1.0 · voz 0.824 · 2.7 s · 11.3 l/s · «pues alquila algo que no es para tanto.» · voz distinta (0.82)
-    toma 2 (semilla 7001): BUENA · 1.0 · voz 0.918 · 2.2 s · 14.0 l/s · «pues alquila algo que no es para tanto.»
-plano 8: «¿Solo? El alquiler se come el 39 % de lo que ganas. En pareja, el 27. O pareja… o piso compartido.»
-    toma 1 (semilla 8000): mala · 0.947 · voz 0.943 · 9.1 s · 10.9 l/s · «Solo, el alquiler se come el 39% de lo que ganas. Empareja el 27% o pareja o piso compartido.» · sobran 10 letras (¿repite?)
-    toma 2 (semilla 8001): mala · 0.947 · voz 0.945 · 8.8 s · 11.3 l/s · «Solo el alquiler se come el 39% de lo que ganas, empareja el 27% o pareja o piso compartido.» · sobran 10 letras (¿repite?)
-    toma 3 (semilla 8002): mala · 0.947 · voz 0.942 · 8.5 s · 11.7 l/s · «Sólo el alquiler se come el 39% de lo que ganas. Empareja el 27% o pareja o piso compartido.» · sobran 10 letras (¿repite?); sin pausa tras «pareja…» (0.20 s)
-    toma 4 (semilla 8003): mala · 0.947 · voz 0.955 · 8.8 s · 11.3 l/s · «Sólo el alquiler se come el 39% de lo que ganas, empareja el 27% o pareja o piso compartido.» · sobran 10 letras (¿repite?)
-    toma 5 (semilla 8004): mala · 0.947 · voz 0.948 · 8.2 s · 12.1 l/s · «Sólo el alquiler se come el 39% de lo que ganas. Empareja el 27% o pareja o piso compartido.» · sobran 10 letras (¿repite?)
+    toma guardada (semilla 7001): BUENA · «pues alquila algo que no es para tanto.»
+plano 8: «¿Solo? El alquiler se come el 39 % de lo que ganas. En pareja, el 27 %. O pareja… o piso compartido.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.933 · 9.8 s · 11.0 l/s · «Solo, el alquiler se come el 39% de lo que ganas, en pareja el 27%, o pareja o piso compartido.»
 plano 9: «¿Y por eso seguís en casa con treinta tacos?»
     toma guardada (semilla 9100): BUENA · «Y por eso seguís en casa con 30 atacos.»
 plano 10: «Con 30,2 de media. En Europa, a los 26.»
     toma guardada (semilla 10000): BUENA · «con 30,2 de media, en Europa a los 26.»
-plano 11: «¿Y los nietos pa cuándo, eh?»
-    toma guardada (semilla 11103): BUENA · «Y los nietos pa' cuándo, ¿eh?»
-plano 12: «¿Nietos? En 1986, el primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio. ¿Casualidad?»
-    toma guardada (semilla 12000): BUENA · «nietos, en 1986 el primer hijo llegaba a los 26, hoy a los 31 y medio. Casualidad»
 plano 13: «Pues aquí estás muy bien, majo. Y comes caliente.»
     toma guardada (semilla 13102): BUENA · «Pues aquí estás muy bien, majo, y come es caliente.»
 plano 14: «¿Quién tiene razón? ¿Tú qué opinas?»

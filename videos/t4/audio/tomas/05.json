@@ -1,40 +1,41 @@
 {
  "huella": "e69b98d82d46dedf",
- "semilla": 5000,
+ "semilla": 5205,
  "texto": "¡Pues mejor me lo pones! ¿Dónde se os va la pasta?",
  "ev": {
   "ok": true,
-  "nota": 1.0196,
-  "oido": "Pues mejor me lo pones. ¿Dónde se os va la pasta?",
+  "nota": 1.0,
+  "oido": "Pues mejor me lo pones, ¿dónde se os va la pasta?",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.12,
-   0.44,
-   0.58,
-   0.68,
-   1.74,
+   0.14,
+   0.46,
+   0.62,
+   0.72,
+   1.42,
+   1.68,
+   1.84,
+   1.92,
    2.06,
-   2.24,
-   2.34,
-   2.48,
-   2.56
+   2.12
   ],
   "t1": [
-   0.12,
-   0.44,
-   0.58,
-   0.68,
-   1.02,
+   0.14,
+   0.46,
+   0.62,
+   0.72,
+   1.08,
+   1.68,
+   1.84,
+   1.92,
    2.06,
-   2.24,
-   2.34,
-   2.48,
-   2.56,
-   2.84
+   2.12,
+   2.38
   ],
-  "ritmo": 11.9,
-  "voz": 0.889
- }
+  "ritmo": 13.8,
+  "voz": 0.855
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo, entre 6 tomas (diferencia -0.002)"
 }
