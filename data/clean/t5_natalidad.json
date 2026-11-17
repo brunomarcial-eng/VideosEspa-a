@@ -1,0 +1,59 @@
+{
+ "tema": "T5 — ¿Y los nietos pa cuándo? (padre contra hijo, 3.ª parte): natalidad y envejecimiento",
+ "hijos_por_mujer": {
+  "1986": 1.55,
+  "2007": 1.38,
+  "2016": 1.33,
+  "2019": 1.23,
+  "2023": 1.12,
+  "2024": 1.1
+ },
+ "edad_primer_hijo": {
+  "1986": 25.9,
+  "2007": 29.45,
+  "2016": 30.79,
+  "2019": 31.08,
+  "2023": 31.5,
+  "2024": 31.52
+ },
+ "edad_primer_matrimonio": {
+  "1986": 26.03,
+  "2007": 31.03,
+  "2016": 33.96,
+  "2019": 34.9,
+  "2023": 35.89,
+  "2024": 36.19
+ },
+ "natalidad_por_mil": {
+  "1986": 11.36,
+  "2007": 10.86,
+  "2016": 8.8,
+  "2019": 7.62,
+  "2023": 6.61,
+  "2024": 6.49
+ },
+ "pct_mayores_64": {
+  "1986": 12.08,
+  "2007": 16.54,
+  "2016": 18.67,
+  "2019": 19.3,
+  "2023": 20.15,
+  "2024": 20.42,
+  "2025": 20.72
+ },
+ "mayores_por_100_ninos": {
+  "1986": 48.85,
+  "2007": 106.34,
+  "2016": 116.33,
+  "2019": 123.0,
+  "2023": 137.33,
+  "2024": 142.35,
+  "2025": 148.05
+ },
+ "encuesta_fecundidad_2018": {
+  "titular": "Casi tres de cada cuatro mujeres desearían tener al menos dos hijos",
+  "anyo": 2018,
+  "motivos_desde_35": "A partir de los 35 años, las razones laborales o de conciliación y las económicas son las más importantes por las que las mujeres han tenido menos hijos de los deseados (texto literal resumido de la nota del INE)"
+ },
+ "nota": "Hijos por mujer = indicador coyuntural de fecundidad. Primer hijo = edad media de la madre al primer nacimiento. Matrimonio = edad media al primer matrimonio, ambos sexos. Mayores por cada 100 niños = índice de envejecimiento (mayores de 64 años por cada 100 menores de 16, a 1 de enero). Todo INE, Indicadores Demográficos Básicos."
+}
