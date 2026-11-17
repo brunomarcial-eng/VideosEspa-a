@@ -1,33 +1,33 @@
 {
  "huella": "a7a34426838d6704",
- "semilla": 5200,
+ "semilla": 5202,
  "texto": "¿Y las cremas y la peluquería, qué?",
  "ev": {
   "ok": true,
-  "nota": 0.963,
-  "oido": "y las cremas y la peluquería, ¿en qué?",
-  "parecido": 0.963,
+  "nota": 1.0,
+  "oido": "¿Y las cremas y la peluquería qué?",
+  "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
    0.14,
-   0.28,
-   0.8,
-   1.12,
-   1.26,
-   1.88
+   0.3,
+   0.78,
+   0.94,
+   1.04,
+   1.66
   ],
   "t1": [
    0.14,
-   0.28,
-   0.8,
-   1.12,
-   1.26,
-   1.8,
-   1.98
+   0.3,
+   0.78,
+   0.94,
+   1.04,
+   1.66,
+   1.86
   ],
-  "ritmo": 12.0,
-  "voz": 0.877
+  "ritmo": 12.4,
+  "voz": 0.846
  },
- "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.01; parecido 0.907)"
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.009; parecido 0.864)"
 }

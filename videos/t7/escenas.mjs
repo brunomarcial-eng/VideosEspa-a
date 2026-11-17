@@ -67,7 +67,7 @@ export function escenas(D) {
       ${rot(0, 44, ["1986", "2006", "HOY"][i], 30, C.gris)}<g id="${p}-v${i}">${rot(0, -10, es(v), 46, i === 2 ? C.azul : "#8A6316")}</g></g>`).join("");
   const pilas = (p) => D.discos.map((v, i) => `<g transform="translate(${425 + i * 135} 1200)"><g id="${p}-p${i}">${pilaDiscos(p + "-pp" + i, ["#9B5A5A", "#C98F6B", "#5D7A8C"][i])}</g>
       ${rot(0, 40, ["2006", "2015", "HOY"][i], 30, C.gris)}<g id="${p}-v${i}">${rot(0, 0, r(v) + " €", 44, i === 2 ? C.azul : "#8A6316")}</g></g>`).join("");
-  const relojes = (p) => D.cineMin.map((v, i) => `<g transform="translate(${330 + i * 210} 845) scale(.66)">${relojMin(p + "-r" + i, i === 2 ? C.azul : C.ocre)}
+  const relojes = (p) => D.cineMin.map((v, i) => `<g transform="translate(${330 + i * 210} 847) scale(.56)">${relojMin(p + "-r" + i, i === 2 ? C.azul : C.ocre)}
       ${rot(0, 150, ["1986", "2016", "2024"][i], 38, C.gris)}<g id="${p}-v${i}">${rot(0, 202, r(v) + " min", 46, i === 2 ? C.azul : "#8A6316")}</g></g>`).join("");
   const diez = (p, y) => Array.from({ length: 10 }, (_, i) => figurita(`${p}-f${i}`, 370 + i * 38, y, 1.25)).join("");
   return [
