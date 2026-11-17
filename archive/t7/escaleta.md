@@ -19,8 +19,8 @@ Quinta parte de padre contra hijo, con decorados que cambian como en un sueño y
 | 13 | Concierto | Hijo | Y a conciertos va uno de cada tres, más que hace diez años. | 2015: **24,5 %** · 2019: **30,1 %** · 2025: **32,1 %** | Focos que barren, público que salta (uno de cada tres se ilumina); padre e hijo bailan |
 | 14 | Calle | Padre | ¡Y todo a domicilio! | «¡Y todo a domicilio!» | Pasa un repartidor en bici a toda prisa (timbre) y el padre se aparta de un salto |
 | 15 | Calle | Hijo | Comprar por internet: en 2006, uno de cada diez; hoy, seis. Y uno de cada cuatro pide comida a casa. | 2006: **10 %** · 2016: **35 %** · 2025: **60 %** (comida a domicilio: 25 %) | Delante de un portal se apilan cajas (1 de 10 y luego 6 de 10) y cae una bolsa de comida |
-| 16 | Cocina | Hijo | ¿Caprichos o la vida de hoy? ¿Tú qué opinas? | ¿Caprichos o la vida de hoy? | Botones CAPRICHOS y LA VIDA DE HOY; cada uno señala el suyo y acaban mirando a cámara |
+| 16 | Cocina | Hijo | ¿Somos más caprichosos ahora? ¿Tú qué opinas? | ¿Somos más caprichosos ahora? | Botones SÍ y NO; el padre señala el SÍ, el hijo el NO, y acaban mirando a cámara |
 
 **Sonido nuevo:** timbre de casa, rasgado de vinilo, público de concierto y timbre de bici (`scripts/sonido.py`, generados con código).
 
-**Cambio sobre el borrador aprobado:** frases más cortas para que quepa el bloque de música y cine; «¡Porque es de usar y tirar!» pasa a «¡Claro, como es de usar y tirar!», porque la voz lo decía como pregunta («¿Por qué…?»).
+**Cambio sobre el borrador aprobado:** frases más cortas para que quepa el bloque de música y cine; «¡Porque es de usar y tirar!» pasa a «¡Claro, como es de usar y tirar!», porque la voz lo decía como pregunta («¿Por qué…?»). La frase final la cambió Bruno: «¿Somos más caprichosos ahora?».

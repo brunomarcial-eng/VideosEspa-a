@@ -416,20 +416,20 @@ export function escenas(D) {
         persona("s15-hijo", t, { x: h.x, y: 1440, s: 0.78, anda: h.anda, espejo: h.dir <= 0, mira: -1, boca: habla(t, e), brazo: [[0, "abajo"], [c["c15-2006"] - 0.2, "senala"], [c["c15-comida"], "empuja"]], fase: 2 });
       } },
 
-    // 16 · Hijo, a cámara (cocina): «¿Caprichos o la vida de hoy? ¿Tú qué opinas?»
+    // 16 · Hijo, a cámara (cocina): «¿Somos más caprichosos ahora? ¿Tú qué opinas?»
     { n: 16, set: "vacio",
-      svg: `${boton2("s16-b1", "CAPRICHOS", "#C8902E", 330)}${boton2("s16-b2", "LA VIDA DE HOY", "#1F5F8B", 400)}${bocadillo("s16-boc")}${dos("s16")}`,
-      tarjeta: tarjeta(16, "Te toca", `<div class="tit" style="font-size:64px">¿<mark id="m16">Caprichos</mark> o la vida de hoy?</div><div class="sub" id="c16-sub">¿Tú qué opinas? Te leo en los comentarios.</div>`),
+      svg: `${boton2("s16-b1", "SÍ", "#C8902E", 220)}${boton2("s16-b2", "NO", "#1F5F8B", 220)}${bocadillo("s16-boc")}${dos("s16")}`,
+      tarjeta: tarjeta(16, "Te toca", `<div class="tit" style="font-size:66px">¿Somos más <mark id="m16">caprichosos</mark> ahora?</div><div class="sub" id="c16-sub">¿Tú qué opinas? Te leo en los comentarios.</div>`),
       fn: function (t, e) {
         const c = e.c;
         ambiente("cocina", "calle", t, e.t0);
-        pop("s16-b1", t, c["c16-cap"], 300, 860, { s: 0.85 }); pop("s16-b2", t, c["c16-vida"], 770, 860, { s: 0.85 });
+        pop("s16-b1", t, c["c16-vida"], 320, 860, { s: 0.9 }); pop("s16-b2", t, c["c16-vida"] + 0.25, 760, 860, { s: 0.9 });
         if (pop("s16-boc", t, c["c16-boc"], 540, 1110, { s: 0.75 }) >= 0) for (let i = 0; i < 3; i++) attr("s16-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - c["c16-boc"]) * 8 - i * 0.9))).toFixed(1));
         marca("m16", t, c["c16-cap"]); sube("c16-sub", t, c["c16-boc"] - 0.2);
-        // Cada uno se pone junto a su botón y, al final, los dos miran a cámara.
+        // Cada uno se pone junto a su botón (el padre, SÍ; el hijo, NO) y, al final, los dos miran a cámara.
         const p = ruta(t, [[e.t0 + 0.2, 150], [e.t0 + 0.9, 230]]), h = ruta(t, [[e.t0 + 0.2, 900], [e.t0 + 0.9, 850]]);
-        persona("s16-padre", t, { x: p.x, y: 1440, s: 0.78, anda: p.anda, mira: [[0, 1], [c["c16-boc"], 0]], boca: "sonrisa", brazo: [[0, "abajo"], [c["c16-cap"], "senala"], [c["c16-boc"], "hombros"]], fase: 1 });
-        persona("s16-hijo", t, { x: h.x, y: 1440, s: 0.78, anda: h.anda, mira: [[0, -1], [c["c16-boc"], 0]], boca: habla(t, e), brazo: [[0, "abajo"], [c["c16-vida"], "senala"], [c["c16-boc"], "arriba"]], espejo: true, fase: 2 });
+        persona("s16-padre", t, { x: p.x, y: 1440, s: 0.78, anda: p.anda, mira: [[0, 1], [c["c16-boc"], 0]], boca: "sonrisa", brazo: [[0, "abajo"], [c["c16-vida"] + 0.1, "senala"], [c["c16-boc"], "hombros"]], fase: 1 });
+        persona("s16-hijo", t, { x: h.x, y: 1440, s: 0.78, anda: h.anda, mira: [[0, -1], [c["c16-boc"], 0]], boca: habla(t, e), brazo: [[0, "abajo"], [c["c16-vida"] + 0.35, "senala"], [c["c16-boc"], "arriba"]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camSueno(t, e.t0); } },
   ];

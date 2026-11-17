@@ -1,8 +1,8 @@
 # T7 · Notas de edición (archivo por si hay apelación)
 
-**Vídeo:** «¿Gastamos más en caprichos que nuestros padres?» · Short vertical 1080×1920, 77,7 s, −14,6 LUFS.
-**Fichero:** `videos/t7/render/t7-limpio.mp4` · SHA-256 `c939e6ce450c5ba7540d122a82ae25a73615af96bdfc2fef5cdbc7f70f97caee`.
-**Aprobación:** el responsable del canal aprobó datos y borrador el 17-11-2026 y pidió añadir música, discos, cine y conciertos sin nueva aprobación. Pendiente de su visto bueno final.
+**Vídeo:** «¿Gastamos más en caprichos que nuestros padres?» · Short vertical 1080×1920, 78,1 s, −14,5 LUFS.
+**Fichero:** `videos/t7/render/t7-limpio.mp4` · SHA-256 `033eb0476b3c277de8b6ac6225a803909f957beaf4854ead104d3a59d5cffea4`.
+**Aprobación:** el responsable del canal aprobó datos y borrador el 17-11-2026 y pidió añadir música, discos, cine y conciertos sin nueva aprobación. La frase final la cambió él: «¿Somos más caprichosos ahora?». Pendiente de su visto bueno final.
 
 ## Cómo se hizo
 - **Guion:** discusión entre un padre de 62 años y su hijo de 31, personajes inventados; sin partidos ni causas. El vídeo enseña datos y pregunta. 16 planos; texto, cifras y comprobaciones en `guion.json` y `guion.md`.
