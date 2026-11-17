@@ -11,7 +11,7 @@ Tercera parte de padre contra hijo: los mismos personajes, voces y decorados que
 | 5 | Boda | Padre | ¡Si es que ahora las bodas son un festival! | «¡Las bodas son un festival!» | Luces que parpadean, confeti y notas; el padre bota |
 | 6 | Sala de cunas | Hijo | El primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio. | 1986: **26 años** · hoy: **31,5 años** | Una cuna avanza por una regla de edades |
 | 7 | Sala de cunas | Hijo | Y de 1,55 hijos por mujer hemos pasado a 1,1. | 1986: **1,55** · hoy: **1,10** | Bebés por mujer: uno y medio; uno y poco. **La música se corta** |
-| 8 | Sala de cunas | Padre | ¡Porque no queréis! | «¡Porque no queréis!» | El padre avanza y señala; el hijo niega con la cabeza |
+| 8 | Sala de cunas | Padre | ¡Eso es que no queréis, hombre! | «¡Eso es que no queréis!» | El padre avanza y señala; el hijo niega con la cabeza |
 | 9 | Sala de cunas | Hijo | Casi tres de cada cuatro mujeres querrían al menos dos. Y las que tienen menos de los que querían, a partir de los 35, dicen que es por el trabajo y el dinero. | Casi 3 de cada 4 · razones laborales o de conciliación, y económicas | Cuatro mujeres; casi tres se colorean; bocadillo con dos bebés; luego un maletín y una moneda |
 | 10 | Cocina | Hijo | Casa, boda, hijos… todo llega más tarde. ¿Casualidad? ¿Tú qué opinas? | Casa, boda, hijos: todo llega más tarde. ¿Casualidad? | Botones «PADRE» e «HIJO» y un bocadillo |
 

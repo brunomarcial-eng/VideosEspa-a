@@ -1,0 +1,28 @@
+{
+ "huella": "87dcab62cfd71019",
+ "semilla": 3000,
+ "texto": "¡Pues casaos y a vivir!",
+ "ev": {
+  "ok": true,
+  "nota": 0.9504,
+  "oido": "Pues cazaos y a vivir.",
+  "parecido": 0.941,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.76,
+   0.9,
+   0.98
+  ],
+  "t1": [
+   0.14,
+   0.76,
+   0.9,
+   0.98,
+   1.1
+  ],
+  "ritmo": 12.0,
+  "voz": 0.868
+ }
+}

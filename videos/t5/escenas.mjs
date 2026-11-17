@@ -186,10 +186,10 @@ export function escenas(D) {
         persona("s7-hijo", t, { x: 870, y: 1440, s: 0.78, mira: -1, boca: habla(t, e), brazo: [[0, "abajo"], [c["c7-155"], "senala"]], espejo: true, fase: 2 });
       } },
 
-    // 8 · Padre (sala de cunas): «¡Porque no queréis!»
+    // 8 · Padre (sala de cunas): «¡Eso es que no queréis, hombre!»
     { n: 8, set: "vacio",
       svg: `${dos("s8")}`,
-      tarjeta: tarjeta(8, "Padre", `<div class="tit">«¡Porque no <mark id="m8">queréis</mark>!»</div>`, { tono: "pasado" }),
+      tarjeta: tarjeta(8, "Padre", `<div class="tit">«¡Eso es que no <mark id="m8">queréis</mark>!»</div>`, { tono: "pasado" }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("cunas", null, t, 0);

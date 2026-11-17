@@ -1,0 +1,36 @@
+{
+ "huella": "05cc5760c7df9bdb",
+ "semilla": 5000,
+ "texto": "¡Si es que ahora las bodas son un festival!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0311,
+  "oido": "Si es que ahora las bodas son un festival.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.24,
+   0.48,
+   0.62,
+   0.86,
+   1.08,
+   1.6,
+   1.78,
+   1.92
+  ],
+  "t1": [
+   0.24,
+   0.48,
+   0.62,
+   0.86,
+   1.08,
+   1.6,
+   1.78,
+   1.92,
+   2.08
+  ],
+  "ritmo": 13.0,
+  "voz": 0.912
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "huella": "cfbf4ff3e0d22af5",
+ "semilla": 8003,
+ "texto": "¡Porque no queréis!",
+ "ev": {
+  "ok": false,
+  "nota": 0.9909,
+  "oido": "¿Por qué no queréis?",
+  "parecido": 1.0,
+  "problemas": [
+   "voz distinta (0.83)"
+  ],
+  "t0": [
+   0.0,
+   0.36,
+   0.6
+  ],
+  "t1": [
+   0.36,
+   0.6,
+   1.06
+  ],
+  "ritmo": 11.2,
+  "voz": 0.832
+ }
+}

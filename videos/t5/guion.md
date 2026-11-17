@@ -2,7 +2,7 @@
 
 Pregunta: Padre (62) contra hijo (31), tercera parte: ¿por qué los hijos llegan tan tarde?  
 Datos: `data/clean/t5_natalidad.json` · Tabla y guion aprobados por Bruno el 17-11-2026 (videos/t5/paso-1-datos.md v2, sin el ejemplo de Francia)  
-Duración estimada de la voz: **52 s** (a 3.05 palabras/s) · Años en pantalla: 1986, 1987, 2006, 2007, 2016  
+Duración estimada de la voz: **53 s** (a 3.05 palabras/s) · Años en pantalla: 1986, 1987, 2006, 2007, 2016  
 Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La columna «Imagen» es la idea del plano; cada estilo la dibuja a su manera en el Paso 3.
 
 | # | Tiempo | Quién | Voz | En pantalla | Sello de fuente | Imagen |
@@ -14,9 +14,9 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 5 | 22-25 s | padre (62 años) | ¡Si es que ahora las bodas son un festival! | «¡Las bodas son un festival!» | — | En la boda. Se encienden luces de colores, cae confeti y saltan notas musicales. |
 | 6 | 25-30 s | hijo (31 años) | El primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio. | Edad media de la madre al primer hijo · 1986: 26 · hoy: 31,5 <br>_En 2007: 29,4. En 2016: 30,8_ | DATO OFICIAL · INE (Indicadores Demográficos Básicos) | La boda se deshace y están en una sala de cunas, casi todas vacías. Una cuna avanza por una regla de edades de 26 a 31,5. |
 | 7 | 30-35 s | hijo (31 años) | Y de 1,55 hijos por mujer hemos pasado a 1,1. | Hijos por mujer · 1986: 1,55 · hoy: 1,10 <br>_En 2007: 1,38. En 2016: 1,33_ | DATO OFICIAL · INE (Indicadores Demográficos Básicos) | En la sala de cunas. Dos filas de bebés: en 1986, uno y medio; hoy, uno y poco. |
-| 8 | 36-37 s | padre (62 años) | ¡Porque no queréis! | «¡Porque no queréis!» | — | El padre señala al hijo; el hijo niega con la cabeza. |
-| 9 | 37-48 s | hijo (31 años) | Casi tres de cada cuatro mujeres querrían al menos dos. Y las que tienen menos de los que querían, a partir de los 35, dicen que es por el trabajo y el dinero. | Casi 3 de cada 4 mujeres querrían tener al menos dos hijos · Desde los 35, las que tienen menos de los que querían: razones laborales o de conciliación, y económicas | DATO OFICIAL · INE (Encuesta de Fecundidad 2018) | En la sala de cunas. Cuatro mujeres; casi tres se iluminan con un bocadillo de dos bebés. Luego aparecen un maletín y una moneda. |
-| 10 | 48-52 s | hijo (31 años) | Casa, boda, hijos… todo llega más tarde. ¿Casualidad? ¿Tú qué opinas? | Casa, boda, hijos: todo llega más tarde. ¿Casualidad? | — | La sala se deshace y vuelven a la cocina. Los dos a cámara; botones «PADRE» e «HIJO» y un bocadillo. |
+| 8 | 36-38 s | padre (62 años) | ¡Eso es que no queréis, hombre! | «¡Eso es que no queréis!» | — | El padre señala al hijo; el hijo niega con la cabeza. |
+| 9 | 38-49 s | hijo (31 años) | Casi tres de cada cuatro mujeres querrían al menos dos. Y las que tienen menos de los que querían, a partir de los 35, dicen que es por el trabajo y el dinero. | Casi 3 de cada 4 mujeres querrían tener al menos dos hijos · Desde los 35, las que tienen menos de los que querían: razones laborales o de conciliación, y económicas | DATO OFICIAL · INE (Encuesta de Fecundidad 2018) | En la sala de cunas. Cuatro mujeres; casi tres se iluminan con un bocadillo de dos bebés. Luego aparecen un maletín y una moneda. |
+| 10 | 49-53 s | hijo (31 años) | Casa, boda, hijos… todo llega más tarde. ¿Casualidad? ¿Tú qué opinas? | Casa, boda, hijos: todo llega más tarde. ¿Casualidad? | — | La sala se deshace y vuelven a la cocina. Los dos a cámara; botones «PADRE» e «HIJO» y un bocadillo. |
 
 **Cierre:** frente a 1986, empeora: la casa cuesta casi tres veces más años de ingresos, la boda llega diez años más tarde, el primer hijo cinco años y medio más tarde y hay casi un tercio menos de hijos por mujer. Banco de España: piso medio, 3,1 años de renta bruta de un hogar en 1987 y 8,4 en 2026. INE: primer matrimonio a los 26 en 1986 y a los 36,2 en 2024; primer hijo a los 25,9 y a los 31,5; hijos por mujer, 1,55 y 1,10. Encuesta de Fecundidad 2018: casi tres de cada cuatro mujeres desearían al menos dos hijos; desde los 35, las que tienen menos de los deseados lo atribuyen sobre todo a razones laborales o de conciliación y económicas.
 
