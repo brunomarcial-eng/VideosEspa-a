@@ -181,6 +181,11 @@ DESCARGAS = [
     ("boe_rdl_9_2025_permiso_nacimiento.html", "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15741",
      "BOE. Real Decreto-ley 9/2025: permiso de nacimiento y cuidado de 19 semanas por progenitor",
      "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15741"),
+    # --- Consulta de Bruno (17-11-2026): natalidad e inmigración (solo datos, no va al vídeo de momento) ---
+    ("eurostat_demo_facbc_fr_es.json",
+     "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_facbc?format=JSON&lang=EN&geo=FR&geo=ES&age=TOTAL&sinceTimePeriod=2005",
+     "Eurostat. Nacidos vivos según el país de nacimiento de la madre (Francia y España)",
+     "https://ec.europa.eu/eurostat/databrowser/view/demo_facbc/default/table"),
     ("microdatos/ees_cuatrienal_2006.zip", "https://www.ine.es/ftp/microdatos/salarial/datos_salarial06.zip",
      "INE. Encuesta Cuatrienal de Estructura Salarial 2006, microdatos (no se versiona: 72 MB)",
      "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177025&menu=resultados&idp=1254735976596"),

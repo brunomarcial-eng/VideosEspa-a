@@ -1,4 +1,4 @@
-# T5 · Paso 1: datos y propuesta (versión 2, pendiente de aprobar)
+# T5 · Paso 1: datos y propuesta (versión 2, aprobada el 17-11-2026 sin el ejemplo de Francia)
 
 **Lo que pide Bruno (17-11-2026):**
 - Quitar «49 mayores por cada 100 niños», porque no se entiende.
@@ -54,7 +54,6 @@ Decorados que cambian como en un sueño: cocina → calle (bloque) → cuarto de
 2. **Hijo:** En 1986 trabajaban 26 de cada 100 mujeres. Hoy, 63.
 3. **Padre:** ¡Pues ahí lo tienes!
 4. **Hijo:** No tan rápido. Entre 1995 y 2008 trabajaban cada vez más mujeres… y nacían más niños: de 1,16 a 1,45 hijos por mujer.
-5. **Hijo:** Y en Francia trabajan más mujeres que aquí y tienen más hijos: 1,66 frente a 1,12.
-6. **Padre:** ¿Entonces qué ha cambiado?
-7. **Hijo:** En 1986, el padre tenía 2 días de permiso y la madre, 14 semanas. Hoy, 19 semanas cada uno.
-8. **Hijo, a cámara:** ¿Qué hace falta para tener hijos: tiempo, dinero o casa? ¿Tú qué opinas?
+5. **Padre:** ¿Entonces qué ha cambiado?
+6. **Hijo:** En 1986, el padre tenía 2 días de permiso y la madre, 14 semanas. Hoy, 19 semanas cada uno.
+7. **Hijo, a cámara:** ¿Qué hace falta para tener hijos: tiempo, dinero o casa? ¿Tú qué opinas?
