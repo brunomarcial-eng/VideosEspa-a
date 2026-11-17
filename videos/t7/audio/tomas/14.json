@@ -1,26 +1,27 @@
 {
  "huella": "78c8f715325b212f",
- "semilla": 14001,
+ "semilla": 14202,
  "texto": "¡Y todo a domicilio!",
  "ev": {
   "ok": true,
-  "nota": 1.0069,
-  "oido": "y todo a domicilio.",
+  "nota": 1.0,
+  "oido": "Y todo a domicilio.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.14,
-   0.3,
-   0.48
+   0.2,
+   0.46,
+   0.64
   ],
   "t1": [
-   0.14,
-   0.3,
-   0.48,
-   1.02
+   0.2,
+   0.46,
+   0.64,
+   1.24
   ],
-  "ritmo": 14.4,
-  "voz": 0.864
- }
+  "ritmo": 11.2,
+  "voz": 0.848
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.022; parecido 0.891)"
 }

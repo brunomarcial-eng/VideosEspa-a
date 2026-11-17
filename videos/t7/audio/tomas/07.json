@@ -1,38 +1,39 @@
 {
  "huella": "01b6ab9ea12226ce",
- "semilla": 7000,
+ "semilla": 7204,
  "texto": "¡Y pagando por hacer deporte! Yo jugaba al frontón gratis.",
  "ev": {
   "ok": true,
-  "nota": 1.0331,
-  "oido": "y pagando por hacer deporte. Yo jugaba al frontón gratis.",
+  "nota": 1.0,
+  "oido": "y pagando por hacer deporte, yo jugaba al frontón gratis.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
    0.14,
-   0.66,
-   0.86,
-   1.04,
-   2.06,
-   2.46,
-   2.88,
-   3.0,
-   3.34
+   0.56,
+   0.74,
+   0.96,
+   2.14,
+   2.52,
+   2.96,
+   3.1,
+   3.52
   ],
   "t1": [
    0.14,
-   0.66,
-   0.86,
-   1.04,
-   1.54,
-   2.46,
-   2.88,
-   3.0,
-   3.34,
-   3.76
+   0.56,
+   0.74,
+   0.96,
+   1.44,
+   2.52,
+   2.96,
+   3.1,
+   3.52,
+   4.02
   ],
-  "ritmo": 12.0,
-  "voz": 0.916
- }
+  "ritmo": 11.3,
+  "voz": 0.937
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.009; parecido 0.927)"
 }
