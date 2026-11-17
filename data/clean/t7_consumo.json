@@ -1,0 +1,92 @@
+{
+ "tema": "T7 — consumo hace 40 años, hace 20 y hoy: servicios, ropa y belleza",
+ "reparto_gasto_pct": {
+  "ropa_calzado": {
+   "1986": 10.88,
+   "2006": 6.81,
+   "2025": 4.03
+  },
+  "cuidado_personal_y_complementos": {
+   "1986": 1.51,
+   "2006": 3.47,
+   "2025": 3.08
+  },
+  "restaurantes_cafes_y_alojamiento": {
+   "1986": 7.19,
+   "2006": 9.98,
+   "2025": 9.35
+  },
+  "telefono_internet": {
+   "1986": 0.92,
+   "2006": 2.85,
+   "2025": 3.08
+  },
+  "servicios_recreativos_deportivos_culturales": {
+   "1986": 1.37,
+   "2006": 2.1,
+   "2025": 1.85
+  }
+ },
+ "ipc_variacion_real_pct": {
+  "Vestido y calzado": {
+   "2006_2025": -22.4,
+   "2016_2025": -9.8
+  },
+  "Restaurantes y servicios de alojamiento": {
+   "2006_2025": 8.0,
+   "2016_2025": 3.5
+  },
+  "Cuidado personal, protección social, y bienes y servicios diversos": {
+   "2006_2025": -3.6,
+   "2016_2025": -7.7
+  },
+  "Información y comunicaciones": {
+   "2006_2025": -55.6,
+   "2016_2025": -21.8
+  },
+  "Actividades recreativas, deporte y cultura": {
+   "2006_2025": -12.7,
+   "2016_2025": -10.0
+  },
+  "general_nominal_2006_2025_pct": 47.3
+ },
+ "compras_internet_pct": {
+  "ultimos_3_meses": {
+   "2006": 10.02,
+   "2016": 34.9,
+   "2019": 46.93,
+   "2023": 55.85,
+   "2024": 56.7,
+   "2025": 59.65
+  },
+  "ropa": {
+   "2006": 2.28,
+   "2016": 22.94,
+   "2019": 32.29,
+   "2023": 39.52,
+   "2024": 40.64
+  },
+  "comida_a_domicilio_restaurantes": {
+   "2023": 23.38,
+   "2024": 24.91
+  },
+  "suscripcion_series_peliculas": {
+   "2024": 23.24,
+   "2025": 27.14
+  },
+  "suscripcion_musica": {
+   "2024": 15.73,
+   "2025": 17.96
+  }
+ },
+ "deporte": {
+  "practica_anual_pct": {
+   "2015": 53.5,
+   "2022": 57.3,
+   "2024_25": 62.7
+  },
+  "abonados_gimnasio_pct": 30.7,
+  "padel_anual_pct": 9.7
+ },
+ "nota": "Reparto del gasto total de los hogares (con alquiler imputado), en % (= € de cada 100). 1986: 8.1 «cuidados y efectos personales» y 8.3 «restaurantes, cafés y hoteles» del Anuario de 1989; la clasificación ha cambiado, la comparación es aproximada. Compras por internet: % de personas de 16 a 74 años en los últimos 3 meses; la serie de ropa cambia de definición en 2020."
+}
