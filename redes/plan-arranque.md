@@ -1,4 +1,4 @@
-# Plan de arranque de redes (17-11-2026)
+# Plan de arranque de redes · Status España (17-11-2026)
 
 Agente de redes. Hoy no se publica nada: aún no hay cuentas de TikTok ni de X ni permisos de API. Fuente de verdad de lo aprobado: `docs/ESTADO.md` de la rama `ccr-03be754b-81ccws`.
 
@@ -7,7 +7,7 @@ Agente de redes. Hoy no se publica nada: aún no hay cuentas de TikTok ni de X n
 2. **La API de X no es gratis** para cuentas nuevas: desde febrero de 2026 el plan gratuito está cerrado y publicar se paga por uso (unos 0,015 $ por publicación y 0,20 $ si lleva enlace, según webs de terceros; hay que confirmarlo en la página oficial). Por la regla 9 (solo gratis), **X se publica a mano desde la app**, que es gratis, o se aplaza.
 3. **TikTok, a mano hasta pasar la auditoría.** Sin auditoría, la API solo publica en cuentas privadas («solo yo»), y lo publicado así no se vuelve público después. Subir desde la app es gratis y oficial.
 4. **YouTube, a mano en Studio** con publicación programada hasta pasar su auditoría (ya estaba previsto).
-5. **Nombre de usuario:** en X el máximo son 15 caracteres, así que `@CuantoValeTuHora` (16) no cabe. Propuesta para las tres: **`@valetuhora`**, con el nombre visible «Cuánto Vale Tu Hora».
+5. **Nombre del canal: «Status España»** (decisión del responsable, 17-11-2026), en las tres redes. Usuario propuesto: **`@statusespana`**. Ver sección 2.
 
 ## 1. Lo que haces tú, en orden
 
@@ -31,26 +31,32 @@ Todo con el **correo del canal**, en el perfil de navegador del canal y sin tu n
 
 ## 2. Nombre de usuario
 
-**Límites:** X, 4-15 caracteres; TikTok, 2-24 (solo minúsculas, números, «_» y «.»); YouTube, 3-30.
+**Nombre del canal: «Status España»** en YouTube, TikTok y X (decisión del responsable, 17-11-2026). Sustituye a «Cuánto Vale Tu Hora».
+
+**Límites:** X, 4-15 caracteres (letras, números y «_»); TikTok, 2-24 (minúsculas, números, «_» y «.»); YouTube, 3-30. Ninguno admite la «ñ».
 
 | Opción | Caracteres | ¿Cabe en las tres? |
 |---|---|---|
-| **`valetuhora`** (recomendada) | 10 | Sí |
-| `cuantovalehora` | 14 | Sí |
-| `horascontadas` | 13 | Sí |
-| `precio_del_tiempo` | 17 | No (X) |
-| `cuantovaletuhora` | 16 | No (X) |
+| **`statusespana`** (recomendada) | 12 | Sí |
+| `status_espana` | 13 | Sí |
+| `statusesp` | 9 | Sí |
+| `status.espana` | 13 | No (X no admite el punto) |
 
-- **Nombre visible** en las tres: «Cuánto Vale Tu Hora» (cabe: el nombre visible admite más caracteres que el usuario).
-- Si el canal de YouTube ya se creó con `@CuantoValeTuHora`, se puede cambiar el handle en Studio a `@valetuhora` para que coincida, o dejarlo y aceptar que X sea distinto. Tú decides.
+- **Nombre visible** en las tres: «Status España».
+- **YouTube:** cambiar el nombre del canal y el handle en Studio → Personalización → Información básica. YouTube limita cuántas veces se pueden cambiar el nombre y el handle en un periodo de tiempo: hazlo una sola vez y bien.
+- No se ha podido confirmar desde el entorno si están libres (sección 8).
 
 **Cómo comprobar que está libre (lo válido es el formulario de cada red):**
 1. YouTube: Studio → Personalización → Información básica → Handle. Dice al momento si está libre.
 2. TikTok: al registrarte, o en Editar perfil → Nombre de usuario. Avisa al momento.
 3. X: en el registro, o en https://x.com/settings/screen_name. Avisa al momento.
-4. Pista rápida antes de empezar: abrir `youtube.com/@valetuhora`, `tiktok.com/@valetuhora` y `x.com/valetuhora` en una ventana privada. «No existe» no garantiza que esté libre (puede ser una cuenta suspendida o reservada).
+4. Pista rápida: abrir `youtube.com/@statusespana`, `tiktok.com/@statusespana` y `x.com/statusespana` en una ventana privada. «No existe» no garantiza que esté libre (puede ser una cuenta suspendida o reservada).
 
-Cuando tengas el resultado, crea las tres seguidas el mismo día para que nadie lo coja entre medias.
+Cuando tengas el resultado, crea o cambia las tres seguidas el mismo día para que nadie lo coja entre medias.
+
+**Qué cambia en el resto del proyecto** (rama de producción, no la toco yo):
+- Los vídeos, las fichas `upload/*.md` y el código de diseño no llevan el nombre del canal: no hay que tocar nada aprobado.
+- Sí lo llevan `CLAUDE.md`, `docs/prompt-redes-sociales.md`, `docs/youtube-api-conexion.md` (handles propuestos) y `docs/youtube-auditoria-borrador.md` (nombre de la app y del canal en la solicitud de auditoría). Conviene actualizarlos en la sesión de producción, sobre todo el borrador de la auditoría antes de enviarlo.
 
 ## 3. Red y secretos del entorno
 
@@ -201,7 +207,7 @@ Más datos: en 1989 las hipotecas iban al 15 %. En 2006, en plena burbuja, el pi
 - Precio de la API de X (webs de terceros; confirmar en developer.x.com): https://postproxy.dev/blog/x-api-pricing-2026/ y https://www.socialync.io/blog/x-api-pricing-and-posting-2026
 
 ## 7. Lo que espero de ti
-1. Confirmar el nombre de usuario (`valetuhora` u otro).
+1. ~~Nombre~~: «Status España», confirmado. Falta comprobar que `statusespana` está libre en las tres.
 2. Confirmar orden (T1-T2-T3 o empezar por T3) y horas.
 3. Decir si alguno ya está subido a YouTube.
 
