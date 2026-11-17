@@ -110,7 +110,7 @@
    "voz": "En la casa, papá. En 1986, 19 de cada 100. Hoy, 33. Un tercio de todo lo que gastas.",
    "pantalla": "De cada 100 € que gasta un hogar · La casa · 1986: 19 · hoy: 33",
    "sello": "INE · Encuesta de Presupuestos Familiares (reparto del gasto total de los hogares, 1986 y 2025)",
-   "imagen": "El súper se deshace y están en la calle, delante de un bloque de pisos. El bloque crece hasta salirse del encuadre; tiembla la cámara. En la barra de los 100 euros, el trozo de la casa crece de 19 a 33 y se pone rojo.",
+   "imagen": "El súper se deshace y están en la calle. Los billetes que salieron volando caen en un portal y el bloque de pisos crece planta a planta: 4 plantas en 1986, 7 hoy. En el «33», el número se pone rojo, cae un sello «¡CASI EL DOBLE!» y tiembla la cámara.",
    "nota": "En 2016: 31. Con el alquiler que pagaría quien vive en casa propia",
    "grafico": true
   },
@@ -279,7 +279,8 @@
   "La clasificación de los grupos cambió entre 1986 y hoy: la comparación es aproximada y así se dice en la descripción.",
   "«El 39 % de lo que ganas»: peso medio del alquiler en la renta disponible de los hogares de una persona que pagan alquiler (Eurostat, ilc_mded02, 2025: 38,9 %). Dos adultos: 27,0 %. Es una media ponderada, según la metodología de Eurostat.",
   "v4 (16-11-2026): Bruno pide quitar las hipotecas de más del 80 % (repetían T3) y contar en qué se gasta el dinero y cuánto se lleva la vivienda. Sale también el sueldo más frecuente para no alargar.",
-  "v5 (16-11-2026): con el gasto y la vivienda el vídeo se iba a 76 s. Los nietos (edad al primer hijo) pasan a T5, natalidad, como Bruno dejó abierto («si queda muy largo podemos ir a otro vídeo»). Sale también la réplica «¡Ajá!» del padre, que queda en gesto."
+  "v5 (16-11-2026): con el gasto y la vivienda el vídeo se iba a 76 s. Los nietos (edad al primer hijo) pasan a T5, natalidad, como Bruno dejó abierto («si queda muy largo podemos ir a otro vídeo»). Sale también la réplica «¡Ajá!» del padre, que queda en gesto.",
+  "«¡Casi el doble!» (sello de la escena 6): 33,2 / 18,8 = 1,77 veces (C)."
  ],
  "cierre": {
   "veredicto": "frente a 1986: la casa se lleva mucho más (de 19 a 33 de cada 100 euros que gasta un hogar), la comida mucho menos (de 28 a 16) y el ocio algo más (de 12 a 17, aunque menos que en 2016)",

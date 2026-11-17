@@ -33,7 +33,12 @@ Versiones rechazadas: v1 (tarjetas y bustos, tres estilos), v2 collage (`videos/
 ## 3. Siguiente paso, en orden
 1. Bruno sube T1 (y T2 cuando esté aprobado) a mano en Studio con `upload/<id>.md` (contenido sintético: sí; no es para niños).
 2. **T3 aprobado (16-11-2026):** «¿Quién lo tuvo más difícil para comprar casa: tu padre o tú?», 62 s. Ficha `upload/t3.md`, portada `upload/t3-portada.png`, archivo `archive/t3/`. Siguiente: T4, propuesto el 16-11-2026.
-3. **T4 hecho, pendiente de Bruno (16-11-2026):** «¿De verdad los jóvenes se lo gastan todo en Netflix?», padre contra hijo (2.ª parte), unos 69 s. Ocio en el gasto, hipotecas de más del 80 %, sueldo más frecuente, emancipación y edad de la madre al primer hijo (los nietos, que pidió Bruno). Ficha `upload/t4.md`. Cuando lo apruebe: portada, `archive/t4/`. Propuestos después: T5 natalidad; T6 y T7 consumo hace 40 años frente a hoy (servicios y ocio; ropa y cuidado personal), sin el ejemplo de Uber.
+3. **T4 v5 hecho, pendiente de Bruno (17-11-2026):** «¿De verdad los jóvenes se lo gastan todo en Netflix?», 63,5 s.
+   - Bruno pidió quitar las hipotecas (repetían T3), contar en qué se gasta el dinero y cuánto se lleva la vivienda, y que el decorado cambie con la conversación, «como en un sueño».
+   - Cifra común: «de cada 100 € que gasta un hogar», 1986 frente a hoy (INE): ocio, 12 → 17; comida, 28 → 16; casa, 19 → 33. Alquiler: 39 % de los ingresos si vives solo, 27 % en pareja (Eurostat). Emancipación: 30,2 años (UE: 26,3).
+   - Decorados en `diseno/sueno.mjs`: cocina, bar, súper, calle, piso, cuarto y vuelta a la cocina. Tabla de datos en `videos/t4/paso-1-datos-v4.md`. Ficha `upload/t4.md`, portada `upload/t4-portada.png`.
+   - Los nietos (edad al primer hijo) pasan a T5, natalidad. Después: T6 y T7, consumo hace 40 años frente a hoy (sin Uber).
+   - Cuando Bruno lo apruebe: `archive/t4/`.
 4. Si Bruno quiere probar Google Chirp 3 HD: necesita su cuenta de Google Cloud, una clave de API y permitir `texttospeech.googleapis.com` en el entorno.
 5. La voz 5 (personaje secundario) está fijada en `diseno/voces/ref-voz5.wav`; se usará cuando Bruno lo pida, con una muestra previa.
 6. Cuando Bruno conecte la API de YouTube (JSON del cliente OAuth), leer métricas con `scripts/youtube/metricas.py`.

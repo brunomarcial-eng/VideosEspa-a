@@ -137,7 +137,9 @@ export function escenas(D) {
 
     // 6 · Hijo (calle): «En la casa, papá. En 1986, 19 de cada 100. Hoy, 33. Un tercio de todo lo que gastas.»
     { n: 6, set: "vacio",
-      svg: `${bloque("s6-blo", 7)}${[0, 1, 2].map((i) => billete("s6-b" + i)).join("")}${dos("s6")}`,
+      svg: `${bloque("s6-blo", 7)}${[0, 1, 2].map((i) => billete("s6-b" + i)).join("")}${dos("s6")}
+        <g id="s6-sello"><g transform="rotate(-9)"><rect x="-250" y="-62" width="500" height="124" rx="22" fill="#FFFDF8" stroke="${C.rojo}" stroke-width="12"/>
+          <text x="0" y="24" text-anchor="middle" font-family="Cap" font-weight="800" font-size="70" fill="${C.rojo}">¡CASI EL DOBLE!</text></g></g>`,
       tarjeta: tarjeta100(6, "Alquiler real o estimado, luz, agua y gas", r(D.g86.casa), r(D.gHoy.casa), `en 2016: ${r(D.g16.casa)}`,
         `<div class="sub" id="c6-sub" style="margin-top:6px">Un <mark id="m6">tercio</mark> de todo lo que gasta</div>`),
       fn: function (t, e) {
@@ -161,6 +163,10 @@ export function escenas(D) {
         }
         barra100("c6", D.g86, D.gHoy, suave((t - c["c6-hoy"]) / 1.2), "casa");
         sube("c6-a", t, c["c6-19"]); sube("c6-b", t, c["c6-33"] - 0.1); sube("c6-sub", t, c["c6-tercio"] - 0.2); marca("m6", t, c["c6-tercio"]);
+        // El «33» de hoy se pone rojo y late; encima del bloque cae un sello: casi el doble que en 1986.
+        const k33 = t - c["c6-33"], C_ROJO = "#B3261E";
+        if (k33 >= 0) { css("c6-b", "color", C_ROJO); css("c6-b", "transform", `scale(${(1 + 0.22 * Math.exp(-k33 * 3) * Math.abs(Math.cos(k33 * 9))).toFixed(3)})`); }
+        pop("s6-sello", t, c["c6-33"] + 0.25, 540, 1010 + 4 * Math.sin(t * 5), { s: 0.72, d: 0.25 });
         persona("s6-padre", t, { x: 210, y: 1440, s: 0.78, mira: 1, boca: [[0, "seria"], [c["c6-33"], "o"]], ojos: [[0, "normal"], [c["c6-hoy"] + 0.3, "grandes"]], incl: [[0, 0], [c["c6-hoy"] + 0.3, -7]], fase: 1 });
         persona("s6-hijo", t, { x: 870, y: 1440, s: 0.78, mira: -1, boca: habla(t, e), brazo: [[0, "abajo"], [c["c6-casa"], "senala"], [c["c6-tercio"], "hombros"]], espejo: true, fase: 2 });
       },
