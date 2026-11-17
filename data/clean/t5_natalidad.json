@@ -432,11 +432,23 @@
     "empleo_hombres_15_64": 62.0,
     "hijos_por_mujer": 1.16
    },
+   "1998": {
+    "empleo_mujeres_25_54": 44.8,
+    "empleo_mujeres_15_64": 35.6,
+    "empleo_hombres_15_64": 66.5,
+    "hijos_por_mujer": 1.13
+   },
    "2001": {
     "empleo_mujeres_25_54": 52.6,
     "empleo_mujeres_15_64": 42.8,
     "empleo_hombres_15_64": 72.5,
     "hijos_por_mujer": 1.23
+   },
+   "2004": {
+    "empleo_mujeres_25_54": 59.3,
+    "empleo_mujeres_15_64": 48.5,
+    "empleo_hombres_15_64": 73.4,
+    "hijos_por_mujer": 1.31
    },
    "2007": {
     "empleo_mujeres_25_54": 66.3,
@@ -449,6 +461,12 @@
     "empleo_mujeres_15_64": 55.4,
     "empleo_hombres_15_64": 73.3,
     "hijos_por_mujer": 1.45
+   },
+   "2010": {
+    "empleo_mujeres_25_54": 63.9,
+    "empleo_mujeres_15_64": 52.8,
+    "empleo_hombres_15_64": 64.8,
+    "hijos_por_mujer": 1.37
    },
    "2013": {
     "empleo_mujeres_25_54": 61.2,
@@ -467,6 +485,12 @@
     "empleo_mujeres_15_64": 57.9,
     "empleo_hombres_15_64": 68.7,
     "hijos_por_mujer": 1.23
+   },
+   "2022": {
+    "empleo_mujeres_25_54": 71.3,
+    "empleo_mujeres_15_64": 59.2,
+    "empleo_hombres_15_64": 69.3,
+    "hijos_por_mujer": 1.16
    },
    "2023": {
     "empleo_mujeres_25_54": 73.0,

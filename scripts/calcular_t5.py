@@ -108,7 +108,7 @@ def europa():
                                "empleo_mujeres_15_64": es_emp({"geo": "ES", "sex": "F"}).get(a),
                                "empleo_hombres_15_64": es_emp({"geo": "ES", "sex": "M"}).get(a),
                                "hijos_por_mujer": tfr({"geo": "ES"}).get(a)}
-                           for a in ("1995", "2001", "2007", "2008", "2013", "2016", "2019", "2023", "2024", "2025")}
+                           for a in ("1995", "1998", "2001", "2004", "2007", "2008", "2010", "2013", "2016", "2019", "2022", "2023", "2024", "2025")}
     return res
 
 

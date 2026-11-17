@@ -1,0 +1,271 @@
+{
+ "id": "t6",
+ "version": 1,
+ "titulo": "¿Nacen menos niños porque ahora trabajan ellas?",
+ "titulo_alternativo": "Padre contra hijo (4): ¿es porque ahora trabajan las mujeres?",
+ "pregunta": "Padre (62) contra hijo (31), cuarta parte: ¿nacen menos niños porque ahora trabajan las mujeres?",
+ "datos": "data/clean/t5_natalidad.json",
+ "aprobacion_datos": "Datos y guion aprobados por Bruno el 17-11-2026 (videos/t5/paso-1-datos.md v2), sin el ejemplo de Francia",
+ "formato": "Cuarta parte de padre contra hijo: mismos personajes y voces; el decorado cambia como en un sueño (cocina, oficina, parque, cocina). Sin veredicto hablado: acaba con la pregunta.",
+ "duracion_max_s": 75,
+ "personajes": {
+  "padre": {
+   "anyo": "62 años",
+   "genero": "padre"
+  },
+  "hijo": {
+   "anyo": "31 años",
+   "genero": "hijo"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "Formato padre-hijo: acaba con la pregunta al espectador (Bruno, 15-11-2026). El veredicto va en la descripción.",
+ "capitulos": [
+  {
+   "nombre": "La bronca",
+   "beats": [
+    1
+   ]
+  },
+  {
+   "nombre": "Ellas trabajan",
+   "beats": [
+    2,
+    3
+   ]
+  },
+  {
+   "nombre": "El giro",
+   "beats": [
+    4,
+    5
+   ]
+  },
+  {
+   "nombre": "Permisos",
+   "beats": [
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    9
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "padre",
+   "funcion": "gancho: la acusación",
+   "voz": "¡Es que antes tu madre se quedaba en casa con los niños!",
+   "pantalla": "¿Es porque ahora trabajan ellas?",
+   "sello": null,
+   "imagen": "La cocina. El padre señala; aparece un retrato antiguo, en sepia, de una madre en casa con un bebé."
+  },
+  {
+   "n": 2,
+   "quien": "hijo",
+   "funcion": "dato: mujeres que trabajan",
+   "voz": "En 1986 trabajaban 26 de cada 100 mujeres. Hoy, 63.",
+   "pantalla": "Mujeres de 16 a 64 años con trabajo, de cada 100 · 1986: 26 · hoy: 63",
+   "nota": "Hombres: 63 en 1986 y 71 hoy. En 2007: 55. En 2016: 54",
+   "sello": "INE (EPA de 1986, Anuario de 1988) y Eurostat (hoy) · cálculo propio para 1986",
+   "imagen": "Como en un sueño, la cocina se deshace y están en una oficina. Una rejilla de 100 mujeres: se colorean 26 y luego 63."
+  },
+  {
+   "n": 3,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "¡Pues ahí lo tienes!",
+   "pantalla": "«¡Pues ahí lo tienes!»",
+   "sello": null,
+   "imagen": "En la oficina. El padre señala la rejilla, triunfal."
+  },
+  {
+   "n": 4,
+   "quien": "hijo",
+   "funcion": "dato: el giro",
+   "voz": "No tan rápido. Entre 1995 y 2008 trabajaban cada vez más mujeres… y nacían más niños: de 1,16 a 1,45 hijos por mujer.",
+   "pantalla": "De 1995 a 2008 · Hijos por mujer: de 1,16 a 1,45",
+   "nota": "Mujeres de 25 a 54 años con trabajo: del 40,2 % al 66,5 %",
+   "sello": "DATO OFICIAL · EUROSTAT (empleo de las mujeres de 25 a 54 años e hijos por mujer)",
+   "grafico": true,
+   "imagen": "En la oficina, una pizarra con dos líneas que suben a la vez de 1995 a 2008: mujeres con trabajo y nacimientos."
+  },
+  {
+   "n": 5,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "¿Entonces qué ha cambiado?",
+   "pantalla": "«¿Entonces qué ha cambiado?»",
+   "sello": null,
+   "imagen": "El padre se rasca la cabeza."
+  },
+  {
+   "n": 6,
+   "quien": "hijo",
+   "funcion": "dato: permisos",
+   "voz": "En 1986, el padre tenía 2 días de permiso y la madre, 14 semanas. Hoy, 19 semanas cada uno.",
+   "pantalla": "Permiso por nacimiento · 1986: padre, 2 días; madre, 14 semanas · hoy: 19 semanas cada uno",
+   "sello": "DATO OFICIAL · BOE (Estatuto de los Trabajadores de 1980 y Real Decreto-ley 9/2025)",
+   "grafico": true,
+   "imagen": "La oficina se deshace y están en un parque. Barras de semanas de permiso: en 1986, casi nada para el padre y 14 para la madre; hoy, 19 para cada uno."
+  },
+  {
+   "n": 7,
+   "quien": "padre",
+   "funcion": "réplica con humor",
+   "voz": "¡Diecinueve semanas! Yo, cuando naciste tú, tuve dos días y de vuelta al tajo.",
+   "pantalla": "«¡Yo tuve dos días!»",
+   "sello": null,
+   "imagen": "En el parque. El padre enseña dos dedos; pasa un carrito de bebé."
+  },
+  {
+   "n": 8,
+   "quien": "hijo",
+   "funcion": "dato: y aun así",
+   "voz": "Y aun así, desde 2008 hemos bajado de 1,45 a 1,1 hijos por mujer.",
+   "pantalla": "Hijos por mujer · 2008: 1,45 · 2024: 1,10",
+   "nota": "En 2016: 1,33",
+   "sello": "DATO OFICIAL · EUROSTAT (hijos por mujer)",
+   "imagen": "El parque se deshace y están en la sala de cunas. Una línea baja de 1,45 a 1,1; las cunas se vacían."
+  },
+  {
+   "n": 9,
+   "quien": "hijo",
+   "funcion": "pregunta para el debate",
+   "voz": "¿Qué hace falta para tener hijos: tiempo, dinero o casa? ¿Tú qué opinas?",
+   "pantalla": "¿Qué hace falta para tener hijos: tiempo, dinero o casa?",
+   "sello": null,
+   "imagen": "La sala se deshace y vuelven a la cocina. Tres botones: TIEMPO, DINERO y CASA, y un bocadillo."
+  }
+ ],
+ "no_dato": [
+  "100",
+  "16",
+  "64",
+  "25",
+  "54"
+ ],
+ "cifras": [
+  {
+   "texto": "26",
+   "ruta": "empleo_1986.mujeres.tasa_empleo_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "63",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.2025.empleo_mujeres_15_64",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "63",
+   "ruta": "empleo_1986.hombres.tasa_empleo_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "71",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.2025.empleo_hombres_15_64",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "55",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.2007.empleo_mujeres_15_64",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "54",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.2016.empleo_mujeres_15_64",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "1,16",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.1995.hijos_por_mujer",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "1,45",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.2008.hijos_por_mujer",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "40,2",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.1995.empleo_mujeres_25_54",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "66,5",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.2008.empleo_mujeres_25_54",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "2",
+   "ruta": "permisos.1986.padre_dias",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "14",
+   "ruta": "permisos.1986.madre_semanas",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "19",
+   "ruta": "permisos.hoy.cada_progenitor_semanas",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "1,1",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.2024.hijos_por_mujer",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "1,10",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.2024.hijos_por_mujer",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "1,33",
+   "ruta": "europa_empleo_mujeres_y_fecundidad.espana_serie.2016.hijos_por_mujer",
+   "decimales": 2,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "«26 de cada 100» (1986): cálculo propio con la EPA del Anuario del INE de 1988: ocupadas = paradas / tasa de paro − paradas (3.215.035), entre las mujeres de 16 a 64 años a 1 de julio de 1986 (INE, tabla 56934: 12.273.079) = 26,2 %. Incluye a las pocas ocupadas de 65 años o más.",
+  "«Hoy, 63»: tasa de empleo de las mujeres de 15 a 64 años en 2025 (Eurostat, lfsa_ergan): 62,7 %. La de 1986 es de 16 a 64; a los 15 años casi nadie trabaja, así que se pueden comparar.",
+  "«Entre 1995 y 2008… de 1,16 a 1,45»: Eurostat (demo_find y lfsa_ergan): mujeres de 25 a 54 años con trabajo, 40,2 % en 1995 y 66,5 % en 2008; hijos por mujer, 1,16 y 1,45. No es una causa: solo que las dos cosas subieron a la vez (regla 3).",
+  "«2 días… 14 semanas… 19 semanas»: Ley 8/1980, Estatuto de los Trabajadores (BOE 14-03-1980), arts. 37.3.b y 48.4; Real Decreto-ley 9/2025 (BOE-A-2025-15741).",
+  "No se dice que el trabajo de las mujeres baje la natalidad ni lo contrario: el vídeo enseña datos y pregunta.",
+  "«Yo, cuando naciste tú, tuve dos días»: el hijo tiene 31 años, nació hacia 1995; el Estatuto de los Trabajadores de 1995 (Real Decreto Legislativo 1/1995, art. 37.3.b) seguía dando dos días por nacimiento de hijo.",
+  "«Desde 2008… de 1,45 a 1,1»: Eurostat (demo_find): 1,45 en 2008 y 1,10 en 2024 (el INE da 1,44 y 1,10).",
+  "Frases 7 y 8 añadidas el 17-11-2026: la versión aprobada se quedaba en 37 s, por debajo del mínimo de 45."
+ ],
+ "cierre": {
+  "veredicto": "hoy trabajan muchas más mujeres que en 1986 (de 26 a 63 de cada 100), pero entre 1995 y 2008 subieron a la vez el empleo de las mujeres y los nacimientos; y los permisos han pasado de 2 días para el padre y 14 semanas para la madre a 19 semanas cada uno",
+  "porque": "EPA de 1986 (Anuario del INE de 1988) y Eurostat: mujeres de 16 a 64 años con trabajo, 26,2 % en 1986 y 62,7 % en 2025. Eurostat: mujeres de 25 a 54 años con trabajo, 40,2 % (1995) y 66,5 % (2008); hijos por mujer, 1,16 y 1,45. BOE: Estatuto de los Trabajadores de 1980 y Real Decreto-ley 9/2025."
+ },
+ "aprobacion_guion": "17-11-2026: Bruno aprueba el guion de T6 sin el ejemplo de Francia y pide el siguiente vídeo tras aprobar T5."
+}

@@ -162,6 +162,19 @@ function cunas() {
     ${Array.from({ length: 14 }, (_, i) => `<line x1="${X0 + i * 140}" y1="1300" x2="${X0 - 60 + i * 140}" y2="2300" stroke="#D2D9DE" stroke-width="4"/>`).join("")}`;
 }
 
+// ------------------------------------------------------------------ oficina (mesas, ventanales y una pizarra)
+function oficina() {
+  const mesa = (x) => `<rect x="${x - 110}" y="1150" width="220" height="16" rx="6" fill="#B98A5E"/><rect x="${x - 100}" y="1166" width="12" height="134" fill="#9AA6AE"/><rect x="${x + 88}" y="1166" width="12" height="134" fill="#9AA6AE"/>
+    <rect x="${x - 50}" y="1070" width="100" height="70" rx="6" fill="${C.tinta}"/><rect x="${x - 44}" y="1076" width="88" height="56" rx="4" fill="#9ED0E6"/><rect x="${x - 8}" y="1140" width="16" height="12" fill="${C.tinta}"/>`;
+  return `${pared("#EEF1F3")}
+    ${[0, 1, 2, 3].map((i) => `<rect x="${-260 + i * 420}" y="300" width="360" height="520" rx="10" fill="#CFE6F2"/><line x1="${-80 + i * 420}" y1="300" x2="${-80 + i * 420}" y2="820" stroke="#FFFFFF" stroke-width="10"/>`).join("")}
+    <rect x="${X0}" y="820" width="${ANCHO}" height="480" fill="#E2E7EA"/>
+    ${[-160, 540, 1240].map(mesa).join("")}
+    <circle cx="80" cy="1060" r="44" fill="#9CB89E"/><rect x="66" y="1090" width="28" height="60" rx="6" fill="#C98F6B"/>
+    <rect x="${X0}" y="1300" width="${ANCHO}" height="1000" fill="#C9CED3"/>
+    ${Array.from({ length: 14 }, (_, i) => `<line x1="${X0 + i * 140}" y1="1300" x2="${X0 - 60 + i * 140}" y2="2300" stroke="#B9BFC5" stroke-width="4"/>`).join("")}`;
+}
+
 // Todas las capas de decorado, con el filtro de ondas y la bruma del cambio. Va en «capas» de escenas.mjs.
 export function ambientes() {
   const capa = (nombre, dibujo) => `<g id="amb-${nombre}" class="capa">${dibujo}</g>`;
@@ -171,7 +184,7 @@ export function ambientes() {
     <radialGradient id="g-bruma"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".35"/></radialGradient></defs>
     <g id="amb">${capa("cocina", cocina("amb-cocina-d"))}${capa("bar", bar())}${capa("super", superMercado())}${capa("calle", calle())}
       ${capa("piso", piso())}${capa("cuarto", cuarto())}${capa("parque", parque())}
-      ${capa("boda", boda())}${capa("cunas", cunas())}</g>
+      ${capa("boda", boda())}${capa("cunas", cunas())}${capa("oficina", oficina())}</g>
     <rect id="amb-bruma" class="capa" x="${X0}" y="-400" width="${ANCHO}" height="2700" fill="url(#g-bruma)" opacity="0"/>`;
 }
 
@@ -263,4 +276,23 @@ export function maletin(id) {
 }
 export function moneda(id) {
   return `<g id="${id}"><circle r="54" fill="#E9C46A" stroke="#C8902E" stroke-width="8"/><text y="22" text-anchor="middle" font-family="Cap" font-weight="800" font-size="64" fill="#8A6316">€</text></g>`;
+}
+
+// Retrato antiguo (sepia) de una madre en casa con su bebé. Origen: el centro.
+export function retrato(id) {
+  return `<g id="${id}"><defs><filter id="${id}-sepia"><feColorMatrix type="matrix" values=".39 .77 .19 0 0  .35 .69 .17 0 0  .27 .53 .13 0 0  0 0 0 1 0"/></filter></defs>
+    <rect x="-150" y="-180" width="300" height="340" rx="10" fill="#8A6A48"/><rect x="-130" y="-160" width="260" height="300" fill="#F4EAD8"/>
+    <g filter="url(#${id}-sepia)"><rect x="-130" y="-160" width="260" height="300" fill="#E6D2AE"/>
+      <g transform="translate(-20 130) scale(.9)"><path d="M-46 0 L-34 -150 Q0 -176 34 -150 L46 0 Z" fill="#9B5A5A"/><circle cx="0" cy="-196" r="34" fill="#EDBE96"/>
+        <path d="M-36 -196 Q-40 -244 0 -242 Q40 -244 36 -196 Q30 -222 0 -222 Q-30 -222 -36 -196 Z" fill="#6B4A32"/></g>
+      <g transform="translate(40 60) scale(.55)"><ellipse cx="0" cy="-40" rx="52" ry="42" fill="#9ED0E6"/><circle cx="0" cy="-98" r="36" fill="#F1C9A5"/></g></g></g>`;
+}
+// Figurita para la rejilla de 100 (cabeza y cuerpo). Origen: los pies.
+export function figurita(id, x, y, s = 1) {
+  return `<g id="${id}" transform="translate(${x} ${y}) scale(${s})" fill="#D5D9DD"><path d="M-14 0 L-11 -26 Q0 -32 11 -26 L14 0 Z"/><circle cx="0" cy="-36" r="9"/></g>`;
+}
+// Carrito de bebé. Origen: el suelo, en el centro.
+export function carrito(id) {
+  return `<g id="${id}"><path d="M-70 -70 H70 Q70 -10 0 -10 Q-70 -10 -70 -70 Z" fill="#6F8FA6"/><path d="M-70 -70 Q-70 -140 0 -140 V-70 Z" fill="#56738A"/>
+    <path d="M70 -70 L100 -110" stroke="${C.tinta}" stroke-width="8" stroke-linecap="round"/><circle cx="-44" cy="0" r="16" fill="${C.tinta}"/><circle cx="44" cy="0" r="16" fill="${C.tinta}"/></g>`;
 }
