@@ -1,48 +1,60 @@
-# T5 · Paso 1: datos y borrador (pendiente de aprobar)
+# T5 · Paso 1: datos y propuesta (versión 2, pendiente de aprobar)
 
-**«¿Y los nietos pa cuándo?»** Padre contra hijo, tercera parte: natalidad y envejecimiento. Lo eligió Bruno el 17-11-2026 (idea 1).
+**Lo que pide Bruno (17-11-2026):**
+- Quitar «49 mayores por cada 100 niños», porque no se entiende.
+- Dar contexto al **porqué**: independizarse tarde, pareja y boda tarde, casa más cara, precariedad, la incorporación de la mujer al trabajo, guarderías, permisos y bodas caras.
+- Que los datos encajen como una cadena. Si no cabe en 1:20, sacar dos vídeos.
 
-Datos limpios en `data/clean/t5_natalidad.json` (`scripts/calcular_t5.py`). Ficheros originales en `data/raw/`, con su huella en `MANIFEST.csv`. Todo es del INE.
+Datos limpios en `data/clean/t5_natalidad.json` (`scripts/calcular_t5.py`). Ficheros originales en `data/raw/`, con su huella en `MANIFEST.csv`.
 
-## Datos
+## 1. La cadena: todo llega más tarde
 
-| Dato | 1986 | 2007 | 2016 | 2019 | Hoy | Fuente | Estado |
+| Dato | 1986-87 | 2007 | 2016 | 2019 | Hoy | Fuente | Estado |
 |---|---|---|---|---|---|---|---|
-| Hijos por mujer (indicador coyuntural de fecundidad) | **1,55** | 1,38 | 1,33 | 1,23 | **1,10** (2024) | [INE 1407](https://www.ine.es/jaxiT3/Tabla.htm?t=1407) | V |
-| Edad media de la madre al primer hijo | **25,9** | 29,5 | 30,8 | 31,1 | **31,5** (2024) | [INE 1579](https://www.ine.es/jaxiT3/Tabla.htm?t=1579) | V |
-| Edad media al primer matrimonio (hombres y mujeres) | **26,0** | 31,0 | 34,0 | 34,9 | **36,2** (2024) | [INE 1380](https://www.ine.es/jaxiT3/Tabla.htm?t=1380) | V |
-| Nacimientos por cada 1.000 habitantes | 11,4 | 10,9 | 8,8 | 7,6 | 6,5 (2024) | [INE 1381](https://www.ine.es/jaxiT3/Tabla.htm?t=1381) | V |
-| Mayores de 64 por cada 100 menores de 16 (índice de envejecimiento) | **49** | 106 | 116 | 123 | **148** (2025) | [INE 1418](https://www.ine.es/jaxiT3/Tabla.htm?t=1418) | V |
-| Población de 65 años o más | 12,1 % | 16,5 % | 18,7 % | 19,3 % | 20,7 % (2025) | [INE 1417](https://www.ine.es/jaxiT3/Tabla.htm?t=1417) | V |
-| Mujeres que querrían tener al menos dos hijos | — | — | — | casi 3 de cada 4 (2018) | — | [INE, Encuesta de Fecundidad 2018](https://www.ine.es/prensa/ef_2018_a.pdf) | V |
+| Piso medio en años de ingresos brutos de un hogar | **3,1** (1987) | 8,8 (2006) | 6,7 | 6,9 | **8,4** (2026) | Banco de España | V |
+| Edad media al irse de casa | — | 28,7 (2006) | — | — | **30,2** (UE: 26,3) | Eurostat | V |
+| Edad media al primer matrimonio | **26,0** | 31,0 | 34,0 | 34,9 | **36,2** (2024) | INE 1380 | V |
+| Edad media de la madre al primer hijo | **25,9** | 29,5 | 30,8 | 31,1 | **31,5** (2024) | INE 1579 | V |
+| Hijos por mujer | **1,55** | 1,38 | 1,33 | 1,23 | **1,10** (2024) | INE 1407 | V |
+| Mujeres que querrían tener al menos dos hijos | — | — | — | casi 3 de cada 4 (2018) | — | INE, Encuesta de Fecundidad 2018 | V |
+| Por qué tienen menos hijos de los que querían (lo que **dicen ellas**) | — | — | — | Por debajo de 35: todavía esperan tenerlos. Desde los 35: razones laborales o de conciliación y económicas (2018) | — | INE, Encuesta de Fecundidad 2018 | V |
 
-**Qué se puede decir:**
-- Los hijos llegan cinco años y medio más tarde que en 1986.
-- La boda llega diez años más tarde.
-- Hay casi un tercio menos de hijos por mujer.
-- En 1986 había dos niños por cada mayor; hoy, tres mayores por cada dos niños.
-- La conclusión es la misma con cualquier año base: todo empeora sin parar desde 1986.
+## 2. Las hipótesis de Bruno, contrastadas
 
-**Qué no se puede decir:**
-- Por qué pasa. El vídeo no lo atribuye a nada (regla 3).
-- Solo se puede citar lo que **declaran** las mujeres en la encuesta del INE: «a partir de los 35 años, las razones laborales o de conciliación y las económicas son las más importantes por las que las mujeres han tenido menos hijos de los deseados». Si sale, va como «según ellas mismas, en la encuesta del INE».
+| Hipótesis | ¿Se sostiene? |
+|---|---|
+| Hoy trabajan muchas más mujeres que en 1986 | **Sí.** En 1986 trabajaban **26 de cada 100** mujeres de 16 a 64 años (cálculo con la EPA del Anuario del INE de 1988). Hoy, **63** (Eurostat, 2025). Hombres: 63 → 71 |
+| Como trabajan más mujeres, nacen menos niños | **Los datos no lo apoyan.**<br>· Entre 1995 y 2008, el empleo de las mujeres de 25 a 54 años subió del 40 % al 67 %, y a la vez los hijos por mujer **subieron** de 1,16 a 1,45.<br>· En la UE, donde más mujeres trabajan hay **algo más** de hijos, no menos (correlación de +0,15 en 2023 y +0,38 en 2019). Por ejemplo, Francia: 79 % de empleo y 1,66 hijos por mujer; España: 73 % y 1,12; Italia: 64 % y 1,21.<br>· Se puede enseñar como pregunta, no como causa |
+| Permisos: antes no había y ahora sí | **Sí.** En 1986, el padre tenía **2 días** y la madre hasta **14 semanas** (Estatuto de los Trabajadores de 1980, BOE). Hoy, **19 semanas cada uno** (Real Decreto-ley 9/2025, BOE) |
+| Hay más precariedad que en los 80 | **Frente a 1986, no en paro.** El paro de 20 a 24 años era del **44 %** en 1986 y es del **22 %** hoy. Frente a 2007 (15 %), sí es peor. Mejor no usarlo como argumento |
+| Comprar casa es más difícil | **Sí.** De 3,1 a 8,4 años de ingresos del hogar |
+| Las bodas cuestan 50.000 € y 200 € por invitado | **No hay dato oficial (X).** Puede salir como chiste del padre, sin cifra |
+| Guarderías caras | **No hay serie oficial de 1986 (X).** Se queda fuera |
+| Embarazo «geriátrico» | **Fuera,** como pidió Bruno: la media (31,5) no llega a los 35 |
 
-## Borrador del guion (padre contra hijo; unos 60 s)
+**Regla 3:** el vídeo pone los datos en cadena y cita lo que **dicen las mujeres** en la encuesta del INE. No afirma «la culpa es de…»: deja la pregunta al espectador.
 
-El decorado cambia como en un sueño, igual que en T4.
+## 3. Propuesta: dos vídeos de un minuto
+En 1:20 no caben la cadena y el debate sobre el trabajo de las mujeres sin ir con prisas. Además, el segundo tema es el más delicado y merece su propio vídeo, con los datos de Europa.
 
-| # | Dónde | Quién | Lo que dice |
-|---|---|---|---|
-| 1 | Cocina | Padre | ¿Y los nietos pa cuándo, eh? ¡Que tu madre y yo, a tu edad, ya te teníamos en brazos! |
-| 2 | Parque vacío (columpio quieto) | Hijo | Pues ibais tarde, papá. En 1986, el primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio. |
-| 3 | Parque | Padre | ¡Porque antes nos casábamos jóvenes! |
-| 4 | Boda (arroz, tarta) | Hijo | A los 26. Hoy, a los 36. Diez años más tarde. |
-| 5 | Boda | Padre | ¡Pues no os caséis, pero tened críos! |
-| 6 | Sala de cunas (casi vacía) | Hijo | Hijos por mujer: en 1986, 1,55. Hoy, 1,1. Y tres de cada cuatro mujeres querrían tener al menos dos. |
-| 7 | Plaza con bancos llenos de mayores | Padre | ¿Y entonces quién va a pagar mi pensión? |
-| 8 | Plaza | Hijo | Buena pregunta. En 1986 había 49 mayores por cada 100 niños. Hoy, 148. |
-| 9 | Cocina | Hijo, a cámara | ¿Quién lo tuvo más fácil para tener hijos: su generación o la mía? ¿Tú qué opinas? |
+### T5 · «¿Y los nietos pa cuándo?» (la cadena, unos 65 s)
+Decorados que cambian como en un sueño: cocina → calle (bloque) → cuarto de siempre → boda → sala de cunas → cocina.
+1. **Padre:** ¿Y los nietos pa cuándo, eh? ¡Que tu madre y yo, a tu edad, ya te teníamos en brazos!
+2. **Hijo:** Papá, primero hace falta casa. En 1987, un piso costaba 3 años de lo que ganaba un hogar. Hoy, más de 8.
+3. **Padre:** ¡Pues casaos y a vivir!
+4. **Hijo:** Vosotros os casabais a los 26. Ahora, a los 36.
+5. **Padre:** ¡Si es que ahora las bodas son un festival!
+6. **Hijo:** El primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio. Y de 1,55 hijos por mujer hemos pasado a 1,1.
+7. **Padre:** ¡Porque no queréis!
+8. **Hijo:** Tres de cada cuatro mujeres querrían al menos dos. Y las que tienen menos de los que querían, a partir de los 35, dicen que es por el trabajo y el dinero.
+9. **Hijo, a cámara:** Casa, boda, hijos… todo diez años más tarde. ¿Casualidad? ¿Tú qué opinas?
 
-**Notas:**
-- La pensión sale como **pregunta del padre**, sin dar causas ni hablar de partidos.
-- La broma «ibais tarde» es porque el padre tuvo al hijo a los 31, más tarde que la media de entonces.
+### T6 · «¿Es porque ahora trabajan ellas?» (unos 60 s)
+1. **Padre:** ¡Es que antes tu madre se quedaba en casa con los niños!
+2. **Hijo:** En 1986 trabajaban 26 de cada 100 mujeres. Hoy, 63.
+3. **Padre:** ¡Pues ahí lo tienes!
+4. **Hijo:** No tan rápido. Entre 1995 y 2008 trabajaban cada vez más mujeres… y nacían más niños: de 1,16 a 1,45 hijos por mujer.
+5. **Hijo:** Y en Francia trabajan más mujeres que aquí y tienen más hijos: 1,66 frente a 1,12.
+6. **Padre:** ¿Entonces qué ha cambiado?
+7. **Hijo:** En 1986, el padre tenía 2 días de permiso y la madre, 14 semanas. Hoy, 19 semanas cada uno.
+8. **Hijo, a cámara:** ¿Qué hace falta para tener hijos: tiempo, dinero o casa? ¿Tú qué opinas?

@@ -23,7 +23,7 @@ Todo el trabajo está en la rama **`ccr-03be754b-81ccws`** (viene de `ccr-81547d
 4. **Texto con su voz** (`/anthropic-skills:clon-bruno` al 100 %), de persona normal, con gancho llamativo. Sin sus opiniones políticas.
 5. **Más tranquilo y menos cargado.** Una idea por escena. No recortar las pausas naturales de la voz; cada tarjeta con dato se queda en pantalla un segundo más.
 6. **Retención**: preguntas llamativas al empezar.
-7. **De uno en uno**: T1, T2 y T3 aprobados; T4 hecho el 16-11-2026, pendiente de que Bruno lo vea.
+7. **De uno en uno**: T1, T2, T3 y T4 aprobados (T4, el 17-11-2026). T5 (natalidad) en el paso 1, datos.
 10. **Personajes y final (T2 v4, 12-11-2026):** piel sobre todo clara, algún hispanoamericano; sin barbas sin bigote (solo el carnicero). Nada de «depende» por defecto: veredicto claro (mejora o empeora) y una pregunta final que abra debate («¿Cómo puede ser? ¿Tú cómo te lo explicas?»).
 9. **Que se entienda (T2, 12-11-2026):** decir siempre de qué país hablamos (España, con la bandera al empezar). Cifras absolutas con su base («antes éramos X, ahora Y»). Gráficos que se lean de un vistazo (rosquilla, quesito, barras). Escenas que enseñen la idea (gente trabajando en comercios, no gente paseando). El título exacto que diga Bruno.
 8. Lee en el **móvil**: mensajes cortos y con el resultado primero. Revisar los fotogramas antes de enviar nada.
@@ -33,12 +33,13 @@ Versiones rechazadas: v1 (tarjetas y bustos, tres estilos), v2 collage (`videos/
 ## 3. Siguiente paso, en orden
 1. Bruno sube T1 (y T2 cuando esté aprobado) a mano en Studio con `upload/<id>.md` (contenido sintético: sí; no es para niños).
 2. **T3 aprobado (16-11-2026):** «¿Quién lo tuvo más difícil para comprar casa: tu padre o tú?», 62 s. Ficha `upload/t3.md`, portada `upload/t3-portada.png`, archivo `archive/t3/`. Siguiente: T4, propuesto el 16-11-2026.
-3. **T4 v5 hecho, pendiente de Bruno (17-11-2026):** «¿De verdad los jóvenes se lo gastan todo en Netflix?», 63,5 s.
+3. **T4 v5 aprobado para subir (17-11-2026):** «¿De verdad los jóvenes se lo gastan todo en Netflix?», 63,5 s.
    - Bruno pidió quitar las hipotecas (repetían T3), contar en qué se gasta el dinero y cuánto se lleva la vivienda, y que el decorado cambie con la conversación, «como en un sueño».
    - Cifra común: «de cada 100 € que gasta un hogar», 1986 frente a hoy (INE): ocio, 12 → 17; comida, 28 → 16; casa, 19 → 33. Alquiler: 39 % de los ingresos si vives solo, 27 % en pareja (Eurostat). Emancipación: 30,2 años (UE: 26,3).
    - Decorados en `diseno/sueno.mjs`: cocina, bar, súper, calle, piso, cuarto y vuelta a la cocina. Tabla de datos en `videos/t4/paso-1-datos-v4.md`. Ficha `upload/t4.md`, portada `upload/t4-portada.png`.
    - Los nietos (edad al primer hijo) pasan a T5, natalidad. Después: T6 y T7, consumo hace 40 años frente a hoy (sin Uber).
-   - Cuando Bruno lo apruebe: `archive/t4/`.
+   - Archivo para apelaciones: `archive/t4/`.
+   - **T5, natalidad (17-11-2026):** Bruno pide dar contexto al «por qué» (emancipación, pareja, casa, trabajo de las mujeres, permisos, bodas). Datos en `videos/t5/paso-1-datos.md`; propuesta de partirlo en dos vídeos, pendiente de su respuesta.
 4. Si Bruno quiere probar Google Chirp 3 HD: necesita su cuenta de Google Cloud, una clave de API y permitir `texttospeech.googleapis.com` en el entorno.
 5. La voz 5 (personaje secundario) está fijada en `diseno/voces/ref-voz5.wav`; se usará cuando Bruno lo pida, con una muestra previa.
 6. Cuando Bruno conecte la API de YouTube (JSON del cliente OAuth), leer métricas con `scripts/youtube/metricas.py`.

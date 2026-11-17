@@ -1,0 +1,198 @@
+{
+ "tema": "T4 — ¿De verdad os lo gastáis todo en Netflix? (padre contra hijo, 2.ª parte)",
+ "ocio_pct_gasto": {
+  "2006": 23.65,
+  "2025": 22.2
+ },
+ "ocio_real_2006_2025_pct": -30.0,
+ "dos_sueldos_pct": {
+  "2006": 54.4,
+  "2026": 51.8
+ },
+ "hipotecas_mas_80_pct": {
+  "2006": 17.02,
+  "2026": 10.05
+ },
+ "sueldo_mas_frecuente": {
+  "2006": 13775.0,
+  "2022": 16875.0,
+  "real_2006_2022_pct": -8.7
+ },
+ "edad_emancipacion": {
+  "ES_2006": 28.7,
+  "ES_2025": 30.2,
+  "UE_2025": 26.3
+ },
+ "edad_primer_hijo": {
+  "1986": 25.9,
+  "2006": 29.32,
+  "2024": 31.52
+ },
+ "hijos_por_mujer": {
+  "1986": 1.55,
+  "2006": 1.36,
+  "2024": 1.1
+ },
+ "gasto_1986_pct": {
+  "alimentos": 27.38,
+  "bebidas_no_alcoholicas": 0.43,
+  "vestido_calzado": 10.88,
+  "vivienda_calefaccion_alumbrado": 18.82,
+  "utilizacion_vehiculos": 6.46,
+  "comunicaciones": 0.92,
+  "esparcimiento_cultura_ensenanza": 6.04,
+  "ensenanza": 2.12,
+  "restaurantes_cafes_hoteles": 7.19,
+  "viajes_todo_incluido": 0.3,
+  "alimentos_y_bebidas_no_alcoholicas": 27.81,
+  "ocio_restaurantes_comunicaciones": 12.33
+ },
+ "gasto_total_pct": {
+  "2016": {
+   "alimentos_y_bebidas_no_alcoholicas": 14.62,
+   "vivienda_agua_electricidad_gas": 30.98,
+   "vestido_calzado": 5.15,
+   "restaurantes_alojamiento": 9.85,
+   "ocio_restaurantes_comunicaciones": 18.63,
+   "utilizacion_vehiculos": 6.65,
+   "alquileres_reales": 3.36,
+   "alquileres_imputados": 20.11
+  },
+  "2019": {
+   "alimentos_y_bebidas_no_alcoholicas": 14.17,
+   "vivienda_agua_electricidad_gas": 31.31,
+   "vestido_calzado": 4.69,
+   "restaurantes_alojamiento": 9.73,
+   "ocio_restaurantes_comunicaciones": 18.33,
+   "utilizacion_vehiculos": 7.04,
+   "alquileres_reales": 3.73,
+   "alquileres_imputados": 19.97
+  },
+  "2025": {
+   "alimentos_y_bebidas_no_alcoholicas": 16.03,
+   "vivienda_agua_electricidad_gas": 33.23,
+   "vestido_calzado": 4.03,
+   "restaurantes_alojamiento": 9.35,
+   "ocio_restaurantes_comunicaciones": 17.47,
+   "utilizacion_vehiculos": 6.49,
+   "alquileres_reales": 4.15,
+   "alquileres_imputados": 22.16
+  }
+ },
+ "alquiler_pct_renta": {
+  "una_persona_ES": {
+   "2004": 37.8,
+   "2005": 42.1,
+   "2006": 33.6,
+   "2007": 38.4,
+   "2008": 40.9,
+   "2009": 39.5,
+   "2010": 39.7,
+   "2011": 41.5,
+   "2012": 41.8,
+   "2013": 42.1,
+   "2014": 46.4,
+   "2015": 45.7,
+   "2016": 41.7,
+   "2017": 40.0,
+   "2018": 38.1,
+   "2019": 42.6,
+   "2020": 39.2,
+   "2021": 42.9,
+   "2022": 40.9,
+   "2023": 38.7,
+   "2024": 37.3,
+   "2025": 38.9
+  },
+  "dos_adultos_ES": {
+   "2004": 23.9,
+   "2005": 23.3,
+   "2006": 29.3,
+   "2007": 23.7,
+   "2008": 29.2,
+   "2009": 29.1,
+   "2010": 29.0,
+   "2011": 27.7,
+   "2012": 32.2,
+   "2013": 30.9,
+   "2014": 31.8,
+   "2015": 30.9,
+   "2016": 31.1,
+   "2017": 30.5,
+   "2018": 30.1,
+   "2019": 30.9,
+   "2020": 28.7,
+   "2021": 30.1,
+   "2022": 30.1,
+   "2023": 26.6,
+   "2024": 25.5,
+   "2025": 27.0
+  },
+  "una_persona_UE": {
+   "2010": 29.9,
+   "2011": 30.6,
+   "2012": 31.4,
+   "2013": 31.7,
+   "2014": 31.8,
+   "2015": 31.6,
+   "2016": 31.1,
+   "2017": 30.6,
+   "2018": 30.6,
+   "2019": 30.6,
+   "2020": 29.8,
+   "2021": 30.3,
+   "2022": 30.4,
+   "2023": 29.8,
+   "2024": 29.4,
+   "2025": 29.3
+  }
+ },
+ "sobrecarga_inquilinos_mercado_pct": {
+  "2007": 35.9,
+  "2008": 43.4,
+  "2009": 41.4,
+  "2010": 43.4,
+  "2011": 42.7,
+  "2012": 44.7,
+  "2013": 42.3,
+  "2014": 47.5,
+  "2015": 43.3,
+  "2016": 43.0,
+  "2017": 42.1,
+  "2018": 38.1,
+  "2019": 37.4,
+  "2020": 35.9,
+  "2021": 40.9,
+  "2022": 39.4,
+  "2023": 30.6,
+  "2024": 28.1,
+  "2025": 26.8
+ },
+ "bde_accesibilidad": {
+  "esfuerzo_teorico_pct": {
+   "1987": 47.3,
+   "1990": 71.43,
+   "2006": 46.46,
+   "2016": 30.54,
+   "2019": 30.25,
+   "2025": 34.31,
+   "2026_ultimo": 38.01
+  },
+  "precio_entre_renta_hogar_anos": {
+   "1987": 3.09,
+   "1990": 4.31,
+   "2006": 8.84,
+   "2016": 6.68,
+   "2019": 6.87,
+   "2025": 7.6,
+   "2026_ultimo": 8.36
+  },
+  "entrada_20pct_anos_renta": {
+   "1987": 0.62,
+   "2006": 1.77,
+   "2016": 1.34,
+   "2026_ultimo": 1.67
+  }
+ },
+ "nota": "Ocio = ocio y cultura + restaurantes y hoteles + comunicaciones (gasto monetario de los hogares, EPF). Dos sueldos = hogares con 2 o más ocupados entre los hogares con algún ocupado (EPA, 3.er trimestre). Hipotecas de más del 80 % del valor (Banco de España, media del año; 2026: dos trimestres). Sueldo más frecuente: microdatos de la Encuesta de Estructura Salarial (INE). Emancipación: Eurostat. Primer hijo e hijos por mujer: INE."
+}
