@@ -1,0 +1,242 @@
+{
+ "nota": "Momentos clave de T5 (padre contra hijo, 3.ª parte; el decorado cambia como en un sueño). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t5/escenas.mjs) y el sonido (scripts/sonido.py). Los «cN-ini» son el sonido del cambio de decorado.",
+ "musica": {
+  "bpm": 100,
+  "corte": "c7-11",
+  "silencio_s": 1.2
+ },
+ "cues": [
+  {
+   "id": "c1-nietos",
+   "beat": 1,
+   "palabra": "nietos",
+   "dt": -0.1,
+   "sfx": "campanilla",
+   "vol": 0.35
+  },
+  {
+   "id": "c1-brazos",
+   "beat": 1,
+   "palabra": "brazos!",
+   "dt": -0.25,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c2-ini",
+   "beat": 2,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c2-casa",
+   "beat": 2,
+   "palabra": "casa.",
+   "dt": -0.15,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c2-3",
+   "beat": 2,
+   "palabra": "3",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.4,
+   "hasta": 1.15
+  },
+  {
+   "id": "c2-8",
+   "beat": 2,
+   "palabra": "8.",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.32,
+   "dur": 0.9,
+   "hasta": 1.6
+  },
+  {
+   "id": "c2-golpe",
+   "beat": 2,
+   "palabra": "8.",
+   "dt": 0.85,
+   "sfx": "golpe",
+   "vol": 0.45
+  },
+  {
+   "id": "c3-casaos",
+   "beat": 3,
+   "palabra": "casaos",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-ini",
+   "beat": 4,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c4-26",
+   "beat": 4,
+   "palabra": "26.",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-36",
+   "beat": 4,
+   "palabra": "36.",
+   "dt": -0.6,
+   "sfx": "conteo",
+   "vol": 0.35,
+   "dur": 0.8
+  },
+  {
+   "id": "c5-festival",
+   "beat": 5,
+   "palabra": "festival!",
+   "dt": -0.15,
+   "sfx": "campanilla",
+   "vol": 0.4
+  },
+  {
+   "id": "c5-pop",
+   "beat": 5,
+   "palabra": "festival!",
+   "dt": 0.15,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.2
+  },
+  {
+   "id": "c6-ini",
+   "beat": 6,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c6-26",
+   "beat": 6,
+   "palabra": "26.",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c6-hoy",
+   "beat": 6,
+   "palabra": "Hoy,",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.9,
+   "hasta": 1.35
+  },
+  {
+   "id": "c7-155",
+   "beat": 7,
+   "palabra": "1,55",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c7-11",
+   "beat": 7,
+   "palabra": "1,1.",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.55
+  },
+  {
+   "id": "c8-quereis",
+   "beat": 8,
+   "palabra": "queréis,",
+   "dt": -0.1,
+   "sfx": "pinza",
+   "vol": 0.4
+  },
+  {
+   "id": "c9-tres",
+   "beat": 9,
+   "palabra": "tres",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c9-dos",
+   "beat": 9,
+   "palabra": "dos.",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c9-menos",
+   "beat": 9,
+   "palabra": "menos",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.35
+  },
+  {
+   "id": "c9-trabajo",
+   "beat": 9,
+   "palabra": "trabajo",
+   "dt": -0.1,
+   "sfx": "caja",
+   "vol": 0.3
+  },
+  {
+   "id": "c9-dinero",
+   "beat": 9,
+   "palabra": "dinero.",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.4
+  },
+  {
+   "id": "c10-ini",
+   "beat": 10,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c10-tarde",
+   "beat": 10,
+   "palabra": "tarde.",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-cas",
+   "beat": 10,
+   "palabra": "¿Casualidad?",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c10-boc",
+   "beat": 10,
+   "palabra": "opinas?",
+   "dt": -0.25,
+   "sfx": "notif",
+   "vol": 0.5
+  }
+ ]
+}

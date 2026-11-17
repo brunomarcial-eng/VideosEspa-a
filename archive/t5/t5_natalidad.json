@@ -1,0 +1,533 @@
+{
+ "tema": "T5 — ¿Y los nietos pa cuándo? (padre contra hijo, 3.ª parte): natalidad y envejecimiento",
+ "hijos_por_mujer": {
+  "1986": 1.55,
+  "2007": 1.38,
+  "2016": 1.33,
+  "2019": 1.23,
+  "2023": 1.12,
+  "2024": 1.1
+ },
+ "edad_primer_hijo": {
+  "1986": 25.9,
+  "2007": 29.45,
+  "2016": 30.79,
+  "2019": 31.08,
+  "2023": 31.5,
+  "2024": 31.52
+ },
+ "edad_primer_matrimonio": {
+  "1986": 26.03,
+  "2007": 31.03,
+  "2016": 33.96,
+  "2019": 34.9,
+  "2023": 35.89,
+  "2024": 36.19
+ },
+ "natalidad_por_mil": {
+  "1986": 11.36,
+  "2007": 10.86,
+  "2016": 8.8,
+  "2019": 7.62,
+  "2023": 6.61,
+  "2024": 6.49
+ },
+ "pct_mayores_64": {
+  "1986": 12.08,
+  "2007": 16.54,
+  "2016": 18.67,
+  "2019": 19.3,
+  "2023": 20.15,
+  "2024": 20.42,
+  "2025": 20.72
+ },
+ "mayores_por_100_ninos": {
+  "1986": 48.85,
+  "2007": 106.34,
+  "2016": 116.33,
+  "2019": 123.0,
+  "2023": 137.33,
+  "2024": 142.35,
+  "2025": 148.05
+ },
+ "encuesta_fecundidad_2018": {
+  "titular": "Casi tres de cada cuatro mujeres desearían tener al menos dos hijos",
+  "anyo": 2018,
+  "motivos_desde_35": "A partir de los 35 años, las razones laborales o de conciliación y las económicas son las más importantes por las que las mujeres han tenido menos hijos de los deseados (texto literal resumido de la nota del INE)"
+ },
+ "empleo_1986": {
+  "hombres": {
+   "parados": 1880900,
+   "tasa_paro_pct": 19.62,
+   "ocupados": 7705746,
+   "poblacion_16_64": 12178748,
+   "tasa_empleo_pct": 63.3,
+   "paro_20_24": {
+    "parados": 493700.0,
+    "tasa_pct": 42.01,
+    "activos": 1175196
+   }
+  },
+  "mujeres": {
+   "parados": 1091200,
+   "tasa_paro_pct": 25.34,
+   "ocupados": 3215035,
+   "poblacion_16_64": 12273079,
+   "tasa_empleo_pct": 26.2,
+   "paro_20_24": {
+    "parados": 396200.0,
+    "tasa_pct": 46.8,
+    "activos": 846581
+   }
+  },
+  "paro_20_24_ambos_pct": 44.0
+ },
+ "europa_empleo_mujeres_y_fecundidad": {
+  "2019": {
+   "paises": 27,
+   "correlacion": 0.38,
+   "datos": {
+    "BE": {
+     "empleo_mujeres_25_54": 76.8,
+     "hijos_por_mujer": 1.6
+    },
+    "BG": {
+     "empleo_mujeres_25_54": 78.7,
+     "hijos_por_mujer": 1.79
+    },
+    "CZ": {
+     "empleo_mujeres_25_54": 80.0,
+     "hijos_por_mujer": 1.71
+    },
+    "DK": {
+     "empleo_mujeres_25_54": 78.8,
+     "hijos_por_mujer": 1.7
+    },
+    "DE": {
+     "empleo_mujeres_25_54": 81.1,
+     "hijos_por_mujer": 1.54
+    },
+    "EE": {
+     "empleo_mujeres_25_54": 78.5,
+     "hijos_por_mujer": 1.66
+    },
+    "IE": {
+     "empleo_mujeres_25_54": 73.6,
+     "hijos_por_mujer": 1.69
+    },
+    "EL": {
+     "empleo_mujeres_25_54": 60.8,
+     "hijos_por_mujer": 1.34
+    },
+    "ES": {
+     "empleo_mujeres_25_54": 69.9,
+     "hijos_por_mujer": 1.23
+    },
+    "FR": {
+     "empleo_mujeres_25_54": 76.8,
+     "hijos_por_mujer": 1.86
+    },
+    "HR": {
+     "empleo_mujeres_25_54": 74.9,
+     "hijos_por_mujer": 1.54
+    },
+    "IT": {
+     "empleo_mujeres_25_54": 60.3,
+     "hijos_por_mujer": 1.27
+    },
+    "CY": {
+     "empleo_mujeres_25_54": 77.6,
+     "hijos_por_mujer": 1.4
+    },
+    "LV": {
+     "empleo_mujeres_25_54": 81.0,
+     "hijos_por_mujer": 1.61
+    },
+    "LT": {
+     "empleo_mujeres_25_54": 84.8,
+     "hijos_por_mujer": 1.43
+    },
+    "LU": {
+     "empleo_mujeres_25_54": 79.9,
+     "hijos_por_mujer": 1.34
+    },
+    "HU": {
+     "empleo_mujeres_25_54": 78.0,
+     "hijos_por_mujer": 1.58
+    },
+    "MT": {
+     "empleo_mujeres_25_54": 71.4,
+     "hijos_por_mujer": 1.14
+    },
+    "NL": {
+     "empleo_mujeres_25_54": 81.1,
+     "hijos_por_mujer": 1.57
+    },
+    "AT": {
+     "empleo_mujeres_25_54": 82.1,
+     "hijos_por_mujer": 1.46
+    },
+    "PL": {
+     "empleo_mujeres_25_54": 76.6,
+     "hijos_por_mujer": 1.44
+    },
+    "PT": {
+     "empleo_mujeres_25_54": 82.6,
+     "hijos_por_mujer": 1.44
+    },
+    "RO": {
+     "empleo_mujeres_25_54": 72.7,
+     "hijos_por_mujer": 1.77
+    },
+    "SI": {
+     "empleo_mujeres_25_54": 86.1,
+     "hijos_por_mujer": 1.61
+    },
+    "SK": {
+     "empleo_mujeres_25_54": 75.4,
+     "hijos_por_mujer": 1.57
+    },
+    "FI": {
+     "empleo_mujeres_25_54": 80.7,
+     "hijos_por_mujer": 1.35
+    },
+    "SE": {
+     "empleo_mujeres_25_54": 83.7,
+     "hijos_por_mujer": 1.71
+    }
+   }
+  },
+  "2023": {
+   "paises": 27,
+   "correlacion": 0.15,
+   "datos": {
+    "BE": {
+     "empleo_mujeres_25_54": 77.5,
+     "hijos_por_mujer": 1.47
+    },
+    "BG": {
+     "empleo_mujeres_25_54": 79.9,
+     "hijos_por_mujer": 1.81
+    },
+    "CZ": {
+     "empleo_mujeres_25_54": 80.5,
+     "hijos_por_mujer": 1.46
+    },
+    "DK": {
+     "empleo_mujeres_25_54": 80.6,
+     "hijos_por_mujer": 1.5
+    },
+    "DE": {
+     "empleo_mujeres_25_54": 81.2,
+     "hijos_por_mujer": 1.39
+    },
+    "EE": {
+     "empleo_mujeres_25_54": 83.7,
+     "hijos_por_mujer": 1.31
+    },
+    "IE": {
+     "empleo_mujeres_25_54": 78.8,
+     "hijos_por_mujer": 1.5
+    },
+    "EL": {
+     "empleo_mujeres_25_54": 66.1,
+     "hijos_por_mujer": 1.26
+    },
+    "ES": {
+     "empleo_mujeres_25_54": 73.0,
+     "hijos_por_mujer": 1.12
+    },
+    "FR": {
+     "empleo_mujeres_25_54": 79.1,
+     "hijos_por_mujer": 1.66
+    },
+    "HR": {
+     "empleo_mujeres_25_54": 78.9,
+     "hijos_por_mujer": 1.47
+    },
+    "IT": {
+     "empleo_mujeres_25_54": 63.8,
+     "hijos_por_mujer": 1.21
+    },
+    "CY": {
+     "empleo_mujeres_25_54": 81.3,
+     "hijos_por_mujer": 1.45
+    },
+    "LV": {
+     "empleo_mujeres_25_54": 79.7,
+     "hijos_por_mujer": 1.34
+    },
+    "LT": {
+     "empleo_mujeres_25_54": 83.2,
+     "hijos_por_mujer": 1.18
+    },
+    "LU": {
+     "empleo_mujeres_25_54": 83.2,
+     "hijos_por_mujer": 1.25
+    },
+    "HU": {
+     "empleo_mujeres_25_54": 84.9,
+     "hijos_por_mujer": 1.55
+    },
+    "MT": {
+     "empleo_mujeres_25_54": 81.1,
+     "hijos_por_mujer": 1.06
+    },
+    "NL": {
+     "empleo_mujeres_25_54": 83.5,
+     "hijos_por_mujer": 1.43
+    },
+    "AT": {
+     "empleo_mujeres_25_54": 83.0,
+     "hijos_por_mujer": 1.32
+    },
+    "PL": {
+     "empleo_mujeres_25_54": 82.4,
+     "hijos_por_mujer": 1.2
+    },
+    "PT": {
+     "empleo_mujeres_25_54": 84.0,
+     "hijos_por_mujer": 1.32
+    },
+    "RO": {
+     "empleo_mujeres_25_54": 69.1,
+     "hijos_por_mujer": 1.54
+    },
+    "SI": {
+     "empleo_mujeres_25_54": 87.0,
+     "hijos_por_mujer": 1.51
+    },
+    "SK": {
+     "empleo_mujeres_25_54": 81.3,
+     "hijos_por_mujer": 1.49
+    },
+    "FI": {
+     "empleo_mujeres_25_54": 82.0,
+     "hijos_por_mujer": 1.26
+    },
+    "SE": {
+     "empleo_mujeres_25_54": 84.5,
+     "hijos_por_mujer": 1.45
+    }
+   }
+  },
+  "2024": {
+   "paises": 27,
+   "correlacion": 0.17,
+   "datos": {
+    "BE": {
+     "empleo_mujeres_25_54": 77.3,
+     "hijos_por_mujer": 1.44
+    },
+    "BG": {
+     "empleo_mujeres_25_54": 81.0,
+     "hijos_por_mujer": 1.72
+    },
+    "CZ": {
+     "empleo_mujeres_25_54": 81.1,
+     "hijos_por_mujer": 1.36
+    },
+    "DK": {
+     "empleo_mujeres_25_54": 80.3,
+     "hijos_por_mujer": 1.47
+    },
+    "DE": {
+     "empleo_mujeres_25_54": 81.3,
+     "hijos_por_mujer": 1.36
+    },
+    "EE": {
+     "empleo_mujeres_25_54": 83.9,
+     "hijos_por_mujer": 1.18
+    },
+    "IE": {
+     "empleo_mujeres_25_54": 79.9,
+     "hijos_por_mujer": 1.47
+    },
+    "EL": {
+     "empleo_mujeres_25_54": 67.9,
+     "hijos_por_mujer": 1.24
+    },
+    "ES": {
+     "empleo_mujeres_25_54": 74.1,
+     "hijos_por_mujer": 1.1
+    },
+    "FR": {
+     "empleo_mujeres_25_54": 79.4,
+     "hijos_por_mujer": 1.61
+    },
+    "HR": {
+     "empleo_mujeres_25_54": 82.7,
+     "hijos_por_mujer": 1.46
+    },
+    "IT": {
+     "empleo_mujeres_25_54": 64.9,
+     "hijos_por_mujer": 1.18
+    },
+    "CY": {
+     "empleo_mujeres_25_54": 80.4,
+     "hijos_por_mujer": 1.38
+    },
+    "LV": {
+     "empleo_mujeres_25_54": 79.7,
+     "hijos_por_mujer": 1.24
+    },
+    "LT": {
+     "empleo_mujeres_25_54": 84.6,
+     "hijos_por_mujer": 1.11
+    },
+    "LU": {
+     "empleo_mujeres_25_54": 82.3,
+     "hijos_por_mujer": 1.25
+    },
+    "HU": {
+     "empleo_mujeres_25_54": 85.6,
+     "hijos_por_mujer": 1.41
+    },
+    "MT": {
+     "empleo_mujeres_25_54": 82.8,
+     "hijos_por_mujer": 1.01
+    },
+    "NL": {
+     "empleo_mujeres_25_54": 83.4,
+     "hijos_por_mujer": 1.43
+    },
+    "AT": {
+     "empleo_mujeres_25_54": 83.4,
+     "hijos_por_mujer": 1.31
+    },
+    "PL": {
+     "empleo_mujeres_25_54": 82.2,
+     "hijos_por_mujer": 1.14
+    },
+    "PT": {
+     "empleo_mujeres_25_54": 84.1,
+     "hijos_por_mujer": 1.27
+    },
+    "RO": {
+     "empleo_mujeres_25_54": 69.8,
+     "hijos_por_mujer": 1.39
+    },
+    "SI": {
+     "empleo_mujeres_25_54": 87.5,
+     "hijos_por_mujer": 1.52
+    },
+    "SK": {
+     "empleo_mujeres_25_54": 81.5,
+     "hijos_por_mujer": 1.46
+    },
+    "FI": {
+     "empleo_mujeres_25_54": 80.3,
+     "hijos_por_mujer": 1.25
+    },
+    "SE": {
+     "empleo_mujeres_25_54": 84.1,
+     "hijos_por_mujer": 1.43
+    }
+   }
+  },
+  "espana_serie": {
+   "1995": {
+    "empleo_mujeres_25_54": 40.2,
+    "empleo_mujeres_15_64": 31.7,
+    "empleo_hombres_15_64": 62.0,
+    "hijos_por_mujer": 1.16
+   },
+   "2001": {
+    "empleo_mujeres_25_54": 52.6,
+    "empleo_mujeres_15_64": 42.8,
+    "empleo_hombres_15_64": 72.5,
+    "hijos_por_mujer": 1.23
+   },
+   "2007": {
+    "empleo_mujeres_25_54": 66.3,
+    "empleo_mujeres_15_64": 55.3,
+    "empleo_hombres_15_64": 76.1,
+    "hijos_por_mujer": 1.38
+   },
+   "2008": {
+    "empleo_mujeres_25_54": 66.5,
+    "empleo_mujeres_15_64": 55.4,
+    "empleo_hombres_15_64": 73.3,
+    "hijos_por_mujer": 1.45
+   },
+   "2013": {
+    "empleo_mujeres_25_54": 61.2,
+    "empleo_mujeres_15_64": 50.3,
+    "empleo_hombres_15_64": 59.2,
+    "hijos_por_mujer": 1.27
+   },
+   "2016": {
+    "empleo_mujeres_25_54": 65.6,
+    "empleo_mujeres_15_64": 54.3,
+    "empleo_hombres_15_64": 64.8,
+    "hijos_por_mujer": 1.33
+   },
+   "2019": {
+    "empleo_mujeres_25_54": 69.9,
+    "empleo_mujeres_15_64": 57.9,
+    "empleo_hombres_15_64": 68.7,
+    "hijos_por_mujer": 1.23
+   },
+   "2023": {
+    "empleo_mujeres_25_54": 73.0,
+    "empleo_mujeres_15_64": 60.7,
+    "empleo_hombres_15_64": 70.0,
+    "hijos_por_mujer": 1.12
+   },
+   "2024": {
+    "empleo_mujeres_25_54": 74.1,
+    "empleo_mujeres_15_64": 61.6,
+    "empleo_hombres_15_64": 70.5,
+    "hijos_por_mujer": 1.1
+   },
+   "2025": {
+    "empleo_mujeres_25_54": 75.1,
+    "empleo_mujeres_15_64": 62.7,
+    "empleo_hombres_15_64": 71.2,
+    "hijos_por_mujer": null
+   }
+  }
+ },
+ "paro_20_24_eurostat": {
+  "2005": 17.0,
+  "2006": 14.7,
+  "2007": 15.0,
+  "2008": 20.2,
+  "2009": 33.3,
+  "2010": 36.9,
+  "2011": 42.3,
+  "2012": 48.8,
+  "2013": 51.8,
+  "2014": 50.3,
+  "2015": 44.6,
+  "2016": 41.4,
+  "2017": 35.2,
+  "2018": 31.0,
+  "2019": 29.8,
+  "2020": 35.1,
+  "2021": 31.8,
+  "2022": 26.3,
+  "2023": 25.6,
+  "2024": 23.4,
+  "2025": 22.4
+ },
+ "vivienda_bde": {
+  "1987": 3.09,
+  "2006": 8.84,
+  "2016": 6.68,
+  "2019": 6.87,
+  "2026": 8.36
+ },
+ "permisos": {
+  "1986": {
+   "padre_dias": 2,
+   "madre_semanas": 14,
+   "fuente": "Ley 8/1980, Estatuto de los Trabajadores, arts. 37.3.b y 48.4 (BOE 14-03-1980)"
+  },
+  "hoy": {
+   "cada_progenitor_semanas": 19,
+   "fuente": "Real Decreto-ley 9/2025, de 29 de julio (BOE-A-2025-15741)"
+  }
+ },
+ "nota": "Hijos por mujer = indicador coyuntural de fecundidad. Primer hijo = edad media de la madre al primer nacimiento. Matrimonio = edad media al primer matrimonio, ambos sexos. Mayores por cada 100 niños = índice de envejecimiento (mayores de 64 años por cada 100 menores de 16, a 1 de enero). Todo INE, Indicadores Demográficos Básicos."
+}
