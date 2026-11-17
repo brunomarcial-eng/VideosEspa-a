@@ -1,0 +1,26 @@
+{
+ "huella": "78c8f715325b212f",
+ "semilla": 14001,
+ "texto": "¡Y todo a domicilio!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0069,
+  "oido": "y todo a domicilio.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.3,
+   0.48
+  ],
+  "t1": [
+   0.14,
+   0.3,
+   0.48,
+   1.02
+  ],
+  "ritmo": 14.4,
+  "voz": 0.864
+ }
+}

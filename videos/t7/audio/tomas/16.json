@@ -1,0 +1,36 @@
+{
+ "huella": "0860a5419fe818e7",
+ "semilla": 16000,
+ "texto": "¿Caprichos o la vida de hoy? ¿Tú qué opinas?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0071,
+  "oido": "¿Caprichos o la vida de hoy? ¿Tú qué opinas?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.56,
+   0.78,
+   0.88,
+   1.06,
+   1.24,
+   1.92,
+   2.18,
+   2.26
+  ],
+  "t1": [
+   0.56,
+   0.78,
+   0.88,
+   1.06,
+   1.24,
+   1.4,
+   2.18,
+   2.26,
+   2.6
+  ],
+  "ritmo": 11.9,
+  "voz": 0.864
+ }
+}

@@ -1,4 +1,4 @@
-# T7 · Paso 1: datos y borrador (pendiente de aprobar)
+# T7 · Paso 1: datos y borrador (aprobado el 17-11-2026; bloque de música añadido el mismo día)
 
 **Consumo hace 40 años, hace 20 y hoy: servicios, ropa y belleza.** Lo pidió Bruno el 17-11-2026: «cafés, gimnasios, pádel, natación, suscripciones, restaurantes, comida a domicilio, compras por internet… ropa, moda rápida, cosmética, peluquería, belleza». Sin Uber.
 
@@ -44,6 +44,28 @@ Datos limpios en `data/clean/t7_consumo.json` (`scripts/calcular_t7.py`). Ficher
 | Abonado o socio de un gimnasio | — | — | **30,7 %** | V |
 | Jugó al pádel en el último año | — | — | 9,7 % | V |
 
+### Música, discos, cine y conciertos (añadido el 17-11-2026, a petición de Bruno)
+Bruno pidió comparar lo que gastaban los padres en discos, vinilos, cine y conciertos con lo de hoy, y el disco físico con la suscripción mensual. «No hace falta mi aprobación».
+
+| Qué | Antes | Medio | Hoy | Fuente | Estado |
+|---|---|---|---|---|---|
+| Entrada de cine, en minutos de trabajo | **23** (1986) | 24 (2016) | **21** (2024) | Precio medio pagado: Ministerio de Cultura (vía Anuarios del INE de 1988 y 2020; Anuario de Estadísticas Culturales 2025). Salario por hora: INE (Encuesta de Salarios de 1986; EAES) | C |
+| Precio medio pagado por entrada | 278,8 pesetas (1986) | 5,23 € (2006), 5,9 € (2016) | 6,6 € (2024) | Ministerio de Cultura / INE | V |
+| Gasto de un hogar en discos, cintas y DVD (€ al año, corrientes) | **72** (2006) | 23 (2015) | **10** (2025, «bienes culturales»: incluye además descargas e instrumentos) | INE, EPF (tablas 10630 y 73781) | V |
+| Pagan música por internet (streaming o descargas, últimos 3 meses) | — | 15,7 % (2024) | **18 %** (2025) | Eurostat (isoc_ec_ibgs) | V |
+| Fueron a un concierto de música actual en el último año | 25,9 % (2011) | 24,5 % (2015), 30,1 % (2019) | **32,1 %** (2025) | Ministerio de Cultura, Encuesta de Hábitos y Prácticas Culturales | V |
+| Fueron al cine en el último año | 49,1 % (2011) | 57,8 % (2019) | 48,5 % (2025) | ídem | V (no va al vídeo) |
+
+**Sin dato oficial (X):**
+- **Precio de un vinilo o un disco en 1986.** No hay serie oficial.
+- **Precio de las entradas de concierto.** El anuario del Ministerio publica un gasto medio por espectador (12,4 € en 2024), pero el dato es de la SGAE, que no es fuente oficial; y no hay serie de 1986. No se usa.
+- **Precio de una suscripción de música.** Es un precio comercial, no oficial.
+
+**Qué se puede decir:**
+- **Discos:** el gasto en discos se ha hundido: de 72 € al año por hogar en 2006 a 10 € hoy, y eso que hoy la cuenta incluye descargas e instrumentos. Casi uno de cada cinco paga música por internet.
+- **Cine:** cuesta casi lo mismo en tiempo de trabajo: 23 minutos en 1986 y 21 en 2024. Aquí el padre no tiene razón.
+- **Conciertos:** va uno de cada tres, más que hace diez años (24,5 % en 2015 y 32,1 % en 2025).
+
 **Sin dato oficial (X):**
 - **El frontón en 1986.** Hay un estudio de 1985 (34 % hacía deporte), pero solo lo he encontrado citado en trabajos académicos; no lo uso.
 - **Cuánto dura la ropa o cuántas prendas se compran.** No hay serie oficial.
@@ -68,3 +90,6 @@ Decorados como en un sueño: cocina → tienda de ropa → peluquería → gimna
 9. **Padre** (calle, pasa un repartidor): ¡Y todo a domicilio!
 10. **Hijo:** En 2006 compraba por internet 1 de cada 10. Hoy, 6 de cada 10. Y 1 de cada 4 pide comida a casa.
 11. **Hijo, a cámara** (cocina): ¿Caprichos o la vida de hoy? ¿Tú qué opinas?
+
+## Guion final (16 planos, unos 76 s)
+El texto definitivo, con cifras y comprobaciones, está en `videos/t7/guion.json` (verificado: `videos/t7/guion.md`). Se acortaron algunas frases del borrador para que el bloque de música quepa, y se añadieron: «¡Y pagando la música cada mes! Yo me compraba mis vinilos» (padre), los discos y la suscripción (hijo), «¿Y el cine? ¡Ahora es un lujo!» (padre), los minutos de cine y los conciertos (hijo).

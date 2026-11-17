@@ -1,0 +1,38 @@
+{
+ "huella": "01b6ab9ea12226ce",
+ "semilla": 7000,
+ "texto": "¡Y pagando por hacer deporte! Yo jugaba al frontón gratis.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0331,
+  "oido": "y pagando por hacer deporte. Yo jugaba al frontón gratis.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.66,
+   0.86,
+   1.04,
+   2.06,
+   2.46,
+   2.88,
+   3.0,
+   3.34
+  ],
+  "t1": [
+   0.14,
+   0.66,
+   0.86,
+   1.04,
+   1.54,
+   2.46,
+   2.88,
+   3.0,
+   3.34,
+   3.76
+  ],
+  "ritmo": 12.0,
+  "voz": 0.916
+ }
+}

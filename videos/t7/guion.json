@@ -1,0 +1,450 @@
+{
+ "id": "t7",
+ "version": 1,
+ "titulo": "¿Gastamos más en caprichos que nuestros padres?",
+ "titulo_alternativo": "Padre contra hijo (5): ropa, gimnasio, discos y cine, 1986 contra hoy",
+ "pregunta": "Padre (62) contra hijo (31), quinta parte: ¿en qué gastamos ahora y en qué gastaban en 1986?",
+ "datos": "data/clean/t7_consumo.json",
+ "aprobacion_datos": "Datos y borrador aprobados por Bruno el 17-11-2026 (videos/t7/paso-1-datos.md); el bloque de música, discos, cine y conciertos lo pidió el mismo día y dijo que no hacía falta volver a aprobar",
+ "formato": "Quinta parte de padre contra hijo: mismos personajes y voces; el decorado cambia como en un sueño (cocina, tienda de ropa, peluquería, gimnasio, tienda de discos, cine y concierto, calle, cocina). Los personajes andan, se cruzan y gesticulan. Sin veredicto hablado: acaba con la pregunta.",
+ "duracion_max_s": 85,
+ "personajes": {
+  "padre": {
+   "anyo": "62 años",
+   "genero": "padre"
+  },
+  "hijo": {
+   "anyo": "31 años",
+   "genero": "hijo"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "Formato padre-hijo: acaba con la pregunta al espectador (Bruno, 15-11-2026). El veredicto va en la descripción.",
+ "capitulos": [
+  {
+   "nombre": "La queja",
+   "beats": [
+    1
+   ]
+  },
+  {
+   "nombre": "Ropa",
+   "beats": [
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "nombre": "Belleza",
+   "beats": [
+    5,
+    6
+   ]
+  },
+  {
+   "nombre": "Deporte",
+   "beats": [
+    7,
+    8
+   ]
+  },
+  {
+   "nombre": "Música y cine",
+   "beats": [
+    9,
+    10,
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "nombre": "A domicilio",
+   "beats": [
+    14,
+    15
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    16
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "padre",
+   "funcion": "gancho: la queja",
+   "voz": "¡Otro paquete! Ropa, cremas… ¡Yo con un chándal tenía para diez años!",
+   "pantalla": "¿Gastamos en caprichos?",
+   "sello": null,
+   "imagen": "La cocina. Suena el timbre; el hijo entra con una caja. El padre cruza la cocina, señala la caja y se lleva las manos a la cabeza."
+  },
+  {
+   "n": 2,
+   "quien": "hijo",
+   "funcion": "dato: la ropa pesa menos",
+   "voz": "La ropa pesa cada vez menos: de cada 100 euros, 11 en 1986 y hoy, 4.",
+   "pantalla": "Ropa y calzado, de cada 100 € · 1986: 11 · 2006: 7 · hoy: 4",
+   "nota": "De todo lo que gasta un hogar. La clasificación ha cambiado desde 1986: comparación aproximada",
+   "sello": "DATO OFICIAL · INE (Encuesta de Presupuestos Familiares)",
+   "grafico": true,
+   "imagen": "Como en un sueño, la cocina se deshace y están en una tienda de ropa. El hijo camina entre percheros; tres montones de billetes de 100 € y la parte de la ropa encoge."
+  },
+  {
+   "n": 3,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "¡Claro, como es de usar y tirar!",
+   "pantalla": "«¡Es de usar y tirar!»",
+   "sello": null,
+   "imagen": "En la tienda. El padre coge una camiseta, tira de ella y la lanza a una papelera."
+  },
+  {
+   "n": 4,
+   "quien": "hijo",
+   "funcion": "dato: más barata",
+   "voz": "Puede. Pero desde 2006 es un 22 % más barata, quitando la inflación.",
+   "pantalla": "Ropa y calzado · precio sin inflación · 2006 → 2025: −22 %",
+   "nota": "Desde 2016: −10 %",
+   "sello": "DATO OFICIAL · INE (IPC) · cálculo propio",
+   "imagen": "La etiqueta de precio de la camiseta baja como un ascensor."
+  },
+  {
+   "n": 5,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "¿Y las cremas y la peluquería, qué?",
+   "pantalla": "«¿Y las cremas y la peluquería?»",
+   "sello": null,
+   "imagen": "La tienda se deshace y están en una peluquería. El padre se sienta en el sillón; el secador le despeina."
+  },
+  {
+   "n": 6,
+   "quien": "hijo",
+   "funcion": "dato: aquí sí",
+   "voz": "Ahí tienes razón: es el doble que en 1986.",
+   "pantalla": "Peluquería, cremas y complementos, de cada 100 € · 1986: 1,5 · 2006: 3,5 · hoy: 3,1",
+   "sello": "DATO OFICIAL · INE (Encuesta de Presupuestos Familiares)",
+   "grafico": true,
+   "imagen": "En la peluquería. Botes de crema que crecen en un estante: el de 1986, pequeño; el de hoy, el doble."
+  },
+  {
+   "n": 7,
+   "quien": "padre",
+   "funcion": "réplica con humor",
+   "voz": "¡Y pagando por hacer deporte! Yo jugaba al frontón gratis.",
+   "pantalla": "«¡Yo jugaba al frontón gratis!»",
+   "sello": null,
+   "imagen": "La peluquería se deshace y están en un gimnasio con una pista de pádel al fondo. El padre hace como que juega al frontón con la mano."
+  },
+  {
+   "n": 8,
+   "quien": "hijo",
+   "funcion": "dato: deporte",
+   "voz": "Seis de cada diez hacen deporte. Y casi uno de cada tres paga gimnasio.",
+   "pantalla": "Hacen deporte · 2015: 53,5 % · hoy: 62,7 % · pagan gimnasio: 30,7 %",
+   "nota": "Último año: 2024-2025. En 2022: 57,3 %",
+   "sello": "DATO OFICIAL · MINISTERIO DE EDUCACIÓN, FP Y DEPORTES (Encuesta de Hábitos Deportivos)",
+   "grafico": true,
+   "imagen": "El hijo corre en la cinta; una rejilla de 10 personas: se iluminan 6, y un carné de gimnasio sale volando."
+  },
+  {
+   "n": 9,
+   "quien": "padre",
+   "funcion": "réplica: la música",
+   "voz": "¡Y pagando la música cada mes! Yo me compraba mis vinilos.",
+   "pantalla": "«¡Yo me compraba mis vinilos!»",
+   "sello": null,
+   "imagen": "El gimnasio se deshace y están en una tienda de discos. El padre pasa vinilos de una caja y saca uno, orgulloso."
+  },
+  {
+   "n": 10,
+   "quien": "hijo",
+   "funcion": "dato: discos contra suscripción",
+   "voz": "En 2006, cada hogar gastaba 72 euros al año en discos y DVD. Hoy, 10. Y casi uno de cada cinco paga por escuchar música.",
+   "pantalla": "Discos y DVD: € al año por hogar · 2006: 72 · 2015: 23 · hoy: 10",
+   "nota": "Desde 2016 incluye también descargas e instrumentos. Pagan música por internet: 18 % (2025)",
+   "sello": "DATO OFICIAL · INE (Encuesta de Presupuestos Familiares) y EUROSTAT",
+   "grafico": true,
+   "imagen": "La pila de discos se encoge; el hijo saca el móvil y de él salen notas musicales con un recibo mensual."
+  },
+  {
+   "n": 11,
+   "quien": "padre",
+   "funcion": "réplica: el cine",
+   "voz": "¿Y el cine? ¡Ahora es un lujo!",
+   "pantalla": "«¡El cine es un lujo!»",
+   "sello": null,
+   "imagen": "La tienda se deshace y están en una sala de cine. El padre se sienta en una butaca con palomitas."
+  },
+  {
+   "n": 12,
+   "quien": "hijo",
+   "funcion": "dato: el cine, igual",
+   "voz": "Cuesta casi lo mismo: 23 minutos de trabajo en 1986. Hoy, 21.",
+   "pantalla": "Entrada de cine en minutos de trabajo · 1986: 23 · 2016: 24 · 2024: 21",
+   "nota": "Precio medio pagado: 279 pesetas en 1986 y 6,6 € en 2024. Salario medio por hora: 740 pesetas y 18,77 €",
+   "sello": "DATO OFICIAL · MINISTERIO DE CULTURA e INE · cálculo propio",
+   "grafico": true,
+   "imagen": "Tres relojes junto a la pantalla, casi iguales: 23, 24 y 21 minutos."
+  },
+  {
+   "n": 13,
+   "quien": "hijo",
+   "funcion": "dato: conciertos",
+   "voz": "Y a conciertos va uno de cada tres, más que hace diez años.",
+   "pantalla": "Fueron a un concierto (pop, rock…) en un año · 2015: 24,5 % · 2019: 30,1 % · 2025: 32,1 %",
+   "sello": "DATO OFICIAL · MINISTERIO DE CULTURA (Encuesta de Hábitos y Prácticas Culturales)",
+   "grafico": true,
+   "imagen": "La pantalla del cine se convierte en un escenario con focos; el padre se levanta y mueve la cabeza al ritmo."
+  },
+  {
+   "n": 14,
+   "quien": "padre",
+   "funcion": "réplica",
+   "voz": "¡Y todo a domicilio!",
+   "pantalla": "«¡Y todo a domicilio!»",
+   "sello": null,
+   "imagen": "El escenario se deshace y están en la calle. Pasa un repartidor en bici; el padre se aparta de un salto."
+  },
+  {
+   "n": 15,
+   "quien": "hijo",
+   "funcion": "dato: internet",
+   "voz": "Comprar por internet: en 2006, uno de cada diez; hoy, seis. Y uno de cada cuatro pide comida a casa.",
+   "pantalla": "Compraron por internet en tres meses · 2006: 10 % · 2016: 35 % · 2025: 60 %",
+   "nota": "Piden comida de restaurantes por internet: 25 % (2024). Personas de 16 a 74 años",
+   "sello": "DATO OFICIAL · EUROSTAT",
+   "grafico": true,
+   "imagen": "Cajas que se apilan delante de un portal; una bolsa de comida a domicilio aterriza encima."
+  },
+  {
+   "n": 16,
+   "quien": "hijo",
+   "funcion": "pregunta para el debate",
+   "voz": "¿Caprichos o la vida de hoy? ¿Tú qué opinas?",
+   "pantalla": "¿Caprichos o la vida de hoy?",
+   "sello": null,
+   "imagen": "La calle se deshace y vuelven a la cocina. Dos botones: CAPRICHOS y LA VIDA DE HOY. El padre y el hijo se cruzan de brazos, cada uno al lado de uno."
+  }
+ ],
+ "no_dato": [
+  "100",
+  "16",
+  "74"
+ ],
+ "cifras": [
+  {
+   "texto": "11",
+   "ruta": "reparto_gasto_pct.ropa_calzado.1986",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "7",
+   "ruta": "reparto_gasto_pct.ropa_calzado.2006",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "4",
+   "ruta": "reparto_gasto_pct.ropa_calzado.2025",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "22",
+   "ruta": "ipc_variacion_real_pct.Vestido y calzado.2006_2025",
+   "decimales": 0,
+   "estado": "C",
+   "escala": -1
+  },
+  {
+   "texto": "10",
+   "ruta": "ipc_variacion_real_pct.Vestido y calzado.2016_2025",
+   "decimales": 0,
+   "estado": "C",
+   "escala": -1
+  },
+  {
+   "texto": "1,5",
+   "ruta": "reparto_gasto_pct.cuidado_personal_y_complementos.1986",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "3",
+   "ruta": "reparto_gasto_pct.cuidado_personal_y_complementos.2025",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "3,5",
+   "ruta": "reparto_gasto_pct.cuidado_personal_y_complementos.2006",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "3,1",
+   "ruta": "reparto_gasto_pct.cuidado_personal_y_complementos.2025",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "53,5",
+   "ruta": "deporte.practica_anual_pct.2015",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "62,7",
+   "ruta": "deporte.practica_anual_pct.2024_25",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "30,7",
+   "ruta": "deporte.abonados_gimnasio_pct",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "57,3",
+   "ruta": "deporte.practica_anual_pct.2022",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "72",
+   "ruta": "musica_cine.discos_gasto_hogar_eur.soportes_imagen_sonido_2006",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "23",
+   "ruta": "musica_cine.discos_gasto_hogar_eur.soportes_imagen_sonido_2015",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "10",
+   "ruta": "musica_cine.discos_gasto_hogar_eur.bienes_culturales_2025",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "18",
+   "ruta": "compras_internet_pct.suscripcion_musica.2025",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "23",
+   "ruta": "musica_cine.cine_minutos_de_trabajo.1986",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "24",
+   "ruta": "musica_cine.cine_minutos_de_trabajo.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "21",
+   "ruta": "musica_cine.cine_minutos_de_trabajo.2024",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "279",
+   "ruta": "musica_cine.cine_gasto_medio_espectador.1986_pts",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "6,6",
+   "ruta": "musica_cine.cine_gasto_medio_espectador.2024_eur",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "740",
+   "ruta": "musica_cine.salario_hora.1986_pts",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "18,77",
+   "ruta": "musica_cine.salario_hora.2024_eur",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "24,5",
+   "ruta": "musica_cine.asistieron_ultimo_ano_pct.conciertos_musica_actual.2015",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "30,1",
+   "ruta": "musica_cine.asistieron_ultimo_ano_pct.conciertos_musica_actual.2019",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "32,1",
+   "ruta": "musica_cine.asistieron_ultimo_ano_pct.conciertos_musica_actual.2025",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "10",
+   "ruta": "compras_internet_pct.ultimos_3_meses.2006",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "35",
+   "ruta": "compras_internet_pct.ultimos_3_meses.2016",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "60",
+   "ruta": "compras_internet_pct.ultimos_3_meses.2025",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "25",
+   "ruta": "compras_internet_pct.comida_a_domicilio_restaurantes.2024",
+   "decimales": 0,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "«de cada 100 euros, 11 en 1986, 7 en 2006 y hoy, 4»: parte del gasto total de los hogares que va a ropa y calzado. 1986: Encuesta Continua de Presupuestos Familiares (Anuario del INE de 1989, 10,88 %); 2006: EPF base 2006, tabla 10628 (6,81 %); 2025: EPF, tabla 73779 (4,03 %). La clasificación cambió: comparación aproximada.",
+  "«un 22 % más barata»: IPC de vestido y calzado entre el IPC general, 2006-2025 (INE, tabla 76125): −22,4 %. Desde 2016: −9,8 %.",
+  "«de 1,5 de cada 100 en 1986 a 3 hoy»: cuidados personales y efectos personales (peluquería, cremas, bolsos, relojes…): 1,51 % en 1986, 3,47 % en 2006 y 3,08 % en 2025.",
+  "«seis de cada diez… uno de cada tres paga un gimnasio»: Encuesta de Hábitos Deportivos 2024/25: 62,7 % hizo deporte en el último año (53,5 % en 2015, 57,3 % en 2022); 30,7 % abonado o socio de un gimnasio.",
+  "«72 euros… Hoy, 10»: EPF, gasto medio por hogar en euros corrientes. 2006 y 2015 (tabla 10630): «soportes para el registro de imagen, sonido y datos» (CD, DVD y cintas, grabados o vírgenes), 72,29 € y 23,08 €. 2025 (tabla 73781): «bienes culturales (instrumentos musicales, CD, DVD, descargas…)», 10,09 €; incluye más cosas y aun así es menos. En euros de hoy, los 72 € de 2006 serían unos 106.",
+  "«casi uno de cada cinco paga música por internet»: Eurostat, isoc_ec_ibgs, personas de 16 a 74 años que pagaron música en streaming o descargas en los últimos tres meses: 17,96 % en 2025 (15,73 % en 2024).",
+  "«23 minutos… Hoy, 21» (C): gasto medio por espectador de cine / salario medio bruto por hora × 60. 1986: 278,8 pesetas (Anuario del INE de 1988, con datos del Ministerio de Cultura) / 740 pesetas por hora (Encuesta de Salarios del INE, industria y servicios) = 22,6 min. 2016: 5,9 € (Anuario del INE de 2020) / 14,88 € (EAES) = 23,8 min. 2024: 6,6 € (Anuario de Estadísticas Culturales 2025, Ministerio de Cultura) / 18,77 € (EAES) = 21,1 min. Las encuestas de salarios de 1986 y de hoy son distintas: comparación aproximada. En 2006, la entrada costaba 5,23 €.",
+  "«a los conciertos va uno de cada tres, más que hace diez años»: Encuesta de Hábitos y Prácticas Culturales (Ministerio de Cultura), personas de 15 años o más que fueron a un concierto de música actual en el último año: 25,9 % (2011), 24,5 % (2015), 30,1 % (2019), 32,1 % (2025). La edición de 2022 (10,4 %) es año COVID y no se usa. No hay precio oficial de las entradas de concierto de 1986 (X); el de hoy sale de SGAE, que no es fuente oficial: no se usa.",
+  "«uno de cada diez… seis de cada diez… uno de cada cuatro pide comida a casa»: Eurostat (isoc_ec_ibuy e isoc_ec_ib20): compraron por internet en los últimos tres meses, 10,0 % en 2006, 34,9 % en 2016 y 59,7 % en 2025. Comida de restaurantes por internet (isoc_ec_ibgs): 24,9 % en 2024."
+ ],
+ "cierre": {
+  "veredicto": "en parte, el padre tiene razón: hoy se gasta el doble que en 1986 en cuidado personal (de 1,5 a 3 de cada 100 €), casi uno de cada tres paga un gimnasio y uno de cada cuatro pide comida a casa. Pero la ropa pesa mucho menos (de 11 a 4 de cada 100 €) y es más barata, los discos casi han desaparecido (de 72 € al año por hogar en 2006 a 10) y el cine cuesta en minutos de trabajo casi lo mismo que en 1986",
+  "porque": "INE (Encuesta de Presupuestos Familiares de 1986, 2006 y 2025; IPC), Ministerio de Cultura (cine y Encuesta de Hábitos y Prácticas Culturales), Ministerio de Educación, FP y Deportes (Encuesta de Hábitos Deportivos 2024/25) y Eurostat (compras por internet)."
+ },
+ "aprobacion_guion": "Borrador aprobado por Bruno el 17-11-2026; bloque de música y cine añadido a petición suya el mismo día, sin nueva aprobación («no hace falta mi aprobación»)"
+}

@@ -5,6 +5,7 @@
 - Precios: IPC por grupos (INE), variación real = (grupo / general) − 1.
 - Compras por internet: Eurostat (isoc_ec_ibuy hasta 2019; isoc_ec_ib20 e isoc_ec_ibgs desde 2020).
 - Deporte: Encuesta de Hábitos Deportivos 2024/25 (Ministerio de Educación, FP y Deportes).
+- Música y cine: EPF por subclases (tablas 10630 y 73781), Anuarios del INE (cine) y Anuario de Estadísticas Culturales 2025 (Ministerio de Cultura).
 Uso: python3 scripts/calcular_t7.py → data/clean/t7_consumo.json"""
 import json
 import pathlib
@@ -90,6 +91,69 @@ def deporte():
             "padel_anual_pct": busca(r"pádel con 36,5% frente al (9,7) % de la población general")}
 
 
+def musica_cine():
+    """Discos, cine y conciertos: lo que pagaban los padres frente a hoy."""
+    # Cine: gasto medio por espectador (precio medio pagado por entrada)
+    t88 = pdf("ine_anuario1988_cine_1986.pdf")
+    m = re.search(r"Por espectador y sesi[oó]n((?:\s+[\d,\s]+?)+)$", t88, re.M)
+    cols = re.findall(r"\d+,\s?\d+", m.group(1))
+    cine_1986_pts = float(cols[-1].replace(" ", "").replace(",", "."))
+    t08 = pdf("ine_anuario2008_cultura.pdf")
+    fila = re.search(r"GASTO MEDIO POR ESPECTADOR \(€\)\s+(.+)", t08).group(1)
+    v08 = [float(x.replace(",", ".")) for x in fila.split()]          # 2000…2007
+    cine_2006 = v08[6]
+    t20 = pdf("ine_anuario2020_cultura.pdf")
+    bloque = t20.split("GASTO MEDIO (euros)", 1)[1]
+    v20 = [float(x.replace(",", ".")) for x in re.search(r"Por espectador\s+(.+)", bloque).group(1).split()]   # 2011…2018
+    cine_2016, cine_2018 = v20[5], v20[7]
+    tac = pdf("mcu_anuario_estadisticas_culturales_2025.pdf")
+    bloque = tac.split("GASTO MEDIO POR ESPECTADOR", 1)[1]
+    tot = re.search(r"\nTOTAL\s+([\d,]+)\s+([\d,]+)", bloque)
+    cine_2023, cine_2024 = (float(tot.group(i).replace(",", ".")) for i in (1, 2))
+    # Salario por hora: 1986 Encuesta de Salarios (de T3); 2016 y 2024 EAES
+    hora_1986 = json.loads((CLEAN / "t3_vivienda.json").read_text(encoding="utf-8"))["hace_40_anos"]["sueldo_1986"]["retribucion_hora_pts"]
+    eaes = {str(p["Anyo"]): p["Valor"] for s in json.loads((RAW / "ine_30046_eaes_salario_por_hora.json").read_text(encoding="utf-8"))
+            if s.get("COD") == "EAES2013" for p in s["Data"]}
+    minutos = {"1986": round(60 * cine_1986_pts / hora_1986, 1), "2016": round(60 * cine_2016 / eaes["2016"], 1),
+               "2024": round(60 * cine_2024 / eaes["2024"], 1)}
+    # Discos: gasto medio por hogar (EPF, euros corrientes)
+    def serie(fichero, etiqueta, filtro):
+        for s in json.loads((RAW / fichero).read_text(encoding="utf-8")):
+            if s["Nombre"].startswith(etiqueta) or f"Total Nacional. {etiqueta}." in s["Nombre"]:
+                if filtro in s["Nombre"]:
+                    return {str(p["Anyo"]): p["Valor"] for p in s["Data"] if p["Valor"] is not None}
+        raise SystemExit(f"no encuentro «{etiqueta}»")
+    soportes = serie("ine_10630_epf2006_5digitos.json", "Soporte para el registro de imagen, sonido y datos", "Gasto medio por hogar")
+    instrumentos = serie("ine_10630_epf2006_5digitos.json", "Instrumentos musicales", "Gasto medio por hogar")
+    culturales = serie("ine_73781_epf_5digitos.json", "Bienes culturales (instrumentos musicales, CD's, DVD's, descarga de contenido audiovisual...)",
+                       "Gasto total. Gasto medio por hogar")
+    espect06 = serie("ine_10630_epf2006_5digitos.json", "Bailes, cines, teatros y espectáculos", "Gasto medio por hogar")
+    espect25 = serie("ine_73781_epf_5digitos.json", "Cines, teatros y espectáculos", "Gasto total. Gasto medio por hogar")
+    # Conciertos y cine: % que asistió en el último año (Encuesta de Hábitos y Prácticas Culturales, tabla 9.1)
+    t91 = tac.split("9.1. Personas que realizaron o suelen realizar actividades culturales", 2)[2] if tac.count("9.1. Personas que realizaron") > 1 else tac.split("9.1. Personas que realizaron", 1)[1]
+    def ehpc(etiqueta):
+        v = re.search(re.escape(etiqueta) + r"\s+([\d,]+)\s+([\d,]+)\s+([\d,]+)\s+([\d,]+)\s+([\d,]+)", t91)
+        return dict(zip(("2011", "2015", "2019", "2022", "2025"), (float(x.replace(",", ".")) for x in v.groups())))
+    return {
+        "cine_gasto_medio_espectador": {"1986_pts": cine_1986_pts, "2006_eur": cine_2006, "2016_eur": cine_2016, "2018_eur": cine_2018,
+                                        "2023_eur": cine_2023, "2024_eur": cine_2024},
+        "salario_hora": {"1986_pts": hora_1986, "2016_eur": eaes["2016"], "2024_eur": eaes["2024"]},
+        "cine_minutos_de_trabajo": minutos,
+        "discos_gasto_hogar_eur": {"soportes_imagen_sonido_2006": soportes["2006"], "soportes_imagen_sonido_2015": soportes["2015"],
+                                   "instrumentos_2006": instrumentos["2006"],
+                                   "bienes_culturales_2016": culturales["2016"], "bienes_culturales_2019": culturales["2019"],
+                                   "bienes_culturales_2025": culturales["2025"]},
+        "espectaculos_gasto_hogar_eur": {"2006": espect06["2006"], "2015": espect06["2015"], "2016": espect25["2016"], "2025": espect25["2025"]},
+        "asistieron_ultimo_ano_pct": {"conciertos_musica_actual": ehpc("Conciertos de música actual"), "cine": ehpc("CINE (Asistieron)")},
+        "nota": ("Cine: gasto medio por espectador (recaudación / espectadores), Ministerio de Cultura vía Anuarios del INE (1988, 2008, 2020) "
+                 "y Anuario de Estadísticas Culturales 2025. Minutos = precio / salario medio bruto por hora × 60 (C); 1986: Encuesta de Salarios "
+                 "(industria y servicios), 2016 y 2024: Encuesta Anual de Estructura Salarial; son encuestas distintas, la comparación es aproximada. "
+                 "Discos: EPF, gasto medio por hogar en euros corrientes; 2006-2015 «soportes de imagen, sonido y datos» (CD, DVD y cintas, grabados o vírgenes); "
+                 "desde 2016 «bienes culturales», que además incluye instrumentos y descargas. Conciertos: % de personas de 15 años o más que fueron en el último año "
+                 "(2022, año COVID, no se usa)."),
+    }
+
+
 def main():
     sub25 = epf("ine_73779_epf_subgrupos.json", "Dato base. Gasto total. Distribución porcentual", "2025")
     sub06 = epf("ine_10628_epf2006_subgrupos.json", "Distribución porcentual. Dato base", "2006")
@@ -119,6 +183,7 @@ def main():
                                  "suscripcion_series_peliculas": {k: v for k, v in eurostat("eurostat_isoc_ec_ibgs_es.json", "I_BFLMS2").items() if k in ("2024", "2025")},
                                  "suscripcion_musica": {k: v for k, v in eurostat("eurostat_isoc_ec_ibgs_es.json", "I_BMUSS2").items() if k in ("2024", "2025")}},
         "deporte": deporte(),
+        "musica_cine": musica_cine(),
         "nota": "Reparto del gasto total de los hogares (con alquiler imputado), en % (= € de cada 100). 1986: 8.1 «cuidados y efectos personales» y 8.3 «restaurantes, cafés y hoteles» del Anuario de 1989; la clasificación ha cambiado, la comparación es aproximada. Compras por internet: % de personas de 16 a 74 años en los últimos 3 meses; la serie de ropa cambia de definición en 2020.",
     }
     (CLEAN / "t7_consumo.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")

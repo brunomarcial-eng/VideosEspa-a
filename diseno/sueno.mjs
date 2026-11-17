@@ -176,7 +176,8 @@ function oficina() {
 }
 
 // Todas las capas de decorado, con el filtro de ondas y la bruma del cambio. Va en «capas» de escenas.mjs.
-export function ambientes() {
+// extra: {nombre: función que dibuja el decorado} para añadir decorados de un vídeo (p. ej. DECORADOS_T7).
+export function ambientes(extra = {}) {
   const capa = (nombre, dibujo) => `<g id="amb-${nombre}" class="capa">${dibujo}</g>`;
   return `<defs><filter id="f-sueno" x="-5%" y="-5%" width="110%" height="110%">
       <feTurbulence id="f-sueno-t" type="fractalNoise" baseFrequency="0.004 0.009" numOctaves="2" seed="7" result="ruido"/>
@@ -184,7 +185,8 @@ export function ambientes() {
     <radialGradient id="g-bruma"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".35"/></radialGradient></defs>
     <g id="amb">${capa("cocina", cocina("amb-cocina-d"))}${capa("bar", bar())}${capa("super", superMercado())}${capa("calle", calle())}
       ${capa("piso", piso())}${capa("cuarto", cuarto())}${capa("parque", parque())}
-      ${capa("boda", boda())}${capa("cunas", cunas())}${capa("oficina", oficina())}</g>
+      ${capa("boda", boda())}${capa("cunas", cunas())}${capa("oficina", oficina())}
+      ${Object.entries(extra).map(([n, f]) => capa(n, f())).join("")}</g>
     <rect id="amb-bruma" class="capa" x="${X0}" y="-400" width="${ANCHO}" height="2700" fill="url(#g-bruma)" opacity="0"/>`;
 }
 

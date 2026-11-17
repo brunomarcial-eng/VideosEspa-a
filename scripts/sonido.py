@@ -358,14 +358,57 @@ def s_sueno(dur=1.0, **_):
     return bordes(norm(y + soplo), 0.004, 0.08)
 
 
+def s_timbre(**_):
+    """Timbre de casa: din-don."""
+    y = np.zeros(int(1.2 * SR), np.float32)
+    for k, f in enumerate((988, 784)):
+        c = campana(f, 0.9, [(1, 1, 0.35), (2.0, 0.25, 0.15), (3.0, 0.1, 0.08)])
+        i = int(k * 0.32 * SR)
+        y[i:i + len(c)] += c[: len(y) - i] * (1 - 0.15 * k)
+    return norm(y)
+
+
+def s_rasgado(**_):
+    """Aguja que rasca un vinilo (scratch corto, de ida y vuelta)."""
+    t = tiempo(0.32)
+    vel = np.sin(2 * np.pi * 3.1 * t) ** 2
+    y = ruido(0.32, 400, 5000) * vel + np.sin(2 * np.pi * np.cumsum(180 + 900 * vel) / SR) * 0.35 * vel
+    return bordes(norm(y), 0.003, 0.04)
+
+
+def s_publico(dur=1.6, **_):
+    """Público de un concierto que aplaude y grita: ruido que crece y palmas sueltas."""
+    t = tiempo(dur)
+    y = ruido(dur, 500, 4500) * 0.5 * np.sin(np.pi * t / dur) ** 0.7
+    tp = tiempo(0.03)
+    palma = ruido(0.03, 900, 6000) * np.exp(-tp / 0.006)
+    for tt in rng.uniform(0, dur - 0.05, int(dur * 40)):
+        i = int(tt * SR)
+        y[i:i + len(palma)] += palma * rng.uniform(0.2, 0.6)
+    return bordes(norm(y), 0.05, 0.25)
+
+
+def s_bici(**_):
+    """Timbre de bicicleta: dos «ring» rápidos."""
+    y = np.zeros(int(0.7 * SR), np.float32)
+    for k in range(2):
+        c = campana(3520, 0.45, [(1, 1, 0.12), (1.5, 0.5, 0.08), (2.7, 0.3, 0.05)])
+        c = c * (0.6 + 0.4 * np.sin(2 * np.pi * 38 * tiempo(0.45)[: len(c)]))
+        i = int(k * 0.16 * SR)
+        y[i:i + len(c)] += c[: len(y) - i]
+    return norm(y)
+
+
 EFECTOS = {"calle": s_calle, "pop": s_pop, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
            "carro": s_carro, "beep": s_beep, "conteo": s_conteo, "caja": s_caja, "sube": s_sube, "pinza": s_pinza,
            "desenrolla": s_desenrolla, "sello": s_sello, "notif": s_notif, "fwip": s_fwip,
-           "campanilla": s_campanilla, "persiana": s_persiana, "vapor": s_vapor, "golpe": s_golpe, "sueno": s_sueno}
+           "campanilla": s_campanilla, "persiana": s_persiana, "vapor": s_vapor, "golpe": s_golpe, "sueno": s_sueno,
+           "timbre": s_timbre, "rasgado": s_rasgado, "publico": s_publico, "bici": s_bici}
 # Ganancia de cada efecto para que ninguno tape la voz
 NIVEL = {"calle": 0.22, "pop": 0.30, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
          "beep": 0.12, "conteo": 0.16, "caja": 0.30, "sube": 0.13, "pinza": 0.26, "desenrolla": 0.22,
-         "sello": 0.40, "notif": 0.24, "fwip": 0.10, "campanilla": 0.18, "persiana": 0.16, "vapor": 0.10, "golpe": 0.22, "sueno": 0.20}
+         "sello": 0.40, "notif": 0.24, "fwip": 0.10, "campanilla": 0.18, "persiana": 0.16, "vapor": 0.10, "golpe": 0.22, "sueno": 0.20,
+         "timbre": 0.22, "rasgado": 0.18, "publico": 0.16, "bici": 0.16}
 
 
 # ------------------------------------------------------------------ cues

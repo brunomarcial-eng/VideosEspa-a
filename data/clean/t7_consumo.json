@@ -88,5 +88,56 @@
   "abonados_gimnasio_pct": 30.7,
   "padel_anual_pct": 9.7
  },
+ "musica_cine": {
+  "cine_gasto_medio_espectador": {
+   "1986_pts": 278.8,
+   "2006_eur": 5.23,
+   "2016_eur": 5.9,
+   "2018_eur": 5.9,
+   "2023_eur": 6.4,
+   "2024_eur": 6.6
+  },
+  "salario_hora": {
+   "1986_pts": 740,
+   "2016_eur": 14.88,
+   "2024_eur": 18.77
+  },
+  "cine_minutos_de_trabajo": {
+   "1986": 22.6,
+   "2016": 23.8,
+   "2024": 21.1
+  },
+  "discos_gasto_hogar_eur": {
+   "soportes_imagen_sonido_2006": 72.29,
+   "soportes_imagen_sonido_2015": 23.08,
+   "instrumentos_2006": 9.38,
+   "bienes_culturales_2016": 13.74,
+   "bienes_culturales_2019": 16.67,
+   "bienes_culturales_2025": 10.09
+  },
+  "espectaculos_gasto_hogar_eur": {
+   "2006": 107.01,
+   "2015": 82.69,
+   "2016": 95.86,
+   "2025": 142.28
+  },
+  "asistieron_ultimo_ano_pct": {
+   "conciertos_musica_actual": {
+    "2011": 25.9,
+    "2015": 24.5,
+    "2019": 30.1,
+    "2022": 10.4,
+    "2025": 32.1
+   },
+   "cine": {
+    "2011": 49.1,
+    "2015": 54.0,
+    "2019": 57.8,
+    "2022": 27.7,
+    "2025": 48.5
+   }
+  },
+  "nota": "Cine: gasto medio por espectador (recaudación / espectadores), Ministerio de Cultura vía Anuarios del INE (1988, 2008, 2020) y Anuario de Estadísticas Culturales 2025. Minutos = precio / salario medio bruto por hora × 60 (C); 1986: Encuesta de Salarios (industria y servicios), 2016 y 2024: Encuesta Anual de Estructura Salarial; son encuestas distintas, la comparación es aproximada. Discos: EPF, gasto medio por hogar en euros corrientes; 2006-2015 «soportes de imagen, sonido y datos» (CD, DVD y cintas, grabados o vírgenes); desde 2016 «bienes culturales», que además incluye instrumentos y descargas. Conciertos: % de personas de 15 años o más que fueron en el último año (2022, año COVID, no se usa)."
+ },
  "nota": "Reparto del gasto total de los hogares (con alquiler imputado), en % (= € de cada 100). 1986: 8.1 «cuidados y efectos personales» y 8.3 «restaurantes, cafés y hoteles» del Anuario de 1989; la clasificación ha cambiado, la comparación es aproximada. Compras por internet: % de personas de 16 a 74 años en los últimos 3 meses; la serie de ropa cambia de definición en 2020."
 }

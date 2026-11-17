@@ -1,0 +1,31 @@
+{
+ "huella": "1f1f9cbc52593b14",
+ "semilla": 3204,
+ "texto": "¡Porque es de usar y tirar!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "¿Por qué es de usar y tirar?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.38,
+   0.54,
+   0.64,
+   0.88,
+   1.06
+  ],
+  "t1": [
+   0.38,
+   0.54,
+   0.64,
+   0.88,
+   1.06,
+   1.26
+  ],
+  "ritmo": 12.5,
+  "voz": 0.793
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.025; parecido 0.853)"
+}

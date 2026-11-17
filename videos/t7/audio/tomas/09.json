@@ -1,0 +1,40 @@
+{
+ "huella": "063bcdb0f35bc877",
+ "semilla": 9000,
+ "texto": "¡Y pagando la música cada mes! Yo me compraba mis vinilos.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0511,
+  "oido": "y pagando la música cada mes, yo me compraba mis vinilos.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.68,
+   0.84,
+   1.28,
+   1.52,
+   2.42,
+   2.78,
+   2.96,
+   3.5,
+   3.68
+  ],
+  "t1": [
+   0.12,
+   0.68,
+   0.84,
+   1.28,
+   1.52,
+   1.9,
+   2.78,
+   2.96,
+   3.5,
+   3.68,
+   4.14
+  ],
+  "ritmo": 10.5,
+  "voz": 0.952
+ }
+}

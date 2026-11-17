@@ -71,7 +71,7 @@ function persona(id, t, o) {
   const s = o.s ?? 1, dir = o.espejo ? -1 : 1, fase = o.fase ?? 0;
   const anda = vigente(o.anda, t, false).cur;
   const bote = anda ? Math.abs(Math.sin(t * 9)) * 9 : Math.sin(t * 2.2 + fase) * 2.5;
-  el.setAttribute("transform", `translate(${o.x.toFixed(1)} ${o.y.toFixed(1)}) scale(${(dir * s * (o.sx ?? 1)).toFixed(3)} ${s.toFixed(3)})`);
+  el.setAttribute("transform", `translate(${o.x.toFixed(1)} ${o.y.toFixed(1)}) rotate(${(o.rot ?? 0).toFixed(2)}) scale(${(dir * s * (o.sx ?? 1)).toFixed(3)} ${s.toFixed(3)})`);
   attr(id + "-c", "transform", `translate(0 ${(-bote - (o.sube ?? 0)).toFixed(1)})`);
   const paso = anda ? Math.sin(t * 9) * 24 : 0;
   attr(id + "-pi", "transform", `rotate(${paso.toFixed(1)} -28 -190)`);
@@ -119,6 +119,19 @@ function vapor(p, n, t, x, y) {
     attr(p + k, "cx", (x + Math.sin((t + k) * 3) * 8).toFixed(1)); attr(p + k, "cy", (y - f * 170).toFixed(1));
     attr(p + k, "r", (12 + f * 22).toFixed(1)); css(p + k, "opacity", (0.8 * (1 - f)).toFixed(2));
   }
+}
+// Recorrido de un personaje: [[t, x], …]. Entre dos puntos con distinta x anda; con la misma x, se queda quieto.
+// Devuelve {x, anda, dir} (dir: −1 si va hacia la izquierda, 1 a la derecha, 0 parado) para pasárselo a persona().
+function ruta(t, pts) {
+  if (t <= pts[0][0]) return { x: pts[0][1], anda: false, dir: 0 };
+  for (let i = 1; i < pts.length; i++) {
+    const [ta, xa] = pts[i - 1], [tb, xb] = pts[i];
+    if (t < tb) {
+      const k = clamp((t - ta) / (tb - ta)), kk = 0.75 * k + 0.25 * suave(k);
+      return { x: xa + (xb - xa) * kk, anda: xb !== xa, dir: Math.sign(xb - xa) };
+    }
+  }
+  return { x: pts[pts.length - 1][1], anda: false, dir: 0 };
 }
 // Persona que cruza andando: entra por un lado y sale por el otro (o se para en «hasta»).
 // o: {x0, v (px/s), y, t0 (cuándo empieza a andar), hasta (x donde se para, opcional), fase}
