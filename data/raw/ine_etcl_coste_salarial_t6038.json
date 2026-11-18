@@ -1,0 +1,769 @@
+[{"COD":"ETCL1527", "Nombre":"Ambas jornadas. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2512.68, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2403.8, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2531.22, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2268.0, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2416.5, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2290.46, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2442.32, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2205.43, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2353.59, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2206.06, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2359.38, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2117.8, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2262.63, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":2126.63, "Secreto":false}
+]
+}
+,{"COD":"ETCL1526", "Nombre":"Ambas jornadas. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2114.64, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2098.61, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2081.16, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2071.74, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2041.43, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2025.89, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2010.0, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2006.41, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":1981.29, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":1954.31, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":1931.31, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1931.37, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":1907.68, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":1886.8, "Secreto":false}
+]
+}
+,{"COD":"ETCL1525", "Nombre":"Ambas jornadas. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":344.64, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":233.82, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":387.85, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":155.41, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":325.18, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":217.93, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":380.47, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":151.44, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":329.35, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":204.9, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":381.45, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":150.87, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":309.53, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":194.64, "Secreto":false}
+]
+}
+,{"COD":"ETCL1524", "Nombre":"Ambas jornadas. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":53.41, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":71.38, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":62.22, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":40.86, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":49.9, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":46.64, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":51.85, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":47.58, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":42.95, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":46.85, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":46.62, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":35.55, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":45.42, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":45.19, "Secreto":false}
+]
+}
+,{"COD":"ETCL1523", "Nombre":"Ambas jornadas. Industria. Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2867.95, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2746.96, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2880.28, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2600.91, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2792.27, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2663.2, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2811.38, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2517.75, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2729.72, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2531.56, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2722.58, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2407.18, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2603.57, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":2439.33, "Secreto":false}
+]
+}
+,{"COD":"ETCL1522", "Nombre":"Ambas jornadas. Industria. Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2381.35, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2383.4, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2325.29, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2312.08, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2305.53, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2297.72, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2250.62, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2237.21, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2232.87, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2217.19, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2157.49, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2142.83, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2130.68, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":2130.3, "Secreto":false}
+]
+}
+,{"COD":"ETCL1521", "Nombre":"Ambas jornadas. Industria. Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":453.28, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":304.39, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":513.02, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":258.84, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":451.7, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":308.6, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":525.87, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":251.55, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":462.03, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":268.39, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":529.8, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":238.3, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":431.2, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":251.17, "Secreto":false}
+]
+}
+,{"COD":"ETCL1520", "Nombre":"Ambas jornadas. Industria. Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":33.32, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":59.17, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":41.97, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":29.99, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":35.04, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":56.89, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":34.89, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":28.98, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":34.82, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":45.97, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":35.28, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":26.06, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":41.7, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":57.86, "Secreto":false}
+]
+}
+,{"COD":"ETCL1519", "Nombre":"Ambas jornadas. Construcción. Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2433.29, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2210.87, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2404.86, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2114.89, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2320.83, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2060.38, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2317.89, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2011.98, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2226.63, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":1961.37, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2328.15, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1958.93, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2195.86, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":1930.65, "Secreto":false}
+]
+}
+,{"COD":"ETCL1518", "Nombre":"Ambas jornadas. Construcción. Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2041.8, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2013.74, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":1974.11, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":1969.99, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":1959.42, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":1927.15, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":1886.73, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":1886.55, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":1876.61, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":1849.06, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":1843.21, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1832.29, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":1832.83, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":1810.84, "Secreto":false}
+]
+}
+,{"COD":"ETCL1517", "Nombre":"Ambas jornadas. Construcción. Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":363.39, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":145.54, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":398.78, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":126.04, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":334.14, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":114.91, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":398.69, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":107.92, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":317.78, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":87.09, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":448.95, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":105.82, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":324.95, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":88.35, "Secreto":false}
+]
+}
+,{"COD":"ETCL1516", "Nombre":"Ambas jornadas. Construcción. Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":28.09, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":51.59, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":31.96, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":18.85, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":27.27, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":18.32, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":32.48, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":17.5, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":32.24, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":25.22, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":35.99, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":20.82, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":38.07, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":31.47, "Secreto":false}
+]
+}
+,{"COD":"ETCL1515", "Nombre":"Ambas jornadas. Servicios. Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2460.79, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2361.97, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2482.57, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2224.04, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2361.51, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2245.28, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2389.51, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2166.88, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2300.04, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2169.75, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2300.34, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2080.71, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2210.24, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":2088.35, "Secreto":false}
+]
+}
+,{"COD":"ETCL1514", "Nombre":"Ambas jornadas. Servicios. Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2076.7, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2058.07, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2048.52, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2039.34, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2003.89, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":1987.7, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":1978.66, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":1976.24, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":1946.93, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":1917.92, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":1899.7, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1902.98, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":1875.77, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":1851.12, "Secreto":false}
+]
+}
+,{"COD":"ETCL1513", "Nombre":"Ambas jornadas. Servicios. Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":325.46, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":228.97, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":366.2, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":140.39, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":303.56, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":210.51, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":354.73, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":137.73, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":308.01, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":203.18, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":351.3, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":139.44, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":287.87, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":193.14, "Secreto":false}
+]
+}
+,{"COD":"ETCL1512", "Nombre":"Ambas jornadas. Servicios. Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":58.63, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":74.93, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":67.85, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":44.31, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":54.06, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":47.06, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":56.12, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":52.92, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":45.1, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":48.65, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":49.34, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":38.29, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":46.6, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":44.08, "Secreto":false}
+]
+}
+,{"COD":"ETCL1511", "Nombre":"Jornada a tiempo completo. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2916.21, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2783.4, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2929.5, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2590.89, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2805.25, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2653.66, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2833.51, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2518.6, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2738.23, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2564.49, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2739.27, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2416.38, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2630.87, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":2474.22, "Secreto":false}
+]
+}
+,{"COD":"ETCL1510", "Nombre":"Jornada a tiempo completo. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2431.78, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2411.74, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2392.76, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2359.66, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2349.09, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2331.2, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2315.76, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2283.6, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2284.04, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2256.16, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2226.28, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2197.2, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2199.02, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":2181.36, "Secreto":false}
+]
+}
+,{"COD":"ETCL1509", "Nombre":"Jornada a tiempo completo. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":420.38, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":285.76, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":467.45, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":184.53, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":396.5, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":266.86, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":460.06, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":179.54, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":403.21, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":251.84, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":462.3, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":178.48, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":378.51, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":239.01, "Secreto":false}
+]
+}
+,{"COD":"ETCL1508", "Nombre":"Jornada a tiempo completo. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":64.05, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":85.91, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":69.29, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":46.7, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":59.66, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":55.61, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":57.69, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":55.46, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":50.97, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":56.49, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":50.69, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":40.7, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":53.34, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":53.86, "Secreto":false}
+]
+}
+,{"COD":"ETCL1507", "Nombre":"Jornada a tiempo completo. Industria. Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2986.94, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2866.11, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":3005.3, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2706.96, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2921.07, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2784.1, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2938.44, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2626.69, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2860.52, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2649.82, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2856.01, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2517.84, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2731.93, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":2557.12, "Secreto":false}
+]
+}
+,{"COD":"ETCL1506", "Nombre":"Jornada a tiempo completo. Industria. Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2474.51, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2483.05, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2421.65, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2404.69, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2405.26, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2396.52, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2348.07, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2331.2, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2332.33, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2315.81, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2257.79, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2238.72, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2227.75, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":2228.11, "Secreto":false}
+]
+}
+,{"COD":"ETCL1505", "Nombre":"Jornada a tiempo completo. Industria. Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":478.12, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":321.71, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":540.64, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":272.16, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":479.31, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":328.32, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":555.26, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":266.34, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":491.99, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":285.85, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":562.08, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":252.14, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":460.38, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":267.68, "Secreto":false}
+]
+}
+,{"COD":"ETCL1504", "Nombre":"Jornada a tiempo completo. Industria. Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":34.31, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":61.35, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":43.02, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":30.1, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":36.5, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":59.26, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":35.12, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":29.15, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":36.2, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":48.16, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":36.15, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":26.97, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":43.81, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":61.34, "Secreto":false}
+]
+}
+,{"COD":"ETCL1503", "Nombre":"Jornada a tiempo completo. Construcción. Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2516.86, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2286.8, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2482.88, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2181.55, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2397.29, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2125.61, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2408.17, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2080.04, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2308.7, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2031.45, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2413.71, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2025.19, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2272.02, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":1997.1, "Secreto":false}
+]
+}
+,{"COD":"ETCL1502", "Nombre":"Jornada a tiempo completo. Construcción. Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2107.25, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2078.94, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2033.32, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2030.98, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2018.89, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":1984.5, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":1955.88, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":1949.07, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":1942.82, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":1913.02, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":1904.81, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1891.63, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":1891.96, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":1870.87, "Secreto":false}
+]
+}
+,{"COD":"ETCL1501", "Nombre":"Jornada a tiempo completo. Construcción. Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":380.59, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":154.27, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":416.36, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":131.49, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":350.11, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":121.73, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":418.5, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":112.71, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":332.36, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":91.57, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":471.3, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":111.51, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":340.13, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":93.18, "Secreto":false}
+]
+}
+,{"COD":"ETCL1500", "Nombre":"Jornada a tiempo completo. Construcción. Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":29.01, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":53.59, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":33.2, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":19.08, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":28.29, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":19.38, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":33.8, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":18.26, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":33.52, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":26.86, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":37.61, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":22.05, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":39.93, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":33.05, "Secreto":false}
+]
+}
+,{"COD":"ETCL1499", "Nombre":"Jornada a tiempo completo. Servicios. Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2940.43, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2814.53, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2955.77, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2605.15, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2820.18, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2676.8, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2850.58, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2536.04, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2752.53, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2597.56, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2745.41, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2432.07, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2643.81, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":2502.48, "Secreto":false}
+]
+}
+,{"COD":"ETCL1498", "Nombre":"Jornada a tiempo completo. Servicios. Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":2454.5, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":2429.33, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":2420.56, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":2381.06, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":2368.96, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2350.63, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":2342.0, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":2304.15, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":2305.62, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":2276.45, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":2249.94, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":2217.31, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":2222.22, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":2201.27, "Secreto":false}
+]
+}
+,{"COD":"ETCL1497", "Nombre":"Jornada a tiempo completo. Servicios. Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":412.35, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":291.1, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":457.07, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":171.39, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":383.77, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":267.87, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":443.97, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":167.57, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":391.23, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":260.02, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":440.48, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":169.44, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":364.97, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":246.94, "Secreto":false}
+]
+}
+,{"COD":"ETCL1496", "Nombre":"Jornada a tiempo completo. Servicios. Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":73.58, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":94.09, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":78.14, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":52.71, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":67.46, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":58.3, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":64.61, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":64.31, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":55.68, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":61.08, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":54.98, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":45.32, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":56.62, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":54.27, "Secreto":false}
+]
+}
+,{"COD":"ETCL1495", "Nombre":"Jornada a tiempo parcial. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":1141.2, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":1064.34, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":1133.38, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":1111.92, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":1088.4, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":996.04, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":1089.66, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":1071.86, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":1047.05, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":964.16, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":1045.66, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1028.16, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":1003.02, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":924.33, "Secreto":false}
+]
+}
+,{"COD":"ETCL1494", "Nombre":"Jornada a tiempo parcial. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":1036.77, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":993.68, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":987.53, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":1040.85, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":990.36, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":937.83, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":952.76, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":1003.1, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":952.89, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":908.44, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":911.26, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":961.26, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":911.12, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":867.94, "Secreto":false}
+]
+}
+,{"COD":"ETCL1493", "Nombre":"Jornada a tiempo parcial. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":87.2, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":50.55, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":108.46, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":51.13, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":81.5, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":43.54, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":105.25, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":49.69, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":78.45, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":42.27, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":101.87, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":50.13, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":73.58, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":41.18, "Secreto":false}
+]
+}
+,{"COD":"ETCL1492", "Nombre":"Jornada a tiempo parcial. Industria, construcción y servicios (excepto actividades de los hogares como empleadores y de organizaciones y organismos extraterritoriales). Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":17.23, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":20.11, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":37.4, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":19.94, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":16.54, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":14.67, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":31.65, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":19.07, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":15.71, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":13.45, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":32.54, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":16.77, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":18.32, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":15.21, "Secreto":false}
+]
+}
+,{"COD":"ETCL1491", "Nombre":"Jornada a tiempo parcial. Industria. Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":1329.2, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":1276.52, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":1331.64, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":1272.54, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":1251.45, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":1172.12, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":1308.13, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":1201.73, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":1214.11, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":1136.19, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":1187.81, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1126.23, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":1138.48, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":1063.57, "Secreto":false}
+]
+}
+,{"COD":"ETCL1490", "Nombre":"Jornada a tiempo parcial. Industria. Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":1176.55, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":1153.69, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":1131.79, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":1152.02, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":1112.41, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":1079.22, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":1097.64, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":1101.89, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":1080.4, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":1053.62, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":1003.92, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1032.68, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":1022.71, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":987.94, "Secreto":false}
+]
+}
+,{"COD":"ETCL1489", "Nombre":"Jornada a tiempo parcial. Industria. Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":132.13, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":90.66, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":170.93, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":92.0, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":121.45, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":65.33, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":178.23, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":72.86, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":114.87, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":62.34, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":158.53, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":78.0, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":98.15, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":58.38, "Secreto":false}
+]
+}
+,{"COD":"ETCL1488", "Nombre":"Jornada a tiempo parcial. Industria. Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":20.51, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":32.17, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":28.93, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":28.52, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":17.58, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":27.57, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":32.25, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":26.98, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":18.84, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":20.22, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":25.36, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":15.54, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":17.62, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":17.25, "Secreto":false}
+]
+}
+,{"COD":"ETCL1487", "Nombre":"Jornada a tiempo parcial. Construcción. Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":1321.65, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":1169.89, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":1293.32, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":1198.26, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":1217.63, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":1117.9, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":1187.82, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":1072.16, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":1197.86, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":1072.48, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":1232.3, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1083.54, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":1226.29, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":1066.46, "Secreto":false}
+]
+}
+,{"COD":"ETCL1486", "Nombre":"Jornada a tiempo parcial. Construcción. Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":1171.2, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":1119.79, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":1130.6, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":1131.52, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":1101.39, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":1098.58, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":1021.18, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":1023.36, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":1046.59, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":1037.74, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":1054.32, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1048.35, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":1080.13, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":1030.1, "Secreto":false}
+]
+}
+,{"COD":"ETCL1485", "Nombre":"Jornada a tiempo parcial. Construcción. Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":134.6, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":25.89, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":148.37, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":51.12, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":103.66, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":16.37, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":150.64, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":41.83, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":135.03, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":30.26, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":162.74, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":30.65, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":131.71, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":25.45, "Secreto":false}
+]
+}
+,{"COD":"ETCL1484", "Nombre":"Jornada a tiempo parcial. Construcción. Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":15.85, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":24.21, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":14.35, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":15.62, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":12.58, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":2.95, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":16.0, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":6.97, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":16.24, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":4.48, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":15.24, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":4.55, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":14.45, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":10.91, "Secreto":false}
+]
+}
+,{"COD":"ETCL1483", "Nombre":"Jornada a tiempo parcial. Servicios. Coste salarial total. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":1129.23, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":1051.94, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":1120.78, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":1102.4, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":1078.1, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":984.98, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":1076.62, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":1065.18, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":1035.51, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":953.1, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":1034.37, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":1021.65, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":991.32, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":914.17, "Secreto":false}
+]
+}
+,{"COD":"ETCL1482", "Nombre":"Jornada a tiempo parcial. Servicios. Coste salarial ordinario. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":1027.86, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":983.37, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":977.85, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":1033.65, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":982.39, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":927.74, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":944.04, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":997.62, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":944.52, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":898.29, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":903.45, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":955.52, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":901.79, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":858.36, "Secreto":false}
+]
+}
+,{"COD":"ETCL1481", "Nombre":"Jornada a tiempo parcial. Servicios. Coste salarial pagos extraordinarios. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":84.25, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":49.12, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":104.69, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":49.15, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":79.16, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":42.98, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":100.63, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":48.65, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":75.44, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":41.51, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":97.65, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":49.03, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":71.09, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":40.62, "Secreto":false}
+]
+}
+,{"COD":"ETCL1480", "Nombre":"Jornada a tiempo parcial. Servicios. Coste salarial pagos atrasados. Costes salariales. Total Nacional. Euros. ", "FK_Unidad":7, "FK_Escala":1, "Data":[{"Fecha":1774994400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2026, "Valor":17.11, "Secreto":false}
+,{"Fecha":1767222000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2026, "Valor":19.44, "Secreto":false}
+,{"Fecha":1759269600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2025, "Valor":38.24, "Secreto":false}
+,{"Fecha":1751320800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2025, "Valor":19.61, "Secreto":false}
+,{"Fecha":1743458400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2025, "Valor":16.56, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2025, "Valor":14.26, "Secreto":false}
+,{"Fecha":1727733600000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2024, "Valor":31.95, "Secreto":false}
+,{"Fecha":1719784800000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2024, "Valor":18.9, "Secreto":false}
+,{"Fecha":1711922400000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2024, "Valor":15.55, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2024, "Valor":13.3, "Secreto":false}
+,{"Fecha":1696111200000, "FK_TipoDato":1, "FK_Periodo":22, "Anyo":2023, "Valor":33.27, "Secreto":false}
+,{"Fecha":1688162400000, "FK_TipoDato":1, "FK_Periodo":21, "Anyo":2023, "Valor":17.1, "Secreto":false}
+,{"Fecha":1680300000000, "FK_TipoDato":1, "FK_Periodo":20, "Anyo":2023, "Valor":18.44, "Secreto":false}
+,{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":19, "Anyo":2023, "Valor":15.19, "Secreto":false}
+]
+}
+]
