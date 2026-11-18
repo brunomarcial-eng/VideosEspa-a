@@ -1,8 +1,10 @@
-# T8 · Paso 1: datos y borrador (pendiente de aprobar)
+# T8 · Paso 1: datos y borrador, versión 2 (pendiente de aprobar)
 
 **¿Cuánto de tu sueldo se queda el Estado? 1986, 2006 y hoy.** Lo pidió Bruno el 17-11-2026: un cajero de supermercado con el salario mínimo y un empleado de banca con 40.000 € de hoy, pasados por el IPC a 1986 y 2006, con el IRPF, las cotizaciones, lo que paga la empresa y el % que va al Estado.
 
 Datos limpios en `data/clean/t8_impuestos_sueldo.json` (`scripts/calcular_t8.py`). Las normas de cada año están en `data/raw/` (BOE), y el script comprueba que cada tipo y cada tramo aparecen literalmente en el BOE.
+
+**Versión 2 (18-11-2026):** Bruno pide añadir los impuestos de después de cobrar: el IVA de la comida, la gasolina, la ropa y el colegio, y los impuestos sobre el dinero (ahorro, inversión, donaciones).
 
 ## Cómo se calcula (cálculo propio, estado C, con normas leídas en el BOE, V)
 - **Los dos trabajadores:** solteros, sin hijos, con contrato indefinido, un año entero y sin otras rentas.
@@ -53,18 +55,50 @@ Datos limpios en `data/clean/t8_impuestos_sueldo.json` (`scripts/calcular_t8.py`
 - Que sea por un gobierno concreto (regla 3).
 - Cifras de otra comunidad: en 2026, con otra escala autonómica, el IRPF del empleado de banca cambia unos cientos de euros. Conviene decir en pantalla «en Madrid».
 
+## Después de cobrar (versión 2)
+
+### IVA de cada día (BOE: Ley 30/1985 para 1986; Ley 37/1992 en su redacción de 2006 y la vigente)
+| Qué compras | 1986 | 2006 | 2026 |
+|---|---|---|---|
+| Pan, leche, huevos, fruta y verdura | 6 % | 4 % | **4 %** (hoy, también el aceite de oliva) |
+| El resto de la comida (carne, pescado…) | 6 % | 7 % | **10 %** |
+| Bar y restaurante | 6 % | 7 % | **10 %** |
+| Ropa y calzado | 12 % | 16 % | **21 %** |
+| Gasolina y gasóleo | 12 % | 16 % | **21 %** (además, el impuesto especial sobre hidrocarburos, que no comparo aquí) |
+| Luz, móvil y casi todo lo demás | 12 % | 16 % | **21 %** |
+| Coche | **33 %** (tipo de lujo) | 16 % | 21 % |
+| Colegio y universidad | sin IVA | sin IVA | **sin IVA** |
+
+**Qué se puede decir:** lo básico de la compra paga hoy menos IVA que en 1986 (del 6 % al 4 %). El resto de la comida paga más (del 6 % al 10 %), y casi todo lo demás, bastante más (del 12 % al 21 %). El coche es la excepción: en 1986 pagaba un 33 % por considerarse un lujo. El colegio nunca ha llevado IVA.
+
+### Los intereses de tus ahorros (IRPF)
+| | 1986 | 2006 | 2026 |
+|---|---|---|---|
+| Cajero (salario mínimo) | 16,85 % | 15 % | **19 %** |
+| Empleado de banca | 25,9 % | 28 % | **19 %** |
+
+En 1986 y 2006, los intereses se sumaban al sueldo y pagaban al tipo más alto de cada uno. Desde 2007 van aparte, con su propia escala: 19 % hasta 6.000 €, 21 % hasta 50.000 €, y 23, 27 y 30 % por encima. En 2006, vender algo comprado hacía más de un año (acciones, fondos) pagaba un 15 %. **Qué se puede decir:** hoy los ahorros del que gana bien pagan menos que antes, y los del que gana poco, algo más.
+
+### Donaciones, herencias y patrimonio: propongo dejarlos para otro vídeo
+- **Donaciones y herencias:** hoy las regula cada comunidad, y la diferencia entre comunidades es enorme. Donar a un hijo en Madrid tiene hoy una rebaja del 99 %, y en otras comunidades se paga bastante más. En 1986 había un impuesto estatal (ley de 1967), igual para todos.
+- **Patrimonio:** existía en 1986 y en 2006 y existe hoy, con reglas distintas en cada comunidad, más un impuesto estatal para grandes fortunas desde 2022.
+- **Por qué aparte:** hacerlo bien exige comparar todas las comunidades, porque fijarse solo en una se puede ver como favorable a un partido (regla 3), y no cabe en este minuto. Si te parece, lo preparo como su propio vídeo: «¿Cuánto cuesta heredar o donar a un hijo?».
+
 ## Dos cosas que tienes que confirmar
 1. **Comunidad para el IRPF de hoy: ¿Madrid?** Encaja con T9 (el bar en Madrid). Con otra comunidad sube algo el IRPF del empleado de banca.
 2. **El empleado de banca como oficial administrativo.** En 1986 eso fijaba su tope de cotización (146.070 pesetas al mes). Como auxiliar, el tope era algo más bajo y el Estado se quedaba un poco menos.
 
-## Borrador del guion (padre contra hijo, sexta parte; unos 60 s)
-Decorados como en un sueño: cocina → caja del súper → oficina del banco → cocina.
+## Borrador del guion, versión 2 (padre contra hijo, sexta parte; unos 70 s)
+Decorados como en un sueño: cocina → caja del súper → oficina del banco → pasillo del súper con el carro → colegio → banco (hucha) → cocina.
 1. **Padre** (cocina, con la nómina del hijo): ¡Menuda nómina! En mis tiempos Hacienda no te sangraba así.
-2. **Hijo** (caja del súper): Vamos a ver. Un cajero con el salario mínimo: de cada 100 € que pagaba la empresa, al Estado iban 30 en 1986. Hoy, 29.
+2. **Hijo** (caja del súper): Un cajero con el salario mínimo: de cada 100 € que pagaba la empresa, 30 iban al Estado en 1986. Hoy, 29.
 3. **Padre:** ¿Ves? Lo mismo.
-4. **Hijo:** Lo mismo, pero hoy cobra mucho más: en euros de hoy, 10.700 al año en 1986 y 16.000 hoy.
-5. **Padre** (en el banco): ¿Y uno que gane bien? Uno de banca.
-6. **Hijo:** Con 40.000 € de hoy, el Estado se quedaba 40 de cada 100 en 1986. Hoy, 43.
-7. **Padre:** ¿Tres más? ¡Eso no es nada!
-8. **Hijo:** Son 960 € al año menos en su bolsillo. Y la empresa paga casi 53.000 € para que él cobre 30.000.
-9. **Hijo, a cámara:** ¿Pagamos mucho o poco al Estado? ¿Tú qué opinas?
+4. **Hijo:** Lo mismo, pero hoy cobra mucho más: 10.700 € al año en 1986, en euros de hoy, y 16.000 ahora.
+5. **Padre** (en el banco): ¿Y uno de banca, que gana bien?
+6. **Hijo:** Con 40.000 € de hoy, el Estado se quedaba 40 de cada 100 en 1986. Hoy, 43: 960 € menos en su bolsillo.
+7. **Padre** (en el súper, con el carro): ¡Y luego vas a la compra y otra vez a pagar!
+8. **Hijo:** El IVA del pan, la leche y la fruta ha bajado: del 6 al 4 %. Pero la carne, del 6 al 10. Y la ropa y la gasolina, del 12 al 21.
+9. **Padre** (en la puerta de un colegio): ¿Y el colegio?
+10. **Hijo:** No lleva IVA. Ni antes ni ahora.
+11. **Hijo** (con una hucha): ¿Y los ahorros? Los intereses del de banca pagaban un 26 % en 1986. Hoy, un 19 %.
+12. **Hijo, a cámara:** ¿Pagamos mucho o poco al Estado? ¿Tú qué opinas?

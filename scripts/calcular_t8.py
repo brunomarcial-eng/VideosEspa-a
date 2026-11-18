@@ -190,6 +190,65 @@ def irpf(anyo, N, bruto, cot_trab):
                                         "cuota_estatal": est, "cuota_autonomica": aut, "deduccion_trabajo": min(ded, est + aut)}
 
 
+# ------------------------------------------------------------------ después de cobrar: IVA y ahorro
+def iva():
+    """Tipos de IVA de cada año para cosas del día a día (leídos en el BOE)."""
+    v85, a20, a91, hoy = ("boe_ley_30_1985_iva.pdf", "boe_ley_37_1992_iva_art20_2006.html",
+                          "boe_ley_37_1992_iva_art91_2006.html", "boe_ley_37_1992_iva_vigente.html")
+    comprueba(v85, "El impuesto se exigirá al tipo del 12 por 100", "Se aplicará el tipo del 6 por 100 a las operaciones siguientes",
+              "Los productos susceptibles de ser habitual e idóneamente utilizados para la nutrición humana",
+              "Los servicios de hostelería y acampamento, los de restau rantes", "Se aplicará el tipo del 33 por 100 a las siguientes operaciones",
+              "Vehículos accionados a motor para circular por carretera", "la enseñanza en todos los nieles y grados del sistema educativo")
+    comprueba(a91, "El Impuesto se exigirá al tipo del 16 por 100", "Se aplicará el tipo del 7 por 100 a las operaciones siguientes",
+              "Se aplicará el tipo del 4 por 100 a las operaciones siguientes", "El pan común",
+              "Los servicios de hostelería, acampamento y balneario, los de restaurantes")
+    comprueba(a20, "la enseñanza escolar, universitaria y de postgraduados")
+    comprueba(hoy, "El Impuesto se exigirá al tipo del 21 por ciento", "Se aplicará el tipo del 10 por ciento a las operaciones siguientes",
+              "Se aplicará el tipo del 4 por ciento a las operaciones siguientes", "El pan común", "g) Los aceites de oliva",
+              "la enseñanza escolar, universitaria y de postgraduado")
+    return {
+        "pan_leche_huevos_fruta_verdura": {"1986": 6, "2006": 4, "2026": 4},
+        "resto_de_la_comida_carne_pescado": {"1986": 6, "2006": 7, "2026": 10},
+        "bar_y_restaurante": {"1986": 6, "2006": 7, "2026": 10},
+        "ropa_y_calzado": {"1986": 12, "2006": 16, "2026": 21},
+        "gasolina_y_gasoleo": {"1986": 12, "2006": 16, "2026": 21},
+        "luz_movil_y_casi_todo_lo_demas": {"1986": 12, "2006": 16, "2026": 21},
+        "coche": {"1986": 33, "2006": 16, "2026": 21},
+        "colegio_y_universidad": {"1986": "exento", "2006": "exento", "2026": "exento"},
+        "nota": ("Tipo general: 12 % (1986), 16 % (2006) y 21 % (2026). Comida: en 1986 toda al 6 %; desde 1993 el pan, la leche, los huevos, las frutas "
+                 "y verduras, al 4 % (hoy también el aceite de oliva), y el resto al 7 % (2006) y al 10 % (2026). La gasolina y el gasóleo pagan además "
+                 "el impuesto especial sobre hidrocarburos, que no se incluye aquí. En 1986, los coches pagaban el tipo de lujo (33 %)."),
+    }
+
+
+def ahorro(N, casos):
+    """Lo que pagan los intereses de una cuenta o un depósito (tipo marginal en 1986 y 2006; base del ahorro hoy)."""
+    li = "boe_ley_35_2006_irpf.html"
+    comprueba(li, "0 0 6.000 9,5 6.000,00 570 44.000 10,5 50.000,00 5.190 150.000 11,5 200.000,00 22.440 100.000 13,5 300.000,00 35.940 En adelante 15")
+    comprueba("boe_rdleg_3_2004_irpf.html", "La base liquidable especial se gravará al tipo del 9,06 por ciento",
+              "La base liquidable especial se gravará con el tipo del 5,94 por ciento",
+              "La parte general de la renta del período impositivo estará constituida por la totalidad de la renta del contribuyente, excluidas las ganancias y pérdidas patrimoniales previstas en el artículo 40")
+    comprueba("boe_ley_48_1985_irpf.pdf", "La base imponible se determinará mediante la suma de los rendimientos e incrementos de patrimonio")
+    def marginal(tramos, base):
+        t = tramos[0][1]
+        for desde, tipo in tramos:
+            if base >= desde:
+                t = tipo
+        return t
+    out = {}
+    for quien in ("cajero", "banca"):
+        b86 = casos[quien]["1986"]["detalle_irpf"]["base_imponible"]
+        b06 = casos[quien]["2006"]["detalle_irpf"]["base_liquidable"]
+        out[quien] = {"1986": marginal(N["1986"]["irpf"]["escala"], b86),
+                      "2006": round(marginal(N["2006"]["irpf"]["estatal"], b06) + marginal(N["2006"]["irpf"]["autonomica"], b06), 2),
+                      "2026": 19.0}
+    out["ganancias_al_vender_con_mas_de_un_ano_2006"] = 15.0
+    out["nota"] = ("Intereses de una cuenta o un depósito, primeros euros. En 1986 y 2006 se sumaban al sueldo y pagaban al tipo marginal de cada uno; "
+                   "desde 2007 van a la base del ahorro, con su propia escala (19 % hasta 6.000 €, 21 % hasta 50.000 €, 23 %, 27 % y 30 %). "
+                   "En 2006, las ganancias por vender algo comprado hacía más de un año pagaban un 15 %.")
+    return out
+
+
 def main():
     N = normas()
     I = ipc_largo()
@@ -230,6 +289,8 @@ def main():
                 "en_euros_de_2026": {k: round(v * a_eur) for k, v in (("bruto", bruto), ("coste_empresa", coste), ("neto", neto), ("al_estado", estado),
                                                                        ("irpf", ir), ("cotizaciones", ct + ce))},
             }
+    out["iva_pct"] = iva()
+    out["ahorro_intereses_tipo_pct"] = ahorro(N, out["casos"])
     out["nota"] = ("Cálculo propio (C) con las normas del BOE de cada año (ficheros en data/raw). Parte que va al Estado = IRPF + cotizaciones del "
                    "trabajador y de la empresa, sobre lo que le cuesta a la empresa. 1986: cotización por contingencias comunes con el tope del grupo 5 "
                    "(146.070 pesetas al mes); accidentes de trabajo con la tarifa de 1979 rebajada un 10 %. 2006: desempleo y FOGASA de la empresa "
@@ -242,6 +303,8 @@ def main():
                   f"IRPF {c['irpf']:>9,.0f} ({c['pct_irpf_del_bruto']:4.1f} % del bruto) · al Estado {c['pct_estado_del_coste']:4.1f} % del coste · "
                   f"en € de 2026: coste {c['en_euros_de_2026']['coste_empresa']:,} neto {c['en_euros_de_2026']['neto']:,}")
     print("IPC", out["ipc_media_anual"], out["euros_de_2026_por_euro"])
+    print("IVA", {k: v for k, v in out["iva_pct"].items() if k != "nota"})
+    print("Ahorro", {k: v for k, v in out["ahorro_intereses_tipo_pct"].items() if k != "nota"})
 
 
 if __name__ == "__main__":
