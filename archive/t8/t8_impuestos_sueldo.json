@@ -1,0 +1,335 @@
+{
+ "tema": "T8 — ¿cuánto de tu sueldo se queda el Estado? Cajero con el salario mínimo y empleado de banca, 1986, 2006 y 2026",
+ "supuestos": "Soltero, sin hijos, contrato indefinido, año completo, sin otras rentas ni deducciones personales. Cajero de supermercado (CNAE 47) con el salario mínimo; empleado de banca (CNAE 64, oficial administrativo) con 40.000 € brutos en 2026 y el equivalente con el IPC en 1986 y 2006. IRPF de 2026 con la escala de la Comunidad de Madrid; en 1986 no había tramo autonómico y en 2006 Madrid usaba la escala complementaria general.",
+ "ipc_media_anual": {
+  "1986": 30.397,
+  "2006": 68.205,
+  "2026": 103.314
+ },
+ "euros_de_2026_por_euro": {
+  "1986": 3.3988,
+  "2006": 1.5148,
+  "2026": 1.0
+ },
+ "casos": {
+  "cajero": {
+   "1986": {
+    "moneda": "pesetas",
+    "bruto": 561960,
+    "cotiz_empresa": 183760.92,
+    "cotiz_trabajador": 33717.6,
+    "irpf": 5865.04,
+    "coste_empresa": 745720.92,
+    "neto": 522377.36,
+    "al_estado": 223343.56,
+    "pct_estado_del_coste": 29.95,
+    "pct_irpf_del_bruto": 1.04,
+    "pct_neto_del_coste": 70.05,
+    "detalle_empresa": {
+     "contingencias_comunes": 134870.4,
+     "mei": 0.0,
+     "desempleo": 29221.92,
+     "fogasa": 6181.56,
+     "formacion": 3371.76,
+     "accidentes": 10115.28
+    },
+    "detalle_trabajador": {
+     "contingencias_comunes": 26974.08,
+     "mei": 0.0,
+     "desempleo": 6181.56,
+     "formacion": 561.96
+    },
+    "detalle_irpf": {
+     "base_imponible": 517003.2,
+     "cuota_integra": 42865.04
+    },
+    "en_euros_de_2026": {
+     "bruto": 11479,
+     "coste_empresa": 15233,
+     "neto": 10671,
+     "al_estado": 4562,
+     "irpf": 120,
+     "cotizaciones": 4443
+    }
+   },
+   "2006": {
+    "moneda": "euros",
+    "bruto": 7572.6,
+    "cotiz_empresa": 2436.48,
+    "cotiz_trabajador": 480.86,
+    "irpf": 28.76,
+    "coste_empresa": 10009.08,
+    "neto": 7062.98,
+    "al_estado": 2946.11,
+    "pct_estado_del_coste": 29.43,
+    "pct_irpf_del_bruto": 0.38,
+    "pct_neto_del_coste": 70.57,
+    "detalle_empresa": {
+     "contingencias_comunes": 1787.13,
+     "mei": 0.0,
+     "desempleo": 444.89,
+     "fogasa": 22.72,
+     "formacion": 45.44,
+     "accidentes": 136.31
+    },
+    "detalle_trabajador": {
+     "contingencias_comunes": 355.91,
+     "mei": 0.0,
+     "desempleo": 117.38,
+     "formacion": 7.57
+    },
+    "detalle_irpf": {
+     "rendimiento_neto": 7091.74,
+     "reduccion_trabajo": 3500,
+     "base_liquidable": 191.74
+    },
+    "en_euros_de_2026": {
+     "bruto": 11471,
+     "coste_empresa": 15161,
+     "neto": 10699,
+     "al_estado": 4463,
+     "irpf": 44,
+     "cotizaciones": 4419
+    }
+   },
+   "2026": {
+    "moneda": "euros",
+    "bruto": 17094.0,
+    "cotiz_empresa": 5521.36,
+    "cotiz_trabajador": 1111.11,
+    "irpf": 0.0,
+    "coste_empresa": 22615.36,
+    "neto": 15982.89,
+    "al_estado": 6632.47,
+    "pct_estado_del_coste": 29.33,
+    "pct_irpf_del_bruto": 0.0,
+    "pct_neto_del_coste": 70.67,
+    "detalle_empresa": {
+     "contingencias_comunes": 4034.18,
+     "mei": 128.21,
+     "desempleo": 940.17,
+     "fogasa": 34.19,
+     "formacion": 102.56,
+     "accidentes": 282.05
+    },
+    "detalle_trabajador": {
+     "contingencias_comunes": 803.42,
+     "mei": 25.64,
+     "desempleo": 264.96,
+     "formacion": 17.09
+    },
+    "detalle_irpf": {
+     "rendimiento_neto": 13982.89,
+     "reduccion_trabajo": 5322.94,
+     "base_liquidable": 8659.95,
+     "cuota_estatal": 295.45,
+     "cuota_autonomica": 229.78,
+     "deduccion_trabajo": 525.23
+    },
+    "en_euros_de_2026": {
+     "bruto": 17094,
+     "coste_empresa": 22615,
+     "neto": 15983,
+     "al_estado": 6632,
+     "irpf": 0,
+     "cotizaciones": 6632
+    }
+   }
+  },
+  "banca": {
+   "1986": {
+    "moneda": "pesetas",
+    "bruto": 1958000.0,
+    "cotiz_empresa": 575167.8,
+    "cotiz_trabajador": 107632.32,
+    "irpf": 325152.79,
+    "coste_empresa": 2533167.8,
+    "neto": 1525214.89,
+    "al_estado": 1007952.91,
+    "pct_estado_del_coste": 39.79,
+    "pct_irpf_del_bruto": 16.61,
+    "pct_neto_del_coste": 60.21,
+    "detalle_empresa": {
+     "contingencias_comunes": 420681.6,
+     "mei": 0.0,
+     "desempleo": 101816.0,
+     "fogasa": 21538.0,
+     "formacion": 11748.0,
+     "accidentes": 19384.2
+    },
+    "detalle_trabajador": {
+     "contingencias_comunes": 84136.32,
+     "mei": 0.0,
+     "desempleo": 21538.0,
+     "formacion": 1958.0
+    },
+    "detalle_irpf": {
+     "base_imponible": 1811207.68,
+     "cuota_integra": 362152.79
+    },
+    "en_euros_de_2026": {
+     "bruto": 39997,
+     "coste_empresa": 51746,
+     "neto": 31156,
+     "al_estado": 20590,
+     "irpf": 6642,
+     "cotizaciones": 13948
+    }
+   },
+   "2006": {
+    "moneda": "euros",
+    "bruto": 26407,
+    "cotiz_empresa": 8282.56,
+    "cotiz_trabajador": 1676.84,
+    "irpf": 4351.6,
+    "coste_empresa": 34689.56,
+    "neto": 20378.56,
+    "al_estado": 14311.0,
+    "pct_estado_del_coste": 41.25,
+    "pct_irpf_del_bruto": 16.48,
+    "pct_neto_del_coste": 58.75,
+    "detalle_empresa": {
+     "contingencias_comunes": 6232.05,
+     "mei": 0.0,
+     "desempleo": 1551.41,
+     "fogasa": 79.22,
+     "formacion": 158.44,
+     "accidentes": 261.43
+    },
+    "detalle_trabajador": {
+     "contingencias_comunes": 1241.13,
+     "mei": 0.0,
+     "desempleo": 409.31,
+     "formacion": 26.41
+    },
+    "detalle_irpf": {
+     "rendimiento_neto": 24730.16,
+     "reduccion_trabajo": 2400,
+     "base_liquidable": 18930.16
+    },
+    "en_euros_de_2026": {
+     "bruto": 40000,
+     "coste_empresa": 52546,
+     "neto": 30869,
+     "al_estado": 21678,
+     "irpf": 6592,
+     "cotizaciones": 15086
+    }
+   },
+   "2026": {
+    "moneda": "euros",
+    "bruto": 40000,
+    "cotiz_empresa": 12860.0,
+    "cotiz_trabajador": 2600.0,
+    "irpf": 7204.32,
+    "coste_empresa": 52860.0,
+    "neto": 30195.68,
+    "al_estado": 22664.32,
+    "pct_estado_del_coste": 42.88,
+    "pct_irpf_del_bruto": 18.01,
+    "pct_neto_del_coste": 57.12,
+    "detalle_empresa": {
+     "contingencias_comunes": 9440.0,
+     "mei": 300.0,
+     "desempleo": 2200.0,
+     "fogasa": 80.0,
+     "formacion": 240.0,
+     "accidentes": 600.0
+    },
+    "detalle_trabajador": {
+     "contingencias_comunes": 1880.0,
+     "mei": 60.0,
+     "desempleo": 620.0,
+     "formacion": 40.0
+    },
+    "detalle_irpf": {
+     "rendimiento_neto": 35400.0,
+     "reduccion_trabajo": 0.0,
+     "base_liquidable": 35400.0,
+     "cuota_estatal": 3872.5,
+     "cuota_autonomica": 3331.82,
+     "deduccion_trabajo": 0.0
+    },
+    "en_euros_de_2026": {
+     "bruto": 40000,
+     "coste_empresa": 52860,
+     "neto": 30196,
+     "al_estado": 22664,
+     "irpf": 7204,
+     "cotizaciones": 15460
+    }
+   }
+  }
+ },
+ "iva_pct": {
+  "pan_leche_huevos_fruta_verdura": {
+   "1986": 6,
+   "2006": 4,
+   "2026": 4
+  },
+  "resto_de_la_comida_carne_pescado": {
+   "1986": 6,
+   "2006": 7,
+   "2026": 10
+  },
+  "bar_y_restaurante": {
+   "1986": 6,
+   "2006": 7,
+   "2026": 10
+  },
+  "ropa_y_calzado": {
+   "1986": 12,
+   "2006": 16,
+   "2026": 21
+  },
+  "gasolina_y_gasoleo": {
+   "1986": 12,
+   "2006": 16,
+   "2026": 21
+  },
+  "luz_movil_y_casi_todo_lo_demas": {
+   "1986": 12,
+   "2006": 16,
+   "2026": 21
+  },
+  "coche": {
+   "1986": 33,
+   "2006": 16,
+   "2026": 21
+  },
+  "nota": "Tipo general: 12 % (1986), 16 % (2006) y 21 % (2026). Comida: en 1986 toda al 6 %; desde 1993 el pan, la leche, los huevos, las frutas y verduras, al 4 % (hoy también el aceite de oliva), y el resto al 7 % (2006) y al 10 % (2026). La gasolina paga además un impuesto especial por litro (ver «gasolina»). En 1986, los coches pagaban el tipo de lujo (33 %)."
+ },
+ "gasolina": {
+  "impuesto_por_litro": {
+   "1986_pesetas": 27.5,
+   "2006_euros": 0.4197,
+   "2026_euros": 0.4727
+  },
+  "impuesto_por_litro_en_euros_de_2026": {
+   "1986": 0.562,
+   "2006": 0.636,
+   "2026": 0.473
+  },
+  "iva_pct": {
+   "1986": 12,
+   "2006": 16,
+   "2026": 21
+  },
+  "nota": "Gasolina de 95 octanos (en 1986, «gasolinas de automoción»). 1986: impuesto sobre hidrocarburos de la Ley 45/1985; el Monopolio de Petróleos cobraba además una renta que no se incluye. 2006: impuesto sobre hidrocarburos (371,69 €) + ventas minoristas, tramo estatal (24 €) y de Madrid (24 €), por cada 1.000 litros. 2026: 400,69 € de tipo general + 72 € de tipo especial, igual en toda la península y Baleares. En euros de 2026, con el IPC."
+ },
+ "ahorro_intereses_tipo_pct": {
+  "cajero": {
+   "1986": 16.85,
+   "2006": 15.0,
+   "2026": 19.0
+  },
+  "banca": {
+   "1986": 25.9,
+   "2006": 28.0,
+   "2026": 19.0
+  },
+  "ganancias_al_vender_con_mas_de_un_ano_2006": 15.0,
+  "nota": "Intereses de una cuenta o un depósito, primeros euros. En 1986 y 2006 se sumaban al sueldo y pagaban al tipo marginal de cada uno; desde 2007 van a la base del ahorro, con su propia escala (19 % hasta 6.000 €, 21 % hasta 50.000 €, 23 %, 27 % y 30 %). En 2006, las ganancias por vender algo comprado hacía más de un año pagaban un 15 %."
+ },
+ "nota": "Cálculo propio (C) con las normas del BOE de cada año (ficheros en data/raw). Parte que va al Estado = IRPF + cotizaciones del trabajador y de la empresa, sobre lo que le cuesta a la empresa. 1986: cotización por contingencias comunes con el tope del grupo 5 (146.070 pesetas al mes); accidentes de trabajo con la tarifa de 1979 rebajada un 10 %. 2006: desempleo y FOGASA de la empresa bajaron el 1 de julio (media del año). 2026: escala y mínimo autonómicos de Madrid; con otra comunidad, el IRPF del empleado de banca cambia unos cientos de euros. IPC de 2026: media de los meses publicados."
+}

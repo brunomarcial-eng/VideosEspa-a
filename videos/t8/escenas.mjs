@@ -62,7 +62,7 @@ export function escenas(D) {
   return [
     // 1 · Padre (cocina): «¡Menuda nómina! En mis tiempos Hacienda no te sangraba así.»
     { n: 1, set: "vacio",
-      svg: `<g id="s1-nom"><g transform="scale(1.6)">${nomina("s1-n")}</g><g id="s1-sello" transform="rotate(-14)"><rect x="-120" y="-40" width="240" height="80" rx="12" fill="none" stroke="${C.rojo}" stroke-width="10"/>${rot(0, 16, "RETENCIONES", 34, C.rojo)}</g></g>${dos("s1", NOMINA_MANO)}`,
+      svg: `<g id="s1-nom"><g transform="scale(1.6)">${nomina("s1-n")}</g><g id="s1-sello" transform="rotate(-14)"><rect x="-135" y="-40" width="270" height="80" rx="12" fill="none" stroke="${C.rojo}" stroke-width="10"/>${rot(0, 14, "RETENCIONES", 30, C.rojo)}</g></g>${dos("s1", NOMINA_MANO)}`,
       tarjeta: tarjeta(1, "Padre contra hijo · Sexta parte", `<div class="tit" style="font-size:66px">¿Cuánto de tu <mark id="m1">sueldo</mark> se queda el Estado?</div>`, { icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c;
@@ -103,10 +103,10 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camSueno(t, e.t0); } },
 
-    // 3 · Padre (caja): «¿Ves? Lo mismo.»
+    // 3 · Padre (caja): «¿Lo ves? Lo mismo que antes.»
     { n: 3, set: "vacio",
       svg: `${billetes("s3", D.cajeroEstado, false)}${dos("s3")}<g transform="translate(850 1450)">${cajaRegistradora("s3-caja")}</g>`,
-      tarjeta: tarjeta(3, "Padre", `<div class="tit">«¿Ves? <mark id="m3">Lo mismo</mark>.»</div>`, { tono: "pasado" }),
+      tarjeta: tarjeta(3, "Padre", `<div class="tit">«¿Lo ves? <mark id="m3">Lo mismo</mark> que antes.»</div>`, { tono: "pasado" }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("caja", null, t, 0);
