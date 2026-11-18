@@ -1,0 +1,394 @@
+{
+ "nota": "Momentos clave de T8 (padre contra hijo, 6.ª parte: impuestos del sueldo, IVA, gasolina y ahorros; el decorado cambia como en un sueño). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t8/escenas.mjs) y el sonido (scripts/sonido.py).",
+ "musica": {
+  "bpm": 100,
+  "corte": "c6-43",
+  "silencio_s": 1.0
+ },
+ "cues": [
+  {
+   "id": "c1-nomina",
+   "beat": 1,
+   "palabra": "nómina!",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.4
+  },
+  {
+   "id": "c1-hacienda",
+   "beat": 1,
+   "palabra": "Hacienda",
+   "dt": -0.05,
+   "sfx": "sello",
+   "vol": 0.3
+  },
+  {
+   "id": "c1-sangraba",
+   "beat": 1,
+   "palabra": "sangraba",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-ini",
+   "beat": 2,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c2-cajero",
+   "beat": 2,
+   "palabra": "cajero",
+   "dt": -0.05,
+   "sfx": "beep",
+   "vol": 0.4
+  },
+  {
+   "id": "c2-30",
+   "beat": 2,
+   "palabra": "30",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.7,
+   "hasta": 1.2
+  },
+  {
+   "id": "c2-1986",
+   "beat": 2,
+   "palabra": "1986.",
+   "dt": -0.05
+  },
+  {
+   "id": "c2-29",
+   "beat": 2,
+   "palabra": "29.",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.35
+  },
+  {
+   "id": "c3-mismo",
+   "beat": 3,
+   "palabra": "mismo.",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.35
+  },
+  {
+   "id": "c4-mas",
+   "beat": 4,
+   "palabra": "más:",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-10700",
+   "beat": 4,
+   "palabra": "10.700",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3,
+   "dur": 0.7
+  },
+  {
+   "id": "c4-16000",
+   "beat": 4,
+   "palabra": "16.000",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.32,
+   "dur": 0.9,
+   "hasta": 1.4
+  },
+  {
+   "id": "c5-ini",
+   "beat": 5,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c5-banca",
+   "beat": 5,
+   "palabra": "banca,",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c6-40",
+   "beat": 6,
+   "palabra": "40",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.7,
+   "hasta": 1.2
+  },
+  {
+   "id": "c6-43",
+   "beat": 6,
+   "palabra": "43:",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4,
+   "tono": 1.1
+  },
+  {
+   "id": "c6-960",
+   "beat": 6,
+   "palabra": "960",
+   "dt": -0.05,
+   "sfx": "moneda",
+   "vol": 0.4
+  },
+  {
+   "id": "c6-bolsillo",
+   "beat": 6,
+   "palabra": "bolsillo.",
+   "dt": -0.1,
+   "sfx": "pinza",
+   "vol": 0.35
+  },
+  {
+   "id": "c7-ini",
+   "beat": 7,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c7-compra",
+   "beat": 7,
+   "palabra": "compra",
+   "dt": -0.3,
+   "sfx": "carro",
+   "vol": 0.35,
+   "dur": 0.9
+  },
+  {
+   "id": "c7-pagar",
+   "beat": 7,
+   "palabra": "pagar!",
+   "dt": -0.05,
+   "sfx": "moneda",
+   "vol": 0.35
+  },
+  {
+   "id": "c8-pan",
+   "beat": 8,
+   "palabra": "pan,",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c8-leche",
+   "beat": 8,
+   "palabra": "leche",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3,
+   "tono": 1.1
+  },
+  {
+   "id": "c8-fruta",
+   "beat": 8,
+   "palabra": "fruta",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3,
+   "tono": 1.2
+  },
+  {
+   "id": "c8-4",
+   "beat": 8,
+   "palabra": "4",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.35
+  },
+  {
+   "id": "c8-carne",
+   "beat": 8,
+   "palabra": "carne,",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c8-10",
+   "beat": 8,
+   "palabra": "10.",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.6,
+   "hasta": 1.3
+  },
+  {
+   "id": "c9-ropa",
+   "beat": 9,
+   "palabra": "ropa,",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c9-12",
+   "beat": 9,
+   "palabra": "12",
+   "dt": -0.05
+  },
+  {
+   "id": "c9-21",
+   "beat": 9,
+   "palabra": "21.",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.32,
+   "dur": 0.7,
+   "hasta": 1.4
+  },
+  {
+   "id": "c10-ini",
+   "beat": 10,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c10-gasolina",
+   "beat": 10,
+   "palabra": "gasolina,",
+   "dt": -0.1,
+   "sfx": "vapor",
+   "vol": 0.25,
+   "dur": 0.8
+  },
+  {
+   "id": "c10-impuestos",
+   "beat": 10,
+   "palabra": "impuestos!",
+   "dt": -0.05,
+   "sfx": "sello",
+   "vol": 0.35
+  },
+  {
+   "id": "c11-litro",
+   "beat": 11,
+   "palabra": "litro:",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-56",
+   "beat": 11,
+   "palabra": "56",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.35
+  },
+  {
+   "id": "c11-47",
+   "beat": 11,
+   "palabra": "47",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.35,
+   "tono": 0.9
+  },
+  {
+   "id": "c11-iva",
+   "beat": 11,
+   "palabra": "IVA",
+   "dt": -0.05,
+   "sfx": "papel",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-21",
+   "beat": 11,
+   "palabra": "21",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.6,
+   "hasta": 1.4
+  },
+  {
+   "id": "c12-ini",
+   "beat": 12,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.45
+  },
+  {
+   "id": "c12-ahorros",
+   "beat": 12,
+   "palabra": "ahorros?",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.35
+  },
+  {
+   "id": "c12-26",
+   "beat": 12,
+   "palabra": "26",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c12-19",
+   "beat": 12,
+   "palabra": "19",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.35
+  },
+  {
+   "id": "c13-ini",
+   "beat": 13,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c13-mucho",
+   "beat": 13,
+   "palabra": "mucho",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.35
+  },
+  {
+   "id": "c13-poco",
+   "beat": 13,
+   "palabra": "poco",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.35,
+   "tono": 1.2
+  },
+  {
+   "id": "c13-boc",
+   "beat": 13,
+   "palabra": "opinas?",
+   "dt": -0.3,
+   "sfx": "pop",
+   "vol": 0.3
+  }
+ ]
+}

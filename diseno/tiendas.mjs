@@ -206,3 +206,66 @@ export function bolsaComida(id) {
     <circle cx="0" cy="-60" r="26" fill="#FFFDF8" opacity=".8"/><path d="M-12 -66 H12 M-12 -54 H8" stroke="#5E8C7B" stroke-width="5"/></g>`;
 }
 export const PAQUETE_MANO = `<g transform="translate(-10 50)"><rect x="-70" y="-100" width="140" height="100" rx="6" fill="#C9A26B"/><rect x="-70" y="-100" width="140" height="22" fill="#B98F58"/><rect x="-12" y="-100" width="24" height="100" fill="#E6D2AE" opacity=".7"/></g>`;
+
+// ------------------------------------------------------------------ T8: banco y gasolinera
+function banco() {
+  const columna = (x) => `<rect x="${x - 34}" y="420" width="68" height="880" fill="#E6E1D6"/><rect x="${x - 46}" y="400" width="92" height="30" rx="6" fill="#D6D0C2"/><rect x="${x - 46}" y="1270" width="92" height="30" rx="6" fill="#D6D0C2"/>`;
+  const ventanilla = (x) => `<rect x="${x - 120}" y="760" width="240" height="250" rx="10" fill="#CFE6F2" stroke="#9AA6AE" stroke-width="8"/><rect x="${x - 40}" y="960" width="80" height="20" rx="8" fill="#9AA6AE"/>`;
+  return `${pared("#F1EEE7")}
+    <rect x="200" y="520" width="680" height="110" rx="16" fill="#1F5F8B"/>${txt(540, 600, "BANCO", 70, "#FFFDF8", 'letter-spacing="18"')}
+    ${columna(70)}${columna(1010)}
+    ${ventanilla(330)}${ventanilla(750)}
+    <rect x="${X0}" y="1010" width="${ANCHO}" height="290" fill="#B98A5E"/><rect x="${X0}" y="1000" width="${ANCHO}" height="24" rx="8" fill="#8A6A48"/>
+    ${Array.from({ length: 10 }, (_, i) => `<rect x="${X0 + 30 + i * 200}" y="1050" width="160" height="220" rx="10" fill="#A9794F"/>`).join("")}
+    ${zocalo("#D9D3C6")}
+    <rect x="${X0}" y="1300" width="${ANCHO}" height="1000" fill="#E4DED2"/>
+    ${Array.from({ length: 22 }, (_, i) => Array.from({ length: 10 }, (_, j) => (i + j) % 2 ? `<rect x="${X0 + i * 90}" y="${1300 + j * 90}" width="90" height="90" fill="#D6CFC0"/>` : "").join("")).join("")}`;
+}
+
+function gasolinera() {
+  const surtidor = (x) => `<g transform="translate(${x} 1300)"><rect x="-70" y="-330" width="140" height="330" rx="16" fill="#E9EEF1" stroke="#9AA6AE" stroke-width="6"/>
+    <rect x="-50" y="-300" width="100" height="70" rx="8" fill="${C.tinta}"/><rect x="-40" y="-290" width="80" height="22" rx="4" fill="#7FB3A0" opacity=".8"/><rect x="-40" y="-262" width="56" height="16" rx="4" fill="#7FB3A0" opacity=".5"/>
+    <rect x="-56" y="-200" width="112" height="60" rx="10" fill="#7C9A7E"/><path d="M70 -180 Q110 -170 104 -80 L96 -20" fill="none" stroke="${C.tinta}" stroke-width="10" stroke-linecap="round"/>
+    <rect x="62" y="-200" width="24" height="60" rx="6" fill="${C.tinta}"/><rect x="-80" y="-10" width="160" height="14" rx="6" fill="#9AA6AE"/></g>`;
+  return `<rect x="${X0}" y="-400" width="${ANCHO}" height="1720" fill="#CFE6F2"/>
+    <ellipse cx="900" cy="560" rx="130" ry="42" fill="#FFFFFF" opacity=".85"/><ellipse cx="160" cy="620" rx="110" ry="38" fill="#FFFFFF" opacity=".8"/>
+    <rect x="-260" y="640" width="1600" height="90" rx="10" fill="#7C9A7E"/><rect x="-260" y="730" width="1600" height="26" fill="#5F7D61"/>
+    ${[40, 1040].map((x) => `<rect x="${x - 22}" y="756" width="44" height="544" fill="#9AA6AE"/>`).join("")}
+    ${[150, 300, 450, 600, 750, 900].map((x) => `<rect x="${x - 40}" y="752" width="80" height="12" rx="6" fill="#FFF3C4"/>`).join("")}
+    <rect x="${X0}" y="1060" width="${ANCHO}" height="240" fill="#E6E0D3" opacity=".0"/>
+    ${surtidor(330)}${surtidor(750)}
+    <rect x="${X0}" y="1300" width="${ANCHO}" height="1000" fill="#BFC5CB"/>
+    ${Array.from({ length: 8 }, (_, i) => `<rect x="${-300 + i * 220}" y="1500" width="120" height="16" rx="6" fill="#FFFDF8" opacity=".7"/>`).join("")}`;
+}
+
+function cajaSuper() {
+  const balda = (y, i0) => Array.from({ length: 9 }, (_, i) => `<rect x="${-120 + i * 150}" y="${y - 90 - ((i + i0) % 3) * 14}" width="${70 + ((i + i0) % 2) * 30}" height="${90 + ((i + i0) % 3) * 14}" rx="10" fill="${["#F1D9A8", "#DCE7DD", "#E9C4A6", "#F6EBD6", "#C9DCC9"][(i + i0) % 5]}"/>`).join("") + `<rect x="-200" y="${y}" width="1480" height="16" fill="${C.salvia}"/>`;
+  return `${pared("#EEF2EC")}
+    <rect x="-200" y="640" width="1480" height="440" fill="#B4C7B6"/>${balda(780, 0)}${balda(940, 2)}${balda(1080, 4)}
+    <rect x="300" y="470" width="480" height="100" rx="20" fill="#7C9A7E"/>${txt(540, 540, "CAJA", 58, "#FFFDF8", 'letter-spacing="16"')}
+    ${zocalo("#D2CDBE")}
+    <rect x="${X0}" y="1300" width="${ANCHO}" height="1000" fill="#E4E0D4"/>
+    ${Array.from({ length: 14 }, (_, i) => `<line x1="${X0 + i * 140}" y1="1300" x2="${X0 - 60 + i * 140}" y2="2300" stroke="#D2CDBE" stroke-width="4"/>`).join("")}`;
+}
+
+export const DECORADOS_T8 = { banco, gasolinera, caja: cajaSuper };
+
+// Caja registradora con cinta (delante del cajero).
+export function cajaRegistradora(id) {
+  return `<g id="${id}"><rect x="-220" y="-170" width="440" height="170" rx="14" fill="#9AA6AE"/><rect x="-220" y="-190" width="440" height="30" rx="10" fill="${C.tinta}"/>
+    <rect id="${id}-cinta" x="-200" y="-186" width="300" height="22" rx="8" fill="#5B6470" stroke="#9AA6AE" stroke-width="3" stroke-dasharray="18 12"/>
+    <rect x="120" y="-300" width="90" height="110" rx="10" fill="#3A3F4C"/><rect x="130" y="-290" width="70" height="40" rx="6" fill="#7FB3A0"/>
+    <rect x="130" y="-244" width="70" height="44" rx="6" fill="#C9CED3"/></g>`;
+}
+// Filete (para la etiqueta del IVA de la carne).
+export const FILETE = `<g><path d="M-60 -10 Q-70 -50 -20 -56 Q40 -64 62 -30 Q78 10 30 30 Q-40 50 -60 -10 Z" fill="#C46B5E"/>
+  <path d="M-40 -16 Q0 -40 40 -20" fill="none" stroke="#F2D3CC" stroke-width="8" stroke-linecap="round"/><circle cx="34" cy="0" r="10" fill="#F2D3CC"/></g>`;
+// Gota de impuesto (gasolina): se escala según el impuesto por litro.
+export function gota(id, color) {
+  return `<g id="${id}"><path d="M0 -150 Q70 -50 70 0 A70 70 0 0 1 -70 0 Q-70 -50 0 -150 Z" fill="${color}"/><ellipse cx="-24" cy="-10" rx="14" ry="24" fill="#FFFFFF" opacity=".35"/></g>`;
+}
+// Billete partido: barra de 100 € con la parte del Estado (la escena ajusta el ancho de «-e»).
+export function barraBillete(id, ancho = 420) {
+  return `<g id="${id}"><rect x="0" y="-34" width="${ancho}" height="68" rx="10" fill="#9CB89E" stroke="#6F8F72" stroke-width="5"/>
+    <rect id="${id}-e" x="0" y="-34" width="0" height="68" rx="10" fill="#5B6470"/><circle cx="${ancho - 40}" cy="0" r="20" fill="#C9DCC9" opacity=".8"/></g>`;
+}

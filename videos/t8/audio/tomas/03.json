@@ -1,0 +1,27 @@
+{
+ "huella": "620cf5c62c506e05",
+ "semilla": 3004,
+ "texto": "¿Ves? Lo mismo.",
+ "ev": {
+  "ok": false,
+  "nota": 0.7675,
+  "oido": "¿Ves? Lo mismo.",
+  "parecido": 1.0,
+  "problemas": [
+   "ritmo raro (5.1 letras/s)",
+   "voz distinta (0.79)"
+  ],
+  "t0": [
+   0.0,
+   1.04,
+   1.38
+  ],
+  "t1": [
+   0.44,
+   1.38,
+   1.76
+  ],
+  "ritmo": 5.1,
+  "voz": 0.785
+ }
+}
