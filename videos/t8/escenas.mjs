@@ -13,7 +13,7 @@ import { DECORADOS_T8, CAMISETA, cajaRegistradora, FILETE, gota, barraBillete } 
 export const ESTILO = "limpio";
 const F_COT = "Cálculo propio con las normas del BOE de cada año (salario mínimo, cotizaciones e IRPF; Madrid en 2026)";
 const F_NET = "Cálculo propio con las normas del BOE e IPC del INE (euros de 2026)";
-const F_IVA = "Dato oficial: BOE (Ley 30/1985 y Ley 37/1992 del IVA)";
+const F_IVA = "Dato oficial: BOE (leyes del IVA de 1985 y de 1992)";
 const F_GAS = "Dato oficial: BOE (impuestos especiales de 1985 y 1992 y ventas minoristas). Cálculo propio con el IPC del INE";
 const F_AHO = "Dato oficial: BOE (leyes del IRPF de 1985, 2004 y 2006). Cálculo propio";
 
@@ -55,10 +55,10 @@ export function escenas(D) {
   const miles = (v) => Math.round(v).toLocaleString("es-ES").replace(/,/g, ".");
   const Y = ["1986", "2006", "2026"];
   // Tres billetes partidos (barras de 100 €) con la parte del Estado en gris.
-  const billetes = (p, vals) => `${panel(300, 770, 480, 330)}${vals.map((v, i) => `
-    ${rot(318, 840 + i * 100, Y[i], 30, C.gris, "", "start")}<g transform="translate(420 ${830 + i * 100}) scale(.78)">${barraBillete(`${p}-b${i}`, 420)}</g>
-    <g id="${p}-v${i}">${rot(760, 842 + i * 100, r(v), 40, i === 2 ? C.azul : "#8A6316", "", "end")}</g>`).join("")}
-    ${rot(540, 1085, "AL ESTADO, DE CADA 100 €", 26, C.gris)}`;
+  const billetes = (p, vals, valores = true, y0 = 770) => `${panel(300, y0, 480, 330)}${vals.map((v, i) => `
+    ${rot(318, y0 + 70 + i * 100, Y[i], 30, C.gris, "", "start")}<g transform="translate(420 ${y0 + 60 + i * 100}) scale(.66)">${barraBillete(`${p}-b${i}`, 420)}${rot(10, 12, "ESTADO", 26, "#FFFDF8", "", "start")}</g>
+    ${valores ? `<g id="${p}-v${i}">${rot(768, y0 + 72 + i * 100, r(v), 40, i === 2 ? C.azul : "#8A6316", "", "end")}</g>` : ""}`).join("")}
+    ${rot(540, y0 + 315, "AL ESTADO, DE CADA 100 €", 26, C.gris)}`;
   return [
     // 1 · Padre (cocina): «¡Menuda nómina! En mis tiempos Hacienda no te sangraba así.»
     { n: 1, set: "vacio",
@@ -105,7 +105,7 @@ export function escenas(D) {
 
     // 3 · Padre (caja): «¿Ves? Lo mismo.»
     { n: 3, set: "vacio",
-      svg: `${billetes("s3", D.cajeroEstado)}${dos("s3")}<g transform="translate(850 1450)">${cajaRegistradora("s3-caja")}</g>`,
+      svg: `${billetes("s3", D.cajeroEstado, false)}${dos("s3")}<g transform="translate(850 1450)">${cajaRegistradora("s3-caja")}</g>`,
       tarjeta: tarjeta(3, "Padre", `<div class="tit">«¿Ves? <mark id="m3">Lo mismo</mark>.»</div>`, { tono: "pasado" }),
       fn: function (t, e) {
         const c = e.c;
@@ -121,7 +121,7 @@ export function escenas(D) {
     // 4 · Hijo (caja): «Lo mismo, pero hoy cobra mucho más: 10.700 € al año en 1986, en euros de hoy, y 16.000 ahora.»
     { n: 4, set: "vacio",
       svg: `${panel(300, 760, 480, 440)}${D.cajeroNeto.map((v, i) => `<g transform="translate(${390 + i * 150} 1110)">${Array.from({ length: Math.round(v / 1500) }, (_, k) => `<g id="s4-f${i}-${k}" transform="translate(0 ${-k * 26}) scale(.62)">${billete("s4-bb" + i + k)}</g>`).join("")}
-        <g id="s4-v${i}">${rot(0, -Math.round(v / 1500) * 26 - 40, miles(v) + " €", 32, i === 2 ? C.azul : "#8A6316")}</g>${rot(0, 60, Y[i], 30, C.gris)}</g>`).join("")}
+        <g id="s4-v${i}">${rot(0, -Math.round(v / 1500) * 26 - 40, miles(v) + " €", 26, i === 2 ? C.azul : "#8A6316")}</g>${rot(0, 60, Y[i], 30, C.gris)}</g>`).join("")}
         ${dos("s4")}<g transform="translate(850 1450)">${cajaRegistradora("s4-caja")}</g>`,
       tarjeta: tarjeta(4, "Lo que le llega al cajero al año, en euros de hoy", vs3(4, D.cajeroNeto.map((v) => miles(v) + "&nbsp;€"), ["en 1986", "en 2006", "en 2026"], undefined, 62), { fuente: F_NET, icono: bandera(44) }),
       fn: function (t, e) {
@@ -160,7 +160,7 @@ export function escenas(D) {
 
     // 6 · Hijo (banco): «Con 40.000 € de hoy, el Estado se quedaba 40 de cada 100 en 1986. Hoy, 43: 960 € menos en su bolsillo.»
     { n: 6, set: "vacio",
-      svg: `${billetes("s6", D.bancaEstado)}<g id="s6-mon">${moneda("s6-m")}</g><g id="s6-menos">${rot(0, 0, "−" + r(D.menos) + " € al año", 40, C.rojo)}</g>${dos("s6")}`,
+      svg: `${billetes("s6", D.bancaEstado, true, 840)}<g id="s6-mon">${moneda("s6-m")}</g><g id="s6-menos">${rot(0, 0, "−" + r(D.menos) + " € al año", 40, C.rojo)}</g>${dos("s6")}`,
       tarjeta: tarjeta(6, "Empleado de banca · al Estado, de cada 100 € que cuesta", `${vs3(6, D.bancaEstado.map(r), ["en 1986", "en 2006", "en 2026"])}
         <div class="nota">Gana ${miles(D.bancaBruto[2])} € brutos de hoy (con el IPC: ${miles(D.bancaBruto[0])} pesetas en 1986 y ${miles(D.bancaBruto[1])} € en 2006). En euros de hoy le llegan ${r(D.menos)} € menos que en 1986</div>`, { fuente: F_COT, icono: bandera(44) }),
       fn: function (t, e) {
@@ -178,7 +178,7 @@ export function escenas(D) {
         if (km < 0) { ver("s6-mon", false); ver("s6-menos", false); }
         else {
           const x = 840 - 380 * Math.min(1, km / 1.4), y = km < 0.4 ? 1230 + 170 * (km / 0.4) ** 2 : 1400 - Math.abs(Math.sin((km - 0.4) * 7)) * 40 * Math.exp(-(km - 0.4) * 2);
-          T("s6-mon", x, y, { s: 0.55, r: -km * 500 }); T("s6-menos", 540, 1190, { op: clamp(km / 0.3) });
+          T("s6-mon", x, y, { s: 0.55, r: -km * 500 }); T("s6-menos", 540, 1240, { op: clamp(km / 0.3) });
         }
         persona("s6-padre", t, { x: 260, y: 1440, s: 0.78, mira: 1, boca: [[0, "seria"], [c["c6-960"], "o"]], ojos: [[0, "normal"], [c["c6-960"], "grandes"]], brazo: [[0, "piensa"], [c["c6-43"], "abajo"]], fase: 1 });
         persona("s6-hijo", t, { x: 880, y: 1440, s: 0.78, mira: -1, boca: habla(t, e), brazo: [[0, "abajo"], [c["c6-40"] - 0.2, "senala"], [c["c6-960"], "hombros"]], espejo: true, fase: 2 });
@@ -229,7 +229,7 @@ export function escenas(D) {
     // 9 · Hijo (súper): «Y la ropa, del 12 al 21.»
     { n: 9, set: "vacio",
       svg: `${panel(300, 770, 480, 430)}<g id="s9-cam" transform="translate(440 990)">${CAMISETA("#9ED0E6", 1.6)}</g><g id="s9-t">${etiquetaIva("s9-e", "12 %")}</g>
-        ${D.ivaRopa.map((v, i) => `<rect id="s9-r${i}" x="${600 + i * 50}" y="${1150 - v * 12}" width="36" height="${v * 12}" rx="6" fill="${i === 2 ? C.azul : "#D9A75A"}"/>${rot(618 + i * 50, 1182, Y[i], 18, C.gris)}`).join("")}
+        ${D.ivaRopa.map((v, i) => `<rect id="s9-r${i}" x="${582 + i * 62}" y="${1150 - v * 12}" width="40" height="${v * 12}" rx="6" fill="${i === 2 ? C.azul : "#D9A75A"}"/>${rot(602 + i * 62, 1182, Y[i], 18, C.gris)}`).join("")}
         <g transform="translate(-40 1452) scale(.75)">${carro("s9-c")}</g>${dos("s9")}`,
       tarjeta: tarjeta(9, "IVA de la ropa", `${vs3(9, D.ivaRopa.map((v) => v + "&nbsp;%"), ["en 1986", "en 2006", "en 2026"])}
         <div class="nota">El 12, 16 y 21 % es el tipo general: también la luz, el móvil y casi todo lo demás</div>`, { fuente: F_IVA, icono: bandera(44) }),
@@ -267,9 +267,9 @@ export function escenas(D) {
 
     // 11 · Hijo (gasolinera): «Paga un impuesto por cada litro: 56 céntimos de hoy en 1986, y 47 ahora. Pero el IVA ha subido del 12 al 21 %.»
     { n: 11, set: "vacio",
-      svg: `${panel(300, 770, 480, 430)}${D.gas.map((v, i) => `<g transform="translate(${390 + i * 150} 1100)"><g id="s11-g${i}">${gota("s11-gg" + i, i === 2 ? C.azul : "#C8902E")}</g>
-          <g id="s11-v${i}">${rot(0, -240 * v / D.gas[1] + 20, es(v, 2) + " €", 34, i === 2 ? C.azul : "#8A6316")}</g>${rot(0, 60, Y[i], 30, C.gris)}</g>`).join("")}
-        ${rot(540, 800, "IMPUESTO POR LITRO, EN EUROS DE HOY", 22, C.gris)}<g id="s11-t">${etiquetaIva("s11-e", "IVA 12 %")}</g>${dos("s11", "", "")}`,
+      svg: `${panel(300, 820, 480, 390)}${D.gas.map((v, i) => `<g transform="translate(${390 + i * 150} 1110)"><g id="s11-g${i}">${gota("s11-gg" + i, i === 2 ? C.azul : "#C8902E")}</g>
+          <g id="s11-v${i}">${rot(0, -150 * 0.85 * v / D.gas[1] - 16, es(v, 2) + " €", 30, i === 2 ? C.azul : "#8A6316")}</g>${rot(0, 60, Y[i], 28, C.gris)}</g>`).join("")}
+        <g id="s11-t">${etiquetaIva("s11-e", "IVA 12 %")}</g>${dos("s11", "", "")}`,
       tarjeta: tarjeta(11, "Impuesto por litro de gasolina, en euros de hoy", `${vs3(11, D.gas.map((v) => es(v, 2) + "&nbsp;€"), ["en 1986", "en 2006", "en 2026"])}
         <div class="nota">Y encima, el IVA: 12 % en 1986, 16 % en 2006 y 21 % hoy. 2006, en Madrid</div>`, { fuente: F_GAS, icono: bandera(44) }),
       fn: function (t, e) {
@@ -278,13 +278,13 @@ export function escenas(D) {
         // Gotas que caen y crecen hasta el impuesto por litro de cada año.
         const tt = [c["c11-56"], c["c11-56"] + 0.6, c["c11-47"]];
         for (let i = 0; i < 3; i++) {
-          const k = (t - tt[i]) / 0.5, s = 1.2 * D.gas[i] / D.gas[1];
+          const k = (t - tt[i]) / 0.5, s = 0.85 * D.gas[i] / D.gas[1];
           if (k < 0) { ver(`s11-g${i}`, false); ver(`s11-v${i}`, false); continue; }
           ver(`s11-g${i}`, true); ver(`s11-v${i}`, true);
           T(`s11-g${i}`, 0, -60 * (1 - fuera(k)), { s: s * rebote(k) }); css(`s11-v${i}`, "opacity", clamp((t - tt[i] - 0.3) / 0.3));
         }
         sube("c11-a", t, tt[0]); sube("c11-b", t, tt[1]); sube("c11-c", t, tt[2]);
-        if (pop("s11-t", t, c["c11-iva"], 820, 930, { s: 0.7, r: -6 }) >= 0) txt("s11-e-t", t < c["c11-21"] ? "IVA 12 %" : "IVA 21 %");
+        if (pop("s11-t", t, c["c11-iva"], 560, 850, { s: 0.6, r: -6 }) >= 0) txt("s11-e-t", t < c["c11-21"] ? "IVA 12 %" : "IVA 21 %");
         persona("s11-padre", t, { x: 210, y: 1440, s: 0.78, mira: 1, boca: [[0, "seria"], [c["c11-47"], "sonrisa"], [c["c11-21"], "o"]], ojos: [[0, "normal"], [c["c11-21"], "grandes"]], brazo: [[0, "empuja"], [c["c11-56"], "abajo"]], fase: 1 });
         persona("s11-hijo", t, { x: 900, y: 1440, s: 0.78, mira: -1, boca: habla(t, e), brazo: [[0, "abajo"], [c["c11-litro"] - 0.2, "senala"], [c["c11-iva"], "arriba"]], espejo: true, fase: 2 });
       } },

@@ -1,0 +1,40 @@
+{
+ "huella": "91b831e1e616270c",
+ "semilla": 7000,
+ "texto": "¡Y luego vas a la compra y otra vez a pagar!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0187,
+  "oido": "Y luego vas a la compra y otra vez a pagar.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.4,
+   0.92,
+   1.06,
+   1.16,
+   1.48,
+   1.66,
+   1.82,
+   2.04,
+   2.14
+  ],
+  "t1": [
+   0.14,
+   0.4,
+   0.92,
+   1.06,
+   1.16,
+   1.48,
+   1.66,
+   1.82,
+   2.04,
+   2.14,
+   2.34
+  ],
+  "ritmo": 12.1,
+  "voz": 0.887
+ }
+}

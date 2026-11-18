@@ -1,0 +1,32 @@
+{
+ "huella": "52362bb3f0c10b24",
+ "semilla": 10000,
+ "texto": "¡Y la gasolina, que es todo impuestos!",
+ "ev": {
+  "ok": true,
+  "nota": 1.018,
+  "oido": "y la gasolina, que es todo impuestos.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.24,
+   1.16,
+   1.32,
+   1.54,
+   1.86
+  ],
+  "t1": [
+   0.14,
+   0.24,
+   0.78,
+   1.32,
+   1.54,
+   1.86,
+   2.44
+  ],
+  "ritmo": 10.3,
+  "voz": 0.886
+ }
+}
