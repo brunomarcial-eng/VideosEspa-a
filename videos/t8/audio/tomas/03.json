@@ -1,27 +1,31 @@
 {
- "huella": "620cf5c62c506e05",
- "semilla": 3004,
- "texto": "¿Ves? Lo mismo.",
+ "huella": "db546e54d11b00b3",
+ "semilla": 3202,
+ "texto": "¿Lo ves? Lo mismo que antes.",
  "ev": {
-  "ok": false,
-  "nota": 0.7675,
-  "oido": "¿Ves? Lo mismo.",
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Lo ves, lo mismo que antes.",
   "parecido": 1.0,
-  "problemas": [
-   "ritmo raro (5.1 letras/s)",
-   "voz distinta (0.79)"
-  ],
+  "problemas": [],
   "t0": [
    0.0,
-   1.04,
-   1.38
+   0.18,
+   0.88,
+   1.1,
+   1.34,
+   1.54
   ],
   "t1": [
-   0.44,
-   1.38,
+   0.18,
+   0.4,
+   1.1,
+   1.34,
+   1.54,
    1.76
   ],
-  "ritmo": 5.1,
-  "voz": 0.785
- }
+  "ritmo": 9.4,
+  "voz": 0.842
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.002; parecido 0.869)"
 }

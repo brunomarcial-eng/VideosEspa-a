@@ -1,39 +1,26 @@
 plano 1: «¡Menuda nómina! En mis tiempos Hacienda no te sangraba así.»
-    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.919 · 4.3 s · 10.9 l/s · «Menuda nómina, en mis tiempos hacienda no te sangraba así.»
+    toma guardada (semilla 1201): BUENA · «Menuda nómina, en mis tiempos hacienda no te sangraba así.»
 plano 2: «Un cajero con el salario mínimo: de cada 100 € que pagaba la empresa, 30 iban al Estado en 1986. Hoy, 29.»
-    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.943 · 9.1 s · 13.1 l/s · «un cajero con el salario mínimo. De cada 100 euros que pagaba la empresa, 30 iban al estado en 1986. Hoy, 29.»
-plano 3: «¿Ves? Lo mismo.»
-    toma 1 (semilla 3000): mala · 1.0 · voz 0.755 · 1.7 s · 6.0 l/s · «¿Ves? Lo mismo.» · ritmo raro (6.0 letras/s); voz distinta (0.76)
-    toma 2 (semilla 3001): mala · 1.0 · voz 0.781 · 1.9 s · 5.4 l/s · «¿Ves? Lo mismo.» · ritmo raro (5.4 letras/s); voz distinta (0.78)
-    toma 3 (semilla 3002): mala · 1.0 · voz 0.733 · 1.6 s · 6.4 l/s · «¿Ves? Lo mismo.» · ritmo raro (6.4 letras/s); voz distinta (0.73)
-    toma 4 (semilla 3003): mala · 0.9 · voz 0.779 · 1.5 s · 6.6 l/s · «¿Pes? Lo mismo.» · ritmo raro (6.6 letras/s); voz distinta (0.78)
-    toma 5 (semilla 3004): mala · 1.0 · voz 0.785 · 1.9 s · 5.1 l/s · «¿Ves? Lo mismo.» · ritmo raro (5.1 letras/s); voz distinta (0.79)
+    toma guardada (semilla 2000): BUENA · «un cajero con el salario mínimo. De cada 100 euros que pagaba la empresa, 30 iban al estado en 1986. Hoy, 29.»
+plano 3: «¿Lo ves? Lo mismo que antes.»
+    toma guardada (semilla 3202): BUENA · «Lo ves, lo mismo que antes.»
 plano 4: «Lo mismo, pero hoy cobra mucho más: 10.700 € al año en 1986, en euros de hoy, y 16.000 ahora.»
-    toma 1 (semilla 4000): mala · 1.0 · voz 0.916 · 8.8 s · 14.4 l/s · «Lo mismo, pero hoy cobra mucho más, 10.700 euros al año en 1986, en euros de hoy y 16.000 ahora.» · no oigo: 16.000
-    toma 2 (semilla 4001): mala · 1.0 · voz 0.937 · 8.7 s · 14.5 l/s · «Lo mismo, pero hoy cobra mucho más, 10.700 euros al año en 1986, en euros de hoy y 16.000 ahora.» · no oigo: 16.000
-    toma 3 (semilla 4002): mala · 1.0 · voz 0.935 · 8.0 s · 16.0 l/s · «Lo mismo, pero hoy cobra mucho más, 10.700 euros al año en 1986, en euros de hoy y 16.000 ahora.» · no oigo: 16.000
-    toma 4 (semilla 4003): mala · 1.0 · voz 0.935 · 9.2 s · 13.8 l/s · «Lo mismo, pero hoy cobra mucho más. 10.700 euros al año en 1986 en euros de hoy y 16.000 ahora.» · no oigo: 16.000
-    toma 5 (semilla 4004): mala · 1.0 · voz 0.923 · 9.0 s · 14.2 l/s · «Lo mismo, pero hoy cobra mucho más, 10.700 euros al año en 1986, en euros de hoy y 16.000 ahora.» · no oigo: 16.000
+    toma guardada (semilla 4001): mala · «Lo mismo, pero hoy cobra mucho más, 10.700 euros al año en 1986, en euros de hoy y 16.000 ahora.»
 plano 5: «¿Y uno de banca, que gana bien?»
-    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.885 · 2.0 s · 10.8 l/s · «¿Y uno de Banca que gana bien?»
+    toma guardada (semilla 5000): BUENA · «¿Y uno de Banca que gana bien?»
 plano 6: «Con 40.000 € de hoy, el Estado se quedaba 40 de cada 100 en 1986. Hoy, 43: 960 € menos en su bolsillo.»
-    toma 1 (semilla 6000): mala · 1.0 · voz 0.963 · 8.9 s · 17.5 l/s · «Con 40.000 euros de hoy, el estado se quedaba 40 de cada 100 en 1986. Hoy 43, 960 euros menos en su bolsillo.» · no oigo: 40.000
-    toma 2 (semilla 6001): mala · 1.0 · voz 0.947 · 10.3 s · 15.2 l/s · «Con 40.000 euros de hoy, el estado se quedaba 40 de cada 100 en 1986. Hoy, 43, 960 euros menos en su bolsillo.» · no oigo: 40.000
-    toma 3 (semilla 6002): mala · 1.0 · voz 0.943 · 10.1 s · 15.4 l/s · «Con 40.000 euros de hoy, el estado se quedaba 40 de cada 100 en 1986, hoy 43, 960 euros menos en su bolsillo.» · no oigo: 40.000
-    toma 4 (semilla 6003): mala · 1.0 · voz 0.952 · 9.4 s · 16.7 l/s · «Con 40.000 euros de hoy, el estado se quedaba 40 de cada 100 en 1986. Hoy, 43, 960 euros menos en su bolsillo.» · no oigo: 40.000
-    toma 5 (semilla 6004): mala · 1.0 · voz 0.954 · 9.8 s · 16.0 l/s · «Con 40.000 euros de hoy, el estado se quedaba 40 de cada 100 en 1986, hoy 43, 960 euros menos en su bolsillo.» · no oigo: 40.000
+    toma guardada (semilla 6000): mala · «Con 40.000 euros de hoy, el estado se quedaba 40 de cada 100 en 1986. Hoy 43, 960 euros menos en su bolsillo.»
 plano 7: «¡Y luego vas a la compra y otra vez a pagar!»
-    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.887 · 2.6 s · 12.1 l/s · «Y luego vas a la compra y otra vez a pagar.»
+    toma guardada (semilla 7200): BUENA · «Y luego vas a la compra y otra vez apagar.»
 plano 8: «El IVA del pan, la leche y la fruta ha bajado: del 6 al 4 %. Pero la carne, del 6 al 10.»
-    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.914 · 7.0 s · 11.8 l/s · «el IVA del pan, la leche y la fruta ha bajado, del 6 al 4%, pero la carne, del 6 al 10.»
+    toma guardada (semilla 8000): BUENA · «el IVA del pan, la leche y la fruta ha bajado, del 6 al 4%, pero la carne, del 6 al 10.»
 plano 9: «Y la ropa, del 12 al 21.»
-    toma 1 (semilla 9000): mala · 1.0 · voz 0.838 · 2.1 s · 11.8 l/s · «y la ropa del 12 al 21.» · voz distinta (0.84)
-    toma 2 (semilla 9001): BUENA · 1.0 · voz 0.855 · 1.9 s · 12.9 l/s · «y la ropa del 12 al 21.»
+    toma guardada (semilla 9001): BUENA · «y la ropa del 12 al 21.»
 plano 10: «¡Y la gasolina, que es todo impuestos!»
-    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.886 · 2.8 s · 10.3 l/s · «y la gasolina, que es todo impuestos.»
+    toma guardada (semilla 10000): BUENA · «y la gasolina, que es todo impuestos.»
 plano 11: «Paga un impuesto por cada litro: 56 céntimos de hoy en 1986, y 47 ahora. Pero el IVA ha subido del 12 al 21 %.»
-    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.945 · 10.0 s · 14.5 l/s · «Paga un impuesto por cada litro. 56 céntimos de hoy en 1986 y 47 ahora. Pero el IVA ha subido del 12 al 21%.»
+    toma guardada (semilla 11000): BUENA · «Paga un impuesto por cada litro. 56 céntimos de hoy en 1986 y 47 ahora. Pero el IVA ha subido del 12 al 21%.»
 plano 12: «¿Y los ahorros? Los intereses del de banca pagaban un 26 % en 1986. Hoy, un 19 %.»
-    toma 1 (semilla 12000): BUENA · 1.0 · voz 0.948 · 8.4 s · 13.5 l/s · «y los ahorros, los intereses del de banca pagaban un 26% en 1986. Hoy, un 19%.»
+    toma guardada (semilla 12000): BUENA · «y los ahorros, los intereses del de banca pagaban un 26% en 1986. Hoy, un 19%.»
 plano 13: «¿Pagamos mucho o poco al Estado? ¿Tú qué opinas?»
-    toma 1 (semilla 13000): BUENA · 1.0 · voz 0.903 · 2.7 s · 13.4 l/s · «¿Pagamos mucho o poco al Estado? ¿Tú qué opinas?»
+    toma guardada (semilla 13000): BUENA · «¿Pagamos mucho o poco al Estado? ¿Tú qué opinas?»

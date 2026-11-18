@@ -1,38 +1,39 @@
 {
  "huella": "b6435e9cfe2dd033",
- "semilla": 1000,
+ "semilla": 1201,
  "texto": "¡Menuda nómina! En mis tiempos Hacienda no te sangraba así.",
  "ev": {
   "ok": true,
-  "nota": 1.0343,
+  "nota": 1.0,
   "oido": "Menuda nómina, en mis tiempos hacienda no te sangraba así.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.46,
-   1.5,
-   1.78,
-   1.94,
-   2.44,
-   3.0,
-   3.3,
-   3.46,
-   3.94
-  ],
-  "t1": [
-   0.46,
-   1.02,
-   1.78,
-   1.94,
-   2.44,
-   3.0,
-   3.3,
-   3.46,
-   3.94,
+   0.48,
+   1.64,
+   1.92,
+   2.08,
+   2.56,
+   3.08,
+   3.42,
+   3.58,
    4.14
   ],
-  "ritmo": 10.9,
-  "voz": 0.919
- }
+  "t1": [
+   0.48,
+   1.04,
+   1.92,
+   2.08,
+   2.56,
+   3.08,
+   3.42,
+   3.58,
+   4.14,
+   4.36
+  ],
+  "ritmo": 10.4,
+  "voz": 0.913
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia -0.003; parecido 0.932)"
 }
