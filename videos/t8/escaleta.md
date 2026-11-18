@@ -1,21 +1,21 @@
-# Escaleta T8 · «¿Cuánto de tu sueldo se queda el Estado?»
+# Escaleta T8, versión 2 · «¿Cuánto de tu sueldo se queda el Estado?»
 
-Sexta parte de padre contra hijo, con decorados que cambian como en un sueño y los personajes en movimiento, como en T7. Guion verificado en `videos/t8/guion.md`; datos aprobados en `videos/t8/paso-1-datos.md` (versión 3).
+Sexta parte de padre contra hijo, con decorados que cambian como en un sueño y los personajes en movimiento, como en T7. Guion verificado en `videos/t8/guion.md`; datos en `data/clean/t8_impuestos_sueldo.json` (`scripts/calcular_t8.py`).
+
+**Versión 2 (Bruno, 18-11-2026):** el vídeo se centra en lo que ha empeorado frente a 2006 y 1986. Fuera el cajero con el salario mínimo, el IVA del pan y los ahorros. Entra el sueldo medio (con el mismo sueldo, hoy queda menos limpio) y el gasóleo, con los impuestos que fija la ley y sin las rebajas temporales de 2026. Contraste completo en `videos/t8/contraste.md`.
 
 | # | Dónde | Quién | Lo que se oye | Tarjeta | Lo que pasa |
 |---|---|---|---|---|---|
 | 1 | Cocina | Padre | ¡Menuda nómina! En mis tiempos Hacienda no te sangraba así. | ¿Cuánto de tu sueldo se queda el Estado? | El padre entra agitando la nómina; aparece en grande con un sello rojo de RETENCIONES |
-| 2 | Caja del súper | Hijo | Un cajero con el salario mínimo: de cada 100 € que pagaba la empresa, 30 iban al Estado en 1986. Hoy, 29. | 1986: **30** · 2006: **29** · 2026: **29** | El hijo, de cajero, pasa productos por la cinta; tres billetes de 100 € con la parte del Estado en gris |
-| 3 | Caja del súper | Padre | ¿Lo ves? Lo mismo que antes. | «¿Lo ves? Lo mismo que antes.» | El padre se acerca, señala los billetes y asiente |
-| 4 | Caja del súper | Hijo | Lo mismo, pero hoy cobra mucho más: 10.700 € al año en 1986, en euros de hoy, y 16.000 ahora. | **10.671 €** · 10.699 € · **15.983 €** | Caen fajos de billetes: el de hoy, mucho más alto |
-| 5 | Banco | Padre | ¿Y uno de banca, que gana bien? | «¿Y uno de banca?» | Entran los dos andando al banco |
-| 6 | Banco | Hijo | Con 40.000 € de hoy, el Estado se quedaba 40 de cada 100 en 1986. Hoy, 43: 960 € menos en su bolsillo. | 1986: **40** · 2006: **41** · 2026: **43** | Billetes partidos; una moneda se le escapa del bolsillo y rueda: «−960 € al año». **La música se corta** con «43» |
-| 7 | Pasillo del súper | Padre | ¡Y luego vas a la compra y otra vez a pagar! | «¡Y luego, la compra!» | El padre empuja el carro por el pasillo |
-| 8 | Súper | Hijo | El IVA del pan, la leche y la fruta ha bajado: del 6 al 4 %. Pero la carne, del 6 al 10. | 1986: **6 %** · 2026: **4 %** | Pan, leche y manzana con su etiqueta de IVA que baja; la carne, con la suya que sube |
-| 9 | Súper | Hijo | Y la ropa, del 12 al 21. | **12 %** · 16 % · **21 %** | Una camiseta con la etiqueta que sube y tres barras |
-| 10 | Gasolinera | Padre | ¡Y la gasolina, que es todo impuestos! | «¡La gasolina es todo impuestos!» | El padre llega al surtidor, coge la manguera y el contador corre |
-| 11 | Gasolinera | Hijo | Paga un impuesto por cada litro: 56 céntimos de hoy en 1986, y 47 ahora. Pero el IVA ha subido del 12 al 21 %. | **0,56 €** · 0,64 € · **0,47 €** (euros de hoy) | Tres gotas de impuesto que caen y crecen; la etiqueta del IVA pasa del 12 al 21 % |
-| 12 | Banco | Hijo | ¿Y los ahorros? Los intereses del de banca pagaban un 26 % en 1986. Hoy, un 19 %. | **25,9 %** · 28 % · **19 %** | De una hucha saltan monedas; tres barras |
-| 13 | Cocina | Hijo | ¿Pagamos mucho o poco al Estado? ¿Tú qué opinas? | ¿Pagamos mucho o poco al Estado? | Botones MUCHO y POCO; el padre señala MUCHO, el hijo se encoge de hombros, y los dos miran a cámara |
+| 2 | Cocina | Hijo | Pues tienes razón: con el mismo sueldo, hoy me quedan 625 € menos al año que en 2006, y 405 menos que en 1986. | 1986: **24.758 €** · 2006: 24.978 € · 2026: **24.353 €** | Caen tres fajos de billetes; del de hoy se escapa uno: «−625 € frente a 2006» |
+| 3 | Banco | Padre | ¿Y uno de banca, que gana bien? | «¿Y uno de banca?» | Entran los dos andando al banco |
+| 4 | Banco | Hijo | Con 40.000 € de hoy, el Estado se quedaba 40 de cada 100 en 1986. Hoy, 43: 960 € menos en su bolsillo. | 1986: **40** · 2006: **41** · 2026: **43** | Billetes partidos; una moneda se le escapa del bolsillo y rueda: «−960 € al año». **La música se corta** con «43» |
+| 5 | Pasillo del súper | Padre | ¡Y luego vas a la compra y otra vez a pagar! | «¡Y luego, la compra!» | El padre empuja el carro por el pasillo |
+| 6 | Súper | Hijo | La carne y el pescado pagaban un 6 % de IVA en 1986. Hoy, un 10. | **6 %** · 7 % · **10 %** | Un filete con su etiqueta de IVA que sube; tres barras |
+| 7 | Súper | Hijo | Y la ropa, del 12 al 21. | **12 %** · 16 % · **21 %** | Una camiseta con la etiqueta que sube y tres barras |
+| 8 | Gasolinera | Padre | ¡Y la gasolina, que es todo impuestos! | «¡La gasolina es todo impuestos!» | El padre llega al surtidor, coge la manguera y el contador corre |
+| 9 | Gasolinera | Hijo | Y cada vez más cara: el gasóleo, ya descontada la inflación, cuesta un 27 % más que en 2006 y un 39 % más que en 2016. | 2006: 1,45 € · 2016: 1,33 € · 2026: **1,85 €** | Tres barras con el precio del litro; la de hoy, la más alta |
+| 10 | Gasolinera | Hijo | Y como el IVA va en porcentaje, cuanto más cara, más se lleva Hacienda: 20 céntimos de hoy por litro en 2006, y 32 ahora. | 2006: 0,20 € · 2016: 0,23 € · 2026: **0,32 €** | Tres gotas de IVA que caen y crecen; la etiqueta pasa del 16 al 21 % |
+| 11 | Cocina | Hijo | ¿Pagamos mucho o poco al Estado? ¿Tú qué opinas? | ¿Pagamos mucho o poco al Estado? | Botones MUCHO y POCO; el padre señala MUCHO, el hijo se encoge de hombros, y los dos miran a cámara |
 
-**Cambio sobre el borrador aprobado:** «¿Ves? Lo mismo.» pasa a «¿Lo ves? Lo mismo que antes.», porque la frase tan corta no sonaba con la voz del padre.
+**Qué no sale y por qué:** el impuesto especial por litro, en euros de hoy, es más bajo que en 2006 y 2016 (la ley no lo ha subido desde entonces), así que «se lleva más» se dice solo del IVA, que sí sube con el precio. El salario mínimo y el IVA del pan, que han mejorado, van en la descripción.

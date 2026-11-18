@@ -1,32 +1,41 @@
 {
- "huella": "736f43e7e2d01647",
- "semilla": 5000,
- "texto": "¿Y uno de banca, que gana bien?",
+ "huella": "91b831e1e616270c",
+ "semilla": 7200,
+ "texto": "¡Y luego vas a la compra y otra vez a pagar!",
  "ev": {
   "ok": true,
-  "nota": 1.0176,
-  "oido": "¿Y uno de Banca que gana bien?",
+  "nota": 1.0,
+  "oido": "Y luego vas a la compra y otra vez apagar.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.18,
+   0.12,
    0.36,
-   0.52,
-   0.96,
-   1.42,
-   1.66
+   0.64,
+   0.74,
+   0.84,
+   1.12,
+   1.38,
+   1.54,
+   1.74,
+   1.8
   ],
   "t1": [
-   0.18,
+   0.12,
    0.36,
-   0.52,
-   0.96,
-   1.42,
-   1.66,
-   1.82
+   0.64,
+   0.74,
+   0.84,
+   1.12,
+   1.38,
+   1.54,
+   1.74,
+   1.8,
+   2.1
   ],
-  "ritmo": 10.8,
-  "voz": 0.885
- }
+  "ritmo": 14.3,
+  "voz": 0.854
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.022; parecido 0.891)"
 }

@@ -331,5 +331,132 @@
   "ganancias_al_vender_con_mas_de_un_ano_2006": 15.0,
   "nota": "Intereses de una cuenta o un depósito, primeros euros. En 1986 y 2006 se sumaban al sueldo y pagaban al tipo marginal de cada uno; desde 2007 van a la base del ahorro, con su propia escala (19 % hasta 6.000 €, 21 % hasta 50.000 €, 23 %, 27 % y 30 %). En 2006, las ganancias por vender algo comprado hacía más de un año pagaban un 15 %."
  },
+ "sueldo_medio": {
+  "bruto_2024": 29540.26,
+  "bruto_en_euros_de_2026": 31335,
+  "nota": "Sueldo medio bruto de 2024 (INE, EAES), pasado a euros de 2026 con el IPC, y ese mismo poder de compra en 1986 y 2006. Cotizaciones e IRPF de cada año, como en el resto de T8 (Madrid en 2026; accidentes de trabajo con la tarifa del comercio; en 1986, sin el tope por categoría, que en todo caso habría dejado más neto en 1986).",
+  "1986": {
+   "bruto": 1533984,
+   "neto_en_euros_de_2026": 24758,
+   "al_estado_en_euros_de_2026": 16824,
+   "pct_estado_del_coste": 40.46,
+   "pct_irpf_del_bruto": 14.99
+  },
+  "2006": {
+   "bruto": 20687,
+   "neto_en_euros_de_2026": 24978,
+   "al_estado_en_euros_de_2026": 16439,
+   "pct_estado_del_coste": 39.69,
+   "pct_irpf_del_bruto": 13.94
+  },
+  "2026": {
+   "bruto": 31335,
+   "neto_en_euros_de_2026": 24353,
+   "al_estado_en_euros_de_2026": 17103,
+   "pct_estado_del_coste": 41.26,
+   "pct_irpf_del_bruto": 15.78
+  },
+  "menos_que_1986": 405,
+  "menos_que_2006": 625
+ },
+ "carburante": {
+  "nota": "Comisión Europea, Weekly Oil Bulletin: media de los precios semanales de España de cada año (2026: de enero a noviembre). 2006 y 2016: precio con los impuestos de entonces. 2026: precio antes de impuestos más los impuestos que fija la ley (gasóleo: 307 + 72 € por 1.000 litros; gasolina 95: 400,69 + 72; IVA del 21 %), sin las rebajas temporales de 2026. IVA de cada litro = precio × IVA / (100 + IVA). En euros de 2026, con el IPC del INE.",
+  "gasoleo": {
+   "2006": {
+    "semanas": 49,
+    "precio": 0.9586,
+    "antes_de_impuestos": 0.5229,
+    "iva_por_litro": 0.1322,
+    "impuestos_por_litro": 0.4357,
+    "iva_pct": 16,
+    "en_euros_de_2026": {
+     "precio": 1.452,
+     "iva_por_litro": 0.2,
+     "impuestos_por_litro": 0.66,
+     "antes_de_impuestos": 0.792
+    }
+   },
+   "2016": {
+    "semanas": 50,
+    "precio": 1.012,
+    "antes_de_impuestos": 0.4684,
+    "iva_por_litro": 0.1756,
+    "impuestos_por_litro": 0.5436,
+    "iva_pct": 21,
+    "en_euros_de_2026": {
+     "precio": 1.328,
+     "iva_por_litro": 0.23,
+     "impuestos_por_litro": 0.713,
+     "antes_de_impuestos": 0.615
+    }
+   },
+   "2026": {
+    "semanas": 45,
+    "precio": 1.8504,
+    "antes_de_impuestos": 1.1503,
+    "iva_por_litro": 0.3212,
+    "impuestos_por_litro": 0.7002,
+    "iva_pct": 21,
+    "en_euros_de_2026": {
+     "precio": 1.85,
+     "iva_por_litro": 0.321,
+     "impuestos_por_litro": 0.7,
+     "antes_de_impuestos": 1.15
+    }
+   },
+   "sube_pct_real": {
+    "2006": 27.4,
+    "2016": 39.3
+   }
+  },
+  "gasolina95": {
+   "2006": {
+    "semanas": 49,
+    "precio": 1.0352,
+    "antes_de_impuestos": 0.485,
+    "iva_por_litro": 0.1428,
+    "impuestos_por_litro": 0.5503,
+    "iva_pct": 16,
+    "en_euros_de_2026": {
+     "precio": 1.568,
+     "iva_por_litro": 0.216,
+     "impuestos_por_litro": 0.834,
+     "antes_de_impuestos": 0.735
+    }
+   },
+   "2016": {
+    "semanas": 50,
+    "precio": 1.1495,
+    "antes_de_impuestos": 0.4881,
+    "iva_por_litro": 0.1995,
+    "impuestos_por_litro": 0.6614,
+    "iva_pct": 21,
+    "en_euros_de_2026": {
+     "precio": 1.508,
+     "iva_por_litro": 0.262,
+     "impuestos_por_litro": 0.868,
+     "antes_de_impuestos": 0.641
+    }
+   },
+   "2026": {
+    "semanas": 45,
+    "precio": 1.7702,
+    "antes_de_impuestos": 0.9902,
+    "iva_por_litro": 0.3072,
+    "impuestos_por_litro": 0.7799,
+    "iva_pct": 21,
+    "en_euros_de_2026": {
+     "precio": 1.77,
+     "iva_por_litro": 0.307,
+     "impuestos_por_litro": 0.78,
+     "antes_de_impuestos": 0.99
+    }
+   },
+   "sube_pct_real": {
+    "2006": 12.9,
+    "2016": 17.4
+   }
+  }
+ },
  "nota": "Cálculo propio (C) con las normas del BOE de cada año (ficheros en data/raw). Parte que va al Estado = IRPF + cotizaciones del trabajador y de la empresa, sobre lo que le cuesta a la empresa. 1986: cotización por contingencias comunes con el tope del grupo 5 (146.070 pesetas al mes); accidentes de trabajo con la tarifa de 1979 rebajada un 10 %. 2006: desempleo y FOGASA de la empresa bajaron el 1 de julio (media del año). 2026: escala y mínimo autonómicos de Madrid; con otra comunidad, el IRPF del empleado de banca cambia unos cientos de euros. IPC de 2026: media de los meses publicados."
 }

@@ -1,41 +1,32 @@
 {
- "huella": "91b831e1e616270c",
- "semilla": 7200,
- "texto": "¡Y luego vas a la compra y otra vez a pagar!",
+ "huella": "8c0a3d2932106853",
+ "semilla": 9001,
+ "texto": "Y la ropa, del 12 al 21.",
  "ev": {
   "ok": true,
-  "nota": 1.0,
-  "oido": "Y luego vas a la compra y otra vez apagar.",
+  "nota": 1.0024,
+  "oido": "y la ropa del 12 al 21.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.12,
-   0.36,
+   0.14,
+   0.24,
    0.64,
-   0.74,
-   0.84,
-   1.12,
-   1.38,
-   1.54,
-   1.74,
-   1.8
+   0.96,
+   1.24,
+   1.42
   ],
   "t1": [
-   0.12,
-   0.36,
+   0.14,
+   0.24,
    0.64,
-   0.74,
-   0.84,
-   1.12,
-   1.38,
-   1.54,
-   1.74,
-   1.8,
-   2.1
+   0.96,
+   1.24,
+   1.42,
+   1.68
   ],
-  "ritmo": 14.3,
-  "voz": 0.854
- },
- "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.022; parecido 0.891)"
+  "ritmo": 12.9,
+  "voz": 0.855
+ }
 }

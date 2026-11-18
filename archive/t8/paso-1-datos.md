@@ -116,3 +116,18 @@ Decorados como en un sueño: cocina → caja del súper → oficina del banco �
 10. **Hijo:** Paga un impuesto por cada litro: 56 céntimos de hoy en 1986, y 47 ahora. Pero el IVA ha subido del 12 al 21 %.
 11. **Hijo** (con una hucha): ¿Y los ahorros? Los intereses del de banca pagaban un 26 % en 1986. Hoy, un 19 %.
 12. **Hijo, a cámara:** ¿Pagamos mucho o poco al Estado? ¿Tú qué opinas?
+
+## Versión 4 (18-11-2026): lo que ha empeorado
+Bruno no está conforme con la visión de «estamos mejor» (contraste en `videos/t8/contraste.md`) y decide:
+1. **Gasolina sin la rebaja temporal de 2026:** el vídeo se emite durante meses y la rebaja acaba en diciembre. El balance se hace con los impuestos que fija la ley. No se menciona la rebaja.
+2. **Mostrar que el carburante es mucho más caro y que el Estado se lleva más.**
+3. **Quitar los impuestos de los intereses del ahorro.**
+4. **Priorizar los datos en los que estamos peor que hace 20 y 40 años.** Claude decide el resto sin preguntar.
+
+Lo que decide Claude (con datos oficiales; ninguna cifra cambia de sentido):
+- **Fuera:** el cajero con el salario mínimo (mejora mucho), el IVA del pan, la leche y la fruta (baja) y los ahorros. Van en la descripción para no ocultarlos.
+- **Dentro:** el sueldo medio con el mismo poder de compra. Sueldo medio de 2024 del INE en euros de hoy, 31.335 € brutos; neto en euros de hoy: 24.758 € con las normas de 1986, 24.978 € con las de 2006 y 24.353 € hoy. **Hoy, 625 € menos que en 2006 y 405 € menos que en 1986.**
+- **Gasóleo** (boletín petrolero de la Comisión Europea, media de cada año; 2026 con los impuestos de la ley), en euros de hoy: 1,45 € el litro en 2006, 1,33 € en 2016 y **1,85 € en 2026**: un 27 % y un 39 % más. Gasolina 95: 1,57 €, 1,51 € y 1,77 € (un 13 % y un 17 % más).
+- **IVA de cada litro de gasóleo**, en euros de hoy: 0,20 € en 2006, 0,23 € en 2016 y **0,32 €** en 2026.
+- **No se dice que el impuesto total por litro haya subido, porque no es así.** En euros de hoy, el gasóleo pagaba 0,66 € en 2006 y 0,71 € en 2016, y hoy paga 0,70 €. La gasolina, 0,83 €, 0,87 € y 0,78 €. Lo que sube es el IVA, porque es un porcentaje de un precio mayor; el impuesto especial es fijo por litro y la inflación lo ha ido abaratando.
+- **Bruno pedía «un 47 % más»:** no sale con datos oficiales. Las cifras correctas son +39 % para el gasóleo frente a 2016 y +27 % frente a 2006, ya descontada la inflación.

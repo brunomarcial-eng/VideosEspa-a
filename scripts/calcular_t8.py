@@ -265,6 +265,72 @@ def gasolina(a_hoy):
     }
 
 
+def gasoleo(I):
+    """Precio del litro (boletín petrolero de la Comisión Europea, media de cada año) y su IVA, en euros de 2026.
+    2026: precio medio antes de impuestos (enero a noviembre) con los impuestos que fija la ley (Ley 38/1992, art. 50, e IVA del 21 %).
+    Versión 2 de T8 (Bruno, 18-11-2026): el balance se hace con los impuestos de la ley, sin rebajas temporales."""
+    import openpyxl
+    comprueba("boe_ley_38_1992_hidrocarburos_vigente.html",
+              "Epígrafe 1.3 Gasóleos para uso general: 307 euros por 1.000 litros de tipo general y 72 euros por 1.000 litros de tipo especial",
+              "Epígrafe 1.2.2 Las demás gasolinas sin plomo: 400,69 euros por 1.000 litros de tipo general y 72 euros por 1.000 litros de tipo especial")
+    wb = openpyxl.load_workbook(RAW / "ce_boletin_petrolero_historico.xlsx", read_only=True, data_only=True)
+
+    def serie(hoja, col):
+        filas = list(wb[hoja].iter_rows(values_only=True))
+        i = filas[0].index(col)
+        return {r[0]: (r[i], r[i + 1]) for r in filas[3:] if hasattr(r[0], "year")}
+
+    con, sin = serie("Prices with taxes", "ES_price_with_tax_euro95"), serie("Prices wo taxes", "ES_price_wo_tax_euro95")
+    ley = {"gasoleo": (307 + 72) / 1000, "gasolina95": (400.69 + 72) / 1000}
+    iva = {"2006": 16, "2016": 21, "2026": 21}
+    out = {"nota": ("Comisión Europea, Weekly Oil Bulletin: media de los precios semanales de España de cada año (2026: de enero a noviembre). "
+                    "2006 y 2016: precio con los impuestos de entonces. 2026: precio antes de impuestos más los impuestos que fija la ley "
+                    "(gasóleo: 307 + 72 € por 1.000 litros; gasolina 95: 400,69 + 72; IVA del 21 %), sin las rebajas temporales de 2026. "
+                    "IVA de cada litro = precio × IVA / (100 + IVA). En euros de 2026, con el IPC del INE.")}
+    for prod, j in (("gasoleo", 1), ("gasolina95", 0)):
+        d = {}
+        for a in ("2006", "2016", "2026"):
+            sem = [d_ for d_ in con if d_.year == int(a) and con[d_][j] and sin.get(d_) and sin[d_][j]]
+            p_con = sum(con[x][j] for x in sem) / len(sem) / 1000
+            p_sin = sum(sin[x][j] for x in sem) / len(sem) / 1000
+            precio = (p_sin + ley[prod]) * (1 + iva[a] / 100) if a == "2026" else p_con
+            f = I["2026"] / I[a]
+            iva_l = precio * iva[a] / (100 + iva[a])
+            d[a] = {"semanas": len(sem), "precio": round(precio, 4), "antes_de_impuestos": round(p_sin, 4), "iva_por_litro": round(iva_l, 4),
+                    "impuestos_por_litro": round(precio - p_sin, 4), "iva_pct": iva[a],
+                    "en_euros_de_2026": {"precio": round(precio * f, 3), "iva_por_litro": round(iva_l * f, 3),
+                                         "impuestos_por_litro": round((precio - p_sin) * f, 3), "antes_de_impuestos": round(p_sin * f, 3)}}
+        r26 = d["2026"]["en_euros_de_2026"]["precio"]
+        d["sube_pct_real"] = {a: round(100 * (r26 / d[a]["en_euros_de_2026"]["precio"] - 1), 1) for a in ("2006", "2016")}
+        out[prod] = d
+    return out
+
+
+def sueldo_medio(N, I):
+    """El sueldo medio de hoy con las normas de 1986, 2006 y 2026: ¿cuánto le queda limpio con el mismo sueldo real?
+    Sueldo medio: INE, Encuesta Anual de Estructura Salarial 2024 (último dato), pasado a euros de 2026 con el IPC."""
+    t3 = json.loads((CLEAN / "t3_vivienda.json").read_text(encoding="utf-8"))
+    bruto24 = t3["sueldos_eaes"]["media"]["2024"]
+    real = bruto24 * I["2026"] / I["2024"]
+    out = {"bruto_2024": bruto24, "bruto_en_euros_de_2026": round(real),
+           "nota": ("Sueldo medio bruto de 2024 (INE, EAES), pasado a euros de 2026 con el IPC, y ese mismo poder de compra en 1986 y 2006. "
+                    "Cotizaciones e IRPF de cada año, como en el resto de T8 (Madrid en 2026; accidentes de trabajo con la tarifa del comercio; "
+                    "en 1986, sin el tope por categoría, que en todo caso habría dejado más neto en 1986).")}
+    for a in ("1986", "2006", "2026"):
+        f = I["2026"] / I[a]
+        bruto = real / f * (PTS if a == "1986" else 1)
+        n = N[a]
+        emp, tra = cotizaciones(n, "cajero", bruto)
+        ce, ct = sum(emp.values()), sum(tra.values())
+        ir, _ = irpf(a, n, bruto, ct)
+        k = f / (PTS if a == "1986" else 1)
+        out[a] = {"bruto": round(bruto), "neto_en_euros_de_2026": round((bruto - ct - ir) * k), "al_estado_en_euros_de_2026": round((ir + ct + ce) * k),
+                  "pct_estado_del_coste": round(100 * (ir + ct + ce) / (bruto + ce), 2), "pct_irpf_del_bruto": round(100 * ir / bruto, 2)}
+    out["menos_que_1986"] = out["1986"]["neto_en_euros_de_2026"] - out["2026"]["neto_en_euros_de_2026"]
+    out["menos_que_2006"] = out["2006"]["neto_en_euros_de_2026"] - out["2026"]["neto_en_euros_de_2026"]
+    return out
+
+
 def main():
     N = normas()
     I = ipc_largo()
@@ -308,6 +374,8 @@ def main():
     out["iva_pct"] = iva()
     out["gasolina"] = gasolina(a_hoy)
     out["ahorro_intereses_tipo_pct"] = ahorro(N, out["casos"])
+    out["sueldo_medio"] = sueldo_medio(N, I)
+    out["carburante"] = gasoleo(I)
     out["nota"] = ("Cálculo propio (C) con las normas del BOE de cada año (ficheros en data/raw). Parte que va al Estado = IRPF + cotizaciones del "
                    "trabajador y de la empresa, sobre lo que le cuesta a la empresa. 1986: cotización por contingencias comunes con el tope del grupo 5 "
                    "(146.070 pesetas al mes); accidentes de trabajo con la tarifa de 1979 rebajada un 10 %. 2006: desempleo y FOGASA de la empresa "

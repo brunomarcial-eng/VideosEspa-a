@@ -1,31 +1,32 @@
 {
- "huella": "db546e54d11b00b3",
- "semilla": 3202,
- "texto": "¿Lo ves? Lo mismo que antes.",
+ "huella": "736f43e7e2d01647",
+ "semilla": 5000,
+ "texto": "¿Y uno de banca, que gana bien?",
  "ev": {
   "ok": true,
-  "nota": 1.0,
-  "oido": "Lo ves, lo mismo que antes.",
+  "nota": 1.0176,
+  "oido": "¿Y uno de Banca que gana bien?",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
    0.18,
-   0.88,
-   1.1,
-   1.34,
-   1.54
+   0.36,
+   0.52,
+   0.96,
+   1.42,
+   1.66
   ],
   "t1": [
    0.18,
-   0.4,
-   1.1,
-   1.34,
-   1.54,
-   1.76
+   0.36,
+   0.52,
+   0.96,
+   1.42,
+   1.66,
+   1.82
   ],
-  "ritmo": 9.4,
-  "voz": 0.842
- },
- "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.002; parecido 0.869)"
+  "ritmo": 10.8,
+  "voz": 0.885
+ }
 }
