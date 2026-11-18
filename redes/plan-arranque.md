@@ -72,18 +72,25 @@ Nota técnica: el entorno inyecta un secreto como cabecera en cada petición a s
 
 ## 4. Borrador de calendario (para que lo confirmes)
 
-**Supuestos:** uno cada 3 días, a media semana y en domingo. Hora de Madrid: YouTube a las **19:30**, TikTok a las **21:00** y X a las **21:30**. Si ya has subido alguno a YouTube, se corre el calendario y en las otras dos se publica igual.
+**Aprobados según `docs/ESTADO.md` (18-11-2026): T1 a T7.** T8 no entra: Bruno no la ha dado por buena (la versión 2, centrada en lo que ha empeorado, está «pendiente de Bruno» y el estado dice que no se suba hasta que decida).
 
-| Fecha | Vídeo | YouTube (Studio) | TikTok (app) | X (app) |
-|---|---|---|---|---|
-| Jueves 19-11-2026 | **T1** · carro (69 s) | 19:30 | 21:00, si la cuenta ya existe | 21:30, si la cuenta ya existe |
-| Domingo 22-11-2026 | **T2** · paro y trabajo (96 s) | 19:30 | 21:00 | 21:30 |
-| Miércoles 25-11-2026 | **T3** · comprar casa (62 s) | 19:30 | 21:00 | 21:30 |
+**Supuestos:** uno cada 3 días. Hora de Madrid: YouTube a las **19:30**, TikTok a las **21:00** y X a las **21:30**. Si las cuentas se retrasan, todo el calendario se corre los mismos días.
 
-- **Alternativa:** empezar por **T3**, que es el formato de la serie (padre e hijo) y el que más debate puede traer. Así la primera impresión del canal en TikTok y X es la de la serie.
-- Duraciones: TikTok admite las tres. X admite hasta 2 min 20 s en cuentas sin suscripción: caben las tres.
+| Fecha | Vídeo | Duración | YouTube (Studio) | TikTok (app) | X (app) |
+|---|---|---|---|---|---|
+| Jueves 19-11 | **T1** · carro | 69 s | 19:30 | 21:00 | 21:30 |
+| Domingo 22-11 | **T2** · paro y trabajo | 96 s | 19:30 | 21:00 | 21:30 |
+| Miércoles 25-11 | **T3** · comprar casa (padre e hijo, 1.ª) | 62 s | 19:30 | 21:00 | 21:30 |
+| Sábado 28-11 | **T4** · Netflix (2.ª) | 63,5 s | 19:30 | 21:00 | 21:30 |
+| Martes 1-12 | **T5** · nietos (3.ª) | 52,4 s | 19:30 | 21:00 | 21:30 |
+| Viernes 4-12 | **T6** · mujeres y natalidad (4.ª) | 51,2 s | 19:30 | 21:00 | 21:30 |
+| Lunes 7-12 | **T7** · caprichos (5.ª) | 78,1 s | 19:30 | 21:00 | 21:30 |
+
+- **Alternativa:** empezar por T3 (el formato de padre e hijo es el de la serie). T4–T7 son sus partes 2.ª a 5.ª, así que van después de T3 y en orden.
+- Duraciones: todas caben en TikTok y en X (hasta 2 min 20 s sin suscripción).
 - Ficheros: `videos/<id>/render/<id>-limpio.mp4` y `upload/<id>-portada.png`, sin tocarlos.
 - En YouTube, comentario fijado con la pregunta final de cada vídeo.
+- **Nota:** ocho vídeos y un ritmo de uno cada 3 días no dejan margen para ver cómo responde la gente. Si prefieres espaciarlo más o publicar dos por semana, lo cambio.
 
 ## 5. Textos por vídeo
 
@@ -200,6 +207,159 @@ Fuente: Banco de España e INE
 **X, respuesta opcional (hilo)**
 ```
 Más datos: en 1989 las hipotecas iban al 15 %. En 2006, en plena burbuja, el piso costaba 8,9 años de sueldo. Descontando la inflación, el sueldo medio ha subido un 16 % desde 1986. Fuentes: Banco de España, Ministerio de Vivienda e INE.
+```
+
+### T4 · ¿De verdad los jóvenes se lo gastan todo en Netflix?
+
+**YouTube, comentario fijado**
+```
+¿Quién tiene razón, el padre o el hijo? ¿Tú qué opinas?
+```
+
+**TikTok, texto**
+```
+¿De verdad los jóvenes se lo gastan todo en Netflix? 📺 De cada 100 € que gasta un hogar, la casa se lleva 33 € (en 1986, 19) y el ocio, 17 € (en 1986, 12). ¿Quién tiene razón, el padre o el hijo?
+
+Fuentes oficiales en la descripción de YouTube.
+
+#economía #España #jóvenes #alquiler #boomers
+```
+
+**TikTok, comentario fijado**
+```
+Fuentes: INE (Encuesta Continua de Presupuestos Familiares de 1986 y Encuesta de Presupuestos Familiares) y Eurostat (alquiler sobre ingresos y edad de emancipación). La clasificación de gastos ha cambiado desde 1986: comparación aproximada.
+```
+
+**X**
+```
+¿De verdad los jóvenes se lo gastan todo en Netflix?
+
+De cada 100 € que gasta un hogar: ocio y bares, 12 € en 1986 y 17 € en 2025. La casa, 19 € y 33 €.
+
+¿Quién tiene razón, el padre o el hijo?
+
+Fuente: INE
+```
+
+**X, respuesta opcional (hilo)**
+```
+Quien vive solo de alquiler dedica de media el 39 % de sus ingresos a pagarlo; en pareja, el 27 %. Nos vamos de casa de los padres a los 30,2 años; en la Unión Europea, a los 26,3. Fuente: Eurostat.
+```
+
+### T5 · ¿Y los nietos pa cuándo?
+
+**YouTube, comentario fijado**
+```
+Casa, boda, hijos: todo llega más tarde. ¿Casualidad? ¿Tú qué opinas?
+```
+
+**TikTok, texto**
+```
+¿Y los nietos pa cuándo? 👶 La primera boda llegaba a los 26 años en 1986 y a los 36,2 en 2024. El primer hijo, a los 26 y a los 31,5. Casa, boda, hijos: todo llega más tarde. ¿Tú qué opinas?
+
+Fuentes oficiales en la descripción de YouTube.
+
+#economía #España #natalidad #vivienda #jóvenes
+```
+
+**TikTok, comentario fijado**
+```
+Fuentes: INE (edad media al primer matrimonio, a la maternidad e indicador coyuntural de fecundidad; Encuesta de Fecundidad 2018) y Banco de España (precio de la vivienda en años de ingresos).
+```
+
+**X**
+```
+¿Y los nietos pa cuándo?
+
+La primera boda: 26 años en 1986, 36,2 en 2024.
+El primer hijo: 26 años en 1986, 31,5 en 2024.
+Hijos por mujer: 1,55 y 1,10.
+
+Casa, boda, hijos: todo llega más tarde. ¿Tú qué opinas?
+
+Fuente: INE
+```
+
+**X, respuesta opcional (hilo)**
+```
+La casa: en 1987 costaba 3,1 años de lo que ingresaba un hogar; hoy, 8,4. Y según la Encuesta de Fecundidad 2018 del INE, casi tres de cada cuatro mujeres desearían tener al menos dos hijos. Fuentes: Banco de España e INE.
+```
+
+### T6 · ¿Nacen menos niños porque ahora trabajan ellas?
+
+**YouTube, comentario fijado**
+```
+¿Qué hace falta para tener hijos: tiempo, dinero o casa? ¿Tú qué opinas?
+```
+
+**TikTok, texto**
+```
+¿Nacen menos niños porque ahora trabajan ellas? En 1986 trabajaban 26 de cada 100 mujeres de 16 a 64 años; en 2025, 63. Pero entre 1995 y 2008, mientras su empleo subía, los hijos por mujer también subieron. ¿Qué hace falta: tiempo, dinero o casa?
+
+Fuentes oficiales en la descripción de YouTube.
+
+#economía #España #natalidad #mujeres #trabajo
+```
+
+**TikTok, comentario fijado**
+```
+Fuentes: INE (Anuario Estadístico 1988, EPA y población residente), Eurostat (tasa de empleo y hijos por mujer) y BOE (permisos). El dato de 1986 es un cálculo propio.
+```
+
+**X**
+```
+¿Nacen menos niños porque ahora trabajan ellas?
+
+Trabajaban 26 de cada 100 mujeres de 16 a 64 años en 1986; 63 en 2025.
+De 1995 a 2008 su empleo subió y los hijos por mujer también (1,16 a 1,45). Hoy, 1,10.
+
+¿Qué hace falta: tiempo, dinero o casa?
+
+Fuente: INE y Eurostat
+```
+
+**X, respuesta opcional (hilo)**
+```
+Permiso por nacimiento: en 1986, 2 días el padre y hasta 14 semanas la madre. Hoy, 19 semanas cada uno. Fuente: BOE.
+```
+
+### T7 · ¿Gastamos más en caprichos que nuestros padres?
+
+**YouTube, comentario fijado**
+```
+¿Somos más caprichosos ahora? ¿Tú qué opinas?
+```
+
+**TikTok, texto**
+```
+¿Gastamos más en caprichos que nuestros padres? 💇 Peluquería y cremas: 1,5 de cada 100 € en 1986 y 3,1 hoy. Ropa y calzado: 11 y 4. El cine, en minutos de trabajo, casi igual: 23 y 21. ¿Somos más caprichosos ahora?
+
+Fuentes oficiales en la descripción de YouTube.
+
+#economía #España #consumo #jóvenes #boomers
+```
+
+**TikTok, comentario fijado**
+```
+Fuentes: INE (presupuestos familiares, IPC y salarios), Ministerio de Cultura (cine y hábitos culturales), Ministerio de Educación, FP y Deportes (deporte) y Eurostat (compras por internet). La clasificación de gastos ha cambiado desde 1986: comparación aproximada.
+```
+
+**X**
+```
+¿Gastamos más en caprichos que nuestros padres?
+
+Peluquería y cremas: 1,5 de cada 100 € en 1986, 3,1 hoy.
+Ropa y calzado: 11 y 4.
+Cine, en minutos de trabajo: 23 y 21.
+
+¿Somos más caprichosos ahora? ¿Tú qué opinas?
+
+Fuente: INE y Ministerio de Cultura
+```
+
+**X, respuesta opcional (hilo)**
+```
+Hace deporte el 62,7 % y el 30,7 % paga un gimnasio. Compra por internet el 60 % (en 2006, el 10 %). Fuentes: Ministerio de Educación, FP y Deportes y Eurostat.
 ```
 
 ## 6. Fuentes de esta nota (orientativas, no oficiales salvo TikTok)
