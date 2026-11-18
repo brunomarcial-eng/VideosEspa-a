@@ -113,6 +113,7 @@ def verificar(ruta_guion, ritmo=RITMO):
         if "aprox" in c:
             ok = abs(v - c["aprox"]) <= c["aprox"] * c.get("tolerancia_pct", 5) / 100
             leido = f"{v:.1f} (dicho «{c['texto']}» ≈ {c['aprox']})"
+            declaradas.add(c["texto"])   # una cifra redondeada a propósito («10.700») también está declarada
         else:
             leido = es_num(round(v, c["redondeo"]) if "redondeo" in c else v, c.get("decimales", 0), c.get("miles", False))
             ok = leido == c["texto"]

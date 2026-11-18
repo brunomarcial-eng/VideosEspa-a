@@ -297,12 +297,25 @@
    "2006": 16,
    "2026": 21
   },
-  "colegio_y_universidad": {
-   "1986": "exento",
-   "2006": "exento",
-   "2026": "exento"
+  "nota": "Tipo general: 12 % (1986), 16 % (2006) y 21 % (2026). Comida: en 1986 toda al 6 %; desde 1993 el pan, la leche, los huevos, las frutas y verduras, al 4 % (hoy también el aceite de oliva), y el resto al 7 % (2006) y al 10 % (2026). La gasolina paga además un impuesto especial por litro (ver «gasolina»). En 1986, los coches pagaban el tipo de lujo (33 %)."
+ },
+ "gasolina": {
+  "impuesto_por_litro": {
+   "1986_pesetas": 27.5,
+   "2006_euros": 0.4197,
+   "2026_euros": 0.4727
   },
-  "nota": "Tipo general: 12 % (1986), 16 % (2006) y 21 % (2026). Comida: en 1986 toda al 6 %; desde 1993 el pan, la leche, los huevos, las frutas y verduras, al 4 % (hoy también el aceite de oliva), y el resto al 7 % (2006) y al 10 % (2026). La gasolina y el gasóleo pagan además el impuesto especial sobre hidrocarburos, que no se incluye aquí. En 1986, los coches pagaban el tipo de lujo (33 %)."
+  "impuesto_por_litro_en_euros_de_2026": {
+   "1986": 0.562,
+   "2006": 0.636,
+   "2026": 0.473
+  },
+  "iva_pct": {
+   "1986": 12,
+   "2006": 16,
+   "2026": 21
+  },
+  "nota": "Gasolina de 95 octanos (en 1986, «gasolinas de automoción»). 1986: impuesto sobre hidrocarburos de la Ley 45/1985; el Monopolio de Petróleos cobraba además una renta que no se incluye. 2006: impuesto sobre hidrocarburos (371,69 €) + ventas minoristas, tramo estatal (24 €) y de Madrid (24 €), por cada 1.000 litros. 2026: 400,69 € de tipo general + 72 € de tipo especial, igual en toda la península y Baleares. En euros de 2026, con el IPC."
  },
  "ahorro_intereses_tipo_pct": {
   "cajero": {

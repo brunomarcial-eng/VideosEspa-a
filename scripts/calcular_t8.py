@@ -193,19 +193,16 @@ def irpf(anyo, N, bruto, cot_trab):
 # ------------------------------------------------------------------ después de cobrar: IVA y ahorro
 def iva():
     """Tipos de IVA de cada año para cosas del día a día (leídos en el BOE)."""
-    v85, a20, a91, hoy = ("boe_ley_30_1985_iva.pdf", "boe_ley_37_1992_iva_art20_2006.html",
-                          "boe_ley_37_1992_iva_art91_2006.html", "boe_ley_37_1992_iva_vigente.html")
+    v85, a91, hoy = "boe_ley_30_1985_iva.pdf", "boe_ley_37_1992_iva_art91_2006.html", "boe_ley_37_1992_iva_vigente.html"
     comprueba(v85, "El impuesto se exigirá al tipo del 12 por 100", "Se aplicará el tipo del 6 por 100 a las operaciones siguientes",
               "Los productos susceptibles de ser habitual e idóneamente utilizados para la nutrición humana",
               "Los servicios de hostelería y acampamento, los de restau rantes", "Se aplicará el tipo del 33 por 100 a las siguientes operaciones",
-              "Vehículos accionados a motor para circular por carretera", "la enseñanza en todos los nieles y grados del sistema educativo")
+              "Vehículos accionados a motor para circular por carretera")
     comprueba(a91, "El Impuesto se exigirá al tipo del 16 por 100", "Se aplicará el tipo del 7 por 100 a las operaciones siguientes",
               "Se aplicará el tipo del 4 por 100 a las operaciones siguientes", "El pan común",
               "Los servicios de hostelería, acampamento y balneario, los de restaurantes")
-    comprueba(a20, "la enseñanza escolar, universitaria y de postgraduados")
     comprueba(hoy, "El Impuesto se exigirá al tipo del 21 por ciento", "Se aplicará el tipo del 10 por ciento a las operaciones siguientes",
-              "Se aplicará el tipo del 4 por ciento a las operaciones siguientes", "El pan común", "g) Los aceites de oliva",
-              "la enseñanza escolar, universitaria y de postgraduado")
+              "Se aplicará el tipo del 4 por ciento a las operaciones siguientes", "El pan común", "g) Los aceites de oliva")
     return {
         "pan_leche_huevos_fruta_verdura": {"1986": 6, "2006": 4, "2026": 4},
         "resto_de_la_comida_carne_pescado": {"1986": 6, "2006": 7, "2026": 10},
@@ -214,10 +211,9 @@ def iva():
         "gasolina_y_gasoleo": {"1986": 12, "2006": 16, "2026": 21},
         "luz_movil_y_casi_todo_lo_demas": {"1986": 12, "2006": 16, "2026": 21},
         "coche": {"1986": 33, "2006": 16, "2026": 21},
-        "colegio_y_universidad": {"1986": "exento", "2006": "exento", "2026": "exento"},
         "nota": ("Tipo general: 12 % (1986), 16 % (2006) y 21 % (2026). Comida: en 1986 toda al 6 %; desde 1993 el pan, la leche, los huevos, las frutas "
-                 "y verduras, al 4 % (hoy también el aceite de oliva), y el resto al 7 % (2006) y al 10 % (2026). La gasolina y el gasóleo pagan además "
-                 "el impuesto especial sobre hidrocarburos, que no se incluye aquí. En 1986, los coches pagaban el tipo de lujo (33 %)."),
+                 "y verduras, al 4 % (hoy también el aceite de oliva), y el resto al 7 % (2006) y al 10 % (2026). La gasolina paga además "
+                 "un impuesto especial por litro (ver «gasolina»). En 1986, los coches pagaban el tipo de lujo (33 %)."),
     }
 
 
@@ -247,6 +243,26 @@ def ahorro(N, casos):
                    "desde 2007 van a la base del ahorro, con su propia escala (19 % hasta 6.000 €, 21 % hasta 50.000 €, 23 %, 27 % y 30 %). "
                    "En 2006, las ganancias por vender algo comprado hacía más de un año pagaban un 15 %.")
     return out
+
+
+def gasolina(a_hoy):
+    """Impuesto especial por litro de gasolina (además del IVA). 2006: en Madrid, con el impuesto sobre ventas minoristas."""
+    comprueba("boe_ley_45_1985_impuestos_especiales.pdf", "Epígrafe 2.1.3: Gasolinas de automoción, 27,50 pesetas por litro")
+    comprueba("boe_ley_38_1992_hidrocarburos_2006.html", "Epígrafe 1.2.2 Las demás gasolinas sin plomo: 371,69 euros por 1.000 litros")
+    comprueba("boe_ley_24_2001_ivmdh_2006.html", "El tipo estatal será el siguiente: a) Gasolinas: 24 euros por 1.000 litros")
+    comprueba("boe_madrid_ley_7_2002_ivmdh.pdf", "En el año 2004 y siguientes", "a) Gasolinas: 24 euros por 1.000 litros")
+    comprueba("boe_ley_38_1992_hidrocarburos_vigente.html",
+              "Epígrafe 1.2.2 Las demás gasolinas sin plomo: 400,69 euros por 1.000 litros de tipo general y 72 euros por 1.000 litros de tipo especial")
+    litro = {"1986": 27.50 / PTS, "2006": (371.69 + 24 + 24) / 1000, "2026": (400.69 + 72) / 1000}
+    return {
+        "impuesto_por_litro": {"1986_pesetas": 27.50, "2006_euros": round(litro["2006"], 4), "2026_euros": round(litro["2026"], 4)},
+        "impuesto_por_litro_en_euros_de_2026": {a: round(v * a_hoy[a], 3) for a, v in litro.items()},
+        "iva_pct": {"1986": 12, "2006": 16, "2026": 21},
+        "nota": ("Gasolina de 95 octanos (en 1986, «gasolinas de automoción»). 1986: impuesto sobre hidrocarburos de la Ley 45/1985; el Monopolio de "
+                 "Petróleos cobraba además una renta que no se incluye. 2006: impuesto sobre hidrocarburos (371,69 €) + ventas minoristas, tramo estatal (24 €) "
+                 "y de Madrid (24 €), por cada 1.000 litros. 2026: 400,69 € de tipo general + 72 € de tipo especial, igual en toda la península y Baleares. "
+                 "En euros de 2026, con el IPC."),
+    }
 
 
 def main():
@@ -290,6 +306,7 @@ def main():
                                                                        ("irpf", ir), ("cotizaciones", ct + ce))},
             }
     out["iva_pct"] = iva()
+    out["gasolina"] = gasolina(a_hoy)
     out["ahorro_intereses_tipo_pct"] = ahorro(N, out["casos"])
     out["nota"] = ("Cálculo propio (C) con las normas del BOE de cada año (ficheros en data/raw). Parte que va al Estado = IRPF + cotizaciones del "
                    "trabajador y de la empresa, sobre lo que le cuesta a la empresa. 1986: cotización por contingencias comunes con el tope del grupo 5 "
@@ -304,6 +321,7 @@ def main():
                   f"en € de 2026: coste {c['en_euros_de_2026']['coste_empresa']:,} neto {c['en_euros_de_2026']['neto']:,}")
     print("IPC", out["ipc_media_anual"], out["euros_de_2026_por_euro"])
     print("IVA", {k: v for k, v in out["iva_pct"].items() if k != "nota"})
+    print("Gasolina", out["gasolina"]["impuesto_por_litro_en_euros_de_2026"])
     print("Ahorro", {k: v for k, v in out["ahorro_intereses_tipo_pct"].items() if k != "nota"})
 
 
