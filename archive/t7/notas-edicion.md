@@ -2,7 +2,7 @@
 
 **Vídeo:** «¿Gastamos más en caprichos que nuestros padres?» · Short vertical 1080×1920, 78,1 s, −14,5 LUFS.
 **Fichero:** `videos/t7/render/t7-limpio.mp4` · SHA-256 `033eb0476b3c277de8b6ac6225a803909f957beaf4854ead104d3a59d5cffea4`.
-**Aprobación:** el responsable del canal aprobó datos y borrador el 17-11-2026 y pidió añadir música, discos, cine y conciertos sin nueva aprobación. La frase final la cambió él: «¿Somos más caprichosos ahora?». Pendiente de su visto bueno final.
+**Aprobación:** el responsable del canal aprobó datos y borrador el 17-11-2026 y pidió añadir música, discos, cine y conciertos sin nueva aprobación. La frase final la cambió él: «¿Somos más caprichosos ahora?». Aprobado: tras el cambio pasó al siguiente vídeo (18-11-2026).
 
 ## Cómo se hizo
 - **Guion:** discusión entre un padre de 62 años y su hijo de 31, personajes inventados; sin partidos ni causas. El vídeo enseña datos y pregunta. 16 planos; texto, cifras y comprobaciones en `guion.json` y `guion.md`.
