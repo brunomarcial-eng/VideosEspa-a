@@ -1,0 +1,309 @@
+{
+ "nota": "Momentos clave de T9 (padre contra hijo, 7.ª parte: lo que cuesta vivir en horas de trabajo; el decorado cambia como en un sueño). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t9/escenas.mjs) y el sonido (scripts/sonido.py).",
+ "musica": {
+  "bpm": 104,
+  "corte": "c4-8",
+  "silencio_s": 1.0
+ },
+ "cues": [
+  {
+   "id": "c1-quejais",
+   "beat": 1,
+   "palabra": "quejáis",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c1-tiempos",
+   "beat": 1,
+   "palabra": "tiempos",
+   "dt": -0.05
+  },
+  {
+   "id": "c1-costaba",
+   "beat": 1,
+   "palabra": "costaba",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.32
+  },
+  {
+   "id": "c2-ini",
+   "beat": 2,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c2-horas",
+   "beat": 2,
+   "palabra": "horas",
+   "dt": -0.05,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-estado",
+   "beat": 2,
+   "palabra": "Estado",
+   "dt": -0.05,
+   "sfx": "hojas",
+   "vol": 0.4
+  },
+  {
+   "id": "c2-31",
+   "beat": 2,
+   "palabra": "31",
+   "dt": -0.05,
+   "sfx": "sello",
+   "vol": 0.38
+  },
+  {
+   "id": "c2-25",
+   "beat": 2,
+   "palabra": "25.",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.32
+  },
+  {
+   "id": "c3-ini",
+   "beat": 3,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c3-piso",
+   "beat": 3,
+   "palabra": "piso?",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-cuernos",
+   "beat": 3,
+   "palabra": "cuernos",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-4",
+   "beat": 4,
+   "palabra": "4",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3,
+   "dur": 0.8
+  },
+  {
+   "id": "c4-8",
+   "beat": 4,
+   "palabra": "8",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.34,
+   "dur": 0.6,
+   "hasta": 1.35
+  },
+  {
+   "id": "c4-2006",
+   "beat": 4,
+   "palabra": "2006,",
+   "dt": -0.05
+  },
+  {
+   "id": "c4-11",
+   "beat": 4,
+   "palabra": "11.",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.36
+  },
+  {
+   "id": "c5-ini",
+   "beat": 5,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c5-deposito",
+   "beat": 5,
+   "palabra": "depósito…",
+   "dt": -0.05,
+   "sfx": "vapor",
+   "vol": 0.25,
+   "dur": 0.8
+  },
+  {
+   "id": "c6-gasoleo",
+   "beat": 6,
+   "palabra": "gasóleo:",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c6-5",
+   "beat": 6,
+   "palabra": "5",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3,
+   "dur": 0.8
+  },
+  {
+   "id": "c6-1986",
+   "beat": 6,
+   "palabra": "1986.",
+   "dt": -0.05
+  },
+  {
+   "id": "c6-6",
+   "beat": 6,
+   "palabra": "6.",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.34,
+   "dur": 0.6,
+   "hasta": 1.35
+  },
+  {
+   "id": "c7-ini",
+   "beat": 7,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c7-luz",
+   "beat": 7,
+   "palabra": "luz?",
+   "dt": -0.1,
+   "sfx": "pinza",
+   "vol": 0.35
+  },
+  {
+   "id": "c8-47",
+   "beat": 8,
+   "palabra": "47",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.6,
+   "hasta": 1.35
+  },
+  {
+   "id": "c8-61",
+   "beat": 8,
+   "palabra": "61.",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.36
+  },
+  {
+   "id": "c8-2016",
+   "beat": 8,
+   "palabra": "2016,",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.28
+  },
+  {
+   "id": "c9-ini",
+   "beat": 9,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c9-compra",
+   "beat": 9,
+   "palabra": "compra",
+   "dt": -0.3,
+   "sfx": "carro",
+   "vol": 0.35,
+   "dur": 0.8
+  },
+  {
+   "id": "c10-comida",
+   "beat": 10,
+   "palabra": "comida",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-11",
+   "beat": 10,
+   "palabra": "11",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3,
+   "dur": 0.8
+  },
+  {
+   "id": "c10-2006",
+   "beat": 10,
+   "palabra": "2006.",
+   "dt": -0.05
+  },
+  {
+   "id": "c10-12",
+   "beat": 10,
+   "palabra": "12.",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.34,
+   "dur": 0.6,
+   "hasta": 1.35
+  },
+  {
+   "id": "c11-ini",
+   "beat": 11,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c11-dificil",
+   "beat": 11,
+   "palabra": "difícil,",
+   "dt": -0.05
+  },
+  {
+   "id": "c11-padres",
+   "beat": 11,
+   "palabra": "padres",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.35
+  },
+  {
+   "id": "c11-tu",
+   "beat": 11,
+   "palabra": "tú?",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.35
+  },
+  {
+   "id": "c11-boc",
+   "beat": 11,
+   "palabra": "opinas?",
+   "dt": -0.3,
+   "sfx": "pop",
+   "vol": 0.3
+  }
+ ]
+}

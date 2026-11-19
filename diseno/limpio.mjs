@@ -32,20 +32,36 @@ export function persona(id, epoca, o = {}) {
   const hoy = epoca !== "antes";
   const largo = o.pelo === "largo";
   const barba = o.barba ?? (hoy && !largo), canas = o.canas ?? hoy;
-  return `<g id="${id}">
-  <ellipse cx="0" cy="4" rx="120" ry="18" fill="#3C2814" opacity=".16"/>
+  // Volumen (T9 en adelante, opcional): luz arriba a la izquierda y sombra abajo a la derecha, con degradados encima de cada pieza.
+  const V = !!o.volumen;
+  const gE = `url(#${id}-gE)`, gC = `url(#${id}-gC)`, gV = `url(#${id}-gV)`;
+  const capa = (forma) => (V ? forma : "");
+  const defs = V ? `<defs>
+    <radialGradient id="${id}-gE" cx="36%" cy="30%" r="78%"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".42"/><stop offset=".42" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".78" stop-color="#3A1E10" stop-opacity=".06"/><stop offset="1" stop-color="#3A1E10" stop-opacity=".30"/></radialGradient>
+    <linearGradient id="${id}-gC" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".30"/><stop offset=".32" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".62" stop-color="#14141E" stop-opacity="0"/><stop offset="1" stop-color="#14141E" stop-opacity=".34"/></linearGradient>
+    <linearGradient id="${id}-gV" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".16"/><stop offset=".45" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#14141E" stop-opacity=".28"/></linearGradient></defs>` : "";
+  const borde = V ? ` stroke="#1E1410" stroke-opacity=".10" stroke-width="5"` : "";
+  return `<g id="${id}">${defs}
+  <ellipse cx="0" cy="4" rx="120" ry="18" fill="#3C2814" opacity="${V ? ".24" : ".16"}"/>
   <g id="${id}-c">
-    <g id="${id}-pi"><rect x="-50" y="-196" width="44" height="186" rx="22" fill="${C.pantalon}"/><rect x="-64" y="-26" width="68" height="28" rx="14" fill="${C.tinta}"/></g>
-    <g id="${id}-pd"><rect x="6" y="-196" width="44" height="186" rx="22" fill="#34495E"/><rect x="-4" y="-26" width="68" height="28" rx="14" fill="${C.tinta}"/></g>
-    <g id="${id}-bi"><rect x="-98" y="-362" width="36" height="152" rx="18" fill="${cam2}"/><circle cx="-80" cy="-204" r="21" fill="${piel2}"/></g>
-    <rect x="-82" y="-380" width="164" height="212" rx="58" fill="${cam}"/>
+    <g id="${id}-pi"><rect x="-50" y="-196" width="44" height="186" rx="22" fill="${C.pantalon}"${borde}/>${capa(`<rect x="-50" y="-196" width="44" height="186" rx="22" fill="${gC}"/>`)}<rect x="-64" y="-26" width="68" height="28" rx="14" fill="${C.tinta}"/>${capa(`<rect x="-56" y="-24" width="40" height="8" rx="4" fill="#FFFFFF" opacity=".18"/>`)}</g>
+    <g id="${id}-pd"><rect x="6" y="-196" width="44" height="186" rx="22" fill="#34495E"${borde}/>${capa(`<rect x="6" y="-196" width="44" height="186" rx="22" fill="${gC}"/>`)}<rect x="-4" y="-26" width="68" height="28" rx="14" fill="${C.tinta}"/>${capa(`<rect x="4" y="-24" width="40" height="8" rx="4" fill="#FFFFFF" opacity=".18"/>`)}</g>
+    <g id="${id}-bi"><rect x="-98" y="-362" width="36" height="152" rx="18" fill="${cam2}"${borde}/>${capa(`<rect x="-98" y="-362" width="36" height="152" rx="18" fill="${gC}"/>`)}<circle cx="-80" cy="-204" r="21" fill="${piel2}"/>${capa(`<circle cx="-80" cy="-204" r="21" fill="${gE}"/>`)}</g>
+    <rect x="-82" y="-380" width="164" height="212" rx="58" fill="${cam}"${borde}/>
     <path d="M-82 -236 Q0 -208 82 -236 V-226 Q82 -168 24 -168 H-24 Q-82 -168 -82 -226 Z" fill="${cam2}" opacity=".5"/>
+    ${capa(`<rect x="-82" y="-380" width="164" height="212" rx="58" fill="${gC}"/><rect x="-82" y="-380" width="164" height="212" rx="58" fill="${gV}"/>
+    <path d="M-40 -372 Q0 -350 40 -372" fill="none" stroke="#14141E" stroke-opacity=".16" stroke-width="10" stroke-linecap="round"/>
+    <path d="M-58 -330 Q-62 -270 -50 -214" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="9" stroke-linecap="round"/>`)}
     ${o.encima ?? ""}
-    <rect x="-22" y="-406" width="44" height="42" rx="12" fill="${piel2}"/>
+    <rect x="-22" y="-406" width="44" height="42" rx="12" fill="${piel2}"/>${capa(`<rect x="-22" y="-406" width="44" height="42" rx="12" fill="${gC}"/><rect x="-22" y="-406" width="44" height="16" rx="8" fill="#3A1E10" opacity=".22"/>`)}
     <g id="${id}-h">
       ${largo ? `<path d="M-108 -500 C-118 -606 -40 -616 0 -612 C44 -616 118 -606 108 -500 L114 -372 Q114 -350 92 -350 H-92 Q-114 -350 -114 -372 Z" fill="${pelo}"/>` : ""}
       <circle cx="-93" cy="-482" r="19" fill="${piel2}"/><circle cx="93" cy="-482" r="19" fill="${piel2}"/>
-      <circle cx="0" cy="-486" r="96" fill="${piel}"/>
+      ${capa(`<circle cx="-93" cy="-482" r="19" fill="${gE}"/><circle cx="93" cy="-482" r="19" fill="${gE}"/>`)}
+      <circle cx="0" cy="-486" r="96" fill="${piel}"${borde}/>${capa(`<circle cx="0" cy="-486" r="96" fill="${gE}"/><ellipse cx="6" cy="-468" rx="11" ry="9" fill="#3A1E10" opacity=".10"/><ellipse cx="-30" cy="-530" rx="26" ry="16" fill="#FFFFFF" opacity=".16"/>`)}
       ${o.bigote ? `<path d="M-46 -458 Q-24 -478 0 -467 Q24 -478 46 -458 Q24 -451 0 -459 Q-24 -451 -46 -458 Z" fill="${o.colorBigote ?? pelo}"/>` : ""}
       ${barba ? `<path d="M-86 -456 C-84 -404 -44 -386 0 -386 C44 -386 84 -404 86 -456 C66 -428 34 -420 0 -420 C-34 -420 -66 -428 -86 -456 Z" fill="${pelo}"/>` : ""}
       ${largo
@@ -53,6 +69,7 @@ export function persona(id, epoca, o = {}) {
            ${canas ? `<path d="M40 -548 C60 -540 78 -526 88 -506 C80 -516 66 -528 48 -536 Z" fill="#D9D3C7"/>` : ""}`
         : `<path d="M-97 -498 C-106 -592 -44 -602 0 -600 C52 -604 110 -578 97 -492 C84 -540 44 -554 4 -550 C-36 -554 -82 -538 -97 -498 Z" fill="${pelo}"/>
            ${canas ? `<path d="M-97 -498 C-99 -520 -94 -538 -84 -552 C-86 -534 -86 -516 -90 -500 Z" fill="#C4BDB0"/><path d="M97 -492 C99 -516 94 -536 84 -550 C86 -532 87 -514 90 -496 Z" fill="#C4BDB0"/>` : ""}`}
+      ${capa(`<path d="M-60 -574 Q-20 -594 24 -586" fill="none" stroke="#FFFFFF" stroke-opacity=".26" stroke-width="12" stroke-linecap="round"/>`)}
       ${o.gorro ?? ""}
       <circle cx="-58" cy="-454" r="15" fill="#F0977F" opacity=".45"/><circle cx="58" cy="-454" r="15" fill="#F0977F" opacity=".45"/>
       <g id="${id}-cj"><path d="M-50 -518 Q-34 -528 -18 -520" fill="none" stroke="${pelo}" stroke-width="8" stroke-linecap="round"/>
@@ -68,7 +85,7 @@ export function persona(id, epoca, o = {}) {
         <path data-b="seria" d="M-18 -444 H18" fill="none" stroke="#7A3E2E" stroke-width="7" stroke-linecap="round" style="display:none"/>
       </g>
     </g>
-    <g id="${id}-bd"><rect x="62" y="-362" width="36" height="152" rx="18" fill="${cam}"/>${o.mano ? `<g transform="translate(80 -204)">${o.mano}</g>` : ""}<circle cx="80" cy="-204" r="21" fill="${piel}"/></g>
+    <g id="${id}-bd"><rect x="62" y="-362" width="36" height="152" rx="18" fill="${cam}"${borde}/>${capa(`<rect x="62" y="-362" width="36" height="152" rx="18" fill="${gC}"/>`)}${o.mano ? `<g transform="translate(80 -204)">${o.mano}</g>` : ""}<circle cx="80" cy="-204" r="21" fill="${piel}"/>${capa(`<circle cx="80" cy="-204" r="21" fill="${gE}"/>`)}</g>
   </g></g>`;
 }
 

@@ -1,0 +1,181 @@
+{
+ "tema": "T9 — ¿Cuántas horas de trabajo te cuesta vivir? 1986, 2006, 2016 y hoy (trabajador medio)",
+ "sueldo": {
+  "bruto_hora_eur": {
+   "1986": 4.45,
+   "2006": 12.34,
+   "2016": 14.88,
+   "2026": 20.45
+  },
+  "neto_bruto": {
+   "1986": 0.7988,
+   "2006": 0.8015,
+   "2026": 0.7755,
+   "2016": 0.8024
+  },
+  "neto_hora_eur": {
+   "1986": 3.55,
+   "2006": 9.89,
+   "2016": 11.94,
+   "2026": 15.86
+  },
+  "neto_hora_2025_luz": 15.22,
+  "bruto_anual": {
+   "1986": 1322232.0,
+   "2006": 19686.0,
+   "2016": 23156.0,
+   "2026": 31852
+  },
+  "neto_anual_eur": {
+   "1986": 6348.0,
+   "2006": 15778.0,
+   "2016": 18581.0,
+   "2026": 24702.0
+  },
+  "etcl_2006_2008": 0.9122,
+  "etcl_1s2026_1s2024": 1.0897,
+  "nota": "Media (en 1986 no hay mediana). 1986: 740 pesetas por hora (INE, Encuesta de Salarios, industria y servicios). 2006: EAES 2008 por la ETCL 2006/2008. 2016: EAES. 2026: EAES 2024 por la ETCL del 1.er semestre de 2026 frente al de 2024. Neto: IRPF y cotizaciones del trabajador con las normas del BOE de cada año (motor de T8; Madrid en 2026); 2016, Eurostat."
+ },
+ "estado_dias": {
+  "1986": {
+   "pct_del_coste": 39.8,
+   "dias": 145.3,
+   "hasta_el": "25 de mayo",
+   "dia": 25,
+   "mes": 5
+  },
+  "2006": {
+   "pct_del_coste": 39.36,
+   "dias": 143.7,
+   "hasta_el": "24 de mayo",
+   "dia": 24,
+   "mes": 5
+  },
+  "2026": {
+   "pct_del_coste": 41.38,
+   "dias": 151.0,
+   "hasta_el": "31 de mayo",
+   "dia": 31,
+   "mes": 5
+  }
+ },
+ "piso_90m2": {
+  "1986": {
+   "precio_eur": 27135.0,
+   "anos_de_sueldo_neto": 4.3
+  },
+  "2006": {
+   "precio_eur": 174985.0,
+   "anos_de_sueldo_neto": 11.1
+  },
+  "2016": {
+   "precio_eur": 135236.0,
+   "anos_de_sueldo_neto": 7.3
+  },
+  "2026": {
+   "precio_eur": 210182.0,
+   "anos_de_sueldo_neto": 8.5
+  }
+ },
+ "deposito_gasoleo_50l": {
+  "1986": {
+   "litro_eur": 0.3625,
+   "deposito_eur": 18.13,
+   "horas": 5.1
+  },
+  "2006": {
+   "litro_eur": 0.9586,
+   "deposito_eur": 47.93,
+   "horas": 4.8
+  },
+  "2016": {
+   "litro_eur": 1.012,
+   "deposito_eur": 50.6,
+   "horas": 4.2
+  },
+  "2026": {
+   "litro_eur": 1.8504,
+   "deposito_eur": 92.52,
+   "horas": 5.8
+  }
+ },
+ "deposito_gasolina_50l_horas": {
+  "1986_super": 7.0,
+  "2006": 5.2,
+  "2016": 4.8,
+  "2026": 5.6
+ },
+ "carburante_1986": {
+  "gasoleo_a_pts": 60.32,
+  "gasolina_super_pts": 82.81,
+  "nota": "Media del año ponderada por días: gasóleo A a 62 pesetas el litro en enero y febrero (Orden de 9-1-1985) y a 60 desde el 1 de marzo (Orden de 28-2-1986); gasolina súper a 87 (Orden de 11-12-1985) y a 82. Impuestos incluidos."
+ },
+ "luz_3500kwh": {
+  "2006": {
+   "factura_ano": 460.8,
+   "horas_ano": 46.6
+  },
+  "2016": {
+   "factura_ano": 782.07,
+   "horas_ano": 65.5
+  },
+  "2025": {
+   "factura_ano": 924.18,
+   "horas_ano": 60.7
+  },
+  "detalle": {
+   "euros_kwh": {
+    "2006": 0.1317,
+    "2016": 0.2234,
+    "2025": 0.2641
+   },
+   "consumo_kwh_ano": 3500,
+   "factura_ano": {
+    "2006": 460.8,
+    "2016": 782.07,
+    "2025": 924.18
+   },
+   "enlace_2007": 1.1429,
+   "kwh_2006_metodo_antiguo": 0.1152,
+   "nota": "Eurostat, nrg_pc_204: hogares, con todos los impuestos. Hasta 2007, consumidor tipo de 3.500 kWh al año; desde el 2.º semestre de 2007, tramo de 2.500 a 5.000 kWh. 2006 se enlaza con el semestre en que coinciden los dos métodos (2007-S2). 2025: último año entero (en 2026 hubo rebajas temporales del IVA y del impuesto de la electricidad)."
+  }
+ },
+ "compra_mes_persona": {
+  "2006": {
+   "euros_mes": 110.88,
+   "horas": 11.2
+  },
+  "2016": {
+   "euros_mes": 131.08,
+   "horas": 11.0
+  },
+  "2026": {
+   "euros_mes": 191.89,
+   "horas": 12.1
+  }
+ },
+ "sube_pct": {
+  "estado_dias": {
+   "1986": 4.0,
+   "2006": 5.1
+  },
+  "piso": {
+   "1986": 97.7,
+   "2006": -23.4,
+   "2016": 16.4
+  },
+  "deposito": {
+   "1986": 13.7,
+   "2006": 20.8,
+   "2016": 38.1
+  },
+  "luz": {
+   "2006": 30.3,
+   "2016": -7.3
+  },
+  "compra": {
+   "2006": 8.0,
+   "2016": 10.0
+  }
+ }
+}

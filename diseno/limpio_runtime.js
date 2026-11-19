@@ -70,19 +70,35 @@ function persona(id, t, o) {
   el.style.display = "";
   const s = o.s ?? 1, dir = o.espejo ? -1 : 1, fase = o.fase ?? 0;
   const anda = vigente(o.anda, t, false).cur;
-  const bote = anda ? Math.abs(Math.sin(t * 9)) * 9 : Math.sin(t * 2.2 + fase) * 2.5;
-  el.setAttribute("transform", `translate(${o.x.toFixed(1)} ${o.y.toFixed(1)}) rotate(${(o.rot ?? 0).toFixed(2)}) scale(${(dir * s * (o.sx ?? 1)).toFixed(3)} ${s.toFixed(3)})`);
-  attr(id + "-c", "transform", `translate(0 ${(-bote - (o.sube ?? 0)).toFixed(1)})`);
-  const paso = anda ? Math.sin(t * 9) * 24 : 0;
+  // «vivo» (T9 en adelante): respira, se balancea, gesticula y asiente mientras habla, y puede dar saltos.
+  const V = !!o.vivo;
+  const charla = V && o.charla && t >= o.charla.b && t <= o.charla.f;
+  let salto = 0, aplasta = 0;
+  for (const ts of (V ? [].concat(o.salta ?? []) : [])) {
+    const k = (t - ts) / 0.5;
+    if (k >= -0.12 && k < 0) aplasta = Math.max(aplasta, 0.07 * (1 + k / 0.12));       // se agacha antes de saltar
+    else if (k >= 0 && k <= 1) salto = Math.max(salto, Math.sin(k * Math.PI) * 120);
+    else if (k > 1 && k < 1.3) aplasta = Math.max(aplasta, 0.06 * (1 - (k - 1) / 0.3)); // y aterriza
+  }
+  const bote = anda ? Math.abs(Math.sin(t * 9)) * (V ? 14 : 9) : Math.sin(t * 2.2 + fase) * (V ? 3.5 : 2.5) + (charla ? Math.abs(Math.sin(t * 6.5)) * 5 : 0);
+  const respira = V ? 1 + 0.014 * Math.sin(t * 2.6 + fase) : 1;
+  const pasoSq = V && anda ? 0.035 * Math.max(0, Math.cos(t * 18)) : 0;
+  const sy = respira * (1 - aplasta - pasoSq), sxx = 1 + (aplasta + pasoSq) * 0.6;
+  const balanceo = V ? Math.sin(t * 1.3 + fase) * 1.4 + (charla ? 2.2 : 0) + (anda ? Math.sin(t * 9) * 2 : 0) : 0;
+  el.setAttribute("transform", `translate(${o.x.toFixed(1)} ${o.y.toFixed(1)}) rotate(${((o.rot ?? 0) + balanceo * dir).toFixed(2)}) scale(${(dir * s * (o.sx ?? 1)).toFixed(3)} ${s.toFixed(3)})`);
+  attr(id + "-c", "transform", `translate(0 ${(-bote - salto - (o.sube ?? 0)).toFixed(1)}) scale(${sxx.toFixed(3)} ${sy.toFixed(3)})`);
+  const paso = anda ? Math.sin(t * 9) * (V ? 30 : 24) : (salto > 0 ? 14 * Math.min(1, salto / 40) : 0);   // al saltar, piernas abiertas
   attr(id + "-pi", "transform", `rotate(${paso.toFixed(1)} -28 -190)`);
   attr(id + "-pd", "transform", `rotate(${(-paso).toFixed(1)} 28 -190)`);
-  const b = vigente(o.brazo, t, "abajo"), k = suave((t - b.tc) / 0.28);
+  const b = vigente(o.brazo, t, "abajo"), k = V ? clamp(rebote(clamp((t - b.tc) / 0.32)), 0, 1.12) : suave((t - b.tc) / 0.28);
   const [i0, d0] = BRAZOS[b.prev], [i1, d1] = BRAZOS[b.cur];
+  const gesto = charla ? Math.sin(t * 4.2 + fase) * 9 : 0;
   const onda = b.cur === "saluda" ? Math.sin(t * 11) * 15 : b.cur === "hombros" ? Math.sin(t * 3) * 3 : 0;
-  attr(id + "-bi", "transform", `rotate(${(i0 + (i1 - i0) * k + (anda ? -paso * 0.6 : 0)).toFixed(1)} -80 -348)`);
-  attr(id + "-bd", "transform", `rotate(${(d0 + (d1 - d0) * k + onda + (anda && b.cur === "abajo" ? paso * 0.6 : 0)).toFixed(1)} 80 -348)`);
+  attr(id + "-bi", "transform", `rotate(${(i0 + (i1 - i0) * k + (anda ? -paso * 0.6 : 0) - gesto * 0.6).toFixed(1)} -80 -348)`);
+  attr(id + "-bd", "transform", `rotate(${(d0 + (d1 - d0) * k + onda + gesto + (anda && b.cur === "abajo" ? paso * 0.6 : 0)).toFixed(1)} 80 -348)`);
   const incl = vigente(o.incl, t, 0).cur;
-  attr(id + "-h", "transform", `rotate(${(Math.sin(t * 1.6 + fase) * 1.8 + incl).toFixed(2)} 0 -400)`);
+  const asiente = charla ? Math.sin(t * 7.5) * 3.2 : 0;
+  attr(id + "-h", "transform", `rotate(${(Math.sin(t * 1.6 + fase) * (V ? 2.6 : 1.8) + incl + asiente).toFixed(2)} 0 -400)`);
   const ojos = vigente(o.ojos, t, "normal").cur;
   const ciclo = 3.3 + (fase % 1.2), cerr = (t + fase) % ciclo < 0.12 ? 0.12 : 1;
   const eo = ojos === "grandes" ? 1.32 : 1, mx = (vigente(o.mira, t, 0).cur) * 7;
@@ -95,6 +111,14 @@ function persona(id, t, o) {
   attr(id + "-cj", "transform", `translate(0 ${ojos === "grandes" ? -13 : ojos === "felices" ? -4 : 0})`);
   const boca = vigente(o.boca, t, "sonrisa").cur;
   for (const m of $(id + "-b").children) m.style.display = m.dataset.b === boca ? "" : "none";
+}
+
+// Cámara con vida (T9): se acerca despacio durante el plano y da un pequeño golpe de zoom en cada dato.
+function camVivo(t, e, golpes = [], o = {}) {
+  const k = clamp((t - e.t0) / Math.max(0.5, (e.t1 ?? e.t0 + 4) - e.t0));
+  let z = 1 + (o.acerca ?? 0.045) * suave(k);
+  for (const g of golpes) { const d = t - g; if (d >= 0 && d < 0.6) z += 0.05 * Math.sin(Math.min(1, d / 0.12) * Math.PI / 2) * Math.exp(-d * 5); }
+  return { z, fx: (o.fx ?? 540) + Math.sin(t * 0.6) * 18, fy: o.fy, dx: Math.sin(t * 0.9) * 6, dy: Math.cos(t * 0.7) * 4 };
 }
 
 // Alguien trabajando (carnicero, camarera, mecánico…): alterna dos posturas del brazo a un ritmo fijo.
@@ -245,3 +269,12 @@ window.render = function (t) {
   subtitulos(t);
   progreso(t);
 };
+
+// Cuña de un reloj de «horas de trabajo» (T9): rellena la fracción f (0..1) de la esfera, desde las 12 en el sentido de las agujas.
+function cuna(id, f, r) {
+  f = clamp(f, 0, 1);
+  if (f <= 0) { attr(id, "d", "M0 0 Z"); return; }
+  if (f >= 0.995) { attr(id, "d", `M0 ${-r} A${r} ${r} 0 1 1 0 ${r} A${r} ${r} 0 1 1 0 ${-r} Z`); return; }
+  const a = f * 2 * Math.PI, x = r * Math.sin(a), y = -r * Math.cos(a);
+  attr(id, "d", `M0 0 L0 ${-r} A${r} ${r} 0 ${f > 0.5 ? 1 : 0} 1 ${x.toFixed(1)} ${y.toFixed(1)} Z`);
+}
