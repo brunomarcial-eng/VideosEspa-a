@@ -7,7 +7,7 @@
 // Decorados: la calle con los dos locales («fachada», nuevo) y el bar de ella (el de T4).
 /* eslint-disable no-undef */
 
-import { C, persona, bocadillo, tarjeta, monedaEuro } from "../../diseno/limpio.mjs";
+import { C, persona, tarjeta, monedaEuro } from "../../diseno/limpio.mjs";
 import { bandera, DELANTAL } from "../../diseno/barrio.mjs";
 import { ambientes, cana, BANDEJA } from "../../diseno/sueno.mjs";
 import { billete } from "../../diseno/casa.mjs";
@@ -187,19 +187,19 @@ export function escenas(D) {
 
     // 4 a 8 · La lista (bar): los papeles caen y el contador sube.
     { n: 4, set: "vacio", svg: `${papeles(4)}${dos("s4", "", LIBRETA)}`,
-      tarjeta: lista(4, D.cont["4"], "ya en 2006", F_LEYES("leyes de protección de datos y de riesgos laborales, norma de higiene de los alimentos y ley de espectáculos de Madrid")),
+      tarjeta: lista(4, D.cont["4"], "hasta 2006", F_LEYES("leyes de protección de datos y de riesgos laborales, norma de higiene de los alimentos y ley de espectáculos de Madrid")),
       ...planoLista(4, "bar", "fachada") },
     { n: 5, set: "vacio", svg: `${papeles(5)}${dos("s5", "", LIBRETA)}`,
-      tarjeta: lista(5, D.cont["5"], "ya van 8", F_LEYES("ley de igualdad, ley del tabaco, norma de alérgenos y ley de protección de datos")),
+      tarjeta: lista(5, D.cont["5"], "de 2007 a 2018", F_LEYES("ley de igualdad, ley del tabaco, norma de alérgenos y ley de protección de datos")),
       ...planoLista(5, "bar") },
     { n: 6, set: "vacio", svg: `${papeles(6)}${dos("s6", "", LIBRETA)}`,
-      tarjeta: lista(6, D.cont["6"], "ya van 12", F_LEYES("registro de jornada, igualdad retributiva, ley de residuos y ley del desperdicio alimentario")),
+      tarjeta: lista(6, D.cont["6"], "de 2019 a 2025", F_LEYES("registro de jornada, igualdad retributiva, ley de residuos y ley del desperdicio alimentario")),
       ...planoLista(6, "bar") },
     { n: 7, set: "vacio", svg: `${papeles(7)}${dos("s7", "", LIBRETA)}`,
-      tarjeta: lista(7, D.cont["7"], "hoy: ya van 15", F_LEYES("ley de residuos, reforma de las pensiones y cotización de los autónomos")),
+      tarjeta: lista(7, D.cont["7"], "impuestos y cuotas, desde 2023", F_LEYES("ley de residuos, reforma de las pensiones y cotización de los autónomos")),
       ...planoLista(7, "bar") },
     { n: 8, set: "vacio", svg: `${papeles(8)}${dos("s8", "", LIBRETA)}`,
-      tarjeta: lista(8, D.cont["8"], "y van 16 en 2027", F_LEYES("reglamento de los programas de facturación y su aplazamiento"), "Para quien factura con ordenador o caja informática"),
+      tarjeta: lista(8, D.cont["8"], "y en 2027, una más", F_LEYES("reglamento de los programas de facturación y su aplazamiento"), "Para quien factura con ordenador o caja informática"),
       ...planoLista(8, "bar") },
 
     // 9 · El nuevo (bar), ante el montón: «Pero… ¿cuántas son?»
@@ -301,10 +301,10 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("bar", null, t, 0);
-        const tt = [c["c13-6"], c["c13-6"] + 0.4, c["c13-10"]];
+        const tt = [c["c13-6"], c["c13-6"] + 0.3, c["c13-10"]];
         for (let i = 0; i < 3; i++) {
-          for (let k = 0; k < D.iva[i]; k++) { const t0 = tt[i] + k * 0.05; css(`s13-m${i}-${k}`, "opacity", clamp((t - t0) / 0.12)); }
-          css(`s13-v${i}`, "opacity", clamp((t - tt[i] - D.iva[i] * 0.05) / 0.25));
+          for (let k = 0; k < D.iva[i]; k++) { const t0 = tt[i] + k * 0.03; css(`s13-m${i}-${k}`, "opacity", clamp((t - t0) / 0.12)); }
+          css(`s13-v${i}`, "opacity", clamp((t - tt[i]) / 0.2));
           sube(`c13-${"abc"[i]}`, t, tt[i]);
         }
         persona("s13-v", t, { x: 130, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e), brazo: [[0, "sujeta"], [c["c13-iva"], "arriba"], [c["c13-10"] + 0.3, "sujeta"]], fase: 1 });
@@ -332,13 +332,13 @@ export function escenas(D) {
 
     // 15 · El nuevo, a cámara (calle): «¿Merece la pena montar un negocio hoy en España? ¿Tú qué harías?»
     { n: 15, set: "vacio",
-      svg: `${boton("s15-b1", "SÍ", "#5F7F62", 200)}${boton("s15-b2", "NO", "#B8863A", 200)}${bocadillo("s15-boc")}${dos("s15", "", LLAVES)}`,
+      svg: `${boton("s15-b1", "SÍ", "#5F7F62", 190)}${boton("s15-b2", "NO", "#B8863A", 190)}${dos("s15", "", LLAVES)}`,
       tarjeta: tarjeta(15, "Te toca", `<div class="tit" style="font-size:60px">¿Merece la <mark id="m15">pena</mark> montar un negocio hoy en España?</div><div class="sub" id="c15-sub">¿Tú qué harías? Te leo en los comentarios.</div>`),
       fn: function (t, e) {
         const c = e.c;
         ambiente("fachada", "bar", t, e.t0);
-        pop("s15-b1", t, c["c15-pena"], 370, 900, { s: 0.9 }); pop("s15-b2", t, c["c15-pena"] + 0.25, 710, 900, { s: 0.9 });
-        if (pop("s15-boc", t, c["c15-tu"], 540, 1110, { s: 0.7 }) >= 0) for (let i = 0; i < 3; i++) attr("s15-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - c["c15-tu"]) * 8 - i * 0.9))).toFixed(1));
+        pop("s15-b1", t, c["c15-pena"], 445, 1030, { s: 0.85 }); pop("s15-b2", t, c["c15-pena"] + 0.25, 650, 1030, { s: 0.85 });
+        const kb = t - c["c15-tu"]; if (kb > 0) { T("s15-b1", 445, 1030 - 14 * Math.abs(Math.sin(kb * 5)), { s: 0.85 }); T("s15-b2", 650, 1030 - 14 * Math.abs(Math.sin(kb * 5 + 1.6)), { s: 0.85 }); }
         marca("m15", t, c["c15-pena"]); sube("c15-sub", t, c["c15-tu"] - 0.2);
         persona("s15-v", t, { x: 260, y: 1440, s: 0.8, mira: [[0, 1], [c["c15-tu"], 0]], vivo: true, boca: "sonrisa", brazo: [[0, "abajo"], [c["c15-espana"], "hombros"]], fase: 1 });
         persona("s15-n", t, { x: 840, y: 1440, s: 0.8, mira: [[0, -1], [c["c15-espana"], 0]], vivo: true, charla: e, boca: habla(t, e), brazo: [[0, "sujeta"], [c["c15-pena"], "senala"], [c["c15-tu"], "hombros"]], incl: [[0, 0], [c["c15-espana"], -6], [c["c15-tu"], 0]], espejo: true, fase: 2 });

@@ -9,28 +9,28 @@ Datos en `data/clean/t10_bar.json` (`scripts/calcular_t10.py`). **Cada obligaci�
 ## Lo que hoy tiene que cumplir un bar y en 1986 no existía
 | Desde | Obligación | Norma (BOE) |
 |---|---|---|
+| 1993 | Protección de datos personales | Ley Orgánica 5/1992 (en vigor desde enero de 1993); hoy, Ley Orgánica 3/2018 y el Reglamento europeo |
 | 1996 | Evaluación de riesgos laborales y plan de prevención | Ley 31/1995 de Prevención de Riesgos Laborales |
 | 1996 | Autocontrol de higiene de los alimentos (APPCC) | Real Decreto 2207/1995 de higiene de los productos alimenticios |
 | 1998 | Seguro obligatorio de incendio y responsabilidad civil | Ley 17/1997 de Espectáculos Públicos y Actividades Recreativas de la Comunidad de Madrid |
-| 2000 | Protección de datos personales | Ley Orgánica 15/1999; hoy, Ley Orgánica 3/2018 y el Reglamento europeo |
+| 2007 | Medidas y procedimiento contra el acoso sexual | Ley Orgánica 3/2007, artículo 48 (ampliado por la Ley Orgánica 10/2022) |
 | 2011 | Prohibido fumar en el local | Ley 28/2005 (en parte) y Ley 42/2010 (en toda la hostelería) |
 | 2015 | Información de alérgenos de todo lo que se sirve | Real Decreto 126/2015 (y Reglamento europeo 1169/2011) |
+| 2018 | Política interna de desconexión digital | Ley Orgánica 3/2018, artículo 88 |
 | 2019 | Registro diario de la jornada de cada empleado | Real Decreto-ley 8/2019 |
 | 2021 | Registro de los sueldos de toda la plantilla | Real Decreto 902/2020 de igualdad retributiva |
-| 2022 | Medidas y procedimiento contra el acoso sexual | Ley Orgánica 10/2022, artículo 12 |
 | 2022 | Ofrecer agua del grifo gratis | Ley 7/2022 de residuos, artículo 18 |
-| 2023 | Impuesto sobre los envases de plástico | Ley 7/2022 de residuos |
+| 2023 | Impuesto sobre los envases de plástico (se repercute en el precio) | Ley 7/2022 de residuos |
 | 2023 | Cotización nueva de equidad intergeneracional (MEI) | Real Decreto-ley 2/2023 |
 | 2023 | Cuota de autónomo según lo que ganes, con regularización | Real Decreto-ley 13/2022 |
-| 2025 | Tasa de basuras obligatoria en todos los ayuntamientos | Ley 7/2022 de residuos, artículo 11 |
 | 2025 | Dejar llevarse lo que no se come, sin cobrar | Ley 1/2025 de prevención de las pérdidas y el desperdicio alimentario |
-| 2027 | Programa de facturación que vigila Hacienda (VERI*FACTU) | Real Decreto 1007/2023 y Real Decreto-ley 15/2025 (autónomos, desde el 1-7-2027) |
+| 2027 | Programa de facturación antifraude de Hacienda (VERI*FACTU), si se factura con ordenador o caja informática | Real Decreto 1007/2023 y Real Decreto-ley 15/2025 (autónomos, desde el 1-7-2027) |
 
 **Cuántas:**
 - En 1986, **0** de estas obligaciones.
 - En 2006, **4**.
 - Hoy, **15**, y **16** en 2027.
-- **12 son nuevas desde 2006.**
+- **11 son nuevas desde 2006** (12 contando la de 2027).
 
 ## Costes
 - **Contratar a un camarero con el salario mínimo**, coste para el bar en euros de hoy: 15,233 € en 1986, 15,161 € en 2006 y **22,615 € hoy**. Son un 48.5 % y un 49.2 % más.
@@ -61,3 +61,14 @@ Datos en `data/clean/t10_bar.json` (`scripts/calcular_t10.py`). **Cada obligaci�
 - Una pila de papeles que crece con un sello por cada obligación, cada uno con su año.
 - Un contador que pasa de 0 a 16.
 - Una línea del tiempo de 1986 a 2027 que se llena de sellos.
+
+## Versión 2 del guion (20-11-2026)
+**Cambios en la lista**, comprobados en el texto original del BOE:
+- **Protección de datos:** desde 1993, con la primera ley (Ley Orgánica 5/1992).
+- **Acoso:** desde 2007 (Ley Orgánica 3/2007, art. 48). La ley de 2022 lo amplía.
+- **Sale la tasa de basuras.** En Madrid, los negocios quizá ya pagaban una antes de 2025.
+- **Entra la desconexión digital** (Ley Orgánica 3/2018, art. 88).
+
+**Las cuentas no cambian:** 0 en 1986, 4 en 2006, 15 hoy y 16 en 2027.
+
+**El guion final está en `videos/t10/guion.md`.** Son 15 planos, unos 70 s. La hostelera dice el veredicto: «más papeles, más impuestos y más coste: hoy es más difícil que en 1986 y que en 2006». El nuevo cierra con la pregunta.

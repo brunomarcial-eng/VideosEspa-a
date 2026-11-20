@@ -1,0 +1,48 @@
+{
+ "huella": "8ded41809e6094f1",
+ "semilla": 7000,
+ "texto": "Impuesto del plástico, una cotización nueva y la cuota de autónomo según lo que ganes.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0256,
+  "oido": "Impuesto del plástico, una cotización nueva y la cuota de autónomo según lo que ganes.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.36,
+   0.5,
+   1.38,
+   1.5,
+   1.96,
+   2.28,
+   2.56,
+   2.66,
+   2.92,
+   3.0,
+   3.44,
+   3.68,
+   3.88,
+   3.98
+  ],
+  "t1": [
+   0.36,
+   0.5,
+   1.02,
+   1.5,
+   1.96,
+   2.28,
+   2.56,
+   2.66,
+   2.92,
+   3.0,
+   3.44,
+   3.68,
+   3.88,
+   3.98,
+   4.32
+  ],
+  "ritmo": 15.6,
+  "voz": 0.901
+ }
+}

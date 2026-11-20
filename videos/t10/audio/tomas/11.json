@@ -1,0 +1,30 @@
+{
+ "huella": "6c27eaef5d47659a",
+ "semilla": 11000,
+ "texto": "¿Y si contrato a un camarero?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0024,
+  "oido": "y si contrato a un camarero.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.24,
+   0.7,
+   0.8,
+   0.86
+  ],
+  "t1": [
+   0.14,
+   0.24,
+   0.7,
+   0.8,
+   0.86,
+   1.24
+  ],
+  "ritmo": 15.5,
+  "voz": 0.855
+ }
+}

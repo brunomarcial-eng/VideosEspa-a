@@ -1,0 +1,24 @@
+{
+ "huella": "1858cfcab860a11a",
+ "semilla": 3000,
+ "texto": "¿Tanto ha cambiado?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0055,
+  "oido": "¿Tanto ha cambiado?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.28,
+   0.42
+  ],
+  "t1": [
+   0.28,
+   0.42,
+   0.82
+  ],
+  "ritmo": 16.7,
+  "voz": 0.861
+ }
+}

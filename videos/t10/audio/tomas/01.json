@@ -1,0 +1,34 @@
+{
+ "huella": "55d8b172cdf12927",
+ "semilla": 1000,
+ "texto": "¡Vecina! Abro un bar aquí enfrente. ¿Algún consejo?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0406,
+  "oido": "¡Vecina! Abro un bar aquí en frente. ¿Algún consejo?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.86,
+   1.16,
+   1.3,
+   1.46,
+   1.7,
+   2.54,
+   2.94
+  ],
+  "t1": [
+   0.48,
+   1.16,
+   1.3,
+   1.46,
+   1.7,
+   2.08,
+   2.94,
+   3.4
+  ],
+  "ritmo": 11.1,
+  "voz": 0.931
+ }
+}
