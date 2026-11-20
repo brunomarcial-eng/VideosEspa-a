@@ -267,17 +267,34 @@
    "vol": 0.3
   },
   {
-   "id": "c11-mejor",
+   "id": "c11-espana",
    "beat": 11,
-   "palabra": "mejor",
+   "palabra": "España…",
+   "dt": -0.05,
+   "sfx": "ting",
+   "vol": 0.28
+  },
+  {
+   "id": "c11-quedo",
+   "beat": 11,
+   "palabra": "quedo",
    "dt": -0.05,
    "sfx": "pop",
    "vol": 0.35
   },
   {
+   "id": "c11-marchar",
+   "beat": 11,
+   "palabra": "marchar?",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.35,
+   "tono": 1.2
+  },
+  {
    "id": "c11-boc",
    "beat": 11,
-   "palabra": "opinas?",
+   "palabra": "harías?",
    "dt": -0.3,
    "sfx": "pop",
    "vol": 0.3

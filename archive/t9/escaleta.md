@@ -14,6 +14,6 @@ Dos amigos de 35 años, personajes nuevos con volumen y movimiento. Solo 2016 fr
 | 8 | El que vuelve | Ya, pero la comida del mes: 11 horas en 2016. Hoy, 12. | La comida de un mes por persona, en horas de trabajo · 2016: 11,2 h · 2026: 12,3 h | El salón se deshace en el súper; del carro salen relojes. |
 | 9 | El que vuelve | Y para el Estado trabajas hasta el 31 de mayo. En 2016, hasta el 24. | Con el sueldo medio, trabajas para el Estado hasta el… · 2016: 24 de mayo · 2025: 31 de mayo | Una oficina; un calendario pasa hojas a toda velocidad y se para en el 31 de mayo. |
 | 10 | El que se quedó | Bueno… ¡Bienvenido a casa! | «¡Bienvenido a casa!» | Vuelven al bar. El que se quedó le da una palmada en la espalda; los dos se ríen. |
-| 11 | El que vuelve | ¿Se vive mejor que hace 10 años? ¿Tú qué opinas? | ¿Se vive mejor que hace 10 años? | Dos botones: MEJOR y PEOR; cada uno señala el suyo y acaban mirando a cámara. |
+| 11 | El que vuelve | Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías? | Tal y como está España, ¿me quedo o me vuelvo a marchar? | Dos botones: ME QUEDO y ME VOY. El que vuelve mira su maleta; los dos acaban mirando a cámara. |
 
-**La música se corta** con «casi 6» (el depósito).
+**La música se corta** con «casi 6» (el depósito). **Pregunta final** (Bruno, 20-11-2026): «Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías?».

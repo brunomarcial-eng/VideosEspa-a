@@ -272,21 +272,24 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camSueno(t, e.t0); } },
 
-    // 11 · El que vuelve, a cámara (bar): «¿Se vive mejor que hace 10 años? ¿Tú qué opinas?»
+    // 11 · El que vuelve, a cámara (bar): «Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías?»
     { n: 11, set: "vacio",
-      svg: `${boton("s11-b1", "MEJOR", "#5F7F62", 280)}${boton("s11-b2", "PEOR", "#B8863A", 260)}${bocadillo("s11-boc")}<g id="s11-mal" transform="translate(1010 1440) scale(.8) rotate(-6)">${maleta("s11-m")}</g>${dos("s11")}`,
-      tarjeta: tarjeta(11, "Te toca", `<div class="tit" style="font-size:64px">¿Se vive <mark id="m11">mejor</mark> que hace 10 años?</div><div class="sub" id="c11-sub">¿Tú qué opinas? Te leo en los comentarios.</div>`),
+      svg: `${boton("s11-b1", "ME QUEDO", "#5F7F62", 300)}${boton("s11-b2", "ME VOY", "#B8863A", 240)}${bocadillo("s11-boc")}<g id="s11-mal" transform="translate(1010 1440) scale(.8) rotate(-6)">${maleta("s11-m")}</g>${dos("s11")}`,
+      tarjeta: tarjeta(11, "Te toca", `<div class="tit" style="font-size:60px">Tal y como está España, ¿me <mark id="m11">quedo</mark> o me vuelvo a marchar?</div><div class="sub" id="c11-sub">¿Tú qué harías? Te leo en los comentarios.</div>`),
       fn: function (t, e) {
         const c = e.c;
         ambiente("bar", null, t, 0);
-        pop("s11-b1", t, c["c11-mejor"], 320, 880, { s: 0.9 }); pop("s11-b2", t, c["c11-mejor"] + 0.35, 760, 880, { s: 0.9 });
-        if (pop("s11-boc", t, c["c11-boc"], 540, 1120, { s: 0.75 }) >= 0) for (let i = 0; i < 3; i++) attr("s11-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - c["c11-boc"]) * 8 - i * 0.9))).toFixed(1));
-        marca("m11", t, c["c11-mejor"]); sube("c11-sub", t, c["c11-boc"] - 0.2);
-        persona("s11-q", t, { x: 210, y: 1440, s: 0.8, mira: [[0, 1], [c["c11-boc"], 0]], vivo: true, salta: c["c11-mejor"] + 0.1, boca: "sonrisa",
-          brazo: [[0, "abajo"], [c["c11-mejor"], "senala"], [c["c11-boc"], "hombros"]], fase: 1 });
-        persona("s11-v", t, { x: 860, y: 1440, s: 0.8, mira: [[0, -1], [c["c11-boc"], 0]], vivo: true, charla: e, salta: c["c11-mejor"] + 0.45, boca: habla(t, e),
-          brazo: [[0, "abajo"], [c["c11-mejor"] + 0.35, "senala"], [c["c11-boc"], "arriba"]], espejo: true, fase: 2 });
+        pop("s11-b1", t, c["c11-quedo"], 320, 900, { s: 0.9 }); pop("s11-b2", t, c["c11-marchar"], 770, 900, { s: 0.9 });
+        if (pop("s11-boc", t, c["c11-boc"], 540, 1130, { s: 0.75 }) >= 0) for (let i = 0; i < 3; i++) attr("s11-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - c["c11-boc"]) * 8 - i * 0.9))).toFixed(1));
+        marca("m11", t, c["c11-quedo"]); sube("c11-sub", t, c["c11-boc"] - 0.2);
+        // La maleta se mueve un poco cuando dice «marchar».
+        const km = t - c["c11-marchar"];
+        T("s11-mal", 1010, 1440, { s: 0.8, r: -6 + (km > 0 && km < 0.6 ? 8 * Math.sin(km * 20) * (1 - km / 0.6) : 0) });
+        persona("s11-q", t, { x: 210, y: 1440, s: 0.8, mira: [[0, 1], [c["c11-boc"], 0]], vivo: true, salta: c["c11-quedo"] + 0.1, boca: [[0, "sonrisa"], [c["c11-marchar"], "o"]],
+          brazo: [[0, "abajo"], [c["c11-quedo"], "senala"], [c["c11-boc"], "hombros"]], fase: 1 });
+        persona("s11-v", t, { x: 860, y: 1440, s: 0.8, mira: [[0, -1], [c["c11-marchar"] - 0.2, 1], [c["c11-boc"], 0]], vivo: true, charla: e, boca: habla(t, e),
+          brazo: [[0, "piensa"], [c["c11-marchar"] - 0.2, "senala"], [c["c11-boc"], "hombros"]], incl: [[0, 0], [c["c11-espana"], -6], [c["c11-boc"], 0]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c11-mejor"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c11-quedo"], e.c["c11-marchar"]]); } },
   ];
 }

@@ -179,10 +179,10 @@
    "n": 11,
    "quien": "vuelve",
    "funcion": "pregunta para el debate",
-   "voz": "¿Se vive mejor que hace 10 años? ¿Tú qué opinas?",
-   "pantalla": "¿Se vive mejor que hace 10 años?",
+   "voz": "Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías?",
+   "pantalla": "Tal y como está España, ¿me quedo o me vuelvo a marchar?",
    "sello": null,
-   "imagen": "Dos botones: MEJOR y PEOR; cada uno señala el suyo y acaban mirando a cámara."
+   "imagen": "Dos botones: ME QUEDO y ME VOY. El que vuelve mira su maleta; los dos acaban mirando a cámara."
   }
  ],
  "no_dato": [
@@ -348,7 +348,7 @@
  "cierre": {
   "veredicto": "empeora frente a 2016: el sueldo limpio sube un 1,8 % por encima de la inflación, pero el piso cuesta un 16 % más de años de sueldo, el depósito un 37 % más de horas, la comida un 10 % más, y se trabaja una semana más para el Estado. La excepción: la luz cuesta un 6 % menos de horas que en 2016",
   "porque": "Precios oficiales (Banco de España, Eurostat, Comisión Europea e INE) entre el sueldo medio neto por hora; IRPF y cotizaciones de la OCDE.",
-  "pregunta": "¿Se vive mejor que hace 10 años? ¿Tú qué opinas?"
+  "pregunta": "Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías?"
  },
- "aprobacion_guion": "Borrador pendiente de Bruno (20-11-2026)"
+ "aprobacion_guion": "Primer render enviado a Bruno el 20-11-2026; Bruno cambia la pregunta final («tal y como está España, ¿es mejor quedarme o volver a marcharme?»)"
 }

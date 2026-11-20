@@ -9,7 +9,7 @@ plano 4: «Un 2 % más que en 2016, ya descontada la inflación. Vamos a contarl
 plano 5: «Un piso: 7 años y medio de sueldo en 2016. Hoy, más de 8 y medio.»
     toma guardada (semilla 5000): BUENA · «un piso, siete años y medio de sueldo en 2016, hoy más de ocho y medio.»
 plano 6: «Llenar el depósito: 4 horas de trabajo en 2016. Hoy, casi 6.»
-    toma 1 (semilla 6001): BUENA · 1.0 · voz 0.893 · 4.8 s · 13.2 l/s · «Llenar el depósito, 4 horas de trabajo en 2016, hoy casi 6.»
+    toma guardada (semilla 6001): BUENA · «Llenar el depósito, 4 horas de trabajo en 2016, hoy casi 6.»
 plano 7: «Pues la luz me cuesta menos: 67 horas al año en 2016. Hoy, 62.»
     toma guardada (semilla 7000): BUENA · «Pues la luz me cuesta menos, 67 horas al año en 2016, hoy 62.»
 plano 8: «Ya, pero la comida del mes: 11 horas en 2016. Hoy, 12.»
@@ -18,5 +18,6 @@ plano 9: «Y para el Estado trabajas hasta el 31 de mayo. En 2016, hasta el 24.�
     toma guardada (semilla 9000): BUENA · «y para el estado trabajas hasta el 31 de mayo, en 2016 hasta el 24.»
 plano 10: «Bueno… ¡Bienvenido a casa!»
     toma guardada (semilla 10000): BUENA · «Bueno, bienvenido a casa.»
-plano 11: «¿Se vive mejor que hace 10 años? ¿Tú qué opinas?»
-    toma guardada (semilla 11003): BUENA · «¿Se vive mejor que hace 10 años? ¿Tú qué opinas?»
+plano 11: «Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías?»
+    toma 1 (semilla 11000): mala · 1.0 · voz 0.839 · 3.8 s · 13.9 l/s · «tal y como está España. Me quedo o me vuelvo a marchar, ¿tú qué harías?» · voz distinta (0.84)
+    toma 2 (semilla 11001): BUENA · 1.0 · voz 0.868 · 3.9 s · 13.5 l/s · «Tal y como está España, me quedo o me vuelvo a marchar, ¿tu qué harías?»

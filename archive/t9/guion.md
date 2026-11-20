@@ -2,7 +2,7 @@
 
 Pregunta: Dos amigos de 35 años: uno se independizó en 2016; el otro vuelve hoy tras 10 años fuera. ¿Quién lo tiene más difícil, contado en horas de trabajo?  
 Datos: `data/clean/t9_horas.json` · Bruno, 20-11-2026: solo 2016 frente a hoy, y dos amigos de 35 años en vez de padre e hijo  
-Duración estimada de la voz: **59 s** (a 2.6 palabras/s) · Años en pantalla: 2016, 2025, 2026  
+Duración estimada de la voz: **61 s** (a 2.6 palabras/s) · Años en pantalla: 2016, 2025, 2026  
 Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La columna «Imagen» es la idea del plano; cada estilo la dibuja a su manera en el Paso 3.
 
 | # | Tiempo | Quién | Voz | En pantalla | Sello de fuente | Imagen |
@@ -17,7 +17,7 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 8 | 40-46 s | vuelve (35 años, vuelve tras 10 años fuera) | Ya, pero la comida del mes: 11 horas en 2016. Hoy, 12. | La comida de un mes por persona, en horas de trabajo · 2016: 11,2 h · 2026: 12,3 h <br>_La misma cesta en los dos años: el gasto medio en comida de 2025, con los precios de cada año_ | CÁLCULO PROPIO · INE (presupuestos familiares, IPC de alimentos y sueldo medio) · OCDE | El salón se deshace en el súper; del carro salen relojes. |
 | 9 | 46-53 s | vuelve (35 años, vuelve tras 10 años fuera) | Y para el Estado trabajas hasta el 31 de mayo. En 2016, hasta el 24. | Con el sueldo medio, trabajas para el Estado hasta el… · 2016: 24 de mayo · 2025: 31 de mayo <br>_IRPF y cotizaciones del trabajador y de la empresa: 39,4 % de lo que cuesta el sueldo en 2016 y 41,4 % en 2025_ | DATO OFICIAL · OCDE (Taxing Wages: IRPF y cotizaciones del trabajador medio) | Una oficina; un calendario pasa hojas a toda velocidad y se para en el 31 de mayo. |
 | 10 | 53-55 s | quedo (35 años, se independizó en 2016) | Bueno… ¡Bienvenido a casa! | «¡Bienvenido a casa!» | — | Vuelven al bar. El que se quedó le da una palmada en la espalda; los dos se ríen. |
-| 11 | 55-59 s | vuelve (35 años, vuelve tras 10 años fuera) | ¿Se vive mejor que hace 10 años? ¿Tú qué opinas? | ¿Se vive mejor que hace 10 años? | — | Dos botones: MEJOR y PEOR; cada uno señala el suyo y acaban mirando a cámara. |
+| 11 | 55-61 s | vuelve (35 años, vuelve tras 10 años fuera) | Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías? | Tal y como está España, ¿me quedo o me vuelvo a marchar? | — | Dos botones: ME QUEDO y ME VOY. El que vuelve mira su maleta; los dos acaban mirando a cámara. |
 
 **Cierre:** empeora frente a 2016: el sueldo limpio sube un 1,8 % por encima de la inflación, pero el piso cuesta un 16 % más de años de sueldo, el depósito un 37 % más de horas, la comida un 10 % más, y se trabaja una semana más para el Estado. La excepción: la luz cuesta un 6 % menos de horas que en 2016. Precios oficiales (Banco de España, Eurostat, Comisión Europea e INE) entre el sueldo medio neto por hora; IRPF y cotizaciones de la OCDE.
 
