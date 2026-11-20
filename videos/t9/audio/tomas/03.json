@@ -1,0 +1,32 @@
+{
+ "huella": "85f34d77beaef9f2",
+ "semilla": 3000,
+ "texto": "¿Más fácil? ¡Si hoy se cobra más!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0308,
+  "oido": "Más fácil, si hoy se cobra más.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.24,
+   1.2,
+   1.5,
+   1.64,
+   1.8,
+   2.02
+  ],
+  "t1": [
+   0.24,
+   0.54,
+   1.5,
+   1.64,
+   1.8,
+   2.02,
+   2.24
+  ],
+  "ritmo": 9.3,
+  "voz": 0.912
+ }
+}

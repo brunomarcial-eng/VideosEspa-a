@@ -66,6 +66,14 @@
   "hijo": {
    "tono": 1.0,
    "velocidad": 1.0
+  },
+  "quedo": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "vuelve": {
+   "tono": 1.0,
+   "velocidad": 1.0
   }
  },
  "velocidad_base": 0.95,

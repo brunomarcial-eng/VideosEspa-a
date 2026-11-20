@@ -83,6 +83,49 @@ def luz():
                      "(en 2026 hubo rebajas temporales del IVA y del impuesto de la electricidad).")}
 
 
+def ocde():
+    """OCDE, Taxing Wages: soltero sin hijos con el sueldo medio (AW100). Cuña fiscal (% del coste laboral) y neto / bruto."""
+    import csv
+    v = {}
+    with (RAW / "oecd_taxing_wages_esp.csv").open(encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            if r["HOUSEHOLD_TYPE"] == "S_C0" and r["INCOME_PRINCIPAL"] == "AW100":
+                v[(r["MEASURE"], r["UNIT_MEASURE"], r["TIME_PERIOD"])] = float(r["OBS_VALUE"])
+    return {a: {"cuna_pct": v[("AV_TW", "PT_COS_LB", a)], "neto_bruto": v[("NIAT", "XDC", a)] / v[("GEBT", "XDC", a)],
+                "bruto_ocde": v[("GEBT", "XDC", a)], "neto_ocde": v[("NIAT", "XDC", a)]} for a in ("2016", "2025")}
+
+
+def diez_anos(t1, t3, bruto_h, anual, piso, dep, L, f25, compra):
+    """T9, versión 2016 frente a hoy (Bruno, 20-11-2026): todo con el neto / bruto de la OCDE, para que los dos años
+    se midan igual. «Hoy» = 2026 donde hay dato de 2026 y 2025 donde no (OCDE y luz)."""
+    O = ocde()
+    rn = {"2016": O["2016"]["neto_bruto"], "2026": O["2025"]["neto_bruto"]}
+    neto_h = {a: bruto_h[a] * rn[a] for a in ("2016", "2026")}
+    neto_anual = {a: anual[a] * rn[a] for a in ("2016", "2026")}
+    ipc = t3["hace_40_anos"]["ipc_media_anual"]
+    real16 = neto_anual["2016"] * ipc["2026"] / ipc["2016"]
+    luz_h25 = f25["salario_bruto_hora_media"] * O["2025"]["neto_bruto"]
+    dia = lambda pct: datetime.date(2026, 1, 1) + datetime.timedelta(days=round(365 * pct / 100) - 1)
+    est = {a: {"cuna_pct": r(O[a]["cuna_pct"], 2), "dias": r(365 * O[a]["cuna_pct"] / 100, 1), "dia": dia(O[a]["cuna_pct"]).day,
+               "mes": dia(O[a]["cuna_pct"]).month} for a in ("2016", "2025")}
+    pisos = {a: r(piso[a] / neto_anual[a], 1) for a in ("2016", "2026")}
+    depo = {a: r(dep[a]["deposito_eur"] / neto_h[a], 1) for a in ("2016", "2026")}
+    luzh = {"2016": r(L["factura_ano"]["2016"] / neto_h["2016"], 1), "2025": r(L["factura_ano"]["2025"] / luz_h25, 1)}
+    com = {a: r(compra[a]["euros_mes"] / neto_h[a], 1) for a in ("2016", "2026")}
+    pct = lambda a, b: r(100 * (b / a - 1), 1)
+    return {
+        "nota": ("Neto / bruto y cuña fiscal del trabajador medio soltero sin hijos: OCDE, Taxing Wages (2016 y 2025, último año). "
+                 "Sueldo bruto por hora y anual: INE (EAES 2016; 2026 = EAES 2024 por la ETCL). Precios como en el resto de T9."),
+        "neto_bruto": {a: r(x, 4) for a, x in rn.items()}, "neto_hora_eur": {a: r(x) for a, x in neto_h.items()},
+        "neto_hora_2025_luz": r(luz_h25), "neto_anual_eur": {a: r(x, 0) for a, x in neto_anual.items()},
+        "neto_anual_2016_en_euros_de_2026": r(real16, 0), "neto_real_sube_pct": pct(real16, neto_anual["2026"]),
+        "bruto_anual_real_sube_pct": pct(anual["2016"] * ipc["2026"] / ipc["2016"], anual["2026"]),
+        "estado": est, "piso_anos": pisos, "deposito_horas": depo, "luz_horas_ano": luzh, "compra_horas": com,
+        "sube_pct": {"estado_dias": pct(est["2016"]["dias"], est["2025"]["dias"]), "piso": pct(pisos["2016"], pisos["2026"]),
+                     "deposito": pct(depo["2016"], depo["2026"]), "luz": pct(luzh["2016"], luzh["2025"]), "compra": pct(com["2016"], com["2026"])},
+    }
+
+
 def main():
     N, I = T8.normas(), T8.ipc_largo()
     t3 = json.loads((CLEAN / "t3_vivienda.json").read_text(encoding="utf-8"))
@@ -173,7 +216,9 @@ def main():
             "compra": {a: r(100 * (compra["2026"]["horas"] / compra[a]["horas"] - 1), 1) for a in ("2006", "2016")},
         },
     }
+    out["diez_anos"] = diez_anos(t1, t3, bruto_h, anual, piso, dep, L, f25, compra)
     (CLEAN / "t9_horas.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    print("diez_anos", json.dumps(out["diez_anos"], ensure_ascii=False))
     for k in ("sueldo", "estado_dias", "piso_90m2", "deposito_gasoleo_50l", "deposito_gasolina_50l_horas", "luz_3500kwh", "compra_mes_persona", "sube_pct"):
         v = dict(out[k]); v.pop("detalle", None); v.pop("nota", None)
         print(k, json.dumps(v, ensure_ascii=False))

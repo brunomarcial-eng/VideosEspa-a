@@ -70,3 +70,23 @@ Decorados como en un sueño: cocina → oficina → calle → gasolinera → sal
 ## Pendiente de Bruno
 1. Datos y borrador.
 2. Estilo nuevo.
+
+## Versión 2 (Bruno, 20-11-2026): solo 2016 frente a hoy, y dos amigos de 35 años
+Bruno quita 1986 y 2006: compara solo 10 años. En vez de padre e hijo, elige **dos amigos de 35 años**:
+- **El que se quedó:** se independizó en 2016. Jersey verde, piel clara. Usa la voz del hijo, ya aprobada.
+- **El que vuelve:** llega con la maleta tras 10 años fuera. Chaqueta mostaza, piel algo más morena. Usa la voz del narrador, ya aprobada.
+
+**Neto y cuña fiscal de la OCDE** (Taxing Wages, soltero sin hijos con el sueldo medio). Los dos años se miden igual y cuadra con T8:
+- Lo que se lleva el Estado: 39,4 % del coste del sueldo en 2016 y 41,4 % en 2025.
+- Lo que te queda limpio de cada euro bruto: 0,79 € en 2016 y 0,76 € en 2025.
+
+| En tiempo de trabajo | 2016 | Hoy | Cambio |
+|---|---|---|---|
+| Sueldo medio limpio al año, en euros de hoy | 23.930 € | **24.353 €** | +1,8 % |
+| Trabajas para el Estado hasta el… | 24 de mayo | **31 de mayo** (2025) | una semana más |
+| Piso de 90 m², en años de sueldo limpio | 7,4 | **8,6** | +16 % |
+| Depósito de gasóleo (50 litros), en horas | 4,3 | **5,9** | +37 % |
+| Luz de un año (3.500 kWh), en horas | 67 | **62** (2025) | −6 %: el dato a favor, lo da el que se quedó |
+| Comida de un mes por persona, en horas | 11,2 | **12,3** | +10 % |
+
+Guion de la versión 2 en `videos/t9/guion.md` (11 frases, unos 55 s). Pregunta final: «¿Se vive mejor que hace 10 años?».

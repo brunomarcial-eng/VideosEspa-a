@@ -177,5 +177,61 @@
    "2006": 8.0,
    "2016": 10.0
   }
+ },
+ "diez_anos": {
+  "nota": "Neto / bruto y cuña fiscal del trabajador medio soltero sin hijos: OCDE, Taxing Wages (2016 y 2025, último año). Sueldo bruto por hora y anual: INE (EAES 2016; 2026 = EAES 2024 por la ETCL). Precios como en el resto de T9.",
+  "neto_bruto": {
+   "2016": 0.7875,
+   "2026": 0.7646
+  },
+  "neto_hora_eur": {
+   "2016": 11.72,
+   "2026": 15.64
+  },
+  "neto_hora_2025_luz": 14.82,
+  "neto_anual_eur": {
+   "2016": 18235.0,
+   "2026": 24353.0
+  },
+  "neto_anual_2016_en_euros_de_2026": 23930.0,
+  "neto_real_sube_pct": 1.8,
+  "bruto_anual_real_sube_pct": 4.8,
+  "estado": {
+   "2016": {
+    "cuna_pct": 39.38,
+    "dias": 143.7,
+    "dia": 24,
+    "mes": 5
+   },
+   "2025": {
+    "cuna_pct": 41.44,
+    "dias": 151.3,
+    "dia": 31,
+    "mes": 5
+   }
+  },
+  "piso_anos": {
+   "2016": 7.4,
+   "2026": 8.6
+  },
+  "deposito_horas": {
+   "2016": 4.3,
+   "2026": 5.9
+  },
+  "luz_horas_ano": {
+   "2016": 66.7,
+   "2025": 62.4
+  },
+  "compra_horas": {
+   "2016": 11.2,
+   "2026": 12.3
+  },
+  "sube_pct": {
+   "estado_dias": 5.3,
+   "piso": 16.2,
+   "deposito": 37.2,
+   "luz": -6.4,
+   "compra": 9.8
+  }
  }
 }

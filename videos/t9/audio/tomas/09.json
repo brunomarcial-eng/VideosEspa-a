@@ -1,0 +1,48 @@
+{
+ "huella": "5f559d54b839673f",
+ "semilla": 9000,
+ "texto": "Y para el Estado trabajas hasta el 31 de mayo. En 2016, hasta el 24.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0326,
+  "oido": "y para el estado trabajas hasta el 31 de mayo, en 2016 hasta el 24.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.3,
+   0.42,
+   0.68,
+   1.26,
+   1.44,
+   1.56,
+   1.84,
+   2.2,
+   2.8,
+   3.06,
+   3.8,
+   4.32,
+   4.44
+  ],
+  "t1": [
+   0.14,
+   0.3,
+   0.42,
+   0.68,
+   1.26,
+   1.44,
+   1.56,
+   1.84,
+   2.2,
+   2.46,
+   3.06,
+   3.8,
+   4.32,
+   4.44,
+   4.7
+  ],
+  "ritmo": 15.6,
+  "voz": 0.915
+ }
+}

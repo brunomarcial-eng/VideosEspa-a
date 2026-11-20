@@ -1,0 +1,22 @@
+plano 1: «¡Diez años fuera! ¿Vuelves para quedarte?»
+    toma guardada (semilla 1000): BUENA · «10 años fuera. ¿Vuelves para quedarte?»
+plano 2: «Si me llega el sueldo… Tú lo tuviste más fácil: te independizaste en 2016.»
+    toma guardada (semilla 2000): BUENA · «Si me llega el sueldo, tú lo tuviste más fácil. Te independizaste en 2016.»
+plano 3: «¿Más fácil? ¡Si hoy se cobra más!»
+    toma guardada (semilla 3000): BUENA · «Más fácil, si hoy se cobra más.»
+plano 4: «Un 2 % más que en 2016, ya descontada la inflación. Vamos a contarlo en horas de trabajo.»
+    toma guardada (semilla 4000): BUENA · «un 2%, más que en 2016 ya descontada la inflación. Vamos a contarlo en horas de trabajo.»
+plano 5: «Un piso: 7 años y medio de sueldo en 2016. Hoy, más de 8 y medio.»
+    toma guardada (semilla 5000): BUENA · «un piso, siete años y medio de sueldo en 2016, hoy más de ocho y medio.»
+plano 6: «Llenar el depósito: 4 horas de trabajo en 2016. Hoy, casi 6.»
+    toma 1 (semilla 6001): BUENA · 1.0 · voz 0.893 · 4.8 s · 13.2 l/s · «Llenar el depósito, 4 horas de trabajo en 2016, hoy casi 6.»
+plano 7: «Pues la luz me cuesta menos: 67 horas al año en 2016. Hoy, 62.»
+    toma guardada (semilla 7000): BUENA · «Pues la luz me cuesta menos, 67 horas al año en 2016, hoy 62.»
+plano 8: «Ya, pero la comida del mes: 11 horas en 2016. Hoy, 12.»
+    toma guardada (semilla 8001): BUENA · «Ya, pero la comida del mes, 11 horas en 2016, hoy 12.»
+plano 9: «Y para el Estado trabajas hasta el 31 de mayo. En 2016, hasta el 24.»
+    toma guardada (semilla 9000): BUENA · «y para el estado trabajas hasta el 31 de mayo, en 2016 hasta el 24.»
+plano 10: «Bueno… ¡Bienvenido a casa!»
+    toma guardada (semilla 10000): BUENA · «Bueno, bienvenido a casa.»
+plano 11: «¿Se vive mejor que hace 10 años? ¿Tú qué opinas?»
+    toma guardada (semilla 11003): BUENA · «¿Se vive mejor que hace 10 años? ¿Tú qué opinas?»

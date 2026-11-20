@@ -1,0 +1,38 @@
+{
+ "huella": "0af2a113177bedb0",
+ "semilla": 11003,
+ "texto": "¿Se vive mejor que hace 10 años? ¿Tú qué opinas?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0024,
+  "oido": "¿Se vive mejor que hace 10 años? ¿Tú qué opinas?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.28,
+   0.66,
+   0.82,
+   0.94,
+   1.18,
+   2.06,
+   2.32,
+   2.4
+  ],
+  "t1": [
+   0.12,
+   0.28,
+   0.66,
+   0.82,
+   0.94,
+   1.18,
+   1.48,
+   2.32,
+   2.4,
+   2.82
+  ],
+  "ritmo": 12.4,
+  "voz": 0.855
+ }
+}

@@ -1,0 +1,286 @@
+{
+ "nota": "Momentos clave de T9, versión 2 (dos amigos de 35 años, 2016 frente a hoy, en horas de trabajo; el decorado cambia como en un sueño). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t9/escenas.mjs) y el sonido (scripts/sonido.py).",
+ "musica": {
+  "bpm": 104,
+  "corte": "c6-6",
+  "silencio_s": 1.0
+ },
+ "cues": [
+  {
+   "id": "c1-anos",
+   "beat": 1,
+   "palabra": "años",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.32
+  },
+  {
+   "id": "c1-quedarte",
+   "beat": 1,
+   "palabra": "quedarte?",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.28
+  },
+  {
+   "id": "c2-sueldo",
+   "beat": 2,
+   "palabra": "sueldo…",
+   "dt": -0.05
+  },
+  {
+   "id": "c2-facil",
+   "beat": 2,
+   "palabra": "fácil:",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.28
+  },
+  {
+   "id": "c2-2016",
+   "beat": 2,
+   "palabra": "2016.",
+   "dt": -0.05
+  },
+  {
+   "id": "c3-facil",
+   "beat": 3,
+   "palabra": "fácil?",
+   "dt": -0.05
+  },
+  {
+   "id": "c3-cobra",
+   "beat": 3,
+   "palabra": "cobra",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-2",
+   "beat": 4,
+   "palabra": "2",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3,
+   "dur": 0.8
+  },
+  {
+   "id": "c4-inflacion",
+   "beat": 4,
+   "palabra": "inflación.",
+   "dt": -0.05
+  },
+  {
+   "id": "c4-horas",
+   "beat": 4,
+   "palabra": "horas",
+   "dt": -0.05,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-ini",
+   "beat": 5,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c5-piso",
+   "beat": 5,
+   "palabra": "piso:",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-7",
+   "beat": 5,
+   "palabra": "7",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3,
+   "dur": 0.8
+  },
+  {
+   "id": "c5-8",
+   "beat": 5,
+   "palabra": "8",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.34,
+   "dur": 0.6,
+   "hasta": 1.35
+  },
+  {
+   "id": "c6-ini",
+   "beat": 6,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c6-deposito",
+   "beat": 6,
+   "palabra": "depósito:",
+   "dt": -0.05,
+   "sfx": "vapor",
+   "vol": 0.22,
+   "dur": 0.8
+  },
+  {
+   "id": "c6-4",
+   "beat": 6,
+   "palabra": "4",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3,
+   "dur": 0.8
+  },
+  {
+   "id": "c6-6",
+   "beat": 6,
+   "palabra": "6.",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.34,
+   "dur": 0.6,
+   "hasta": 1.35
+  },
+  {
+   "id": "c7-ini",
+   "beat": 7,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c7-luz",
+   "beat": 7,
+   "palabra": "luz",
+   "dt": -0.1,
+   "sfx": "pinza",
+   "vol": 0.35
+  },
+  {
+   "id": "c7-67",
+   "beat": 7,
+   "palabra": "67",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c7-62",
+   "beat": 7,
+   "palabra": "62.",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.34
+  },
+  {
+   "id": "c8-ini",
+   "beat": 8,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c8-comida",
+   "beat": 8,
+   "palabra": "comida",
+   "dt": -0.05,
+   "sfx": "carro",
+   "vol": 0.3,
+   "dur": 0.8
+  },
+  {
+   "id": "c8-11",
+   "beat": 8,
+   "palabra": "11",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3,
+   "dur": 0.8
+  },
+  {
+   "id": "c8-12",
+   "beat": 8,
+   "palabra": "12.",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.34,
+   "dur": 0.6,
+   "hasta": 1.35
+  },
+  {
+   "id": "c9-ini",
+   "beat": 9,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c9-estado",
+   "beat": 9,
+   "palabra": "Estado",
+   "dt": -0.05,
+   "sfx": "hojas",
+   "vol": 0.4
+  },
+  {
+   "id": "c9-31",
+   "beat": 9,
+   "palabra": "31",
+   "dt": -0.05,
+   "sfx": "sello",
+   "vol": 0.38
+  },
+  {
+   "id": "c9-24",
+   "beat": 9,
+   "palabra": "24.",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.32
+  },
+  {
+   "id": "c10-ini",
+   "beat": 10,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c10-bienvenido",
+   "beat": 10,
+   "palabra": "¡Bienvenido",
+   "dt": -0.05,
+   "sfx": "campanilla",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-mejor",
+   "beat": 11,
+   "palabra": "mejor",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.35
+  },
+  {
+   "id": "c11-boc",
+   "beat": 11,
+   "palabra": "opinas?",
+   "dt": -0.3,
+   "sfx": "pop",
+   "vol": 0.3
+  }
+ ]
+}

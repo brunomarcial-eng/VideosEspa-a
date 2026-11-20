@@ -1,0 +1,354 @@
+{
+ "id": "t9",
+ "version": 2,
+ "titulo": "¿Se vive mejor que hace 10 años?",
+ "titulo_alternativo": "Dos amigos: el que se independizó en 2016 y el que vuelve hoy, en horas de trabajo",
+ "pregunta": "Dos amigos de 35 años: uno se independizó en 2016; el otro vuelve hoy tras 10 años fuera. ¿Quién lo tiene más difícil, contado en horas de trabajo?",
+ "datos": "data/clean/t9_horas.json",
+ "aprobacion_datos": "Bruno, 20-11-2026: solo 2016 frente a hoy, y dos amigos de 35 años en vez de padre e hijo",
+ "formato": "Dos amigos de 35 años, personajes nuevos con volumen y movimiento (respiran, gesticulan al hablar, saltan). El que se quedó se independizó en 2016; el que vuelve llega con la maleta tras 10 años fuera. Decorados como en un sueño: bar, calle, gasolinera, salón, súper, oficina y bar. Cada uno trae su dato. Sin veredicto hablado: acaba con la pregunta.",
+ "duracion_max_s": 80,
+ "personajes": {
+  "quedo": {
+   "anyo": "35 años, se independizó en 2016",
+   "genero": "hijo"
+  },
+  "vuelve": {
+   "anyo": "35 años, vuelve tras 10 años fuera",
+   "genero": "hombre"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "Formato de discusión: acaba con la pregunta al espectador. El veredicto va en la descripción.",
+ "capitulos": [
+  {
+   "nombre": "La vuelta",
+   "beats": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "nombre": "Piso",
+   "beats": [
+    5
+   ]
+  },
+  {
+   "nombre": "Depósito",
+   "beats": [
+    6
+   ]
+  },
+  {
+   "nombre": "Luz",
+   "beats": [
+    7
+   ]
+  },
+  {
+   "nombre": "Comida",
+   "beats": [
+    8
+   ]
+  },
+  {
+   "nombre": "Hacienda",
+   "beats": [
+    9
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    10,
+    11
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "quedo",
+   "funcion": "gancho: la vuelta",
+   "voz": "¡Diez años fuera! ¿Vuelves para quedarte?",
+   "pantalla": "¿Se vive mejor que hace 10 años?",
+   "sello": null,
+   "imagen": "Un bar. Entra el que vuelve con la maleta; el que se quedó se levanta y lo abraza."
+  },
+  {
+   "n": 2,
+   "quien": "vuelve",
+   "funcion": "la queja",
+   "voz": "Si me llega el sueldo… Tú lo tuviste más fácil: te independizaste en 2016.",
+   "pantalla": "«Tú lo tuviste más fácil»",
+   "sello": null,
+   "imagen": "El que vuelve se sienta encima de la maleta; señala a su amigo."
+  },
+  {
+   "n": 3,
+   "quien": "quedo",
+   "funcion": "réplica",
+   "voz": "¿Más fácil? ¡Si hoy se cobra más!",
+   "pantalla": "«¡Hoy se cobra más!»",
+   "sello": null,
+   "imagen": "El que se quedó da un salto y saca una nómina."
+  },
+  {
+   "n": 4,
+   "quien": "vuelve",
+   "funcion": "dato: sueldo limpio",
+   "voz": "Un 2 % más que en 2016, ya descontada la inflación. Vamos a contarlo en horas de trabajo.",
+   "pantalla": "Sueldo medio limpio al año, en euros de hoy · 2016: 23.930 € · 2026: 24.353 €",
+   "nota": "Neto, después de IRPF y cotizaciones: un 1,8 % más que en 2016",
+   "sello": "CÁLCULO PROPIO · INE (sueldo medio e IPC) · OCDE (sueldo neto del trabajador medio)",
+   "grafico": true,
+   "imagen": "Dos fajos de billetes casi iguales; el de hoy, apenas un billete más alto."
+  },
+  {
+   "n": 5,
+   "quien": "vuelve",
+   "funcion": "dato: piso",
+   "voz": "Un piso: 7 años y medio de sueldo en 2016. Hoy, más de 8 y medio.",
+   "pantalla": "Piso de 90 m², en años de sueldo limpio · 2016: 7,4 · 2026: 8,6",
+   "nota": "Valor tasado de la vivienda y sueldo medio neto de cada año",
+   "sello": "CÁLCULO PROPIO · Banco de España (valor tasado) · INE (sueldo medio) · OCDE (sueldo neto)",
+   "grafico": true,
+   "imagen": "Como en un sueño, el bar se deshace en una calle con un bloque en venta; dos filas de calendarios, una por año de sueldo."
+  },
+  {
+   "n": 6,
+   "quien": "vuelve",
+   "funcion": "dato: depósito",
+   "voz": "Llenar el depósito: 4 horas de trabajo en 2016. Hoy, casi 6.",
+   "pantalla": "Llenar el depósito de gasóleo, en horas de trabajo · 2016: 4,3 h · 2026: 5,9 h",
+   "nota": "50 litros. 2026, con los impuestos de la ley",
+   "sello": "DATO OFICIAL · Comisión Europea (boletín petrolero) · CÁLCULO PROPIO con el sueldo medio del INE y la OCDE",
+   "grafico": true,
+   "imagen": "La calle se deshace en una gasolinera; dos filas de relojes que se llenan como el depósito."
+  },
+  {
+   "n": 7,
+   "quien": "quedo",
+   "funcion": "dato a favor: la luz",
+   "voz": "Pues la luz me cuesta menos: 67 horas al año en 2016. Hoy, 62.",
+   "pantalla": "La luz de casa de un año, en horas de trabajo · 2016: 67 h · 2025: 62 h",
+   "nota": "Una casa que gasta 3.500 kWh al año. 2025, último año entero",
+   "sello": "DATO OFICIAL · Eurostat (luz de los hogares) · CÁLCULO PROPIO con el sueldo medio del INE y la OCDE",
+   "grafico": true,
+   "imagen": "Un salón; el que se quedó enciende la lámpara, orgulloso; las barras de horas bajan un poco."
+  },
+  {
+   "n": 8,
+   "quien": "vuelve",
+   "funcion": "dato: comida",
+   "voz": "Ya, pero la comida del mes: 11 horas en 2016. Hoy, 12.",
+   "pantalla": "La comida de un mes por persona, en horas de trabajo · 2016: 11,2 h · 2026: 12,3 h",
+   "nota": "La misma cesta en los dos años: el gasto medio en comida de 2025, con los precios de cada año",
+   "sello": "CÁLCULO PROPIO · INE (presupuestos familiares, IPC de alimentos y sueldo medio) · OCDE",
+   "grafico": true,
+   "imagen": "El salón se deshace en el súper; del carro salen relojes."
+  },
+  {
+   "n": 9,
+   "quien": "vuelve",
+   "funcion": "dato: días para el Estado",
+   "voz": "Y para el Estado trabajas hasta el 31 de mayo. En 2016, hasta el 24.",
+   "pantalla": "Con el sueldo medio, trabajas para el Estado hasta el… · 2016: 24 de mayo · 2025: 31 de mayo",
+   "nota": "IRPF y cotizaciones del trabajador y de la empresa: 39,4 % de lo que cuesta el sueldo en 2016 y 41,4 % en 2025",
+   "sello": "DATO OFICIAL · OCDE (Taxing Wages: IRPF y cotizaciones del trabajador medio)",
+   "grafico": true,
+   "imagen": "Una oficina; un calendario pasa hojas a toda velocidad y se para en el 31 de mayo."
+  },
+  {
+   "n": 10,
+   "quien": "quedo",
+   "funcion": "remate",
+   "voz": "Bueno… ¡Bienvenido a casa!",
+   "pantalla": "«¡Bienvenido a casa!»",
+   "sello": null,
+   "imagen": "Vuelven al bar. El que se quedó le da una palmada en la espalda; los dos se ríen."
+  },
+  {
+   "n": 11,
+   "quien": "vuelve",
+   "funcion": "pregunta para el debate",
+   "voz": "¿Se vive mejor que hace 10 años? ¿Tú qué opinas?",
+   "pantalla": "¿Se vive mejor que hace 10 años?",
+   "sello": null,
+   "imagen": "Dos botones: MEJOR y PEOR; cada uno señala el suyo y acaban mirando a cámara."
+  }
+ ],
+ "no_dato": [
+  "90",
+  "50",
+  "3.500",
+  "10"
+ ],
+ "cifras": [
+  {
+   "texto": "2",
+   "ruta": "diez_anos.neto_real_sube_pct",
+   "decimales": 0,
+   "estado": "C",
+   "aprox": 2,
+   "tolerancia_pct": 12
+  },
+  {
+   "texto": "1,8",
+   "ruta": "diez_anos.neto_real_sube_pct",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "23.930",
+   "ruta": "diez_anos.neto_anual_2016_en_euros_de_2026",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "24.353",
+   "ruta": "diez_anos.neto_anual_eur.2026",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "7",
+   "ruta": "diez_anos.piso_anos.2016",
+   "decimales": 0,
+   "estado": "C",
+   "aprox": 7.5
+  },
+  {
+   "texto": "8",
+   "ruta": "diez_anos.piso_anos.2026",
+   "decimales": 0,
+   "estado": "C",
+   "aprox": 8.5
+  },
+  {
+   "texto": "7,4",
+   "ruta": "diez_anos.piso_anos.2016",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "8,6",
+   "ruta": "diez_anos.piso_anos.2026",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "4",
+   "ruta": "diez_anos.deposito_horas.2016",
+   "decimales": 0,
+   "estado": "C",
+   "aprox": 4,
+   "tolerancia_pct": 8
+  },
+  {
+   "texto": "6",
+   "ruta": "diez_anos.deposito_horas.2026",
+   "decimales": 0,
+   "estado": "C",
+   "aprox": 6
+  },
+  {
+   "texto": "4,3",
+   "ruta": "diez_anos.deposito_horas.2016",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "5,9",
+   "ruta": "diez_anos.deposito_horas.2026",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "67",
+   "ruta": "diez_anos.luz_horas_ano.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "62",
+   "ruta": "diez_anos.luz_horas_ano.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "11",
+   "ruta": "diez_anos.compra_horas.2016",
+   "decimales": 0,
+   "estado": "C",
+   "aprox": 11
+  },
+  {
+   "texto": "12",
+   "ruta": "diez_anos.compra_horas.2026",
+   "decimales": 0,
+   "estado": "C",
+   "aprox": 12
+  },
+  {
+   "texto": "11,2",
+   "ruta": "diez_anos.compra_horas.2016",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "12,3",
+   "ruta": "diez_anos.compra_horas.2026",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "31",
+   "ruta": "diez_anos.estado.2025.dia",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "24",
+   "ruta": "diez_anos.estado.2016.dia",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "39,4",
+   "ruta": "diez_anos.estado.2016.cuna_pct",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "41,4",
+   "ruta": "diez_anos.estado.2025.cuna_pct",
+   "decimales": 1,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "Horas de trabajo = precio / sueldo neto por hora del trabajador medio (C). Bruto por hora: INE (EAES 2016: 14,88 €; 2026: EAES 2024 × ETCL del 1.er semestre: 20,45 €). Neto / bruto: OCDE, Taxing Wages, soltero sin hijos con el sueldo medio (0,7875 en 2016 y 0,7646 en 2025).",
+  "«Un 2 % más que en 2016, ya descontada la inflación» (C): sueldo medio neto anual (INE × OCDE): 18.235 € en 2016 = 23.930 € de hoy con el IPC; 24.353 € en 2026: +1,8 %.",
+  "«7 años y medio de sueldo en 2016. Hoy, más de 8 y medio» (C): piso de 90 m² al valor tasado del Banco de España (135.236 € y 210.182 €) / sueldo neto anual: 7,4 y 8,6.",
+  "«Llenar el depósito: 4 horas en 2016. Hoy, casi 6» (C): 50 litros de gasóleo, boletín petrolero de la Comisión Europea (1,012 € y 1,850 € con los impuestos de la ley): 4,3 y 5,9 horas.",
+  "«67 horas al año en 2016. Hoy, 62» (C): Eurostat nrg_pc_204, 3.500 kWh al año (782 € y 924 €), con el sueldo neto por hora de 2016 y de 2025.",
+  "«11 horas en 2016. Hoy, 12» (C): cesta fija de T1 (131 € y 192 € al mes): 11,2 y 12,3 horas.",
+  "«trabajas para el Estado hasta el 31 de mayo. En 2016, hasta el 24» (C con dato V): cuña fiscal de la OCDE (39,4 % en 2016 y 41,4 % en 2025) × 365 días."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 2016: el sueldo limpio sube un 1,8 % por encima de la inflación, pero el piso cuesta un 16 % más de años de sueldo, el depósito un 37 % más de horas, la comida un 10 % más, y se trabaja una semana más para el Estado. La excepción: la luz cuesta un 6 % menos de horas que en 2016",
+  "porque": "Precios oficiales (Banco de España, Eurostat, Comisión Europea e INE) entre el sueldo medio neto por hora; IRPF y cotizaciones de la OCDE.",
+  "pregunta": "¿Se vive mejor que hace 10 años? ¿Tú qué opinas?"
+ },
+ "aprobacion_guion": "Borrador pendiente de Bruno (20-11-2026)"
+}

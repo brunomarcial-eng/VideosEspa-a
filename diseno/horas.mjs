@@ -69,3 +69,13 @@ export const PERIODICO = `<g transform="translate(10 -40) rotate(-8)"><rect x="-
 // Llaves de casa (en la mano).
 export const LLAVES = `<g transform="translate(6 -10) rotate(20)"><circle r="20" fill="none" stroke="#C8902E" stroke-width="8"/>
   <rect x="-6" y="16" width="12" height="70" rx="5" fill="#C8902E"/><rect x="6" y="60" width="18" height="10" rx="3" fill="#C8902E"/><rect x="6" y="74" width="12" height="10" rx="3" fill="#C8902E"/></g>`;
+
+// Maleta de viaje con ruedas y asa extensible (la arrastra quien vuelve). Origen: el suelo, en el centro.
+export function maleta(id, color = "#5F7F62") {
+  return `<g id="${id}"><ellipse cx="0" cy="4" rx="80" ry="12" fill="#3C2814" opacity=".18"/>
+    <rect x="-28" y="-290" width="10" height="90" rx="4" fill="#7C8790"/><rect x="18" y="-290" width="10" height="90" rx="4" fill="#7C8790"/><rect x="-34" y="-300" width="68" height="16" rx="8" fill="${C.tinta}"/>
+    <rect x="-74" y="-210" width="148" height="190" rx="22" fill="${color}"/><rect x="-74" y="-210" width="148" height="190" rx="22" fill="none" stroke="#14141E" stroke-opacity=".12" stroke-width="5"/>
+    ${[-36, 0, 36].map((x) => `<rect x="${x - 4}" y="-196" width="8" height="162" rx="4" fill="#14141E" opacity=".12"/>`).join("")}
+    <rect x="-58" y="-200" width="40" height="160" rx="16" fill="#FFFFFF" opacity=".14"/>
+    <circle cx="-48" cy="-10" r="12" fill="${C.tinta}"/><circle cx="48" cy="-10" r="12" fill="${C.tinta}"/></g>`;
+}
