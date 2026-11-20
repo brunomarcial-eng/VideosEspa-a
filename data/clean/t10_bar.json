@@ -2,6 +2,13 @@
  "tema": "T10 — montar un bar en Madrid en 1986, 2006 y hoy: obligaciones, impuestos y costes",
  "obligaciones": [
   {
+   "obligacion": "Protección de datos personales",
+   "desde": 1993,
+   "norma": "Ley Orgánica 5/1992 (en vigor desde enero de 1993); hoy, Ley Orgánica 3/2018 y el Reglamento europeo",
+   "boe": "BOE-A-1992-24189",
+   "frase_comprobada": "La presente Ley Orgánica entrará en vigor a los tres meses de su publicación"
+  },
+  {
    "obligacion": "Evaluación de riesgos laborales y plan de prevención",
    "desde": 1996,
    "norma": "Ley 31/1995 de Prevención de Riesgos Laborales",
@@ -23,11 +30,11 @@
    "frase_comprobada": "Los locales y establecimientos deberán tener suscrito contrato de seguro"
   },
   {
-   "obligacion": "Protección de datos personales",
-   "desde": 2000,
-   "norma": "Ley Orgánica 15/1999; hoy, Ley Orgánica 3/2018 y el Reglamento europeo",
-   "boe": "BOE-A-1999-23750",
-   "frase_comprobada": "Protección de Datos de Carácter Personal"
+   "obligacion": "Medidas y procedimiento contra el acoso sexual",
+   "desde": 2007,
+   "norma": "Ley Orgánica 3/2007, artículo 48 (ampliado por la Ley Orgánica 10/2022)",
+   "boe": "BOE-A-2007-6115",
+   "frase_comprobada": "Las empresas deberán promover condiciones de trabajo que eviten el acoso sexual y el acoso por razón de sexo y arbitrar procedimientos específicos"
   },
   {
    "obligacion": "Prohibido fumar en el local",
@@ -44,6 +51,13 @@
    "frase_comprobada": "siempre debe facilitarse al consumidor la información sobre los alérgenos potenciales"
   },
   {
+   "obligacion": "Política interna de desconexión digital",
+   "desde": 2018,
+   "norma": "Ley Orgánica 3/2018, artículo 88",
+   "boe": "BOE-A-2018-16673",
+   "frase_comprobada": "El empleador, previa audiencia de los representantes de los trabajadores, elaborará una política interna"
+  },
+  {
    "obligacion": "Registro diario de la jornada de cada empleado",
    "desde": 2019,
    "norma": "Real Decreto-ley 8/2019",
@@ -58,13 +72,6 @@
    "frase_comprobada": "todas las empresas deben tener un registro retributivo de toda su plantilla"
   },
   {
-   "obligacion": "Medidas y procedimiento contra el acoso sexual",
-   "desde": 2022,
-   "norma": "Ley Orgánica 10/2022, artículo 12",
-   "boe": "BOE-A-2022-14630",
-   "frase_comprobada": "Las empresas deberán promover condiciones de trabajo que eviten la comisión de delitos"
-  },
-  {
    "obligacion": "Ofrecer agua del grifo gratis",
    "desde": 2022,
    "norma": "Ley 7/2022 de residuos, artículo 18",
@@ -72,11 +79,11 @@
    "frase_comprobada": "la posibilidad de consumo de agua no envasada de manera gratuita"
   },
   {
-   "obligacion": "Impuesto sobre los envases de plástico",
+   "obligacion": "Impuesto sobre los envases de plástico (se repercute en el precio)",
    "desde": 2023,
    "norma": "Ley 7/2022 de residuos",
    "boe": "BOE-A-2022-5809",
-   "frase_comprobada": "Impuesto especial sobre los envases de plástico no reutilizables"
+   "frase_comprobada": "los fabricantes deberán repercutir al adquirente el importe de las cuotas del impuesto"
   },
   {
    "obligacion": "Cotización nueva de equidad intergeneracional (MEI)",
@@ -93,13 +100,6 @@
    "frase_comprobada": "nuevo sistema de cotización para los trabajadores por cuenta propia o autónomos"
   },
   {
-   "obligacion": "Tasa de basuras obligatoria en todos los ayuntamientos",
-   "desde": 2025,
-   "norma": "Ley 7/2022 de residuos, artículo 11",
-   "boe": "BOE-A-2022-5809",
-   "frase_comprobada": "las entidades locales establecerán, en el plazo de tres años a contar desde la entrada en vigor de esta ley, una tasa"
-  },
-  {
    "obligacion": "Dejar llevarse lo que no se come, sin cobrar",
    "desde": 2025,
    "norma": "Ley 1/2025 de prevención de las pérdidas y el desperdicio alimentario",
@@ -107,7 +107,7 @@
    "frase_comprobada": "tendrán la obligación de facilitar al consumidor que pueda llevarse, sin coste adicional"
   },
   {
-   "obligacion": "Programa de facturación que vigila Hacienda (VERI*FACTU)",
+   "obligacion": "Programa de facturación antifraude de Hacienda (VERI*FACTU), si se factura con ordenador o caja informática",
    "desde": 2027,
    "norma": "Real Decreto 1007/2023 y Real Decreto-ley 15/2025 (autónomos, desde el 1-7-2027)",
    "boe": "BOE-A-2025-24446",
@@ -120,7 +120,8 @@
   "2026": 15,
   "2027": 16,
   "nuevas_desde_1986": 16,
-  "nuevas_desde_2006": 12
+  "nuevas_desde_2006": 12,
+  "nuevas_desde_2006_hoy": 11
  },
  "camarero_salario_minimo": {
   "1986": {
@@ -141,7 +142,7 @@
   "2006": 7,
   "2026": 10
  },
- "nota": "Cada obligación se comprueba contra el texto del BOE (data/raw/boe_t10_*.html). «desde» = primer año en que se exige a un bar (la ley de prevención de riesgos entró en vigor en 1996; la de protección de datos de 1999, en 2000; el registro retributivo, en 2021; la tasa de basuras, en abril de 2025, tres años después de la Ley 7/2022; el programa de facturación, en 2027). Camarero: salario mínimo de cada año y cotizaciones del BOE (motor de T8, tarifa de accidentes del comercio).",
+ "nota": "Cada obligación se comprueba contra el texto del BOE (data/raw/boe_t10_*.html). «desde» = primer año en que se exige a un bar (la ley de prevención de riesgos entró en vigor en 1996; la primera de protección de datos, en enero de 1993; el registro retributivo, en 2021; el programa de facturación, en 2027, para quien factura con ordenador o caja informática). Fuera de la lista, por prudencia: la tasa de basuras (la Ley 7/2022 la hace obligatoria en todos los ayuntamientos desde 2025, pero en Madrid los negocios ya podían pagar una antes). Camarero: salario mínimo de cada año y cotizaciones del BOE (motor de T8, tarifa de accidentes del comercio).",
  "camarero_sube_pct": {
   "1986": 48.5,
   "2006": 49.2

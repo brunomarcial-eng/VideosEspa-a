@@ -23,8 +23,8 @@ OBLIGACIONES = [
      "BOE-A-1996-4449", "dichas empresas deberán realizar actividades de autocontrol"),
     ("Seguro obligatorio de incendio y responsabilidad civil", 1998, "Ley 17/1997 de Espectáculos Públicos y Actividades Recreativas de la Comunidad de Madrid",
      "BOE-A-1998-9648", "Los locales y establecimientos deberán tener suscrito contrato de seguro"),
-    ("Protección de datos personales", 2000, "Ley Orgánica 15/1999; hoy, Ley Orgánica 3/2018 y el Reglamento europeo",
-     "BOE-A-1999-23750", "Protección de Datos de Carácter Personal"),
+    ("Protección de datos personales", 1993, "Ley Orgánica 5/1992 (en vigor desde enero de 1993); hoy, Ley Orgánica 3/2018 y el Reglamento europeo",
+     "BOE-A-1992-24189", "La presente Ley Orgánica entrará en vigor a los tres meses de su publicación"),
     ("Prohibido fumar en el local", 2011, "Ley 28/2005 (en parte) y Ley 42/2010 (en toda la hostelería)",
      "BOE-A-2010-20138", "trabajadores del sector de la hostelería"),
     ("Información de alérgenos de todo lo que se sirve", 2015, "Real Decreto 126/2015 (y Reglamento europeo 1169/2011)",
@@ -33,21 +33,21 @@ OBLIGACIONES = [
      "BOE-A-2019-3481", "La empresa garantizará el registro diario de jornada"),
     ("Registro de los sueldos de toda la plantilla", 2021, "Real Decreto 902/2020 de igualdad retributiva",
      "BOE-A-2020-12215", "todas las empresas deben tener un registro retributivo de toda su plantilla"),
-    ("Medidas y procedimiento contra el acoso sexual", 2022, "Ley Orgánica 10/2022, artículo 12",
-     "BOE-A-2022-14630", "Las empresas deberán promover condiciones de trabajo que eviten la comisión de delitos"),
+    ("Medidas y procedimiento contra el acoso sexual", 2007, "Ley Orgánica 3/2007, artículo 48 (ampliado por la Ley Orgánica 10/2022)",
+     "BOE-A-2007-6115", "Las empresas deberán promover condiciones de trabajo que eviten el acoso sexual y el acoso por razón de sexo y arbitrar procedimientos específicos"),
+    ("Política interna de desconexión digital", 2018, "Ley Orgánica 3/2018, artículo 88",
+     "BOE-A-2018-16673", "El empleador, previa audiencia de los representantes de los trabajadores, elaborará una política interna"),
     ("Ofrecer agua del grifo gratis", 2022, "Ley 7/2022 de residuos, artículo 18",
      "BOE-A-2022-5809", "la posibilidad de consumo de agua no envasada de manera gratuita"),
-    ("Impuesto sobre los envases de plástico", 2023, "Ley 7/2022 de residuos",
-     "BOE-A-2022-5809", "Impuesto especial sobre los envases de plástico no reutilizables"),
+    ("Impuesto sobre los envases de plástico (se repercute en el precio)", 2023, "Ley 7/2022 de residuos",
+     "BOE-A-2022-5809", "los fabricantes deberán repercutir al adquirente el importe de las cuotas del impuesto"),
     ("Cotización nueva de equidad intergeneracional (MEI)", 2023, "Real Decreto-ley 2/2023",
      "BOE-A-2023-6967", "nuevo mecanismo para la preservación de la equidad intergeneracional"),
     ("Cuota de autónomo según lo que ganes, con regularización", 2023, "Real Decreto-ley 13/2022",
      "BOE-A-2022-12482", "nuevo sistema de cotización para los trabajadores por cuenta propia o autónomos"),
-    ("Tasa de basuras obligatoria en todos los ayuntamientos", 2025, "Ley 7/2022 de residuos, artículo 11",
-     "BOE-A-2022-5809", "las entidades locales establecerán, en el plazo de tres años a contar desde la entrada en vigor de esta ley, una tasa"),
     ("Dejar llevarse lo que no se come, sin cobrar", 2025, "Ley 1/2025 de prevención de las pérdidas y el desperdicio alimentario",
      "BOE-A-2025-6597", "tendrán la obligación de facilitar al consumidor que pueda llevarse, sin coste adicional"),
-    ("Programa de facturación que vigila Hacienda (VERI*FACTU)", 2027, "Real Decreto 1007/2023 y Real Decreto-ley 15/2025 (autónomos, desde el 1-7-2027)",
+    ("Programa de facturación antifraude de Hacienda (VERI*FACTU), si se factura con ordenador o caja informática", 2027, "Real Decreto 1007/2023 y Real Decreto-ley 15/2025 (autónomos, desde el 1-7-2027)",
      "BOE-A-2025-24446", "y para el resto de los obligados del artículo 3.1: 1 de julio de 2027"),
 ]
 
@@ -67,20 +67,22 @@ def main():
         if frase not in texto(boe):
             raise SystemExit(f"no encuentro «{frase}» en {boe}")
         obl.append({"obligacion": nombre, "desde": desde, "norma": norma, "boe": boe, "frase_comprobada": frase})
+    obl.sort(key=lambda o: o["desde"])
     n = lambda a: sum(1 for o in obl if o["desde"] <= a)
     t8 = json.loads((CLEAN / "t8_impuestos_sueldo.json").read_text(encoding="utf-8"))
     caj = t8["casos"]["cajero"]
     out = {
         "tema": "T10 — montar un bar en Madrid en 1986, 2006 y hoy: obligaciones, impuestos y costes",
         "obligaciones": obl,
-        "cuantas": {"1986": n(1986), "2006": n(2006), "2026": n(2026), "2027": n(2027), "nuevas_desde_1986": n(2027), "nuevas_desde_2006": n(2027) - n(2006)},
+        "cuantas": {"1986": n(1986), "2006": n(2006), "2026": n(2026), "2027": n(2027), "nuevas_desde_1986": n(2027), "nuevas_desde_2006": n(2027) - n(2006), "nuevas_desde_2006_hoy": n(2026) - n(2006)},
         "camarero_salario_minimo": {
             a: {"coste_empresa_en_euros_de_2026": caj[a]["en_euros_de_2026"]["coste_empresa"], "al_estado_pct": caj[a]["pct_estado_del_coste"]}
             for a in ("1986", "2006", "2026")},
         "iva_bar_pct": t8["iva_pct"]["bar_y_restaurante"],
         "nota": ("Cada obligación se comprueba contra el texto del BOE (data/raw/boe_t10_*.html). «desde» = primer año en que se exige a un bar "
-                 "(la ley de prevención de riesgos entró en vigor en 1996; la de protección de datos de 1999, en 2000; el registro retributivo, en 2021; "
-                 "la tasa de basuras, en abril de 2025, tres años después de la Ley 7/2022; el programa de facturación, en 2027). Camarero: salario "
+                 "(la ley de prevención de riesgos entró en vigor en 1996; la primera de protección de datos, en enero de 1993; el registro retributivo, en 2021; "
+                 "el programa de facturación, en 2027, para quien factura con ordenador o caja informática). Fuera de la lista, por prudencia: la tasa de basuras "
+                 "(la Ley 7/2022 la hace obligatoria en todos los ayuntamientos desde 2025, pero en Madrid los negocios ya podían pagar una antes). Camarero: salario "
                  "mínimo de cada año y cotizaciones del BOE (motor de T8, tarifa de accidentes del comercio)."),
     }
     c = out["camarero_salario_minimo"]

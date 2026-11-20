@@ -1,0 +1,304 @@
+{
+ "id": "t10",
+ "version": 1,
+ "titulo": "¿Montar un bar hoy es más difícil que en 1986?",
+ "titulo_alternativo": "Una hostelera de 1986 y uno que abre hoy: 15 obligaciones nuevas",
+ "pregunta": "Una hostelera que abrió su bar en Madrid en 1986 y un chico que abre otro enfrente hoy. ¿Qué tiene que cumplir hoy un bar que en 1986 no existía, y cuánto cuesta?",
+ "datos": "data/clean/t10_bar.json",
+ "aprobacion_datos": "Bruno, 20-11-2026: dejar claro, sin ambigüedad, que hoy hay muchos más trámites, obligaciones, impuestos y costes que en 1986. Cada obligación, comprobada en el texto del BOE",
+ "formato": "Dos personajes nuevos con volumen y movimiento: una hostelera veterana (abrió su bar en 1986) y uno nuevo que abre otro enfrente. Ella le dicta la lista de obligaciones y cada una cae sobre la barra como un papel con su año; un contador sube de 0 a 16. Luego, el camarero y el IVA de la caña. Ella da el veredicto; él cierra con la pregunta.",
+ "duracion_max_s": 85,
+ "personajes": {
+  "veterana": {
+   "anyo": "unos 62 años, abrió su bar en 1986",
+   "genero": "hostelera"
+  },
+  "nuevo": {
+   "anyo": "unos 28 años, abre su bar hoy",
+   "genero": "hijo"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "El veredicto lo dice la hostelera en el plano 14 (más papeles, más impuestos y más coste: más difícil que en 1986 y que en 2006), sin la fórmula «¿mejora o empeora?». Acaba con la pregunta al espectador.",
+ "capitulos": [
+  {
+   "nombre": "El bar",
+   "beats": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "nombre": "Los papeles",
+   "beats": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "nombre": "La cuenta",
+   "beats": [
+    9,
+    10
+   ]
+  },
+  {
+   "nombre": "El camarero",
+   "beats": [
+    11,
+    12
+   ]
+  },
+  {
+   "nombre": "El IVA",
+   "beats": [
+    13
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    14,
+    15
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "nuevo",
+   "funcion": "gancho",
+   "voz": "¡Vecina! Abro un bar aquí enfrente. ¿Algún consejo?",
+   "pantalla": "¿Montar un bar hoy es más difícil que en 1986?",
+   "sello": null,
+   "imagen": "Una calle de Madrid: a la izquierda, el bar de ella, con toldo; a la derecha, un local vacío. Él llega con las llaves; ella sale a la puerta con el delantal."
+  },
+  {
+   "n": 2,
+   "quien": "veterana",
+   "funcion": "1986",
+   "voz": "Yo abrí el mío en 1986: licencias, altas y a servir cañas. Tú, apunta.",
+   "pantalla": "«En 1986: licencias, altas y a servir»",
+   "sello": null,
+   "imagen": "Ella se ríe, se apoya en la puerta y le lanza una libreta."
+  },
+  {
+   "n": 3,
+   "quien": "nuevo",
+   "funcion": "réplica",
+   "voz": "¿Tanto ha cambiado?",
+   "pantalla": "«¿Tanto ha cambiado?»",
+   "sello": null,
+   "imagen": "Él coge la libreta al vuelo y abre los ojos."
+  },
+  {
+   "n": 4,
+   "quien": "veterana",
+   "funcion": "lista: hasta 2006",
+   "voz": "Protección de datos, riesgos laborales, control de higiene y seguro obligatorio. Eso, ya en 2006.",
+   "pantalla": "Lo que no existía en 1986 · ya en 2006: 4",
+   "nota": "Protección de datos (1993), riesgos laborales (1996), higiene de los alimentos (1996) y seguro de incendio y responsabilidad civil (1998, Comunidad de Madrid)",
+   "sello": "DATO OFICIAL · BOE (Ley Orgánica 5/1992, Ley 31/1995, Real Decreto 2207/1995 y Ley 17/1997 de la Comunidad de Madrid)",
+   "imagen": "Dentro del bar. Cada obligación cae sobre la barra como un papel con su año y un sello; un contador en la pared sube de 0 a 4."
+  },
+  {
+   "n": 5,
+   "quien": "veterana",
+   "funcion": "lista: 2007 a 2018",
+   "voz": "Luego, protocolo contra el acoso, prohibido fumar, alérgenos y desconexión digital.",
+   "pantalla": "Protocolo contra el acoso (2007) · prohibido fumar (2011) · alérgenos (2015) · desconexión digital (2018)",
+   "sello": "DATO OFICIAL · BOE (Ley Orgánica 3/2007, Ley 42/2010, Real Decreto 126/2015 y Ley Orgánica 3/2018)",
+   "imagen": "Caen cuatro papeles más; el montón crece y el contador sigue subiendo."
+  },
+  {
+   "n": 6,
+   "quien": "veterana",
+   "funcion": "lista: 2019 a 2025",
+   "voz": "Registro de jornada, registro de sueldos, agua del grifo gratis y táper para las sobras.",
+   "pantalla": "Registro de jornada (2019) · registro de sueldos · agua del grifo gratis (2022) · llevarse las sobras (2025)",
+   "sello": "DATO OFICIAL · BOE (Real Decreto-ley 8/2019, Real Decreto de igualdad retributiva, Ley 7/2022 y Ley 1/2025)",
+   "imagen": "Más papeles; el montón ya tapa la caja registradora. Él escribe sin parar."
+  },
+  {
+   "n": 7,
+   "quien": "veterana",
+   "funcion": "lista: impuestos y cuotas",
+   "voz": "Impuesto del plástico, una cotización nueva y la cuota de autónomo según lo que ganes.",
+   "pantalla": "Impuesto del plástico · cotización de equidad (MEI) · cuota de autónomo según ingresos: desde 2023",
+   "sello": "DATO OFICIAL · BOE (Ley 7/2022, Real Decreto-ley 2/2023 y Real Decreto-ley 13/2022)",
+   "imagen": "Tres papeles con monedas; el montón se tambalea."
+  },
+  {
+   "n": 8,
+   "quien": "veterana",
+   "funcion": "lista: 2027",
+   "voz": "Y en 2027, facturación antifraude de Hacienda.",
+   "pantalla": "Programa de facturación antifraude (VERI*FACTU): autónomos, desde julio de 2027",
+   "nota": "Para quien factura con ordenador o caja informática",
+   "sello": "DATO OFICIAL · BOE (Real Decreto 1007/2023 y Real Decreto-ley 15/2025)",
+   "imagen": "Un último papel, con un ordenador dibujado, cae arriba del todo."
+  },
+  {
+   "n": 9,
+   "quien": "nuevo",
+   "funcion": "pregunta",
+   "voz": "Pero… ¿cuántas son?",
+   "pantalla": "«¿Cuántas son?»",
+   "sello": null,
+   "imagen": "Él mira el montón desde abajo, con la libreta llena."
+  },
+  {
+   "n": 10,
+   "quien": "veterana",
+   "funcion": "dato: la cuenta",
+   "voz": "15 que en 1986 no existían, 16 en 2027. Y 11, nuevas desde 2006.",
+   "pantalla": "Obligaciones de un bar que no existían en 1986 · 2006: 4 · 2026: 15 · 2027: 16",
+   "nota": "Cada una, con su norma y su fecha en el BOE",
+   "sello": "CÁLCULO PROPIO · BOE (16 normas, de 1992 a 2025)",
+   "grafico": true,
+   "imagen": "El contador grande: 0 en 1986, 4 en 2006, 15 hoy, 16 en 2027; una línea del tiempo que se llena de sellos."
+  },
+  {
+   "n": 11,
+   "quien": "nuevo",
+   "funcion": "pregunta",
+   "voz": "¿Y si contrato a un camarero?",
+   "pantalla": "«¿Y si contrato a un camarero?»",
+   "sello": null,
+   "imagen": "Él señala la barra vacía; aparece la silueta de un camarero."
+  },
+  {
+   "n": 12,
+   "quien": "veterana",
+   "funcion": "dato: camarero",
+   "voz": "Con el salario mínimo, un 48 % más caro que en 1986, ya descontada la inflación.",
+   "pantalla": "Coste al año de un camarero con el salario mínimo, en euros de hoy · 1986: 15.233 € · 2006: 15.161 € · 2026: 22.615 €",
+   "nota": "Sueldo y cotizaciones de la empresa, con las normas de cada año",
+   "sello": "CÁLCULO PROPIO · BOE (salario mínimo y cotizaciones de cada año) · INE (IPC)",
+   "grafico": true,
+   "imagen": "Tres columnas de billetes: 1986 y 2006 casi iguales; la de hoy, mucho más alta."
+  },
+  {
+   "n": 13,
+   "quien": "veterana",
+   "funcion": "dato: IVA",
+   "voz": "Y el IVA de la caña, del 6 al 10 %.",
+   "pantalla": "IVA de lo que se toma en un bar · 1986: 6 % · 2006: 7 % · 2026: 10 %",
+   "sello": "DATO OFICIAL · BOE (Ley 30/1985, Ley 37/1992 y sus reformas)",
+   "grafico": true,
+   "imagen": "Tres cañas; la parte del IVA, de otro color, crece en cada una."
+  },
+  {
+   "n": 14,
+   "quien": "veterana",
+   "funcion": "veredicto",
+   "voz": "Más papeles, más impuestos y más coste: hoy es más difícil que en 1986 y que en 2006.",
+   "pantalla": "Hoy, más difícil que en 1986 y que en 2006",
+   "sello": null,
+   "imagen": "Ella apoya la mano en el montón de papeles, que llega al techo."
+  },
+  {
+   "n": 15,
+   "quien": "nuevo",
+   "funcion": "pregunta para el debate",
+   "voz": "¿Merece la pena montar un negocio hoy en España? ¿Tú qué harías?",
+   "pantalla": "¿Merece la pena montar un negocio hoy en España?",
+   "sello": null,
+   "imagen": "Vuelven a la calle. Él mira su local vacío con las llaves en la mano; luego, a cámara."
+  }
+ ],
+ "no_dato": [],
+ "cifras": [
+  {
+   "texto": "4",
+   "ruta": "cuantas.2006",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "15",
+   "ruta": "cuantas.2026",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "16",
+   "ruta": "cuantas.2027",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "11",
+   "ruta": "cuantas.nuevas_desde_2006_hoy",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "48",
+   "ruta": "camarero_sube_pct.1986",
+   "decimales": 0,
+   "estado": "C",
+   "aprox": 48,
+   "tolerancia_pct": 2
+  },
+  {
+   "texto": "15.233",
+   "ruta": "camarero_salario_minimo.1986.coste_empresa_en_euros_de_2026",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "15.161",
+   "ruta": "camarero_salario_minimo.2006.coste_empresa_en_euros_de_2026",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "22.615",
+   "ruta": "camarero_salario_minimo.2026.coste_empresa_en_euros_de_2026",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "6",
+   "ruta": "iva_bar_pct.1986",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "7",
+   "ruta": "iva_bar_pct.2006",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "10",
+   "ruta": "iva_bar_pct.2026",
+   "decimales": 0,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "Cada obligación (V): la frase que la crea está en el texto del BOE archivado (data/raw/boe_t10_*.html); scripts/calcular_t10.py se para si no la encuentra. «Desde» = primer año en que se exige a un bar.",
+  "«15 que en 1986 no existían. 16 en 2027. Y 11, nuevas desde 2006» (C): 0 en 1986, 4 en 2006 (datos, riesgos laborales, higiene y seguro), 15 hoy y 16 con el programa de facturación de 2027; 15 − 4 = 11.",
+  "«un 48 % más caro que en 1986» (C): coste para la empresa de un camarero a jornada completa con el salario mínimo de cada año y las cotizaciones del BOE (motor de T8), en euros de 2026 con el IPC: 15.233 € en 1986, 15.161 € en 2006 y 22.615 € en 2026 (+48,5 % y +49,2 %).",
+  "«el IVA de la caña, del 6 al 10 %» (V): tipo de IVA de la hostelería en el BOE de cada año: 6 % (1986), 7 % (2006) y 10 % (2026)."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 1986 y frente a 2006: un bar tiene hoy 15 obligaciones que en 1986 no existían (11 nuevas desde 2006, y una más en 2027), un camarero con el salario mínimo le cuesta un 48 % más que en 1986 y un 49 % más que en 2006 en euros de hoy, y el IVA de lo que sirve pasa del 6 % al 10 %",
+  "porque": "Normas del BOE de cada año (obligaciones, salario mínimo, cotizaciones e IVA) e IPC del INE.",
+  "pregunta": "¿Merece la pena montar un negocio hoy en España? ¿Tú qué harías?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno"
+}

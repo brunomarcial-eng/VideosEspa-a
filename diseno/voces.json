@@ -44,6 +44,15 @@
    "estado": "elegida por Bruno el 15-11-2026 (la voz del hijo en los primeros 45 s de T3)",
    "nota": "Hijo de T3 (31 años). Salió al clonar la voz del padre con otras semillas; Bruno la da por buena. Se fija clonando su propia toma (línea 2 de T3).",
    "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "hostelera": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-hostelera.wav",
+   "ref_txt": "diseno/voces/ref-hostelera.txt",
+   "estado": "elegida por Bruno el 20-11-2026 (voz C del casting de la hostelera)",
+   "nota": "Hostelera veterana de T10 (unos 62 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/hostelera_voz.py, opción C), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
   }
  },
  "edad": {
@@ -72,6 +81,14 @@
    "velocidad": 1.0
   },
   "vuelve": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "veterana": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "nuevo": {
    "tono": 1.0,
    "velocidad": 1.0
   }
