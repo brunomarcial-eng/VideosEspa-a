@@ -278,3 +278,21 @@ function cuna(id, f, r) {
   const a = f * 2 * Math.PI, x = r * Math.sin(a), y = -r * Math.cos(a);
   attr(id, "d", `M0 0 L0 ${-r} A${r} ${r} 0 ${f > 0.5 ? 1 : 0} 1 ${x.toFixed(1)} ${y.toFixed(1)} Z`);
 }
+
+// Un papel (u otro objeto) cae desde arriba girando y aterriza con un pequeño rebote (T10).
+function cae(id, t, t0, x, y, o = {}) {
+  const d = o.d ?? 0.42, k = (t - t0) / d;
+  if (k < 0) { ver(id, false); return -1; }
+  const tras = (t - t0 - d) / 0.2, golpe = tras >= 0 && tras < 1 ? 0.06 * Math.sin(tras * Math.PI) : 0;
+  T(id, x, y - (o.alto ?? 520) * (1 - fuera(k)), { s: (o.s ?? 1) * (1 + golpe), r: (o.r ?? 0) + (o.r0 ?? 24) * (1 - suave(k)), op: clamp(k * 3) });
+  return t - t0;
+}
+// Contador que sube de uno en uno en los momentos dados y late al cambiar (T10). Devuelve la cuenta.
+function cuenta(id, t, base, tiempos) {
+  let n = base, ult = -9;
+  for (const ti of tiempos) if (t >= ti) { n++; ult = ti; }
+  txt(id, String(n));
+  const d = t - ult;
+  css(id, "transform", `scale(${(1 + (d >= 0 && d < 0.35 ? 0.28 * Math.sin(d / 0.35 * Math.PI) : 0)).toFixed(3)})`);
+  return n;
+}

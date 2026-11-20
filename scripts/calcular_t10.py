@@ -85,6 +85,17 @@ def main():
                  "(la Ley 7/2022 la hace obligatoria en todos los ayuntamientos desde 2025, pero en Madrid los negocios ya podían pagar una antes). Camarero: salario "
                  "mínimo de cada año y cotizaciones del BOE (motor de T8, tarifa de accidentes del comercio)."),
     }
+    # Orden en que las nombra la hostelera en el vídeo (planos 4 a 8) y cuenta acumulada tras cada plano.
+    grupos = [["1993", "Evaluación", "Autocontrol", "Seguro"], ["Medidas", "Prohibido", "Información", "Política"],
+              ["Registro diario", "Registro de los", "Ofrecer", "Dejar"], ["Impuesto", "Cotización", "Cuota"], ["Programa"]]
+    usados, acumulado, cuenta = set(), 0, {}
+    for plano, claves in zip(range(4, 9), grupos):
+        for k in claves:
+            o = next(o for o in obl if (str(o["desde"]) == k or o["obligacion"].startswith(k)) and o["obligacion"] not in usados)
+            usados.add(o["obligacion"]); acumulado += 1
+        cuenta[str(plano)] = acumulado
+    assert len(usados) == len(obl) and acumulado == len(obl)
+    out["contador_por_plano"] = cuenta
     c = out["camarero_salario_minimo"]
     out["camarero_sube_pct"] = {a: round(100 * (c["2026"]["coste_empresa_en_euros_de_2026"] / c[a]["coste_empresa_en_euros_de_2026"] - 1), 1) for a in ("1986", "2006")}
     (CLEAN / "t10_bar.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")

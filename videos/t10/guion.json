@@ -114,7 +114,7 @@
    "quien": "veterana",
    "funcion": "lista: 2007 a 2018",
    "voz": "Luego, protocolo contra el acoso, prohibido fumar, alérgenos y desconexión digital.",
-   "pantalla": "Protocolo contra el acoso (2007) · prohibido fumar (2011) · alérgenos (2015) · desconexión digital (2018)",
+   "pantalla": "Acoso (2007) · fumar (2011) · alérgenos (2015) · desconexión digital (2018) · ya van 8",
    "sello": "DATO OFICIAL · BOE (Ley Orgánica 3/2007, Ley 42/2010, Real Decreto 126/2015 y Ley Orgánica 3/2018)",
    "imagen": "Caen cuatro papeles más; el montón crece y el contador sigue subiendo."
   },
@@ -123,7 +123,7 @@
    "quien": "veterana",
    "funcion": "lista: 2019 a 2025",
    "voz": "Registro de jornada, registro de sueldos, agua del grifo gratis y táper para las sobras.",
-   "pantalla": "Registro de jornada (2019) · registro de sueldos · agua del grifo gratis (2022) · llevarse las sobras (2025)",
+   "pantalla": "Registro de jornada (2019) · registro de sueldos · agua del grifo gratis (2022) · sobras (2025) · ya van 12",
    "sello": "DATO OFICIAL · BOE (Real Decreto-ley 8/2019, Real Decreto de igualdad retributiva, Ley 7/2022 y Ley 1/2025)",
    "imagen": "Más papeles; el montón ya tapa la caja registradora. Él escribe sin parar."
   },
@@ -132,7 +132,7 @@
    "quien": "veterana",
    "funcion": "lista: impuestos y cuotas",
    "voz": "Impuesto del plástico, una cotización nueva y la cuota de autónomo según lo que ganes.",
-   "pantalla": "Impuesto del plástico · cotización de equidad (MEI) · cuota de autónomo según ingresos: desde 2023",
+   "pantalla": "Impuesto del plástico · cotización MEI · cuota de autónomo según ingresos: desde 2023 · ya van 15",
    "sello": "DATO OFICIAL · BOE (Ley 7/2022, Real Decreto-ley 2/2023 y Real Decreto-ley 13/2022)",
    "imagen": "Tres papeles con monedas; el montón se tambalea."
   },
@@ -141,7 +141,7 @@
    "quien": "veterana",
    "funcion": "lista: 2027",
    "voz": "Y en 2027, facturación antifraude de Hacienda.",
-   "pantalla": "Programa de facturación antifraude (VERI*FACTU): autónomos, desde julio de 2027",
+   "pantalla": "Facturación antifraude (VERI*FACTU): autónomos, desde julio de 2027 · y van 16",
    "nota": "Para quien factura con ordenador o caja informática",
    "sello": "DATO OFICIAL · BOE (Real Decreto 1007/2023 y Real Decreto-ley 15/2025)",
    "imagen": "Un último papel, con un ordenador dibujado, cae arriba del todo."
@@ -161,7 +161,7 @@
    "funcion": "dato: la cuenta",
    "voz": "15 que en 1986 no existían, 16 en 2027. Y 11, nuevas desde 2006.",
    "pantalla": "Obligaciones de un bar que no existían en 1986 · 2006: 4 · 2026: 15 · 2027: 16",
-   "nota": "Cada una, con su norma y su fecha en el BOE",
+   "nota": "De ellas, 11 nuevas desde 2006. Cada una, con su norma y su fecha en el BOE",
    "sello": "CÁLCULO PROPIO · BOE (16 normas, de 1992 a 2025)",
    "grafico": true,
    "imagen": "El contador grande: 0 en 1986, 4 en 2006, 15 hoy, 16 en 2027; una línea del tiempo que se llena de sellos."
@@ -287,6 +287,18 @@
    "ruta": "iva_bar_pct.2026",
    "decimales": 0,
    "estado": "V"
+  },
+  {
+   "texto": "8",
+   "ruta": "contador_por_plano.5",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "12",
+   "ruta": "contador_por_plano.6",
+   "decimales": 0,
+   "estado": "C"
   }
  ],
  "comprobaciones": [

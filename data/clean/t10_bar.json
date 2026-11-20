@@ -143,6 +143,13 @@
   "2026": 10
  },
  "nota": "Cada obligación se comprueba contra el texto del BOE (data/raw/boe_t10_*.html). «desde» = primer año en que se exige a un bar (la ley de prevención de riesgos entró en vigor en 1996; la primera de protección de datos, en enero de 1993; el registro retributivo, en 2021; el programa de facturación, en 2027, para quien factura con ordenador o caja informática). Fuera de la lista, por prudencia: la tasa de basuras (la Ley 7/2022 la hace obligatoria en todos los ayuntamientos desde 2025, pero en Madrid los negocios ya podían pagar una antes). Camarero: salario mínimo de cada año y cotizaciones del BOE (motor de T8, tarifa de accidentes del comercio).",
+ "contador_por_plano": {
+  "4": 4,
+  "5": 8,
+  "6": 12,
+  "7": 15,
+  "8": 16
+ },
  "camarero_sube_pct": {
   "1986": 48.5,
   "2006": 49.2
