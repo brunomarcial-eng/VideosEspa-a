@@ -90,3 +90,28 @@ Bruno quita 1986 y 2006: compara solo 10 años. En vez de padre e hijo, elige **
 | Comida de un mes por persona, en horas | 11,2 | **12,3** | +10 % |
 
 Guion de la versión 2 en `videos/t9/guion.md` (11 frases, unos 55 s). Pregunta final: «¿Se vive mejor que hace 10 años?».
+
+## Versión 3 (Bruno, 20-11-2026): «¿no era hasta agosto?» y el año de trabajo sumado
+**Lo de agosto:**
+- **De dónde sale:** la Fundación Civismo dice que en 2026 se trabaja para pagar impuestos hasta el 20 de agosto (231 días). No es un dato oficial, y su informe no se puede leer desde este entorno.
+- **Con datos oficiales, no sale agosto:**
+  - **IRPF y cotizaciones** (OCDE, Taxing Wages; trabajador medio): 39,4 % del coste del sueldo en 2016 y 41,4 % en 2025. Eso es **hasta el 24 de mayo y el 31 de mayo**.
+  - **Sumando además el IVA y los impuestos sobre los productos** de lo que se consume, con la cota más alta (Eurostat: lo recaudado por esos impuestos dividido por el consumo de los hogares, 17 % en 2016 y 18,2 % en 2025, y la tasa de ahorro de los hogares): **hasta el 27 de junio en 2016 y el 5 de julio en 2025**.
+- **Cómo podría salir agosto (reconstrucción propia, sin confirmar):** dividiendo todos los impuestos, incluidas las cotizaciones de la empresa, entre el sueldo bruto, que no incluye esas cotizaciones. Sale entre el 22 y el 30 de agosto.
+
+**El año de trabajo** (`ano_de_trabajo` en `data/clean/t9_horas.json`), 2016 frente a 2025 (último año con todos los datos):
+- **Cómo se calcula:** días = euros / lo que cuesta el sueldo medio a la empresa × 365. El gasto es el medio por persona del INE (EPF).
+
+| Trabajas hasta el… | 2016 | 2025 |
+|---|---|---|
+| Estado (IRPF y cotizaciones) | 24 de mayo (143,7 días) | 31 de mayo (151,3) |
+| + comida (1.654 € y 2.255 € al año) | 13 de junio | 21 de junio |
+| + carburante (437 € y 469 €) | 18 de junio | 25 de junio |
+| + recibos: luz, gas, agua y teléfono (808 € y 898 €) | **28 de junio** | **3 de julio** |
+| Días que quedan para ti | 186,1 | 180,5 (5,6 menos) |
+
+**El carburante pesa menos días en 2025 que en 2016**, aunque el depósito cueste más horas. Cada persona gasta de media solo un 7 % más en carburante, con el litro un 41 % más caro: se compran menos litros.
+
+**En el vídeo:**
+- **Frase 9:** «solo en IRPF y cotizaciones».
+- **Dos frases nuevas (10 y 11):** el año sumado y «casi 6 días menos al año para mí».

@@ -1,8 +1,8 @@
 # T9 · Notas de edición (archivo por si hay apelación)
 
-**Vídeo:** «¿Se vive mejor que hace 10 años?» · Short vertical 1080×1920, 53,7 s, −14,4 LUFS.
-**Fichero:** `videos/t9/render/t9-limpio.mp4` · SHA-256 `79684e88b3b7aa3b461368d75d86d61c8f242ea95b62bfd9fec19f295f00700a`. (Primer render, 52,8 s, con la pregunta «¿Se vive mejor que hace 10 años?»: `146b13d0…`, no publicado.)
-**Aprobación:** el responsable del canal pidió el 19-11-2026 un vídeo en horas de trabajo con personajes más vivos y con volumen; el 20-11-2026 lo dejó en 2016 frente a hoy y eligió dos amigos de 35 años. Tras ver el primer render, cambió la pregunta final: «Tal y como está España… ¿me quedo o me vuelvo a marchar?». Pendiente de su visto bueno final.
+**Vídeo:** «¿Se vive mejor que hace 10 años?» · Short vertical 1080×1920, 68,6 s, −14,5 LUFS.
+**Fichero:** `videos/t9/render/t9-limpio.mp4` · SHA-256 `64e1687dfce0ea38d88a959e7da2fae745343322e122c75bd17bd9f3a67a6d58`. (Versión anterior, 53,7 s, sin el año sumado: `79684e88…`, no publicada.) (Primer render, 52,8 s, con la pregunta «¿Se vive mejor que hace 10 años?»: `146b13d0…`, no publicado.)
+**Aprobación:** el responsable del canal pidió el 19-11-2026 un vídeo en horas de trabajo con personajes más vivos y con volumen; el 20-11-2026 lo dejó en 2016 frente a hoy y eligió dos amigos de 35 años. Tras ver el primer render, cambió la pregunta final: «Tal y como está España… ¿me quedo o me vuelvo a marchar?». Después pidió contrastar lo de trabajar para el Estado «hasta agosto» y sumar el año de trabajo (Estado, comida, carburante y recibos): versión 3 de `paso-1-datos.md`. Pendiente de su visto bueno final.
 
 ## Cómo se hizo
 - **Guion:** conversación entre dos amigos inventados de 35 años; cada uno trae su dato (el que se quedó, el de la luz, que ha mejorado). Sin partidos ni causas. Acaba con una pregunta.

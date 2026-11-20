@@ -19,6 +19,7 @@ const F_GAS = "Dato oficial: Comisión Europea (boletín petrolero) · cálculo 
 const F_LUZ = "Dato oficial: Eurostat (luz de los hogares) · cálculo propio con el sueldo medio del INE y la OCDE";
 const F_COM = "Cálculo propio · INE (presupuestos familiares, IPC de alimentos y sueldo medio) · OCDE";
 const F_EST = "Dato oficial: OCDE (Taxing Wages: IRPF y cotizaciones del trabajador medio)";
+const F_ANO = "Cálculo propio · OCDE (IRPF y cotizaciones) · INE (gasto medio por persona y sueldo medio)";
 
 export function datos(d) {
   const z = d.diez_anos;
@@ -27,6 +28,7 @@ export function datos(d) {
     piso: [z.piso_anos["2016"], z.piso_anos["2026"]], deposito: [z.deposito_horas["2016"], z.deposito_horas["2026"]],
     luz: [z.luz_horas_ano["2016"], z.luz_horas_ano["2025"]], compra: [z.compra_horas["2016"], z.compra_horas["2026"]],
     estado: [z.estado["2016"], z.estado["2025"]],
+    ano: [d.ano_de_trabajo.anos["2016"], d.ano_de_trabajo.anos["2025"]],
   };
 }
 
@@ -49,6 +51,20 @@ const ORO = "#D9A75A", ORO_T = "#8A6316";
 const filas = (p, vals, labs, o) => `${vals.map((v, i) => `<g transform="translate(${o.x0} ${o.y0 + i * o.dy})">${rot(-24, 12, labs[i], 28, C.gris, "", "end")}
     ${filaRelojes(`${p}-f${i}`, Math.ceil(v), o.r, o.paso, i ? C.azul : ORO)}
     <g id="${p}-v${i}">${rot(o.xv, 12, es(v) + " h", 32, i ? C.azul : ORO_T, "", "end")}</g></g>`).join("")}`;
+
+
+// Dos barras de un año (2016 y 2025): Estado, comida, carburante y recibos; lo que queda, en verde, es para ti.
+// La escena ajusta x y ancho de cada tramo («<p>-<i>-<tramo>»), mueve el marcador «<p>-<i>-m» y enseña la fecha «<p>-<i>-f».
+const TRAMOS = [["estado", "#5B6470", "ESTADO"], ["comida", "#D9A75A", "COMIDA"], ["carburante", "#B8613E", "CARBURANTE"], ["recibos", "#9AA6AE", "RECIBOS"]];
+const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+const fechaTxt = (h) => `${h.dia}&nbsp;de&nbsp;${MESES[h.mes - 1]}`;
+const barrasAno = (p, ano, dias = false) => `${ano.map((a, i) => `<g transform="translate(0 ${960 + i * 110})">${rot(325, 14, ["2016", "2025"][i], 28, C.gris, "", "end")}
+    ${TRAMOS.map(([k, col]) => `<rect id="${p}-${i}-${k}" x="340" y="-26" width="0" height="52" fill="${col}"/>`).join("")}
+    <rect id="${p}-${i}-ti" x="820" y="-26" width="0" height="52" rx="6" fill="#7C9A7E"/>
+    <g id="${p}-${i}-m"><line x1="0" y1="-38" x2="0" y2="38" stroke="${C.tinta}" stroke-width="5"/>
+      <g id="${p}-${i}-f">${dias ? "" : rot(0, -46, fechaTxt(a.hasta.recibos).replace(/&nbsp;/g, " "), 22, C.tinta)}</g></g>
+    ${dias ? `<g id="${p}-${i}-d">${rot(810, 10, es(a.para_ti_dias) + " días", 22, "#FFFDF8", "", "end")}</g>` : ""}</g>`).join("")}
+  <g id="${p}-ley" transform="translate(278 1145)">${[...TRAMOS, ["ti", "#7C9A7E", "PARA TI"]].map(([k, col, et], j) => `<g transform="translate(${[0, 98, 198, 334, 438][j]} 0)"><rect x="0" y="-14" width="18" height="18" rx="4" fill="${col}"/>${rot(24, 2, et, 15, C.gris, "", "start")}</g>`).join("")}</g>`;
 
 export function escenas(D) {
   return [
@@ -256,40 +272,87 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c9-31"], e.c["c9-24"]]); } },
 
-    // 10 · El que se quedó (bar): «Bueno… ¡Bienvenido a casa!»
+    // 10 · El que vuelve (oficina): «Y súmale la comida, el carburante y los recibos de casa: en 2016 trabajabas para todo eso hasta el 28 de junio. Hoy, hasta el 3 de julio.»
     { n: 10, set: "vacio",
-      svg: `<g id="s10-mal" transform="translate(1010 1440) scale(.8) rotate(-6)">${maleta("s10-m")}</g>${dos("s10")}`,
-      tarjeta: tarjeta(10, "El que se quedó", `<div class="tit">«¡Bienvenido a <mark id="m10">casa</mark>!»</div>`, { tono: "pasado" }),
+      svg: `${panel(200, 850, 700, 330)}${barrasAno("s10", D.ano)}${dos("s10")}`,
+      tarjeta: tarjeta(10, "Trabajas para el Estado, la comida, el carburante y los recibos hasta el…", `${vs(10, D.ano.map((a) => fechaTxt(a.hasta.recibos)), ["en 2016", "en 2025"], 56)}
+        <div class="nota">Recibos: luz, gas, agua y teléfono. Gasto medio por persona de cada año. 2025, último año con todos los datos</div>`, { fuente: F_ANO, icono: bandera(44) }),
+      fn: function (t, e) {
+        const c = e.c;
+        ambiente("oficina", null, t, 0);
+        // Cada tramo crece cuando se nombra: el Estado ya está; luego comida, carburante y recibos.
+        const tt = { estado: e.t0 - 1, comida: c["c10-comida"], carburante: c["c10-carburante"], recibos: c["c10-recibos"] };
+        for (let i = 0; i < 2; i++) {
+          let x = 0;
+          for (const k of ["estado", "comida", "carburante", "recibos"]) {
+            const w = D.ano[i].dias[k] * 480 / 365 * suave((t - tt[k]) / 0.5);
+            attr(`s10-${i}-${k}`, "x", (340 + x).toFixed(1)); attr(`s10-${i}-${k}`, "width", Math.max(0, w).toFixed(1)); x += w;
+          }
+          attr(`s10-${i}-ti`, "x", (340 + x).toFixed(1)); attr(`s10-${i}-ti`, "width", Math.max(0, 480 - x).toFixed(1));
+          T(`s10-${i}-m`, 340 + x, 0, {}); css(`s10-${i}-f`, "opacity", clamp((t - c[i ? "c10-3" : "c10-28"]) / 0.3));
+        }
+        css("s10-ley", "opacity", clamp((t - e.t0 - 0.3) / 0.4));
+        sube("c10-a", t, c["c10-28"]); sube("c10-b", t, c["c10-3"]);
+        persona("s10-q", t, { x: 115, y: 1440, s: 0.8, mira: 1, vivo: true, boca: [[0, "seria"], [c["c10-3"], "o"]], ojos: [[0, "normal"], [c["c10-3"], "grandes"]], brazo: [[0, "abajo"], [c["c10-3"] + 0.2, "piensa"]], fase: 1 });
+        persona("s10-v", t, { x: 940, y: 1440, s: 0.8, mira: -1, vivo: true, charla: e, boca: habla(t, e), brazo: [[0, "abajo"], [c["c10-comida"], "senala"], [c["c10-3"], "arriba"]], espejo: true, fase: 2 });
+      },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c10-28"], e.c["c10-3"]]); } },
+
+    // 11 · El que se quedó (oficina): «O sea, que me quedan casi 6 días menos al año para mí.»
+    { n: 11, set: "vacio",
+      svg: `${panel(200, 850, 700, 330)}${barrasAno("s11", D.ano, true)}${dos("s11")}`,
+      tarjeta: tarjeta(11, "Días del año que trabajas para ti", `${vs(11, D.ano.map((a) => es(a.para_ti_dias) + "&nbsp;días"), ["en 2016", "en 2025"], 60)}
+        <div class="nota">Lo que queda del año después del Estado, la comida, el carburante y los recibos</div>`, { fuente: F_ANO, icono: bandera(44) }),
+      fn: function (t, e) {
+        const c = e.c;
+        ambiente("oficina", null, t, 0);
+        for (let i = 0; i < 2; i++) {
+          let x = 0;
+          for (const k of ["estado", "comida", "carburante", "recibos"]) { const w = D.ano[i].dias[k] * 480 / 365; attr(`s11-${i}-${k}`, "x", (340 + x).toFixed(1)); attr(`s11-${i}-${k}`, "width", w.toFixed(1)); x += w; }
+          attr(`s11-${i}-ti`, "x", (340 + x).toFixed(1)); attr(`s11-${i}-ti`, "width", (480 - x).toFixed(1));
+          T(`s11-${i}-m`, 340 + x, 0, {}); css(`s11-${i}-f`, "opacity", 1);
+          css(`s11-${i}-ti`, "opacity", (0.75 + 0.25 * Math.sin(t * 6)).toFixed(2)); css(`s11-${i}-d`, "opacity", clamp((t - e.t0 - 0.2 - i * 0.4) / 0.3));
+        }
+        sube("c11-a", t, e.t0 + 0.2); sube("c11-b", t, e.t0 + 0.6);
+        persona("s11-q", t, { x: 115, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "piensa"], [c["c11-6"], "hombros"]], incl: [[0, 0], [c["c11-6"], -7]], fase: 1 });
+        persona("s11-v", t, { x: 940, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c11-mi"], "sonrisa"]], brazo: [[0, "abajo"], [c["c11-mi"], "hombros"]], espejo: true, fase: 2 });
+      },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c11-6"]]); } },
+
+    // 12 · El que se quedó (bar): «Bueno… ¡Bienvenido a casa!»
+    { n: 12, set: "vacio",
+      svg: `<g id="s12-mal" transform="translate(1010 1440) scale(.8) rotate(-6)">${maleta("s12-m")}</g>${dos("s12")}`,
+      tarjeta: tarjeta(12, "El que se quedó", `<div class="tit">«¡Bienvenido a <mark id="m12">casa</mark>!»</div>`, { tono: "pasado" }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("bar", "oficina", t, e.t0);
-        marca("m10", t, c["c10-bienvenido"]);
-        const q = ruta(t, [[c["c10-bienvenido"] - 0.2, 220], [c["c10-bienvenido"] + 0.5, 620]]);
-        persona("s10-q", t, { x: q.x, y: 1440, s: 0.8, anda: q.anda, mira: 1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), ojos: [[0, "normal"], [c["c10-bienvenido"], "felices"]],
-          brazo: [[0, "hombros"], [c["c10-bienvenido"] + 0.4, "arriba"]], fase: 1 });
-        persona("s10-v", t, { x: 860, y: 1440, s: 0.8, mira: -1, vivo: true, salta: c["c10-bienvenido"] + 0.55, boca: [[0, "seria"], [c["c10-bienvenido"] + 0.5, "grande"]], ojos: [[0, "normal"], [c["c10-bienvenido"] + 0.5, "felices"]],
-          brazo: [[0, "abajo"], [c["c10-bienvenido"] + 0.5, "hombros"]], espejo: true, fase: 2 });
+        marca("m12", t, c["c12-bienvenido"]);
+        const q = ruta(t, [[c["c12-bienvenido"] - 0.2, 220], [c["c12-bienvenido"] + 0.5, 620]]);
+        persona("s12-q", t, { x: q.x, y: 1440, s: 0.8, anda: q.anda, mira: 1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), ojos: [[0, "normal"], [c["c12-bienvenido"], "felices"]],
+          brazo: [[0, "hombros"], [c["c12-bienvenido"] + 0.4, "arriba"]], fase: 1 });
+        persona("s12-v", t, { x: 860, y: 1440, s: 0.8, mira: -1, vivo: true, salta: c["c12-bienvenido"] + 0.55, boca: [[0, "seria"], [c["c12-bienvenido"] + 0.5, "grande"]], ojos: [[0, "normal"], [c["c12-bienvenido"] + 0.5, "felices"]],
+          brazo: [[0, "abajo"], [c["c12-bienvenido"] + 0.5, "hombros"]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camSueno(t, e.t0); } },
 
-    // 11 · El que vuelve, a cámara (bar): «Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías?»
-    { n: 11, set: "vacio",
-      svg: `${boton("s11-b1", "ME QUEDO", "#5F7F62", 300)}${boton("s11-b2", "ME VOY", "#B8863A", 240)}${bocadillo("s11-boc")}<g id="s11-mal" transform="translate(1010 1440) scale(.8) rotate(-6)">${maleta("s11-m")}</g>${dos("s11")}`,
-      tarjeta: tarjeta(11, "Te toca", `<div class="tit" style="font-size:60px">Tal y como está España, ¿me <mark id="m11">quedo</mark> o me vuelvo a marchar?</div><div class="sub" id="c11-sub">¿Tú qué harías? Te leo en los comentarios.</div>`),
+    // 13 · El que vuelve, a cámara (bar): «Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías?»
+    { n: 13, set: "vacio",
+      svg: `${boton("s13-b1", "ME QUEDO", "#5F7F62", 300)}${boton("s13-b2", "ME VOY", "#B8863A", 240)}${bocadillo("s13-boc")}<g id="s13-mal" transform="translate(1010 1440) scale(.8) rotate(-6)">${maleta("s13-m")}</g>${dos("s13")}`,
+      tarjeta: tarjeta(13, "Te toca", `<div class="tit" style="font-size:60px">Tal y como está España, ¿me <mark id="m13">quedo</mark> o me vuelvo a marchar?</div><div class="sub" id="c13-sub">¿Tú qué harías? Te leo en los comentarios.</div>`),
       fn: function (t, e) {
         const c = e.c;
         ambiente("bar", null, t, 0);
-        pop("s11-b1", t, c["c11-quedo"], 320, 900, { s: 0.9 }); pop("s11-b2", t, c["c11-marchar"], 770, 900, { s: 0.9 });
-        if (pop("s11-boc", t, c["c11-boc"], 540, 1130, { s: 0.75 }) >= 0) for (let i = 0; i < 3; i++) attr("s11-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - c["c11-boc"]) * 8 - i * 0.9))).toFixed(1));
-        marca("m11", t, c["c11-quedo"]); sube("c11-sub", t, c["c11-boc"] - 0.2);
+        pop("s13-b1", t, c["c13-quedo"], 320, 900, { s: 0.9 }); pop("s13-b2", t, c["c13-marchar"], 770, 900, { s: 0.9 });
+        if (pop("s13-boc", t, c["c13-boc"], 540, 1130, { s: 0.75 }) >= 0) for (let i = 0; i < 3; i++) attr("s13-boc-p" + i, "cy", (-6 - 16 * Math.max(0, Math.sin((t - c["c13-boc"]) * 8 - i * 0.9))).toFixed(1));
+        marca("m13", t, c["c13-quedo"]); sube("c13-sub", t, c["c13-boc"] - 0.2);
         // La maleta se mueve un poco cuando dice «marchar».
-        const km = t - c["c11-marchar"];
-        T("s11-mal", 1010, 1440, { s: 0.8, r: -6 + (km > 0 && km < 0.6 ? 8 * Math.sin(km * 20) * (1 - km / 0.6) : 0) });
-        persona("s11-q", t, { x: 210, y: 1440, s: 0.8, mira: [[0, 1], [c["c11-boc"], 0]], vivo: true, salta: c["c11-quedo"] + 0.1, boca: [[0, "sonrisa"], [c["c11-marchar"], "o"]],
-          brazo: [[0, "abajo"], [c["c11-quedo"], "senala"], [c["c11-boc"], "hombros"]], fase: 1 });
-        persona("s11-v", t, { x: 860, y: 1440, s: 0.8, mira: [[0, -1], [c["c11-marchar"] - 0.2, 1], [c["c11-boc"], 0]], vivo: true, charla: e, boca: habla(t, e),
-          brazo: [[0, "piensa"], [c["c11-marchar"] - 0.2, "senala"], [c["c11-boc"], "hombros"]], incl: [[0, 0], [c["c11-espana"], -6], [c["c11-boc"], 0]], espejo: true, fase: 2 });
+        const km = t - c["c13-marchar"];
+        T("s13-mal", 1010, 1440, { s: 0.8, r: -6 + (km > 0 && km < 0.6 ? 8 * Math.sin(km * 20) * (1 - km / 0.6) : 0) });
+        persona("s13-q", t, { x: 210, y: 1440, s: 0.8, mira: [[0, 1], [c["c13-boc"], 0]], vivo: true, salta: c["c13-quedo"] + 0.1, boca: [[0, "sonrisa"], [c["c13-marchar"], "o"]],
+          brazo: [[0, "abajo"], [c["c13-quedo"], "senala"], [c["c13-boc"], "hombros"]], fase: 1 });
+        persona("s13-v", t, { x: 860, y: 1440, s: 0.8, mira: [[0, -1], [c["c13-marchar"] - 0.2, 1], [c["c13-boc"], 0]], vivo: true, charla: e, boca: habla(t, e),
+          brazo: [[0, "piensa"], [c["c13-marchar"] - 0.2, "senala"], [c["c13-boc"], "hombros"]], incl: [[0, 0], [c["c13-espana"], -6], [c["c13-boc"], 0]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c11-quedo"], e.c["c11-marchar"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c13-quedo"], e.c["c13-marchar"]]); } },
   ];
 }

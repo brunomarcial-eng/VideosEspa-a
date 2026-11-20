@@ -233,5 +233,116 @@
    "luz": -6.4,
    "compra": 9.8
   }
+ },
+ "ano_de_trabajo": {
+  "nota": "El año de trabajo del trabajador medio, en días (Bruno, 20-11-2026): hasta qué día trabajas para el Estado (IRPF y\ncotizaciones, OCDE) y, después, para la comida, el carburante y los recibos de casa (gasto medio por persona del INE).\nDías = euros / lo que cuesta el sueldo medio a la empresa (sueldo bruto del INE con el neto y la cuña de la OCDE) × 365.\n2016 frente a 2025: último año con todos los datos (EPF y OCDE). El IVA va dentro de cada gasto.\nContraste: si el Estado incluye también el IVA y los impuestos sobre los productos de lo que se consume (Eurostat).",
+  "partidas_recibos": [
+   "Electricidad",
+   "Gas",
+   "Combustibles líquidos",
+   "Suministro de agua",
+   "Servicios de telefonía y relacionados con Internet"
+  ],
+  "anos": {
+   "2016": {
+    "bruto": 23156.0,
+    "neto": 18235.0,
+    "coste_empresa": 30080.0,
+    "euros_por_dia": 82.41,
+    "gasto": {
+     "comida": 1654.37,
+     "carburante": 436.93,
+     "recibos": 807.5
+    },
+    "dias": {
+     "estado": 143.7,
+     "comida": 20.1,
+     "carburante": 5.3,
+     "recibos": 9.8
+    },
+    "gasto_dias_total": 35.2,
+    "hasta": {
+     "estado": {
+      "dia_del_ano": 143.7,
+      "dia": 24,
+      "mes": 5
+     },
+     "comida": {
+      "dia_del_ano": 163.8,
+      "dia": 13,
+      "mes": 6
+     },
+     "carburante": {
+      "dia_del_ano": 169.1,
+      "dia": 18,
+      "mes": 6
+     },
+     "recibos": {
+      "dia_del_ano": 178.9,
+      "dia": 28,
+      "mes": 6
+     }
+    },
+    "para_ti_dias": 186.1,
+    "contraste_con_iva": {
+     "tasa_impuestos_productos_sobre_consumo": 0.1698,
+     "ahorro_hogares": 0.0771,
+     "indirectos_eur": 2858.0,
+     "dias_estado": 178.4,
+     "dia": 27,
+     "mes": 6
+    }
+   },
+   "2025": {
+    "bruto": 30503.0,
+    "neto": 23322.0,
+    "coste_empresa": 39828.0,
+    "euros_por_dia": 109.12,
+    "gasto": {
+     "comida": 2254.62,
+     "carburante": 469.0,
+     "recibos": 897.6
+    },
+    "dias": {
+     "estado": 151.3,
+     "comida": 20.7,
+     "carburante": 4.3,
+     "recibos": 8.2
+    },
+    "gasto_dias_total": 33.2,
+    "hasta": {
+     "estado": {
+      "dia_del_ano": 151.3,
+      "dia": 31,
+      "mes": 5
+     },
+     "comida": {
+      "dia_del_ano": 171.9,
+      "dia": 21,
+      "mes": 6
+     },
+     "carburante": {
+      "dia_del_ano": 176.2,
+      "dia": 25,
+      "mes": 6
+     },
+     "recibos": {
+      "dia_del_ano": 184.5,
+      "dia": 3,
+      "mes": 7
+     }
+    },
+    "para_ti_dias": 180.5,
+    "contraste_con_iva": {
+     "tasa_impuestos_productos_sobre_consumo": 0.1823,
+     "ahorro_hogares": 0.1192,
+     "indirectos_eur": 3745.0,
+     "dias_estado": 185.6,
+     "dia": 5,
+     "mes": 7
+    }
+   }
+  },
+  "dias_menos_para_ti": 5.6
  }
 }

@@ -251,40 +251,96 @@
    "vol": 0.32
   },
   {
-   "id": "c10-ini",
+   "id": "c10-comida",
    "beat": 10,
+   "palabra": "comida,",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-carburante",
+   "beat": 10,
+   "palabra": "carburante",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3,
+   "tono": 1.1
+  },
+  {
+   "id": "c10-recibos",
+   "beat": 10,
+   "palabra": "recibos",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3,
+   "tono": 1.2
+  },
+  {
+   "id": "c10-28",
+   "beat": 10,
+   "palabra": "28",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.32
+  },
+  {
+   "id": "c10-3",
+   "beat": 10,
+   "palabra": "3",
+   "dt": -0.05,
+   "sfx": "sello",
+   "vol": 0.36
+  },
+  {
+   "id": "c11-6",
+   "beat": 11,
+   "palabra": "6",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.28
+  },
+  {
+   "id": "c11-mi",
+   "beat": 11,
+   "palabra": "mí.",
+   "dt": -0.05
+  },
+  {
+   "id": "c12-ini",
+   "beat": 12,
    "en": "inicio",
    "dt": -0.2,
    "sfx": "sueno",
    "vol": 0.5
   },
   {
-   "id": "c10-bienvenido",
-   "beat": 10,
+   "id": "c12-bienvenido",
+   "beat": 12,
    "palabra": "¡Bienvenido",
    "dt": -0.05,
    "sfx": "campanilla",
    "vol": 0.3
   },
   {
-   "id": "c11-espana",
-   "beat": 11,
+   "id": "c13-espana",
+   "beat": 13,
    "palabra": "España…",
    "dt": -0.05,
    "sfx": "ting",
    "vol": 0.28
   },
   {
-   "id": "c11-quedo",
-   "beat": 11,
+   "id": "c13-quedo",
+   "beat": 13,
    "palabra": "quedo",
    "dt": -0.05,
    "sfx": "pop",
    "vol": 0.35
   },
   {
-   "id": "c11-marchar",
-   "beat": 11,
+   "id": "c13-marchar",
+   "beat": 13,
    "palabra": "marchar?",
    "dt": -0.05,
    "sfx": "pop",
@@ -292,8 +348,8 @@
    "tono": 1.2
   },
   {
-   "id": "c11-boc",
-   "beat": 11,
+   "id": "c13-boc",
+   "beat": 13,
    "palabra": "harías?",
    "dt": -0.3,
    "sfx": "pop",

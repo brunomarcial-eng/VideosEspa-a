@@ -126,6 +126,62 @@ def diez_anos(t1, t3, bruto_h, anual, piso, dep, L, f25, compra):
     }
 
 
+def eurostat_valor(fichero, **kw):
+    d = json.loads((RAW / fichero).read_text(encoding="utf-8"))
+    dims, size = d["id"], d["size"]
+    idx = {k: d["dimension"][k]["category"]["index"] for k in dims}
+    flat = 0
+    for k, s in zip(dims, size):
+        flat = flat * s + idx[k][kw[k]] if k in kw else flat * s + 0
+    return d["value"][str(flat)]
+
+
+def ano_de_trabajo(t1, t3):
+    """El año de trabajo del trabajador medio, en días (Bruno, 20-11-2026): hasta qué día trabajas para el Estado (IRPF y
+    cotizaciones, OCDE) y, después, para la comida, el carburante y los recibos de casa (gasto medio por persona del INE).
+    Días = euros / lo que cuesta el sueldo medio a la empresa (sueldo bruto del INE con el neto y la cuña de la OCDE) × 365.
+    2016 frente a 2025: último año con todos los datos (EPF y OCDE). El IVA va dentro de cada gasto.
+    Contraste: si el Estado incluye también el IVA y los impuestos sobre los productos de lo que se consume (Eurostat)."""
+    O = ocde()
+    gasto = {}
+    for s in json.loads((RAW / "ine_73780_epf_gasto_4digitos.json").read_text(encoding="utf-8")):
+        n = s["Nombre"]
+        if "Dato base. Gasto total. Gasto medio por persona. Precios corrientes." in n:
+            gasto[n.split(". Dato base")[0].strip()] = {str(x["Anyo"]): x["Valor"] for x in s["Data"]}
+    recibos = ["Electricidad", "Gas", "Combustibles líquidos", "Suministro de agua", "Servicios de telefonía y relacionados con Internet"]
+    bruto = {"2016": t3["sueldos_eaes"]["media"]["2016"], "2025": next(f for f in t1["filas"] if f["anyo"] == 2025)["ganancia_anual_media"]}
+    out = {"nota": ano_de_trabajo.__doc__.strip().replace("\n    ", " "), "partidas_recibos": recibos, "anos": {}}
+    for a in ("2016", "2025"):
+        neto = bruto[a] * O[a]["neto_bruto"]
+        coste = neto / (1 - O[a]["cuna_pct"] / 100)
+        dia = coste / 365
+        g = {"comida": t1["epf_gasto_anual_persona"][a], "carburante": gasto["Carburantes y lubricantes"][a],
+             "recibos": sum(gasto[k][a] for k in recibos)}
+        dias = {"estado": 365 * O[a]["cuna_pct"] / 100, **{k: v / dia for k, v in g.items()}}
+        acum, fechas = 0.0, {}
+        for k in ("estado", "comida", "carburante", "recibos"):
+            acum += dias[k]
+            f = datetime.date(2026, 1, 1) + datetime.timedelta(days=round(acum) - 1)
+            fechas[k] = {"dia_del_ano": r(acum, 1), "dia": f.day, "mes": f.month}
+        # Contraste: IVA e impuestos sobre los productos, sobre lo que se consume del neto (cota alta).
+        tasa = (eurostat_valor("eurostat_gov_10a_taxag_es.json", freq="A", unit="MIO_EUR", sector="S13_S212", na_item="D211", geo="ES", time=a)
+                + eurostat_valor("eurostat_gov_10a_taxag_es.json", freq="A", unit="MIO_EUR", sector="S13_S212", na_item="D214", geo="ES", time=a)) \
+            / eurostat_valor("eurostat_nama_10_gdp_consumo_es.json", freq="A", unit="CP_MEUR", na_item="P31_S14", geo="ES", time=a)
+        ahorro = eurostat_valor("eurostat_nasa_10_ki_ahorro_es.json", freq="A", unit="PC", na_item="SRG_S14_S15", sector="S14_S15", geo="ES", time=a) / 100
+        indirectos = neto * (1 - ahorro) * tasa
+        dias_todo = 365 * (coste * O[a]["cuna_pct"] / 100 + indirectos) / coste
+        ft = datetime.date(2026, 1, 1) + datetime.timedelta(days=round(dias_todo) - 1)
+        out["anos"][a] = {"bruto": r(bruto[a], 0), "neto": r(neto, 0), "coste_empresa": r(coste, 0), "euros_por_dia": r(dia),
+                          "gasto": {k: r(v) for k, v in g.items()}, "dias": {k: r(v, 1) for k, v in dias.items()},
+                          "gasto_dias_total": r(sum(dias[k] for k in ("comida", "carburante", "recibos")), 1),
+                          "hasta": fechas, "para_ti_dias": r(365 - acum, 1),
+                          "contraste_con_iva": {"tasa_impuestos_productos_sobre_consumo": r(tasa, 4), "ahorro_hogares": r(ahorro, 4),
+                                                "indirectos_eur": r(indirectos, 0), "dias_estado": r(dias_todo, 1), "dia": ft.day, "mes": ft.month}}
+    A = out["anos"]
+    out["dias_menos_para_ti"] = r(A["2016"]["para_ti_dias"] - A["2025"]["para_ti_dias"], 1)
+    return out
+
+
 def main():
     N, I = T8.normas(), T8.ipc_largo()
     t3 = json.loads((CLEAN / "t3_vivienda.json").read_text(encoding="utf-8"))
@@ -217,6 +273,8 @@ def main():
         },
     }
     out["diez_anos"] = diez_anos(t1, t3, bruto_h, anual, piso, dep, L, f25, compra)
+    out["ano_de_trabajo"] = ano_de_trabajo(t1, t3)
+    print("ano_de_trabajo", json.dumps(out["ano_de_trabajo"]["anos"], ensure_ascii=False), out["ano_de_trabajo"]["dias_menos_para_ti"])
     (CLEAN / "t9_horas.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print("diez_anos", json.dumps(out["diez_anos"], ensure_ascii=False))
     for k in ("sueldo", "estado_dias", "piso_90m2", "deposito_gasoleo_50l", "deposito_gasolina_50l_horas", "luz_3500kwh", "compra_mes_persona", "sube_pct"):
