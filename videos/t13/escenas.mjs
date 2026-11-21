@@ -84,8 +84,8 @@ export function escenas(D) {
         pop("s1-i0", t, c["c1-avion"] - 0.05, 640, 1000); pop("s1-i1", t, c["c1-tren"] - 0.05, 790, 1000); pop("s1-i2", t, c["c1-coche"] - 0.05, 940, 1000);
         // La azafata cruza al fondo con su maleta; la viajera entra con la suya.
         const z = ruta(t, [[0.2, 1350], [e.t1, -350]]);
-        persona("s1-z", t, { x: z.x, y: 1395, s: 0.62, anda: z.anda, mira: -1, vivo: true, boca: "sonrisa", brazo: [[0, "abajo"]], espejo: true, fase: 3 });
-        T("s1-mz", z.x - 70, 1395, { s: 0.55 });
+        persona("s1-z", t, { x: z.x, y: 1405, s: 0.74, anda: z.anda, mira: -1, vivo: true, boca: "sonrisa", brazo: [[0, "abajo"]], espejo: true, fase: 3 });
+        T("s1-mz", z.x - 90, 1405, { s: 0.66 });
         const v = ruta(t, [[0.1, -250], [1.7, 430]]);
         persona("s1-v", t, { x: v.x, y: 1440, s: 0.8, anda: v.anda, mira: [[0, 1], [c["c1-impuestos"], 0], [c["c1-tarde"], 1]], vivo: true, charla: e, boca: habla(t, e, "seria"),
           ojos: [[0, "normal"], [c["c1-tarde"] + 0.3, "grandes"], [c["c1-avion"], "normal"]], brazo: [[0, "abajo"], [c["c1-tarde"] + 0.2, "hombros"], [c["c1-avion"] - 0.3, "senala"]], fase: 1 });

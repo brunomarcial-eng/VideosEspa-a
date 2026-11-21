@@ -142,7 +142,7 @@ export const maleta = (id, col = "#C77B5B") => `<g id="${id}"><rect x="-12" y="-
 // Coche visto de lado (sin marca). Origen: el suelo, en el centro. «<id>-r0» y «<id>-r1»: las ruedas.
 export const coche = (id, col = "#E0B04A") => `<g id="${id}"><ellipse cx="0" cy="6" rx="250" ry="18" fill="#000000" opacity=".22"/>
   <path fill-rule="evenodd" d="M-250 -60 Q-250 -130 -180 -140 L-120 -150 Q-70 -250 40 -250 Q140 -250 190 -150 Q250 -140 250 -60 V-40 H-250 Z M-100 -150 Q-60 -228 30 -228 V-150 Z M50 -228 Q130 -226 165 -150 H50 Z" fill="${col}"/>
-  <path d="M-100 -150 Q-60 -228 30 -228 V-150 Z" fill="#9FD0EA" opacity=".55"/><path d="M50 -228 Q130 -226 165 -150 H50 Z" fill="#9FD0EA" opacity=".55"/>
+  <path d="M-100 -150 Q-60 -228 30 -228 V-150 Z" fill="#BFE3F2" opacity=".28"/><path d="M50 -228 Q130 -226 165 -150 H50 Z" fill="#BFE3F2" opacity=".28"/>
   <rect x="-250" y="-70" width="500" height="16" fill="#FFFFFF" opacity=".18"/><rect x="226" y="-110" width="24" height="20" rx="6" fill="#FFF3C4"/><rect x="-250" y="-110" width="18" height="22" rx="6" fill="#D86B5B"/>
   ${[-150, 150].map((x, i) => `<g id="${id}-r${i}" transform="translate(${x} -40)"><circle r="46" fill="${C.tinta}"/><circle r="20" fill="#C9CED3"/><rect x="-4" y="-20" width="8" height="40" fill="#8C969C"/></g>`).join("")}</g>`;
 // Barrera del peaje. «<id>-brazo» gira alrededor del poste. Origen: el pie del poste.

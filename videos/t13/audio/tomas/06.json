@@ -1,0 +1,48 @@
+{
+ "huella": "9c6d6659e07fb74e",
+ "semilla": 6000,
+ "texto": "¡Más de cinco veces! Eso no lo suben ni los impuestos. Me voy en tren.",
+ "ev": {
+  "ok": true,
+  "nota": 1.049,
+  "oido": "Más de cinco veces. Eso no lo suben ni los impuestos. Me voy en tren.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.38,
+   0.52,
+   0.82,
+   1.74,
+   2.06,
+   2.24,
+   2.34,
+   2.74,
+   2.86,
+   3.0,
+   4.0,
+   4.16,
+   4.3,
+   4.52
+  ],
+  "t1": [
+   0.38000000000000006,
+   0.52,
+   0.82,
+   1.24,
+   2.06,
+   2.24,
+   2.34,
+   2.74,
+   2.86,
+   3.0,
+   3.48,
+   4.16,
+   4.3,
+   4.52,
+   4.62
+  ],
+  "ritmo": 10.8,
+  "voz": 0.948
+ }
+}
