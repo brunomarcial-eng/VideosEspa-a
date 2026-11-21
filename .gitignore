@@ -21,3 +21,4 @@ videos/*/render/.partes.txt
 # microdatos del INE (grandes): se bajan con scripts/descargar_datos.py
 data/raw/microdatos/
 videos/*/muestras/*.wav
+videos/*/audio/ambiente/*.wav

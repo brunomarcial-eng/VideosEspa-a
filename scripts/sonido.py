@@ -6,7 +6,9 @@
 2. Compone una base musical ligera (marimba, bajo, shaker y bombo suaves) que se
    aparta cuando habla la voz y se corta en seco con el sello del veredicto.
 3. Sintetiza un efecto por acción: carro, monedas, caja, hojas de calendario, etc.
-4. Mezcla voz + música + efectos en audio/mezcla.wav (48 kHz, estéreo).
+4. Añade el ambiente de fondo de cada escenario y los avisos por megafonía («ambientes» y «avisos»
+   de historia.json; las voces de los avisos salen del catálogo, docs/voces-catalogo.md).
+5. Mezcla voz + música + efectos + fondo en audio/mezcla.wav (48 kHz, estéreo).
 
 Uso: python3 scripts/sonido.py videos/t1
 Todo el sonido se genera aquí: no hay licencias que citar ni nada de pago.
@@ -444,13 +446,114 @@ def s_claxon(**_):
     return norm(y)
 
 
-EFECTOS = {"calle": s_calle, "pop": s_pop, "megafonia": s_megafonia, "avion": s_avion, "tren": s_tren, "claxon": s_claxon, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
+def s_campana_estacion(**_):
+    """Sintonía de aviso de estación: cuatro notas de campana (mi-do-re-sol), más larga que la del avión."""
+    y = np.zeros(int(2.0 * SR), np.float32)
+    for k, f in enumerate((659, 523, 587, 784)):
+        c = campana(f, 1.1, [(1, 1, 0.5), (2.0, 0.2, 0.2), (3.0, 0.07, 0.1)])
+        i = int(k * 0.3 * SR)
+        y[i:i + len(c)] += c[: len(y) - i] * 0.9
+    return norm(y)
+
+
+# ------------------------------------------------------------------ ambientes de fondo (Bruno, 21-11-2026: «ruidos de fondo referentes a cada cosa»)
+def lazo(fn, dur, **kw):
+    """Repite un fragmento de ambiente hasta cubrir dur, con fundidos cruzados para que no se note el corte."""
+    trozo = fn(**kw)
+    n, m, x = int(dur * SR), len(trozo), int(0.4 * SR)
+    y = np.zeros(n + m, np.float32)
+    rampa = np.linspace(0, 1, x, dtype=np.float32)
+    t = 0
+    while t < n:
+        p = trozo.copy()
+        p[:x] *= rampa
+        p[-x:] *= rampa[::-1]
+        y[t:t + m] += p
+        t += m - x
+    return y[:n]
+
+
+def amb_aeropuerto(**_):
+    """Terminal: murmullo de gente, pasos y alguna maleta de ruedas."""
+    dur = 6.0
+    t = tiempo(dur)
+    y = ruido(dur, 220, 1800) * 0.35 * (0.75 + 0.25 * np.sin(2 * np.pi * 0.31 * t))
+    tp = tiempo(0.06)
+    paso = np.sin(2 * np.pi * 110 * tp) * np.exp(-tp / 0.015) + ruido(0.06, 700, 3500) * np.exp(-tp / 0.006) * 0.3
+    for tt in np.arange(0.1, dur - 0.1, 0.43) + rng.uniform(-0.05, 0.05, len(np.arange(0.1, dur - 0.1, 0.43))):
+        i = int(tt * SR)
+        y[i:i + len(paso)] += paso * 0.35
+    for t0 in (0.8, 3.9):                       # maleta de ruedas que pasa: traqueteo rápido en las juntas del suelo
+        r = ruido(1.6, 300, 2500) * np.abs(np.sin(2 * np.pi * 7 * tiempo(1.6))) ** 4 * np.sin(np.pi * tiempo(1.6) / 1.6) * 0.5
+        i = int(t0 * SR)
+        y[i:i + len(r)] += r
+    return norm(y)
+
+
+def amb_cabina(**_):
+    """Dentro del avión: zumbido grave y constante de los motores y el aire."""
+    dur = 5.0
+    t = tiempo(dur)
+    y = ruido(dur, 35, 420) * 0.8 + ruido(dur, 1500, 5000) * 0.10
+    y += 0.10 * np.sin(2 * np.pi * 117 * t) + 0.05 * np.sin(2 * np.pi * 234 * t)
+    return norm(y * (0.93 + 0.07 * np.sin(2 * np.pi * 0.2 * t)))
+
+
+def amb_anden(**_):
+    """Andén: retumbar de un tren que circula despacio y el traqueteo de las ruedas en las juntas de la vía."""
+    dur = 8.0
+    t = tiempo(dur)
+    pasa = 0.35 + 0.65 * np.sin(np.pi * t / dur) ** 2
+    y = ruido(dur, 30, 220) * 0.7 * pasa + ruido(dur, 600, 3000) * 0.06
+    tp = tiempo(0.09)
+    clac = (ruido(0.09, 400, 2800) * np.exp(-tp / 0.012) + np.sin(2 * np.pi * 75 * tp) * np.exp(-tp / 0.03)) * 0.8
+    for base in np.arange(0.2, dur - 0.4, 0.95):   # ta-ta … ta-ta: cada junta, dos ejes
+        for d in (0.0, 0.13):
+            i = int((base + d) * SR)
+            y[i:i + len(clac)] += clac * pasa[min(i, len(pasa) - 1)]
+    return norm(y)
+
+
+def amb_trafico(**_):
+    """Carretera y peaje: motores al ralentí, coches que pasan y algún bocinazo lejano de atasco."""
+    dur = 9.0
+    t = tiempo(dur)
+    y = ruido(dur, 28, 140) * 0.6 * (0.8 + 0.2 * np.sin(2 * np.pi * 9 * t)) + ruido(dur, 300, 1500) * 0.08
+    for t0 in (0.6, 3.4, 6.1):                  # coches que pasan
+        d = 1.8
+        w = ruido(d, 120, 2600) * np.sin(np.pi * tiempo(d) / d) ** 3 * 0.55
+        i = int(t0 * SR)
+        y[i:i + len(w)] += w[: len(y) - i]
+    for t0, tono in ((2.2, 0.85), (7.4, 1.1)):   # bocinazos lejanos
+        tp = tiempo(0.35)
+        b = sum(np.sin(2 * np.pi * f * tono * tp) for f in (400, 500)) * np.minimum(1, tp / 0.02) * np.minimum(1, (0.35 - tp) / 0.05)
+        i = int(t0 * SR)
+        y[i:i + len(b)] += banda(b.astype(np.float32), 300, 2000) * 0.22
+    return norm(y)
+
+
+AMBIENTES = {"aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico}
+NIVEL_AMB = {"aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08}
+
+
+def megafonia(y):
+    """Voz por megafonía: banda de teléfono (300-3.400 Hz), un poco saturada y con el eco de una sala grande."""
+    y = banda(y, 300, 3400)
+    y = np.tanh(y * 2.2) / np.tanh(2.2)
+    out = np.zeros(len(y) + int(0.6 * SR), np.float32)
+    for retardo, g in ((0.0, 1.0), (0.09, 0.42), (0.21, 0.26), (0.37, 0.14)):
+        i = int(retardo * SR)
+        out[i:i + len(y)] += y * g
+    return norm(out)
+
+
+EFECTOS = {"calle": s_calle, "pop": s_pop, "estacion": s_campana_estacion, "megafonia": s_megafonia, "avion": s_avion, "tren": s_tren, "claxon": s_claxon, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
            "carro": s_carro, "beep": s_beep, "conteo": s_conteo, "caja": s_caja, "sube": s_sube, "pinza": s_pinza,
            "desenrolla": s_desenrolla, "sello": s_sello, "notif": s_notif, "fwip": s_fwip,
            "campanilla": s_campanilla, "persiana": s_persiana, "vapor": s_vapor, "golpe": s_golpe, "sueno": s_sueno,
            "timbre": s_timbre, "rasgado": s_rasgado, "publico": s_publico, "bici": s_bici}
 # Ganancia de cada efecto para que ninguno tape la voz
-NIVEL = {"calle": 0.22, "pop": 0.30, "megafonia": 0.24, "avion": 0.18, "tren": 0.20, "claxon": 0.18, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
+NIVEL = {"calle": 0.22, "pop": 0.30, "estacion": 0.24, "megafonia": 0.24, "avion": 0.18, "tren": 0.20, "claxon": 0.18, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
          "beep": 0.12, "conteo": 0.16, "caja": 0.30, "sube": 0.13, "pinza": 0.26, "desenrolla": 0.22,
          "sello": 0.40, "notif": 0.24, "fwip": 0.10, "campanilla": 0.18, "persiana": 0.16, "vapor": 0.10, "golpe": 0.22, "sueno": 0.20,
          "timbre": 0.22, "rasgado": 0.18, "publico": 0.16, "bici": 0.16}
@@ -524,7 +627,33 @@ def main(argv):
     for p in linea["planos"][1:]:           # cada cambio de escena, un roce de papel
         fx.poner(s_fwip(), p["ini"] - 0.14, NIVEL["fwip"], pan=rng.uniform(-0.3, 0.3))
 
-    mezcla = np.stack([voz, voz], axis=1) + mus_b + fx.b[:n]
+    # ---- ambientes de fondo de cada escenario y avisos por megafonía (historia.json: «ambientes» y «avisos»)
+    planos = {p["n"]: p for p in linea["planos"]}
+    lista = linea["planos"]
+    amb = Pista(dur)
+    for a in historia.get("ambientes", []):
+        i0 = lista.index(planos[a["desde"]])
+        i1 = lista.index(planos[a["hasta"]])
+        t0 = 0.0 if i0 == 0 else lista[i0]["ini"] - 0.35
+        t1 = dur if i1 + 1 >= len(lista) else lista[i1 + 1]["ini"] - 0.35
+        y = lazo(AMBIENTES[a["tipo"]], t1 - t0 + 0.6)
+        x = int(0.6 * SR)
+        y[:x] *= np.linspace(0, 1, x)
+        y[-x:] *= np.linspace(1, 0, x)
+        amb.poner(y, t0 - (0.3 if t0 > 0 else 0), NIVEL_AMB[a["tipo"]] * a.get("vol", 1.0) * 2, pan=a.get("pan", 0.0))
+    avisos = Pista(dur)
+    for a in historia.get("avisos", []):
+        p = planos[a["beat"]]
+        t = (p["ini"] if a.get("en", "inicio") == "inicio" else p["fin"]) + a.get("dt", 0)
+        if a.get("campana"):
+            avisos.poner(EFECTOS[a["campana"]](), t, NIVEL[a["campana"]] * a.get("vol", 1.0) * 1.6)
+            t += a.get("tras_campana_s", 1.3)
+        y = megafonia(leer(d / a["fichero"]))
+        avisos.poner(y, t, 0.16 * a.get("vol", 1.0), pan=a.get("pan", 0.0))
+    # el fondo también se aparta cuando habla la voz (algo menos que la música; los avisos, algo más)
+    amb_b = amb.b[:n] * (1 - 0.45 * suave)[:, None] + avisos.b[:n] * (1 - 0.6 * suave)[:, None]
+
+    mezcla = np.stack([voz, voz], axis=1) + mus_b + fx.b[:n] + amb_b
     pico = np.abs(mezcla).max()
     if pico > 0.97:
         mezcla *= 0.97 / pico
@@ -535,7 +664,7 @@ def main(argv):
     def db(x):
         return 20 * np.log10(np.sqrt(np.mean(x ** 2)) + 1e-9)
     print(f"escrito {salida} · {dur:.1f} s · {len(cues)} momentos")
-    print(f"niveles (dB RMS): voz {db(voz):.1f} · música {db(mus_b):.1f} · efectos {db(fx.b[:n]):.1f} · pico {pico:.2f}")
+    print(f"niveles (dB RMS): voz {db(voz):.1f} · música {db(mus_b):.1f} · efectos {db(fx.b[:n]):.1f} · fondo {db(amb_b):.1f} · pico {pico:.2f}")
     print(f"corte de música en {t_corte:.2f} s, vuelve en {t_vuelve:.2f} s")
 
 
