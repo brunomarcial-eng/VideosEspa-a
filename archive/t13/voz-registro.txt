@@ -1,0 +1,38 @@
+plano 1: «¿Pagamos más impuestos que nunca para llegar más tarde? Vamos a verlo: en avión, en tren y en coche.»
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+/bin/sh: 1: sox: not found
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1663.25it/s]
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.925 · 6.9 s · 11.2 l/s · «pagamos más impuestos que nunca para llegar más tarde, vamos a verlo en avión, en tren y en coche.»
+plano 2: «Les habla el comandante: tenemos retraso por el control del tráfico aéreo.»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.965 · 4.4 s · 13.9 l/s · «Les habla el comandante. Tenemos retraso por el control del tráfico aéreo.»
+plano 3: «Nada raro: este año, uno de cada diez vuelos se retrasa por eso. En 2016, uno de cada cuarenta.»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.953 · 7.6 s · 10.9 l/s · «Nada raro, este año, uno de cada diez vuelos se retrasa por eso. En 2016, uno de cada 40.»
+plano 4: «Ya, pero es que ahora vuela más gente.»
+    toma 1 (semilla 4000): mala · 1.0 · voz 0.789 · 2.0 s · 14.8 l/s · «Ya, pero es que ahora vuela más gente.» · voz distinta (0.79)
+    toma 2 (semilla 4001): mala · 1.0 · voz 0.84 · 2.3 s · 12.7 l/s · «Ya, pero es que ahora vuela más gente.» · voz distinta (0.84)
+    toma 3 (semilla 4002): BUENA · 1.0 · voz 0.856 · 2.3 s · 12.4 l/s · «Ya, pero es que ahora vuela más gente.»
+plano 5: «Hay un 36 % más de vuelos, sí. Pero retrasados, más de cinco veces más.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.933 · 5.1 s · 13.9 l/s · «Hay un 36% más de vuelos, sí, pero retrasados más de cinco veces más.»
+plano 6: «¡Más de cinco veces! Eso no lo suben ni los impuestos. Me voy en tren.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.948 · 4.8 s · 10.8 l/s · «Más de cinco veces. Eso no lo suben ni los impuestos. Me voy en tren.»
+plano 7: «Súbase. En la alta velocidad, llegan en hora 86 de cada 100. En 2019, 95.»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.966 · 7.6 s · 11.6 l/s · «Subase. En la alta velocidad llegan en hora 86 de cada 100. En 2019, 95.»
+plano 8: «Y hacia Galicia o Asturias, poco más de la mitad. En 2019, tres de cada cuatro.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.945 · 6.2 s · 11.7 l/s · «y hacia Galicia o Asturias poco más de la mitad. En 2019, 3 de cada 4.»
+plano 9: «O sea, que el horario es orientativo.»
+    toma 1 (semilla 9000): mala · 1.0 · voz 0.85 · 1.9 s · 15.1 l/s · «O sea, que el horario es orientativo.» · voz distinta (0.85)
+    toma 2 (semilla 9001): BUENA · 1.0 · voz 0.894 · 2.1 s · 13.8 l/s · «O sea, que el horario es orientativo.»
+plano 10: «Pues en coche. ¡Y eso que pagamos más que nunca!»
+    toma 1 (semilla 10000): mala · 1.0 · voz 0.843 · 3.0 s · 12.0 l/s · «pues en coche y eso que pagamos más que nunca.» · voz distinta (0.84)
+    toma 2 (semilla 10001): BUENA · 1.0 · voz 0.867 · 3.2 s · 11.4 l/s · «Pues en coche. Y eso que pagamos más que nunca.»
+plano 11: «Se recauda un 25 % más por habitante que en 2016, ya sin inflación. Récord.»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.911 · 7.0 s · 12.3 l/s · «Se recauda un 25% más por habitante que en 2016, ya sin inflación. Record.»
+plano 12: «Y en transporte se gasta un 38 % más por habitante. En vías de tren, el doble.»
+    toma 1 (semilla 12000): BUENA · 1.0 · voz 0.893 · 5.7 s · 13.4 l/s · «y en transporte se gasta un 38% más por habitante. En vías de tren, el doble.»
+plano 13: «Pagamos más, se gasta más… y llegamos más tarde. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+    toma 1 (semilla 13000): BUENA · 1.0 · voz 0.892 · 6.7 s · 10.4 l/s · «pagamos más, se gasta más y llegamos más tarde, nos tenemos que conformar tu que opinas.»
+duración total 75.7 s · escrito videos/t13/audio/linea_tiempo.json

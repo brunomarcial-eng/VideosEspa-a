@@ -1,0 +1,330 @@
+{
+ "id": "t13",
+ "version": 1,
+ "titulo": "¿Pagamos más para llegar más tarde?",
+ "titulo_alternativo": "Avión, tren y coche: impuestos de récord y más retrasos que en 2016",
+ "pregunta": "Una viajera cruza España en avión, en tren y en coche. ¿Llegamos hoy mejor que en 2016, ahora que pagamos más?",
+ "datos": "data/clean/t13_infraestructuras.json",
+ "aprobacion_datos": "Bruno, 21-11-2026: infraestructuras con viajeros de tren y de avión, maquinistas, pilotos, azafatas, carreteras, peajes y conductores; solo 2016 frente a hoy, contundente, lo que pagamos frente a lo que recibimos. Avión: EUROCONTROL, enero-octubre de 2016 y de 2026. Tren: la CNMC solo da la puntualidad de 2019 y de 2024 (no hay serie oficial comparable desde 2016), y la caída de viajeros de enero-marzo de 2026",
+ "formato": "Un viaje en tres actos. En el avión, el comandante anuncia el retraso y da los datos de EUROCONTROL; la viajera duda (vuela más gente) y él responde. En el andén, el maquinista da la puntualidad de la CNMC; la viajera, con sorna. En el peaje, la viajera, ya en coche, pone lo que pagamos y lo que se gasta, y cierra con la balanza y la pregunta.",
+ "duracion_max_s": 85,
+ "personajes": {
+  "viajera": {
+   "anyo": "unos 35 años, viaja por trabajo con su maleta de cabina",
+   "genero": "viajera"
+  },
+  "comandante": {
+   "anyo": "unos 55 años, comandante de un avión de pasajeros",
+   "genero": "comandante"
+  },
+  "maquinista": {
+   "anyo": "unos 45 años, maquinista de un tren de alta velocidad",
+   "genero": "maquinista"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "El veredicto lo dice la viajera en el plano 13 («pagamos más, se gasta más… y llegamos más tarde») y acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "El avión",
+   "beats": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "nombre": "El tren",
+   "beats": [
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "nombre": "El coche",
+   "beats": [
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    13
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "viajera",
+   "funcion": "gancho",
+   "voz": "¿Pagamos más impuestos que nunca para llegar más tarde? Vamos a verlo: en avión, en tren y en coche.",
+   "pantalla": "¿Pagamos más para llegar más tarde?",
+   "sello": null,
+   "imagen": "La terminal de un aeropuerto: ventanal con un avión en la pista, panel de salidas y asientos de espera. La viajera entra con su maleta de cabina; en el panel, su vuelo cambia a RETRASADO. Una azafata pasa con su maleta."
+  },
+  {
+   "n": 2,
+   "quien": "comandante",
+   "funcion": "anuncio",
+   "voz": "Les habla el comandante: tenemos retraso por el control del tráfico aéreo.",
+   "pantalla": "«Les habla el comandante»",
+   "sello": null,
+   "imagen": "Dentro del avión: ventanillas, maleteros y filas de asientos. Suena el din-don; el comandante, en la puerta de la cabina, habla por el telefonillo. La azafata, a su lado, señala el cinturón."
+  },
+  {
+   "n": 3,
+   "quien": "comandante",
+   "funcion": "dato: vuelos retrasados (tasa)",
+   "voz": "Nada raro: este año, uno de cada diez vuelos se retrasa por eso. En 2016, uno de cada cuarenta.",
+   "pantalla": "Vuelos retrasados por el control del tráfico aéreo en el espacio aéreo español, de enero a octubre · 2016: 2,5 % · 2026: 9,8 %",
+   "nota": "Retraso por las regulaciones del tráfico en ruta (ATFM). El mismo periodo de cada año",
+   "sello": "DATO OFICIAL · EUROCONTROL (retraso ATFM en ruta, espacio aéreo español)",
+   "grafico": true,
+   "imagen": "Dos cuadrículas de cuarenta avioncitos, 2016 y 2026: en 2016 se pone rojo uno; en 2026, cuatro (uno de cada diez)."
+  },
+  {
+   "n": 4,
+   "quien": "viajera",
+   "funcion": "duda",
+   "voz": "Ya, pero es que ahora vuela más gente.",
+   "pantalla": "«Ahora vuela más gente»",
+   "sello": null,
+   "imagen": "La viajera, sentada junto a la ventanilla, se encoge de hombros; por la ventanilla no se mueve nada."
+  },
+  {
+   "n": 5,
+   "quien": "comandante",
+   "funcion": "dato: vuelos retrasados (total)",
+   "voz": "Hay un 36 % más de vuelos, sí. Pero retrasados, más de cinco veces más.",
+   "pantalla": "Vuelos retrasados por el control del tráfico aéreo, de enero a octubre · 2016: 40.500 · 2026: 214.522",
+   "nota": "Vuelos en el espacio aéreo español: un 36 % más que en 2016",
+   "sello": "DATO OFICIAL · EUROCONTROL (retraso ATFM en ruta, espacio aéreo español)",
+   "grafico": true,
+   "imagen": "Dos filas de avioncitos, cada uno 10.000 vuelos retrasados: la de 2016, cuatro; la de 2026, veintiuno, que no caben."
+  },
+  {
+   "n": 6,
+   "quien": "viajera",
+   "funcion": "sarcasmo",
+   "voz": "¡Más de cinco veces! Eso no lo suben ni los impuestos. Me voy en tren.",
+   "pantalla": "«Eso no lo suben ni los impuestos»",
+   "sello": null,
+   "imagen": "La viajera se levanta, coge la maleta del maletero y se va por el pasillo; el comandante se queda con el telefonillo en la mano."
+  },
+  {
+   "n": 7,
+   "quien": "maquinista",
+   "funcion": "dato: puntualidad (rutas con competencia)",
+   "voz": "Súbase. En la alta velocidad, llegan en hora 86 de cada 100. En 2019, 95.",
+   "pantalla": "Trenes de alta velocidad que llegan en hora (menos de 5 minutos tarde), rutas con más trenes · 2019: 94,8 % · 2024: 85,8 %",
+   "nota": "Madrid con Barcelona, Valencia, Sevilla, Málaga y Alicante. La CNMC no da la serie desde 2016",
+   "sello": "DATO OFICIAL · CNMC (balance de la liberalización ferroviaria, con datos de Adif)",
+   "grafico": true,
+   "imagen": "El andén: la nariz de un tren de alta velocidad, la línea amarilla, el reloj de la estación y el panel de llegadas. El maquinista, con chaleco naranja, se asoma por la puerta de la cabina. En el panel, veinte trenes: en 2019 uno llega con RETRASO; en 2024, tres."
+  },
+  {
+   "n": 8,
+   "quien": "maquinista",
+   "funcion": "dato: puntualidad (rutas de ancho variable)",
+   "voz": "Y hacia Galicia o Asturias, poco más de la mitad. En 2019, tres de cada cuatro.",
+   "pantalla": "Trenes que llegan en hora, rutas de larga distancia de ancho variable · 2019: 74,7 % · 2024: 54 %",
+   "nota": "Madrid con Galicia, Asturias, Cantabria, Huelva y Cádiz, y Barcelona-Valencia",
+   "sello": "DATO OFICIAL · CNMC (balance de la liberalización ferroviaria, con datos de Adif)",
+   "grafico": true,
+   "imagen": "Un mapa sencillo de España con las vías desde Madrid hacia el norte; dos relojes de andén: en 2019, tres de cada cuatro trenes en verde; en 2024, casi la mitad en rojo."
+  },
+  {
+   "n": 9,
+   "quien": "viajera",
+   "funcion": "sarcasmo",
+   "voz": "O sea, que el horario es orientativo.",
+   "pantalla": "«El horario es orientativo»",
+   "sello": null,
+   "imagen": "La viajera mira el panel de llegadas, que se llena de RETRASO; el maquinista se rasca la cabeza."
+  },
+  {
+   "n": 10,
+   "quien": "viajera",
+   "funcion": "indignación",
+   "voz": "Pues en coche. ¡Y eso que pagamos más que nunca!",
+   "pantalla": "«¡Y pagamos más que nunca!»",
+   "sello": null,
+   "imagen": "Una autopista con su peaje: marquesina, cabinas y barreras. La viajera llega en su coche a la cola de la barrera, que no sube."
+  },
+  {
+   "n": 11,
+   "quien": "viajera",
+   "funcion": "dato: impuestos",
+   "voz": "Se recauda un 25 % más por habitante que en 2016, ya sin inflación. Récord.",
+   "pantalla": "Impuestos y cotizaciones por habitante, en euros de 2025 · 2016: 10.492 € · 2025: 13.118 €",
+   "nota": "La recaudación más alta de la serie, también descontada la inflación",
+   "sello": "CÁLCULO PROPIO · Eurostat (impuestos y cotizaciones recaudados) · INE (IPC y población)",
+   "grafico": true,
+   "imagen": "Dos montones de billetes junto a la cabina del peaje; el de hoy, mucho más alto. Un sello: RÉCORD."
+  },
+  {
+   "n": 12,
+   "quien": "viajera",
+   "funcion": "dato: gasto",
+   "voz": "Y en transporte se gasta un 38 % más por habitante. En vías de tren, el doble.",
+   "pantalla": "Gasto público en transporte por habitante, en euros de 2025 · 2016: 437 € · 2024: 605 €",
+   "nota": "Inversión en vías de tren: de 2.098 a 5.022 millones de euros de 2025. 2024, último año",
+   "sello": "CÁLCULO PROPIO · Eurostat (gasto de las administraciones por funciones) · OCDE/ITF (inversión en infraestructuras) · INE (IPC y población)",
+   "grafico": true,
+   "imagen": "Dos tramos de vía que se construyen traviesa a traviesa: el de hoy, más largo."
+  },
+  {
+   "n": 13,
+   "quien": "viajera",
+   "funcion": "veredicto y pregunta",
+   "voz": "Pagamos más, se gasta más… y llegamos más tarde. ¿Nos tenemos que conformar? ¿Tú qué opinas?",
+   "pantalla": "Pagamos más y llegamos más tarde. ¿Nos tenemos que conformar?",
+   "sello": null,
+   "imagen": "La balanza: lo que pagas (billetes), abajo; lo que recibes (un reloj que llega tarde), arriba. La viajera, junto al coche, mira a cámara."
+  }
+ ],
+ "no_dato": [
+  "5",
+  "100",
+  "10.000"
+ ],
+ "cifras": [
+  {
+   "texto": "2,5",
+   "ruta": "avion_retraso_atfm_en_ruta.2016.pct_vuelos_con_retraso",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "9,8",
+   "ruta": "avion_retraso_atfm_en_ruta.2026.pct_vuelos_con_retraso",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "36",
+   "ruta": "avion_retraso_atfm_en_ruta.vuelos_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "40.500",
+   "ruta": "avion_retraso_atfm_en_ruta.2016.vuelos_con_retraso",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "214.522",
+   "ruta": "avion_retraso_atfm_en_ruta.2026.vuelos_con_retraso",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "86",
+   "ruta": "tren.rutas_con_competencia.puntualidad_pct.2024",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "95",
+   "ruta": "tren.rutas_con_competencia.puntualidad_pct.2019",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "94,8",
+   "ruta": "tren.rutas_con_competencia.puntualidad_pct.2019",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "85,8",
+   "ruta": "tren.rutas_con_competencia.puntualidad_pct.2024",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "74,7",
+   "ruta": "tren.rutas_ancho_variable.puntualidad_pct.2019",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "54",
+   "ruta": "tren.rutas_ancho_variable.puntualidad_pct.2024",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "25",
+   "ruta": "pagamos.por_habitante_sube_real_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "10.492",
+   "ruta": "pagamos.por_habitante_eur_de_2025.2016",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "13.118",
+   "ruta": "pagamos.por_habitante_eur_de_2025.2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "38",
+   "ruta": "gasto_transporte.por_habitante_sube_real_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "437",
+   "ruta": "gasto_transporte.por_habitante_eur_de_2025.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "605",
+   "ruta": "gasto_transporte.por_habitante_eur_de_2025.2024",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "2.098",
+   "ruta": "inversion_vias_tren.mill_eur_de_2025.2016",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "5.022",
+   "ruta": "inversion_vias_tren.mill_eur_de_2025.2024",
+   "miles": true,
+   "estado": "C"
+  }
+ ],
+ "comprobaciones": [
+  "Avión (V y C): EUROCONTROL, Performance Review Unit, retraso ATFM en ruta por país (FIR), entidad «Spain», suma diaria de enero a octubre (último mes completo de 2026). 2016: 1.610.948 vuelos, 40.500 con retraso (2,51 %), 721.452 minutos. 2026: 2.197.877 vuelos (+36,4 %), 214.522 con retraso (9,76 %), 2.800.427 minutos. «Uno de cada diez» (9,76 %) y «uno de cada cuarenta» (2,51 %). «Por más de cinco»: 214.522 / 40.500 = 5,3. En 2026, el 76 % de los minutos de retraso se atribuye a la capacidad del control y el 20 % a la meteorología (dato de la fuente; el vídeo no da causas).",
+  "Tren (V y C): CNMC, Balance de la liberalización del transporte de viajeros por ferrocarril (INF/DTSP/091/25, 17-9-2025), párrafo 54, con datos de Adif AV; «puntual» = menos de 5 minutos de retraso (Reglamento (UE) 2015/1100). Rutas con competencia (Madrid con Barcelona, Valencia, Sevilla, Málaga y Alicante; 70.805 trenes, el 67 % de la alta velocidad): 85,8 % en 2024, 9 puntos menos que en 2019 (94,8 %). Rutas de larga distancia de ancho variable (Madrid-Vigo/A Coruña, Madrid-Gijón, Madrid-Santander, Madrid-Cádiz/Huelva y Barcelona-Valencia; 11.234 trenes): 54 % en 2024, 20,7 puntos menos que en 2019 (74,7 %). La CNMC añade que en 2023 y 2024 hubo más de 500 obras en la red (150 en 2019). No hay serie oficial pública con la misma definición desde 2016 (Renfe publicó su informe de calidad hasta 2021, con otra definición).",
+  "«Por habitante, se recauda un 25 % más que en 2016» (C): el mismo cálculo de T11 y T12 (Eurostat e INE).",
+  "«en transporte se gasta un 38 % más por habitante» (C): gasto de todas las administraciones en transporte (Eurostat COFOG GF0405), euros de 2025 por habitante: 437 € en 2016 y 605 € en 2024. «En vías de tren se invierte el doble» (C): OCDE/ITF, inversión en infraestructura ferroviaria, 1.652 M€ en 2016 y 4.891 M€ en 2024; en euros de 2025 con el IPC, 2.098 y 5.022 (×2,4); a los precios constantes del propio ITF, ×1,98."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 2016: se recauda un 25 % más por habitante (récord) y se gasta un 38 % más en transporte por habitante (el doble en vías de tren), pero en el cielo español uno de cada diez vuelos se retrasa por el control del tráfico aéreo (uno de cada cuarenta en 2016) aunque solo hay un 36 % más de vuelos; en tren, la puntualidad de la alta velocidad baja del 94,8 % al 85,8 % entre 2019 y 2024 (y del 74,7 % al 54 % en las rutas de ancho variable)",
+  "porque": "Retrasos de EUROCONTROL, puntualidad y viajeros de la CNMC (con datos de Adif), impuestos y gasto de Eurostat, inversión de la OCDE (ITF) e IPC y población del INE.",
+  "pregunta": "¿Nos tenemos que conformar? ¿Tú qué opinas?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno"
+}

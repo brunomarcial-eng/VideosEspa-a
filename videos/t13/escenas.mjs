@@ -353,7 +353,7 @@ export function escenas(D) {
 
     // 13 · La viajera, a cámara (peaje): «Pagamos más, se gasta más… y llegamos más tarde. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
     { n: 13, set: "vacio",
-      svg: `<g id="s13-bal" transform="translate(420 1300) scale(.75)">${balanza("s13-b", ["LO QUE PAGAS", `${[0, 1, 2].map((k) => `<g transform="translate(${(k - 1) * 46} ${-20 - k * 6}) scale(.5)">${billete("s13-bi" + k)}</g>`).join("")}`],
+      svg: `<g id="s13-bal" transform="translate(360 1300) scale(.75)">${balanza("s13-b", ["LO QUE PAGAS", `${[0, 1, 2].map((k) => `<g transform="translate(${(k - 1) * 46} ${-20 - k * 6}) scale(.5)">${billete("s13-bi" + k)}</g>`).join("")}`],
           ["LO QUE RECIBES", `<g transform="translate(0 -44)">${reloj("s13-re", 40, "#D86B5B")}</g>`])}</g>
         ${gente("s13", "v")}`,
       tarjeta: tarjeta(13, "Te toca", `<div class="tit" style="font-size:58px">Pagamos más y llegamos más tarde. ¿Nos tenemos que <mark id="m13">conformar</mark>?</div><div class="sub" id="c13-sub">¿Tú qué opinas? Te leo en los comentarios.</div>`),
