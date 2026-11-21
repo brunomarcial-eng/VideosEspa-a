@@ -1,0 +1,60 @@
+plano 1: «¿Pagamos más impuestos para que nuestros hijos aprendan menos? Vamos a la tutoría.»
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 0.993 · voz 0.898 · 4.5 s · 14.8 l/s · «pagamos más impuestos para que nuestros hijos aprendan menos. Vamos a la tutorial.»
+plano 2: «Siéntense. En lectura, casi uno de cada tres alumnos de 15 años no llega al nivel básico. En 2015, uno de cada seis.»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.958 · 8.5 s · 11.9 l/s · «Siéntense. En lectura, casi uno de cada tres alumnos de 15 años no llega al nivel básico. En 2015, uno de cada seis.»
+plano 3: «¡Pero si yo leo un montón! En el móvil…»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.892 · 2.6 s · 10.9 l/s · «¿Pero si yo leo un montón en el móvil?»
+plano 4: «Y en matemáticas, del 22 % al 33 %. Uno de cada tres tampoco llega.»
+    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.92 · 6.2 s · 13.3 l/s · «Y en matemáticas del 22% al 33%, uno de cada tres tampoco llega.»
+plano 5: «España ha perdido 45 puntos en lectura desde 2015. Más que la media de la OCDE.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.927 · 5.2 s · 15.6 l/s · «España ha perdido 45 puntos en lectura desde 2015, más que la media de la OCDE.»
+plano 6: «¡Pero si pagamos más que nunca!»
+    toma 1 (semilla 6000): mala · 1.0 · voz 0.847 · 1.3 s · 18.2 l/s · «Pero si pagamos más que nunca.» · voz distinta (0.85)
+    toma 2 (semilla 6001): BUENA · 1.0 · voz 0.89 · 1.5 s · 16.0 l/s · «Pero sí, pagamos más que nunca.»
+plano 7: «Es verdad. Por habitante, se recauda un 25 % más que en 2016, ya descontada la inflación. Récord.»
+    toma 1 (semilla 7000): BUENA · 0.986 · voz 0.964 · 7.7 s · 13.4 l/s · «Es verdad. Por habitante se recauda un 25% más que en 2016 ya descontada la inflación. Recorte.»
+plano 8: «Y en educación se gasta un 12 % más por habitante.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.92 · 3.0 s · 16.2 l/s · «Y en educación se gasta un 12% más por habitante.»
+plano 9: «Y en la ESO hay un 19 % más de profesores. Aun así, aprenden menos.»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.939 · 5.3 s · 12.5 l/s · «Y en la ESO hay un 19% más de profesores. Aun así, aprenden menos.»
+plano 10: «Y encima, mi padre me paga una academia.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.891 · 3.4 s · 9.2 l/s · «Y encima, mi padre me paga una academia.»
+plano 11: «Pago dos veces. Y como yo, muchos: los hogares gastan un 26 % más en la secundaria de sus hijos que en 2016.»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.923 · 7.1 s · 15.4 l/s · «pago dos veces, y como yo muchos, los hogares gastan un 26% más en la secundaria de sus hijos que en 2016.»
+plano 12: «Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+    toma 1 (semilla 12000): BUENA · 1.0 · voz 0.927 · 6.5 s · 12.7 l/s · «impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+duración total 67.4 s · escrito videos/t12/audio/linea_tiempo.json
+--- cambio de voz del alumno (B) y plano 10 nuevo ---
+plano 1: «¿Pagamos más impuestos para que nuestros hijos aprendan menos? Vamos a la tutoría.»
+    toma guardada (semilla 1000): BUENA · «pagamos más impuestos para que nuestros hijos aprendan menos. Vamos a la tutorial.»
+plano 2: «Siéntense. En lectura, casi uno de cada tres alumnos de 15 años no llega al nivel básico. En 2015, uno de cada seis.»
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.958 · 8.5 s · 11.9 l/s · «Siéntense. En lectura, casi uno de cada tres alumnos de 15 años no llega al nivel básico. En 2015, uno de cada seis.»
+plano 3: «¡Pero si yo leo un montón! En el móvil…»
+    toma 1 (semilla 3001): BUENA · 1.0 · voz 0.883 · 2.2 s · 12.8 l/s · «Pero sí yo leo un montón en el móvil.»
+plano 4: «Y en matemáticas, del 22 % al 33 %. Uno de cada tres tampoco llega.»
+    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.92 · 6.2 s · 13.3 l/s · «Y en matemáticas del 22% al 33%, uno de cada tres tampoco llega.»
+plano 5: «España ha perdido 45 puntos en lectura desde 2015. Más que la media de la OCDE.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.927 · 5.2 s · 15.6 l/s · «España ha perdido 45 puntos en lectura desde 2015, más que la media de la OCDE.»
+plano 6: «¡Pero si pagamos más que nunca!»
+    toma guardada (semilla 6001): BUENA · «Pero sí, pagamos más que nunca.»
+plano 7: «Es verdad. Por habitante, se recauda un 25 % más que en 2016, ya descontada la inflación. Récord.»
+    toma 1 (semilla 7000): BUENA · 0.986 · voz 0.964 · 7.7 s · 13.4 l/s · «Es verdad. Por habitante se recauda un 25% más que en 2016 ya descontada la inflación. Recorte.»
+plano 8: «Y en educación se gasta un 12 % más por habitante.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.92 · 3.0 s · 16.2 l/s · «Y en educación se gasta un 12% más por habitante.»
+plano 9: «Y en la ESO hay un 19 % más de profesores. Aun así, aprenden menos.»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.939 · 5.3 s · 12.5 l/s · «Y en la ESO hay un 19% más de profesores. Aun así, aprenden menos.»
+plano 10: «Y las clases siguen con 25 alumnos de media. En la Unión Europea, 21.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.922 · 5.2 s · 13.3 l/s · «y las clases siguen con 25 alumnos de media en la Unión Europea 21.»
+plano 11: «Y encima, mi padre me paga una academia.»
+    toma 1 (semilla 11001): mala · 1.0 · voz 0.832 · 2.7 s · 11.6 l/s · «Y encima, mi padre me paga una academia.» · voz distinta (0.83)
+    toma 2 (semilla 11002): BUENA · 1.0 · voz 0.881 · 2.5 s · 12.2 l/s · «Y encima, mi padre me paga una academia.»
+plano 12: «Pago dos veces. Y como yo, muchos: los hogares gastan un 26 % más en la secundaria de sus hijos que en 2016.»
+    toma guardada (semilla 11000): BUENA · «pago dos veces, y como yo muchos, los hogares gastan un 26% más en la secundaria de sus hijos que en 2016.»
+plano 13: «Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+    toma 1 (semilla 13001): BUENA · 1.0 · voz 0.913 · 5.7 s · 14.5 l/s · «impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+duración total 71.0 s · escrito videos/t12/audio/linea_tiempo.json
+--- rehechas 7 («récord» se oía «recorte») y 10 (sin pausa) ---

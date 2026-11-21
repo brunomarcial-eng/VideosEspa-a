@@ -1,0 +1,34 @@
+{
+ "huella": "f86a1b2d95285411",
+ "semilla": 11002,
+ "texto": "Y encima, mi padre me paga una academia.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0157,
+  "oido": "Y encima, mi padre me paga una academia.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.86,
+   1.0,
+   1.2,
+   1.4,
+   1.68,
+   1.86
+  ],
+  "t1": [
+   0.14,
+   0.56,
+   1.0,
+   1.2,
+   1.4,
+   1.68,
+   1.86,
+   2.2
+  ],
+  "ritmo": 12.2,
+  "voz": 0.881
+ }
+}

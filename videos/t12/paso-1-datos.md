@@ -29,6 +29,7 @@ Datos en `data/clean/t12_educacion.json` (`scripts/calcular_t12.py`). Ficheros o
 | Gasto público en educación por habitante, en euros de 2025 (Eurostat) | 1.240 € | **1.391 €** (2024) | +12,2 % |
 | Profesores de la ESO (Eurostat) | 136.301 | **162.830** (2024) | +19,5 % |
 | Alumnos por profesor en la ESO | 11,7 | 10,7 | menos alumnos por profesor |
+| **Alumnos por clase en la ESO** (OCDE) | 25,6 | **25,0** (2024) | media de 25 países de la UE: 19,9 y **20,7** |
 
 ## Y además, las familias (INE, EPF; gasto medio por hogar en euros de 2025)
 - **Enseñanza secundaria** (ESO, bachillerato y FP de grado medio): 106 € en 2016 y **134 €** en 2025 (+26,4 %).
@@ -43,3 +44,9 @@ Datos en `data/clean/t12_educacion.json` (`scripts/calcular_t12.py`). Ficheros o
 
 ## Guion
 En `videos/t12/guion.md`: 12 planos, unos 65-70 s. Tutora de 4.º de ESO, padre y alumno de 15 años, en el pasillo del instituto, el aula y una academia de refuerzo.
+
+## Cambios de Bruno (21-11-2026)
+- **Voces:** profesor, la A; alumno, la B. La voz A suena masculina, así que el tutor es un hombre.
+- **Ratios por aula (alumnos por clase):** plano nuevo con el tamaño medio de la clase en la ESO (OCDE): 25 alumnos en España frente a 21 de media en la UE.
+  - **Matiz:** los alumnos por profesor sí han bajado (de 11,7 a 10,7), porque hay un 19 % más de profesores, pero las clases siguen igual de llenas.
+  - **Huelgas y manifestaciones:** no salen en el vídeo, porque no son una cifra oficial y el vídeo no da causas.

@@ -1,0 +1,40 @@
+{
+ "huella": "1e01f2724d425d4e",
+ "semilla": 8000,
+ "texto": "Y en educación se gasta un 12 % más por habitante.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0352,
+  "oido": "Y en educación se gasta un 12% más por habitante.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.22,
+   0.52,
+   0.84,
+   1.1,
+   1.22,
+   1.42,
+   1.76,
+   2.12,
+   2.38
+  ],
+  "t1": [
+   0.14,
+   0.22,
+   0.52,
+   0.84,
+   1.1,
+   1.22,
+   1.42,
+   1.76,
+   2.12,
+   2.38,
+   2.82
+  ],
+  "ritmo": 16.2,
+  "voz": 0.92
+ }
+}

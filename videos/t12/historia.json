@@ -183,64 +183,80 @@
    "vol": 0.25
   },
   {
-   "id": "c10-sueno",
+   "id": "c10-25",
    "beat": 10,
+   "palabra": "25",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-21",
+   "beat": 10,
+   "palabra": "21",
+   "dt": -0.05,
+   "sfx": "ting",
+   "vol": 0.28
+  },
+  {
+   "id": "c11-sueno",
+   "beat": 11,
    "en": "inicio",
    "dt": -0.6,
    "sfx": "sueno",
    "vol": 0.3
   },
   {
-   "id": "c10-academia",
-   "beat": 10,
+   "id": "c11-academia",
+   "beat": 11,
    "palabra": "academia",
    "dt": -0.1,
    "sfx": "campanilla",
    "vol": 0.3
   },
   {
-   "id": "c11-dos",
-   "beat": 11,
+   "id": "c12-dos",
+   "beat": 12,
    "palabra": "dos",
    "dt": -0.05,
    "sfx": "golpe",
    "vol": 0.3
   },
   {
-   "id": "c11-26",
-   "beat": 11,
+   "id": "c12-26",
+   "beat": 12,
    "palabra": "26",
    "dt": -0.05,
    "sfx": "moneda",
    "vol": 0.45
   },
   {
-   "id": "c12-sueno",
-   "beat": 12,
+   "id": "c13-sueno",
+   "beat": 13,
    "en": "inicio",
    "dt": -0.6,
    "sfx": "sueno",
    "vol": 0.3
   },
   {
-   "id": "c12-record",
-   "beat": 12,
+   "id": "c13-record",
+   "beat": 13,
    "palabra": "récord",
    "dt": -0.05,
    "sfx": "golpe",
    "vol": 0.4
   },
   {
-   "id": "c12-conformar",
-   "beat": 12,
+   "id": "c13-conformar",
+   "beat": 13,
    "palabra": "conformar",
    "dt": -0.1,
    "sfx": "ting",
    "vol": 0.3
   },
   {
-   "id": "c12-tu",
-   "beat": 12,
+   "id": "c13-tu",
+   "beat": 13,
    "palabra": "tú",
    "dt": -0.1,
    "sfx": "ding",

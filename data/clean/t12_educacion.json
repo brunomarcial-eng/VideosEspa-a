@@ -91,6 +91,21 @@
   "alumnos_por_profesor_eso": {
    "2016": 11.7,
    "2024": 10.7
+  },
+  "alumnos_por_clase_eso": {
+   "espana": {
+    "2016": 25.6,
+    "2024": 25.0
+   },
+   "ue25": {
+    "2016": 19.9,
+    "2024": 20.7
+   },
+   "ocde": {
+    "2016": 23.2,
+    "2024": 22.8
+   },
+   "mas_que_ue_2024": 4.3
   }
  },
  "familias": {
@@ -114,5 +129,5 @@
    }
   }
  },
- "nota": "PISA: alumnado de 15 años. 2015 es la edición más cercana a 2016; 2025, la última. Bajo el nivel 2 = no llega al nivel básico de competencia que fija la OCDE. Lectura de España en 2018: sin dato (la OCDE no lo publicó). La media de la OCDE también baja (OCDE-35: lectura de 490 a 463 y matemáticas de 487 a 465), pero menos que España. Gasto en educación: todas las administraciones (Eurostat COFOG GF09), 2024 último año. Profesores y alumnos por profesor: ESO (CINE 2), Eurostat. Familias: gasto medio por hogar en enseñanza secundaria y postsecundaria no superior (INE, EPF); en primaria y en libros gastan menos que en 2016."
+ "nota": "PISA: alumnado de 15 años. 2015 es la edición más cercana a 2016; 2025, la última. Bajo el nivel 2 = no llega al nivel básico de competencia que fija la OCDE. Lectura de España en 2018: sin dato (la OCDE no lo publicó). La media de la OCDE también baja (OCDE-35: lectura de 490 a 463 y matemáticas de 487 a 465), pero menos que España. Gasto en educación: todas las administraciones (Eurostat COFOG GF09), 2024 último año. Profesores y alumnos por profesor: ESO (CINE 2), Eurostat. Alumnos por clase: ESO, todos los centros, OCDE (Education at a Glance); «UE» = media de 25 países de la UE que da la OCDE. Familias: gasto medio por hogar en enseñanza secundaria y postsecundaria no superior (INE, EPF); en primaria y en libros gastan menos que en 2016."
 }

@@ -1,0 +1,36 @@
+{
+ "huella": "c535bd0a49ac0dcc",
+ "semilla": 3001,
+ "texto": "¡Pero si yo leo un montón! En el móvil…",
+ "ev": {
+  "ok": true,
+  "nota": 1.0164,
+  "oido": "Pero sí yo leo un montón en el móvil.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   0.38,
+   0.54,
+   0.74,
+   0.8,
+   1.16,
+   1.52,
+   1.66
+  ],
+  "t1": [
+   0.18,
+   0.38,
+   0.54,
+   0.74,
+   0.8,
+   1.16,
+   1.52,
+   1.66,
+   2.0
+  ],
+  "ritmo": 12.8,
+  "voz": 0.883
+ }
+}

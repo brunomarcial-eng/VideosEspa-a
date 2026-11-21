@@ -12,6 +12,7 @@
 Necesita `unar` para abrir el .rar de las tablas de PISA 2025 y `pdftotext` para el informe de 2015.
 Uso: python3 scripts/calcular_t12.py → data/clean/t12_educacion.json
 """
+import csv
 import json
 import pathlib
 import re
@@ -98,6 +99,15 @@ def main():
     profes = {"eso": {"2016": prof(2016), "2024": prof(2024)}, "alumnos_por_profesor_eso": {"2016": ratio(2016), "2024": ratio(2024)}}
     profes["eso"]["sube_pct"] = pct(profes["eso"]["2016"], profes["eso"]["2024"])
 
+    # Alumnos por clase en la ESO (CINE 2), todos los centros: España frente a la media de 25 países de la UE (OCDE, Education at a Glance)
+    filas = list(csv.DictReader((RAW / "ocde_eag_tamano_clase.csv").read_text(encoding="utf-8").splitlines()))
+    clase = lambda area, ano: next(round(float(r["OBS_VALUE"]), 1) for r in filas if r["REF_AREA"] == area and r["EDUCATION_LEV"] == "ISCED11_2"
+                                   and r["INST_TYPE_EDU"] == "INST_EDU" and r["TIME_PERIOD"] == str(ano) and r["OBS_VALUE"])
+    profes["alumnos_por_clase_eso"] = {"espana": {"2016": clase("ESP", 2016), "2024": clase("ESP", 2024)},
+                                       "ue25": {"2016": clase("EU25", 2016), "2024": clase("EU25", 2024)},
+                                       "ocde": {"2016": clase("OECD", 2016), "2024": clase("OECD", 2024)}}
+    profes["alumnos_por_clase_eso"]["mas_que_ue_2024"] = round(profes["alumnos_por_clase_eso"]["espana"]["2024"] - profes["alumnos_por_clase_eso"]["ue25"]["2024"], 1)
+
     fam = {a: epf("Enseñanza Secundaria y Postsecundaria no superior", a) for a in (2016, 2025)}
     familias = {"secundaria_por_hogar_eur_corrientes": {str(a): v for a, v in fam.items()},
                 "secundaria_por_hogar_eur_de_2025": {"2016": round(real(fam[2016], "2016")), "2025": round(fam[2025])}}
@@ -113,7 +123,7 @@ def main():
         "nota": ("PISA: alumnado de 15 años. 2015 es la edición más cercana a 2016; 2025, la última. Bajo el nivel 2 = no llega al nivel básico de "
                  "competencia que fija la OCDE. Lectura de España en 2018: sin dato (la OCDE no lo publicó). La media de la OCDE también baja "
                  "(OCDE-35: lectura de 490 a 463 y matemáticas de 487 a 465), pero menos que España. Gasto en educación: todas las administraciones "
-                 "(Eurostat COFOG GF09), 2024 último año. Profesores y alumnos por profesor: ESO (CINE 2), Eurostat. Familias: gasto medio por hogar "
+                 "(Eurostat COFOG GF09), 2024 último año. Profesores y alumnos por profesor: ESO (CINE 2), Eurostat. Alumnos por clase: ESO, todos los centros, OCDE (Education at a Glance); «UE» = media de 25 países de la UE que da la OCDE. Familias: gasto medio por hogar "
                  "en enseñanza secundaria y postsecundaria no superior (INE, EPF); en primaria y en libros gastan menos que en 2016."),
     }
     (CLEAN / "t12_educacion.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")

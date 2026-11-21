@@ -1,0 +1,44 @@
+{
+ "huella": "b2a2b243d465c54e",
+ "semilla": 1000,
+ "texto": "¿Pagamos más impuestos para que nuestros hijos aprendan menos? Vamos a la tutoría.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0165,
+  "oido": "pagamos más impuestos para que nuestros hijos aprendan menos. Vamos a la tutorial.",
+  "parecido": 0.993,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.36,
+   0.58,
+   1.0,
+   1.26,
+   1.38,
+   1.56,
+   1.88,
+   2.38,
+   3.04,
+   3.34,
+   3.5,
+   3.56
+  ],
+  "t1": [
+   0.36,
+   0.58,
+   1.0,
+   1.26,
+   1.38,
+   1.56,
+   1.88,
+   2.38,
+   2.62,
+   3.34,
+   3.5,
+   3.56,
+   3.735
+  ],
+  "ritmo": 14.8,
+  "voz": 0.898
+ }
+}

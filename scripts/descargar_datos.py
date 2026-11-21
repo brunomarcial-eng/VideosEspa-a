@@ -422,6 +422,8 @@ DESCARGAS = [
      "Eurostat. Profesorado por nivel educativo, España", "https://ec.europa.eu/eurostat/databrowser/view/educ_uoe_perp01/default/table"),
     ("eurostat_educ_uoe_perp04_es.json", "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/educ_uoe_perp04?format=JSON&lang=EN&geo=ES&sinceTimePeriod=2015",
      "Eurostat. Alumnos por profesor, por nivel educativo, España", "https://ec.europa.eu/eurostat/databrowser/view/educ_uoe_perp04/default/table"),
+    ("ocde_eag_tamano_clase.csv", "https://sdmx.oecd.org/public/rest/data/OECD.EDU.IMEP,DSD_EAG_UOE_NON_FIN_PERS@DF_UOE_NF_PERS_CLS,1.1/all?startPeriod=2013&dimensionAtObservation=AllDimensions&format=csvfilewithlabels",
+     "OCDE. Education at a Glance: tamaño medio de la clase (alumnos por clase) por nivel, países, UE y OCDE", "https://data-explorer.oecd.org/"),
     ("microdatos/ees_cuatrienal_2006.zip", "https://www.ine.es/ftp/microdatos/salarial/datos_salarial06.zip",
      "INE. Encuesta Cuatrienal de Estructura Salarial 2006, microdatos (no se versiona: 72 MB)",
      "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177025&menu=resultados&idp=1254735976596"),

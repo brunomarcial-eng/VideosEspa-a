@@ -3,10 +3,10 @@
  "version": 1,
  "titulo": "¿Pagamos más para que aprendan menos?",
  "titulo_alternativo": "Educación: impuestos de récord y alumnos que saben menos que en 2015",
- "pregunta": "Un padre, su hijo de 15 años y la tutora del instituto. ¿Aprenden hoy más los alumnos que en 2016, ahora que pagamos más?",
+ "pregunta": "Un padre, su hijo de 15 años y el tutor del instituto. ¿Aprenden hoy más los alumnos que en 2016, ahora que pagamos más?",
  "datos": "data/clean/t12_educacion.json",
  "aprobacion_datos": "Bruno, 21-11-2026: educación con profesores, alumnos y padres, solo 2016 frente a hoy, contundente, lo que pagamos frente a lo que recibimos. PISA 2015 es la edición más cercana a 2016 y PISA 2025 la última",
- "formato": "La tutoría de 4.º de ESO: la tutora da los datos de PISA al padre y al hijo; el padre se indigna por lo que paga; la tutora pone los recursos (impuestos, gasto, profesores). En la academia de refuerzo, el padre paga dos veces. Cierra el alumno con la balanza y la pregunta.",
+ "formato": "La tutoría de 4.º de ESO: el tutor da los datos de PISA al padre y al hijo; el padre se indigna por lo que paga; el tutor pone los recursos (impuestos, gasto, profesores). En la academia de refuerzo, el padre paga dos veces. Cierra el alumno con la balanza y la pregunta.",
  "duracion_max_s": 85,
  "personajes": {
   "padre": {
@@ -14,7 +14,7 @@
    "genero": "hombre"
   },
   "profesora": {
-   "anyo": "unos 40 años, tutora de 4.º de ESO",
+   "anyo": "unos 45 años, tutor de 4.º de ESO (un hombre: la voz A del casting, elegida por Bruno, es masculina)",
    "genero": "profesora"
   },
   "alumno": {
@@ -27,7 +27,7 @@
   "pausa_mismo_s": 0.3,
   "pausa_tras_dato_s": 0.45
  },
- "sin_veredicto": "El veredicto lo dice el alumno en el plano 12 («impuestos de récord y aprendemos menos que en 2015») y acaba con la pregunta.",
+ "sin_veredicto": "El veredicto lo dice el alumno en el plano 13 («impuestos de récord y aprendemos menos que en 2015») y acaba con la pregunta.",
  "capitulos": [
   {
    "nombre": "La tutoría",
@@ -50,20 +50,21 @@
     6,
     7,
     8,
-    9
+    9,
+    10
    ]
   },
   {
    "nombre": "Pagar dos veces",
    "beats": [
-    10,
-    11
+    11,
+    12
    ]
   },
   {
    "nombre": "Te toca",
    "beats": [
-    12
+    13
    ]
   }
  ],
@@ -86,7 +87,7 @@
    "nota": "PISA: el nivel básico es el nivel 2 de la OCDE",
    "sello": "DATO OFICIAL · OCDE (PISA 2015) · Ministerio de Educación (informe español PISA 2025)",
    "grafico": true,
-   "imagen": "El aula: pizarra, pupitres y la mesa de la tutora. Dos filas de seis pupitres: en 2015 se apaga uno; en 2025, dos."
+   "imagen": "El aula: pizarra, pupitres y la mesa de el tutor. Dos filas de seis pupitres: en 2015 se apaga uno; en 2025, dos."
   },
   {
    "n": 3,
@@ -159,10 +160,21 @@
    "nota": "Alumnos por profesor: de 11,7 a 10,7. Cada figura, 10.000 profesores",
    "sello": "DATO OFICIAL · Eurostat (profesorado y alumnos por profesor)",
    "grafico": true,
-   "imagen": "Dos filas de profesores con su cartera; la de hoy, más larga. La tutora se encoge de hombros."
+   "imagen": "Dos filas de profesores con su cartera; la de hoy, más larga. El tutor se encoge de hombros."
   },
   {
    "n": 10,
+   "quien": "profesora",
+   "funcion": "dato: alumnos por clase",
+   "voz": "Y las clases siguen con 25 alumnos de media. En la Unión Europea, 21.",
+   "pantalla": "Alumnos por clase en la ESO · España 2016: 25,6 · España 2024: 25,0 · UE 2024: 20,7",
+   "nota": "Media de 25 países de la Unión Europea",
+   "sello": "DATO OFICIAL · OCDE (Education at a Glance: tamaño medio de la clase)",
+   "grafico": true,
+   "imagen": "Dos aulas vistas desde arriba: la española, con 25 pupitres apretados; la europea, con 21 y más sitio."
+  },
+  {
+   "n": 11,
    "quien": "alumno",
    "funcion": "academia",
    "voz": "Y encima, mi padre me paga una academia.",
@@ -171,7 +183,7 @@
    "imagen": "Una academia de refuerzo: pizarra blanca con ecuaciones, mesas pequeñas y un cartel de matrícula. El alumno entra con la mochila; el padre paga en el mostrador."
   },
   {
-   "n": 11,
+   "n": 12,
    "quien": "padre",
    "funcion": "dato: familias",
    "voz": "Pago dos veces. Y como yo, muchos: los hogares gastan un 26 % más en la secundaria de sus hijos que en 2016.",
@@ -182,7 +194,7 @@
    "imagen": "Dos huchas con forma de mochila; la de hoy, más llena."
   },
   {
-   "n": 12,
+   "n": 13,
    "quien": "alumno",
    "funcion": "veredicto y pregunta",
    "voz": "Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?",
@@ -358,6 +370,32 @@
    "ruta": "familias.secundaria_por_hogar_eur_de_2025.2025",
    "decimales": 0,
    "estado": "C"
+  },
+  {
+   "texto": "25,6",
+   "ruta": "profesores.alumnos_por_clase_eso.espana.2016",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "25,0",
+   "ruta": "profesores.alumnos_por_clase_eso.espana.2024",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "20,7",
+   "ruta": "profesores.alumnos_por_clase_eso.ue25.2024",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "21",
+   "ruta": "profesores.alumnos_por_clase_eso.ue25.2024",
+   "decimales": 0,
+   "estado": "V",
+   "aprox": 21,
+   "tolerancia_pct": 3
   }
  ],
  "comprobaciones": [
@@ -365,11 +403,12 @@
   "«Por habitante, se recauda un 25 % más que en 2016» (C): el mismo cálculo de T11 (Eurostat e INE).",
   "«en educación se gasta un 12 % más por habitante» (C): gasto de todas las administraciones en educación (Eurostat COFOG GF09), euros de 2025 por habitante: 1.240 € en 2016 y 1.391 € en 2024.",
   "«en la ESO hay un 19 % más de profesores» (V): profesorado de CINE 2 (Eurostat educ_uoe_perp01): 136.301 en 2016 y 162.830 en 2024; alumnos por profesor 11,7 y 10,7.",
-  "«los hogares gastan un 26 % más en la secundaria de sus hijos» (C): INE, EPF, gasto medio por hogar en enseñanza secundaria y postsecundaria no superior: 83,09 € en 2016 (106 € de 2025) y 133,78 € en 2025."
+  "«los hogares gastan un 26 % más en la secundaria de sus hijos» (C): INE, EPF, gasto medio por hogar en enseñanza secundaria y postsecundaria no superior: 83,09 € en 2016 (106 € de 2025) y 133,78 € en 2025.",
+  "«las clases siguen con 25 alumnos de media. En la Unión Europea, 21» (V): OCDE, Education at a Glance, tamaño medio de la clase en la ESO (CINE 2), todos los centros: España 25,6 en 2016 y 25,0 en 2024; media de 25 países de la UE, 19,9 y 20,7."
  ],
  "cierre": {
-  "veredicto": "empeora frente a 2016: se recauda un 25 % más por habitante (récord), se gasta un 12 % más en educación por habitante y hay un 19 % más de profesores en la ESO, pero los alumnos de 15 años que no llegan al nivel básico pasan del 16,2 % al 31,5 % en lectura y del 22,2 % al 33,4 % en matemáticas, España pierde 45 puntos en lectura (más que la media de la OCDE) y los hogares gastan un 26 % más en la secundaria de sus hijos",
-  "porque": "PISA (OCDE y Ministerio de Educación), impuestos, gasto y profesorado de Eurostat y gasto de los hogares del INE.",
+  "veredicto": "empeora frente a 2016: se recauda un 25 % más por habitante (récord), se gasta un 12 % más en educación por habitante y hay un 19 % más de profesores en la ESO (aunque las clases siguen con 25 alumnos de media, frente a 21 en la UE), pero los alumnos de 15 años que no llegan al nivel básico pasan del 16,2 % al 31,5 % en lectura y del 22,2 % al 33,4 % en matemáticas, España pierde 45 puntos en lectura (más que la media de la OCDE) y los hogares gastan un 26 % más en la secundaria de sus hijos",
+  "porque": "PISA (OCDE y Ministerio de Educación), impuestos, gasto y profesorado de Eurostat, alumnos por clase de la OCDE y gasto de los hogares del INE.",
   "pregunta": "¿Nos tenemos que conformar? ¿Tú qué opinas?"
  },
  "aprobacion_guion": "Pendiente de Bruno"

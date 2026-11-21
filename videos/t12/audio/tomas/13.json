@@ -1,0 +1,50 @@
+{
+ "huella": "a582513a322d5df0",
+ "semilla": 13001,
+ "texto": "Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0315,
+  "oido": "impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.5,
+   0.68,
+   1.1,
+   1.28,
+   1.8,
+   2.04,
+   2.26,
+   2.36,
+   3.26,
+   3.5,
+   3.76,
+   4.0,
+   4.94,
+   5.14,
+   5.22
+  ],
+  "t1": [
+   0.5,
+   0.68,
+   1.1,
+   1.28,
+   1.8,
+   2.04,
+   2.26,
+   2.36,
+   2.86,
+   3.5,
+   3.76,
+   4.0,
+   4.56,
+   5.14,
+   5.22,
+   5.58
+  ],
+  "ritmo": 14.5,
+  "voz": 0.913
+ }
+}

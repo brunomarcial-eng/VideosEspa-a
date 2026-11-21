@@ -1,0 +1,48 @@
+{
+ "huella": "28e9f44c7b319c33",
+ "semilla": 4000,
+ "texto": "Y en matemáticas, del 22 % al 33 %. Uno de cada tres tampoco llega.",
+ "ev": {
+  "ok": true,
+  "nota": 1.035,
+  "oido": "Y en matemáticas del 22% al 33%, uno de cada tres tampoco llega.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.26,
+   0.8,
+   1.52,
+   2.02,
+   2.36,
+   2.74,
+   3.38,
+   3.86,
+   4.64,
+   4.82,
+   4.98,
+   5.3,
+   5.68
+  ],
+  "t1": [
+   0.14,
+   0.26,
+   0.8,
+   1.52,
+   2.02,
+   2.36,
+   2.74,
+   3.38,
+   3.86,
+   4.64,
+   4.82,
+   4.98,
+   5.3,
+   5.68,
+   6.02
+  ],
+  "ritmo": 13.3,
+  "voz": 0.92
+ }
+}

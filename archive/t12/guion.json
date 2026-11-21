@@ -1,0 +1,415 @@
+{
+ "id": "t12",
+ "version": 1,
+ "titulo": "¿Pagamos más para que aprendan menos?",
+ "titulo_alternativo": "Educación: impuestos de récord y alumnos que saben menos que en 2015",
+ "pregunta": "Un padre, su hijo de 15 años y el tutor del instituto. ¿Aprenden hoy más los alumnos que en 2016, ahora que pagamos más?",
+ "datos": "data/clean/t12_educacion.json",
+ "aprobacion_datos": "Bruno, 21-11-2026: educación con profesores, alumnos y padres, solo 2016 frente a hoy, contundente, lo que pagamos frente a lo que recibimos. PISA 2015 es la edición más cercana a 2016 y PISA 2025 la última",
+ "formato": "La tutoría de 4.º de ESO: el tutor da los datos de PISA al padre y al hijo; el padre se indigna por lo que paga; el tutor pone los recursos (impuestos, gasto, profesores). En la academia de refuerzo, el padre paga dos veces. Cierra el alumno con la balanza y la pregunta.",
+ "duracion_max_s": 85,
+ "personajes": {
+  "padre": {
+   "anyo": "unos 45 años",
+   "genero": "hombre"
+  },
+  "profesora": {
+   "anyo": "unos 45 años, tutor de 4.º de ESO (un hombre: la voz A del casting, elegida por Bruno, es masculina)",
+   "genero": "profesora"
+  },
+  "alumno": {
+   "anyo": "15 años, 4.º de ESO",
+   "genero": "alumno"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "El veredicto lo dice el alumno en el plano 13 («impuestos de récord y aprendemos menos que en 2015») y acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "La tutoría",
+   "beats": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "nombre": "Las notas",
+   "beats": [
+    4,
+    5
+   ]
+  },
+  {
+   "nombre": "Lo que pagas",
+   "beats": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "nombre": "Pagar dos veces",
+   "beats": [
+    11,
+    12
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    13
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "padre",
+   "funcion": "gancho",
+   "voz": "¿Pagamos más impuestos para que nuestros hijos aprendan menos? Vamos a la tutoría.",
+   "pantalla": "¿Pagamos más para que aprendan menos?",
+   "sello": null,
+   "imagen": "El pasillo de un instituto: taquillas, tablón de anuncios y la puerta de 4.º de ESO. El padre llega con su hijo, que arrastra la mochila."
+  },
+  {
+   "n": 2,
+   "quien": "profesora",
+   "funcion": "dato: lectura",
+   "voz": "Siéntense. En lectura, casi uno de cada tres alumnos de 15 años no llega al nivel básico. En 2015, uno de cada seis.",
+   "pantalla": "Alumnos de 15 años que no llegan al nivel básico de lectura · 2015: 16,2 % · 2025: 31,5 %",
+   "nota": "PISA: el nivel básico es el nivel 2 de la OCDE",
+   "sello": "DATO OFICIAL · OCDE (PISA 2015) · Ministerio de Educación (informe español PISA 2025)",
+   "grafico": true,
+   "imagen": "El aula: pizarra, pupitres y la mesa de el tutor. Dos filas de seis pupitres: en 2015 se apaga uno; en 2025, dos."
+  },
+  {
+   "n": 3,
+   "quien": "alumno",
+   "funcion": "réplica",
+   "voz": "¡Pero si yo leo un montón! En el móvil…",
+   "pantalla": "«¡Pero si yo leo un montón!»",
+   "sello": null,
+   "imagen": "El alumno enseña el móvil, orgulloso; el padre se tapa la cara."
+  },
+  {
+   "n": 4,
+   "quien": "profesora",
+   "funcion": "dato: matemáticas",
+   "voz": "Y en matemáticas, del 22 % al 33 %. Uno de cada tres tampoco llega.",
+   "pantalla": "Alumnos de 15 años que no llegan al nivel básico de matemáticas · 2015: 22,2 % · 2025: 33,4 %",
+   "nota": "PISA: el nivel básico es el nivel 2 de la OCDE",
+   "sello": "DATO OFICIAL · OCDE (PISA 2015) · Ministerio de Educación (informe español PISA 2025)",
+   "grafico": true,
+   "imagen": "En la pizarra, dos barras que suben como una cuenta mal hecha; la tiza chirría."
+  },
+  {
+   "n": 5,
+   "quien": "profesora",
+   "funcion": "dato: puntos",
+   "voz": "España ha perdido 45 puntos en lectura desde 2015. Más que la media de la OCDE.",
+   "pantalla": "Puntuación media de España en lectura (PISA) · 2015: 496 · 2025: 451",
+   "nota": "La media de la OCDE también baja, pero menos: de 490 a 463",
+   "sello": "DATO OFICIAL · OCDE (PISA 2015) · Ministerio de Educación (informe español PISA 2025)",
+   "grafico": true,
+   "imagen": "Una escalera de puntos que España baja peldaño a peldaño; la OCDE baja menos."
+  },
+  {
+   "n": 6,
+   "quien": "padre",
+   "funcion": "indignación",
+   "voz": "¡Pero si pagamos más que nunca!",
+   "pantalla": "«¡Pero si pagamos más que nunca!»",
+   "sello": null,
+   "imagen": "El padre se levanta y saca su nómina; de ella caen monedas."
+  },
+  {
+   "n": 7,
+   "quien": "profesora",
+   "funcion": "dato: impuestos",
+   "voz": "Es verdad. Por habitante, se recauda un 25 % más que en 2016, ya descontada la inflación. Récord.",
+   "pantalla": "Impuestos y cotizaciones por habitante, en euros de 2025 · 2016: 10.492 € · 2025: 13.118 €",
+   "nota": "La recaudación más alta de la serie, también descontada la inflación",
+   "sello": "CÁLCULO PROPIO · Eurostat (impuestos y cotizaciones recaudados) · INE (IPC y población)",
+   "grafico": true,
+   "imagen": "Dos montones de billetes; el de hoy, mucho más alto. Un sello: RÉCORD."
+  },
+  {
+   "n": 8,
+   "quien": "profesora",
+   "funcion": "dato: gasto",
+   "voz": "Y en educación se gasta un 12 % más por habitante.",
+   "pantalla": "Gasto público en educación por habitante, en euros de 2025 · 2016: 1.240 € · 2024: 1.391 €",
+   "nota": "Todas las administraciones. 2024, último año",
+   "sello": "CÁLCULO PROPIO · Eurostat (gasto de las administraciones por funciones) · INE (IPC y población)",
+   "grafico": true,
+   "imagen": "Dos columnas de libros: la de hoy, más alta."
+  },
+  {
+   "n": 9,
+   "quien": "profesora",
+   "funcion": "dato: profesores",
+   "voz": "Y en la ESO hay un 19 % más de profesores. Aun así, aprenden menos.",
+   "pantalla": "Profesores de la ESO · 2016: 136.301 · 2024: 162.830",
+   "nota": "Alumnos por profesor: de 11,7 a 10,7. Cada figura, 10.000 profesores",
+   "sello": "DATO OFICIAL · Eurostat (profesorado y alumnos por profesor)",
+   "grafico": true,
+   "imagen": "Dos filas de profesores con su cartera; la de hoy, más larga. El tutor se encoge de hombros."
+  },
+  {
+   "n": 10,
+   "quien": "profesora",
+   "funcion": "dato: alumnos por clase",
+   "voz": "Y las clases siguen con 25 alumnos de media. En la Unión Europea, 21.",
+   "pantalla": "Alumnos por clase en la ESO · España 2016: 25,6 · España 2024: 25,0 · UE 2024: 20,7",
+   "nota": "Media de 25 países de la Unión Europea",
+   "sello": "DATO OFICIAL · OCDE (Education at a Glance: tamaño medio de la clase)",
+   "grafico": true,
+   "imagen": "Dos aulas vistas desde arriba: la española, con 25 pupitres apretados; la europea, con 21 y más sitio."
+  },
+  {
+   "n": 11,
+   "quien": "alumno",
+   "funcion": "academia",
+   "voz": "Y encima, mi padre me paga una academia.",
+   "pantalla": "«Y encima, academia»",
+   "sello": null,
+   "imagen": "Una academia de refuerzo: pizarra blanca con ecuaciones, mesas pequeñas y un cartel de matrícula. El alumno entra con la mochila; el padre paga en el mostrador."
+  },
+  {
+   "n": 12,
+   "quien": "padre",
+   "funcion": "dato: familias",
+   "voz": "Pago dos veces. Y como yo, muchos: los hogares gastan un 26 % más en la secundaria de sus hijos que en 2016.",
+   "pantalla": "Gasto medio por hogar en enseñanza secundaria, en euros de 2025 · 2016: 106 € · 2025: 134 €",
+   "nota": "ESO, bachillerato y FP de grado medio",
+   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares e IPC)",
+   "grafico": true,
+   "imagen": "Dos huchas con forma de mochila; la de hoy, más llena."
+  },
+  {
+   "n": 13,
+   "quien": "alumno",
+   "funcion": "veredicto y pregunta",
+   "voz": "Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?",
+   "pantalla": "Impuestos de récord y aprendemos menos. ¿Nos tenemos que conformar?",
+   "sello": null,
+   "imagen": "La balanza otra vez: lo que pagas, abajo; lo que aprenden, arriba. El alumno mira a cámara."
+  }
+ ],
+ "no_dato": [
+  "15",
+  "2",
+  "10.000"
+ ],
+ "cifras": [
+  {
+   "texto": "16,2",
+   "ruta": "aprenden.lectura.bajo_nivel_2_pct.2015",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "31,5",
+   "ruta": "aprenden.lectura.bajo_nivel_2_pct.2025",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "22",
+   "ruta": "aprenden.matematicas.bajo_nivel_2_pct.2015",
+   "decimales": 0,
+   "estado": "V",
+   "aprox": 22,
+   "tolerancia_pct": 3
+  },
+  {
+   "texto": "33",
+   "ruta": "aprenden.matematicas.bajo_nivel_2_pct.2025",
+   "decimales": 0,
+   "estado": "V",
+   "aprox": 33,
+   "tolerancia_pct": 3
+  },
+  {
+   "texto": "22,2",
+   "ruta": "aprenden.matematicas.bajo_nivel_2_pct.2015",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "33,4",
+   "ruta": "aprenden.matematicas.bajo_nivel_2_pct.2025",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "45",
+   "ruta": "aprenden.lectura.puntos_menos",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "496",
+   "ruta": "aprenden.lectura.media.2015",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "451",
+   "ruta": "aprenden.lectura.media.2025",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "490",
+   "ruta": "aprenden.lectura.ocde35.2015",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "463",
+   "ruta": "aprenden.lectura.ocde35.2025",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "25",
+   "ruta": "pagamos.por_habitante_sube_real_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "10.492",
+   "ruta": "pagamos.por_habitante_eur_de_2025.2016",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "13.118",
+   "ruta": "pagamos.por_habitante_eur_de_2025.2025",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "12",
+   "ruta": "gasto_educacion.por_habitante_sube_real_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "1.240",
+   "ruta": "gasto_educacion.por_habitante_eur_de_2025.2016",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "1.391",
+   "ruta": "gasto_educacion.por_habitante_eur_de_2025.2024",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "19",
+   "ruta": "profesores.eso.sube_pct",
+   "decimales": 0,
+   "estado": "C",
+   "aprox": 19,
+   "tolerancia_pct": 3
+  },
+  {
+   "texto": "136.301",
+   "ruta": "profesores.eso.2016",
+   "decimales": 0,
+   "estado": "V",
+   "miles": true
+  },
+  {
+   "texto": "162.830",
+   "ruta": "profesores.eso.2024",
+   "decimales": 0,
+   "estado": "V",
+   "miles": true
+  },
+  {
+   "texto": "11,7",
+   "ruta": "profesores.alumnos_por_profesor_eso.2016",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "10,7",
+   "ruta": "profesores.alumnos_por_profesor_eso.2024",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "26",
+   "ruta": "familias.sube_real_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "106",
+   "ruta": "familias.secundaria_por_hogar_eur_de_2025.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "134",
+   "ruta": "familias.secundaria_por_hogar_eur_de_2025.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "25,6",
+   "ruta": "profesores.alumnos_por_clase_eso.espana.2016",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "25,0",
+   "ruta": "profesores.alumnos_por_clase_eso.espana.2024",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "20,7",
+   "ruta": "profesores.alumnos_por_clase_eso.ue25.2024",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "21",
+   "ruta": "profesores.alumnos_por_clase_eso.ue25.2024",
+   "decimales": 0,
+   "estado": "V",
+   "aprox": 21,
+   "tolerancia_pct": 3
+  }
+ ],
+ "comprobaciones": [
+  "PISA (V): alumnado de 15 años. 2015 (OCDE, PISA 2015 Results, Volume I: medias de España 496 en lectura y 486 en matemáticas; por debajo del nivel 2, 16,2 % en lectura y 22,2 % en matemáticas) frente a 2025 (Ministerio de Educación, informe español PISA 2025, tablas: 451 en lectura y 457 en matemáticas; por debajo del nivel 2, 31,5 % y 33,4 %). OCDE-35 en lectura: 490 y 463.",
+  "«Por habitante, se recauda un 25 % más que en 2016» (C): el mismo cálculo de T11 (Eurostat e INE).",
+  "«en educación se gasta un 12 % más por habitante» (C): gasto de todas las administraciones en educación (Eurostat COFOG GF09), euros de 2025 por habitante: 1.240 € en 2016 y 1.391 € en 2024.",
+  "«en la ESO hay un 19 % más de profesores» (V): profesorado de CINE 2 (Eurostat educ_uoe_perp01): 136.301 en 2016 y 162.830 en 2024; alumnos por profesor 11,7 y 10,7.",
+  "«los hogares gastan un 26 % más en la secundaria de sus hijos» (C): INE, EPF, gasto medio por hogar en enseñanza secundaria y postsecundaria no superior: 83,09 € en 2016 (106 € de 2025) y 133,78 € en 2025.",
+  "«las clases siguen con 25 alumnos de media. En la Unión Europea, 21» (V): OCDE, Education at a Glance, tamaño medio de la clase en la ESO (CINE 2), todos los centros: España 25,6 en 2016 y 25,0 en 2024; media de 25 países de la UE, 19,9 y 20,7."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 2016: se recauda un 25 % más por habitante (récord), se gasta un 12 % más en educación por habitante y hay un 19 % más de profesores en la ESO (aunque las clases siguen con 25 alumnos de media, frente a 21 en la UE), pero los alumnos de 15 años que no llegan al nivel básico pasan del 16,2 % al 31,5 % en lectura y del 22,2 % al 33,4 % en matemáticas, España pierde 45 puntos en lectura (más que la media de la OCDE) y los hogares gastan un 26 % más en la secundaria de sus hijos",
+  "porque": "PISA (OCDE y Ministerio de Educación), impuestos, gasto y profesorado de Eurostat, alumnos por clase de la OCDE y gasto de los hogares del INE.",
+  "pregunta": "¿Nos tenemos que conformar? ¿Tú qué opinas?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno"
+}

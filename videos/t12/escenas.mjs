@@ -1,7 +1,7 @@
 // Escenas de T12 («¿Pagamos más para que aprendan menos?», educación 2016 frente a hoy) en estilo «limpio».
 // Bruno, 21-11-2026: protagonistas del área (profesores, alumnos y padres), historia, entornos descriptivos, contundente:
 // lo que pagamos en impuestos frente a lo que aprenden los alumnos. Personajes inventados, con volumen y vivos:
-//   · «profesora»: tutora de 4.º de ESO, unos 40 años (rebeca terracota).
+//   · «profesora» (clave interna): el tutor de 4.º de ESO, un hombre de unos 45 años (rebeca terracota). La voz A del casting, elegida por Bruno, es masculina.
 //   · «padre»: unos 45 años (camisa gris azulada).
 //   · «alumno»: 15 años, 4.º de ESO (sudadera verde), más bajo.
 // Decorados nuevos (diseno/educacion.mjs): pasillo del instituto → aula → academia de refuerzo → pasillo.
@@ -20,6 +20,7 @@ const F_IMP = "Cálculo propio · Eurostat (impuestos y cotizaciones recaudados)
 const F_GAS = "Cálculo propio · Eurostat (gasto de las administraciones por funciones) · INE (IPC y población)";
 const F_PROF = "Dato oficial: Eurostat (profesorado y alumnos por profesor)";
 const F_FAM = "Cálculo propio · INE (Encuesta de Presupuestos Familiares e IPC)";
+const F_CLASE = "Dato oficial: OCDE (Education at a Glance: tamaño medio de la clase)";
 
 export function datos(d) {
   const a = d.aprenden;
@@ -31,13 +32,14 @@ export function datos(d) {
     gasto: [d.gasto_educacion.por_habitante_eur_de_2025["2016"], d.gasto_educacion.por_habitante_eur_de_2025["2024"]],
     profes: [d.profesores.eso["2016"], d.profesores.eso["2024"]], ratio: [d.profesores.alumnos_por_profesor_eso["2016"], d.profesores.alumnos_por_profesor_eso["2024"]],
     familias: [d.familias.secundaria_por_hogar_eur_de_2025["2016"], d.familias.secundaria_por_hogar_eur_de_2025["2025"]],
+    clase: [d.profesores.alumnos_por_clase_eso.espana["2016"], d.profesores.alumnos_por_clase_eso.espana["2024"], d.profesores.alumnos_por_clase_eso.ue25["2024"]],
   };
 }
 
 export const capas = () => ambientes(DECORADOS_T12);
 
 // ------------------------------------------------------------------ personajes nuevos (inventados), con volumen
-const PROFESORA = { pelo: "largo", canas: false, barba: false, colorPelo: "#8A5A3C", ropa: ["#C77B5B", "#A86347"], piel: "#F2CBA8", volumen: true };
+const PROFESORA = { pelo: "corto", canas: false, barba: false, colorPelo: "#5A3A26", ropa: ["#C77B5B", "#A86347"], piel: "#F2CBA8", volumen: true };   // el tutor (hombre)
 const PADRE = { pelo: "corto", canas: true, barba: false, colorPelo: "#4A3A2E", ropa: ["#6E8FA8", "#5A7790"], piel: "#E9BE98", volumen: true };
 const ALUMNO = { pelo: "corto", canas: false, barba: false, colorPelo: "#3B2A20", ropa: ["#7FA35B", "#668A47"], piel: "#DCA883", volumen: true };
 const QUIEN = { f: PROFESORA, p: PADRE, a: ALUMNO };
@@ -71,7 +73,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c1-menos"]]); } },
 
-    // 2 · La tutora (aula): «Siéntense. En lectura, casi uno de cada tres alumnos de 15 años no llega al nivel básico. En 2015, uno de cada seis.»
+    // 2 · El tutor (aula): «Siéntense. En lectura, casi uno de cada tres alumnos de 15 años no llega al nivel básico. En 2015, uno de cada seis.»
     { n: 2, set: "vacio",
       svg: `${panel(250, 900, 560, 330)}${[0, 1].map((i) => `<g transform="translate(40 ${1050 + i * 130})">${rot(290, -24, ["2015", "2025"][i], 26, C.gris, "", "end")}
           ${Array.from({ length: 6 }, (_, k) => `<g transform="translate(${335 + k * 58} 0) scale(1.2)">${alumnito(`s2-r${i}-${k}`)}</g>`).join("")}
@@ -88,7 +90,7 @@ export function escenas(D) {
           const t0 = ap[i] + k * 0.06; if (t < t0) { ver(`s2-r${i}-${k}`, false); continue; }
           T(`s2-r${i}-${k}`, 0, -20 * (1 - fuera((t - t0) / 0.25)), { s: 1, op: clamp((t - t0) * 5) }); attr(`s2-r${i}-${k}`, "transform", `translate(0 ${(-20 * (1 - fuera((t - t0) / 0.25))).toFixed(1)})`);
           const no = k >= 6 - n[i] && t > mal[i];
-          pinta(`s2-r${i}-${k}-a`, no ? "#B9B2A6" : "#7FA35B"); ver(`s2-r${i}-${k}-q`, no);
+          css(`s2-r${i}-${k}-a`, "opacity", no ? 0.28 : 1); ver(`s2-r${i}-${k}-q`, no);
         }
         css("s2-v0", "opacity", clamp((t - c["c2-seis"]) / 0.3)); css("s2-v1", "opacity", clamp((t - c["c2-tres"]) / 0.3));
         sube("c2-b", t, c["c2-tres"]); sube("c2-a", t, c["c2-seis"]);
@@ -112,7 +114,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c3-movil"]], { acerca: 0.07 }); } },
 
-    // 4 · La tutora (aula): «Y en matemáticas, del 22 % al 33 %. Uno de cada tres tampoco llega.»
+    // 4 · El tutor (aula): «Y en matemáticas, del 22 % al 33 %. Uno de cada tres tampoco llega.»
     { n: 4, set: "vacio",
       svg: `${panel(300, 800, 440, 430)}${D.mates.map((v, i) => `<g transform="translate(${430 + i * 180} 1130)"><rect id="s4-r${i}" x="-60" y="0" width="120" height="0" rx="14" fill="${i ? HOY : ANTES}"/>
           <g id="s4-v${i}">${rot(0, -v * 7 - 24, es(v) + " %", 30, i ? HOY : ANTES_T)}</g>${rot(0, 52, ["2015", "2025"][i], 30, C.gris)}</g>`).join("")}
@@ -131,7 +133,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c4-33"]]); } },
 
-    // 5 · La tutora (aula): «España ha perdido 45 puntos en lectura desde 2015. Más que la media de la OCDE.»
+    // 5 · El tutor (aula): «España ha perdido 45 puntos en lectura desde 2015. Más que la media de la OCDE.»
     { n: 5, set: "vacio",
       svg: `${panel(250, 830, 540, 400)}${(() => {
           const y = (v) => 1180 - (v - 440) * 4.2, X = [340, 640];
@@ -177,7 +179,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c6-pagamos"]], { acerca: 0.07 }); } },
 
-    // 7 · La tutora (aula): «Es verdad. Por habitante, se recauda un 25 % más que en 2016, ya descontada la inflación. Récord.»
+    // 7 · El tutor (aula): «Es verdad. Por habitante, se recauda un 25 % más que en 2016, ya descontada la inflación. Récord.»
     { n: 7, set: "vacio",
       svg: `${panel(300, 800, 480, 420)}${D.impuestos.map((v, i) => { const n = Math.round(v / 750); return `<g transform="translate(${430 + i * 220} 1130)">${Array.from({ length: n }, (_, k) => `<g id="s7-b${i}-${k}" transform="translate(0 ${-k * 15}) scale(.62)">${billete(`s7-bb${i}${k}`)}</g>`).join("")}
           <g id="s7-v${i}">${rot(0, -n * 15 - 40, miles(v) + " €", 28, i ? HOY : ANTES_T)}</g>${rot(0, 62, ["2016", "2025"][i], 30, C.gris)}</g>`; }).join("")}
@@ -206,7 +208,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c7-25"], e.c["c7-record"]]); } },
 
-    // 8 · La tutora (aula): «Y en educación se gasta un 12 % más por habitante.»
+    // 8 · El tutor (aula): «Y en educación se gasta un 12 % más por habitante.»
     { n: 8, set: "vacio",
       svg: `${panel(320, 800, 440, 430)}${D.gasto.map((v, i) => { const n = Math.round(v / 100); return `<g transform="translate(${450 + i * 180} 1130)">${Array.from({ length: n }, (_, k) => `<g transform="translate(${(k % 3) * 4 - 4} ${-k * 24 - 12})">${libro(`s8-l${i}-${k}`, ["#5E8C99", "#C8902E", "#7C9A7E", "#C77B5B"][k % 4])}</g>`).join("")}
           <g id="s8-v${i}">${rot(0, -n * 24 - 36, miles(v) + " €", 28, i ? HOY : ANTES_T)}</g>${rot(0, 52, ["2016", "2024"][i], 30, C.gris)}</g>`; }).join("")}
@@ -228,7 +230,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c8-12"]]); } },
 
-    // 9 · La tutora (aula): «Y en la ESO hay un 19 % más de profesores. Aun así, aprenden menos.»
+    // 9 · El tutor (aula): «Y en la ESO hay un 19 % más de profesores. Aun así, aprenden menos.»
     { n: 9, set: "vacio",
       svg: `${panel(240, 850, 600, 360)}${D.profes.map((v, i) => { const n = Math.round(v / 10000); return `<g transform="translate(0 ${1010 + i * 140})">${rot(375, -22, ["2016", "2024"][i], 28, C.gris, "", "end")}
           ${Array.from({ length: n }, (_, k) => `<g transform="translate(${400 + k * 26} 0) scale(.8)">${profe(`s9-p${i}-${k}`)}</g>`).join("")}<g id="s9-v${i}">${rot(375, 14, miles(v), 22, i ? HOY : ANTES_T, "", "end")}</g></g>`; }).join("")}
@@ -250,58 +252,81 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c9-19"]]); } },
 
-    // 10 · El alumno (academia): «Y encima, mi padre me paga una academia.»
+    // 10 · El tutor (aula): «Y las clases siguen con 25 alumnos de media. En la Unión Europea, 21.»
     { n: 10, set: "vacio",
-      svg: gente("s10", "ap", { a: MOCHILA }),
-      tarjeta: tarjeta(10, "El alumno", `<div class="tit">«Y encima, <mark id="m10">academia</mark>»</div>`, { tono: "hoy" }),
+      svg: `${panel(230, 820, 600, 410)}${[["ESPAÑA", 25, 5, 48, HOY], ["UE", 21, 5, 48, "#5E8C99"]].map(([et, n, cols, paso, col], i) => `<g transform="translate(${275 + i * 290} 920)">
+          <rect x="-14" y="-14" width="${cols * paso + 4}" height="${Math.ceil(n / cols) * paso + 4}" rx="12" fill="#F4EFE6" stroke="#E3D6BF" stroke-width="3"/>
+          ${Array.from({ length: n }, (_, k) => `<g id="s10-d${i}-${k}" transform="translate(${(k % cols) * paso + paso / 2 - 8} ${Math.floor(k / cols) * paso + paso / 2 - 8})"><rect x="-16" y="-10" width="32" height="20" rx="4" fill="#C9A26B"/><circle cy="-16" r="9" fill="${col}"/></g>`).join("")}
+          <g id="s10-v${i}">${rot(cols * paso / 2 - 10, -36, et + " · " + es(D.clase[i + 1]), 28, col)}</g></g>`).join("")}
+        ${rot(530, 1214, "ALUMNOS POR CLASE EN LA ESO", 18, C.gris)}${gente("s10", "fp")}`,
+      tarjeta: tarjeta(10, "Alumnos por clase en la ESO", `<div class="vs">${[[es(D.clase[0]), "España, 2016"], [es(D.clase[1]), "España, 2024"], [es(D.clase[2]), "UE, 2024"]].map(([v, l], i) => `<div class="col"><div class="v ${i < 2 ? "t-pasado" : "t-hoy"}" id="c10-${"abc"[i]}" style="font-size:62px">${v}</div><div class="n">${l}</div></div>`).join("")}</div>
+        <div class="nota">Media de 25 países de la Unión Europea</div>`, { fuente: F_CLASE, icono: bandera(44) }),
+      fn: function (t, e) {
+        const c = e.c;
+        ambiente("aula", null, t, 0);
+        const tt = [c["c10-25"] - 0.2, c["c10-21"] - 0.2], N = [25, 21];
+        for (let i = 0; i < 2; i++) {
+          for (let k = 0; k < N[i]; k++) { const t0 = tt[i] + k * 0.035; css(`s10-d${i}-${k}`, "opacity", clamp((t - t0) / 0.12)); }
+          css(`s10-v${i}`, "opacity", clamp((t - tt[i] - N[i] * 0.035) / 0.3));
+        }
+        sube("c10-a", t, tt[0]); sube("c10-b", t, tt[0] + 0.3); sube("c10-c", t, tt[1]);
+        persona("s10-f", t, { x: 125, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c10-25"] - 0.2, "senala"], [c["c10-21"], "hombros"]], fase: 1 });
+        persona("s10-p", t, { x: 950, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c10-21"] + 0.2, "o"]], brazo: [[0, "abajo"], [c["c10-21"] + 0.3, "piensa"]], espejo: true, fase: 2 });
+      },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c10-25"], e.c["c10-21"]]); } },
+
+    // 11 · El alumno (academia): «Y encima, mi padre me paga una academia.»
+    { n: 11, set: "vacio",
+      svg: gente("s11", "ap", { a: MOCHILA }),
+      tarjeta: tarjeta(11, "El alumno", `<div class="tit">«Y encima, <mark id="m11">academia</mark>»</div>`, { tono: "hoy" }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("academia", "aula", t, e.t0);
-        marca("m10", t, c["c10-academia"]);
+        marca("m11", t, c["c11-academia"]);
         const w = ruta(t, [[e.t0 + 0.1, -100], [e.t0 + 1.1, 300]]);
-        persona("s10-a", t, { x: w.x, y: 1440, s: 0.66, anda: w.anda, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "sujeta"], [c["c10-academia"] - 0.2, "hombros"]], fase: 1 });
-        persona("s10-p", t, { x: 830, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"], [c["c10-academia"], "empuja"]], espejo: true, fase: 2 });
+        persona("s11-a", t, { x: w.x, y: 1440, s: 0.66, anda: w.anda, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "sujeta"], [c["c11-academia"] - 0.2, "hombros"]], fase: 1 });
+        persona("s11-p", t, { x: 830, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"], [c["c11-academia"], "empuja"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c10-academia"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c11-academia"]]); } },
 
-    // 11 · El padre (academia): «Pago dos veces. Y como yo, muchos: los hogares gastan un 26 % más en la secundaria de sus hijos que en 2016.»
-    { n: 11, set: "vacio",
-      svg: `${panel(300, 820, 480, 400)}${D.familias.map((v, i) => { const n = Math.round(v / 10); return `<g transform="translate(${440 + i * 200} 1120)">${Array.from({ length: n }, (_, k) => `<g id="s11-m${i}-${k}" transform="translate(0 ${-k * 16}) scale(1.6 .7)">${monedaEuro(`s11-me${i}-${k}`, 20)}</g>`).join("")}
-          <g id="s11-v${i}">${rot(0, -n * 16 - 34, miles(v) + " €", 30, i ? HOY : ANTES_T)}</g>${rot(0, 62, ["2016", "2025"][i], 30, C.gris)}</g>`; }).join("")}
-        ${rot(540, 1206, "GASTO MEDIO POR HOGAR EN ENSEÑANZA SECUNDARIA", 17, C.gris)}${gente("s11", "ap")}`,
-      tarjeta: tarjeta(11, "Gasto medio por hogar en enseñanza secundaria, en euros de 2025", `${vs(11, D.familias.map((v) => miles(v) + "&nbsp;€"), ["en 2016", "en 2025"])}
+    // 12 · El padre (academia): «Pago dos veces. Y como yo, muchos: los hogares gastan un 26 % más en la secundaria de sus hijos que en 2016.»
+    { n: 12, set: "vacio",
+      svg: `${panel(300, 820, 480, 400)}${D.familias.map((v, i) => { const n = Math.round(v / 10); return `<g transform="translate(${440 + i * 200} 1120)">${Array.from({ length: n }, (_, k) => `<g id="s12-m${i}-${k}" transform="translate(0 ${-k * 16}) scale(1.6 .7)">${monedaEuro(`s12-me${i}-${k}`, 20)}</g>`).join("")}
+          <g id="s12-v${i}">${rot(0, -n * 16 - 34, miles(v) + " €", 30, i ? HOY : ANTES_T)}</g>${rot(0, 62, ["2016", "2025"][i], 30, C.gris)}</g>`; }).join("")}
+        ${rot(540, 1206, "GASTO MEDIO POR HOGAR EN ENSEÑANZA SECUNDARIA", 17, C.gris)}${gente("s12", "ap")}`,
+      tarjeta: tarjeta(12, "Gasto medio por hogar en enseñanza secundaria, en euros de 2025", `${vs(12, D.familias.map((v) => miles(v) + "&nbsp;€"), ["en 2016", "en 2025"])}
         <div class="nota">ESO, bachillerato y FP de grado medio</div>`, { fuente: F_FAM, icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("academia", null, t, 0);
-        const tt = [c["c11-26"] - 0.3, c["c11-26"] + 0.2];
+        const tt = [c["c12-26"] - 0.3, c["c12-26"] + 0.2];
         for (let i = 0; i < 2; i++) {
           const n = Math.round(D.familias[i] / 10);
-          for (let k = 0; k < n; k++) { const t0 = tt[i] + k * 0.05; if (t < t0) { ver(`s11-m${i}-${k}`, false); continue; } T(`s11-m${i}-${k}`, 0, -k * 16 - 90 * (1 - fuera((t - t0) / 0.22)), { sx: 1.6, sy: 0.7, op: clamp((t - t0) * 6) }); }
-          css(`s11-v${i}`, "opacity", clamp((t - tt[i] - n * 0.05) / 0.3));
+          for (let k = 0; k < n; k++) { const t0 = tt[i] + k * 0.05; if (t < t0) { ver(`s12-m${i}-${k}`, false); continue; } T(`s12-m${i}-${k}`, 0, -k * 16 - 90 * (1 - fuera((t - t0) / 0.22)), { sx: 1.6, sy: 0.7, op: clamp((t - t0) * 6) }); }
+          css(`s12-v${i}`, "opacity", clamp((t - tt[i] - n * 0.05) / 0.3));
         }
-        sube("c11-a", t, tt[0]); sube("c11-b", t, tt[1]);
-        persona("s11-a", t, { x: 170, y: 1440, s: 0.66, mira: 1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"], [c["c11-26"] + 0.3, "hombros"]], fase: 1 });
-        persona("s11-p", t, { x: 930, y: 1440, s: 0.8, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c11-dos"], "arriba"], [c["c11-26"] - 0.2, "senala"]], espejo: true, fase: 2 });
+        sube("c12-a", t, tt[0]); sube("c12-b", t, tt[1]);
+        persona("s12-a", t, { x: 170, y: 1440, s: 0.66, mira: 1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"], [c["c12-26"] + 0.3, "hombros"]], fase: 1 });
+        persona("s12-p", t, { x: 930, y: 1440, s: 0.8, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c12-dos"], "arriba"], [c["c12-26"] - 0.2, "senala"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c11-dos"], e.c["c11-26"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c12-dos"], e.c["c12-26"]]); } },
 
-    // 12 · El alumno, a cámara (pasillo del instituto): «Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
-    { n: 12, set: "vacio",
-      svg: `<g id="s12-bal" transform="translate(420 1300) scale(.75)">${balanza("s12-b", ["LO QUE PAGAS", `${[0, 1, 2].map((k) => `<g transform="translate(${(k - 1) * 46} ${-20 - k * 6}) scale(.5)">${billete("s12-bi" + k)}</g>`).join("")}`],
-          ["LO QUE APRENDEN", `<g transform="translate(0 -26)">${libro("s12-li", "#5E8C99")}</g>`])}</g>
-        ${gente("s12", "a", { a: MOCHILA })}`,
-      tarjeta: tarjeta(12, "Te toca", `<div class="tit" style="font-size:58px">Impuestos de récord y aprendemos menos. ¿Nos tenemos que <mark id="m12">conformar</mark>?</div><div class="sub" id="c12-sub">¿Tú qué opinas? Te leo en los comentarios.</div>`),
+    // 13 · El alumno, a cámara (pasillo del instituto): «Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+    { n: 13, set: "vacio",
+      svg: `<g id="s13-bal" transform="translate(420 1300) scale(.75)">${balanza("s13-b", ["LO QUE PAGAS", `${[0, 1, 2].map((k) => `<g transform="translate(${(k - 1) * 46} ${-20 - k * 6}) scale(.5)">${billete("s13-bi" + k)}</g>`).join("")}`],
+          ["LO QUE APRENDEN", `<g transform="translate(0 -26)">${libro("s13-li", "#5E8C99")}</g>`])}</g>
+        ${gente("s13", "a", { a: MOCHILA })}`,
+      tarjeta: tarjeta(13, "Te toca", `<div class="tit" style="font-size:58px">Impuestos de récord y aprendemos menos. ¿Nos tenemos que <mark id="m13">conformar</mark>?</div><div class="sub" id="c13-sub">¿Tú qué opinas? Te leo en los comentarios.</div>`),
       fn: function (t, e) {
         const c = e.c;
         ambiente("pasilloInsti", "academia", t, e.t0);
-        const a = -14 * rebote(clamp((t - c["c12-record"]) / 0.6)) + 1.5 * Math.sin(t * 3) * (t > c["c12-record"] ? 1 : 0), r = a * Math.PI / 180;
-        attr("s12-b-b", "transform", `rotate(${a.toFixed(2)} 0 -420)`);
-        T("s12-b-pi", -300 * Math.cos(r), -420 - 300 * Math.sin(r) + 150, {}); T("s12-b-pd", 300 * Math.cos(r), -420 + 300 * Math.sin(r) + 150, {});
-        marca("m12", t, c["c12-conformar"]); sube("c12-sub", t, c["c12-tu"] - 0.2);
-        persona("s12-a", t, { x: 900, y: 1440, s: 0.74, mira: [[0, -1], [c["c12-conformar"], 0]], vivo: true, charla: e, boca: habla(t, e, "seria"),
-          brazo: [[0, "sujeta"], [c["c12-record"] - 0.2, "senala"], [c["c12-tu"], "hombros"]], incl: [[0, 0], [c["c12-conformar"], -6], [c["c12-tu"], 0]], espejo: true, fase: 2 });
+        const a = -14 * rebote(clamp((t - c["c13-record"]) / 0.6)) + 1.5 * Math.sin(t * 3) * (t > c["c13-record"] ? 1 : 0), r = a * Math.PI / 180;
+        attr("s13-b-b", "transform", `rotate(${a.toFixed(2)} 0 -420)`);
+        T("s13-b-pi", -300 * Math.cos(r), -420 - 300 * Math.sin(r) + 150, {}); T("s13-b-pd", 300 * Math.cos(r), -420 + 300 * Math.sin(r) + 150, {});
+        marca("m13", t, c["c13-conformar"]); sube("c13-sub", t, c["c13-tu"] - 0.2);
+        persona("s13-a", t, { x: 900, y: 1440, s: 0.74, mira: [[0, -1], [c["c13-conformar"], 0]], vivo: true, charla: e, boca: habla(t, e, "seria"),
+          brazo: [[0, "sujeta"], [c["c13-record"] - 0.2, "senala"], [c["c13-tu"], "hombros"]], incl: [[0, 0], [c["c13-conformar"], -6], [c["c13-tu"], 0]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c12-record"], e.c["c12-conformar"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c13-record"], e.c["c13-conformar"]]); } },
   ];
 }
