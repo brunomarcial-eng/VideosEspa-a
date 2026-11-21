@@ -53,6 +53,15 @@
    "estado": "elegida por Bruno el 20-11-2026 (voz C del casting de la hostelera)",
    "nota": "Hostelera veterana de T10 (unos 62 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/hostelera_voz.py, opción C), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
    "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "medica": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-medica.wav",
+   "ref_txt": "diseno/voces/ref-medica.txt",
+   "estado": "provisional (voz B del casting de la médica, 21-11-2026): pendiente de que Bruno elija entre A, B y C",
+   "nota": "Médica de familia de T11 (unos 45 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/medica_voz.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
   }
  },
  "edad": {
@@ -89,6 +98,18 @@
    "velocidad": 1.0
   },
   "nuevo": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "paciente": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "medica": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "enfermero": {
    "tono": 1.0,
    "velocidad": 1.0
   }

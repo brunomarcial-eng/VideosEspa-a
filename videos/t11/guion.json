@@ -122,7 +122,7 @@
    "n": 6,
    "quien": "enfermero",
    "funcion": "dato: lista",
-   "voz": "Y en la lista para operarse ya hay casi 854.000 personas: 240.000 más que en 2016.",
+   "voz": "Y en la lista para operarse hay 240.000 personas más que en 2016.",
    "pantalla": "Personas en lista de espera para operarse · 2016: 614.101 · 2025: 853.740",
    "nota": "Cada figura, 50.000 personas",
    "sello": "DATO OFICIAL · Ministerio de Sanidad (listas de espera del Sistema Nacional de Salud)",
@@ -244,14 +244,6 @@
    "decimales": 0,
    "estado": "V",
    "miles": true
-  },
-  {
-   "texto": "854.000",
-   "ruta": "espera.quirurgica_pacientes.2025",
-   "decimales": 0,
-   "estado": "V",
-   "aprox": 854000,
-   "tolerancia_pct": 1
   },
   {
    "texto": "240.000",

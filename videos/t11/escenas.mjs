@@ -72,7 +72,7 @@ export function escenas(D) {
         css("sala-pant-f", "opacity", Math.floor(t * 2) % 2 ? 1 : 0.25);
         const v = ruta(t, [[0.1, 1220], [1.4, 860]]);
         persona("s1-p", t, { x: v.x, y: 1440, s: 0.8, anda: v.anda, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), ojos: [[0, "normal"], [c["c1-si"], "felices"], [c["c1-esperando"] - 0.3, "normal"]],
-          brazo: [[0, "sujeta"], [c["c1-si"] - 0.1, "senala"], [c["c1-esperando"] - 0.2, "hombros"]], incl: [[0, 0], [c["c1-esperando"], -6]], espejo: true, fase: 1 });
+          brazo: [[0, "abajo"], [c["c1-si"] - 0.1, "hombros"], [c["c1-esperando"] - 0.2, "abajo"]], incl: [[0, 0], [c["c1-esperando"], -6]], espejo: true, fase: 1 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c1-si"]]); } },
 
@@ -86,7 +86,7 @@ export function escenas(D) {
         marca("m2", t, c["c2-derivo"]);
         attr("cons-volante", "height", (80 * clamp((t - c["c2-derivo"]) / 0.8)).toFixed(1));
         persona("s2-m", t, { x: 230, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e), brazo: [[0, "abajo"], [c["c2-rodilla"] - 0.2, "senala"], [c["c2-derivo"], "sujeta"]], fase: 1 });
-        persona("s2-p", t, { x: 880, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c2-derivo"] + 0.3, "o"]], brazo: [[0, "sujeta"]], incl: [[0, 0], [c["c2-rodilla"], 5]], espejo: true, fase: 2 });
+        persona("s2-p", t, { x: 880, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c2-derivo"] + 0.3, "o"]], brazo: [[0, "abajo"]], incl: [[0, 0], [c["c2-rodilla"], 5]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c2-derivo"]]); } },
 
@@ -129,8 +129,8 @@ export function escenas(D) {
 
     // 5 · El enfermero (pasillo del hospital): «Y si hay que operar, 122 días de media. En 2016, 115.»
     { n: 5, set: "vacio",
-      svg: `${panel(220, 980, 590, 250)}${D.quirurgica.map((v, i) => `<g transform="translate(0 ${1060 + i * 100})">${rot(325, 12, ["2016", "2025"][i], 28, C.gris, "", "end")}
-          <rect id="s5-r${i}" x="340" y="-24" width="0" height="48" rx="10" fill="${i ? HOY : ANTES}"/><g id="s5-v${i}">${rot(790, 12, v + " días", 30, i ? HOY : ANTES_T, "", "end")}</g></g>`).join("")}
+      svg: `${panel(250, 980, 590, 250)}${D.quirurgica.map((v, i) => `<g transform="translate(0 ${1060 + i * 100})">${rot(355, 12, ["2016", "2025"][i], 28, C.gris, "", "end")}
+          <rect id="s5-r${i}" x="370" y="-24" width="0" height="48" rx="10" fill="${i ? HOY : ANTES}"/><g id="s5-v${i}">${rot(382 + v * 2.2, 12, v + " días", 30, i ? HOY : ANTES_T, "", "start")}</g></g>`).join("")}
         ${rot(540, 1212, "DÍAS DE ESPERA PARA OPERARSE", 19, C.gris)}${gente("s5", "ep", { p: VOLANTE })}`,
       tarjeta: tarjeta(5, "Espera para operarse", `${vs(5, D.quirurgica.map((v) => v + "&nbsp;días"), ["en 2016", "en 2025"])}
         <div class="nota">Media del Sistema Nacional de Salud, a final de cada año</div>`, { fuente: F_LE, icono: bandera(44) }),
@@ -138,15 +138,15 @@ export function escenas(D) {
         const c = e.c;
         ambiente("pasillo", "consulta", t, e.t0);
         const tt = [c["c5-115"], c["c5-122"]];
-        for (let i = 0; i < 2; i++) { attr(`s5-r${i}`, "width", (D.quirurgica[i] * 2.4 * suave((t - tt[i]) / 0.5)).toFixed(1)); css(`s5-v${i}`, "opacity", clamp((t - tt[i] - 0.3) / 0.3)); }
+        for (let i = 0; i < 2; i++) { attr(`s5-r${i}`, "width", (D.quirurgica[i] * 2.2 * suave((t - tt[i]) / 0.5)).toFixed(1)); css(`s5-v${i}`, "opacity", clamp((t - tt[i] - 0.3) / 0.3)); }
         sube("c5-b", t, c["c5-122"]); sube("c5-a", t, c["c5-115"]);
         persona("s5-e", t, { x: 150, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e), brazo: [[0, "abajo"], [c["c5-operar"], "senala"], [c["c5-115"], "hombros"]], fase: 1 });
-        const q = ruta(t, [[e.t0 + 0.1, 1180], [e.t0 + 1.0, 975]]);
+        const q = ruta(t, [[e.t0 + 0.1, 1200], [e.t0 + 1.0, 1000]]);
         persona("s5-p", t, { x: q.x, y: 1440, s: 0.8, anda: q.anda, mira: -1, vivo: true, boca: [[0, "seria"], [c["c5-122"] + 0.2, "o"]], brazo: [[0, "sujeta"]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c5-122"]]); } },
 
-    // 6 · El enfermero (pasillo): «Y en la lista para operarse ya hay casi 854.000 personas: 240.000 más que en 2016.»
+    // 6 · El enfermero (pasillo): «Y en la lista para operarse hay 240.000 personas más que en 2016.»
     { n: 6, set: "vacio",
       svg: `${panel(210, 930, 660, 320)}${D.pacientes.map((v, i) => { const n = Math.round(v / 50000); return `<g transform="translate(0 ${1060 + i * 120})">${rot(300, -10, ["2016", "2025"][i], 28, C.gris, "", "end")}
           ${Array.from({ length: n }, (_, k) => `<g transform="translate(${336 + k * 31} 0)">${fig(`s6-f${i}-${k}`, i ? "#C77B6B" : "#C9B37E")}</g>`).join("")}</g>`; }).join("")}
@@ -156,16 +156,16 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("pasillo", null, t, 0);
-        const tt = [c["c6-lista"], c["c6-854"] - 0.1];
+        const tt = [c["c6-lista"], c["c6-240"] - 0.15];
         for (let i = 0; i < 2; i++) {
           const n = Math.round(D.pacientes[i] / 50000);
           for (let k = 0; k < n; k++) {
             const t0 = tt[i] + k * 0.06, kk = (t - t0) / 0.25;
             if (kk < 0) { ver(`s6-f${i}-${k}`, false); continue; }
-            T(`s6-f${i}-${k}`, 0, -40 * (1 - fuera(kk)) - (k >= 12 && i === 1 && t > c["c6-240"] ? 6 * Math.abs(Math.sin((t - k * 0.1) * 6)) : 0), { s: 1, op: clamp(kk * 3) });
+            T(`s6-f${i}-${k}`, 0, -40 * (1 - fuera(kk)) - (k >= 12 && i === 1 && t > c["c6-854"] + 0.2 ? 6 * Math.abs(Math.sin((t - k * 0.1) * 6)) : 0), { s: 1, op: clamp(kk * 3) });
           }
         }
-        sube("c6-b", t, c["c6-854"]); sube("c6-a", t, c["c6-240"]);
+        sube("c6-a", t, c["c6-lista"]); sube("c6-b", t, c["c6-240"]);
         persona("s6-e", t, { x: 120, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e), brazo: [[0, "abajo"], [c["c6-lista"], "senala"], [c["c6-240"], "arriba"]], fase: 1 });
         persona("s6-p", t, { x: 960, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c6-854"] + 0.2, "o"]], ojos: [[0, "normal"], [c["c6-854"] + 0.2, "grandes"]], brazo: [[0, "sujeta"], [c["c6-240"] + 0.2, "piensa"]], espejo: true, fase: 2 });
       },
@@ -298,7 +298,7 @@ export function escenas(D) {
 
     // 13 · El paciente, a cámara (sala de espera): «Impuestos de récord y más espera que en 2016. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
     { n: 13, set: "vacio",
-      svg: `<g id="s13-bal" transform="translate(470 1300) scale(.8)">${balanza("s13-b", ["LO QUE PAGAS", `${[0, 1, 2].map((k) => `<g transform="translate(${(k - 1) * 46} ${-20 - k * 6}) scale(.5)">${billete("s13-bi" + k)}</g>`).join("")}`],
+      svg: `<g id="s13-bal" transform="translate(420 1300) scale(.75)">${balanza("s13-b", ["LO QUE PAGAS", `${[0, 1, 2].map((k) => `<g transform="translate(${(k - 1) * 46} ${-20 - k * 6}) scale(.5)">${billete("s13-bi" + k)}</g>`).join("")}`],
           ["LO QUE RECIBES", `<g transform="translate(0 -40)"><circle r="34" fill="#FFFFFF" stroke="#5B6470" stroke-width="6"/><rect id="s13-rm" x="-2" y="-28" width="4" height="30" fill="${C.rojo}"/></g>`])}</g>
         ${gente("s13", "p", { p: MULETA })}`,
       tarjeta: tarjeta(13, "Te toca", `<div class="tit" style="font-size:58px">Impuestos de récord y más espera. ¿Nos tenemos que <mark id="m13">conformar</mark>?</div><div class="sub" id="c13-sub">¿Tú qué opinas? Te leo en los comentarios.</div>`),
@@ -312,8 +312,8 @@ export function escenas(D) {
         attr("s13-b-b", "transform", `rotate(${a.toFixed(2)} 0 -420)`);
         T("s13-b-pi", -300 * Math.cos(r), -420 - 300 * Math.sin(r) + 150, {}); T("s13-b-pd", 300 * Math.cos(r), -420 + 300 * Math.sin(r) + 150, {});
         marca("m13", t, c["c13-conformar"]); sube("c13-sub", t, c["c13-tu"] - 0.2);
-        persona("s13-p", t, { x: 860, y: 1440, s: 0.8, mira: [[0, -1], [c["c13-conformar"], 0]], vivo: true, charla: e, boca: habla(t, e, "seria"),
-          brazo: [[0, "sujeta"], [c["c13-record"] - 0.2, "senala"], [c["c13-tu"], "hombros"]], incl: [[0, 0], [c["c13-conformar"], -6], [c["c13-tu"], 0]], espejo: true, fase: 2 });
+        persona("s13-p", t, { x: 930, y: 1440, s: 0.8, mira: [[0, -1], [c["c13-conformar"], 0]], vivo: true, charla: e, boca: habla(t, e, "seria"),
+          brazo: [[0, "abajo"], [c["c13-record"] - 0.2, "hombros"], [c["c13-tu"], "abajo"]], incl: [[0, 0], [c["c13-conformar"], -6], [c["c13-tu"], 0]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c13-record"], e.c["c13-conformar"]]); } },
   ];

@@ -1,0 +1,40 @@
+{
+ "huella": "93b4dc1bb67b7014",
+ "semilla": 9000,
+ "texto": "Y en sanidad se gasta un 17 % más por habitante.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0384,
+  "oido": "y en sanidad se gasta un 17% más por habitante.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.26,
+   0.68,
+   0.88,
+   1.2,
+   1.36,
+   1.86,
+   2.24,
+   2.76,
+   3.0
+  ],
+  "t1": [
+   0.14,
+   0.26,
+   0.68,
+   0.88,
+   1.2,
+   1.36,
+   1.86,
+   2.24,
+   2.76,
+   3.0,
+   3.44
+  ],
+  "ritmo": 14.9,
+  "voz": 0.927
+ }
+}

@@ -1,0 +1,38 @@
+plano 1: «¿Pagas más impuestos que en 2016? Yo sí. Y aquí sigo, esperando.»
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.934 · 5.6 s · 10.6 l/s · «Pagas más impuestos que en 2016? Yo sí. Y aquí sigo esperando.»
+plano 2: «Lo de su rodilla es del traumatólogo. Le derivo.»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.93 · 3.9 s · 9.8 l/s · «Lo de su rodilla es del traumatólogo, le derivo.»
+plano 3: «¿Y cuánto tardan?»
+    toma 1 (semilla 3000): mala · 1.0 · voz 0.845 · 0.9 s · 14.4 l/s · «¿Y cuánto tardan?» · voz distinta (0.84)
+    toma 2 (semilla 3001): mala · 1.0 · voz 0.77 · 1.0 s · 13.0 l/s · «¿Y cuánto tardan?» · voz distinta (0.77)
+    toma 3 (semilla 3002): mala · 1.0 · voz 0.825 · 1.0 s · 13.5 l/s · «¿Y cuánto tardan?» · voz distinta (0.83)
+    toma 4 (semilla 3003): mala · 1.0 · voz 0.597 · 1.2 s · 11.2 l/s · «¿Y cuánto tardan?» · voz distinta (0.60)
+    toma 5 (semilla 3004): mala · 1.0 · voz 0.815 · 1.1 s · 12.3 l/s · «¿Y cuánto tardan?» · voz distinta (0.81)
+plano 4: «Para la primera cita con el especialista, 102 días de media. En 2016 eran 72.»
+    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.959 · 7.2 s · 11.9 l/s · «para la primera cita con el especialista, 102 días de media. En 2016 eran 72.»
+plano 5: «Y si hay que operar, 122 días de media. En 2016, 115.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.928 · 5.3 s · 13.3 l/s · «Y si hay que operar, 122 días de media, en 2016 115.»
+plano 6: «Y en la lista para operarse ya hay casi 854.000 personas: 240.000 más que en 2016.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.945 · 7.3 s · 19.0 l/s · «Y en la lista para operarse ya hay casi 854.000 personas, 240.000 más que en 2016.»
+plano 7: «¡Pero si pago más que nunca!»
+    toma 1 (semilla 7000): mala · 1.0 · voz 0.842 · 1.9 s · 11.2 l/s · «Pero si pago más que nunca.» · voz distinta (0.84)
+    toma 2 (semilla 7001): BUENA · 1.0 · voz 0.881 · 1.6 s · 13.3 l/s · «Pero sí pago más que nunca.»
+plano 8: «Ya. Por habitante, se recauda un 25 % más que en 2016, ya descontada la inflación. Es récord.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.952 · 8.5 s · 11.6 l/s · «Ya. Por habitante se recauda un 25% más que en 2016, ya descontada la inflación. Es record.»
+plano 9: «Y en sanidad se gasta un 17 % más por habitante.»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.927 · 3.6 s · 14.9 l/s · «y en sanidad se gasta un 17% más por habitante.»
+plano 10: «Y hay un 21 % más de médicos. Aun así, se espera más.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.959 · 5.2 s · 10.2 l/s · «y hay un 21% más de médicos, aún así se espera más.»
+plano 11: «Total, que me hice un seguro privado. Pago dos veces.»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.926 · 4.1 s · 10.0 l/s · «Total, que me hice un seguro privado. Pago dos veces.»
+plano 12: «Como tantos: los hogares gastan un 34 % más en seguros de salud que en 2016.»
+    toma 1 (semilla 12000): BUENA · 1.0 · voz 0.942 · 5.6 s · 16.0 l/s · «Como tantos, los hogares gastan un 34% más en seguros de salud que en 2016.»
+plano 13: «Impuestos de récord y más espera que en 2016. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+    toma 1 (semilla 13000): BUENA · 1.0 · voz 0.939 · 5.9 s · 13.5 l/s · «impuestos de récord y más espera que en 2016. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+duración total 70.8 s · escrito videos/t11/audio/linea_tiempo.json
+FALLA (escucha esas líneas o repítelas con --rehacer N):
+- plano 3: voz distinta (0.84)
+FIN
+--- rehechas: 6 (texto más corto: «hay 240.000 personas más que en 2016») y 12 ---

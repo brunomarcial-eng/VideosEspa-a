@@ -1,0 +1,48 @@
+{
+ "huella": "b80f792c54e09c99",
+ "semilla": 4000,
+ "texto": "Para la primera cita con el especialista, 102 días de media. En 2016 eran 72.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0544,
+  "oido": "para la primera cita con el especialista, 102 días de media. En 2016 eran 72.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.28,
+   0.58,
+   1.0,
+   1.18,
+   1.3,
+   2.54,
+   2.96,
+   3.4,
+   3.58,
+   4.74,
+   4.86,
+   5.76,
+   6.18
+  ],
+  "t1": [
+   0.14,
+   0.28,
+   0.58,
+   1.0,
+   1.18,
+   1.3,
+   2.06,
+   2.96,
+   3.4,
+   3.58,
+   3.9,
+   4.86,
+   5.76,
+   6.18,
+   6.66
+  ],
+  "ritmo": 11.9,
+  "voz": 0.959
+ }
+}

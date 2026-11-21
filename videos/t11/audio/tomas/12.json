@@ -1,0 +1,50 @@
+{
+ "huella": "03832c651a31f7a8",
+ "semilla": 12001,
+ "texto": "Como tantos: los hogares gastan un 34 % más en seguros de salud que en 2016.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0398,
+  "oido": "Como tantos, los hogares gastan un 34% más en seguros de salud que en 2016.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   0.9,
+   1.0,
+   1.36,
+   1.76,
+   1.86,
+   2.24,
+   2.92,
+   3.32,
+   3.52,
+   3.9,
+   4.04,
+   4.26,
+   4.5,
+   4.6
+  ],
+  "t1": [
+   0.18,
+   0.74,
+   1.0,
+   1.36,
+   1.76,
+   1.86,
+   2.24,
+   2.92,
+   3.32,
+   3.52,
+   3.9,
+   4.04,
+   4.26,
+   4.5,
+   4.6,
+   5.22
+  ],
+  "ritmo": 15.9,
+  "voz": 0.93
+ }
+}

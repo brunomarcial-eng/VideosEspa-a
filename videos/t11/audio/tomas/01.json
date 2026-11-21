@@ -1,0 +1,42 @@
+{
+ "huella": "a1b99caeaa2083f8",
+ "semilla": 1000,
+ "texto": "¿Pagas más impuestos que en 2016? Yo sí. Y aquí sigo, esperando.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0419,
+  "oido": "Pagas más impuestos que en 2016? Yo sí. Y aquí sigo esperando.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.38,
+   0.54,
+   1.18,
+   1.44,
+   1.58,
+   3.16,
+   3.48,
+   4.42,
+   4.58,
+   4.74,
+   5.06
+  ],
+  "t1": [
+   0.38,
+   0.54,
+   1.18,
+   1.44,
+   1.58,
+   2.4,
+   3.48,
+   3.68,
+   4.58,
+   4.74,
+   5.06,
+   5.34
+  ],
+  "ritmo": 10.6,
+  "voz": 0.934
+ }
+}
