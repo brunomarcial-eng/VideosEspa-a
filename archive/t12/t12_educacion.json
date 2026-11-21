@@ -106,6 +106,247 @@
     "2024": 22.8
    },
    "mas_que_ue_2024": 4.3
+  },
+  "ranking_clase_2024": {
+   "primaria": {
+    "paises": [
+     {
+      "pais": "HRV",
+      "alumnos": 15.5
+     },
+     {
+      "pais": "LUX",
+      "alumnos": 15.7
+     },
+     {
+      "pais": "GRC",
+      "alumnos": 16.8
+     },
+     {
+      "pais": "LVA",
+      "alumnos": 17.5
+     },
+     {
+      "pais": "ITA",
+      "alumnos": 17.9
+     },
+     {
+      "pais": "POL",
+      "alumnos": 18.0
+     },
+     {
+      "pais": "SVN",
+      "alumnos": 18.2
+     },
+     {
+      "pais": "EST",
+      "alumnos": 18.3
+     },
+     {
+      "pais": "AUT",
+      "alumnos": 18.5
+     },
+     {
+      "pais": "SVK",
+      "alumnos": 18.6
+     },
+     {
+      "pais": "FIN",
+      "alumnos": 18.7
+     },
+     {
+      "pais": "LTU",
+      "alumnos": 18.7
+     },
+     {
+      "pais": "DNK",
+      "alumnos": 19.0
+     },
+     {
+      "pais": "ROU",
+      "alumnos": 19.5
+     },
+     {
+      "pais": "CZE",
+      "alumnos": 19.7
+     },
+     {
+      "pais": "PRT",
+      "alumnos": 20.2
+     },
+     {
+      "pais": "BGR",
+      "alumnos": 20.3
+     },
+     {
+      "pais": "SWE",
+      "alumnos": 20.4
+     },
+     {
+      "pais": "ESP",
+      "alumnos": 20.9
+     },
+     {
+      "pais": "DEU",
+      "alumnos": 21.1
+     },
+     {
+      "pais": "FRA",
+      "alumnos": 21.4
+     },
+     {
+      "pais": "HUN",
+      "alumnos": 22.2
+     },
+     {
+      "pais": "NLD",
+      "alumnos": 22.5
+     }
+    ],
+    "n": 23,
+    "puesto_espana": 19,
+    "espana": 20.9,
+    "mejor": {
+     "pais": "Croacia",
+     "alumnos": 15.5
+    },
+    "peor": {
+     "pais": "Países Bajos",
+     "alumnos": 22.5
+    },
+    "ue25": 19.1,
+    "paises_con_mas_alumnos_que_espana": [
+     "Alemania",
+     "Francia",
+     "Hungría",
+     "Países Bajos"
+    ]
+   },
+   "eso": {
+    "paises": [
+     {
+      "pais": "LVA",
+      "alumnos": 17.5
+     },
+     {
+      "pais": "POL",
+      "alumnos": 17.8
+     },
+     {
+      "pais": "HRV",
+      "alumnos": 18.2
+     },
+     {
+      "pais": "LUX",
+      "alumnos": 18.7
+     },
+     {
+      "pais": "DNK",
+      "alumnos": 19.3
+     },
+     {
+      "pais": "FIN",
+      "alumnos": 19.4
+     },
+     {
+      "pais": "EST",
+      "alumnos": 19.5
+     },
+     {
+      "pais": "ITA",
+      "alumnos": 19.9
+     },
+     {
+      "pais": "ROU",
+      "alumnos": 20.0
+     },
+     {
+      "pais": "HUN",
+      "alumnos": 20.3
+     },
+     {
+      "pais": "BGR",
+      "alumnos": 20.5
+     },
+     {
+      "pais": "SVK",
+      "alumnos": 20.5
+     },
+     {
+      "pais": "SVN",
+      "alumnos": 20.8
+     },
+     {
+      "pais": "AUT",
+      "alumnos": 21.3
+     },
+     {
+      "pais": "GRC",
+      "alumnos": 21.5
+     },
+     {
+      "pais": "PRT",
+      "alumnos": 21.6
+     },
+     {
+      "pais": "SWE",
+      "alumnos": 21.6
+     },
+     {
+      "pais": "CZE",
+      "alumnos": 21.7
+     },
+     {
+      "pais": "LTU",
+      "alumnos": 21.7
+     },
+     {
+      "pais": "DEU",
+      "alumnos": 23.4
+     },
+     {
+      "pais": "ESP",
+      "alumnos": 25.0
+     },
+     {
+      "pais": "FRA",
+      "alumnos": 25.8
+     }
+    ],
+    "n": 22,
+    "puesto_espana": 21,
+    "espana": 25.0,
+    "mejor": {
+     "pais": "Letonia",
+     "alumnos": 17.5
+    },
+    "peor": {
+     "pais": "Francia",
+     "alumnos": 25.8
+    },
+    "ue25": 20.7,
+    "paises_con_mas_alumnos_que_espana": [
+     "Francia"
+    ]
+   }
+  },
+  "alumnos_por_profesor_2024": {
+   "0_3": {
+    "espana": 8.9,
+    "ue27": null
+   },
+   "3_6": {
+    "espana": 11.5,
+    "ue27": 12.0
+   },
+   "primaria": {
+    "espana": 11.9,
+    "ue27": 13.3
+   },
+   "eso": {
+    "espana": 10.7,
+    "ue27": 11.7
+   }
   }
  },
  "familias": {

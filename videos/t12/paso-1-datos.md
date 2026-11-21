@@ -50,3 +50,23 @@ En `videos/t12/guion.md`: 12 planos, unos 65-70 s. Tutora de 4.º de ESO, padre 
 - **Ratios por aula (alumnos por clase):** plano nuevo con el tamaño medio de la clase en la ESO (OCDE): 25 alumnos en España frente a 21 de media en la UE.
   - **Matiz:** los alumnos por profesor sí han bajado (de 11,7 a 10,7), porque hay un 19 % más de profesores, pero las clases siguen igual de llenas.
   - **Huelgas y manifestaciones:** no salen en el vídeo, porque no son una cifra oficial y el vídeo no da causas.
+
+## Las ratios de las cuatro etapas frente a Europa (Bruno, 21-11-2026)
+**Alumnos por profesor (Eurostat, 2024):** España no sale peor que Europa en ninguna etapa:
+
+| Etapa | España | Media de la UE |
+|---|---|---|
+| 0-3 años (escuela infantil) | 8,9 | sin media de la UE; España, puesto 8 de 12 países con datos |
+| 3-6 años (infantil) | 11,5 | 12,0 |
+| Primaria | 11,9 | 13,3 |
+| ESO | 10,7 | 11,7 |
+
+**Alumnos por clase (OCDE, 2024):** aquí España sí sale mal, pero el dato solo existe para primaria y ESO:
+- **Primaria:** 20,9 alumnos (media de la UE, 19,1); puesto 19 de 23.
+- **ESO:** 25,0 alumnos (media de la UE, 20,7); puesto 21 de 22. Solo Francia (25,8) tiene clases más llenas.
+
+**Qué entra en el vídeo:** el ranking de primaria y ESO, con la mejor (Croacia y Letonia) y la última (Países Bajos y Francia), y el sarcasmo del padre: «¡Mira! Subcampeones de Europa en algo».
+
+**Qué no entra:** 0-3 y 3-6. No hay un dato oficial europeo de alumnos por clase en esas etapas, y en alumnos por profesor España está en la media o mejor.
+
+**Duración:** el vídeo pasa a 75 s.

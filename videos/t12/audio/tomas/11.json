@@ -1,34 +1,30 @@
 {
- "huella": "f86a1b2d95285411",
+ "huella": "a251dff4c91110e1",
  "semilla": 11002,
- "texto": "Y encima, mi padre me paga una academia.",
+ "texto": "¡Mira! Subcampeones de Europa en algo.",
  "ev": {
   "ok": true,
-  "nota": 1.0157,
-  "oido": "Y encima, mi padre me paga una academia.",
+  "nota": 1.0017,
+  "oido": "Mira, subcampeones de Europa en algo.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.14,
-   0.86,
-   1.0,
-   1.2,
-   1.4,
-   1.68,
-   1.86
+   0.68,
+   1.48,
+   1.62,
+   1.86,
+   2.06
   ],
   "t1": [
-   0.14,
-   0.56,
-   1.0,
-   1.2,
-   1.4,
-   1.68,
+   0.22,
+   1.48,
+   1.62,
    1.86,
-   2.2
+   2.06,
+   2.24
   ],
-  "ritmo": 12.2,
-  "voz": 0.881
+  "ritmo": 12.4,
+  "voz": 0.853
  }
 }

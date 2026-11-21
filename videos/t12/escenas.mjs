@@ -33,6 +33,7 @@ export function datos(d) {
     profes: [d.profesores.eso["2016"], d.profesores.eso["2024"]], ratio: [d.profesores.alumnos_por_profesor_eso["2016"], d.profesores.alumnos_por_profesor_eso["2024"]],
     familias: [d.familias.secundaria_por_hogar_eur_de_2025["2016"], d.familias.secundaria_por_hogar_eur_de_2025["2025"]],
     clase: [d.profesores.alumnos_por_clase_eso.espana["2016"], d.profesores.alumnos_por_clase_eso.espana["2024"], d.profesores.alumnos_por_clase_eso.ue25["2024"]],
+    rank: d.profesores.ranking_clase_2024,
   };
 }
 
@@ -252,81 +253,117 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c9-19"]]); } },
 
-    // 10 · El tutor (aula): «Y las clases siguen con 25 alumnos de media. En la Unión Europea, 21.»
+    // 10 · El tutor (aula): «Y las clases, a reventar: 25 alumnos en la ESO. En la Unión Europea, solo Francia las tiene más llenas.»
     { n: 10, set: "vacio",
-      svg: `${panel(230, 820, 600, 410)}${[["ESPAÑA", 25, 5, 48, HOY], ["UE", 21, 5, 48, "#5E8C99"]].map(([et, n, cols, paso, col], i) => `<g transform="translate(${275 + i * 290} 920)">
-          <rect x="-14" y="-14" width="${cols * paso + 4}" height="${Math.ceil(n / cols) * paso + 4}" rx="12" fill="#F4EFE6" stroke="#E3D6BF" stroke-width="3"/>
-          ${Array.from({ length: n }, (_, k) => `<g id="s10-d${i}-${k}" transform="translate(${(k % cols) * paso + paso / 2 - 8} ${Math.floor(k / cols) * paso + paso / 2 - 8})"><rect x="-16" y="-10" width="32" height="20" rx="4" fill="#C9A26B"/><circle cy="-16" r="9" fill="${col}"/></g>`).join("")}
-          <g id="s10-v${i}">${rot(cols * paso / 2 - 10, -36, et + " · " + es(D.clase[i + 1]), 28, col)}</g></g>`).join("")}
-        ${rot(530, 1214, "ALUMNOS POR CLASE EN LA ESO", 18, C.gris)}${gente("s10", "fp")}`,
-      tarjeta: tarjeta(10, "Alumnos por clase en la ESO", `<div class="vs">${[[es(D.clase[0]), "España, 2016"], [es(D.clase[1]), "España, 2024"], [es(D.clase[2]), "UE, 2024"]].map(([v, l], i) => `<div class="col"><div class="v ${i < 2 ? "t-pasado" : "t-hoy"}" id="c10-${"abc"[i]}" style="font-size:62px">${v}</div><div class="n">${l}</div></div>`).join("")}</div>
-        <div class="nota">Media de 25 países de la Unión Europea</div>`, { fuente: F_CLASE, icono: bandera(44) }),
+      svg: `${panel(225, 790, 630, 450)}${[["PRIMARIA", D.rank.primaria, 1000], ["ESO", D.rank.eso, 1205]].map(([et, r, yb], j) => `<g id="s10-g${j}">
+          ${rot(250, yb - 150, et, 24, C.tinta, "", "start")}
+          <line x1="262" y1="${yb - r.ue25 * 5.2}" x2="${262 + r.paises.length * 21}" y2="${yb - r.ue25 * 5.2}" stroke="#5E8C99" stroke-width="3" stroke-dasharray="8 6"/>
+          ${rot(262 + r.paises.length * 21 + 6, yb - r.ue25 * 5.2 + 6, "UE " + es(r.ue25), 18, "#5E8C99", "", "start")}
+          ${r.paises.map((q, k) => `<rect id="s10-b${j}-${k}" x="${262 + k * 21}" y="${yb}" width="15" height="0" rx="4" fill="${q.pais === "ESP" ? HOY : k === 0 ? "#7C9A7E" : k === r.paises.length - 1 ? "#5B6470" : "#C9CED3"}"/>`).join("")}
+          <g id="s10-e${j}">${rot(262 + (r.puesto_espana - 1) * 21 + 8, yb - r.espana * 5.2 - 12, "ESPAÑA " + es(r.espana), 20, HOY, "", "end")}</g>
+          <g id="s10-x${j}">${rot(262, yb + 26, r.mejor.pais.toUpperCase() + " " + es(r.mejor.alumnos), 16, "#5F7F62", "", "start")}${rot(262 + r.paises.length * 21 - 6, yb + 26, r.peor.pais.toUpperCase() + " " + es(r.peor.alumnos), 16, C.gris, "", "end")}</g></g>`).join("")}
+        ${gente("s10", "fp")}`,
+      tarjeta: tarjeta(10, "Alumnos por clase en la ESO (2024)", `<div class="vs">${[[es(D.rank.eso.espana), "España"], [es(D.rank.eso.ue25), "media de la UE"], [es(D.rank.eso.peor.alumnos), "Francia, la última"]].map(([v, l], i) => `<div class="col"><div class="v ${i === 0 ? "t-hoy" : "t-pasado"}" id="c10-${"abc"[i]}" style="font-size:62px">${v}</div><div class="n">${l}</div></div>`).join("")}</div>
+        <div class="nota">De ${D.rank.eso.n} países de la UE con datos, solo Francia tiene clases más llenas. España en 2016: ${es(D.clase[0])}</div>`, { fuente: F_CLASE, icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("aula", null, t, 0);
-        const tt = [c["c10-25"] - 0.2, c["c10-21"] - 0.2], N = [25, 21];
-        for (let i = 0; i < 2; i++) {
-          for (let k = 0; k < N[i]; k++) { const t0 = tt[i] + k * 0.035; css(`s10-d${i}-${k}`, "opacity", clamp((t - t0) / 0.12)); }
-          css(`s10-v${i}`, "opacity", clamp((t - tt[i] - N[i] * 0.035) / 0.3));
+        const tt = [c["c10-reventar"] - 0.2, c["c10-25"] - 0.2], R = [D.rank.primaria, D.rank.eso], YB = [1000, 1205];
+        for (let j = 0; j < 2; j++) {
+          const r = R[j];
+          for (let k = 0; k < r.paises.length; k++) {
+            const h = r.paises[k].alumnos * 5.2 * suave((t - tt[j] - k * 0.03) / 0.35);
+            attr(`s10-b${j}-${k}`, "y", (YB[j] - h).toFixed(1)); attr(`s10-b${j}-${k}`, "height", Math.max(0, h).toFixed(1));
+          }
+          css(`s10-g${j}`, "opacity", clamp((t - tt[j] + 0.2) / 0.3));
+          const ke = t - (tt[j] + r.paises.length * 0.03 + 0.3);
+          css(`s10-e${j}`, "opacity", clamp(ke / 0.3)); css(`s10-x${j}`, "opacity", clamp(ke / 0.3));
         }
-        sube("c10-a", t, tt[0]); sube("c10-b", t, tt[0] + 0.3); sube("c10-c", t, tt[1]);
-        persona("s10-f", t, { x: 125, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c10-25"] - 0.2, "senala"], [c["c10-21"], "hombros"]], fase: 1 });
-        persona("s10-p", t, { x: 950, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c10-21"] + 0.2, "o"]], brazo: [[0, "abajo"], [c["c10-21"] + 0.3, "piensa"]], espejo: true, fase: 2 });
+        // Al decir «Francia», la barra de España late.
+        const kf = t - c["c10-francia"];
+        if (kf > 0 && kf < 1.2) attr(`s10-b1-${D.rank.eso.puesto_espana - 1}`, "width", (15 + 5 * Math.abs(Math.sin(kf * 8))).toFixed(1));
+        sube("c10-a", t, c["c10-25"]); sube("c10-b", t, c["c10-25"] + 0.3); sube("c10-c", t, c["c10-francia"]);
+        persona("s10-f", t, { x: 120, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c10-25"] - 0.2, "senala"], [c["c10-francia"], "hombros"]], fase: 1 });
+        persona("s10-p", t, { x: 960, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c10-francia"] + 0.2, "o"]], ojos: [[0, "normal"], [c["c10-francia"] + 0.2, "grandes"]], brazo: [[0, "abajo"], [c["c10-francia"] + 0.3, "piensa"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c10-25"], e.c["c10-21"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c10-25"], e.c["c10-francia"]]); } },
 
-    // 11 · El alumno (academia): «Y encima, mi padre me paga una academia.»
+    // 11 · El padre (aula), con sorna: «¡Mira! Subcampeones de Europa en algo.»
     { n: 11, set: "vacio",
-      svg: gente("s11", "ap", { a: MOCHILA }),
-      tarjeta: tarjeta(11, "El alumno", `<div class="tit">«Y encima, <mark id="m11">academia</mark>»</div>`, { tono: "hoy" }),
+      svg: `<g id="s11-podio" transform="translate(600 1300) scale(1.05)">
+          ${[[-150, 150, "ESPAÑA", HOY], [0, 210, "FRANCIA", "#5B6470"], [150, 110, "ALEMANIA", "#9AA6AE"]].map(([x, h, et, col]) => `<rect x="${x - 72}" y="${-h}" width="144" height="${h}" rx="8" fill="${col}"/>${rot(x, -h + 40, et, 22, "#FFFDF8")}`).join("")}
+          ${rot(0, 40, "MÁS ALUMNOS POR CLASE EN LA ESO", 18, C.gris)}
+          <g id="s11-med" transform="translate(-150 -200)"><path d="M-14 -40 L0 -10 L14 -40" fill="none" stroke="#1F5F8B" stroke-width="8"/><circle r="24" fill="#C9CED3" stroke="#9AA6AE" stroke-width="5"/></g></g>
+        ${Array.from({ length: 24 }, (_, k) => `<rect id="s11-cf${k}" x="-6" y="-3" width="12" height="6" rx="2" fill="${["#E07A5F", "#F2CC8F", "#81B29A", "#7FA4B0"][k % 4]}"/>`).join("")}
+        ${gente("s11", "ap")}`,
+      tarjeta: tarjeta(11, "El padre", `<div class="tit">«¡<mark id="m11">Subcampeones</mark> de Europa!»</div>`, { tono: "hoy" }),
+      fn: function (t, e) {
+        const c = e.c;
+        ambiente("aula", null, t, 0);
+        marca("m11", t, c["c11-subcampeones"]);
+        pop("s11-podio", t, e.t0 + 0.1, 600, 1300, { s: 1.05 });
+        const km = t - c["c11-subcampeones"];
+        T("s11-med", -150, -178 - (km > 0 ? 0 : 60), { s: km > 0 ? 1 + 0.15 * Math.max(0, 1 - km * 3) : 0.01 });
+        for (let k = 0; k < 24; k++) { const kk = t - c["c11-subcampeones"] - (k % 6) * 0.05; if (kk < 0) { ver(`s11-cf${k}`, false); continue; }
+          T(`s11-cf${k}`, 300 + ((k * 97) % 480) + Math.sin(kk * 4 + k) * 20, 760 + kk * 260 + (k % 5) * 30, { s: 1, r: kk * 300 + k * 40, op: clamp(2 - kk) }); }
+        persona("s11-a", t, { x: 150, y: 1440, s: 0.66, mira: 1, vivo: true, boca: [[0, "o"], [c["c11-subcampeones"] + 0.3, "sonrisa"]], ojos: [[0, "grandes"], [c["c11-subcampeones"] + 0.3, "felices"]], brazo: [[0, "abajo"]], fase: 1 });
+        persona("s11-p", t, { x: 995, y: 1440, s: 0.8, mira: -1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), ojos: [[0, "felices"]],
+          brazo: [[0, "abajo"], [c["c11-mira"], "arriba"], [c["c11-subcampeones"], "hombros"]], espejo: true, fase: 2 });
+      },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c11-subcampeones"]], { acerca: 0.07 }); } },
+
+    // 12 · El alumno (academia): «Y encima, mi padre me paga una academia.»
+    { n: 12, set: "vacio",
+      svg: gente("s12", "ap", { a: MOCHILA }),
+      tarjeta: tarjeta(12, "El alumno", `<div class="tit">«Y encima, <mark id="m12">academia</mark>»</div>`, { tono: "hoy" }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("academia", "aula", t, e.t0);
-        marca("m11", t, c["c11-academia"]);
+        marca("m12", t, c["c12-academia"]);
         const w = ruta(t, [[e.t0 + 0.1, -100], [e.t0 + 1.1, 300]]);
-        persona("s11-a", t, { x: w.x, y: 1440, s: 0.66, anda: w.anda, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "sujeta"], [c["c11-academia"] - 0.2, "hombros"]], fase: 1 });
-        persona("s11-p", t, { x: 830, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"], [c["c11-academia"], "empuja"]], espejo: true, fase: 2 });
+        persona("s12-a", t, { x: w.x, y: 1440, s: 0.66, anda: w.anda, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "sujeta"], [c["c12-academia"] - 0.2, "hombros"]], fase: 1 });
+        persona("s12-p", t, { x: 830, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"], [c["c12-academia"], "empuja"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c11-academia"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c12-academia"]]); } },
 
-    // 12 · El padre (academia): «Pago dos veces. Y como yo, muchos: los hogares gastan un 26 % más en la secundaria de sus hijos que en 2016.»
-    { n: 12, set: "vacio",
-      svg: `${panel(300, 820, 480, 400)}${D.familias.map((v, i) => { const n = Math.round(v / 10); return `<g transform="translate(${440 + i * 200} 1120)">${Array.from({ length: n }, (_, k) => `<g id="s12-m${i}-${k}" transform="translate(0 ${-k * 16}) scale(1.6 .7)">${monedaEuro(`s12-me${i}-${k}`, 20)}</g>`).join("")}
-          <g id="s12-v${i}">${rot(0, -n * 16 - 34, miles(v) + " €", 30, i ? HOY : ANTES_T)}</g>${rot(0, 62, ["2016", "2025"][i], 30, C.gris)}</g>`; }).join("")}
-        ${rot(540, 1206, "GASTO MEDIO POR HOGAR EN ENSEÑANZA SECUNDARIA", 17, C.gris)}${gente("s12", "ap")}`,
-      tarjeta: tarjeta(12, "Gasto medio por hogar en enseñanza secundaria, en euros de 2025", `${vs(12, D.familias.map((v) => miles(v) + "&nbsp;€"), ["en 2016", "en 2025"])}
+    // 13 · El padre (academia): «Pago dos veces. Y como yo, muchos: los hogares gastan un 26 % más en la secundaria de sus hijos que en 2016.»
+    { n: 13, set: "vacio",
+      svg: `${panel(300, 820, 480, 400)}${D.familias.map((v, i) => { const n = Math.round(v / 10); return `<g transform="translate(${440 + i * 200} 1120)">${Array.from({ length: n }, (_, k) => `<g id="s13-m${i}-${k}" transform="translate(0 ${-k * 16}) scale(1.6 .7)">${monedaEuro(`s13-me${i}-${k}`, 20)}</g>`).join("")}
+          <g id="s13-v${i}">${rot(0, -n * 16 - 34, miles(v) + " €", 30, i ? HOY : ANTES_T)}</g>${rot(0, 62, ["2016", "2025"][i], 30, C.gris)}</g>`; }).join("")}
+        ${rot(540, 1206, "GASTO MEDIO POR HOGAR EN ENSEÑANZA SECUNDARIA", 17, C.gris)}${gente("s13", "ap")}`,
+      tarjeta: tarjeta(13, "Gasto medio por hogar en enseñanza secundaria, en euros de 2025", `${vs(13, D.familias.map((v) => miles(v) + "&nbsp;€"), ["en 2016", "en 2025"])}
         <div class="nota">ESO, bachillerato y FP de grado medio</div>`, { fuente: F_FAM, icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("academia", null, t, 0);
-        const tt = [c["c12-26"] - 0.3, c["c12-26"] + 0.2];
+        const tt = [c["c13-26"] - 0.3, c["c13-26"] + 0.2];
         for (let i = 0; i < 2; i++) {
           const n = Math.round(D.familias[i] / 10);
-          for (let k = 0; k < n; k++) { const t0 = tt[i] + k * 0.05; if (t < t0) { ver(`s12-m${i}-${k}`, false); continue; } T(`s12-m${i}-${k}`, 0, -k * 16 - 90 * (1 - fuera((t - t0) / 0.22)), { sx: 1.6, sy: 0.7, op: clamp((t - t0) * 6) }); }
-          css(`s12-v${i}`, "opacity", clamp((t - tt[i] - n * 0.05) / 0.3));
+          for (let k = 0; k < n; k++) { const t0 = tt[i] + k * 0.05; if (t < t0) { ver(`s13-m${i}-${k}`, false); continue; } T(`s13-m${i}-${k}`, 0, -k * 16 - 90 * (1 - fuera((t - t0) / 0.22)), { sx: 1.6, sy: 0.7, op: clamp((t - t0) * 6) }); }
+          css(`s13-v${i}`, "opacity", clamp((t - tt[i] - n * 0.05) / 0.3));
         }
-        sube("c12-a", t, tt[0]); sube("c12-b", t, tt[1]);
-        persona("s12-a", t, { x: 170, y: 1440, s: 0.66, mira: 1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"], [c["c12-26"] + 0.3, "hombros"]], fase: 1 });
-        persona("s12-p", t, { x: 930, y: 1440, s: 0.8, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c12-dos"], "arriba"], [c["c12-26"] - 0.2, "senala"]], espejo: true, fase: 2 });
+        sube("c13-a", t, tt[0]); sube("c13-b", t, tt[1]);
+        persona("s13-a", t, { x: 170, y: 1440, s: 0.66, mira: 1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"], [c["c13-26"] + 0.3, "hombros"]], fase: 1 });
+        persona("s13-p", t, { x: 930, y: 1440, s: 0.8, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c13-dos"], "arriba"], [c["c13-26"] - 0.2, "senala"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c12-dos"], e.c["c12-26"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c13-dos"], e.c["c13-26"]]); } },
 
-    // 13 · El alumno, a cámara (pasillo del instituto): «Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
-    { n: 13, set: "vacio",
-      svg: `<g id="s13-bal" transform="translate(420 1300) scale(.75)">${balanza("s13-b", ["LO QUE PAGAS", `${[0, 1, 2].map((k) => `<g transform="translate(${(k - 1) * 46} ${-20 - k * 6}) scale(.5)">${billete("s13-bi" + k)}</g>`).join("")}`],
-          ["LO QUE APRENDEN", `<g transform="translate(0 -26)">${libro("s13-li", "#5E8C99")}</g>`])}</g>
-        ${gente("s13", "a", { a: MOCHILA })}`,
-      tarjeta: tarjeta(13, "Te toca", `<div class="tit" style="font-size:58px">Impuestos de récord y aprendemos menos. ¿Nos tenemos que <mark id="m13">conformar</mark>?</div><div class="sub" id="c13-sub">¿Tú qué opinas? Te leo en los comentarios.</div>`),
+    // 14 · El alumno, a cámara (pasillo del instituto): «Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+    { n: 14, set: "vacio",
+      svg: `<g id="s14-bal" transform="translate(420 1300) scale(.75)">${balanza("s14-b", ["LO QUE PAGAS", `${[0, 1, 2].map((k) => `<g transform="translate(${(k - 1) * 46} ${-20 - k * 6}) scale(.5)">${billete("s14-bi" + k)}</g>`).join("")}`],
+          ["LO QUE APRENDEN", `<g transform="translate(0 -26)">${libro("s14-li", "#5E8C99")}</g>`])}</g>
+        ${gente("s14", "a", { a: MOCHILA })}`,
+      tarjeta: tarjeta(14, "Te toca", `<div class="tit" style="font-size:58px">Impuestos de récord y aprendemos menos. ¿Nos tenemos que <mark id="m14">conformar</mark>?</div><div class="sub" id="c14-sub">¿Tú qué opinas? Te leo en los comentarios.</div>`),
       fn: function (t, e) {
         const c = e.c;
         ambiente("pasilloInsti", "academia", t, e.t0);
-        const a = -14 * rebote(clamp((t - c["c13-record"]) / 0.6)) + 1.5 * Math.sin(t * 3) * (t > c["c13-record"] ? 1 : 0), r = a * Math.PI / 180;
-        attr("s13-b-b", "transform", `rotate(${a.toFixed(2)} 0 -420)`);
-        T("s13-b-pi", -300 * Math.cos(r), -420 - 300 * Math.sin(r) + 150, {}); T("s13-b-pd", 300 * Math.cos(r), -420 + 300 * Math.sin(r) + 150, {});
-        marca("m13", t, c["c13-conformar"]); sube("c13-sub", t, c["c13-tu"] - 0.2);
-        persona("s13-a", t, { x: 900, y: 1440, s: 0.74, mira: [[0, -1], [c["c13-conformar"], 0]], vivo: true, charla: e, boca: habla(t, e, "seria"),
-          brazo: [[0, "sujeta"], [c["c13-record"] - 0.2, "senala"], [c["c13-tu"], "hombros"]], incl: [[0, 0], [c["c13-conformar"], -6], [c["c13-tu"], 0]], espejo: true, fase: 2 });
+        const a = -14 * rebote(clamp((t - c["c14-record"]) / 0.6)) + 1.5 * Math.sin(t * 3) * (t > c["c14-record"] ? 1 : 0), r = a * Math.PI / 180;
+        attr("s14-b-b", "transform", `rotate(${a.toFixed(2)} 0 -420)`);
+        T("s14-b-pi", -300 * Math.cos(r), -420 - 300 * Math.sin(r) + 150, {}); T("s14-b-pd", 300 * Math.cos(r), -420 + 300 * Math.sin(r) + 150, {});
+        marca("m14", t, c["c14-conformar"]); sube("c14-sub", t, c["c14-tu"] - 0.2);
+        persona("s14-a", t, { x: 900, y: 1440, s: 0.74, mira: [[0, -1], [c["c14-conformar"], 0]], vivo: true, charla: e, boca: habla(t, e, "seria"),
+          brazo: [[0, "sujeta"], [c["c14-record"] - 0.2, "senala"], [c["c14-tu"], "hombros"]], incl: [[0, 0], [c["c14-conformar"], -6], [c["c14-tu"], 0]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c13-record"], e.c["c13-conformar"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c14-record"], e.c["c14-conformar"]]); } },
   ];
 }

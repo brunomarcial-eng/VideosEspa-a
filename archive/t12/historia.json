@@ -183,80 +183,102 @@
    "vol": 0.25
   },
   {
-   "id": "c10-25",
+   "id": "c10-reventar",
    "beat": 10,
-   "palabra": "25",
-   "dt": -0.05,
+   "palabra": "reventar",
+   "dt": -0.1,
    "sfx": "pop",
    "vol": 0.3
   },
   {
-   "id": "c10-21",
+   "id": "c10-25",
    "beat": 10,
-   "palabra": "21",
+   "palabra": "25",
    "dt": -0.05,
-   "sfx": "ting",
-   "vol": 0.28
+   "sfx": "sube",
+   "vol": 0.3
   },
   {
-   "id": "c11-sueno",
+   "id": "c10-francia",
+   "beat": 10,
+   "palabra": "francia",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-mira",
    "beat": 11,
+   "palabra": "mira",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-subcampeones",
+   "beat": 11,
+   "palabra": "subcampeones",
+   "dt": -0.1,
+   "sfx": "campanilla",
+   "vol": 0.35
+  },
+  {
+   "id": "c12-sueno",
+   "beat": 12,
    "en": "inicio",
    "dt": -0.6,
    "sfx": "sueno",
    "vol": 0.3
   },
   {
-   "id": "c11-academia",
-   "beat": 11,
+   "id": "c12-academia",
+   "beat": 12,
    "palabra": "academia",
    "dt": -0.1,
    "sfx": "campanilla",
    "vol": 0.3
   },
   {
-   "id": "c12-dos",
-   "beat": 12,
+   "id": "c13-dos",
+   "beat": 13,
    "palabra": "dos",
    "dt": -0.05,
    "sfx": "golpe",
    "vol": 0.3
   },
   {
-   "id": "c12-26",
-   "beat": 12,
+   "id": "c13-26",
+   "beat": 13,
    "palabra": "26",
    "dt": -0.05,
    "sfx": "moneda",
    "vol": 0.45
   },
   {
-   "id": "c13-sueno",
-   "beat": 13,
+   "id": "c14-sueno",
+   "beat": 14,
    "en": "inicio",
    "dt": -0.6,
    "sfx": "sueno",
    "vol": 0.3
   },
   {
-   "id": "c13-record",
-   "beat": 13,
+   "id": "c14-record",
+   "beat": 14,
    "palabra": "récord",
    "dt": -0.05,
    "sfx": "golpe",
    "vol": 0.4
   },
   {
-   "id": "c13-conformar",
-   "beat": 13,
+   "id": "c14-conformar",
+   "beat": 14,
    "palabra": "conformar",
    "dt": -0.1,
    "sfx": "ting",
    "vol": 0.3
   },
   {
-   "id": "c13-tu",
-   "beat": 13,
+   "id": "c14-tu",
+   "beat": 14,
    "palabra": "tú",
    "dt": -0.1,
    "sfx": "ding",

@@ -11,16 +11,20 @@ plano 5: «España ha perdido 45 puntos en lectura desde 2015. Más que la media
 plano 6: «¡Pero si pagamos más que nunca!»
     toma guardada (semilla 6001): BUENA · «Pero sí, pagamos más que nunca.»
 plano 7: «Es verdad. Por habitante, se recauda un 25 % más que en 2016, ya descontada la inflación. Récord.»
-    toma 1 (semilla 7001): BUENA · 1.0 · voz 0.939 · 7.9 s · 13.0 l/s · «Es verdad. Por habitante, se recauda un 25% más que en 2016, ya descontada la inflación. Record.»
+    toma guardada (semilla 7001): BUENA · «Es verdad. Por habitante, se recauda un 25% más que en 2016, ya descontada la inflación. Record.»
 plano 8: «Y en educación se gasta un 12 % más por habitante.»
     toma guardada (semilla 8000): BUENA · «Y en educación se gasta un 12% más por habitante.»
 plano 9: «Y en la ESO hay un 19 % más de profesores. Aun así, aprenden menos.»
     toma guardada (semilla 9000): BUENA · «Y en la ESO hay un 19% más de profesores. Aun así, aprenden menos.»
-plano 10: «Y las clases siguen con 25 alumnos de media. En la Unión Europea, 21.»
-    toma 1 (semilla 10001): BUENA · 1.0 · voz 0.921 · 5.0 s · 13.9 l/s · «y las clases siguen con 25 alumnos de media. En la Unión Europea, 21.»
-plano 11: «Y encima, mi padre me paga una academia.»
+plano 10: «Y las clases, a reventar: 25 alumnos en la ESO. En la Unión Europea, solo Francia las tiene más llenas.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.92 · 6.6 s · 13.3 l/s · «y las clases a reventar 25 alumnos en la ESO. En la Unión Europea, solo Francia las tiene más llenas.»
+plano 11: «¡Mira! Subcampeones de Europa en algo.»
+    toma 1 (semilla 11000): mala · 1.0 · voz 0.701 · 2.9 s · 10.2 l/s · «Mira, subcampeones de Europa en algo.» · voz distinta (0.70)
+    toma 2 (semilla 11001): mala · 1.0 · voz 0.827 · 2.4 s · 12.6 l/s · «Mira, subcampeones de Europa en algo.» · voz distinta (0.83)
+    toma 3 (semilla 11002): BUENA · 1.0 · voz 0.853 · 2.4 s · 12.4 l/s · «Mira, subcampeones de Europa en algo.»
+plano 12: «Y encima, mi padre me paga una academia.»
     toma guardada (semilla 11002): BUENA · «Y encima, mi padre me paga una academia.»
-plano 12: «Pago dos veces. Y como yo, muchos: los hogares gastan un 26 % más en la secundaria de sus hijos que en 2016.»
+plano 13: «Pago dos veces. Y como yo, muchos: los hogares gastan un 26 % más en la secundaria de sus hijos que en 2016.»
     toma guardada (semilla 11000): BUENA · «pago dos veces, y como yo muchos, los hogares gastan un 26% más en la secundaria de sus hijos que en 2016.»
-plano 13: «Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+plano 14: «Impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
     toma guardada (semilla 13001): BUENA · «impuestos de récord y aprendemos menos que en 2015. ¿Nos tenemos que conformar? ¿Tú qué opinas?»

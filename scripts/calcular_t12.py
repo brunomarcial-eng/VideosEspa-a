@@ -106,6 +106,31 @@ def main():
     profes["alumnos_por_clase_eso"] = {"espana": {"2016": clase("ESP", 2016), "2024": clase("ESP", 2024)},
                                        "ue25": {"2016": clase("EU25", 2016), "2024": clase("EU25", 2024)},
                                        "ocde": {"2016": clase("OECD", 2016), "2024": clase("OECD", 2024)}}
+    # Ranking de la UE en alumnos por clase (2024; países de la UE con datos de la OCDE). 1 = clases menos llenas.
+    UE = {"AUT", "BEL", "BGR", "HRV", "CZE", "DNK", "EST", "FIN", "FRA", "DEU", "GRC", "HUN", "IRL", "ITA", "LVA", "LTU", "LUX", "NLD", "POL", "PRT", "ROU", "SVK", "SVN", "ESP", "SWE", "CYP", "MLT"}
+    NOMBRE = {"HRV": "Croacia", "LUX": "Luxemburgo", "GRC": "Grecia", "FRA": "Francia", "HUN": "Hungría", "NLD": "Países Bajos", "LVA": "Letonia",
+              "POL": "Polonia", "DEU": "Alemania", "ESP": "España"}
+    ranking = {}
+    for etapa, lev in (("primaria", "ISCED11_1"), ("eso", "ISCED11_2")):
+        v = {r["REF_AREA"]: round(float(r["OBS_VALUE"]), 1) for r in filas if r["EDUCATION_LEV"] == lev and r["INST_TYPE_EDU"] == "INST_EDU"
+             and r["TIME_PERIOD"] == "2024" and r["OBS_VALUE"] and r["REF_AREA"] in UE}
+        orden = sorted(v, key=lambda k: (v[k], k))
+        ranking[etapa] = {"paises": [{"pais": k, "alumnos": v[k]} for k in orden], "n": len(orden), "puesto_espana": orden.index("ESP") + 1,
+                          "espana": v["ESP"], "mejor": {"pais": NOMBRE.get(orden[0], orden[0]), "alumnos": v[orden[0]]},
+                          "peor": {"pais": NOMBRE.get(orden[-1], orden[-1]), "alumnos": v[orden[-1]]},
+                          "ue25": next(round(float(r["OBS_VALUE"]), 1) for r in filas if r["REF_AREA"] == "EU25" and r["EDUCATION_LEV"] == lev
+                                       and r["INST_TYPE_EDU"] == "INST_EDU" and r["TIME_PERIOD"] == "2024" and r["OBS_VALUE"])}
+        ranking[etapa]["paises_con_mas_alumnos_que_espana"] = [NOMBRE.get(k, k) for k in orden[orden.index("ESP") + 1:]]
+    profes["ranking_clase_2024"] = ranking
+    # Contraste (no va en el vídeo): alumnos por profesor en las cuatro etapas, España frente a la UE (Eurostat)
+    import calcular_t9  # noqa: E402
+    def perp(nivel, geo):
+        try:
+            return calcular_t9.eurostat_valor("eurostat_educ_uoe_perp04_ue.json", isced11=nivel, geo=geo, time="2024")
+        except KeyError:
+            return None
+    profes["alumnos_por_profesor_2024"] = {et: {"espana": perp(n, "ES"), "ue27": perp(n, "EU27_2020")} for et, n in
+                                           (("0_3", "ED01"), ("3_6", "ED02"), ("primaria", "ED1"), ("eso", "ED2"))}
     profes["alumnos_por_clase_eso"]["mas_que_ue_2024"] = round(profes["alumnos_por_clase_eso"]["espana"]["2024"] - profes["alumnos_por_clase_eso"]["ue25"]["2024"], 1)
 
     fam = {a: epf("Enseñanza Secundaria y Postsecundaria no superior", a) for a in (2016, 2025)}
