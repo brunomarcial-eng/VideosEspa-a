@@ -1,0 +1,118 @@
+{
+ "tema": "T12 — educación, 2016 frente a hoy: lo que pagamos frente a lo que aprenden los alumnos",
+ "pagamos": {
+  "total_mill_eur": {
+   "2016": 383419.0,
+   "2025": 644489.0
+  },
+  "total_mill_eur_de_2025": {
+   "2016": 487036,
+   "2025": 644489
+  },
+  "sube_real_pct": 32.3,
+  "por_habitante_eur_de_2025": {
+   "2016": 10492,
+   "2025": 13118
+  },
+  "presion_fiscal_pct_pib": {
+   "2007": 37.2,
+   "2016": 34.1,
+   "2025": 38.1
+  },
+  "por_habitante_sube_real_pct": 25.0,
+  "presion_fiscal_maxima_de_la_serie": {
+   "anos": [
+    2021,
+    2025
+   ],
+   "pct_pib": 38.1
+  },
+  "recaudacion_real_maxima_desde_2002": 2025,
+  "anterior_maximo_real": {
+   "ano": 2007,
+   "mill_eur_de_2025": 571358
+  }
+ },
+ "aprenden": {
+  "lectura": {
+   "media": {
+    "2015": 496,
+    "2025": 451
+   },
+   "puntos_menos": 45,
+   "bajo_nivel_2_pct": {
+    "2015": 16.2,
+    "2025": 31.5
+   },
+   "ocde35": {
+    "2015": 490.3,
+    "2025": 463.0
+   }
+  },
+  "matematicas": {
+   "media": {
+    "2015": 486,
+    "2025": 457
+   },
+   "puntos_menos": 29,
+   "bajo_nivel_2_pct": {
+    "2015": 22.2,
+    "2025": 33.4
+   },
+   "ocde35": {
+    "2015": 487.2,
+    "2025": 465.5
+   }
+  },
+  "ciencias": {
+   "media": {
+    "2015": 493,
+    "2025": 477
+   }
+  }
+ },
+ "gasto_educacion": {
+  "mill_eur": {
+   "2016": 45328.0,
+   "2024": 65862.0
+  },
+  "por_habitante_eur_de_2025": {
+   "2016": 1240,
+   "2024": 1391
+  },
+  "por_habitante_sube_real_pct": 12.2
+ },
+ "profesores": {
+  "eso": {
+   "2016": 136301,
+   "2024": 162830,
+   "sube_pct": 19.5
+  },
+  "alumnos_por_profesor_eso": {
+   "2016": 11.7,
+   "2024": 10.7
+  }
+ },
+ "familias": {
+  "secundaria_por_hogar_eur_corrientes": {
+   "2016": 83.09,
+   "2025": 133.78
+  },
+  "secundaria_por_hogar_eur_de_2025": {
+   "2016": 106,
+   "2025": 134
+  },
+  "sube_real_pct": 26.4,
+  "contraste": {
+   "infantil_y_primaria": {
+    "2016": 183,
+    "2025": 140
+   },
+   "libros": {
+    "2016": 165,
+    "2025": 70
+   }
+  }
+ },
+ "nota": "PISA: alumnado de 15 años. 2015 es la edición más cercana a 2016; 2025, la última. Bajo el nivel 2 = no llega al nivel básico de competencia que fija la OCDE. Lectura de España en 2018: sin dato (la OCDE no lo publicó). La media de la OCDE también baja (OCDE-35: lectura de 490 a 463 y matemáticas de 487 a 465), pero menos que España. Gasto en educación: todas las administraciones (Eurostat COFOG GF09), 2024 último año. Profesores y alumnos por profesor: ESO (CINE 2), Eurostat. Familias: gasto medio por hogar en enseñanza secundaria y postsecundaria no superior (INE, EPF); en primaria y en libros gastan menos que en 2016."
+}

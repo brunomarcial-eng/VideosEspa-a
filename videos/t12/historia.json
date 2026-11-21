@@ -1,0 +1,250 @@
+{
+ "nota": "Momentos clave de T12 (educación, 2016 frente a hoy). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t12/escenas.mjs) y el sonido (scripts/sonido.py). La música se corta en seco con el sello de «récord».",
+ "musica": {
+  "bpm": 98,
+  "corte": "c7-record",
+  "silencio_s": 1.0
+ },
+ "cues": [
+  {
+   "id": "c1-impuestos",
+   "beat": 1,
+   "palabra": "impuestos",
+   "dt": -0.1
+  },
+  {
+   "id": "c1-menos",
+   "beat": 1,
+   "palabra": "menos",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c1-tutoria",
+   "beat": 1,
+   "palabra": "tutoría",
+   "dt": -0.1,
+   "sfx": "timbre",
+   "vol": 0.25
+  },
+  {
+   "id": "c2-sueno",
+   "beat": 2,
+   "en": "inicio",
+   "dt": -0.6,
+   "sfx": "sueno",
+   "vol": 0.35
+  },
+  {
+   "id": "c2-lectura",
+   "beat": 2,
+   "palabra": "lectura",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c2-tres",
+   "beat": 2,
+   "palabra": "tres",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-2015",
+   "beat": 2,
+   "palabra": "2015",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c2-seis",
+   "beat": 2,
+   "palabra": "seis",
+   "dt": -0.05,
+   "sfx": "ting",
+   "vol": 0.25
+  },
+  {
+   "id": "c3-monton",
+   "beat": 3,
+   "palabra": "montón",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-movil",
+   "beat": 3,
+   "palabra": "móvil",
+   "dt": -0.1,
+   "sfx": "notif",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-22",
+   "beat": 4,
+   "palabra": "22",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-33",
+   "beat": 4,
+   "palabra": "33",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-tres",
+   "beat": 4,
+   "palabra": "tres",
+   "dt": -0.05
+  },
+  {
+   "id": "c5-45",
+   "beat": 5,
+   "palabra": "45",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.35
+  },
+  {
+   "id": "c5-ocde",
+   "beat": 5,
+   "palabra": "ocde",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-pagamos",
+   "beat": 6,
+   "palabra": "pagamos",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.5
+  },
+  {
+   "id": "c6-nunca",
+   "beat": 6,
+   "palabra": "nunca",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-25",
+   "beat": 7,
+   "palabra": "25",
+   "dt": -0.05,
+   "sfx": "caja",
+   "vol": 0.4
+  },
+  {
+   "id": "c7-record",
+   "beat": 7,
+   "palabra": "récord",
+   "dt": -0.05,
+   "sfx": "sello",
+   "vol": 0.55
+  },
+  {
+   "id": "c8-educacion",
+   "beat": 8,
+   "palabra": "educación",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-12",
+   "beat": 8,
+   "palabra": "12",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.35
+  },
+  {
+   "id": "c9-19",
+   "beat": 9,
+   "palabra": "19",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c9-menos",
+   "beat": 9,
+   "palabra": "menos",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-sueno",
+   "beat": 10,
+   "en": "inicio",
+   "dt": -0.6,
+   "sfx": "sueno",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-academia",
+   "beat": 10,
+   "palabra": "academia",
+   "dt": -0.1,
+   "sfx": "campanilla",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-dos",
+   "beat": 11,
+   "palabra": "dos",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-26",
+   "beat": 11,
+   "palabra": "26",
+   "dt": -0.05,
+   "sfx": "moneda",
+   "vol": 0.45
+  },
+  {
+   "id": "c12-sueno",
+   "beat": 12,
+   "en": "inicio",
+   "dt": -0.6,
+   "sfx": "sueno",
+   "vol": 0.3
+  },
+  {
+   "id": "c12-record",
+   "beat": 12,
+   "palabra": "récord",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.4
+  },
+  {
+   "id": "c12-conformar",
+   "beat": 12,
+   "palabra": "conformar",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c12-tu",
+   "beat": 12,
+   "palabra": "tú",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  }
+ ]
+}

@@ -62,6 +62,24 @@
    "estado": "elegida por Bruno el 21-11-2026 (voz B del casting de la médica)",
    "nota": "Médica de familia de T11 (unos 45 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/medica_voz.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
    "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "profesora": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-profesora.wav",
+   "ref_txt": "diseno/voces/ref-profesora.txt",
+   "estado": "provisional (voz A del casting de T12, 21-11-2026): pendiente de que Bruno elija entre A, B y C",
+   "nota": "Tutora de 4.º de ESO de T12 (unos 40 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/educacion_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "alumno": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-alumno.wav",
+   "ref_txt": "diseno/voces/ref-alumno.txt",
+   "estado": "provisional (voz A del casting de T12, 21-11-2026): pendiente de que Bruno elija entre A, B y C",
+   "nota": "Alumno de 15 años de T12. Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/educacion_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
   }
  },
  "edad": {
@@ -110,6 +128,14 @@
    "velocidad": 1.0
   },
   "enfermero": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "profesora": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "alumno": {
    "tono": 1.0,
    "velocidad": 1.0
   }
