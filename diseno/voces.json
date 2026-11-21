@@ -80,6 +80,33 @@
    "estado": "elegida por Bruno el 21-11-2026 (voz B del casting del alumno)",
    "nota": "Alumno de 15 años de T12. Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/educacion_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
    "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "viajera": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-viajera.wav",
+   "ref_txt": "diseno/voces/ref-viajera.txt",
+   "estado": "elegida por Bruno el 21-11-2026 (voz A del casting de la viajera)",
+   "nota": "Viajera de T13 (unos 35 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/transporte_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "comandante": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-comandante.wav",
+   "ref_txt": "diseno/voces/ref-comandante.txt",
+   "estado": "elegida por Bruno el 21-11-2026 (voz A del casting de el comandante)",
+   "nota": "Comandante de avión de T13 (unos 55 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/transporte_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "maquinista": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-maquinista.wav",
+   "ref_txt": "diseno/voces/ref-maquinista.txt",
+   "estado": "elegida por Bruno el 21-11-2026 (voz A del casting de el maquinista)",
+   "nota": "Maquinista de tren de T13 (unos 45 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/transporte_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
   }
  },
  "edad": {
@@ -136,6 +163,18 @@
    "velocidad": 1.0
   },
   "alumno": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "viajera": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "comandante": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "maquinista": {
    "tono": 1.0,
    "velocidad": 1.0
   }
