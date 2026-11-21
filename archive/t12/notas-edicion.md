@@ -1,6 +1,6 @@
 # T12 · Notas de edición (archivo por si hay apelación)
 
-**Vídeo:** «¿Pagamos más para que aprendan menos?» (educación, 2016 frente a hoy) · Short vertical 1080×1920, 75,3 s, −14.1 LUFS.
+**Vídeo:** «¿Pagamos más para que aprendan menos?» (educación, 2016 frente a hoy) · Short vertical 1080×1920, 75,3 s, −14,1 LUFS.
 **Fichero:** `videos/t12/render/t12-limpio.mp4` · SHA-256 `7c378fcf020149da7ed64cebb2e7092363f0041f011e65361ea17c342021b2db`.
 **Aprobación:** es el segundo de los tres vídeos de lo que pagamos frente a lo que recibimos que pidió el responsable del canal el 21-11-2026. Ese mismo día eligió las voces (profesor A, alumno B) y pidió añadir las ratios por aula. Después pidió comparar las ratios de las cuatro etapas con Europa y algún sarcasmo más: entra el ranking de la UE de alumnos por clase en primaria y ESO y el «¡Subcampeones de Europa!» del padre (0-3 y 3-6 no entran; ver `paso-1-datos.md`). Primer render pendiente de su visto bueno.
 
