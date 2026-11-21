@@ -59,7 +59,7 @@
    "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
    "ref": "diseno/voces/ref-medica.wav",
    "ref_txt": "diseno/voces/ref-medica.txt",
-   "estado": "provisional (voz B del casting de la médica, 21-11-2026): pendiente de que Bruno elija entre A, B y C",
+   "estado": "elegida por Bruno el 21-11-2026 (voz B del casting de la médica)",
    "nota": "Médica de familia de T11 (unos 45 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/medica_voz.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
    "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
   }

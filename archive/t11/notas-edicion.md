@@ -17,6 +17,6 @@
 - **Voces:** Qwen3-TTS en local.
   - **Paciente:** la voz del padre (T3 a T8).
   - **Enfermero:** la voz del hijo.
-  - **Médica:** voz nueva inventada a partir de una descripción (casting de T11, opción B, provisional hasta que el responsable elija).
+  - **Médica:** voz nueva inventada a partir de una descripción (casting de T11, opción B, elegida por el responsable del canal el 21-11-2026).
   - **Revisión:** cada toma se revisa con Whisper (`voz-registro.txt`).
 - **Música y efectos:** generados con código (`scripts/sonido.py`). Contenido sintético: sí.
