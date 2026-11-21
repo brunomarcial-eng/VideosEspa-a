@@ -1,5 +1,5 @@
 {
- "nota": "Momentos clave de T13 (infraestructuras, 2016 frente a hoy). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t13/escenas.mjs) y el sonido (scripts/sonido.py). Suena la megafonía del avión, la bocina del tren y el claxon del coche; la música se corta en seco con el sello de «récord».",
+ "nota": "Momentos clave de T13 (infraestructuras, 2016 frente a hoy). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t13/escenas.mjs) y el sonido (scripts/sonido.py). Suena la megafonía del avión, la bocina del tren y el claxon del coche; la música se corta en seco con el sello de «récord». Debajo, el ambiente de cada escenario (Bruno, 21-11-2026): murmullo de terminal, motores en cabina, traqueteo en el andén y tráfico con bocinas en el peaje, y dos avisos por megafonía con voces del catálogo (se generan con «voces.py --muestra TEXTO FICHERO --perfil VOZ»).",
  "musica": {
   "bpm": 98,
   "corte": "c11-record",
@@ -281,6 +281,57 @@
    "dt": -0.1,
    "sfx": "ding",
    "vol": 0.25
+  }
+ ],
+ "ambientes": [
+  {
+   "tipo": "aeropuerto",
+   "desde": 1,
+   "hasta": 1,
+   "vol": 1.0
+  },
+  {
+   "tipo": "cabina",
+   "desde": 2,
+   "hasta": 6,
+   "vol": 1.0
+  },
+  {
+   "tipo": "anden",
+   "desde": 7,
+   "hasta": 9,
+   "vol": 1.0
+  },
+  {
+   "tipo": "trafico",
+   "desde": 10,
+   "hasta": 13,
+   "vol": 1.0
+  }
+ ],
+ "avisos": [
+  {
+   "fichero": "audio/ambiente/aviso-aeropuerto.wav",
+   "texto": "Última llamada para los pasajeros del vuelo con destino Valencia. Embarque inmediato por la puerta B.",
+   "voz": "medica",
+   "beat": 1,
+   "en": "inicio",
+   "dt": -0.3,
+   "campana": "megafonia",
+   "vol": 1.0,
+   "pan": -0.2
+  },
+  {
+   "fichero": "audio/ambiente/aviso-estacion.wav",
+   "texto": "Tren con destino A Coruña: circula con retraso. Disculpen las molestias.",
+   "voz": "hostelera",
+   "beat": 9,
+   "en": "inicio",
+   "dt": -1.8,
+   "campana": "estacion",
+   "tras_campana_s": 1.4,
+   "vol": 1.0,
+   "pan": 0.2
   }
  ]
 }

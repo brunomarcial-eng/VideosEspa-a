@@ -649,9 +649,10 @@ def main(argv):
             avisos.poner(EFECTOS[a["campana"]](), t, NIVEL[a["campana"]] * a.get("vol", 1.0) * 1.6)
             t += a.get("tras_campana_s", 1.3)
         y = megafonia(leer(d / a["fichero"]))
-        avisos.poner(y, t, 0.16 * a.get("vol", 1.0), pan=a.get("pan", 0.0))
-    # el fondo también se aparta cuando habla la voz (algo menos que la música; los avisos, algo más)
-    amb_b = amb.b[:n] * (1 - 0.45 * suave)[:, None] + avisos.b[:n] * (1 - 0.6 * suave)[:, None]
+        avisos.poner(y, t, 0.30 * a.get("vol", 1.0), pan=a.get("pan", 0.0))
+    # el fondo también se aparta cuando habla la voz (algo menos que la música; los avisos, menos aún:
+    # quedan unos 12 dB por debajo del diálogo, que se oigan de fondo sin taparlo)
+    amb_b = amb.b[:n] * (1 - 0.45 * suave)[:, None] + avisos.b[:n] * (1 - 0.35 * suave)[:, None]
 
     mezcla = np.stack([voz, voz], axis=1) + mus_b + fx.b[:n] + amb_b
     pico = np.abs(mezcla).max()
