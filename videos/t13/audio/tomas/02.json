@@ -1,0 +1,42 @@
+{
+ "huella": "3aa4ee6e3fc12742",
+ "semilla": 2000,
+ "texto": "Les habla el comandante: tenemos retraso por el control del tráfico aéreo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0576,
+  "oido": "Les habla el comandante. Tenemos retraso por el control del tráfico aéreo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   0.48,
+   0.58,
+   1.74,
+   2.1,
+   2.76,
+   2.9,
+   3.0,
+   3.32,
+   3.52,
+   4.04
+  ],
+  "t1": [
+   0.18000000000000002,
+   0.48,
+   0.58,
+   1.2,
+   2.1,
+   2.76,
+   2.9,
+   3.0,
+   3.32,
+   3.52,
+   4.04,
+   4.36
+  ],
+  "ritmo": 13.9,
+  "voz": 0.965
+ }
+}
