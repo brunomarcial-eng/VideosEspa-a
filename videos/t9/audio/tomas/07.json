@@ -1,0 +1,46 @@
+{
+ "huella": "f3b6e748c9b7c873",
+ "semilla": 7000,
+ "texto": "Pues la luz me cuesta menos: 67 horas al año en 2016. Hoy, 62.",
+ "ev": {
+  "ok": true,
+  "nota": 1.04,
+  "oido": "Pues la luz me cuesta menos, 67 horas al año en 2016, hoy 62.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.3,
+   0.46,
+   0.64,
+   0.98,
+   1.64,
+   2.26,
+   2.78,
+   3.04,
+   3.28,
+   3.38,
+   4.68,
+   5.0
+  ],
+  "t1": [
+   0.14,
+   0.3,
+   0.46,
+   0.64,
+   0.98,
+   1.22,
+   2.26,
+   2.78,
+   3.04,
+   3.28,
+   3.38,
+   3.98,
+   5.0,
+   5.5
+  ],
+  "ritmo": 13.1,
+  "voz": 0.93
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "huella": "1c82d721ae87ed3a",
+ "semilla": 1000,
+ "texto": "¡Diez años fuera! ¿Vuelves para quedarte?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0119,
+  "oido": "10 años fuera. ¿Vuelves para quedarte?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.2,
+   0.46,
+   1.6,
+   1.96,
+   2.18
+  ],
+  "t1": [
+   0.2,
+   0.46,
+   0.86,
+   1.96,
+   2.18,
+   2.66
+  ],
+  "ritmo": 11.2,
+  "voz": 0.874
+ }
+}

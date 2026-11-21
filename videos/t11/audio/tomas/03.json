@@ -1,0 +1,26 @@
+{
+ "huella": "648dce752e89a29b",
+ "semilla": 3000,
+ "texto": "¿Y cuánto tardan?",
+ "ev": {
+  "ok": false,
+  "nota": 0.9974,
+  "oido": "¿Y cuánto tardan?",
+  "parecido": 1.0,
+  "problemas": [
+   "voz distinta (0.84)"
+  ],
+  "t0": [
+   0.0,
+   0.12,
+   0.48
+  ],
+  "t1": [
+   0.12,
+   0.48000000000000004,
+   0.8
+  ],
+  "ritmo": 14.4,
+  "voz": 0.845
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "huella": "484fc9df06ca2ed6",
+ "semilla": 9000,
+ "texto": "De cada 100 habitantes, trabajan 40. Seis menos.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "De cada 100 habitantes trabajan 40, 6 menos.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.32,
+   0.56,
+   1.16,
+   1.76,
+   2.5,
+   2.72
+  ],
+  "t1": [
+   0.12,
+   0.32,
+   0.56,
+   1.16,
+   1.76,
+   2.04,
+   2.72,
+   2.98
+  ],
+  "ritmo": 14.2
+ }
+}

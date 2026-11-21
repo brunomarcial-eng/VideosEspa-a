@@ -1,0 +1,27 @@
+{
+ "huella": "fc97e7c9e13d0805",
+ "semilla": 5203,
+ "texto": "¿Entonces qué ha cambiado?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Entonces, ¿qué ha cambiado?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.7,
+   0.78,
+   0.88
+  ],
+  "t1": [
+   0.46,
+   0.78,
+   0.88,
+   1.28
+  ],
+  "ritmo": 15.4,
+  "voz": 0.903
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.012; parecido 0.912)"
+}

@@ -1,0 +1,31 @@
+{
+ "huella": "7070544582c56f28",
+ "semilla": 10106,
+ "texto": "Vosotros pagabais intereses. Nosotros pagamos ladrillo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "vosotros pagabais intereses, nosotros pagamos ladrillo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.42,
+   0.98,
+   2.04,
+   2.3,
+   2.88
+  ],
+  "t1": [
+   0.42,
+   0.98,
+   1.72,
+   2.3,
+   2.88,
+   3.28
+  ],
+  "ritmo": 14.0,
+  "voz": 0.932
+ },
+ "eleccion": "elegida a mano entre 8 tomas: la más parecida a la voz del hijo y bien pronunciada (hijo 0.932, padre 0.873)"
+}

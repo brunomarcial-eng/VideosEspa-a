@@ -1,0 +1,32 @@
+{
+ "huella": "359ba0cc37981426",
+ "semilla": 8000,
+ "texto": "Y en 2027, facturación antifraude de Hacienda.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0221,
+  "oido": "y en 2027, facturación antifraude de Hacienda.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.24,
+   1.74,
+   2.36,
+   2.9,
+   3.04
+  ],
+  "t1": [
+   0.14,
+   0.24,
+   1.16,
+   2.36,
+   2.9,
+   3.04,
+   3.38
+  ],
+  "ritmo": 14.3,
+  "voz": 0.894
+ }
+}

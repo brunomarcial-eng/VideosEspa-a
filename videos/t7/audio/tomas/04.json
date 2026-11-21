@@ -1,0 +1,44 @@
+{
+ "huella": "f3193fa73015bb17",
+ "semilla": 4000,
+ "texto": "Puede. Pero desde 2006 es un 22 % más barata, quitando la inflación.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0424,
+  "oido": "Puede, pero desde 2006 es un 22% más barata quitando la inflación.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.94,
+   1.18,
+   1.38,
+   2.1,
+   2.46,
+   2.6,
+   2.94,
+   3.28,
+   3.7,
+   4.1,
+   4.78,
+   4.92
+  ],
+  "t1": [
+   0.34,
+   1.18,
+   1.38,
+   2.1,
+   2.46,
+   2.6,
+   2.94,
+   3.28,
+   3.7,
+   4.1,
+   4.78,
+   4.92,
+   5.36
+  ],
+  "ritmo": 13.5,
+  "voz": 0.935
+ }
+}

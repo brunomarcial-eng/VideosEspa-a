@@ -1,0 +1,48 @@
+{
+ "huella": "517fba701dfd8999",
+ "semilla": 11001,
+ "texto": "Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0088,
+  "oido": "Tal y como está España, me quedo o me vuelvo a marchar, ¿tu qué harías?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.3,
+   0.48,
+   0.62,
+   1.38,
+   1.6,
+   1.92,
+   2.0,
+   2.06,
+   2.4,
+   2.48,
+   3.26,
+   3.34,
+   3.52
+  ],
+  "t1": [
+   0.14,
+   0.3,
+   0.48,
+   0.62,
+   0.98,
+   1.6,
+   1.92,
+   2.0,
+   2.06,
+   2.4,
+   2.48,
+   2.9,
+   3.34,
+   3.52,
+   3.8
+  ],
+  "ritmo": 13.5,
+  "voz": 0.868
+ }
+}

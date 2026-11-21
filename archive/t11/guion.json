@@ -1,0 +1,346 @@
+{
+ "id": "t11",
+ "version": 1,
+ "titulo": "¿Pagamos más para esperar más?",
+ "titulo_alternativo": "Sanidad: impuestos de récord y más espera que en 2016",
+ "pregunta": "Un paciente con la rodilla mal, su médica de familia y un enfermero del hospital. ¿Recibimos hoy una sanidad mejor que en 2016, ahora que pagamos más?",
+ "datos": "data/clean/t11_sanidad.json",
+ "aprobacion_datos": "Bruno, 21-11-2026: tres vídeos (sanidad, educación e infraestructuras), solo 2016 frente a hoy, contundentes, con lo que pagamos en impuestos frente al servicio que recibimos, protagonizados por los profesionales y los implicados",
+ "formato": "Historia de un paciente por el sistema: sala de espera, consulta, pasillo del hospital y clínica privada. La médica y el enfermero dan los datos; el paciente pone la indignación. Cierra con la balanza de lo que pagamos y lo que recibimos y una pregunta.",
+ "duracion_max_s": 85,
+ "personajes": {
+  "paciente": {
+   "anyo": "unos 58 años, con la rodilla mal",
+   "genero": "padre"
+  },
+  "medica": {
+   "anyo": "unos 45 años, médica de familia",
+   "genero": "medica"
+  },
+  "enfermero": {
+   "anyo": "unos 32 años, enfermero de planta",
+   "genero": "hijo"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "El veredicto lo dice el paciente en el plano 13 («impuestos de récord y más espera que en 2016») y acaba con la pregunta al espectador.",
+ "capitulos": [
+  {
+   "nombre": "La espera",
+   "beats": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "nombre": "El quirófano",
+   "beats": [
+    5,
+    6
+   ]
+  },
+  {
+   "nombre": "Lo que pagas",
+   "beats": [
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "nombre": "Pagar dos veces",
+   "beats": [
+    11,
+    12
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    13
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "paciente",
+   "funcion": "gancho",
+   "voz": "¿Pagas más impuestos que en 2016? Yo sí. Y aquí sigo, esperando.",
+   "pantalla": "¿Pagamos más para esperar más?",
+   "sello": null,
+   "imagen": "Sala de espera de un centro de salud llena: sillas, una pantalla de turnos, la máquina de números. El paciente, con una muleta, mira el reloj."
+  },
+  {
+   "n": 2,
+   "quien": "medica",
+   "funcion": "derivación",
+   "voz": "Lo de su rodilla es del traumatólogo. Le derivo.",
+   "pantalla": "«Le derivo al traumatólogo»",
+   "sello": null,
+   "imagen": "La consulta: mesa con ordenador, camilla con papel, cartel de una rodilla. La médica firma un volante que sale de la impresora."
+  },
+  {
+   "n": 3,
+   "quien": "paciente",
+   "funcion": "pregunta",
+   "voz": "¿Y cuánto tardan?",
+   "pantalla": "«¿Y cuánto tardan?»",
+   "sello": null,
+   "imagen": "El paciente coge el volante y se rasca la cabeza."
+  },
+  {
+   "n": 4,
+   "quien": "medica",
+   "funcion": "dato: especialista",
+   "voz": "Para la primera cita con el especialista, 102 días de media. En 2016 eran 72.",
+   "pantalla": "Espera para la primera cita con el especialista · 2016: 72 días · 2025: 102 días",
+   "nota": "Media del Sistema Nacional de Salud, a final de cada año",
+   "sello": "DATO OFICIAL · Ministerio de Sanidad (listas de espera del Sistema Nacional de Salud)",
+   "grafico": true,
+   "imagen": "Un calendario de pared pasa hojas a toda velocidad: se para en 72 y luego sigue hasta 102."
+  },
+  {
+   "n": 5,
+   "quien": "enfermero",
+   "funcion": "dato: operación",
+   "voz": "Y si hay que operar, 122 días de media. En 2016, 115.",
+   "pantalla": "Espera para operarse · 2016: 115 días · 2025: 122 días",
+   "nota": "Media del Sistema Nacional de Salud, a final de cada año",
+   "sello": "DATO OFICIAL · Ministerio de Sanidad (listas de espera del Sistema Nacional de Salud)",
+   "grafico": true,
+   "imagen": "Un pasillo de hospital con camillas aparcadas y la puerta del quirófano al fondo. Dos barras de días crecen en un panel."
+  },
+  {
+   "n": 6,
+   "quien": "enfermero",
+   "funcion": "dato: lista",
+   "voz": "Y en la lista para operarse hay 240.000 personas más que en 2016.",
+   "pantalla": "Personas en lista de espera para operarse · 2016: 614.101 · 2025: 853.740",
+   "nota": "Cada figura, 50.000 personas",
+   "sello": "DATO OFICIAL · Ministerio de Sanidad (listas de espera del Sistema Nacional de Salud)",
+   "grafico": true,
+   "imagen": "Una cola de figuras recorre el pasillo: 12 en 2016 y 17 hoy."
+  },
+  {
+   "n": 7,
+   "quien": "paciente",
+   "funcion": "indignación",
+   "voz": "¡Pero si pago más que nunca!",
+   "pantalla": "«¡Pero si pago más que nunca!»",
+   "sello": null,
+   "imagen": "El paciente saca la nómina y la agita; del papel caen monedas."
+  },
+  {
+   "n": 8,
+   "quien": "medica",
+   "funcion": "dato: impuestos",
+   "voz": "Ya. Por habitante, se recauda un 25 % más que en 2016, ya descontada la inflación. Es récord.",
+   "pantalla": "Impuestos y cotizaciones por habitante, en euros de 2025 · 2016: 10.492 € · 2025: 13.118 €",
+   "nota": "La recaudación más alta de la serie, también descontada la inflación",
+   "sello": "CÁLCULO PROPIO · Eurostat (impuestos y cotizaciones recaudados) · INE (IPC y población)",
+   "grafico": true,
+   "imagen": "Dos montones de billetes: el de hoy, mucho más alto. Un sello: RÉCORD."
+  },
+  {
+   "n": 9,
+   "quien": "enfermero",
+   "funcion": "dato: gasto",
+   "voz": "Y en sanidad se gasta un 17 % más por habitante.",
+   "pantalla": "Gasto público en sanidad por habitante, en euros de 2025 · 2016: 1.853 € · 2024: 2.174 €",
+   "nota": "Todas las administraciones. 2024, último año",
+   "sello": "CÁLCULO PROPIO · Eurostat (gasto de las administraciones por funciones) · INE (IPC y población)",
+   "grafico": true,
+   "imagen": "Dos maletines de dinero con una cruz verde: el de hoy, más grande."
+  },
+  {
+   "n": 10,
+   "quien": "medica",
+   "funcion": "dato: médicos",
+   "voz": "Y hay un 21 % más de médicos. Aun así, se espera más.",
+   "pantalla": "Médicos en ejercicio por 100.000 habitantes · 2016: 383 · 2024: 464",
+   "nota": "2024, último año",
+   "sello": "DATO OFICIAL · Eurostat (profesionales sanitarios)",
+   "grafico": true,
+   "imagen": "Dos filas de batas blancas: la de hoy, más larga. Al lado, el reloj de la sala de espera sigue corriendo."
+  },
+  {
+   "n": 11,
+   "quien": "paciente",
+   "funcion": "pagar dos veces",
+   "voz": "Total, que me hice un seguro privado. Pago dos veces.",
+   "pantalla": "«Pago dos veces»",
+   "sello": null,
+   "imagen": "Recepción de una clínica privada. El paciente enseña una tarjeta de seguro; en la otra mano, la nómina."
+  },
+  {
+   "n": 12,
+   "quien": "enfermero",
+   "funcion": "dato: seguro",
+   "voz": "Como tantos: los hogares gastan un 34 % más en seguros de salud que en 2016.",
+   "pantalla": "Gasto medio por hogar en seguros de salud, en euros de 2025 · 2016: 259 € · 2025: 348 €",
+   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares e IPC)",
+   "grafico": true,
+   "imagen": "Dos montones de tarjetas de seguro: el de hoy, más alto."
+  },
+  {
+   "n": 13,
+   "quien": "paciente",
+   "funcion": "veredicto y pregunta",
+   "voz": "Impuestos de récord y más espera que en 2016. ¿Nos tenemos que conformar? ¿Tú qué opinas?",
+   "pantalla": "Impuestos de récord y más espera. ¿Nos tenemos que conformar?",
+   "sello": null,
+   "imagen": "Una balanza: en un plato, los impuestos, que pesan y bajan; en el otro, el servicio, que sube. El paciente mira a cámara."
+  }
+ ],
+ "no_dato": [
+  "50.000",
+  "100.000",
+  "12",
+  "17"
+ ],
+ "cifras": [
+  {
+   "texto": "102",
+   "ruta": "espera.consultas_dias.2025",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "72",
+   "ruta": "espera.consultas_dias.2016",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "122",
+   "ruta": "espera.quirurgica_dias.2025",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "115",
+   "ruta": "espera.quirurgica_dias.2016",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "614.101",
+   "ruta": "espera.quirurgica_pacientes.2016",
+   "decimales": 0,
+   "estado": "V",
+   "miles": true
+  },
+  {
+   "texto": "853.740",
+   "ruta": "espera.quirurgica_pacientes.2025",
+   "decimales": 0,
+   "estado": "V",
+   "miles": true
+  },
+  {
+   "texto": "240.000",
+   "ruta": "espera.quirurgica_pacientes_mas",
+   "decimales": 0,
+   "estado": "C",
+   "aprox": 240000,
+   "tolerancia_pct": 1
+  },
+  {
+   "texto": "25",
+   "ruta": "pagamos.por_habitante_sube_real_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "10.492",
+   "ruta": "pagamos.por_habitante_eur_de_2025.2016",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "13.118",
+   "ruta": "pagamos.por_habitante_eur_de_2025.2025",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "17",
+   "ruta": "gasto_sanidad.por_habitante_sube_real_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "1.853",
+   "ruta": "gasto_sanidad.por_habitante_eur_de_2025.2016",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "2.174",
+   "ruta": "gasto_sanidad.por_habitante_eur_de_2025.2024",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "21",
+   "ruta": "personal.medicos.sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "383",
+   "ruta": "personal.medicos.2016",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "464",
+   "ruta": "personal.medicos.2024",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "34",
+   "ruta": "bolsillo.seguro_de_enfermedad.sube_real_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "259",
+   "ruta": "bolsillo.seguro_de_enfermedad.eur_de_2025.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "348",
+   "ruta": "bolsillo.seguro_de_enfermedad.eur_de_2025.2025",
+   "decimales": 0,
+   "estado": "C"
+  }
+ ],
+ "comprobaciones": [
+  "Listas de espera (V): Ministerio de Sanidad, SISLE-SNS, situación a 31 de diciembre de 2016 y de 2025 (versión rectificada). Quirúrgica: 614.101 pacientes y 115 días en 2016; 853.740 y 122 días en 2025. Primera consulta con el especialista: 72 días en 2016 y 102 en 2025 (el informe de 2025 cuenta también a quien lleva más de 60 días sin cita; el tiempo medio se compara igual).",
+  "«Por habitante, se recauda un 25 % más que en 2016» (C): impuestos y cotizaciones sociales recaudados (Eurostat gov_10a_taxag) en euros de 2025 con el IPC medio anual del INE, entre la población a 1 de enero (INE): 10.492 € y 13.118 €. «Es récord»: la recaudación real de 2025 es la más alta desde 2002 (el máximo anterior, 2007) y la presión fiscal (38,1 % del PIB) iguala el máximo de la serie (2021).",
+  "«en sanidad se gasta un 17 % más por habitante» (C): gasto de todas las administraciones en sanidad (Eurostat COFOG GF07), euros de 2025 por habitante: 1.853 € en 2016 y 2.174 € en 2024 (último año).",
+  "«hay un 21 % más de médicos» (V): médicos en ejercicio por 100.000 habitantes (Eurostat hlth_rs_prs2): 383 en 2016 y 464 en 2024.",
+  "«los hogares gastan un 34 % más en seguros de salud» (C): INE, EPF, gasto medio por hogar en seguros de enfermedad: 203,92 € en 2016 (259 € de 2025) y 348,12 € en 2025."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 2016: se recauda un 25 % más por habitante (récord), se gasta un 17 % más en sanidad por habitante y hay un 21 % más de médicos, pero la espera para el especialista pasa de 72 a 102 días, la de operarse de 115 a 122 días, hay 240.000 personas más en lista para operarse y los hogares gastan un 34 % más en seguros privados",
+  "porque": "Listas de espera del Ministerio de Sanidad, impuestos y gasto de Eurostat, personal de Eurostat y gasto de los hogares del INE.",
+  "pregunta": "¿Nos tenemos que conformar? ¿Tú qué opinas?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno"
+}

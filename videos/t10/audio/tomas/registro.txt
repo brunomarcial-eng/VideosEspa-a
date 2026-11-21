@@ -1,0 +1,30 @@
+plano 1: «¡Vecina! Abro un bar aquí enfrente. ¿Algún consejo?»
+    toma guardada (semilla 1000): BUENA · «¡Vecina! Abro un bar aquí en frente. ¿Algún consejo?»
+plano 2: «Yo abrí el mío en 1986: licencias, altas y a servir cañas. Tú, apunta.»
+    toma guardada (semilla 2000): BUENA · «Yo abrí el mío en 1986, licencias altas y a servir cañas, tú apuntas.»
+plano 3: «¿Tanto ha cambiado?»
+    toma guardada (semilla 3000): BUENA · «¿Tanto ha cambiado?»
+plano 4: «Protección de datos, riesgos laborales, control de higiene y seguro obligatorio. Eso, ya en 2006.»
+    toma guardada (semilla 4000): BUENA · «protección de datos, riesgos laborales, control de higiene y seguro obligatorio. Eso ya en 2006.»
+plano 5: «Luego, protocolo contra el acoso, prohibido fumar, alérgenos y desconexión digital.»
+    toma guardada (semilla 5000): BUENA · «Luego, protocolo contra el acoso, prohibido fumar alérgenos y desconexión digital.»
+plano 6: «Registro de jornada, registro de sueldos, agua del grifo gratis y táper para las sobras.»
+    toma 1 (semilla 6001): BUENA · 0.993 · voz 0.919 · 5.7 s · 12.4 l/s · «Registro de jornada, registro de sueldos, agua del grifo gratis y taper para las obras.»
+plano 7: «Impuesto del plástico, una cotización nueva y la cuota de autónomo según lo que ganes.»
+    toma guardada (semilla 7000): BUENA · «Impuesto del plástico, una cotización nueva y la cuota de autónomo según lo que ganes.»
+plano 8: «Y en 2027, facturación antifraude de Hacienda.»
+    toma guardada (semilla 8000): BUENA · «y en 2027, facturación antifraude de Hacienda.»
+plano 9: «Pero… ¿cuántas son?»
+    toma guardada (semilla 9000): BUENA · «Pero... ¿cuántas son?»
+plano 10: «15 que en 1986 no existían, 16 en 2027. Y 11, nuevas desde 2006.»
+    toma guardada (semilla 10000): BUENA · «Quince que en 1986 no existían, dieciséis en dos mil veintisiete y once nuevas desde dos mil seis.»
+plano 11: «¿Y si contrato a un camarero?»
+    toma guardada (semilla 11000): BUENA · «y si contrato a un camarero.»
+plano 12: «Con el salario mínimo, un 48 % más caro que en 1986, ya descontada la inflación.»
+    toma 1 (semilla 12001): BUENA · 1.0 · voz 0.913 · 7.4 s · 14.0 l/s · «con el salario mínimo, un 48% más caro que en 1986 ya descontada la inflación.»
+plano 13: «Y el IVA de la caña, del 6 al 10 %.»
+    toma guardada (semilla 13001): BUENA · «y el IVA de la caña del 6 al 10%.»
+plano 14: «Más papeles, más impuestos y más coste: hoy es más difícil que en 1986 y que en 2006.»
+    toma guardada (semilla 14000): BUENA · «Más papel es, más impuestos y más coste. Hoy es más difícil que en 1986 y que en 2006.»
+plano 15: «¿Merece la pena montar un negocio hoy en España? ¿Tú qué harías?»
+    toma guardada (semilla 15000): BUENA · «Merece la pena montar un negocio hoy en España. ¿Tú qué harías?»

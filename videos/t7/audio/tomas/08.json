@@ -1,0 +1,46 @@
+{
+ "huella": "74eb5d6538d7edeb",
+ "semilla": 8000,
+ "texto": "Seis de cada diez hacen deporte. Y casi uno de cada tres paga gimnasio.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0458,
+  "oido": "6 de cada 10 hacen deporte y casi uno de cada 3 paga gimnasio.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.3,
+   0.5,
+   0.66,
+   0.96,
+   1.4,
+   1.9,
+   2.56,
+   2.76,
+   3.04,
+   3.18,
+   3.32,
+   3.64,
+   3.96
+  ],
+  "t1": [
+   0.3,
+   0.5,
+   0.66,
+   0.96,
+   1.4,
+   1.9,
+   2.56,
+   2.76,
+   3.04,
+   3.18,
+   3.32,
+   3.64,
+   3.96,
+   4.52
+  ],
+  "ritmo": 12.3,
+  "voz": 0.942
+ }
+}

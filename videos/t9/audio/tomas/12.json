@@ -1,0 +1,26 @@
+{
+ "huella": "50f01005b22a1229",
+ "semilla": 10000,
+ "texto": "Bueno… ¡Bienvenido a casa!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0183,
+  "oido": "Bueno, bienvenido a casa.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.66,
+   1.24,
+   1.34
+  ],
+  "t1": [
+   0.22000000000000003,
+   1.24,
+   1.34,
+   1.48
+  ],
+  "ritmo": 11.6,
+  "voz": 0.887
+ }
+}

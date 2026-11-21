@@ -1,0 +1,37 @@
+plano 1: «¡Vecina! Abro un bar aquí enfrente. ¿Algún consejo?»
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1885.08it/s]
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.931 · 3.5 s · 11.1 l/s · «¡Vecina! Abro un bar aquí en frente. ¿Algún consejo?»
+plano 2: «Yo abrí el mío en 1986: licencias, altas y a servir cañas. Tú, apunta.»
+    toma 1 (semilla 2000): BUENA · 0.993 · voz 0.928 · 7.3 s · 10.1 l/s · «Yo abrí el mío en 1986, licencias altas y a servir cañas, tú apuntas.»
+plano 3: «¿Tanto ha cambiado?»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.861 · 0.9 s · 16.7 l/s · «¿Tanto ha cambiado?»
+plano 4: «Protección de datos, riesgos laborales, control de higiene y seguro obligatorio. Eso, ya en 2006.»
+    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.941 · 7.1 s · 11.8 l/s · «protección de datos, riesgos laborales, control de higiene y seguro obligatorio. Eso ya en 2006.»
+plano 5: «Luego, protocolo contra el acoso, prohibido fumar, alérgenos y desconexión digital.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.89 · 5.5 s · 12.6 l/s · «Luego, protocolo contra el acoso, prohibido fumar alérgenos y desconexión digital.»
+plano 6: «Registro de jornada, registro de sueldos, agua del grifo gratis y táper para las sobras.»
+    toma 1 (semilla 6000): BUENA · 0.993 · voz 0.883 · 5.6 s · 12.7 l/s · «Registro de jornada, registro de sueldos, agua del grifo gratis y táper para las obras.»
+plano 7: «Impuesto del plástico, una cotización nueva y la cuota de autónomo según lo que ganes.»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.901 · 4.5 s · 15.6 l/s · «Impuesto del plástico, una cotización nueva y la cuota de autónomo según lo que ganes.»
+plano 8: «Y en 2027, facturación antifraude de Hacienda.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.894 · 3.6 s · 14.3 l/s · «y en 2027, facturación antifraude de Hacienda.»
+plano 9: «Pero… ¿cuántas son?»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.889 · 1.4 s · 10.0 l/s · «Pero... ¿cuántas son?»
+plano 10: «15 que en 1986 no existían, 16 en 2027. Y 11, nuevas desde 2006.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.947 · 8.2 s · 12.3 l/s · «Quince que en 1986 no existían, dieciséis en dos mil veintisiete y once nuevas desde dos mil seis.»
+plano 11: «¿Y si contrato a un camarero?»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.855 · 1.4 s · 15.5 l/s · «y si contrato a un camarero.»
+plano 12: «Con el salario mínimo, un 48 % más caro que en 1986, ya descontada la inflación.»
+    toma 1 (semilla 12000): BUENA · 1.0 · voz 0.897 · 5.9 s · 17.5 l/s · «Con el salario mínimo un 48% más caro que en 1986 ya descontada la inflación.»
+plano 13: «Y el IVA de la caña, del 6 al 10 %.»
+    toma 1 (semilla 13000): mala · 1.0 · voz 0.808 · 2.9 s · 12.6 l/s · «y el IVA de la caña, del 6 al 10%.» · voz distinta (0.81)
+    toma 2 (semilla 13001): BUENA · 1.0 · voz 0.894 · 2.8 s · 12.8 l/s · «y el IVA de la caña del 6 al 10%.»
+plano 14: «Más papeles, más impuestos y más coste: hoy es más difícil que en 1986 y que en 2006.»
+    toma 1 (semilla 14000): BUENA · 1.0 · voz 0.923 · 6.7 s · 13.8 l/s · «Más papel es, más impuestos y más coste. Hoy es más difícil que en 1986 y que en 2006.»
+plano 15: «¿Merece la pena montar un negocio hoy en España? ¿Tú qué harías?»
+    toma 1 (semilla 15000): BUENA · 1.0 · voz 0.929 · 3.4 s · 14.5 l/s · «Merece la pena montar un negocio hoy en España. ¿Tú qué harías?»
+duración total 74.7 s · escrito videos/t10/audio/linea_tiempo.json
+FIN
+--- rehechas 6 y 12 (la 12, más pausada) ---

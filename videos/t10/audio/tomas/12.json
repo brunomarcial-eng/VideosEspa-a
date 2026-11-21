@@ -1,0 +1,50 @@
+{
+ "huella": "730d0429200b55ff",
+ "semilla": 12001,
+ "texto": "Con el salario mínimo, un 48 % más caro que en 1986, ya descontada la inflación.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0316,
+  "oido": "con el salario mínimo, un 48% más caro que en 1986 ya descontada la inflación.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.26,
+   0.58,
+   1.78,
+   1.96,
+   2.32,
+   2.74,
+   3.3,
+   3.74,
+   3.82,
+   3.96,
+   5.28,
+   6.08,
+   6.62,
+   6.74
+  ],
+  "t1": [
+   0.14,
+   0.26,
+   0.58,
+   0.88,
+   1.96,
+   2.32,
+   2.74,
+   3.3,
+   3.74,
+   3.82,
+   3.96,
+   5.28,
+   6.08,
+   6.62,
+   6.74,
+   7.16
+  ],
+  "ritmo": 14.0,
+  "voz": 0.913
+ }
+}

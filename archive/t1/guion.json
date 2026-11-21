@@ -1,0 +1,275 @@
+{
+  "id": "t1",
+  "version": 5,
+  "titulo": "¿Llenar el carro te cuesta más o menos que hace 10 años?",
+  "pregunta": "¿Cuántas horas de trabajo cuesta la compra de comida de un mes, en 2016, 2019 y con el último dato?",
+  "datos": "data/clean/t1_cesta_horas.json",
+  "aprobacion_datos": "2026-11-09 (Paso 1 aprobado: cesta fija EPF 2025, neto y mediana, sin 2007)",
+  "formato": "Narración con una sola voz, en el estilo oral de Bruno (skill clon-bruno al 100 %). Ritmo tranquilo: una idea por escena y cada dato con su tarjeta. Protagonista inventado: Dani, el trabajador del sueldo mediano.",
+  "personajes": {
+    "narrador": {
+      "anyo": "voz",
+      "genero": "hombre"
+    }
+  },
+  "protagonista": {
+    "nombre": "Dani",
+    "nota": "Persona inventada. En 2016 lleva camiseta ocre; con el último dato, azul y con barba."
+  },
+  "capitulos": [
+    {
+      "nombre": "La pregunta",
+      "beats": [
+        1,
+        2
+      ]
+    },
+    {
+      "nombre": "2016",
+      "beats": [
+        3,
+        4
+      ]
+    },
+    {
+      "nombre": "Hoy",
+      "beats": [
+        5,
+        6
+      ]
+    },
+    {
+      "nombre": "Por qué",
+      "beats": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "nombre": "Veredicto",
+      "beats": [
+        10,
+        11,
+        12,
+        13
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "n": 1,
+      "quien": "narrador",
+      "funcion": "gancho al espectador",
+      "voz": "A ver, pregunta rápida. Llenar el carro de la compra… ¿te cuesta hoy más, o menos, que hace diez años?",
+      "pantalla": "LA PREGUNTA · ¿Más o menos que hace 10 años?",
+      "sello": null,
+      "imagen": "El súper. Dani entra empujando el carro, se para y mira a cámara."
+    },
+    {
+      "n": 2,
+      "quien": "narrador",
+      "funcion": "la regla del juego",
+      "voz": "Y ojo, que no te lo cuento en euros. Te lo cuento en horas de tu trabajo.",
+      "pantalla": "LA REGLA · No en euros: en horas de trabajo",
+      "sello": null,
+      "imagen": "Una moneda de euro se da la vuelta y se convierte en un reloj."
+    },
+    {
+      "n": 3,
+      "quien": "narrador",
+      "funcion": "presentación",
+      "voz": "Este es Dani. Cobra un sueldo normal, de los del medio.",
+      "pantalla": "EL PROTAGONISTA · Dani, sueldo mediano · La mitad cobra más y la otra mitad, menos",
+      "sello": null,
+      "imagen": "Dani en 2016 saluda. Detrás, una fila de gente: él está justo en el medio."
+    },
+    {
+      "n": 4,
+      "quien": "narrador",
+      "funcion": "dato de 2016",
+      "voz": "En 2016, la compra del mes le costaba 12,8 horas de trabajo. Día y medio largo, para entendernos.",
+      "pantalla": "2016 · 12,8 horas de trabajo · la compra del mes · día y medio largo (jornadas de 8 h)",
+      "nota": "Compra del mes: comida y bebida sin alcohol, gasto medio por persona",
+      "sello": "CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat",
+      "imagen": "En la caja, los productos pasan uno a uno y la pantalla cuenta horas hasta 12,8. Después, dos jornadas: una entera y otra a medias."
+    },
+    {
+      "n": 5,
+      "quien": "narrador",
+      "funcion": "salto a hoy",
+      "voz": "Ahora, avance rápido. Mismo Dani, misma compra, último dato oficial.",
+      "pantalla": "AVANCE RÁPIDO · 2024, último dato oficial de salarios",
+      "sello": null,
+      "imagen": "Las hojas del calendario vuelan de 2016 a 2024. A Dani le cambia la camiseta de ocre a azul y le sale barba."
+    },
+    {
+      "n": 6,
+      "quien": "narrador",
+      "funcion": "dato de hoy",
+      "actuacion": {
+        "pausa_antes": 0.5
+      },
+      "voz": "¿Cuánto? 14,5 horas. Casi dos días.",
+      "pantalla": "2024 · 14,5 horas de trabajo · casi dos jornadas · en 2016: 12,8 h",
+      "sello": "CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat",
+      "imagen": "La misma caja: la pantalla arranca en 12,8 y sigue subiendo hasta 14,5. Dani abre los ojos como platos."
+    },
+    {
+      "n": 7,
+      "quien": "narrador",
+      "funcion": "sueldo",
+      "voz": "Y eso que Dani ahora cobra más, ¿eh? Un 23 % más por hora, ya limpio.",
+      "pantalla": "SU SUELDO · +23 % por hora · neto, sueldo mediano, 2016 → 2024",
+      "sello": "CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat",
+      "imagen": "Dani enseña su nómina, contento. La barra del sueldo crece."
+    },
+    {
+      "n": 8,
+      "quien": "narrador",
+      "funcion": "precios",
+      "actuacion": {
+        "pausa_antes": 0.45
+      },
+      "voz": "¿El problema? Que la misma compra ha subido un 40.",
+      "pantalla": "Sueldo +23 % · La misma compra +40 %",
+      "sello": "CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat",
+      "imagen": "Dos barras, una al lado de la otra: la de la compra sube más que la del sueldo. Dani mira hacia arriba."
+    },
+    {
+      "n": 9,
+      "quien": "narrador",
+      "funcion": "tercer año",
+      "voz": "¿Y fue poco a poco? Qué va. En 2019 le costaba 12,6. El salto vino después.",
+      "pantalla": "AÑO A AÑO · 2016: 12,8 h · 2019: 12,6 h · 2024: 14,5 h",
+      "grafico": true,
+      "sello": "CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat",
+      "imagen": "Tres barras que aparecen una a una: 2016 y 2019 casi iguales; la de 2024 da el salto."
+    },
+    {
+      "n": 10,
+      "quien": "narrador",
+      "funcion": "cierre (veredicto)",
+      "actuacion": {
+        "pausa_antes": 0.5
+      },
+      "voz": "Entonces, ¿mejora, empeora o depende? Esta vez, empeora.",
+      "pantalla": "EL VEREDICTO · Mejora · Empeora · Depende",
+      "sello": null,
+      "imagen": "Tres opciones en la tarjeta; la marca cae sobre EMPEORA."
+    },
+    {
+      "n": 11,
+      "quien": "narrador",
+      "funcion": "cierre (dato humano)",
+      "voz": "Casi dos horas más de trabajo cada mes… para llevarte lo mismo.",
+      "pantalla": "+1,7 horas al mes · por la misma compra",
+      "nota": "Con 2016, 2018 o 2019 · con sueldo medio o mediano, bruto o neto",
+      "sello": "CÁLCULO PROPIO (C) · horas = compra ÷ sueldo neto por hora · INE y Eurostat",
+      "imagen": "Dani con el mismo carro; a su lado se apilan dos relojes más."
+    },
+    {
+      "n": 12,
+      "quien": "narrador",
+      "funcion": "frase de cierre",
+      "voz": "El sueldo sube por la escalera. La compra, en ascensor.",
+      "pantalla": "EN RESUMEN · El sueldo, por la escalera. La compra, en ascensor.",
+      "sello": null,
+      "imagen": "Dani sube peldaño a peldaño; a su lado, el carro sube en un ascensor y le adelanta."
+    },
+    {
+      "n": 13,
+      "quien": "narrador",
+      "funcion": "pregunta abierta",
+      "voz": "¿Y tú? ¿Lo notas en tu carro… o soy yo, que me fijo mucho? Te leo.",
+      "pantalla": "TE TOCA · ¿Lo notas en tu carro?",
+      "sello": null,
+      "imagen": "Dani mira a cámara y aparece un bocadillo de comentario."
+    }
+  ],
+  "no_dato": [
+    "10",
+    "8"
+  ],
+  "cifras": [
+    {
+      "texto": "12,8",
+      "ruta": "filas[anyo=2016].horas_neto_mediana",
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "14,5",
+      "ruta": "filas[anyo=2024].horas_neto_mediana",
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "12,6",
+      "ruta": "filas[anyo=2019].horas_neto_mediana",
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "23",
+      "op": "var_pct",
+      "rutas": [
+        "filas[anyo=2016].salario_neto_hora_mediana",
+        "filas[anyo=2024].salario_neto_hora_mediana"
+      ],
+      "decimales": 0,
+      "estado": "C"
+    },
+    {
+      "texto": "40",
+      "op": "var_pct",
+      "rutas": [
+        "filas[anyo=2016].cesta_euros_mes",
+        "filas[anyo=2024].cesta_euros_mes"
+      ],
+      "decimales": 0,
+      "estado": "C"
+    },
+    {
+      "texto": "1,7",
+      "op": "resta",
+      "rutas": [
+        "filas[anyo=2016].horas_neto_mediana",
+        "filas[anyo=2024].horas_neto_mediana"
+      ],
+      "decimales": 1,
+      "estado": "C"
+    },
+    {
+      "texto": "Casi dos horas",
+      "op": "resta",
+      "rutas": [
+        "filas[anyo=2016].horas_neto_mediana",
+        "filas[anyo=2024].horas_neto_mediana"
+      ],
+      "aprox": 2,
+      "tolerancia_pct": 20,
+      "estado": "C"
+    },
+    {
+      "texto": "Día y medio largo",
+      "ruta": "filas[anyo=2016].horas_neto_mediana",
+      "escala": 0.125,
+      "aprox": 1.5,
+      "tolerancia_pct": 10,
+      "estado": "C"
+    },
+    {
+      "texto": "Casi dos días",
+      "ruta": "filas[anyo=2024].horas_neto_mediana",
+      "escala": 0.125,
+      "aprox": 2,
+      "tolerancia_pct": 10,
+      "estado": "C"
+    }
+  ],
+  "cierre": {
+    "veredicto": "empeora",
+    "porque": "La misma compra subió un 40 % y el sueldo neto por hora mediano un 23 % entre 2016 y 2024: 1,7 horas más de trabajo al mes. Ocurre con cualquier año base (2016, 2018, 2019) y con media, mediana, bruto o neto."
+  }
+}

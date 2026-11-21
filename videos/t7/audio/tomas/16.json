@@ -1,0 +1,32 @@
+{
+ "huella": "6eb3fd9d341bdd4a",
+ "semilla": 16000,
+ "texto": "¿Somos más caprichosos ahora? ¿Tú qué opinas?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0239,
+  "oido": "¿Somos más caprichosos ahora? ¿Tú qué opinas?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.3,
+   0.56,
+   1.1,
+   2.1,
+   2.38,
+   2.46
+  ],
+  "t1": [
+   0.3,
+   0.56,
+   1.1,
+   1.42,
+   2.38,
+   2.46,
+   2.84
+  ],
+  "ritmo": 11.4,
+  "voz": 0.898
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "t1",
+  "estilo": "limpio",
+  "video": "videos/t1/render/t1-limpio.mp4",
+  "titulo": "¿Llenar el carro te cuesta más o menos que hace 10 años?",
+  "descripcion": "¿Llenar el carro te cuesta más o menos que hace 10 años? Ojo, que no lo medimos en euros: lo medimos en horas de trabajo.\n\nEn 2016, la compra de comida de un mes le costaba a un sueldo mediano 12,8 horas de trabajo. Con el último dato oficial de salarios (2024), 14,5 horas. El sueldo neto por hora subió un 23 %; la misma compra, un 40 %.\n\nVeredicto: empeora. Casi dos horas más de trabajo cada mes por llevarte lo mismo. Y sale igual con 2016, 2018 o 2019 de referencia, y con el sueldo medio o el mediano, bruto o neto.\n\nCómo lo calculamos: la «compra del mes» es el gasto medio por persona en alimentos y bebidas sin alcohol (EPF 2025: 188 € al mes), llevada a los precios de cada año con el IPC de alimentos. Se divide entre el sueldo neto por hora del trabajador mediano (salario por hora de la EAES; neto según el modelo de impuestos de la OCDE publicado por Eurostat, soltero sin hijos). Es un cálculo propio con datos oficiales. 2024 es el último año con salarios oficiales del INE.\n\nFuentes oficiales:\n· INE · Encuesta Anual de Estructura Salarial (tablas 28191 y 30046): https://www.ine.es/jaxiT3/Tabla.htm?t=28191\n· INE · Índice de Precios de Consumo, alimentos y bebidas no alcohólicas (tabla 76125): https://www.ine.es/jaxiT3/Tabla.htm?t=76125\n· INE · Encuesta de Presupuestos Familiares (tabla 73778): https://www.ine.es/jaxiT3/Tabla.htm?t=73778\n· Eurostat · Ganancias netas por tipo de hogar (earn_nt_net): https://ec.europa.eu/eurostat/databrowser/view/earn_nt_net/default/table\n\nVoz e imágenes generadas por ordenador; Dani es un personaje inventado. Voz: Qwen3-TTS (Apache-2.0) con timbre de una grabación CC0 del proyecto Piper/Nabu Casa.\n\n¿Lo notas en tu carro? Te leo en los comentarios.\n\n#Shorts #economía #España",
+  "etiquetas": [
+    "cesta de la compra",
+    "salarios",
+    "IPC",
+    "INE",
+    "precios",
+    "España",
+    "horas de trabajo",
+    "poder adquisitivo",
+    "inflación",
+    "sueldo"
+  ],
+  "categoria": "27",
+  "idioma": "es",
+  "publicar_en": null,
+  "miniatura": "upload/t1-portada.png",
+  "contenido_sintetico": true,
+  "para_ninos": false,
+  "nota_manual": "Subida manual en YouTube Studio hasta pasar la auditoría: programar la fecha y hora, marcar «contenido alterado o sintético» y «no es contenido para niños»."
+}

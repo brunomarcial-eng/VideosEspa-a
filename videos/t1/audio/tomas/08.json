@@ -1,0 +1,37 @@
+{
+ "huella": "6a54a8e7d571cf06",
+ "semilla": 8000,
+ "texto": "¿El problema? Que la misma compra ha subido un 40.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "El problema? Que la misma compra ha subido un 40.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.1,
+   0.86,
+   1.04,
+   1.14,
+   1.32,
+   1.7,
+   1.88,
+   2.2,
+   2.28
+  ],
+  "t1": [
+   0.1,
+   0.4,
+   1.04,
+   1.14,
+   1.32,
+   1.7,
+   1.88,
+   2.2,
+   2.28,
+   2.5
+  ],
+  "ritmo": 13.8
+ }
+}

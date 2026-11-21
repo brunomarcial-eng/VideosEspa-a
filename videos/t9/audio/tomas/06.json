@@ -1,0 +1,42 @@
+{
+ "huella": "be87571da22d3c0f",
+ "semilla": 6001,
+ "texto": "Llenar el depósito: 4 horas de trabajo en 2016. Hoy, casi 6.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0217,
+  "oido": "Llenar el depósito, 4 horas de trabajo en 2016, hoy casi 6.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.3,
+   0.4,
+   1.22,
+   1.46,
+   1.74,
+   1.9,
+   2.24,
+   2.38,
+   3.5,
+   3.68,
+   4.08
+  ],
+  "t1": [
+   0.3,
+   0.4,
+   0.86,
+   1.46,
+   1.74,
+   1.9,
+   2.24,
+   2.38,
+   2.88,
+   3.68,
+   4.08,
+   4.38
+  ],
+  "ritmo": 13.2,
+  "voz": 0.893
+ }
+}

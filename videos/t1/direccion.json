@@ -1,0 +1,215 @@
+{
+  "nota": "Dirección de T1: qué tarjeta sale en cada plano y cómo actúan los personajes. Las cifras de las tarjetas deben estar en la «pantalla» del mismo plano del guion (lo comprueba diseno/video.mjs).",
+  "personajes": {
+    "antes": {
+      "piel": "#E9C3A0",
+      "pelo": "#4A3326",
+      "semilla": 3
+    },
+    "hoy": {
+      "piel": "#E3BA96",
+      "pelo": "#4A3326",
+      "semilla": 8
+    }
+  },
+  "planos": {
+    "1": {
+      "tarjeta": {
+        "tipo": "pregunta",
+        "texto": "¿Te cunde más el carro ahora… o antes?",
+        "objeto": "carrito"
+      },
+      "actores": {
+        "hoy": {
+          "expr": "contenta",
+          "gesto": "explicar",
+          "mirada": 0
+        }
+      }
+    },
+    "2": {
+      "tarjeta": {
+        "tipo": "cifra",
+        "anyo": "2016",
+        "valor": "12,8 h",
+        "sub": "de trabajo",
+        "tono": "pasado",
+        "nota": "Compra del mes: comida y bebida sin alcohol, gasto medio por persona"
+      },
+      "sello": true,
+      "actores": {
+        "antes": {
+          "expr": "contenta",
+          "gesto": "explicar"
+        },
+        "hoy": {
+          "expr": "duda"
+        }
+      }
+    },
+    "3": {
+      "tarjeta": {
+        "tipo": "cifra",
+        "anyo": "2024",
+        "valor": "14,5 h",
+        "sub": "de trabajo",
+        "tono": "hoy"
+      },
+      "sello": true,
+      "actores": {
+        "hoy": {
+          "expr": "seria",
+          "gesto": "explicar"
+        },
+        "antes": {
+          "expr": "sorpresa"
+        }
+      }
+    },
+    "4": {
+      "tarjeta": {
+        "tipo": "mantener"
+      },
+      "actores": {
+        "antes": {
+          "expr": "sorpresa",
+          "gesto": "arriba"
+        },
+        "hoy": {
+          "expr": "contenta"
+        }
+      }
+    },
+    "5": {
+      "tarjeta": {
+        "tipo": "barras2",
+        "filas": [
+          {
+            "etq": "Sueldo neto por hora (mediana)",
+            "valor": "+23 %",
+            "num": 23,
+            "tono": "tinta"
+          },
+          {
+            "etq": "La misma compra",
+            "valor": "+40 %",
+            "num": 40,
+            "tono": "hoy"
+          }
+        ],
+        "desde": "2016 → 2024"
+      },
+      "sello": true,
+      "actores": {
+        "hoy": {
+          "expr": "explicando",
+          "gesto": "explicar"
+        },
+        "antes": {
+          "expr": "duda"
+        }
+      }
+    },
+    "6": {
+      "tarjeta": {
+        "tipo": "cifra",
+        "anyo": "2019",
+        "valor": "¿?",
+        "sub": "",
+        "tono": "pasado"
+      },
+      "actores": {
+        "antes": {
+          "expr": "duda",
+          "gesto": "abajo"
+        },
+        "hoy": {
+          "expr": "neutra"
+        }
+      }
+    },
+    "7": {
+      "tarjeta": {
+        "tipo": "grafico3",
+        "barras": [
+          {
+            "anyo": "2016",
+            "num": 12.8,
+            "texto": "12,8 h",
+            "tono": "pasado"
+          },
+          {
+            "anyo": "2019",
+            "num": 12.6,
+            "texto": "12,6 h",
+            "tono": "pasado"
+          },
+          {
+            "anyo": "2024",
+            "num": 14.5,
+            "texto": "14,5 h",
+            "tono": "hoy"
+          }
+        ]
+      },
+      "sello": true,
+      "actores": {
+        "hoy": {
+          "expr": "explicando",
+          "gesto": "explicar"
+        },
+        "antes": {
+          "expr": "seria"
+        }
+      }
+    },
+    "8": {
+      "tarjeta": {
+        "tipo": "cierre",
+        "marcar": null
+      },
+      "actores": {
+        "antes": {
+          "expr": "duda",
+          "gesto": "abajo",
+          "mirada": 0
+        },
+        "hoy": {
+          "expr": "neutra"
+        }
+      }
+    },
+    "9": {
+      "tarjeta": {
+        "tipo": "cierre",
+        "marcar": "EMPEORA"
+      },
+      "actores": {
+        "hoy": {
+          "expr": "seria",
+          "gesto": "explicar"
+        },
+        "antes": {
+          "expr": "seria"
+        }
+      }
+    },
+    "10": {
+      "tarjeta": {
+        "tipo": "pregunta",
+        "texto": "¿Y a ti? Cuéntanoslo"
+      },
+      "actores": {
+        "hoy": {
+          "expr": "contenta",
+          "gesto": "saludo",
+          "mirada": 0
+        },
+        "antes": {
+          "expr": "contenta",
+          "mirada": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+ "huella": "97aee24f27bdb43b",
+ "semilla": 11106,
+ "texto": "¿Quién lo tuvo más fácil? ¿Tú qué opinas?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "¿Quién lo tuvo más fácil? ¿Tú qué opinas?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.2,
+   0.3,
+   0.46,
+   0.66,
+   1.64,
+   1.88,
+   1.98
+  ],
+  "t1": [
+   0.2,
+   0.3,
+   0.46,
+   0.66,
+   1.0,
+   1.88,
+   1.98,
+   2.36
+  ],
+  "ritmo": 11.9,
+  "voz": 0.915
+ },
+ "eleccion": "elegida a mano entre 8 tomas: la más parecida a la voz del hijo y bien pronunciada (hijo 0.915, padre 0.888)"
+}

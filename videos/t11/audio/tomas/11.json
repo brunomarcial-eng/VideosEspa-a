@@ -1,0 +1,38 @@
+{
+ "huella": "8c18410955054245",
+ "semilla": 11000,
+ "texto": "Total, que me hice un seguro privado. Pago dos veces.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0381,
+  "oido": "Total, que me hice un seguro privado. Pago dos veces.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.8,
+   0.92,
+   1.08,
+   1.24,
+   1.38,
+   1.68,
+   2.78,
+   3.32,
+   3.54
+  ],
+  "t1": [
+   0.36,
+   0.92,
+   1.08,
+   1.24,
+   1.38,
+   1.68,
+   2.26,
+   3.32,
+   3.54,
+   3.94
+  ],
+  "ritmo": 10.0,
+  "voz": 0.926
+ }
+}

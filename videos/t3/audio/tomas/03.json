@@ -1,0 +1,31 @@
+{
+ "huella": "4c89f21efcf8166c",
+ "semilla": 3000,
+ "texto": "¡Y me lo pagué a pulmón, chaval!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "¡Y me lo pagué a pulmón, chaval!",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   0.3,
+   0.46,
+   0.88,
+   0.94,
+   1.52
+  ],
+  "t1": [
+   0.16,
+   0.3,
+   0.46,
+   0.8800000000000001,
+   0.94,
+   1.42,
+   1.82
+  ],
+  "ritmo": 11.1
+ }
+}

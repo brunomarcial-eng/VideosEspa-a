@@ -1,0 +1,43 @@
+{
+ "huella": "2ccd46b8437cb564",
+ "semilla": 13000,
+ "texto": "Mira las barras: población y trabajo crecen lo mismo. El paro, mucho más.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Mira las barras, población y trabajo crecen lo mismo. El paro mucho más.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.2,
+   0.42,
+   0.98,
+   1.3,
+   1.68,
+   2.06,
+   2.42,
+   2.56,
+   3.34,
+   3.52,
+   3.86,
+   4.18
+  ],
+  "t1": [
+   0.2,
+   0.42,
+   0.8,
+   1.3,
+   1.68,
+   2.06,
+   2.42,
+   2.56,
+   2.78,
+   3.52,
+   3.86,
+   4.18,
+   4.38
+  ],
+  "ritmo": 12.3
+ }
+}

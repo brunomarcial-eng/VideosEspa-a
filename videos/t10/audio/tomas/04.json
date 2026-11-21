@@ -1,0 +1,48 @@
+{
+ "huella": "9923b5c95fc185e0",
+ "semilla": 4000,
+ "texto": "Protección de datos, riesgos laborales, control de higiene y seguro obligatorio. Eso, ya en 2006.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0453,
+  "oido": "protección de datos, riesgos laborales, control de higiene y seguro obligatorio. Eso ya en 2006.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.5,
+   0.62,
+   1.46,
+   1.9,
+   3.0,
+   3.48,
+   3.64,
+   4.0,
+   4.2,
+   4.48,
+   5.88,
+   6.14,
+   6.36,
+   6.44
+  ],
+  "t1": [
+   0.5,
+   0.62,
+   0.9,
+   1.9,
+   2.52,
+   3.48,
+   3.64,
+   4.0,
+   4.2,
+   4.48,
+   5.1,
+   6.14,
+   6.36,
+   6.44,
+   6.82
+  ],
+  "ritmo": 11.8,
+  "voz": 0.941
+ }
+}

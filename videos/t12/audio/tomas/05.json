@@ -1,0 +1,50 @@
+{
+ "huella": "be1eb835eabbebe1",
+ "semilla": 5000,
+ "texto": "España ha perdido 45 puntos en lectura desde 2015. Más que la media de la OCDE.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0387,
+  "oido": "España ha perdido 45 puntos en lectura desde 2015, más que la media de la OCDE.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.32,
+   0.48,
+   0.76,
+   1.32,
+   1.58,
+   1.86,
+   2.24,
+   2.52,
+   3.54,
+   3.96,
+   4.1,
+   4.22,
+   4.44,
+   4.58,
+   4.68
+  ],
+  "t1": [
+   0.32,
+   0.48,
+   0.76,
+   1.32,
+   1.58,
+   1.86,
+   2.24,
+   2.52,
+   3.1,
+   3.96,
+   4.1,
+   4.22,
+   4.44,
+   4.58,
+   4.68,
+   5.12
+  ],
+  "ritmo": 15.6,
+  "voz": 0.927
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "huella": "ef458bf9cc7d0480",
+ "semilla": 9000,
+ "texto": "Pero… ¿cuántas son?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0196,
+  "oido": "Pero... ¿cuántas son?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.68,
+   1.16
+  ],
+  "t1": [
+   0.68,
+   1.16,
+   1.3
+  ],
+  "ritmo": 10.0,
+  "voz": 0.889
+ }
+}

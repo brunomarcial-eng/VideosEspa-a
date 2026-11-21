@@ -1,0 +1,33 @@
+{
+ "huella": "2627e9f6803fe67e",
+ "semilla": 10000,
+ "texto": "Entonces, ¿mejora, empeora o depende? Esta vez, empeora.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Entonces, mejora, empeora o depende. Esta vez empeora.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   1.2,
+   1.88,
+   2.32,
+   2.62,
+   3.38,
+   3.58,
+   3.8
+  ],
+  "t1": [
+   0.98,
+   1.78,
+   2.32,
+   2.62,
+   2.94,
+   3.58,
+   3.8,
+   4.38
+  ],
+  "ritmo": 9.5
+ }
+}

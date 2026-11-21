@@ -1,0 +1,42 @@
+{
+ "huella": "e9d53796b54d1656",
+ "semilla": 1000,
+ "texto": "¡Es que antes tu madre se quedaba en casa con los niños!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0253,
+  "oido": "es que antes tu madre se quedaba en casa con los niños.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   0.32,
+   0.62,
+   0.84,
+   1.12,
+   1.32,
+   1.7,
+   1.8,
+   2.0,
+   2.24,
+   2.36
+  ],
+  "t1": [
+   0.16,
+   0.32,
+   0.62,
+   0.84,
+   1.12,
+   1.32,
+   1.7,
+   1.8,
+   2.0,
+   2.24,
+   2.36,
+   2.66
+  ],
+  "ritmo": 14.9,
+  "voz": 0.901
+ }
+}

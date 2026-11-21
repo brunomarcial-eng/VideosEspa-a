@@ -1,0 +1,44 @@
+{
+ "huella": "87575f630c855d0c",
+ "semilla": 9000,
+ "texto": "¿Qué hace falta para tener hijos: tiempo, dinero o casa? ¿Tú qué opinas?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0287,
+  "oido": "¿Qué hace falta para tener hijos? Tiempo, dinero o casa. ¿Tú qué opinas?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.3,
+   0.62,
+   0.82,
+   1.04,
+   1.98,
+   2.66,
+   3.04,
+   3.48,
+   4.34,
+   4.7,
+   4.8
+  ],
+  "t1": [
+   0.12,
+   0.3,
+   0.62,
+   0.82,
+   1.04,
+   1.32,
+   2.32,
+   3.04,
+   3.48,
+   3.76,
+   4.7,
+   4.8,
+   5.22
+  ],
+  "ritmo": 10.0,
+  "voz": 0.907
+ }
+}

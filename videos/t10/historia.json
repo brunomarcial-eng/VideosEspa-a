@@ -1,0 +1,372 @@
+{
+ "nota": "Momentos clave de T10 (montar un bar en 1986, 2006 y hoy). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t10/escenas.mjs) y el sonido (scripts/sonido.py). La música se corta en seco con el sello de «15».",
+ "musica": {
+  "bpm": 100,
+  "corte": "c10-15",
+  "silencio_s": 1.0
+ },
+ "cues": [
+  {
+   "id": "c1-vecina",
+   "beat": 1,
+   "palabra": "vecina",
+   "dt": -0.05,
+   "sfx": "campanilla",
+   "vol": 0.3
+  },
+  {
+   "id": "c1-enfrente",
+   "beat": 1,
+   "palabra": "enfrente",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.28
+  },
+  {
+   "id": "c1-consejo",
+   "beat": 1,
+   "palabra": "consejo",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-1986",
+   "beat": 2,
+   "palabra": "1986",
+   "dt": -0.05
+  },
+  {
+   "id": "c2-licencias",
+   "beat": 2,
+   "palabra": "licencias",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.35
+  },
+  {
+   "id": "c2-altas",
+   "beat": 2,
+   "palabra": "altas",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.35
+  },
+  {
+   "id": "c2-canas",
+   "beat": 2,
+   "palabra": "cañas",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-apunta",
+   "beat": 2,
+   "palabra": "apunta",
+   "dt": -0.15,
+   "sfx": "fwip",
+   "vol": 0.5
+  },
+  {
+   "id": "c3-cambiado",
+   "beat": 3,
+   "palabra": "cambiado",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c4-sueno",
+   "beat": 4,
+   "en": "inicio",
+   "dt": -0.6,
+   "sfx": "sueno",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-1",
+   "beat": 4,
+   "palabra": "protección",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c4-2",
+   "beat": 4,
+   "palabra": "riesgos",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c4-3",
+   "beat": 4,
+   "palabra": "control",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c4-4",
+   "beat": 4,
+   "palabra": "seguro",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c4-2006",
+   "beat": 4,
+   "palabra": "2006",
+   "dt": -0.05,
+   "sfx": "sello",
+   "vol": 0.45
+  },
+  {
+   "id": "c5-1",
+   "beat": 5,
+   "palabra": "protocolo",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c5-2",
+   "beat": 5,
+   "palabra": "prohibido",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c5-3",
+   "beat": 5,
+   "palabra": "alérgenos",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c5-4",
+   "beat": 5,
+   "palabra": "desconexión",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c6-1",
+   "beat": 6,
+   "palabra": "registro",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42,
+   "n": 1
+  },
+  {
+   "id": "c6-2",
+   "beat": 6,
+   "palabra": "registro",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42,
+   "n": 2
+  },
+  {
+   "id": "c6-3",
+   "beat": 6,
+   "palabra": "agua",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42,
+   "n": 1
+  },
+  {
+   "id": "c6-4",
+   "beat": 6,
+   "palabra": "táper",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42,
+   "n": 1
+  },
+  {
+   "id": "c7-1",
+   "beat": 7,
+   "palabra": "impuesto",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c7-2",
+   "beat": 7,
+   "palabra": "cotización",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c7-3",
+   "beat": 7,
+   "palabra": "cuota",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.42
+  },
+  {
+   "id": "c8-1",
+   "beat": 8,
+   "palabra": "facturación",
+   "dt": -0.1,
+   "sfx": "sello",
+   "vol": 0.45
+  },
+  {
+   "id": "c9-cuantas",
+   "beat": 9,
+   "palabra": "cuántas",
+   "dt": -0.1,
+   "sfx": "hojas",
+   "vol": 0.35
+  },
+  {
+   "id": "c10-15",
+   "beat": 10,
+   "palabra": "15",
+   "dt": -0.05,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c10-16",
+   "beat": 10,
+   "palabra": "16",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.32
+  },
+  {
+   "id": "c10-11",
+   "beat": 10,
+   "palabra": "11",
+   "dt": -0.05,
+   "sfx": "ting",
+   "vol": 0.28
+  },
+  {
+   "id": "c11-camarero",
+   "beat": 11,
+   "palabra": "camarero",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c12-salario",
+   "beat": 12,
+   "palabra": "salario",
+   "dt": -0.1,
+   "sfx": "conteo",
+   "vol": 0.35
+  },
+  {
+   "id": "c12-48",
+   "beat": 12,
+   "palabra": "48",
+   "dt": -0.05,
+   "sfx": "caja",
+   "vol": 0.4
+  },
+  {
+   "id": "c12-inflacion",
+   "beat": 12,
+   "palabra": "inflación",
+   "dt": -0.1
+  },
+  {
+   "id": "c13-iva",
+   "beat": 13,
+   "palabra": "iva",
+   "dt": -0.1
+  },
+  {
+   "id": "c13-6",
+   "beat": 13,
+   "palabra": "6",
+   "dt": -0.05,
+   "sfx": "moneda",
+   "vol": 0.4
+  },
+  {
+   "id": "c13-10",
+   "beat": 13,
+   "palabra": "10",
+   "dt": -0.05,
+   "sfx": "moneda",
+   "vol": 0.5
+  },
+  {
+   "id": "c14-papeles",
+   "beat": 14,
+   "palabra": "papeles",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.35
+  },
+  {
+   "id": "c14-impuestos",
+   "beat": 14,
+   "palabra": "impuestos",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c14-coste",
+   "beat": 14,
+   "palabra": "coste",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c14-dificil",
+   "beat": 14,
+   "palabra": "difícil",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c15-sueno",
+   "beat": 15,
+   "en": "inicio",
+   "dt": -0.6,
+   "sfx": "sueno",
+   "vol": 0.35
+  },
+  {
+   "id": "c15-pena",
+   "beat": 15,
+   "palabra": "pena",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.28
+  },
+  {
+   "id": "c15-espana",
+   "beat": 15,
+   "palabra": "españa",
+   "dt": -0.1
+  },
+  {
+   "id": "c15-tu",
+   "beat": 15,
+   "palabra": "tú",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  }
+ ]
+}

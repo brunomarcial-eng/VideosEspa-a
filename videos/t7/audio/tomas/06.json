@@ -1,0 +1,36 @@
+{
+ "huella": "5c690b0909c27b7d",
+ "semilla": 6000,
+ "texto": "Ahí tienes razón: es el doble que en 1986.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0436,
+  "oido": "Ahí tienes razón, es el doble que en 1986.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   0.42,
+   1.3,
+   1.54,
+   1.7,
+   2.04,
+   2.18,
+   2.32
+  ],
+  "t1": [
+   0.16,
+   0.42000000000000004,
+   0.78,
+   1.54,
+   1.7,
+   2.04,
+   2.18,
+   2.32,
+   3.04
+  ],
+  "ritmo": 14.0,
+  "voz": 0.937
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "huella": "a251dff4c91110e1",
+ "semilla": 11002,
+ "texto": "¡Mira! Subcampeones de Europa en algo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0017,
+  "oido": "Mira, subcampeones de Europa en algo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.68,
+   1.48,
+   1.62,
+   1.86,
+   2.06
+  ],
+  "t1": [
+   0.22,
+   1.48,
+   1.62,
+   1.86,
+   2.06,
+   2.24
+  ],
+  "ritmo": 12.4,
+  "voz": 0.853
+ }
+}

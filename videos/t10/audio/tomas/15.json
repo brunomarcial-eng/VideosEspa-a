@@ -1,0 +1,42 @@
+{
+ "huella": "0b57755d3879d309",
+ "semilla": 15000,
+ "texto": "¿Merece la pena montar un negocio hoy en España? ¿Tú qué harías?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0394,
+  "oido": "Merece la pena montar un negocio hoy en España. ¿Tú qué harías?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.3,
+   0.42,
+   0.58,
+   1.0,
+   1.06,
+   1.44,
+   1.6,
+   1.72,
+   2.54,
+   2.72,
+   2.84
+  ],
+  "t1": [
+   0.3,
+   0.42,
+   0.58,
+   1.0,
+   1.06,
+   1.44,
+   1.6,
+   1.72,
+   2.02,
+   2.72,
+   2.84,
+   3.12
+  ],
+  "ritmo": 14.5,
+  "voz": 0.929
+ }
+}

@@ -1,0 +1,23 @@
+# Credenciales y tokens: nunca en git (CLAUDE.md, regla 7; setup-humano.md, paso 8)
+client_secret*.json
+cliente_oauth*.json
+token*.json
+pendiente.json
+*.env
+.env*
+# Resultados de subida y métricas pueden contener ids; se versionan a propósito.
+__pycache__/
+*.pyc
+videos/*/audio/*.wav
+.tmp_*.wav
+videos/*/render/*.png
+videos/*/render/*.html
+videos/*/render/*-prueba.mp4
+# La paleta se llama tokens.json y no es una credencial: se versiona.
+!diseno/tokens.json
+videos/*/audio/tomas/*.wav
+videos/*/render/.parte-*
+videos/*/render/.partes.txt
+# microdatos del INE (grandes): se bajan con scripts/descargar_datos.py
+data/raw/microdatos/
+videos/*/muestras/*.wav

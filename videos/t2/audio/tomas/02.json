@@ -1,0 +1,41 @@
+{
+ "huella": "186062c7dae13feb",
+ "semilla": 2000,
+ "texto": "Foto uno: 2007, antes de la crisis. En España vivíamos 45,2 millones.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Foto 1, 2007, antes de la crisis. En España vivíamos 45,2 millones.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.24,
+   0.74,
+   1.82,
+   2.0,
+   2.14,
+   2.24,
+   3.02,
+   3.16,
+   3.42,
+   3.86,
+   5.08
+  ],
+  "t1": [
+   0.24,
+   0.44000000000000006,
+   1.4,
+   2.0,
+   2.14,
+   2.24,
+   2.52,
+   3.16,
+   3.42,
+   3.86,
+   5.08,
+   5.28
+  ],
+  "ritmo": 12.6
+ }
+}

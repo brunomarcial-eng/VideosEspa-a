@@ -1,0 +1,26 @@
+plano 1: «¿Pagas más impuestos que en 2016? Yo sí. Y aquí sigo, esperando.»
+    toma guardada (semilla 1000): BUENA · «Pagas más impuestos que en 2016? Yo sí. Y aquí sigo esperando.»
+plano 2: «Lo de su rodilla es del traumatólogo. Le derivo.»
+    toma guardada (semilla 2000): BUENA · «Lo de su rodilla es del traumatólogo, le derivo.»
+plano 3: «¿Y cuánto tardan?»
+    toma guardada (semilla 3000): mala · «¿Y cuánto tardan?»
+plano 4: «Para la primera cita con el especialista, 102 días de media. En 2016 eran 72.»
+    toma guardada (semilla 4000): BUENA · «para la primera cita con el especialista, 102 días de media. En 2016 eran 72.»
+plano 5: «Y si hay que operar, 122 días de media. En 2016, 115.»
+    toma guardada (semilla 5000): BUENA · «Y si hay que operar, 122 días de media, en 2016 115.»
+plano 6: «Y en la lista para operarse hay 240.000 personas más que en 2016.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.943 · 5.0 s · 17.9 l/s · «Y en la lista para operarse hay 240.000 personas más que en 2016.»
+plano 7: «¡Pero si pago más que nunca!»
+    toma guardada (semilla 7001): BUENA · «Pero sí pago más que nunca.»
+plano 8: «Ya. Por habitante, se recauda un 25 % más que en 2016, ya descontada la inflación. Es récord.»
+    toma guardada (semilla 8000): BUENA · «Ya. Por habitante se recauda un 25% más que en 2016, ya descontada la inflación. Es record.»
+plano 9: «Y en sanidad se gasta un 17 % más por habitante.»
+    toma guardada (semilla 9000): BUENA · «y en sanidad se gasta un 17% más por habitante.»
+plano 10: «Y hay un 21 % más de médicos. Aun así, se espera más.»
+    toma guardada (semilla 10000): BUENA · «y hay un 21% más de médicos, aún así se espera más.»
+plano 11: «Total, que me hice un seguro privado. Pago dos veces.»
+    toma guardada (semilla 11000): BUENA · «Total, que me hice un seguro privado. Pago dos veces.»
+plano 12: «Como tantos: los hogares gastan un 34 % más en seguros de salud que en 2016.»
+    toma guardada (semilla 12001): BUENA · «Como tantos, los hogares gastan un 34% más en seguros de salud que en 2016.»
+plano 13: «Impuestos de récord y más espera que en 2016. ¿Nos tenemos que conformar? ¿Tú qué opinas?»
+    toma guardada (semilla 13000): BUENA · «impuestos de récord y más espera que en 2016. ¿Nos tenemos que conformar? ¿Tú qué opinas?»

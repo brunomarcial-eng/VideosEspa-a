@@ -1,0 +1,20 @@
+plano 1: «¿Y los nietos pa cuándo, eh? ¡Que tu madre y yo, a tu edad, ya te teníamos en brazos!»
+    toma guardada (semilla 1200): BUENA · «Y los nietos pa' cuándo, eh? Que tu madre y yo a tu edad ya te teníamos en brazos.»
+plano 2: «Papá, primero hace falta casa. En 1987, un piso costaba 3 años de lo que ganaba un hogar. Hoy, más de 8.»
+    toma guardada (semilla 2000): BUENA · «Papá, primero hace falta casa. En 1987, un piso costaba tres años de lo que ganaba un hogar. Hoy más de ocho.»
+plano 3: «¡Pues casaos y a vivir!»
+    toma guardada (semilla 3204): BUENA · «¡Pues cazaos y a vivir!»
+plano 4: «Vosotros os casabais a los 26. Ahora, a los 36.»
+    toma guardada (semilla 4000): BUENA · «Vosotros os casabais a los 26, ahora a los 36.»
+plano 5: «¡Si es que ahora las bodas son un festival!»
+    toma guardada (semilla 5204): BUENA · «Si es que ahora las bodas son un festival.»
+plano 6: «El primer hijo llegaba a los 26. Hoy, a los treinta y uno y medio.»
+    toma guardada (semilla 6000): BUENA · «El primer hijo llegaba a los 26, hoy a los 31 y medio.»
+plano 7: «Y de 1,55 hijos por mujer hemos pasado a 1,1.»
+    toma guardada (semilla 7000): BUENA · «y de 1,55 hijos por mujer hemos pasado a 1,1.»
+plano 8: «¡Eso es que no queréis, hombre!»
+    toma guardada (semilla 8201): BUENA · «Eso es que no queréis, hombre.»
+plano 9: «Casi tres de cada cuatro mujeres querrían al menos dos. Y las que tienen menos de los que querían, a partir de los 35, dicen que es por el trabajo y el dinero.»
+    toma guardada (semilla 9000): BUENA · «Casi tres de cada cuatro mujeres querrían al menos dos, y las que tienen menos de los que querían, a partir de los 35, dicen que es por el trabajo y el dinero.»
+plano 10: «Casa, boda, hijos… todo llega más tarde. ¿Casualidad? ¿Tú qué opinas?»
+    toma guardada (semilla 10001): BUENA · «Casa, boda, hijos. Todo llega más tarde. Casualidad, tú que opinas.»

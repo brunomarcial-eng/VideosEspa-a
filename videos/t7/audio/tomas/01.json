@@ -1,0 +1,42 @@
+{
+ "huella": "967be0cbded9eaf4",
+ "semilla": 1002,
+ "texto": "¡Otro paquete! Ropa, cremas… ¡Yo con un chándal tenía para diez años!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0467,
+  "oido": "Otro paquete, ropa, cremas, yo con un chándal tenía para 10 años.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.36,
+   1.16,
+   1.92,
+   2.84,
+   3.0,
+   3.16,
+   3.28,
+   3.66,
+   3.96,
+   4.2,
+   4.4
+  ],
+  "t1": [
+   0.36,
+   0.86,
+   1.62,
+   2.38,
+   3.0,
+   3.16,
+   3.28,
+   3.66,
+   3.96,
+   4.2,
+   4.4,
+   4.72
+  ],
+  "ritmo": 10.5,
+  "voz": 0.943
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "huella": "9185a558cee53f3f",
+ "semilla": 6000,
+ "texto": "¿Un pastón? Quitando la inflación, el sueldo ha subido un 16 %. El piso, 2,3 veces.",
+ "ev": {
+  "ok": false,
+  "nota": 0.97,
+  "oido": "¿Un pastón? Quitando la inflación, el sueldo ha subido un 16%. El piso 2,3 veces.",
+  "parecido": 1.0,
+  "problemas": [
+   "sobran 9 letras (¿repite?)"
+  ],
+  "t0": [
+   0.0,
+   0.14,
+   1.38,
+   1.9,
+   2.06,
+   2.8,
+   2.84,
+   3.2,
+   3.3,
+   3.64,
+   3.76,
+   4.35,
+   4.94,
+   5.54,
+   5.88,
+   6.8
+  ],
+  "t1": [
+   0.14,
+   0.6,
+   1.9,
+   2.06,
+   2.5,
+   2.84,
+   3.2,
+   3.3,
+   3.64,
+   3.76,
+   4.35,
+   4.94,
+   5.54,
+   5.88,
+   6.8,
+   6.98
+  ],
+  "ritmo": 11.7
+ },
+ "nota_voz": "toma dada por buena por Bruno (primeros 45 s); es la referencia de la voz del hijo"
+}

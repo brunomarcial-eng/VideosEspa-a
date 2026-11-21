@@ -1,0 +1,46 @@
+{
+ "huella": "c8a68aef78af747d",
+ "semilla": 10000,
+ "texto": "15 que en 1986 no existían, 16 en 2027. Y 11, nuevas desde 2006.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0484,
+  "oido": "Quince que en 1986 no existían, dieciséis en dos mil veintisiete y once nuevas desde dos mil seis.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.26,
+   0.46,
+   0.58,
+   1.58,
+   2.16,
+   3.18,
+   3.7,
+   3.9,
+   5.08,
+   6.02,
+   6.22,
+   7.06,
+   7.34
+  ],
+  "t1": [
+   0.26,
+   0.4600000000000001,
+   0.58,
+   1.58,
+   2.16,
+   2.76,
+   3.7,
+   3.9,
+   5.08,
+   6.02,
+   6.22,
+   7.06,
+   7.34,
+   7.94
+  ],
+  "ritmo": 12.3,
+  "voz": 0.947
+ }
+}

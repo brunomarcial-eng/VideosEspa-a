@@ -1,0 +1,46 @@
+{
+ "huella": "5342a954ceb9854b",
+ "semilla": 7000,
+ "texto": "¡Diecinueve semanas! Yo, cuando naciste tú, tuve dos días y de vuelta al tajo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0529,
+  "oido": "19 semanas. Yo, cuando naciste tú, tuve dos días y de vuelta al tajo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.46,
+   1.54,
+   2.2,
+   2.32,
+   2.88,
+   3.28,
+   3.48,
+   3.66,
+   4.02,
+   4.28,
+   4.36,
+   4.56,
+   4.8
+  ],
+  "t1": [
+   0.4600000000000001,
+   0.84,
+   2.04,
+   2.32,
+   2.88,
+   3.14,
+   3.48,
+   3.66,
+   4.02,
+   4.28,
+   4.36,
+   4.56,
+   4.8,
+   5.1
+  ],
+  "ritmo": 11.6,
+  "voz": 0.956
+ }
+}

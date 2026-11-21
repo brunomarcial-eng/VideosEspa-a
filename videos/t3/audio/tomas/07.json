@@ -1,0 +1,43 @@
+{
+ "huella": "29f532179fcbe192",
+ "semilla": 7000,
+ "texto": "¡Pero yo pagaba la hipoteca al 15 %, que era un atraco!",
+ "ev": {
+  "ok": false,
+  "nota": 0.97,
+  "oido": "pero yo pagaba la hipoteca al 15%, que era un atraco.",
+  "parecido": 1.0,
+  "problemas": [
+   "sobran 9 letras (¿repite?)"
+  ],
+  "t0": [
+   0.0,
+   0.18,
+   0.38,
+   0.82,
+   0.96,
+   1.56,
+   1.7,
+   2.076,
+   2.64,
+   3.3,
+   3.5,
+   3.7
+  ],
+  "t1": [
+   0.18,
+   0.38,
+   0.82,
+   0.96,
+   1.56,
+   1.7,
+   2.076,
+   2.64,
+   3.3,
+   3.5,
+   3.7,
+   4.1
+  ],
+  "ritmo": 12.4
+ }
+}
