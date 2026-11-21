@@ -417,6 +417,19 @@ def nivelar(a, objetivo_db=-20.0):
     return (a * (0.89 / pico) if pico > 0.89 else a).astype(np.float32)
 
 
+def voz_de(g, quien, cfg=None):
+    """Voz del catálogo (docs/voces-catalogo.md) que hace este personaje: «voz», o «genero» en los guiones antiguos
+    (en T3-T8, «voz» es una nota de texto, no una clave: entonces manda «genero»)."""
+    p = g["personajes"][quien]
+    perfiles = (cfg or json.loads((RAIZ / "diseno" / "voces.json").read_text(encoding="utf-8")))["perfiles"]
+    return p["voz"] if p.get("voz") in perfiles else p["genero"]
+
+
+def edad_de(cfg, quien):
+    """Ajuste fino de tono y velocidad del personaje; sin ajuste, la voz tal cual."""
+    return cfg["edad"].get(quien, {"tono": 1.0, "velocidad": 1.0})
+
+
 def cargar_asr():
     from faster_whisper import WhisperModel
     return WhisperModel(os.environ.get("CVTH_WHISPER", "small"), device="cpu", compute_type="int8")
@@ -453,8 +466,8 @@ def main(argv):
     pistas.append(np.zeros(int(ENTRADA_S * SR), np.float32))
     for b in g["beats"]:
         quien = b["quien"]
-        perfil = cfg["perfiles"][g["personajes"][quien]["genero"]]
-        ed = cfg["edad"][quien]
+        perfil = cfg["perfiles"][voz_de(g, quien, cfg)]
+        ed = edad_de(cfg, quien)
         matiz = b.get("actuacion", {})
         if previo is not None:
             pausa = matiz.get("pausa_antes", cfg["pausa_turno_s"] if quien != previo else cfg["pausa_mismo_s"])
@@ -515,7 +528,7 @@ def main(argv):
             if p["quien"] == quien:
                 p["env"] = [round(float(min(1.0, v / ref)), 2) for v in p.pop("_env")]
     linea = {"id": g["id"], "fps": FPS, "duracion": round(len(voz) / SR, 3), "entrada": ENTRADA_S,
-             "voces": {q: cfg["perfiles"][g["personajes"][q]["genero"]] | cfg["edad"][q] for q in g["personajes"]},
+             "voces": {q: cfg["perfiles"][voz_de(g, q, cfg)] | edad_de(cfg, q) for q in g["personajes"]},
              "planos": planos}
     (out / "linea_tiempo.json").write_text(json.dumps(linea, ensure_ascii=False, indent=1), encoding="utf-8")
     (out / "tomas" / "registro.txt").write_text("\n".join(registro) + "\n", encoding="utf-8")
