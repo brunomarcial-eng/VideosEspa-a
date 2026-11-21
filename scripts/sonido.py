@@ -399,13 +399,58 @@ def s_bici(**_):
     return norm(y)
 
 
-EFECTOS = {"calle": s_calle, "pop": s_pop, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
+def s_megafonia(**_):
+    """Aviso de megafonía de avión o aeropuerto: tres notas de campana que suben (sol-si-re)."""
+    y = np.zeros(int(1.5 * SR), np.float32)
+    for k, f in enumerate((784, 988, 1175)):
+        c = campana(f, 1.0, [(1, 1, 0.45), (2.0, 0.22, 0.2), (3.0, 0.08, 0.1)])
+        i = int(k * 0.28 * SR)
+        y[i:i + len(c)] += c[: len(y) - i] * (1 - 0.1 * k)
+    return norm(y)
+
+
+def s_avion(dur=1.4, **_):
+    """Avión que pasa: soplo grave que crece y se va, con un silbido de turbina."""
+    t = tiempo(dur)
+    env = np.sin(np.pi * t / dur) ** 1.5
+    silbido = np.sin(2 * np.pi * np.cumsum(2200 - 500 * t / dur) / SR) * 0.08
+    y = (ruido(dur, 80, 900) + ruido(dur, 900, 3000) * 0.3 + silbido) * env
+    return bordes(norm(y), 0.05, 0.15)
+
+
+def s_tren(**_):
+    """Bocina de tren de alta velocidad: dos tonos a la vez, corta, y el traqueteo de las ruedas."""
+    dur = 1.3
+    t = tiempo(dur)
+    toque = np.where(t < 0.55, 1.0, 0.0) * np.minimum(1, t / 0.03)
+    y = sum(np.sign(np.sin(2 * np.pi * f * t)) * 0.18 + np.sin(2 * np.pi * f * t) * 0.5 for f in (330, 415)) * toque
+    tp = tiempo(0.05)
+    clac = ruido(0.05, 500, 3000) * np.exp(-tp / 0.01)
+    for tt in (0.6, 0.72, 0.95, 1.07):
+        i = int(tt * SR)
+        y[i:i + len(clac)] += clac * 0.6
+    return bordes(norm(y), 0.01, 0.08)
+
+
+def s_claxon(**_):
+    """Claxon de coche: dos bocinazos cortos."""
+    y = np.zeros(int(0.75 * SR), np.float32)
+    tp = tiempo(0.2)
+    b = sum(np.sign(np.sin(2 * np.pi * f * tp)) * 0.25 + np.sin(2 * np.pi * f * tp) for f in (400, 500)) * np.minimum(1, tp / 0.01)
+    b = bordes(b, 0.005, 0.03)
+    for k in range(2):
+        i = int(k * 0.3 * SR)
+        y[i:i + len(b)] += b[: len(y) - i]
+    return norm(y)
+
+
+EFECTOS = {"calle": s_calle, "pop": s_pop, "megafonia": s_megafonia, "avion": s_avion, "tren": s_tren, "claxon": s_claxon, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
            "carro": s_carro, "beep": s_beep, "conteo": s_conteo, "caja": s_caja, "sube": s_sube, "pinza": s_pinza,
            "desenrolla": s_desenrolla, "sello": s_sello, "notif": s_notif, "fwip": s_fwip,
            "campanilla": s_campanilla, "persiana": s_persiana, "vapor": s_vapor, "golpe": s_golpe, "sueno": s_sueno,
            "timbre": s_timbre, "rasgado": s_rasgado, "publico": s_publico, "bici": s_bici}
 # Ganancia de cada efecto para que ninguno tape la voz
-NIVEL = {"calle": 0.22, "pop": 0.30, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
+NIVEL = {"calle": 0.22, "pop": 0.30, "megafonia": 0.24, "avion": 0.18, "tren": 0.20, "claxon": 0.18, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
          "beep": 0.12, "conteo": 0.16, "caja": 0.30, "sube": 0.13, "pinza": 0.26, "desenrolla": 0.22,
          "sello": 0.40, "notif": 0.24, "fwip": 0.10, "campanilla": 0.18, "persiana": 0.16, "vapor": 0.10, "golpe": 0.22, "sueno": 0.20,
          "timbre": 0.22, "rasgado": 0.18, "publico": 0.16, "bici": 0.16}

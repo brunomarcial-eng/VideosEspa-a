@@ -1,0 +1,136 @@
+{
+ "tema": "Infraestructuras y transporte: 2016 frente a hoy",
+ "nota": "Euros de 2025 con el IPC medio anual del INE. Avión: mismo periodo (enero-octubre) de 2016 y de 2026. Tren: la CNMC da la puntualidad de 2019 y de 2024; no hay serie oficial comparable desde 2016.",
+ "pagamos": {
+  "por_habitante_eur_de_2025": {
+   "2016": 10492,
+   "2025": 13118
+  },
+  "recaudacion_real_maxima_desde_2002": 2025,
+  "por_habitante_sube_real_pct": 25.0
+ },
+ "gasto_transporte": {
+  "mill_eur": {
+   "2016": 15961.0,
+   "2024": 28634.0
+  },
+  "por_habitante_eur_de_2025": {
+   "2016": 437,
+   "2024": 605
+  },
+  "por_habitante_sube_real_pct": 38.4
+ },
+ "inversion_vias_tren": {
+  "mill_eur": {
+   "2016": 1652,
+   "2024": 4891
+  },
+  "mill_eur_de_2025": {
+   "2016": 2098,
+   "2024": 5022
+  },
+  "precios_constantes_itf_mill_eur": {
+   "2016": 1705,
+   "2024": 3379
+  },
+  "veces_real": 2.39,
+  "veces_precios_constantes_itf": 1.98
+ },
+ "avion_retraso_atfm_en_ruta": {
+  "periodo": "enero-octubre",
+  "2016": {
+   "dias": 305,
+   "vuelos": 1610948,
+   "vuelos_con_retraso": 40500,
+   "vuelos_con_mas_de_15_min": 17526,
+   "minutos_de_retraso": 721452,
+   "pct_vuelos_con_retraso": 2.51,
+   "minutos_por_vuelo": 0.448,
+   "causas_pct": {
+    "capacidad del control aéreo": 74.2,
+    "otras": 16.5,
+    "meteorología": 8.1
+   }
+  },
+  "2019": {
+   "dias": 304,
+   "vuelos": 1854514,
+   "vuelos_con_retraso": 86181,
+   "vuelos_con_mas_de_15_min": 27856,
+   "minutos_de_retraso": 1218029,
+   "pct_vuelos_con_retraso": 4.65,
+   "minutos_por_vuelo": 0.657,
+   "causas_pct": {
+    "capacidad del control aéreo": 73.7,
+    "otras": 2.4,
+    "personal del control aéreo": 5.2,
+    "meteorología": 17.4
+   }
+  },
+  "2025": {
+   "dias": 304,
+   "vuelos": 2110216,
+   "vuelos_con_retraso": 154770,
+   "vuelos_con_mas_de_15_min": 49034,
+   "minutos_de_retraso": 2176589,
+   "pct_vuelos_con_retraso": 7.33,
+   "minutos_por_vuelo": 1.031,
+   "causas_pct": {
+    "capacidad del control aéreo": 68.6,
+    "otras": 3.9,
+    "evento especial": 1.9,
+    "meteorología": 24.1
+   }
+  },
+  "2026": {
+   "dias": 304,
+   "vuelos": 2197877,
+   "vuelos_con_retraso": 214522,
+   "vuelos_con_mas_de_15_min": 59571,
+   "minutos_de_retraso": 2800427,
+   "pct_vuelos_con_retraso": 9.76,
+   "minutos_por_vuelo": 1.274,
+   "causas_pct": {
+    "capacidad del control aéreo": 76.0,
+    "espacio aéreo militar": 1.2,
+    "personal del control aéreo": 1.4,
+    "meteorología": 20.2
+   }
+  },
+  "vuelos_sube_pct": 36.4,
+  "vuelos_con_retraso_veces": 5.3,
+  "minutos_veces": 3.9,
+  "uno_de_cada": {
+   "2016": 40,
+   "2026": 10
+  }
+ },
+ "tren": {
+  "definicion": "llega con menos de 5 minutos de retraso (Reglamento (UE) 2015/1100)",
+  "rutas_ancho_variable": {
+   "rutas": "Madrid-Vigo/A Coruña, Madrid-Gijón, Madrid-Santander, Madrid-Cádiz/Huelva y Barcelona-Valencia",
+   "trenes_2024": 11234,
+   "pct_de_los_trenes_de_alta_velocidad": 11,
+   "puntualidad_pct": {
+    "2019": 74.7,
+    "2024": 54.0
+   }
+  },
+  "rutas_con_competencia": {
+   "rutas": "Madrid-Barcelona, Madrid-Valencia, Madrid-Sevilla, Madrid-Málaga y Madrid-Alicante",
+   "trenes_2024": 70805,
+   "pct_de_los_trenes_de_alta_velocidad": 67,
+   "puntualidad_pct": {
+    "2019": 94.8,
+    "2024": 85.8
+   }
+  },
+  "viajeros_comerciales_2024_millones": 49,
+  "primer_trimestre_2026": {
+   "viajeros_alta_velocidad_millones": 8.05,
+   "viajeros_baja_pct": -21,
+   "plazas_baja_pct": -12,
+   "la_cnmc_dice": "Los cortes de vía, las limitaciones de velocidad y la reducción de circulaciones han condicionado la prestación de los servicios."
+  }
+ }
+}
