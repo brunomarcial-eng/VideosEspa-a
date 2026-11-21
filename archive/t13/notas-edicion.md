@@ -1,7 +1,7 @@
 # T13 · Notas de edición (archivo por si hay apelación)
 
-**Vídeo:** «¿Pagamos más para llegar más tarde?» (transporte, 2016 frente a hoy) · Short vertical 1080×1920, DURACION, LUFS.
-**Fichero:** `videos/t13/render/t13-limpio.mp4` · SHA-256 `HUELLA`.
+**Vídeo:** «¿Pagamos más para llegar más tarde?» (transporte, 2016 frente a hoy) · Short vertical 1080×1920, 75,7 s, −14,3 LUFS.
+**Fichero:** `videos/t13/render/t13-limpio.mp4` · SHA-256 `1a1012672f4814c32d3d5833a30250b733529f965d21a16b826312bd97f63299`.
 **Aprobación:** es el tercero de los vídeos de lo que pagamos frente a lo que recibimos que pidió el responsable del canal el 21-11-2026 (con viajeros de tren y de avión, maquinistas, pilotos, azafatas, carreteras, peajes y conductores). Ese mismo día autorizó consultar las webs de transporte y eligió las voces A del casting (viajera, comandante y maquinista). Primer render pendiente de su visto bueno.
 
 ## Cómo se hizo
