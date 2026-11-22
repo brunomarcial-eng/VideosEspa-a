@@ -1,7 +1,7 @@
 # T14 · Notas de edición (archivo por si hay apelación)
 
-**Vídeo:** «¿Cuántos minutos trabajas para desayunar?» (serie «¿Cuántas horas…?», 2016 frente a hoy) · Short vertical 1080×1920, DURACION, LUFS.
-**Fichero:** `videos/t14/render/t14-limpio.mp4` · SHA-256 `HUELLA`.
+**Vídeo:** «¿Cuántos minutos trabajas para desayunar?» (serie «¿Cuántas horas…?», 2016 frente a hoy) · Short vertical 1080×1920, 60,2 s, −13,9 LUFS.
+**Fichero:** `videos/t14/render/t14-limpio.mp4` · SHA-256 `01e08e2010e1e5435a5c4436ba90647ff04edff5c0fef128223dec12f3557c35`.
 **Aprobación:** el responsable del canal pidió el 22-11-2026 el siguiente vídeo de la serie «¿Cuántas horas…?» (horas de trabajo para pagar algo concreto frente a 2016). El objeto, el desayuno, se eligió con los datos oficiales disponibles. Primer render pendiente de su visto bueno.
 
 ## Cómo se hizo

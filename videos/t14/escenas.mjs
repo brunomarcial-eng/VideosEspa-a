@@ -178,8 +178,8 @@ export function escenas(D) {
     { n: 8, set: "vacio",
       svg: `${panel(255, 820, 570, 400)}${rot(540, 880, "LO QUE HA SUBIDO DESDE 2016", 22, C.tinta)}
         ${[["SUELDO NETO POR HORA", D.sueldoSube, "#5E8C99"], ["DOCENA DE HUEVOS", D.huevosSube, "#D86B5B"]].map(([et, v, col], i) => `<g transform="translate(300 ${985 + i * 125})">
-          ${rot(0, -18, et, 20, C.gris, "", "start")}<rect x="0" y="0" width="480" height="46" rx="12" fill="#EEF0F2"/><rect id="s8-b${i}" x="0" y="0" width="0" height="46" rx="12" fill="${col}"/>
-          <g id="s8-v${i}">${rot(490, 36, "+" + Math.round(v) + " %", 30, i ? HOY : "#3F6672", "", "start")}</g></g>`).join("")}
+          ${rot(0, -18, et, 20, C.gris, "", "start")}<rect x="0" y="0" width="390" height="46" rx="12" fill="#EEF0F2"/><rect id="s8-b${i}" x="0" y="0" width="0" height="46" rx="12" fill="${col}"/>
+          <g id="s8-v${i}">${rot(400, 36, "+" + Math.round(v) + " %", 30, i ? HOY : "#3F6672", "", "start")}</g></g>`).join("")}
         ${rot(540, 1206, "SUELDO NETO MEDIANO POR HORA Y PRECIO MEDIO DE LA DOCENA", 15, C.gris)}${gente("s8", "mt")}`,
       tarjeta: tarjeta(8, "Lo que ha subido desde 2016", `${vs(8, ["+" + Math.round(D.sueldoSube) + "&nbsp;%", "+" + Math.round(D.huevosSube) + "&nbsp;%"], ["sueldo neto por hora", "docena de huevos"])}
         <div class="nota">Sueldo neto mediano por hora: de ${es(D.sueldo[0], 2)}&nbsp;€ a ${es(D.sueldo[1], 2)}&nbsp;€. Docena de huevos: de ${es(D.huevosEur[0], 2)}&nbsp;€ a ${es(D.huevosEur[1], 2)}&nbsp;€</div>`, { fuente: F_SUB, icono: bandera(44) }),
@@ -188,7 +188,7 @@ export function escenas(D) {
         ambiente("tiendaBarrio", null, t, 0);
         const tt = [c["c8-26"] - 0.2, c["c8-74"] - 0.2], v = [D.sueldoSube, D.huevosSube];
         for (let i = 0; i < 2; i++) {
-          attr(`s8-b${i}`, "width", (Math.min(480, v[i] / 74 * 440) * suave((t - tt[i]) / 0.7)).toFixed(1));
+          attr(`s8-b${i}`, "width", (Math.min(390, v[i] / 74 * 380) * suave((t - tt[i]) / 0.7)).toFixed(1));
           css(`s8-v${i}`, "opacity", clamp((t - tt[i] - 0.6) / 0.3));
         }
         sube("c8-a", t, c["c8-26"]); sube("c8-b", t, c["c8-74"]);
@@ -255,7 +255,7 @@ export function escenas(D) {
         marca("m11", t, c["c11-cambiar"]); sube("c11-sub", t, c["c11-tu"]);
         persona("s11-h", t, { x: 135, y: 1440, s: 0.66, mira: 1, vivo: true, boca: [[0, "sonrisa"]], ojos: [[0, "felices"]], brazo: [[0, "sujeta"]], fase: 3 });
         persona("s11-m", t, { x: 925, y: 1440, s: 0.8, mira: [[0, -1], [c["c11-tu"] - 0.3, 0]], vivo: true, charla: e, boca: habla(t, e, "seria"),
-          brazo: [[0, "sujeta"], [c["c11-seis"] - 0.2, "senala"], [c["c11-tu"], "hombros"]], incl: [[0, 0], [c["c11-tu"], -6]], espejo: true, fase: 2 });
+          brazo: [[0, "sujeta"], [c["c11-tu"], "hombros"]], incl: [[0, 0], [c["c11-tu"], -6]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c11-seis"], e.c["c11-cambiar"]]); } },
   ];
