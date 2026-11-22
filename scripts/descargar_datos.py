@@ -441,6 +441,8 @@ DESCARGAS = [
      "INE. Encuesta de Presupuestos Familiares (base 2016): gasto medio por hogar por códigos de gasto de 5 dígitos (COICOP 2018/EPF)", "https://www.ine.es/jaxiT3/Tabla.htm?t=73781"),
     ("ine_73844_epf_cantidades.json", "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/73844?nult=12",
      "INE. Encuesta de Presupuestos Familiares (base 2016): cantidades medias consumidas y valor unitario de alimentos, bebidas y energía", "https://www.ine.es/jaxiT3/Tabla.htm?t=73844"),
+    ("ine_50936_ipc_rubricas_media_anual.json", "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/50936?nult=15",
+     "INE. IPC base 2021: índices nacionales de rúbricas, media anual (Restauración: bares, cafeterías y restaurantes)", "https://www.ine.es/jaxiT3/Tabla.htm?t=50936"),
     ("microdatos/ees_cuatrienal_2006.zip", "https://www.ine.es/ftp/microdatos/salarial/datos_salarial06.zip",
      "INE. Encuesta Cuatrienal de Estructura Salarial 2006, microdatos (no se versiona: 72 MB)",
      "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177025&menu=resultados&idp=1254735976596"),

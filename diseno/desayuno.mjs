@@ -24,6 +24,13 @@ export const P = {
     <rect x="-44" y="-96" width="88" height="40" fill="#C9A0C2"/>${txt(0, -68, "AZÚCAR", 16, "#FFFFFF")}</g>`,
   aceite: (s = 1) => `<g transform="scale(${s})"><path d="M-30 0 V-130 Q-30 -150 -14 -160 V-190 H14 V-160 Q30 -150 30 -130 V0 Z" fill="#B9B23A" opacity=".9"/><rect x="-16" y="-206" width="32" height="20" rx="4" fill="#5F8F4A"/>
     <rect x="-30" y="-100" width="60" height="50" fill="#F4F1EA"/>${txt(0, -68, "OLIVA", 14, "#5F8F4A")}</g>`,
+  tostada: (s = 1) => `<g transform="scale(${s})"><path d="M-80 0 Q-90 -70 -40 -84 Q0 -96 40 -84 Q90 -70 80 0 Z" fill="#D9A45B"/><path d="M-70 -8 Q-78 -62 -36 -74 Q0 -84 36 -74 Q78 -62 70 -8 Z" fill="#F1D3A0"/>
+    <path d="M-62 -20 Q-60 -58 -20 -66 Q20 -70 52 -56 Q66 -40 60 -20 Z" fill="#F4F1EA"/>${[-36, 0, 34].map((x, i) => `<ellipse cx="${x}" cy="${-42 + (i % 2) * 6}" rx="20" ry="12" fill="#8DB05A" stroke="#5F8F4A" stroke-width="4"/>`).join("")}
+    ${[-18, 18].map((x) => `<path d="M${x - 22} -40 q22 -20 44 0 q-22 10 -44 0" fill="#F08A6A" stroke="#E07A5F" stroke-width="3"/>`).join("")}</g>`,
+  churros: (s = 1) => `<g transform="scale(${s})"><ellipse cx="0" cy="-8" rx="110" ry="20" fill="#FFFFFF" stroke="#E2E6E9" stroke-width="4"/>
+    ${[-40, 0, 40].map((x, i) => `<path d="M${x - 50} -${24 + i * 6} q50 -${30 + i * 4} 100 0" fill="none" stroke="#D9A45B" stroke-width="22" stroke-linecap="round"/><path d="M${x - 50} -${24 + i * 6} q50 -${30 + i * 4} 100 0" fill="none" stroke="#B98235" stroke-width="22" stroke-linecap="round" stroke-dasharray="4 10" opacity=".5"/>`).join("")}</g>`,
+  cafeConLeche: (s = 1) => `<g transform="scale(${s})"><ellipse cx="0" cy="-4" rx="62" ry="12" fill="#E2E6E9"/><path d="M-44 -96 H44 L36 -12 Q0 0 -36 -12 Z" fill="#FFFFFF" stroke="#E2E6E9" stroke-width="4"/>
+    <ellipse cx="0" cy="-96" rx="44" ry="10" fill="#C8A06B"/><path d="M44 -80 q30 0 26 26 q-4 20 -30 16" fill="none" stroke="#FFFFFF" stroke-width="10"/></g>`,
   pan: (s = 1) => `<g transform="scale(${s})"><path d="M-110 -18 Q-120 -60 -70 -64 H70 Q120 -60 110 -18 Q100 0 70 0 H-70 Q-100 0 -110 -18 Z" fill="#D9A45B"/>
     ${[-60, -20, 20, 60].map((x) => `<path d="M${x - 16} -52 q16 -14 32 0" fill="none" stroke="#B98235" stroke-width="7" stroke-linecap="round"/>`).join("")}</g>`,
 };
@@ -90,5 +97,6 @@ export const DELANTAL = `<path d="M-60 -330 H60 V-170 H-60 Z" fill="#F4F1EA"/><p
 export const PIJAMA_RAYAS = `${[-330, -290, -250, -210].map((y) => `<rect x="-82" y="${y}" width="164" height="14" fill="#FFFFFF" opacity=".28"/>`).join("")}`;
 export const BOTE_CACAO_MANO = `<g transform="translate(4 -10) rotate(180)">${P.cacao(0.55)}</g>`;
 export const CAFE_MANO = `<g transform="translate(6 30)">${P.cafe(0.6)}</g>`;
+export const CHURRO_MANO = `<g transform="translate(0 10) rotate(-60)"><path d="M-60 0 q60 -40 120 0" fill="none" stroke="#D9A45B" stroke-width="20" stroke-linecap="round"/></g>`;
 export const PAN_MANO = `<g transform="translate(0 30) rotate(-70)">${P.pan(0.6)}</g>`;
 export const BOLSO = `<g transform="translate(0 40)"><path d="M-30 -20 Q0 -70 30 -20" fill="none" stroke="#6B3A1F" stroke-width="8"/><rect x="-46" y="-24" width="92" height="76" rx="14" fill="#8A4F2C"/></g>`;

@@ -572,8 +572,24 @@ def amb_tienda(**_):
     return norm(y)
 
 
-AMBIENTES = {"aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
-NIVEL_AMB = {"aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
+def amb_bar(**_):
+    """Bar por la mañana: murmullo, la cafetera de la barra que vaporiza a ratos y tazas y platos que chocan."""
+    dur = 7.0
+    t = tiempo(dur)
+    y = ruido(dur, 220, 1800) * 0.32 * (0.8 + 0.2 * np.sin(2 * np.pi * 0.3 * t))
+    for t0 in (1.0, 4.4):                         # vapor de la cafetera
+        v = s_vapor(dur=1.1) * 0.35
+        i = int(t0 * SR)
+        y[i:i + len(v)] += v[: len(y) - i]
+    for t0, f in ((0.4, 2900), (2.6, 3400), (3.3, 2600), (5.8, 3100)):   # tazas y platos
+        c = campana(f, 0.25, [(1, 1, 0.06), (2.4, 0.4, 0.03)]) * 0.18
+        i = int(t0 * SR)
+        y[i:i + len(c)] += c[: len(y) - i]
+    return norm(y)
+
+
+AMBIENTES = {"bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
+NIVEL_AMB = {"bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
 
 
 def megafonia(y):
