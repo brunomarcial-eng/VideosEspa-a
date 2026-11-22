@@ -476,6 +476,34 @@ DESCARGAS = [
 ]
 
 
+# --- T17: coches B (el coche más vendido). DGT, microdatos mensuales de matriculaciones (MATRABA):
+# un registro por vehículo matriculado. No se versionan (unos 10 MB cada mes): se guardan en data/raw/microdatos/.
+DGT_WEB = "https://www.dgt.es/menusecundario/dgt-en-cifras/matraba-listados/matriculaciones-automoviles-mensual.html"
+for _a in (2016, 2019, 2025):
+    for _m in range(1, 13):
+        DESCARGAS.append((f"microdatos/dgt_matriculaciones_{_a}{_m:02d}.zip",
+                          f"https://www.dgt.es/microdatos/salida/{_a}/{_m}/vehiculos/matriculaciones/export_mensual_mat_{_a}{_m:02d}.zip",
+                          f"DGT. Microdatos de matriculaciones de vehículos, {_m:02d}/{_a} (un registro por vehículo: marca, modelo, tipo, nuevo o usado)", DGT_WEB))
+# Agencia Tributaria: ranking de ventas por marca y modelo, con el precio medio (solo existe desde 2022)
+AEAT_MAT = "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/matriculaciones"
+DESCARGAS.append(("aeat_matriculaciones_2025_ranking_marca_modelo.html", f"{AEAT_MAT}/2025/jrubik7eca3cff3e2e02a291311c8aecf25c4002778ce8.html",
+                  "Agencia Tributaria. Estadística del Impuesto sobre la Matriculación 2025: ranking de ventas por marca y modelo, con número y precio medio (base imponible, sin IVA ni impuesto de matriculación)",
+                  f"{AEAT_MAT}/2025/home.html"))
+for _a, _j in ((2007, "jrubik3bae.html"), (2016, "jrubik2b6a221f749f749c8fc99eddc416ce860d724267.html"),
+               (2019, "jrubikf376921f5010fbef44921641fef96bab4658b62e8.html"), (2025, "jrubik2f9ef987546d90d5b31985e0b94b86dd8ebd7ae9.html")):
+    DESCARGAS.append((f"aeat_matriculaciones_{_a}_origen_valor.html", f"{AEAT_MAT}/{_a}/{_j}",
+                      f"Agencia Tributaria. Estadística del Impuesto sobre la Matriculación {_a}: vehículos y precio medio por origen (nuevo adquirido en España, nuevo adquirido fuera, usado) y valor",
+                      f"{AEAT_MAT}/{_a}/home.html"))
+DGT_PUB = "https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones"
+DESCARGAS += [
+    ("dgt_matriculaciones_series_historicas_2025.xlsx", f"{DGT_PUB}/matriculaciones_series_historicas/Matriculaciones-Series-historicas-2025.xlsx",
+     "DGT. Matriculaciones de vehículos, series históricas (tabla 1: por tipo de vehículo, turismos)",
+     "https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Matriculaciones-Series-historicas-2025/"),
+    ("dgt_cambios_titularidad_series_historicas_2025.xlsx", f"{DGT_PUB}/Cambios-de-Titularidad-Series-historicas/Cambios-de-titularidad-Series-historicas-2025.xlsx",
+     "DGT. Cambios de titularidad de vehículos, series históricas (tabla 14: turismos)",
+     "https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Cambios-de-titularidad-Series-historicas-2025/"),
+]
+
 def bajar(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": "cvth-datos/1.0"})
     with urllib.request.urlopen(req, timeout=180) as r:
