@@ -1,8 +1,8 @@
 # T14 · Notas de edición (archivo por si hay apelación)
 
-**Vídeo:** «¿Cuántos minutos trabajas para desayunar?» (serie «¿Cuántas horas…?», 2016 frente a hoy) · Short vertical 1080×1920, 90,8 s, −14,1 LUFS (v2).
-**Fichero:** `videos/t14/render/t14-limpio.mp4` · SHA-256 `0a245c8cf67ecc31725061a4009e6a7296e8e8f803b14366dbb59f256350c57b`.
-**Aprobación:** el responsable del canal pidió el 22-11-2026 el siguiente vídeo de la serie «¿Cuántas horas…?» (horas de trabajo para pagar algo concreto frente a 2016). El objeto, el desayuno, se eligió con los datos oficiales disponibles. La v1 (60,2 s) le pareció «perfecta»; pidió enseñar al principio el sueldo en que se basan los minutos (bruto y neto al año y neto por hora, el mediano de cada año, tras explicarle las alternativas) y añadir desayunos de ahora: la tostada de aguacate, queso crema y salmón y desayunar en el bar con churros. v2 pendiente de su visto bueno.
+**Vídeo:** «¿Cuántos minutos trabajas para desayunar?» (serie «¿Cuántas horas…?», 2016 frente a hoy) · Short vertical 1080×1920, 90,8 s, −14,1 LUFS (v3).
+**Fichero:** `videos/t14/render/t14-limpio.mp4` · SHA-256 `aa3922f9fc3840ac593fd657a7e3007b5420b57e3fcaeeef3e828bcfb7acb6b1`.
+**Aprobación:** el responsable del canal pidió el 22-11-2026 el siguiente vídeo de la serie «¿Cuántas horas…?» (horas de trabajo para pagar algo concreto frente a 2016). El objeto, el desayuno, se eligió con los datos oficiales disponibles. La v1 (60,2 s) le pareció «perfecta»; pidió enseñar al principio el sueldo en que se basan los minutos (bruto y neto al año y neto por hora, el mediano de cada año, tras explicarle las alternativas) y añadir desayunos de ahora: la tostada de aguacate, queso crema y salmón y desayunar en el bar con churros. En la v2 pidió quitar un zumbido de fondo (el murmullo continuo de los ambientes), un sello rojo «SOLO DATOS OFICIALES» al principio, la tabla del sueldo más grande, más movimiento en la tienda y el bar, la cafetera calentando leche en el bar y profundidad en la tienda: v3 pendiente de su visto bueno.
 
 ## Cómo se hizo
 - **Guion:** una madre, su hijo de 15 años y la tendera de una tienda de barrio, todos inventados. Pasa por la cocina de casa y la tienda; acaba con el recuento («seis de nueve básicos cuestan más minutos que en 2016, y ninguno menos») y una pregunta. No da causas ni nombra partidos ni marcas.

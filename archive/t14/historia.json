@@ -1,5 +1,5 @@
 {
- "nota": "Momentos clave de T14 (el desayuno en minutos de trabajo, 2016 frente a hoy). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t14/escenas.mjs) y el sonido (scripts/sonido.py). Debajo, el ambiente de cada sitio: cocina por la mañana, tienda de barrio y bar. La música se corta en seco con el +74 % de los huevos.",
+ "nota": "Momentos clave de T14 (el desayuno en minutos de trabajo, 2016 frente a hoy). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t14/escenas.mjs) y el sonido (scripts/sonido.py). Debajo, el ambiente de cada sitio, sin ruido continuo (Bruno, 22-11-2026), y la cafetera del bar calentando la leche: cocina por la mañana, tienda de barrio y bar. La música se corta en seco con el +74 % de los huevos.",
  "musica": {
   "bpm": 98,
   "corte": "c9-74",
@@ -61,6 +61,14 @@
    "dt": -0.05,
    "sfx": "golpe",
    "vol": 0.25
+  },
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
   },
   {
    "id": "c2-mediano",
@@ -308,9 +316,7 @@
    "id": "c13-churros",
    "beat": 13,
    "palabra": "churros",
-   "dt": -0.1,
-   "sfx": "vapor",
-   "vol": 0.3
+   "dt": -0.1
   },
   {
    "id": "c13-33",
@@ -327,6 +333,14 @@
    "dt": -0.05,
    "sfx": "pop",
    "vol": 0.3
+  },
+  {
+   "id": "c13-leche",
+   "beat": 13,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "leche",
+   "vol": 0.6
   },
   {
    "id": "c14-sueno",
