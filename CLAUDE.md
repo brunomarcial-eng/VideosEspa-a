@@ -28,9 +28,11 @@ Nombre de trabajo: **Cuánto Vale Tu Hora**. Alternativas: «El Precio del Tiemp
 - **Ritmo tranquilo y poca carga:** una idea por escena, pocos elementos, y cada dato se queda en pantalla el tiempo suficiente para leerlo. **Duración de referencia: 1 minuto** (Bruno, 14-11-2026); si el tema da para más, se parte en dos vídeos.
 - **Debate:** más polémica y más pregunta al espectador, que es lo que trae comentarios. Vale el formato de discusión entre dos personajes (p. ej. padre e hijo), cada uno con su dato. La polémica es de generaciones o de bolsillo, nunca de partidos, y el vídeo no da causas.
 - **Personajes:** gente representativa de España: sobre todo tonos de piel claros, y alguno algo más moreno (hispanoamericanos). Nada de barbas sin bigote; la barba, solo si encaja (el carnicero). Siempre inventados.
+- **Sello «SOLO DATOS OFICIALES» en todos los vídeos** (Bruno, 22-11-2026): es la señal de identidad del canal. Cae en rojo en el primer plano de cada vídeo (`selloOficial()` y `selloAnim()`) y va también en la portada. Se recalca a lo largo del vídeo con las fuentes en pantalla.
+- **Sin ruido continuo de fondo** (Bruno, 22-11-2026): los ambientes son sonidos sueltos; nada de colchón de ruido que suene a zumbido. Tablas y cifras, grandes.
 - **Estilo de imagen:** limpio y sencillo como las referencias de `archive/referencias/` (tarjeta blanca con etiqueta y titular, subtítulo grande de 2-3 palabras, barra de progreso, personaje sencillo en un sitio fijo).
 - **Sonido:** música y efectos que acompañen cada acción de la historia.
-- **De uno en uno:** hasta que un vídeo esté bien, no se producen los demás. T1 aprobado el 12-11-2026, T2 (v4) el 14-11-2026 y T3 el 16-11-2026; el siguiente, cuando Bruno lo elija. Estado y siguiente paso: `docs/ESTADO.md`.
+- **De uno en uno:** hasta que un vídeo esté bien, no se producen los demás. T1 aprobado el 12-11-2026, T2 (v4) el 14-11-2026 y T3 el 16-11-2026; el siguiente, cuando Bruno lo elija. Orden del 22-11-2026: coches A (meses de trabajo para pagar el coche), coches B (el más vendido, 2016 frente a hoy) y la cena de Nochebuena. Estado y siguiente paso: `docs/ESTADO.md`.
 - Estructura del repo, agentes y contratos: `docs/agentes-y-pipeline.md`.
 - Identidad visual: `docs/identidad-visual.md`. Test de estilos: `docs/piloto-test.md`. Backlog: `docs/backlog-videos.md`.
 - Contexto previo e investigación: carpeta `research/` (los estados judiciales y cifras hay que re-verificar en la fuente antes de usar).

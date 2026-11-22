@@ -443,6 +443,13 @@ DESCARGAS = [
      "INE. Encuesta de Presupuestos Familiares (base 2016): cantidades medias consumidas y valor unitario de alimentos, bebidas y energía", "https://www.ine.es/jaxiT3/Tabla.htm?t=73844"),
     ("ine_50936_ipc_rubricas_media_anual.json", "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/50936?nult=15",
      "INE. IPC base 2021: índices nacionales de rúbricas, media anual (Restauración: bares, cafeterías y restaurantes)", "https://www.ine.es/jaxiT3/Tabla.htm?t=50936"),
+    # --- T16: ¿cuántos meses trabajas para pagar tu coche? ---
+    ("aeat_matriculaciones_2025_epigrafe.html", "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/matriculaciones/2025/jrubikf6f00556c2581396be924c0d0b8aca3be66e72939.html",
+     "Agencia Tributaria. Estadística del Impuesto sobre la Matriculación de Vehículos Automóviles 2025: vehículos, base imponible y precio medio por epígrafe", "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/matriculaciones/2025/home.html"),
+    ("aeat_matriculaciones_2016_epigrafe.html", "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/matriculaciones/2016/jrubikf5116e064a1b48cff32713e6871bd2df803fc22fd.html",
+     "Agencia Tributaria. Estadística del Impuesto sobre la Matriculación de Vehículos Automóviles 2016: vehículos, base imponible y precio medio por epígrafe", "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/matriculaciones/2016/home.html"),
+    ("bde_be1906_tae_nuevas_operaciones.csv", "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/be1906.csv",
+     "Banco de España. Boletín Estadístico 19.6: tipos de interés TAE de nuevas operaciones (hogares: vivienda, consumo y otros fines)", "https://www.bde.es/webbe/es/estadisticas/temas/tipos-interes.html"),
     ("microdatos/ees_cuatrienal_2006.zip", "https://www.ine.es/ftp/microdatos/salarial/datos_salarial06.zip",
      "INE. Encuesta Cuatrienal de Estructura Salarial 2006, microdatos (no se versiona: 72 MB)",
      "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177025&menu=resultados&idp=1254735976596"),

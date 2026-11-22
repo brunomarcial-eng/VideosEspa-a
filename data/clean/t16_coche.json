@@ -1,0 +1,87 @@
+{
+ "tema": "¿Cuántos meses trabajas para pagar tu coche? 2016 frente a hoy",
+ "nota": "Precio medio real de los coches matriculados (Agencia Tributaria), con IVA y matriculación; sueldo neto mediano en 12 mensualidades; préstamo del 100 % a cinco años a la TAE media de los préstamos al consumo del Banco de España.",
+ "sueldo": {
+  "bruto_anual": {
+   "2016": 19433,
+   "2025": 25296
+  },
+  "neto_anual": {
+   "2016": 15987,
+   "2025": 20424
+  },
+  "neto_mes": {
+   "2016": 1332,
+   "2025": 1702
+  }
+ },
+ "tae_consumo_media_anual": {
+  "2016": 8.43,
+  "2019": 8.33,
+  "2024": 8.5,
+  "2025": 7.74
+ },
+ "tae_consumo_ultimo_mes": {
+  "mes": "SEP 2026",
+  "tae": 7.5354
+ },
+ "coche_medio": {
+  "2016": {
+   "aeat": {
+    "vehiculos": 1167947,
+    "co2_g_km": 116,
+    "base_total_eur": 19277386299,
+    "precio_medio_sin_iedmt": 16505,
+    "precio_medio_con_iedmt": 16786
+   },
+   "precio_sin_impuestos": 16505,
+   "matriculacion": 281,
+   "iva": 3466,
+   "precio_con_impuestos": 20252,
+   "impuestos": 3747,
+   "impuestos_pct": 18.5,
+   "contado_meses_de_sueldo": 15.2,
+   "prestamo": {
+    "tae": 8.43,
+    "meses": 60,
+    "cuota": 412,
+    "total": 24709,
+    "intereses": 4457,
+    "cuota_pct_sueldo": 30.9,
+    "meses_de_sueldo": 18.5
+   }
+  },
+  "2025": {
+   "aeat": {
+    "vehiculos": 1237082,
+    "co2_g_km": 108,
+    "base_total_eur": 28685208805,
+    "precio_medio_sin_iedmt": 23188,
+    "precio_medio_con_iedmt": 23792
+   },
+   "precio_sin_impuestos": 23188,
+   "matriculacion": 604,
+   "iva": 4869,
+   "precio_con_impuestos": 28661,
+   "impuestos": 5473,
+   "impuestos_pct": 19.1,
+   "contado_meses_de_sueldo": 16.8,
+   "prestamo": {
+    "tae": 7.74,
+    "meses": 60,
+    "cuota": 574,
+    "total": 34441,
+    "intereses": 5780,
+    "cuota_pct_sueldo": 33.7,
+    "meses_de_sueldo": 20.2
+   }
+  }
+ },
+ "coche_medio_sube_pct": 41.5,
+ "sueldo_neto_sube_pct": 27.8,
+ "escenario_tercio": {
+  "cuota": 567,
+  "coche_maximo": 28328,
+  "nota": "Escenario propio, no oficial: un tercio del sueldo neto mediano a la cuota, cinco años, TAE media de 2025"
+ }
+}
