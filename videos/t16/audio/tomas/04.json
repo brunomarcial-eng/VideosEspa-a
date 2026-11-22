@@ -1,0 +1,30 @@
+{
+ "huella": "08281155065057cf",
+ "semilla": 4000,
+ "texto": "¿Y cuánto de eso son impuestos?",
+ "ev": {
+  "ok": true,
+  "nota": 0.9993,
+  "oido": "¿Y cuánto de esos son impuestos?",
+  "parecido": 0.98,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.58,
+   0.66,
+   0.81,
+   1.08
+  ],
+  "t1": [
+   0.14,
+   0.58,
+   0.66,
+   0.81,
+   1.08,
+   1.52
+  ],
+  "ritmo": 13.6,
+  "voz": 0.889
+ }
+}

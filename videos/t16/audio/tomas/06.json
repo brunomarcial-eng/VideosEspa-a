@@ -1,0 +1,48 @@
+{
+ "huella": "caa2505fa6289f26",
+ "semilla": 6000,
+ "texto": "Si lo pagas al contado: casi diecisiete meses de tu sueldo entero. En 2016, quince.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0468,
+  "oido": "Si lo pagas al contado, casi 17 meses de tu sueldo entero, en 2016, 15.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   0.3,
+   0.58,
+   0.7,
+   1.52,
+   1.8,
+   2.38,
+   2.74,
+   3.02,
+   3.12,
+   3.38,
+   4.28,
+   4.38,
+   5.56
+  ],
+  "t1": [
+   0.18,
+   0.3,
+   0.58,
+   0.7,
+   1.16,
+   1.8,
+   2.38,
+   2.74,
+   3.02,
+   3.12,
+   3.38,
+   3.74,
+   4.38,
+   4.84,
+   5.76
+  ],
+  "ritmo": 12.7,
+  "voz": 0.944
+ }
+}

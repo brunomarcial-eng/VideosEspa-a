@@ -1,0 +1,234 @@
+{
+ "nota": "Momentos clave de T16 (coches, vídeo A). La música se corta en seco con los «veinte» meses financiado. Ambiente del concesionario solo con sonidos sueltos (pasos, llaves, puertas de coche), sin ruido continuo.",
+ "musica": {
+  "bpm": 98,
+  "corte": "c7-veinte",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "concesionario",
+   "desde": 1,
+   "hasta": 11,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-meses",
+   "beat": 1,
+   "palabra": "meses",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c1-vengo",
+   "beat": 1,
+   "palabra": "vengo",
+   "dt": -0.1,
+   "sfx": "llaves",
+   "vol": 0.35
+  },
+  {
+   "id": "c1-cuentan",
+   "beat": 1,
+   "palabra": "cuentan",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-mediano",
+   "beat": 2,
+   "palabra": "mediano",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-1702",
+   "beat": 2,
+   "palabra": "1.702",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-coche",
+   "beat": 3,
+   "palabra": "coche",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-28661",
+   "beat": 3,
+   "palabra": "28.661",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-20252",
+   "beat": 3,
+   "palabra": "20.252",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-impuestos",
+   "beat": 4,
+   "palabra": "impuestos",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-5473",
+   "beat": 5,
+   "palabra": "5.473",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-19",
+   "beat": 5,
+   "palabra": "19",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-matriculacion",
+   "beat": 5,
+   "palabra": "matriculación",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-contado",
+   "beat": 6,
+   "palabra": "contado",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.3
+  },
+  {
+   "id": "c6-diecisiete",
+   "beat": 6,
+   "palabra": "diecisiete",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.35
+  },
+  {
+   "id": "c6-2016",
+   "beat": 6,
+   "palabra": "2016",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c7-intereses",
+   "beat": 7,
+   "palabra": "intereses",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.45
+  },
+  {
+   "id": "c7-veinte",
+   "beat": 7,
+   "palabra": "veinte",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.4
+  },
+  {
+   "id": "c8-574",
+   "beat": 8,
+   "palabra": "574",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c8-tercio",
+   "beat": 8,
+   "palabra": "tercio",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c8-cinco",
+   "beat": 8,
+   "palabra": "cinco",
+   "dt": -0.05
+  },
+  {
+   "id": "c9-bicicletas",
+   "beat": 9,
+   "palabra": "bicicletas",
+   "dt": -0.1,
+   "sfx": "bici",
+   "vol": 0.35
+  },
+  {
+   "id": "c9-tienen",
+   "beat": 9,
+   "palabra": "tienen",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-2007",
+   "beat": 10,
+   "palabra": "2007",
+   "dt": -0.05,
+   "sfx": "rasgado",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-dieciocho",
+   "beat": 10,
+   "palabra": "dieciocho",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-10",
+   "beat": 10,
+   "palabra": "10",
+   "dt": -0.05
+  },
+  {
+   "id": "c11-diecisiete",
+   "beat": 11,
+   "palabra": "diecisiete",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-cuantos",
+   "beat": 11,
+   "palabra": "cuántos",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-tuyo",
+   "beat": 11,
+   "palabra": "tuyo",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  }
+ ]
+}

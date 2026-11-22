@@ -596,6 +596,38 @@ def amb_bar(**_):
     return norm(y)
 
 
+def s_llaves(**_):
+    """Llaves de coche que tintinean."""
+    y = np.zeros(int(0.6 * SR), np.float32)
+    for k, f in enumerate((3900, 4600, 3300, 5200, 4100)):
+        c = campana(f, 0.18, [(1, 1, 0.03), (2.6, 0.4, 0.015)])
+        i = int(k * 0.07 * SR)
+        y[i:i + len(c)] += c[: len(y) - i] * (1 - 0.12 * k)
+    return norm(y)
+
+
+def s_puerta(**_):
+    """Puerta de coche que se cierra: golpe sordo con un poco de chapa."""
+    t = tiempo(0.35)
+    y = np.sin(2 * np.pi * (70 + 40 * np.exp(-t / 0.02)) * t) * np.exp(-t / 0.08) + ruido(0.35, 300, 2500) * np.exp(-t / 0.02) * 0.4
+    return bordes(norm(y), 0.001, 0.05)
+
+
+def amb_concesionario(**_):
+    """Concesionario: pasos sobre suelo brillante, unas llaves y una puerta de coche al fondo. Sin ruido continuo."""
+    dur = 8.0
+    y = np.zeros(int(dur * SR), np.float32)
+    tp = tiempo(0.06)
+    paso = np.sin(2 * np.pi * 160 * tp) * np.exp(-tp / 0.012) + ruido(0.06, 1200, 5000) * np.exp(-tp / 0.006) * 0.5
+    for tt in np.arange(0.4, 3.0, 0.45):
+        i = int(tt * SR)
+        y[i:i + len(paso)] += paso * 0.25
+    for t0, x, v in ((4.2, s_llaves(), 0.25), (6.4, s_puerta(), 0.35)):
+        i = int(t0 * SR)
+        y[i:i + len(x)] += x[: len(y) - i] * v
+    return norm(y)
+
+
 def s_leche(dur=3.2, **_):
     """La cafetera del bar calentando la leche: el vapor que silba, sube de tono y borbotea, y se corta."""
     t = tiempo(dur)
@@ -606,8 +638,8 @@ def s_leche(dur=3.2, **_):
     return bordes(norm((silbido + vapor + borboteo) * env), 0.01, 0.05)
 
 
-AMBIENTES = {"bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
-NIVEL_AMB = {"bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
+AMBIENTES = {"concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
+NIVEL_AMB = {"concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
 
 
 def megafonia(y):
@@ -621,13 +653,13 @@ def megafonia(y):
     return norm(out)
 
 
-EFECTOS = {"calle": s_calle, "pop": s_pop, "estacion": s_campana_estacion, "leche": s_leche, "megafonia": s_megafonia, "avion": s_avion, "tren": s_tren, "claxon": s_claxon, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
+EFECTOS = {"calle": s_calle, "pop": s_pop, "estacion": s_campana_estacion, "leche": s_leche, "llaves": s_llaves, "puerta": s_puerta, "megafonia": s_megafonia, "avion": s_avion, "tren": s_tren, "claxon": s_claxon, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
            "carro": s_carro, "beep": s_beep, "conteo": s_conteo, "caja": s_caja, "sube": s_sube, "pinza": s_pinza,
            "desenrolla": s_desenrolla, "sello": s_sello, "notif": s_notif, "fwip": s_fwip,
            "campanilla": s_campanilla, "persiana": s_persiana, "vapor": s_vapor, "golpe": s_golpe, "sueno": s_sueno,
            "timbre": s_timbre, "rasgado": s_rasgado, "publico": s_publico, "bici": s_bici}
 # Ganancia de cada efecto para que ninguno tape la voz
-NIVEL = {"calle": 0.22, "pop": 0.30, "estacion": 0.24, "leche": 0.16, "megafonia": 0.24, "avion": 0.18, "tren": 0.20, "claxon": 0.18, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
+NIVEL = {"calle": 0.22, "pop": 0.30, "estacion": 0.24, "leche": 0.16, "llaves": 0.18, "puerta": 0.22, "megafonia": 0.24, "avion": 0.18, "tren": 0.20, "claxon": 0.18, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
          "beep": 0.12, "conteo": 0.16, "caja": 0.30, "sube": 0.13, "pinza": 0.26, "desenrolla": 0.22,
          "sello": 0.40, "notif": 0.24, "fwip": 0.10, "campanilla": 0.18, "persiana": 0.16, "vapor": 0.10, "golpe": 0.22, "sueno": 0.20,
          "timbre": 0.22, "rasgado": 0.18, "publico": 0.16, "bici": 0.16}

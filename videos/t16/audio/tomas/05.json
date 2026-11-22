@@ -1,0 +1,38 @@
+{
+ "huella": "6c1dd53c5bf25bca",
+ "semilla": 5000,
+ "texto": "5.473 euros: el 19 % del precio. IVA y matriculación.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0132,
+  "oido": "5473 euros, el 19% del precio, IVA y matriculación.",
+  "parecido": 0.971,
+  "problemas": [],
+  "t0": [
+   0.920000000000001,
+   1.72,
+   2.54,
+   2.84,
+   3.32,
+   3.72,
+   4.02,
+   4.72,
+   5.24,
+   5.36
+  ],
+  "t1": [
+   1.72,
+   2.1,
+   2.84,
+   3.32,
+   3.72,
+   4.02,
+   4.32,
+   5.24,
+   5.36,
+   5.94
+  ],
+  "ritmo": 14.2,
+  "voz": 0.935
+ }
+}

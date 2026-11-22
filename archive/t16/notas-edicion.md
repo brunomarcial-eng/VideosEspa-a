@@ -1,0 +1,15 @@
+# T16 · Notas de edición (archivo por si hay apelación)
+
+**Vídeo:** «¿Cuántos meses trabajas para pagar tu coche?» (coches, vídeo A; serie «¿Cuántas horas…?») · Short vertical 1080×1920, DURACION s, LUFS LUFS (v1).
+**Fichero:** `videos/t16/render/t16-limpio.mp4` · SHA-256 `HUELLA`.
+**Aprobación:** el responsable del canal pidió el 22-11-2026 dos vídeos de coches, y este es el primero: cuánto cuesta el coche en tiempo de trabajo, al contado y financiado, con los intereses y los impuestos (IVA y matriculación), cuánto coche te puedes permitir y cuántos meses de tu vida van al coche. Propuso el escenario: un concesionario con un vendedor y un cliente, y un calendario que pasa los meses con las estaciones por los ventanales. También fijó que el sello «SOLO DATOS OFICIALES» vaya en el primer plano y en la portada de todos los vídeos. v1 pendiente de su visto bueno.
+
+## Cómo se hizo
+- **Guion:** una clienta y un vendedor de un concesionario, inventados. Ella da su sueldo, él el precio del coche medio, lo que son impuestos, los meses al contado y financiado y la cuota; ella pregunta, con sorna, dónde están las bicicletas. Él dice que en 2007, antes de la crisis, era peor; ella cierra con el veredicto («más que en 2016, menos que en 2007») y una pregunta. No da causas ni nombra partidos ni marcas.
+- **Cifras:** precio medio de los turismos y todoterrenos matriculados (Agencia Tributaria, estadística del Impuesto sobre la Matriculación, 2007, 2016, 2019 y 2025) más el IVA de cada año (BOE, Ley 37/1992: 16 % en 2007, 21 % después); TAE media de los préstamos al consumo nuevos (Banco de España, Boletín Estadístico 19.6); sueldo neto mediano de T1 y T14 (INE y Eurostat). Script y detalle: `scripts/calcular_t16.py`, `paso-1-datos.md`, `guion.md` y `t16_coche.json`. El sueldo de T1 se archiva en `datos-crudos/t1_cesta_horas.json` (sus ficheros originales están en `archive/t1/`).
+- **Escenario propio, dicho en pantalla:** «un tercio del sueldo a la cuota» no es una cifra oficial; el Banco de España no publica un límite de endeudamiento.
+- **El precio incluye extras:** es lo que se paga de verdad al matricular; un coche básico sale más barato. Se dice en pantalla (plano 3) y en la descripción.
+- **Ficheros originales:** `datos-crudos/`, con enlace, fecha y huella SHA-256 en `datos-crudos/MANIFEST.csv`.
+- **Imagen:** dibujada con código (`escenas.mjs` y `diseno/concesionario.mjs`), sin marcas de coches.
+- **Voces:** Qwen3-TTS en local, del catálogo de voces del canal (`docs/voces-catalogo.md`; desde el 21-11-2026 no se hacen castings nuevos): la clienta con la voz «viajera» y el vendedor con «profesora» (voz de hombre). Cada toma se revisa con Whisper (`voz-registro.txt`).
+- **Música, efectos y ambiente:** generados con código (`scripts/sonido.py`): pasos, unas llaves y una puerta de coche en el concesionario, sin ruido de fondo continuo; el golpe del sello, las hojas del calendario, monedas y un timbre de bici. Contenido sintético: sí.

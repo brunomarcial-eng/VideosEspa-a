@@ -1,0 +1,32 @@
+{
+ "huella": "9cffcda59ff70632",
+ "semilla": 9000,
+ "texto": "Vale. ¿Y las bicicletas, dónde las tienen?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0109,
+  "oido": "Vale. Y las bicicletas, ¿dónde las tienen?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.84,
+   1.04,
+   1.18,
+   2.28,
+   2.66,
+   2.8
+  ],
+  "t1": [
+   0.34,
+   1.04,
+   1.18,
+   1.94,
+   2.66,
+   2.8,
+   3.1
+  ],
+  "ritmo": 9.8,
+  "voz": 0.872
+ }
+}
