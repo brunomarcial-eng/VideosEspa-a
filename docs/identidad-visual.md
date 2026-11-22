@@ -48,3 +48,14 @@ Comprueba que el ocre sobre pizarra y el azul sobre papel cumplen AA; si no, acl
 
 ## 4. Prohibido
 Comunidades de vecinos, conserje, plátanos u otros animales-metáfora, rojo y azul juntos como par de partido, banderas, caricaturas, personajes con derechos, rostros de personas reales.
+
+
+## Sello «SOLO DATOS OFICIALES» (Bruno, 22-11-2026)
+En las primeras viñetas de cada vídeo cae un sello rojo «SOLO DATOS OFICIALES» (con un golpe de sonido «sello»), desde T14.
+Está en `diseno/limpio.mjs` (`selloOficial(id)`) y se anima con `selloAnim(id, t, t0, x, y)` de `diseno/limpio_runtime.js`.
+
+## Fondo y profundidad (Bruno, 22-11-2026)
+- **Sin ruido continuo de fondo:** los ambientes son sonidos sueltos (pasos, tazas, monedas, tictac…), nunca un colchón de ruido que suene a zumbido.
+- **Movimiento en los decorados:** lámparas que se balancean, gente que pasa al fondo y un primer plano que se mueve distinto con la cámara (`vidaFondo()`).
+- **Profundidad:** decorados en perspectiva cuando ayuda (la tienda de T14: paredes laterales, baldas en escorzo y suelo con líneas de fuga).
+- **Tablas y cifras grandes:** una tabla tiene que leerse en el móvil sin esfuerzo (la del sueldo de T14 ocupa casi todo el ancho).

@@ -2,7 +2,7 @@
 // y la tienda de barrio (ultramarinos). Todo dibujado con código, sin marcas. Capas para ambientes() de sueno.mjs:
 // el suelo empieza en y = 1300 y los personajes pisan en y = 1440.
 
-import { C } from "./limpio.mjs";
+import { C, paseante } from "./limpio.mjs";
 
 const X0 = -400, ANCHO = 1900;
 const txt = (x, y, t, tam, color, o = "") => `<text x="${x}" y="${y}" text-anchor="middle" font-family="Cap" font-weight="800" font-size="${tam}" fill="${color}" ${o}>${t}</text>`;
@@ -71,23 +71,61 @@ function cocina() {
     ${suelo("#E8E0D0", "#D8CDB8")}`;
 }
 
-// ------------------------------------------------------------------ tienda de barrio (ultramarinos), sin marca
+// ------------------------------------------------------------------ tienda de barrio (ultramarinos), sin marca, en perspectiva
+// (Bruno, 22-11-2026: «algo de profundidad para acercarlo a un 3D»). Punto de fuga en (540, 700): pared del fondo entre
+// x = 120 y 960; paredes laterales, techo y suelo fugan hacia él. Lámparas «tb-l0…», clientes al fondo «tb-w0…» y cajas
+// de naranjas en primer plano «tb-fg», que anima vidaFondo().
 function tienda() {
-  const balda = (y, cosas) => `<rect x="-380" y="${y}" width="1180" height="20" rx="4" fill="#8A6A48"/>${cosas.map(([x, k, s]) => `<g transform="translate(${x} ${y})">${P[k](s)}</g>`).join("")}`;
-  return `<rect x="${X0}" y="-400" width="${ANCHO}" height="1720" fill="#F3E6CF"/>
-    <!-- rótulo de la tienda -->
-    <rect x="-380" y="520" width="1180" height="96" rx="14" fill="#3F6B5A"/>${txt(210, 586, "ULTRAMARINOS · FRUTA · PAN", 44, "#F4F1EA")}
-    <!-- estantería con productos del desayuno -->
-    <rect x="-390" y="620" width="1200" height="480" fill="#C9A26B"/><rect x="-370" y="640" width="1160" height="440" fill="#E3CDA6"/>
-    ${balda(800, [[-300, "aceite", 0.62], [-230, "aceite", 0.62], [-160, "aceite", 0.62], [-60, "leche", 0.7], [10, "leche", 0.7], [80, "leche", 0.7], [180, "zumo", 0.7], [250, "zumo", 0.7], [360, "azucar", 0.75], [440, "azucar", 0.75], [560, "cafe", 0.8], [640, "cafe", 0.8], [720, "cafe", 0.8]])}
-    ${balda(960, [[-300, "cacao", 0.72], [-220, "cacao", 0.72], [-140, "cacao", 0.72], [-20, "huevos", 0.6], [120, "huevos", 0.6], [260, "huevos", 0.6], [420, "pan", 0.55], [580, "pan", 0.55], [720, "leche", 0.7]])}
-    ${balda(1080, [])}
-    <!-- cajas de naranjas en el suelo, a la derecha -->
-    ${[880, 1080].map((x) => `<g transform="translate(${x} 1300)"><rect x="-90" y="-110" width="180" height="110" rx="6" fill="#B98A5B"/><rect x="-90" y="-70" width="180" height="12" fill="#A9794F"/>
-      ${[-55, 0, 55].map((xx) => `<circle cx="${xx}" cy="-120" r="30" fill="#F08A3C"/>`).join("")}</g>`).join("")}
-    <!-- campanilla de la puerta y báscula -->
-    <g transform="translate(1000 700)"><rect x="-4" y="-60" width="8" height="40" fill="#8C969C"/><path d="M-26 0 Q-26 -30 0 -30 Q26 -30 26 0 Z" fill="#E9C46A"/><circle cy="6" r="7" fill="#C8902E"/></g>
-    ${suelo("#D8CBB4", "#CBBC9F")}`;
+  const VX = 540, VY = 700;
+  const enX = (x0, y0, x) => VY + (y0 - VY) * (x - VX) / (x0 - VX);   // altura en x de una línea que fuga desde (x0, y0)
+  const balda = (y, cosas) => `<rect x="130" y="${y}" width="820" height="14" rx="4" fill="#8A6A48"/>${cosas.map(([x, k, s]) => `<g transform="translate(${x} ${y})">${P[k](s)}</g>`).join("")}`;
+  // Balda de una pared lateral: va de la pared del fondo (x = xb) al borde de la imagen (x = xf) con su escorzo.
+  const baldaLado = (xb, xf, yb, cols) => {
+    const yf = enX(xb, yb, xf);
+    let out = `<path d="M${xb} ${yb} L${xf} ${yf} L${xf} ${yf + 22 * (yf - VY) / (yb - VY)} L${xb} ${yb + 10} Z" fill="#8A6A48"/>`;
+    for (let i = 0; i < cols.length; i++) {
+      const u = (i + 0.5) / cols.length, x = xb + (xf - xb) * u, y = yb + (yf - yb) * u, sc = (y - VY) / (yb - VY);
+      out += `<rect x="${(x - 16 * sc).toFixed(1)}" y="${(y - 70 * sc).toFixed(1)}" width="${(32 * sc).toFixed(1)}" height="${(70 * sc).toFixed(1)}" rx="${(6 * sc).toFixed(1)}" fill="${cols[i]}"/>`;
+    }
+    return out;
+  };
+  const colores = ["#B9B23A", "#7FA4B0", "#C8902E", "#8A4F2C", "#E07A5F", "#F2CC8F", "#7C9A7E", "#C9A0C2"];
+  const lampara = (i, x, y, s) => `<g id="tb-l${i}" data-x="${x}" data-y="-400"><line x1="${x}" y1="-400" x2="${x}" y2="${y}" stroke="#5B4636" stroke-width="${4 * s}"/>
+    <path d="M${x - 60 * s} ${y + 50 * s} Q${x} ${y - 40 * s} ${x + 60 * s} ${y + 50 * s} Z" fill="#3F6B5A"/><circle cx="${x}" cy="${y + 56 * s}" r="${18 * s}" fill="#FFE9A8"/>
+    <circle cx="${x}" cy="${y + 90 * s}" r="${120 * s}" fill="#FFE9A8" opacity=".13"/></g>`;
+  const naranjas = (x, y, s) => `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-120" y="-130" width="240" height="130" rx="8" fill="#B98A5B"/><rect x="-120" y="-84" width="240" height="14" fill="#A9794F"/>
+    ${[-80, -26, 28, 82].map((xx, k) => `<circle cx="${xx}" cy="${-140 - (k % 2) * 10}" r="34" fill="#F08A3C"/><circle cx="${xx - 10}" cy="${-152 - (k % 2) * 10}" r="8" fill="#FFFFFF" opacity=".3"/>`).join("")}</g>`;
+  const yIzqT = enX(120, 470, X0), yIzqS = enX(120, 1040, X0), yDerT = enX(960, 470, X0 + ANCHO), yDerS = enX(960, 1040, X0 + ANCHO);
+  // Suelo: líneas que fugan y líneas horizontales cada vez más separadas
+  const fugas = Array.from({ length: 15 }, (_, i) => { const xb = 120 + i * 60; return `<line x1="${xb}" y1="1040" x2="${(VX + (xb - VX) * 4.6).toFixed(0)}" y2="2300" stroke="#C4B394" stroke-width="3"/>`; }).join("");
+  const horiz = [1068, 1110, 1172, 1262, 1390, 1580, 1860].map((y) => `<line x1="${X0}" y1="${y}" x2="${X0 + ANCHO}" y2="${y}" stroke="#C4B394" stroke-width="3"/>`).join("");
+  return `<rect x="${X0}" y="-400" width="${ANCHO}" height="2700" fill="#E8D8BC"/>
+    <!-- techo -->
+    <path d="M${X0} -400 H${X0 + ANCHO} V${yDerT} L960 470 H120 L${X0} ${yIzqT} Z" fill="#F4EBDA"/>
+    <!-- pared del fondo con el rótulo y las baldas -->
+    <rect x="120" y="470" width="840" height="570" fill="#F3E6CF"/>
+    <rect x="160" y="490" width="760" height="70" rx="12" fill="#3F6B5A"/><text x="540" y="540" text-anchor="middle" font-family="Cap" font-weight="800" font-size="34" fill="#F4F1EA">ULTRAMARINOS · FRUTA · PAN</text>
+    <rect x="130" y="580" width="820" height="460" fill="#E3CDA6"/>
+    ${balda(720, [[180, "aceite", 0.5], [240, "aceite", 0.5], [320, "leche", 0.55], [380, "leche", 0.55], [460, "zumo", 0.55], [540, "azucar", 0.6], [620, "cafe", 0.62], [690, "cafe", 0.62], [780, "cacao", 0.6], [860, "cacao", 0.6]])}
+    ${balda(870, [[200, "huevos", 0.48], [330, "huevos", 0.48], [470, "pan", 0.45], [610, "pan", 0.45], [740, "leche", 0.55], [820, "zumo", 0.55], [890, "azucar", 0.55]])}
+    ${balda(1020, [])}
+    <!-- pared izquierda, con baldas en escorzo -->
+    <path d="M${X0} ${yIzqT} L120 470 L120 1040 L${X0} ${yIzqS} Z" fill="#E6CFA8"/>
+    ${[640, 800, 960].map((y, k) => baldaLado(120, X0, y, colores.slice(k, k + 6))).join("")}
+    <!-- pared derecha, con el mostrador en escorzo, la báscula y la caja -->
+    <path d="M960 470 L${X0 + ANCHO} ${yDerT} L${X0 + ANCHO} ${yDerS} L960 1040 Z" fill="#DCC29A"/>
+    ${baldaLado(960, X0 + ANCHO, 640, colores.slice(2, 8))}
+    <path d="M960 ${1040 - 150} L${X0 + ANCHO} ${(enX(960, 890, X0 + ANCHO)).toFixed(0)} L${X0 + ANCHO} ${yDerS} L960 1040 Z" fill="#5E8C99"/>
+    <path d="M940 ${1040 - 170} L${X0 + ANCHO} ${(enX(960, 870, X0 + ANCHO)).toFixed(0)} L${X0 + ANCHO} ${(enX(960, 890, X0 + ANCHO) + 10).toFixed(0)} L960 ${1040 - 150} Z" fill="#7FA4B0"/>
+    <g transform="translate(1000 862) scale(.7)"><rect x="-50" y="-60" width="100" height="60" rx="8" fill="${C.tinta}"/><rect x="-40" y="-52" width="80" height="30" rx="4" fill="#9AE6B4"/></g>
+    <!-- suelo en perspectiva -->
+    <path d="M${X0} ${yIzqS} L120 1040 H960 L${X0 + ANCHO} ${yDerS} V2300 H${X0} Z" fill="#D8CBB4"/>${fugas}${horiz}
+    <!-- clientes al fondo -->
+    ${[["#C77B5B", "#E9BE98"], ["#7C9A7E", "#F2CBA8"]].map(([c, piel], i) => paseante(`tb-w${i}`, c, piel, 1)).join("")}
+    <!-- lámparas colgantes a distintas profundidades -->
+    ${lampara(0, 330, 430, 0.8)}${lampara(1, 750, 430, 0.8)}${lampara(2, -150, 260, 1.3)}${lampara(3, 1230, 260, 1.3)}
+    <!-- primer plano: cajas de naranjas cerca de la cámara -->
+    <g id="tb-fg">${naranjas(-40, 1880, 1.7)}${naranjas(1150, 1900, 1.8)}</g>`;
 }
 export const DECORADOS_T14 = { cocinaDesayuno: cocina, tiendaBarrio: tienda };
 

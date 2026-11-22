@@ -296,3 +296,31 @@ function cuenta(id, t, base, tiempos) {
   css(id, "transform", `scale(${(1 + (d >= 0 && d < 0.35 ? 0.28 * Math.sin(d / 0.35 * Math.PI) : 0)).toFixed(3)})`);
   return n;
 }
+
+// Sello rojo «SOLO DATOS OFICIALES» (Bruno, 22-11-2026: en las primeras viñetas de cada vídeo). Cae de golpe desde
+// grande, gira un poco, rebota y se queda; opcionalmente se va con «hasta».
+function selloAnim(id, t, t0, x, y, o = {}) {
+  const k = (t - t0) / 0.3;
+  if (k < 0 || (o.hasta !== undefined && t > o.hasta + 0.3)) { ver(id, false); return; }
+  const golpe = k >= 1 && k < 2 ? 0.07 * Math.sin((k - 1) * Math.PI) : 0;
+  const sale = o.hasta !== undefined ? clamp((t - o.hasta) / 0.3) : 0;
+  T(id, x, y, { s: (o.s ?? 1) * (k < 1 ? 2.6 - 1.6 * fuera(k) : 1 - golpe), r: (o.r ?? -10) + (k < 1 ? -14 * (1 - k) : 0), op: clamp(k * 3) * (1 - sale) });
+}
+// Vida de fondo de un decorado (T14): lámparas que se balancean («<p>-l0», «<p>-l1»…, colgadas de su punto más alto),
+// gente que pasa al fondo («<p>-w0»…, hechas con paseante()), un primer plano «<p>-fg» y el propio decorado «amb-<capa>»
+// que se mueven distinto con la cámara para que se note la profundidad.
+function vidaFondo(p, t, o = {}) {
+  for (let i = 0; i < (o.lamparas ?? 0); i++) {
+    const el = $(p + "-l" + i);
+    if (el) el.setAttribute("transform", `rotate(${(Math.sin(t * 1.3 + i * 1.9) * (o.balanceo ?? 3)).toFixed(2)} ${el.dataset.x} ${el.dataset.y})`);
+  }
+  for (let i = 0; i < (o.gente ?? 0); i++) {
+    const W = o.W ?? 1400, v = i % 2 ? -46 : 52, x0 = ((i * 0.618 + 0.2) % 1) * W;
+    const x = ((((x0 + v * t) % W) + W) % W) - 200;
+    andar(p + "-w" + i, t, { x0: x, v: 0, dir: v, y: o.y ?? 1090, s: o.s ?? 0.5, fase: i * 1.3 });
+  }
+  const deriva = Math.sin(t * 0.6);
+  if (o.capa) attr("amb-" + o.capa, "transform", `translate(${(deriva * 10).toFixed(1)} 0)`);
+  const fg = $(p + "-fg");
+  if (fg) fg.setAttribute("transform", `translate(${(-deriva * 16).toFixed(1)} 0)`);
+}

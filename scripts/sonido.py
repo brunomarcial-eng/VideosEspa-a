@@ -533,17 +533,18 @@ def amb_trafico(**_):
 
 
 def amb_cocina(**_):
-    """Cocina por la mañana: el tictac del reloj, la cafetera que borbotea a ratos y pájaros por la ventana."""
+    """Cocina por la mañana: el tictac del reloj, la cafetera que borbotea a ratos y pájaros por la ventana.
+    Sin colchón de ruido continuo (Bruno, 22-11-2026: «un zumbido de fondo que no aporta nada»)."""
     dur = 6.0
-    y = ruido(dur, 150, 900) * 0.05
+    y = np.zeros(int(dur * SR), np.float32)
     tp = tiempo(0.03)
     tic = ruido(0.03, 2500, 7000) * np.exp(-tp / 0.004)
     for k, tt in enumerate(np.arange(0.05, dur - 0.05, 0.5)):
         i = int(tt * SR)
         y[i:i + len(tic)] += tic * (0.35 if k % 2 else 0.25)
     for t0 in (1.2, 4.1):                         # borboteo de la cafetera
-        d = 1.2
-        b = ruido(d, 200, 1400) * (0.5 + 0.5 * np.sign(np.sin(2 * np.pi * 9 * tiempo(d)))) * np.sin(np.pi * tiempo(d) / d) * 0.35
+        d = 1.0
+        b = ruido(d, 250, 1200) * (0.5 + 0.5 * np.sign(np.sin(2 * np.pi * 9 * tiempo(d)))) * np.sin(np.pi * tiempo(d) / d) * 0.3
         i = int(t0 * SR)
         y[i:i + len(b)] += b
     for t0 in (0.6, 2.9, 5.0):                    # pájaros: dos piadas cortas
@@ -557,35 +558,52 @@ def amb_cocina(**_):
 
 
 def amb_tienda(**_):
-    """Tienda de barrio: murmullo, el zumbido de la nevera, bolsas de papel y alguna moneda en el mostrador."""
+    """Tienda de barrio: pasos de clientes, una bolsa de papel, monedas en el mostrador y la caja registradora.
+    Sin murmullo ni zumbido de nevera continuos."""
     dur = 7.0
-    t = tiempo(dur)
-    y = ruido(dur, 250, 1600) * 0.25 * (0.8 + 0.2 * np.sin(2 * np.pi * 0.25 * t)) + 0.05 * np.sin(2 * np.pi * 100 * t)
-    for t0 in (1.5, 4.6):                         # bolsa de papel
-        d = 0.5
-        b = ruido(d, 1500, 7000) * np.abs(np.sin(2 * np.pi * 11 * tiempo(d))) * np.sin(np.pi * tiempo(d) / d) * 0.3
+    y = np.zeros(int(dur * SR), np.float32)
+    tp = tiempo(0.07)
+    paso = np.sin(2 * np.pi * 95 * tp) * np.exp(-tp / 0.018) + ruido(0.07, 600, 3000) * np.exp(-tp / 0.008) * 0.3
+    for tt in np.arange(0.3, 2.6, 0.5):          # alguien que cruza la tienda
+        i = int(tt * SR)
+        y[i:i + len(paso)] += paso * 0.3
+    d = 0.5                                       # bolsa de papel
+    b = ruido(d, 1500, 6000) * np.abs(np.sin(2 * np.pi * 11 * tiempo(d))) * np.sin(np.pi * tiempo(d) / d) * 0.3
+    i = int(3.4 * SR)
+    y[i:i + len(b)] += b
+    for t0, x in ((4.6, s_moneda()), (5.6, s_caja())):
         i = int(t0 * SR)
-        y[i:i + len(b)] += b
-    m = s_moneda() * 0.25
-    i = int(3.2 * SR)
-    y[i:i + len(m)] += m[: len(y) - i]
+        y[i:i + len(x)] += x[: len(y) - i] * 0.3
     return norm(y)
 
 
 def amb_bar(**_):
-    """Bar por la mañana: murmullo, la cafetera de la barra que vaporiza a ratos y tazas y platos que chocan."""
+    """Bar por la mañana: tazas y platos que chocan, una cucharilla y alguna moneda. Sin murmullo continuo:
+    la cafetera calentando la leche va aparte, como efecto («leche»)."""
     dur = 7.0
-    t = tiempo(dur)
-    y = ruido(dur, 220, 1800) * 0.32 * (0.8 + 0.2 * np.sin(2 * np.pi * 0.3 * t))
-    for t0 in (1.0, 4.4):                         # vapor de la cafetera
-        v = s_vapor(dur=1.1) * 0.35
-        i = int(t0 * SR)
-        y[i:i + len(v)] += v[: len(y) - i]
-    for t0, f in ((0.4, 2900), (2.6, 3400), (3.3, 2600), (5.8, 3100)):   # tazas y platos
-        c = campana(f, 0.25, [(1, 1, 0.06), (2.4, 0.4, 0.03)]) * 0.18
+    y = np.zeros(int(dur * SR), np.float32)
+    for t0, f in ((0.4, 2900), (1.9, 3400), (3.3, 2600), (5.8, 3100)):   # tazas y platos
+        c = campana(f, 0.25, [(1, 1, 0.06), (2.4, 0.4, 0.03)]) * 0.25
         i = int(t0 * SR)
         y[i:i + len(c)] += c[: len(y) - i]
+    for t0 in (2.5, 2.62, 2.74):                  # cucharilla en la taza
+        c = campana(4200, 0.12, [(1, 1, 0.03)]) * 0.15
+        i = int(t0 * SR)
+        y[i:i + len(c)] += c
+    m = s_moneda() * 0.25
+    i = int(4.7 * SR)
+    y[i:i + len(m)] += m[: len(y) - i]
     return norm(y)
+
+
+def s_leche(dur=3.2, **_):
+    """La cafetera del bar calentando la leche: el vapor que silba, sube de tono y borbotea, y se corta."""
+    t = tiempo(dur)
+    env = np.minimum(1, t / 0.08) * np.minimum(1, (dur - t) / 0.35)
+    silbido = np.sin(2 * np.pi * np.cumsum(650 + 700 * (t / dur) ** 1.5 + 25 * np.sin(2 * np.pi * 7 * t)) / SR) * 0.18
+    vapor = ruido(dur, 2500, 9000) * 0.5
+    borboteo = ruido(dur, 180, 700) * (0.5 + 0.5 * np.sin(2 * np.pi * 13 * t)) * 0.45 * (1 - t / dur)
+    return bordes(norm((silbido + vapor + borboteo) * env), 0.01, 0.05)
 
 
 AMBIENTES = {"bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
@@ -603,13 +621,13 @@ def megafonia(y):
     return norm(out)
 
 
-EFECTOS = {"calle": s_calle, "pop": s_pop, "estacion": s_campana_estacion, "megafonia": s_megafonia, "avion": s_avion, "tren": s_tren, "claxon": s_claxon, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
+EFECTOS = {"calle": s_calle, "pop": s_pop, "estacion": s_campana_estacion, "leche": s_leche, "megafonia": s_megafonia, "avion": s_avion, "tren": s_tren, "claxon": s_claxon, "ting": s_ting, "ding": s_ding, "moneda": s_moneda, "papel": s_papel, "hojas": s_hojas,
            "carro": s_carro, "beep": s_beep, "conteo": s_conteo, "caja": s_caja, "sube": s_sube, "pinza": s_pinza,
            "desenrolla": s_desenrolla, "sello": s_sello, "notif": s_notif, "fwip": s_fwip,
            "campanilla": s_campanilla, "persiana": s_persiana, "vapor": s_vapor, "golpe": s_golpe, "sueno": s_sueno,
            "timbre": s_timbre, "rasgado": s_rasgado, "publico": s_publico, "bici": s_bici}
 # Ganancia de cada efecto para que ninguno tape la voz
-NIVEL = {"calle": 0.22, "pop": 0.30, "estacion": 0.24, "megafonia": 0.24, "avion": 0.18, "tren": 0.20, "claxon": 0.18, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
+NIVEL = {"calle": 0.22, "pop": 0.30, "estacion": 0.24, "leche": 0.16, "megafonia": 0.24, "avion": 0.18, "tren": 0.20, "claxon": 0.18, "ting": 0.22, "ding": 0.20, "moneda": 0.16, "papel": 0.26, "hojas": 0.22, "carro": 0.20,
          "beep": 0.12, "conteo": 0.16, "caja": 0.30, "sube": 0.13, "pinza": 0.26, "desenrolla": 0.22,
          "sello": 0.40, "notif": 0.24, "fwip": 0.10, "campanilla": 0.18, "persiana": 0.16, "vapor": 0.10, "golpe": 0.22, "sueno": 0.20,
          "timbre": 0.22, "rasgado": 0.18, "publico": 0.16, "bici": 0.16}

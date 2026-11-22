@@ -6,7 +6,7 @@
 // Decorados nuevos (diseno/desayuno.mjs): cocina → tienda de barrio → cocina. Los minutos se cuentan con relojes de cocina.
 /* eslint-disable no-undef */
 
-import { C, persona, tarjeta, nomina, TAZA } from "../../diseno/limpio.mjs";
+import { C, persona, tarjeta, nomina, TAZA, selloOficial, paseante } from "../../diseno/limpio.mjs";
 import { bandera } from "../../diseno/barrio.mjs";
 import { ambientes } from "../../diseno/sueno.mjs";
 import { DECORADOS_T14, P, relojCocina, DELANTAL, PIJAMA_RAYAS, BOTE_CACAO_MANO, CAFE_MANO, PAN_MANO, CHURRO_MANO, BOLSO } from "../../diseno/desayuno.mjs";
@@ -58,12 +58,13 @@ export function escenas(D) {
   return [
     // 1 · La madre (cocina): «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto: más que en 2016.»
     { n: 1, set: "vacio",
-      svg: `${Array.from({ length: 6 }, (_, k) => `<circle id="s1-h${k}" r="${10 + k * 3}" fill="#FFFFFF" opacity="0"/>`).join("")}${gente("s1", "m", { m: TAZA })}`,
+      svg: `${Array.from({ length: 6 }, (_, k) => `<circle id="s1-h${k}" r="${10 + k * 3}" fill="#FFFFFF" opacity="0"/>`).join("")}${gente("s1", "m", { m: TAZA })}${selloOficial("s1-sello")}`,
       tarjeta: tarjeta(1, "Desayuno · 2016 frente a hoy", `<div class="tit" style="font-size:64px">¿Cuántos <mark id="m1">minutos</mark> trabajas para desayunar?</div>`, { icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("cocinaDesayuno", null, t, 0);
         marca("m1", t, c["c1-minutos"]);
+        selloAnim("s1-sello", t, c["c1-sello"], 330, 860, { s: 0.85, r: -9 });
         // Vapor de la cafetera
         for (let k = 0; k < 6; k++) { const kk = (t * 0.7 + k / 6) % 1; T(`s1-h${k}`, 376 + Math.sin(kk * 6 + k) * 14, 930 - kk * 200, { s: 0.6 + kk, op: (0.55 * (1 - kk)).toFixed(2) }); }
         persona("s1-m", t, { x: 760, y: 1440, s: 0.82, mira: [[0, -1], [c["c1-minutos"], 0]], vivo: true, charla: e, boca: habla(t, e, "sonrisa"),
@@ -71,26 +72,28 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c1-minutos"], e.c["c1-2016"]]); } },
 
-    // 2 · La madre (cocina), con la nómina: «Ojo: contamos con el sueldo mediano: 19.400 euros brutos al año en 2016 y 25.300 hoy. Si ganas el doble, la mitad de minutos.»
+    // 2 · La madre (voz, cocina): «Ojo: contamos con el sueldo mediano: 19.400 euros brutos al año en 2016 y 25.300 hoy. Si ganas el doble, la mitad de minutos.»
+    // Bruno, 22-11-2026: la tabla, mucho más grande (ocupa la escena).
     { n: 2, set: "vacio",
-      svg: `${panel(110, 790, 640, 450)}${rot(430, 850, "SUELDO MEDIANO: LA MITAD GANA MÁS", 22, C.tinta)}${rot(530, 900, "2016", 26, C.gris)}${rot(680, 900, "2025*", 26, C.gris)}
-        ${[["BRUTO AL AÑO", D.bruto.map((v) => miles(v) + " €")], ["NETO AL AÑO", D.neto.map((v) => miles(v) + " €")], ["NETO POR HORA", D.sueldo.map((v) => es(v, 2) + " €")]].map(([et, vals], i) => `<g id="s2-f${i}" transform="translate(0 ${975 + i * 82})">
-          <rect x="130" y="-46" width="600" height="68" rx="14" fill="${i === 2 ? "#FFF3C4" : "#F3EFE6"}"/>${rot(150, 0, et, 20, C.tinta, "", "start")}
-          ${rot(530, 2, vals[0], 25, ANTES_T)}${rot(680, 2, vals[1], 25, HOY)}</g>`).join("")}
-        ${rot(430, 1222, "*2025, ESTIMADO (2024: " + miles(D.bruto24) + " €)", 17, C.gris)}
-        ${gente("s2", "m", { m: NOMINA_MANO })}`,
-      tarjeta: tarjeta(2, "Sueldo bruto mediano al año", `${vs(2, D.bruto.map((v) => miles(v) + "&nbsp;€"), ["en 2016", "en 2025"], 66)}
-        <div class="nota">Neto: ${miles(D.neto[0])}&nbsp;€ y ${miles(D.neto[1])}&nbsp;€ al año; ${es(D.sueldo[0], 2)}&nbsp;€ y ${es(D.sueldo[1], 2)}&nbsp;€ por hora. 2025, estimado: el último dato del INE es de 2024 (${miles(D.bruto24)}&nbsp;€)</div>`, { fuente: F_SUELDO, icono: bandera(44) }),
+      svg: `${panel(45, 720, 990, 640)}${rot(650, 800, "2016", 40, C.gris)}${rot(895, 800, "2025*", 40, C.gris)}
+        ${[["BRUTO AL AÑO", D.bruto.map((v) => miles(v) + " €")], ["NETO AL AÑO", D.neto.map((v) => miles(v) + " €")], ["NETO POR HORA", D.sueldo.map((v) => es(v, 2) + " €")]].map(([et, vals], i) => `<g id="s2-f${i}" transform="translate(0 ${920 + i * 125})">
+          <rect x="75" y="-62" width="930" height="104" rx="20" fill="${i === 2 ? "#FFF3C4" : "#F3EFE6"}"/>${rot(105, 6, et, 32, C.tinta, "", "start")}
+          ${rot(650, 10, vals[0], 42, ANTES_T)}${rot(895, 10, vals[1], 42, HOY)}</g>`).join("")}
+        ${rot(540, 1325, "MEDIANO: LA MITAD GANA MÁS · *2025 ESTIMADO (2024: " + miles(D.bruto24) + " €)", 24, C.gris)}`,
+      tarjeta: tarjeta(2, "Sueldo bruto mediano al año", `<div class="tit" style="font-size:50px">El sueldo con el que contamos los minutos</div>`, { fuente: F_SUELDO, icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("cocinaDesayuno", null, t, 0);
         const tt = [c["c2-19400"] - 0.2, c["c2-25300"] - 0.6, c["c2-25300"] + 0.2];
-        for (let i = 0; i < 3; i++) css(`s2-f${i}`, "opacity", clamp((t - tt[i]) / 0.3));
-        sube("c2-a", t, c["c2-19400"]); sube("c2-b", t, c["c2-25300"]);
-        persona("s2-m", t, { x: 940, y: 1440, s: 0.8, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"),
-          brazo: [[0, "abajo"], [c["c2-mediano"] - 0.3, "arriba"], [c["c2-doble"] - 0.2, "hombros"]], espejo: true, fase: 1 });
+        for (let i = 0; i < 3; i++) {
+          const k = clamp((t - tt[i]) / 0.35);
+          css(`s2-f${i}`, "opacity", k); attr(`s2-f${i}`, "transform", `translate(${(60 * (1 - fuera(k))).toFixed(1)} ${920 + i * 125})`);
+        }
+        // La fila del neto por hora, la que usan los minutos, late al decir «doble».
+        const kd = t - c["c2-doble"];
+        if (kd > 0 && kd < 0.8) attr("s2-f2", "transform", `translate(0 ${920 + 2 * 125}) scale(${(1 + 0.04 * Math.sin(kd / 0.8 * Math.PI)).toFixed(3)})`);
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c2-19400"], e.c["c2-25300"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c2-19400"], e.c["c2-25300"]], { acerca: 0.02 }); } },
 
     // 3 · El hijo (cocina), con el bote vacío: «Mamá, ¡que no queda cacao!»
     { n: 3, set: "vacio",
@@ -118,6 +121,7 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("tiendaBarrio", "cocinaDesayuno", t, e.t0);
+        vidaFondo("tb", t, { lamparas: 4, gente: 2, capa: "tiendaBarrio", y: 1062, s: 0.42 });
         const R = 92, sector = (f) => { if (f < 0.002) return ""; if (f > 0.999) f = 0.999; const a = f * 2 * Math.PI; return `M0 0 L0 ${-R} A${R} ${R} 0 ${f > 0.5 ? 1 : 0} 1 ${(R * Math.sin(a)).toFixed(1)} ${(-R * Math.cos(a)).toFixed(1)} Z`; };
         const tt = [c["c4-40"] - 0.3, c["c4-55"] - 0.4];
         for (let i = 0; i < 2; i++) {
@@ -139,6 +143,7 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("tiendaBarrio", null, t, 0);
+        vidaFondo("tb", t, { lamparas: 4, gente: 2, capa: "tiendaBarrio", y: 1062, s: 0.42 });
         marca("m5", t, c["c5-cafe"]);
         persona("s5-m", t, { x: 175, y: 1440, s: 0.82, mira: 1, vivo: true, boca: [[0, "seria"], [c["c5-mayores"], "sonrisa"]], ojos: [[0, "normal"], [c["c5-mayores"], "felices"]], brazo: [[0, "abajo"]], fase: 1 });
         persona("s5-t", t, { x: 935, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c5-mayores"] + 0.2, "o"]], brazo: [[0, "abajo"], [c["c5-mayores"], "piensa"]], espejo: true, fase: 2 });
@@ -155,6 +160,7 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("tiendaBarrio", null, t, 0);
+        vidaFondo("tb", t, { lamparas: 4, gente: 2, capa: "tiendaBarrio", y: 1062, s: 0.42 });
         const R = 92, sector = (f) => { if (f < 0.002) return ""; if (f > 0.999) f = 0.999; const a = f * 2 * Math.PI; return `M0 0 L0 ${-R} A${R} ${R} 0 ${f > 0.5 ? 1 : 0} 1 ${(R * Math.sin(a)).toFixed(1)} ${(-R * Math.cos(a)).toFixed(1)} Z`; };
         const tt = [c["c6-13"] - 0.3, c["c6-15"] - 0.4];
         for (let i = 0; i < 2; i++) {
@@ -176,6 +182,7 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("tiendaBarrio", null, t, 0);
+        vidaFondo("tb", t, { lamparas: 4, gente: 2, capa: "tiendaBarrio", y: 1062, s: 0.42 });
         const R = 92, sector = (f) => { if (f < 0.002) return ""; if (f > 0.999) f = 0.999; const a = f * 2 * Math.PI; return `M0 0 L0 ${-R} A${R} ${R} 0 ${f > 0.5 ? 1 : 0} 1 ${(R * Math.sin(a)).toFixed(1)} ${(-R * Math.cos(a)).toFixed(1)} Z`; };
         const tt = [c["c7-10"] - 0.3, c["c7-14"] - 0.4];
         for (let i = 0; i < 2; i++) {
@@ -196,6 +203,7 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("tiendaBarrio", null, t, 0);
+        vidaFondo("tb", t, { lamparas: 4, gente: 2, capa: "tiendaBarrio", y: 1062, s: 0.42 });
         marca("m8", t, c["c8-sueldo"]);
         persona("s8-t", t, { x: 935, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c8-sueldo"] + 0.3, "sonrisa"]], brazo: [[0, "abajo"], [c["c8-sueldo"] + 0.3, "hombros"]], espejo: true, fase: 2 });
         persona("s8-m", t, { x: 380, y: 1440, s: 0.82, mira: 1, vivo: true, charla: e, salta: c["c8-sueldo"] - 0.15, boca: habla(t, e, "grande"), ojos: [[0, "grandes"]], brazo: [[0, "sujeta"], [c["c8-sueldo"] - 0.3, "arriba"]], fase: 1 });
@@ -214,6 +222,7 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("tiendaBarrio", null, t, 0);
+        vidaFondo("tb", t, { lamparas: 4, gente: 2, capa: "tiendaBarrio", y: 1062, s: 0.42 });
         const tt = [c["c9-26"] - 0.2, c["c9-74"] - 0.2], v = [D.sueldoSube, D.huevosSube];
         for (let i = 0; i < 2; i++) {
           attr(`s9-b${i}`, "width", (Math.min(390, v[i] / 74 * 380) * suave((t - tt[i]) / 0.7)).toFixed(1));
@@ -234,6 +243,7 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("tiendaBarrio", null, t, 0);
+        vidaFondo("tb", t, { lamparas: 4, gente: 2, capa: "tiendaBarrio", y: 1062, s: 0.42 });
         const R = 92, sector = (f) => { if (f < 0.002) return ""; if (f > 0.999) f = 0.999; const a = f * 2 * Math.PI; return `M0 0 L0 ${-R} A${R} ${R} 0 ${f > 0.5 ? 1 : 0} 1 ${(R * Math.sin(a)).toFixed(1)} ${(-R * Math.cos(a)).toFixed(1)} Z`; };
         const tt = [c["c10-aceite"] - 0.2, c["c10-aceite"] - 0.2];
         for (let i = 0; i < 2; i++) {
@@ -256,6 +266,7 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("tiendaBarrio", null, t, 0);
+        vidaFondo("tb", t, { lamparas: 4, gente: 2, capa: "tiendaBarrio", y: 1062, s: 0.42 });
         marca("m11", t, c["c11-abuelo"]);
         persona("s11-m", t, { x: 175, y: 1440, s: 0.82, mira: 1, vivo: true, boca: [[0, "seria"], [c["c11-lujo"], "sonrisa"]], brazo: [[0, "abajo"], [c["c11-abuelo"], "piensa"]], incl: [[0, 0], [c["c11-abuelo"], 8]], fase: 1 });
         persona("s11-t", t, { x: 935, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c11-lujo"], "sonrisa"]], ojos: [[0, "normal"], [c["c11-lujo"], "felices"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
@@ -273,6 +284,7 @@ export function escenas(D) {
       fn: function (t, e) {
         const c = e.c;
         ambiente("tiendaBarrio", null, t, 0);
+        vidaFondo("tb", t, { lamparas: 4, gente: 2, capa: "tiendaBarrio", y: 1062, s: 0.42 });
         const R = 92, sector = (f) => { if (f < 0.002) return ""; if (f > 0.999) f = 0.999; const a = f * 2 * Math.PI; return `M0 0 L0 ${-R} A${R} ${R} 0 ${f > 0.5 ? 1 : 0} 1 ${(R * Math.sin(a)).toFixed(1)} ${(-R * Math.cos(a)).toFixed(1)} Z`; };
         const tt = [c["c12-63"] - 0.3, c["c12-73"] - 0.4];
         for (let i = 0; i < 2; i++) {
@@ -288,16 +300,24 @@ export function escenas(D) {
 
     // 13 · La madre (bar), con churros y café: «¿Y en el bar, con churros? Los precios han subido un 33 %; el sueldo, un 26.»
     { n: 13, set: "vacio",
-      svg: `${panel(255, 820, 570, 400)}<g transform="translate(470 935)">${P.churros(0.55)}</g><g transform="translate(640 935)">${P.cafeConLeche(0.6)}</g>
+      svg: `${paseante("s13-w0", "#F4F1EA", "#E9BE98", 1)}${paseante("s13-w1", "#9B5A5A", "#DCA883", 1)}${panel(255, 820, 570, 400)}<g transform="translate(470 935)">${P.churros(0.55)}</g><g transform="translate(640 935)">${P.cafeConLeche(0.6)}</g>
         ${[["BARES, CAFETERÍAS Y RESTAURANTES", D.barSube, "#D86B5B"], ["SUELDO NETO POR HORA", D.sueldoSube, "#5E8C99"]].map(([et, v, col], i) => `<g transform="translate(300 ${1030 + i * 105})">
           ${rot(0, -16, et, 19, C.gris, "", "start")}<rect x="0" y="0" width="390" height="42" rx="12" fill="#EEF0F2"/><rect id="s13-b${i}" x="0" y="0" width="0" height="42" rx="12" fill="${col}"/>
           <g id="s13-v${i}">${rot(400, 33, "+" + Math.round(v) + " %", 28, i ? "#3F6672" : HOY, "", "start")}</g></g>`).join("")}
+        ${Array.from({ length: 8 }, (_, k) => `<circle id="s13-v${k}" r="${12 + (k % 4) * 5}" fill="#FFFFFF" opacity="0"/>`).join("")}
         ${gente("s13", "h", { h: CHURRO_MANO })}${gente("s13", "m")}`,
       tarjeta: tarjeta(13, "Lo que ha subido desde 2016", `${vs(13, ["+" + Math.round(D.barSube) + "&nbsp;%", "+" + Math.round(D.sueldoSube) + "&nbsp;%"], ["bares, cafeterías y restaurantes", "sueldo neto por hora"])}
         <div class="nota">Desayunar fuera cuesta un ${es(D.barTiempo)}&nbsp;% más de tu tiempo que en 2016. El INE no da el precio del café con churros: es el IPC de la restauración</div>`, { fuente: F_BAR, icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("bar", "tiendaBarrio", t, e.t0);
+        vidaFondo("s13", t, { gente: 2, capa: "bar", y: 1310, s: 1.15, W: 1600 });
+        // Vapor: de la lanza de la cafetera mientras calienta la leche y, después, de los cafés del panel.
+        for (let k = 0; k < 8; k++) {
+          const kk = (t * 0.9 + k / 8) % 1, leche = t > c["c13-leche"] && t < c["c13-leche"] + 3.2;
+          if (k < 5) T(`s13-v${k}`, 985 + Math.sin(kk * 7 + k) * 18, 900 - kk * 260, { s: 0.6 + kk * 1.4, op: leche ? (0.7 * (1 - kk)).toFixed(2) : 0 });
+          else T(`s13-v${k}`, 640 + Math.sin(kk * 6 + k) * 10, 860 - kk * 120, { s: 0.4 + kk, op: (0.45 * (1 - kk)).toFixed(2) });
+        }
         const tt = [c["c13-33"] - 0.2, c["c13-26"] - 0.2], v = [D.barSube, D.sueldoSube];
         for (let i = 0; i < 2; i++) {
           attr(`s13-b${i}`, "width", (v[i] / 33.3 * 370 * suave((t - tt[i]) / 0.7)).toFixed(1));

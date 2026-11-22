@@ -154,6 +154,18 @@ export function monedaEuro(id, r) {
   return `<g id="${id}"><circle r="${r}" fill="#E9C46A"/><circle r="${r * 0.82}" fill="#F4D98B"/>
     <text x="0" y="${r * 0.36}" text-anchor="middle" font-family="Cap" font-weight="800" font-size="${r * 1.05}" fill="#B98A2E">€</text></g>`;
 }
+// Sello rojo «SOLO DATOS OFICIALES» (Bruno, 22-11-2026), para las primeras viñetas de cada vídeo. Se anima con selloAnim().
+// Tinta con huecos para que parezca estampado. Origen: el centro.
+export function selloOficial(id) {
+  const rojo = "#C62828";
+  return `<g id="${id}" style="display:none"><defs><mask id="${id}-m"><rect x="-300" y="-140" width="600" height="280" fill="#FFFFFF"/>
+    ${Array.from({ length: 46 }, (_, i) => `<circle cx="${((i * 97) % 560) - 280}" cy="${((i * 53) % 240) - 120}" r="${2 + (i % 4)}" fill="#000000"/>`).join("")}</mask></defs>
+    <g mask="url(#${id}-m)" opacity=".92"><rect x="-270" y="-112" width="540" height="224" rx="26" fill="#FFFFFF" fill-opacity=".55" stroke="${rojo}" stroke-width="14"/>
+    <rect x="-248" y="-90" width="496" height="180" rx="16" fill="none" stroke="${rojo}" stroke-width="5"/>
+    <text x="0" y="-12" text-anchor="middle" font-family="Cap" font-weight="800" font-size="60" fill="${rojo}" letter-spacing="2">SOLO DATOS</text>
+    <text x="0" y="62" text-anchor="middle" font-family="Cap" font-weight="800" font-size="60" fill="${rojo}" letter-spacing="2">OFICIALES</text>
+    ${[-232, 232].map((x) => `<path d="M${x} 6 l5 11 12 1.5 -9 8 2.2 12 -10.2 -6 -10.2 6 2.2 -12 -9 -8 12 -1.5 Z" fill="${rojo}"/>`).join("")}</g></g>`;
+}
 export function reloj(id, r, color = C.tinta) {
   const marcas = Array.from({ length: 12 }, (_, i) => `<line x1="0" y1="${-r * 0.74}" x2="0" y2="${-r * (i % 3 ? 0.66 : 0.58)}" transform="rotate(${i * 30})" stroke="${C.tinta}" stroke-width="${r * 0.04}" stroke-linecap="round"/>`).join("");
   return `<g id="${id}"><circle r="${r}" fill="${color}"/><circle r="${r * 0.84}" fill="${C.blanco}"/>${marcas}
