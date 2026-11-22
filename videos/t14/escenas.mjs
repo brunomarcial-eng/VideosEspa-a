@@ -73,10 +73,10 @@ export function escenas(D) {
 
     // 2 · La madre (cocina), con la nómina: «Ojo: contamos con el sueldo mediano: 19.400 euros brutos al año en 2016 y 25.300 hoy. Si ganas el doble, la mitad de minutos.»
     { n: 2, set: "vacio",
-      svg: `${panel(110, 790, 640, 450)}${rot(430, 850, "SUELDO MEDIANO: LA MITAD GANA MÁS", 22, C.tinta)}${rot(545, 900, "2016", 26, C.gris)}${rot(675, 900, "2025*", 26, C.gris)}
+      svg: `${panel(110, 790, 640, 450)}${rot(430, 850, "SUELDO MEDIANO: LA MITAD GANA MÁS", 22, C.tinta)}${rot(530, 900, "2016", 26, C.gris)}${rot(680, 900, "2025*", 26, C.gris)}
         ${[["BRUTO AL AÑO", D.bruto.map((v) => miles(v) + " €")], ["NETO AL AÑO", D.neto.map((v) => miles(v) + " €")], ["NETO POR HORA", D.sueldo.map((v) => es(v, 2) + " €")]].map(([et, vals], i) => `<g id="s2-f${i}" transform="translate(0 ${975 + i * 82})">
-          <rect x="130" y="-46" width="600" height="68" rx="14" fill="${i === 2 ? "#FFF3C4" : "#F3EFE6"}"/>${rot(150, 0, et, 22, C.tinta, "", "start")}
-          ${rot(545, 2, vals[0], 28, ANTES_T)}${rot(675, 2, vals[1], 28, HOY)}</g>`).join("")}
+          <rect x="130" y="-46" width="600" height="68" rx="14" fill="${i === 2 ? "#FFF3C4" : "#F3EFE6"}"/>${rot(150, 0, et, 20, C.tinta, "", "start")}
+          ${rot(530, 2, vals[0], 25, ANTES_T)}${rot(680, 2, vals[1], 25, HOY)}</g>`).join("")}
         ${rot(430, 1222, "*2025, ESTIMADO (2024: " + miles(D.bruto24) + " €)", 17, C.gris)}
         ${gente("s2", "m", { m: NOMINA_MANO })}`,
       tarjeta: tarjeta(2, "Sueldo bruto mediano al año", `${vs(2, D.bruto.map((v) => miles(v) + "&nbsp;€"), ["en 2016", "en 2025"], 66)}

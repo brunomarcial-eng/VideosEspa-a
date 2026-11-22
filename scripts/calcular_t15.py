@@ -68,6 +68,8 @@ def main():
             "minutos_sube_pct": pct(total["2016"] / h["2016"], total["2025"] / h["2025"])}
     cena["horas_y_minutos"] = {a: f"{m // 60} h {m % 60:02d} min" for a, m in cena["minutos"].items()}
     cena["minutos_mas"] = cena["minutos"]["2025"] - cena["minutos"]["2016"]
+    cena["h"] = {a: m // 60 for a, m in cena["minutos"].items()}
+    cena["m"] = {a: m % 60 for a, m in cena["minutos"].items()}
 
     relativos = {}
     for k, rub in (("dulces", "Azúcar, confitura, miel, chocolate y confitería"), ("juguetes", "Juegos, juguetes y aficiones")):
