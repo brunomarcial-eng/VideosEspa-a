@@ -21,6 +21,7 @@ const { chromium } = require("playwright");
     const sub = document.getElementById("sub"); if (sub) sub.style.display = "none";
     const orig = document.querySelector('[id$="-sello"]');
     if (!orig) return false;
+    if (getComputedStyle(orig).display !== "none" && orig.getBoundingClientRect().width > 0) return true;   // el fotograma ya lleva el sello (primer plano)
     // copia con ids nuevos (la máscara de agujeros va por id) en una capa SVG por encima de todo
     const capa = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     capa.setAttribute("viewBox", "0 0 1080 1920");

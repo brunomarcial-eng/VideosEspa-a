@@ -1,0 +1,148 @@
+{
+ "tema": "¿Cuántos meses trabajas para pagar tu coche? 2016 frente a hoy",
+ "nota": "Precio medio real de los coches matriculados (Agencia Tributaria), con IVA y matriculación; sueldo neto mediano en 12 mensualidades; préstamo del 100 % a cinco años a la TAE media de los préstamos al consumo del Banco de España.",
+ "sueldo": {
+  "bruto_anual": {
+   "2007": 17399,
+   "2016": 19433,
+   "2019": 20351,
+   "2025": 25296
+  },
+  "neto_anual": {
+   "2007": 14220,
+   "2016": 15987,
+   "2019": 16704,
+   "2025": 20424
+  },
+  "neto_mes": {
+   "2007": 1185,
+   "2016": 1332,
+   "2019": 1392,
+   "2025": 1702
+  }
+ },
+ "tae_consumo_media_anual": {
+  "2007": 9.76,
+  "2016": 8.43,
+  "2019": 8.33,
+  "2024": 8.5,
+  "2025": 7.74
+ },
+ "tae_consumo_ultimo_mes": {
+  "mes": "SEP 2026",
+  "tae": 7.5354
+ },
+ "coche_medio": {
+  "2007": {
+   "aeat": {
+    "vehiculos": 1469416,
+    "co2_g_km": null,
+    "base_total_eur": 24708513313,
+    "precio_medio_sin_iedmt": 16815,
+    "precio_medio_con_iedmt": 18131
+   },
+   "iva_tipo_pct": 16,
+   "precio_sin_impuestos": 16815,
+   "matriculacion": 1316,
+   "iva": 2690,
+   "precio_con_impuestos": 20821,
+   "impuestos": 4006,
+   "impuestos_pct": 19.2,
+   "contado_meses_de_sueldo": 17.6,
+   "prestamo": {
+    "tae": 9.76,
+    "meses": 60,
+    "cuota": 436,
+    "total": 26145,
+    "intereses": 5324,
+    "cuota_pct_sueldo": 36.8,
+    "meses_de_sueldo": 22.1
+   }
+  },
+  "2016": {
+   "aeat": {
+    "vehiculos": 1167947,
+    "co2_g_km": 116,
+    "base_total_eur": 19277386299,
+    "precio_medio_sin_iedmt": 16505,
+    "precio_medio_con_iedmt": 16786
+   },
+   "iva_tipo_pct": 21,
+   "precio_sin_impuestos": 16505,
+   "matriculacion": 281,
+   "iva": 3466,
+   "precio_con_impuestos": 20252,
+   "impuestos": 3747,
+   "impuestos_pct": 18.5,
+   "contado_meses_de_sueldo": 15.2,
+   "prestamo": {
+    "tae": 8.43,
+    "meses": 60,
+    "cuota": 412,
+    "total": 24709,
+    "intereses": 4457,
+    "cuota_pct_sueldo": 30.9,
+    "meses_de_sueldo": 18.5
+   }
+  },
+  "2019": {
+   "aeat": {
+    "vehiculos": 1301986,
+    "co2_g_km": 121,
+    "base_total_eur": 22899419201,
+    "precio_medio_sin_iedmt": 17588,
+    "precio_medio_con_iedmt": 18061
+   },
+   "iva_tipo_pct": 21,
+   "precio_sin_impuestos": 17588,
+   "matriculacion": 473,
+   "iva": 3693,
+   "precio_con_impuestos": 21754,
+   "impuestos": 4166,
+   "impuestos_pct": 19.2,
+   "contado_meses_de_sueldo": 15.6,
+   "prestamo": {
+    "tae": 8.33,
+    "meses": 60,
+    "cuota": 441,
+    "total": 26484,
+    "intereses": 4729,
+    "cuota_pct_sueldo": 31.7,
+    "meses_de_sueldo": 19.0
+   }
+  },
+  "2025": {
+   "aeat": {
+    "vehiculos": 1237082,
+    "co2_g_km": 108,
+    "base_total_eur": 28685208805,
+    "precio_medio_sin_iedmt": 23188,
+    "precio_medio_con_iedmt": 23792
+   },
+   "iva_tipo_pct": 21,
+   "precio_sin_impuestos": 23188,
+   "matriculacion": 604,
+   "iva": 4869,
+   "precio_con_impuestos": 28661,
+   "impuestos": 5473,
+   "impuestos_pct": 19.1,
+   "contado_meses_de_sueldo": 16.8,
+   "prestamo": {
+    "tae": 7.74,
+    "meses": 60,
+    "cuota": 574,
+    "total": 34441,
+    "intereses": 5780,
+    "cuota_pct_sueldo": 33.7,
+    "meses_de_sueldo": 20.2
+   }
+  }
+ },
+ "coche_medio_sube_pct": 41.5,
+ "sueldo_neto_sube_pct": 27.8,
+ "escenario_tercio": {
+  "cuota": 567,
+  "coche_maximo": 28327,
+  "nota": "Escenario propio, no oficial: un tercio del sueldo neto mediano a la cuota, cinco años, TAE media de 2025"
+ }
+}

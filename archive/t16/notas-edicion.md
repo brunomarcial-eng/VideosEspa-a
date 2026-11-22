@@ -1,7 +1,7 @@
 # T16 · Notas de edición (archivo por si hay apelación)
 
-**Vídeo:** «¿Cuántos meses trabajas para pagar tu coche?» (coches, vídeo A; serie «¿Cuántas horas…?») · Short vertical 1080×1920, DURACION s, LUFS LUFS (v1).
-**Fichero:** `videos/t16/render/t16-limpio.mp4` · SHA-256 `HUELLA`.
+**Vídeo:** «¿Cuántos meses trabajas para pagar tu coche?» (coches, vídeo A; serie «¿Cuántas horas…?») · Short vertical 1080×1920, 78,7 s, −14,3 LUFS (v1).
+**Fichero:** `videos/t16/render/t16-limpio.mp4` · SHA-256 `5d3d4d9305348b2c3479b23963d75e65028e817e03fbd5940bf0f8a8b88fed01`.
 **Aprobación:** el responsable del canal pidió el 22-11-2026 dos vídeos de coches, y este es el primero: cuánto cuesta el coche en tiempo de trabajo, al contado y financiado, con los intereses y los impuestos (IVA y matriculación), cuánto coche te puedes permitir y cuántos meses de tu vida van al coche. Propuso el escenario: un concesionario con un vendedor y un cliente, y un calendario que pasa los meses con las estaciones por los ventanales. También fijó que el sello «SOLO DATOS OFICIALES» vaya en el primer plano y en la portada de todos los vídeos. v1 pendiente de su visto bueno.
 
 ## Cómo se hizo

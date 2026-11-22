@@ -71,7 +71,7 @@ export function escenas(D) {
     // 1 · La clienta entra en el concesionario: «¿Cuántos meses de tu vida trabajas para pagar un coche? Vengo a comprarme uno. A ver qué me cuentan.»
     { n: 1, set: "vacio",
       svg: `${gente("s1", "v", { v: LLAVES })}${gente("s1", "c", { c: BOLSO })}${selloOficial("s1-sello")}`,
-      tarjeta: tarjeta(1, "Coches · 2016 frente a hoy", `<div class="tit" style="font-size:64px">¿Cuántos <mark id="m1">meses</mark> trabajas para pagar tu coche?</div>`, { icono: bandera(44) }),
+      tarjeta: tarjeta(1, "Coches · 2007, 2016 y hoy", `<div class="tit" style="font-size:64px">¿Cuántos <mark id="m1">meses</mark> trabajas para pagar tu coche?</div>`, { icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("concesionario", null, t, 0);

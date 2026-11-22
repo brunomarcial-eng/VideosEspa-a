@@ -2,7 +2,7 @@
  "id": "t16",
  "version": 1,
  "titulo": "¿Cuántos meses trabajas para pagar tu coche?",
- "titulo_alternativo": "El coche medio, en meses de sueldo: al contado y financiado, 2016 frente a hoy",
+ "titulo_alternativo": "El coche medio, en meses de sueldo: al contado y financiado, de 2007 a hoy",
  "pregunta": "Una clienta y un vendedor en un concesionario. ¿Cuántos meses de sueldo cuesta hoy el coche medio, al contado y financiado, y cuánto de su precio son impuestos?",
  "datos": "data/clean/t16_coche.json",
  "aprobacion_datos": "Bruno, 22-11-2026: coches, vídeo A (cuánto cuesta el coche en horas de trabajo, cuánto te puedes permitir, intereses de la financiación, impuestos, al contado, meses de tu vida). Precio medio real de los coches matriculados (Agencia Tributaria), TAE media de los préstamos al consumo (Banco de España), sueldo mediano (INE). El Banco de España no da una cifra oficial de endeudamiento: el «tercio del sueldo» es un escenario propio y se dice",
