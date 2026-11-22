@@ -71,7 +71,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c1-minutos"], e.c["c1-2016"]]); } },
 
-    // 2 · La madre (cocina), con la nómina: «Ojo: lo medimos con el sueldo mediano. Unos 19.400 euros brutos al año en 2016; hoy, unos 25.300. Si ganas el doble, la mitad de minutos.»
+    // 2 · La madre (cocina), con la nómina: «Ojo: contamos con el sueldo mediano: 19.400 euros brutos al año en 2016 y 25.300 hoy. Si ganas el doble, la mitad de minutos.»
     { n: 2, set: "vacio",
       svg: `${panel(110, 790, 640, 450)}${rot(430, 850, "SUELDO MEDIANO: LA MITAD GANA MÁS", 22, C.tinta)}${rot(545, 900, "2016", 26, C.gris)}${rot(675, 900, "2025*", 26, C.gris)}
         ${[["BRUTO AL AÑO", D.bruto.map((v) => miles(v) + " €")], ["NETO AL AÑO", D.neto.map((v) => miles(v) + " €")], ["NETO POR HORA", D.sueldo.map((v) => es(v, 2) + " €")]].map(([et, vals], i) => `<g id="s2-f${i}" transform="translate(0 ${975 + i * 82})">
@@ -264,7 +264,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c11-lujo"]], { acerca: 0.07 }); } },
 
-    // 12 · La tendera (tienda): «¿Y la tostada de moda? Aguacate, queso crema y salmón: 7,3 minutos. En 2016, 6,3.»
+    // 12 · La tendera (tienda): «¿Y la tostada de moda, con aguacate y salmón? 7,3 minutos. En 2016, 6,3.»
     { n: 12, set: "vacio",
       svg: `${relojes(12, "tostada", D.tostada, 1)}${gente("s12", "mt")}`,
       tarjeta: tarjeta(12, "Minutos de trabajo para pagar una tostada de aguacate, queso crema y salmón", `${vs(12, D.tostada.map((v) => es(v) + "&nbsp;min"), ["en 2016", "en 2025"])}
@@ -286,7 +286,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c12-73"], e.c["c12-63"]]); } },
 
-    // 13 · La madre (bar), con churros y café: «Y en el bar, con sus churros: los precios suben un 33 % desde 2016. El sueldo, un 26.»
+    // 13 · La madre (bar), con churros y café: «¿Y en el bar, con churros? Los precios han subido un 33 %; el sueldo, un 26.»
     { n: 13, set: "vacio",
       svg: `${panel(255, 820, 570, 400)}<g transform="translate(470 935)">${P.churros(0.55)}</g><g transform="translate(640 935)">${P.cafeConLeche(0.6)}</g>
         ${[["BARES, CAFETERÍAS Y RESTAURANTES", D.barSube, "#D86B5B"], ["SUELDO NETO POR HORA", D.sueldoSube, "#5E8C99"]].map(([et, v, col], i) => `<g transform="translate(300 ${1030 + i * 105})">
