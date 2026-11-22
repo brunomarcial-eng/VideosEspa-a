@@ -573,7 +573,7 @@ def amb_tienda(**_):
 
 
 AMBIENTES = {"aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
-NIVEL_AMB = {"aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.07, "tienda": 0.07}
+NIVEL_AMB = {"aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
 
 
 def megafonia(y):

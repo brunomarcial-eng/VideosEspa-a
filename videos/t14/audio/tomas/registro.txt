@@ -1,0 +1,27 @@
+plano 1: «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto: más que en 2016.»
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.938 · 6.8 s · 12.8 l/s · «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto. Más que en 2016.»
+plano 2: «Mamá, ¡que no queda cacao!»
+    toma 1 (semilla 2000): mala · 0.947 · voz 0.762 · 1.6 s · 11.6 l/s · «¡Mama! ¡Que no quede cacao!» · voz distinta (0.76)
+    toma 2 (semilla 2001): mala · 1.0 · voz 0.846 · 1.4 s · 13.4 l/s · «¡Mamá, que no queda cacao!» · voz distinta (0.85)
+    toma 3 (semilla 2002): mala · 1.0 · voz 0.848 · 1.4 s · 14.0 l/s · «¡Mama, que no queda cacao!» · voz distinta (0.85)
+    toma 4 (semilla 2003): mala · 1.0 · voz 0.763 · 1.3 s · 14.2 l/s · «¡Mamá, que no queda cacao!» · voz distinta (0.76)
+    toma 5 (semilla 2004): BUENA · 1.0 · voz 0.858 · 1.8 s · 10.7 l/s · «¡Mama, que no queda cacao!»
+plano 3: «Buenos días. El kilo de chocolate y cacao: 55 minutos de trabajo. En 2016, 40.»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.935 · 7.3 s · 12.2 l/s · «Buenos días. El kilo de chocolate y cacao. 55 minutos de trabajo. En 2016, 40.»
+plano 4: «Pues me paso al café, como los mayores.»
+    toma 1 (semilla 4000): mala · 1.0 · voz 0.824 · 2.4 s · 12.5 l/s · «Pues me paso al café, como los mayores.» · voz distinta (0.82)
+    toma 2 (semilla 4001): BUENA · 1.0 · voz 0.862 · 2.3 s · 13.2 l/s · «Pues me paso al café como los mayores.»
+plano 5: «Tampoco te libras: el paquete de café, 15 minutos. En 2016, 13.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.912 · 6.9 s · 9.4 l/s · «Tampoco te libras el paquete de café, 15 minutos, en 2016, 13.»
+plano 6: «Y la docena de huevos, 14 minutos. En 2016, 10.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.91 · 5.0 s · 10.4 l/s · «y la docena de huevos, 14 minutos, en 2016, 10.»
+plano 7: «¡Pero si me han subido el sueldo!»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.903 · 1.9 s · 13.3 l/s · «pero si me han subido el sueldo.»
+plano 8: «Un 26 % por hora, sí. Pero los huevos, un 74 %.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.887 · 5.4 s · 12.5 l/s · «Un 26% por hora, ¿sí? Pero los huevos, un 74%»
+plano 9: «Eso sí: el pan y el aceite cuestan casi los mismos minutos que en 2016.»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.928 · 4.9 s · 13.4 l/s · «Eso sí, el pan y el aceite cuestan casi los mismos minutos que en 2016.»
+plano 10: «Pues pan con aceite, como el abuelo. Desayuno de lujo.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.904 · 3.4 s · 12.2 l/s · «Pues pan con aceite como el abuelo. Desayuno de lujo.»
+plano 11: «De nueve básicos del desayuno, seis cuestan más minutos que en 2016, y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.943 · 9.1 s · 12.1 l/s · «De 9 básicos del desayuno, 6 cuestan más minutos que en 2016 y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
