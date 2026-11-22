@@ -1,7 +1,7 @@
 plano 1: «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto: más que en 2016.»
     toma guardada (semilla 1000): BUENA · «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto. Más que en 2016.»
-plano 2: «Ojo: lo medimos con el sueldo mediano. Unos 19.400 euros brutos al año en 2016; hoy, unos 25.300. Si ganas el doble, la mitad de minutos.»
-    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.949 · 14.0 s · 11.2 l/s · «Ojo, lo medimos con el sueldo mediano. Unos 19.400 euros brutos al año en 2016, hoy, unos 25.300. Si ganas el doble, la mitad de minutos.»
+plano 2: «Ojo: contamos con el sueldo mediano: 19.400 euros brutos al año en 2016 y 25.300 hoy. Si ganas el doble, la mitad de minutos.»
+    toma guardada (semilla 2000): BUENA · «Ojo, contamos con el sueldo mediano, 19.400 euros brutos al año, en 2016 y 25.300 hoy. Si ganas el doble, la mitad de minutos.»
 plano 3: «Mamá, ¡que no queda cacao!»
     toma guardada (semilla 2004): BUENA · «¡Mama, que no queda cacao!»
 plano 4: «Buenos días. El kilo de chocolate y cacao: 55 minutos de trabajo. En 2016, 40.»
@@ -20,11 +20,9 @@ plano 10: «Eso sí: el pan y el aceite cuestan casi los mismos minutos que en 2
     toma guardada (semilla 9000): BUENA · «Eso sí, el pan y el aceite cuestan casi los mismos minutos que en 2016.»
 plano 11: «Pues pan con aceite, como el abuelo. Desayuno de lujo.»
     toma guardada (semilla 10000): BUENA · «Pues pan con aceite como el abuelo. Desayuno de lujo.»
-plano 12: «¿Y la tostada de moda? Aguacate, queso crema y salmón: 7,3 minutos. En 2016, 6,3.»
-    toma 1 (semilla 12000): BUENA · 1.0 · voz 0.915 · 8.2 s · 11.0 l/s · «y la tostada de moda? Aguacate, queso, crema y salmón. 7,3 minutos. En 2016, 6,3.»
-plano 13: «Y en el bar, con sus churros: los precios suben un 33 % desde 2016. El sueldo, un 26.»
-    toma 1 (semilla 13000): mala · 0.957 · voz 0.949 · 8.6 s · 11.5 l/s · «y en el bar con sus churros. Los precios suben un 33% desde 2016. El sueldo un 26%.» · sobran 9 letras (¿repite?)
-    toma 2 (semilla 13001): mala · 0.957 · voz 0.963 · 8.0 s · 12.4 l/s · «y en el bar con sus churros. Los precios suben un 33% desde 2016. El sueldo, un 26%.» · sobran 9 letras (¿repite?)
-    toma 3 (semilla 13002): BUENA · 1.0 · voz 0.957 · 8.8 s · 11.3 l/s · «y en el bar con sus churros. Los precios suben un 33% desde 2016. El sueldo, un 26.»
+plano 12: «¿Y la tostada de moda, con aguacate y salmón? 7,3 minutos. En 2016, 6,3.»
+    toma guardada (semilla 12000): BUENA · «y la tostada de moda con aguacate y salmón, 7,3 minutos, en 2016, 6,3.»
+plano 13: «¿Y en el bar, con churros? Los precios han subido un 33 %; el sueldo, un 26 %.»
+    toma 1 (semilla 13000): BUENA · 1.0 · voz 0.926 · 8.4 s · 10.6 l/s · «y en el bar con churros, los precios han subido un 33%, el sueldo un 26%.»
 plano 14: «De nueve básicos del desayuno, seis cuestan más minutos que en 2016, y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
     toma guardada (semilla 11000): BUENA · «De 9 básicos del desayuno, 6 cuestan más minutos que en 2016 y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»

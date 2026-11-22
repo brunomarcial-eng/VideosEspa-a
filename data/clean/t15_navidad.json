@@ -1,0 +1,184 @@
+{
+ "tema": "¿Cuántas horas trabajas para la cena de Nochebuena? 2016 frente a hoy",
+ "nota": "Cena para cuatro con las mismas cantidades en los dos años. Precio = lo que pagan de media los hogares (EPF del INE), con marcas blancas y ofertas. Horas con el sueldo neto mediano por hora (T1 y T14). 2025 es el último año de la EPF.",
+ "sueldo": {
+  "neto_hora_mediana": {
+   "2016": 10.27,
+   "2019": 10.85,
+   "2025": 12.98
+  },
+  "bruto_anual_mediano": {
+   "2016": 19433,
+   "2024": 24497,
+   "2025": 25296
+  },
+  "neto_anual_mediano": {
+   "2016": 15987,
+   "2025": 20424
+  },
+  "mediana_sube_pct": 26.4,
+  "neto_real_sube_pct": 0.6,
+  "estado_2025": "C: EAES 2024 × ETCL 2025/2024 (la EAES 2025 aún no está publicada)"
+ },
+ "platos": {
+  "cordero": {
+   "grupo_epf": "Carne de ovino y caprino",
+   "cantidad": 1.5,
+   "dicho": "una pierna de cordero de kilo y medio",
+   "precio_kg_o_l": {
+    "2016": 12.9,
+    "2019": 13.08,
+    "2025": 19.11
+   },
+   "eur": {
+    "2016": 19.35,
+    "2019": 19.62,
+    "2025": 28.66
+   },
+   "minutos": {
+    "2016": 113.0,
+    "2019": 108.5,
+    "2025": 132.5
+   },
+   "precio_sube_pct": 48.1,
+   "minutos_sube_pct": 17.2
+  },
+  "marisco": {
+   "grupo_epf": "Mariscos frescos o refrigerados",
+   "cantidad": 1.0,
+   "dicho": "un kilo de marisco fresco",
+   "precio_kg_o_l": {
+    "2016": 8.89,
+    "2019": 9.86,
+    "2025": 11.74
+   },
+   "eur": {
+    "2016": 8.89,
+    "2019": 9.86,
+    "2025": 11.74
+   },
+   "minutos": {
+    "2016": 51.9,
+    "2019": 54.5,
+    "2025": 54.3
+   },
+   "precio_sube_pct": 32.1,
+   "minutos_sube_pct": 4.5
+  },
+  "jamon": {
+   "grupo_epf": "Charcutería y carne seca, salada o ahumada",
+   "cantidad": 0.3,
+   "dicho": "300 g de jamón y embutido",
+   "precio_kg_o_l": {
+    "2016": 9.81,
+    "2019": 10.87,
+    "2025": 12.79
+   },
+   "eur": {
+    "2016": 2.94,
+    "2019": 3.26,
+    "2025": 3.84
+   },
+   "minutos": {
+    "2016": 17.2,
+    "2019": 18.0,
+    "2025": 17.7
+   },
+   "precio_sube_pct": 30.4,
+   "minutos_sube_pct": 3.2
+  },
+  "queso": {
+   "grupo_epf": "Queso y requesón de origen animal y no animal",
+   "cantidad": 0.3,
+   "dicho": "300 g de queso",
+   "precio_kg_o_l": {
+    "2016": 9.66,
+    "2019": 9.92,
+    "2025": 11.15
+   },
+   "eur": {
+    "2016": 2.9,
+    "2019": 2.98,
+    "2025": 3.35
+   },
+   "minutos": {
+    "2016": 16.9,
+    "2019": 16.5,
+    "2025": 15.5
+   },
+   "precio_sube_pct": 15.4,
+   "minutos_sube_pct": -8.7
+  },
+  "vino": {
+   "grupo_epf": "Vinos de uva",
+   "cantidad": 1.5,
+   "dicho": "dos botellas de vino",
+   "precio_kg_o_l": {
+    "2016": 2.97,
+    "2019": 3.67,
+    "2025": 4.42
+   },
+   "eur": {
+    "2016": 4.46,
+    "2019": 5.5,
+    "2025": 6.63
+   },
+   "minutos": {
+    "2016": 26.0,
+    "2019": 30.4,
+    "2025": 30.6
+   },
+   "precio_sube_pct": 48.8,
+   "minutos_sube_pct": 17.8
+  }
+ },
+ "cena": {
+  "eur": {
+   "2016": 38.54,
+   "2019": 41.22,
+   "2025": 54.22
+  },
+  "minutos": {
+   "2016": 225,
+   "2019": 228,
+   "2025": 251
+  },
+  "precio_sube_pct": 40.7,
+  "minutos_sube_pct": 11.3,
+  "horas_y_minutos": {
+   "2016": "3 h 45 min",
+   "2019": "3 h 48 min",
+   "2025": "4 h 11 min"
+  },
+  "minutos_mas": 26
+ },
+ "relativos": {
+  "dulces": {
+   "rubrica_ipc": "Azúcar, confitura, miel, chocolate y confitería",
+   "ipc_media_anual": {
+    "2016": 96.959,
+    "2019": 98.467,
+    "2025": 145.184
+   },
+   "precio_sube_pct": 49.7,
+   "tiempo_sube_pct": 18.5
+  },
+  "juguetes": {
+   "rubrica_ipc": "Juegos, juguetes y aficiones",
+   "ipc_media_anual": {
+    "2016": 116.88,
+    "2019": 106.936,
+    "2025": 94.737
+   },
+   "precio_sube_pct": -18.9,
+   "tiempo_sube_pct": -35.9
+  }
+ },
+ "orden_por_subida_en_minutos": [
+  "vino",
+  "cordero",
+  "marisco",
+  "jamon",
+  "queso"
+ ]
+}
