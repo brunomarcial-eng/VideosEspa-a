@@ -1,0 +1,48 @@
+{
+ "huella": "11a8b490ce7e6f33",
+ "semilla": 9000,
+ "texto": "Eso sí: el pan y el aceite cuestan casi los mismos minutos que en 2016.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0389,
+  "oido": "Eso sí, el pan y el aceite cuestan casi los mismos minutos que en 2016.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.2,
+   1.08,
+   1.2,
+   1.4,
+   1.56,
+   1.64,
+   1.86,
+   2.32,
+   2.5,
+   2.72,
+   2.94,
+   3.44,
+   3.72,
+   3.82
+  ],
+  "t1": [
+   0.20000000000000004,
+   0.4,
+   1.2,
+   1.4,
+   1.56,
+   1.64,
+   1.86,
+   2.32,
+   2.5,
+   2.72,
+   2.94,
+   3.44,
+   3.72,
+   3.82,
+   4.26
+  ],
+  "ritmo": 13.4,
+  "voz": 0.928
+ }
+}
