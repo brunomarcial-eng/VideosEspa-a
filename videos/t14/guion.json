@@ -1,0 +1,175 @@
+{
+ "id": "t14",
+ "version": 1,
+ "titulo": "¿Cuántos minutos trabajas para desayunar?",
+ "titulo_alternativo": "El desayuno, en minutos de trabajo: 2016 frente a hoy",
+ "pregunta": "Una madre, su hijo y la tendera del barrio. ¿Cuesta hoy más tiempo de trabajo pagar el desayuno que en 2016?",
+ "datos": "data/clean/t14_desayuno.json",
+ "aprobacion_datos": "Bruno, 22-11-2026: serie «¿Cuántas horas…?», horas de trabajo para pagar algo concreto frente a 2016 (eligió esta serie después de que la de Justicia se quedara sin datos accesibles). Precios: lo que pagan de media los hogares (INE, EPF 2016 y 2025, último año). Sueldo neto mediano por hora de T1 (INE)",
+ "formato": "En la cocina, el hijo descubre que no queda cacao. En la tienda del barrio, la tendera va pasando los productos del desayuno a minutos de trabajo, con relojes de cocina. La madre protesta (le han subido el sueldo); la tendera responde con el dato y reconoce lo que está casi igual. Cierra la madre con el recuento y la pregunta.",
+ "duracion_max_s": 80,
+ "personajes": {
+  "madre": {"anyo": "unos 45 años, hace la compra del desayuno", "voz": "medica"},
+  "hijo": {"anyo": "15 años, no perdona su cacao", "voz": "alumno"},
+  "tendera": {"anyo": "unos 62 años, lleva media vida detrás del mostrador", "voz": "hostelera"}
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "El veredicto lo dice la madre en el plano 11 («seis cuestan más minutos que en 2016, y ninguno menos») y acaba con la pregunta.",
+ "capitulos": [
+  {"nombre": "La cocina", "beats": [1, 2]},
+  {"nombre": "La tienda", "beats": [3, 4, 5, 6]},
+  {"nombre": "El sueldo", "beats": [7, 8, 9, 10]},
+  {"nombre": "Te toca", "beats": [11]}
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "madre",
+   "funcion": "gancho",
+   "voz": "¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto: más que en 2016.",
+   "pantalla": "¿Cuántos minutos trabajas para desayunar?",
+   "sello": null,
+   "imagen": "Una cocina por la mañana: azulejos, ventana con luz, cafetera al fuego, tostadora y la mesa puesta. La madre sirve el café; la cafetera borbotea."
+  },
+  {
+   "n": 2,
+   "quien": "hijo",
+   "funcion": "arranque",
+   "voz": "Mamá, ¡que no queda cacao!",
+   "pantalla": "«¡Que no queda cacao!»",
+   "sello": null,
+   "imagen": "El hijo, en pijama, pone el bote de cacao boca abajo: no cae nada. La madre coge el bolso."
+  },
+  {
+   "n": 3,
+   "quien": "tendera",
+   "funcion": "dato: cacao",
+   "voz": "Buenos días. El kilo de chocolate y cacao: 55 minutos de trabajo. En 2016, 40.",
+   "pantalla": "Minutos de trabajo para pagar 1 kg de chocolate y cacao · 2016: 40 · 2025: 55",
+   "nota": "Lo que pagan de media los hogares, con el sueldo neto mediano por hora",
+   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares y Encuesta de Estructura Salarial)",
+   "grafico": true,
+   "imagen": "La tienda del barrio: estanterías con botellas de aceite, cartones de leche, paquetes de café y botes de cacao, cajas de naranjas en la puerta, mostrador con báscula y caja registradora. Suena la campanilla de la puerta. Junto a la tendera, dos relojes de cocina: el de 2016 se llena hasta el minuto 40; el de hoy, hasta el 55."
+  },
+  {
+   "n": 4,
+   "quien": "hijo",
+   "funcion": "sarcasmo",
+   "voz": "Pues me paso al café, como los mayores.",
+   "pantalla": "«Me paso al café»",
+   "sello": null,
+   "imagen": "El hijo deja el bote de cacao en el mostrador y coge un paquete de café, muy digno."
+  },
+  {
+   "n": 5,
+   "quien": "tendera",
+   "funcion": "dato: café",
+   "voz": "Tampoco te libras: el paquete de café, 15 minutos. En 2016, 13.",
+   "pantalla": "Minutos de trabajo para pagar un paquete de café de 250 g · 2016: 13 · 2025: 15",
+   "nota": "En 2019 salía algo más barato: 11 minutos",
+   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares y Encuesta de Estructura Salarial)",
+   "grafico": true,
+   "imagen": "Los dos relojes de cocina, ahora con el paquete de café delante: 13 y 15 minutos."
+  },
+  {
+   "n": 6,
+   "quien": "tendera",
+   "funcion": "dato: huevos",
+   "voz": "Y la docena de huevos, 14 minutos. En 2016, 10.",
+   "pantalla": "Minutos de trabajo para pagar una docena de huevos · 2016: 10 · 2025: 14",
+   "nota": "Lo que pagan de media los hogares, con el sueldo neto mediano por hora",
+   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares y Encuesta de Estructura Salarial)",
+   "grafico": true,
+   "imagen": "La tendera abre una huevera de doce; los relojes marcan 10 y 14 minutos."
+  },
+  {
+   "n": 7,
+   "quien": "madre",
+   "funcion": "indignación",
+   "voz": "¡Pero si me han subido el sueldo!",
+   "pantalla": "«¡Pero si me han subido el sueldo!»",
+   "sello": null,
+   "imagen": "La madre saca la nómina del bolso y la enseña, indignada."
+  },
+  {
+   "n": 8,
+   "quien": "tendera",
+   "funcion": "dato: sueldo frente a precio",
+   "voz": "Un 26 % por hora, sí. Pero los huevos, un 74 %.",
+   "pantalla": "Lo que ha subido desde 2016 · Sueldo neto por hora: +26 % · Docena de huevos: +74 %",
+   "nota": "Sueldo neto mediano por hora: de 10,27 € a 12,98 €. Docena de huevos: de 1,75 € a 3,04 €",
+   "sello": "CÁLCULO PROPIO · INE (Encuesta de Estructura Salarial, Encuesta Trimestral de Coste Laboral y Encuesta de Presupuestos Familiares)",
+   "grafico": true,
+   "imagen": "Dos barras que suben a la vez: el sueldo, hasta el 26 %; los huevos, hasta el 74 %, que se salen del cartel."
+  },
+  {
+   "n": 9,
+   "quien": "tendera",
+   "funcion": "contrapunto",
+   "voz": "Eso sí: el pan y el aceite cuestan casi los mismos minutos que en 2016.",
+   "pantalla": "Minutos de trabajo para pagar un litro de aceite de oliva · 2016: 22,3 · 2025: 22,9",
+   "nota": "La barra de pan de 250 g: 3,8 minutos en 2016 y en 2025",
+   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares y Encuesta de Estructura Salarial)",
+   "grafico": true,
+   "imagen": "Una barra de pan y una botella de aceite en el mostrador, con un signo igual entre los dos relojes."
+  },
+  {
+   "n": 10,
+   "quien": "hijo",
+   "funcion": "sarcasmo",
+   "voz": "Pues pan con aceite, como el abuelo. Desayuno de lujo.",
+   "pantalla": "«Pan con aceite, como el abuelo»",
+   "sello": null,
+   "imagen": "El hijo se lleva la barra bajo el brazo y la botella de aceite, como un trofeo."
+  },
+  {
+   "n": 11,
+   "quien": "madre",
+   "funcion": "veredicto y pregunta",
+   "voz": "De nueve básicos del desayuno, seis cuestan más minutos que en 2016, y ninguno menos. ¿Tú has tenido que cambiar el desayuno?",
+   "pantalla": "Seis de nueve básicos del desayuno cuestan más minutos de trabajo que en 2016",
+   "nota": "Más minutos: cacao, huevos, naranjas, café, zumo y leche. Casi igual: azúcar, aceite y pan",
+   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares y Encuesta de Estructura Salarial)",
+   "grafico": true,
+   "imagen": "De vuelta en la cocina: nueve productos en la mesa, seis con su reloj en rojo y tres en gris. La madre mira a cámara con la taza en la mano."
+  }
+ ],
+ "no_dato": [
+  "1",
+  "250",
+  "5"
+ ],
+ "cifras": [
+  {"texto": "40", "ruta": "productos.cacao.minutos_mediana.2016", "decimales": 0, "estado": "C"},
+  {"texto": "55", "ruta": "productos.cacao.minutos_mediana.2025", "decimales": 0, "estado": "C"},
+  {"texto": "13", "ruta": "productos.cafe.minutos_mediana.2016", "decimales": 0, "estado": "C"},
+  {"texto": "15", "ruta": "productos.cafe.minutos_mediana.2025", "decimales": 0, "estado": "C"},
+  {"texto": "11", "ruta": "productos.cafe.minutos_mediana.2019", "decimales": 0, "estado": "C"},
+  {"texto": "10", "ruta": "productos.huevos.minutos_mediana.2016", "decimales": 0, "estado": "C"},
+  {"texto": "14", "ruta": "productos.huevos.minutos_mediana.2025", "decimales": 0, "estado": "C"},
+  {"texto": "26", "ruta": "sueldo.mediana_sube_pct", "decimales": 0, "estado": "C"},
+  {"texto": "74", "ruta": "productos.huevos.precio_sube_pct", "decimales": 0, "estado": "C"},
+  {"texto": "10,27", "ruta": "sueldo.neto_hora_mediana.2016", "decimales": 2, "estado": "C"},
+  {"texto": "12,98", "ruta": "sueldo.neto_hora_mediana.2025", "decimales": 2, "estado": "C"},
+  {"texto": "1,75", "ruta": "productos.huevos.precio_paquete_eur.2016", "decimales": 2, "estado": "C"},
+  {"texto": "3,04", "ruta": "productos.huevos.precio_paquete_eur.2025", "decimales": 2, "estado": "C"},
+  {"texto": "22,3", "ruta": "productos.aceite.minutos_mediana.2016", "decimales": 1, "estado": "C"},
+  {"texto": "22,9", "ruta": "productos.aceite.minutos_mediana.2025", "decimales": 1, "estado": "C"},
+  {"texto": "3,8", "ruta": "productos.pan.minutos_mediana.2025", "decimales": 1, "estado": "C"}
+ ],
+ "comprobaciones": [
+  "Precios (V): INE, Encuesta de Presupuestos Familiares base 2016, «valor unitario» (lo que pagan de media los hogares por kilo, litro o unidad, con marcas blancas y ofertas) de 2016, 2019 y 2025 (último año). Para huevos, naranjas, zumo, leche y pan se usa gasto medio por hogar / cantidad media por hogar, que da más decimales; cuadra con el valor unitario del INE. Paquetes: kilo de chocolate y cacao, paquete de café de 250 g, docena de huevos, litro de aceite de oliva, barra de 250 g del precio medio del pan.",
+  "Sueldo (C): el de T1. Sueldo bruto mediano por hora (INE, Encuesta Anual de Estructura Salarial; 2025 = EAES 2024 × Encuesta Trimestral de Coste Laboral 2025/2024) y neto con el IRPF y las cotizaciones de cada año: 10,27 € en 2016, 10,85 € en 2019 y 12,98 € en 2025 (+26,4 %). Con la media (11,94 € y 15,22 €, +27,5 %) los minutos bajan algo, pero las conclusiones no cambian.",
+  "Minutos (C) = precio del paquete / sueldo neto mediano por hora × 60. Cacao 40,0 → 55,4; huevos 10,2 → 14,1; café 13,0 → 15,2 (11,0 en 2019); naranjas 7,5 → 8,7; zumo 6,3 → 7,0; leche 4,6 → 5,0; azúcar 5,7 → 5,9; aceite 22,3 → 22,9 (18,9 en 2019); pan 3,8 → 3,8. «Más minutos» = más de un 5 % más; «casi igual» = entre −5 % y +5 %."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 2016: el sueldo neto mediano por hora sube un 26 %, pero de nueve básicos del desayuno, seis cuestan más minutos de trabajo (cacao +39 %, huevos +37 %, naranjas y café +17 %, zumo +12 %, leche +8 %), tres casi los mismos (azúcar, aceite y pan) y ninguno menos",
+  "porque": "Precios medios que pagan los hogares (INE, Encuesta de Presupuestos Familiares) y sueldo neto mediano por hora (INE, Encuesta de Estructura Salarial y Encuesta Trimestral de Coste Laboral).",
+  "pregunta": "¿Tú has tenido que cambiar el desayuno?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno"
+}

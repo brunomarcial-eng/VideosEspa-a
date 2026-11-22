@@ -532,8 +532,48 @@ def amb_trafico(**_):
     return norm(y)
 
 
-AMBIENTES = {"aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico}
-NIVEL_AMB = {"aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08}
+def amb_cocina(**_):
+    """Cocina por la mañana: el tictac del reloj, la cafetera que borbotea a ratos y pájaros por la ventana."""
+    dur = 6.0
+    y = ruido(dur, 150, 900) * 0.05
+    tp = tiempo(0.03)
+    tic = ruido(0.03, 2500, 7000) * np.exp(-tp / 0.004)
+    for k, tt in enumerate(np.arange(0.05, dur - 0.05, 0.5)):
+        i = int(tt * SR)
+        y[i:i + len(tic)] += tic * (0.35 if k % 2 else 0.25)
+    for t0 in (1.2, 4.1):                         # borboteo de la cafetera
+        d = 1.2
+        b = ruido(d, 200, 1400) * (0.5 + 0.5 * np.sign(np.sin(2 * np.pi * 9 * tiempo(d)))) * np.sin(np.pi * tiempo(d) / d) * 0.35
+        i = int(t0 * SR)
+        y[i:i + len(b)] += b
+    for t0 in (0.6, 2.9, 5.0):                    # pájaros: dos piadas cortas
+        for k in range(2):
+            d = 0.09
+            tp2 = tiempo(d)
+            p = np.sin(2 * np.pi * np.cumsum(3200 + 1400 * tp2 / d) / SR) * np.sin(np.pi * tp2 / d) * 0.12
+            i = int((t0 + k * 0.14) * SR)
+            y[i:i + len(p)] += p
+    return norm(y)
+
+
+def amb_tienda(**_):
+    """Tienda de barrio: murmullo, el zumbido de la nevera, bolsas de papel y alguna moneda en el mostrador."""
+    dur = 7.0
+    t = tiempo(dur)
+    y = ruido(dur, 250, 1600) * 0.25 * (0.8 + 0.2 * np.sin(2 * np.pi * 0.25 * t)) + 0.05 * np.sin(2 * np.pi * 100 * t)
+    for t0 in (1.5, 4.6):                         # bolsa de papel
+        d = 0.5
+        b = ruido(d, 1500, 7000) * np.abs(np.sin(2 * np.pi * 11 * tiempo(d))) * np.sin(np.pi * tiempo(d) / d) * 0.3
+        i = int(t0 * SR)
+        y[i:i + len(b)] += b
+    m = s_moneda() * 0.25
+    i = int(3.2 * SR)
+    y[i:i + len(m)] += m[: len(y) - i]
+    return norm(y)
+
+
+AMBIENTES = {"aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
+NIVEL_AMB = {"aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.07, "tienda": 0.07}
 
 
 def megafonia(y):

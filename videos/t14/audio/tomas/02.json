@@ -1,0 +1,28 @@
+{
+ "huella": "43e0c8097d8ec4a1",
+ "semilla": 2004,
+ "texto": "Mamá, ¡que no queda cacao!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0042,
+  "oido": "¡Mama, que no queda cacao!",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.54,
+   0.72,
+   0.84,
+   1.06
+  ],
+  "t1": [
+   0.38,
+   0.72,
+   0.84,
+   1.06,
+   1.48
+  ],
+  "ritmo": 10.7,
+  "voz": 0.858
+ }
+}

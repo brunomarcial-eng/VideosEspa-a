@@ -436,6 +436,11 @@ DESCARGAS = [
      "CNMC. Balance de la liberalización del transporte de viajeros por ferrocarril (INF/DTSP/091/25), con la puntualidad 2019-2024", "https://www.cnmc.es/expedientes/infdtsp09125"),
     ("cnmc_ferroviario_viajeros_1t2026.pdf", "https://www.cnmc.es/sites/default/files/6661634.pdf",
      "CNMC. Informe trimestral del transporte de viajeros por ferrocarril, primer trimestre de 2026 (INF/DTSP/038/26)", "https://www.cnmc.es/expedientes/infdtsp03826"),
+    # --- T14: ¿cuántos minutos trabajas para desayunar? ---
+    ("ine_73781_epf_gasto_5digitos.json", "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/73781?nult=12",
+     "INE. Encuesta de Presupuestos Familiares (base 2016): gasto medio por hogar por códigos de gasto de 5 dígitos (COICOP 2018/EPF)", "https://www.ine.es/jaxiT3/Tabla.htm?t=73781"),
+    ("ine_73844_epf_cantidades.json", "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/73844?nult=12",
+     "INE. Encuesta de Presupuestos Familiares (base 2016): cantidades medias consumidas y valor unitario de alimentos, bebidas y energía", "https://www.ine.es/jaxiT3/Tabla.htm?t=73844"),
     ("microdatos/ees_cuatrienal_2006.zip", "https://www.ine.es/ftp/microdatos/salarial/datos_salarial06.zip",
      "INE. Encuesta Cuatrienal de Estructura Salarial 2006, microdatos (no se versiona: 72 MB)",
      "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177025&menu=resultados&idp=1254735976596"),
