@@ -1,0 +1,304 @@
+{
+ "id": "t17",
+ "version": 1,
+ "titulo": "Papá, ya tengo el carnet: ¿me compras un coche nuevo?",
+ "titulo_alternativo": "¿Nuevo o de segunda mano? El coche nuevo, en meses de sueldo, de 2007 a hoy",
+ "pregunta": "Un chaval de 18 años aprueba el carnet y le pide un coche nuevo a su padre. ¿Cuántos meses de sueldo cuesta hoy un coche nuevo frente a 2007 y 2016, y cuánto más se compra de segunda mano?",
+ "datos": "data/clean/t17_mas_vendido.json",
+ "aprobacion_datos": "Bruno, 22-11-2026: coches B con dos enfoques (prueba A/B). Este es el del padre y el hijo: el hijo acaba de sacarse el carnet, le pide un coche nuevo, debate de precios frente a hace diez años (el primo) y acaban eligiendo uno de segunda mano. Datos del paso 1 en videos/t17/paso-1-datos.md. Sin precios de catálogo (km77 o marcas): no son oficiales (regla 1).",
+ "formato": "Salón de casa: el hijo entra con el papel del carnet aprobado y le pide un coche nuevo al padre. Debate con datos: el coche nuevo medio en meses de sueldo hoy, en 2016 (al primo se lo compraron nuevo) y en 2007; lo que suben sueldo y coche; cuánta segunda mano se vende. Acaban en un compraventa eligiendo un usado. Pregunta abierta al final.",
+ "duracion_max_s": 80,
+ "personajes": {
+  "hijo": {
+   "anyo": "18 años recién cumplidos, acaba de aprobar el carnet de conducir",
+   "voz": "hijo"
+  },
+  "padre": {
+   "anyo": "unos 50 años, padre del chaval",
+   "voz": "comandante"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "El veredicto lo da el padre en el plano 11 («hoy, un coche nuevo cuesta más meses que en 2016, como en 2007»; la segunda mano, en los planos 7 y 9) y acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "El carnet",
+   "beats": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "nombre": "El primo",
+   "beats": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "nombre": "La segunda mano",
+   "beats": [
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "nombre": "El compraventa",
+   "beats": [
+    10,
+    11
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "hijo",
+   "funcion": "gancho",
+   "voz": "¡Papá! ¡Aprobado a la primera! ¿Me compras un coche nuevo?",
+   "pantalla": "¿Nuevo o de segunda mano?",
+   "sello": null,
+   "imagen": "El salón de casa, en perspectiva: ventana a la calle con coches que pasan, sofá, lámpara. El hijo entra corriendo con el papel del aprobado en alto; el padre, en el sofá, baja el periódico. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "padre",
+   "funcion": "dato: el coche nuevo hoy",
+   "voz": "¿Nuevo? Hijo, un coche nuevo cuesta hoy 31.555 euros de media: dieciocho meses y medio de sueldo.",
+   "pantalla": "Coche nuevo medio, con impuestos · 31.555 € · 18,5 meses de sueldo",
+   "nota": "Comprado nuevo en España en 2025, con IVA e impuesto de matriculación. Sueldo neto mediano: 1.702 € al mes",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria (impuesto de matriculación) · INE",
+   "imagen": "Un coche nuevo reluciente aparece junto al padre con su etiqueta de precio; a su lado, un calendario arranca hojas hasta dieciocho y media."
+  },
+  {
+   "n": 3,
+   "quien": "hijo",
+   "funcion": "réplica",
+   "voz": "¡Pues al primo Dani se lo comprasteis nuevo!",
+   "pantalla": "«¡Al primo se lo comprasteis nuevo!»",
+   "sello": null,
+   "imagen": "El hijo señala una foto enmarcada en la pared: el primo, sonriente, con su coche nuevo y un lazo."
+  },
+  {
+   "n": 4,
+   "quien": "padre",
+   "funcion": "dato: 2016",
+   "voz": "Eso fue en 2016: quince meses y medio de sueldo.",
+   "pantalla": "Meses de sueldo neto para pagar el coche nuevo medio · 2016: 15,6 · 2019: 16,4 · 2025: 18,5",
+   "nota": "2016: 20.741 € con impuestos y un sueldo neto mediano de 1.332 € al mes",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria (impuesto de matriculación) · INE",
+   "grafico": true,
+   "imagen": "La foto del primo se agranda y se vuelve un gráfico de barras: 2016, 2019 y hoy, cada una con su coche encima."
+  },
+  {
+   "n": 5,
+   "quien": "hijo",
+   "funcion": "pregunta",
+   "voz": "¿Y los sueldos no han subido?",
+   "pantalla": "«¿Y los sueldos no han subido?»",
+   "sello": null,
+   "imagen": "El hijo, con los brazos abiertos, mira al padre."
+  },
+  {
+   "n": 6,
+   "quien": "padre",
+   "funcion": "dato: sueldo frente a coche",
+   "voz": "Sí: un 28 %. Pero el coche nuevo, un 51 %.",
+   "pantalla": "Subida desde 2016 · sueldo neto: +28 % · coche nuevo: +51 %",
+   "nota": "Sueldo neto mediano: de 1.332 € a 1.702 € al mes. Coche nuevo medio sin impuestos: de 16.930 € a 25.592 €",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria (impuesto de matriculación) · INE",
+   "imagen": "Dos flechas suben a la vez: la del sueldo se queda corta y la del coche sigue subiendo hasta casi el doble."
+  },
+  {
+   "n": 7,
+   "quien": "padre",
+   "funcion": "dato: la segunda mano",
+   "voz": "Y hoy, por cada coche que se matricula, dos y medio de segunda mano cambian de dueño. En 2016, dos.",
+   "pantalla": "Turismos usados que cambian de dueño por cada turismo matriculado · 2016: 2,03 · 2019: 2,19 · 2025: 2,48",
+   "nota": "Cuenta también los que pasan por un compraventa. Los usados traídos de fuera: el 9,1 % de las matriculaciones en 2016 y el 18,6 % en 2025",
+   "sello": "DATO OFICIAL · DGT (cambios de titularidad y matriculaciones) · Agencia Tributaria",
+   "grafico": true,
+   "imagen": "Por la ventana pasa un coche nuevo y, detrás, una fila de coches usados con llaves que cambian de mano."
+  },
+  {
+   "n": 8,
+   "quien": "hijo",
+   "funcion": "pregunta: 2007",
+   "voz": "¿Y antes de la crisis, en 2007?",
+   "pantalla": "«¿Y en 2007?»",
+   "sello": null,
+   "imagen": "El hijo coge un álbum de fotos viejo y lo abre: una foto de 2007."
+  },
+  {
+   "n": 9,
+   "quien": "padre",
+   "funcion": "dato: 2007 (la conclusión cambia con el año y se dice)",
+   "voz": "Casi los mismos meses que hoy: dieciocho. Pero se vendía menos segunda mano: uno y medio por coche matriculado.",
+   "pantalla": "Meses de sueldo neto para pagar el coche nuevo medio · 2007: 18,3 · 2025: 18,5",
+   "nota": "Usados que cambian de dueño por cada turismo matriculado: 1,55 en 2007 y 2,48 en 2025. IVA del 16 % en 2007",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria · DGT · INE",
+   "grafico": true,
+   "imagen": "Dos calendarios casi igual de gordos, 2007 y hoy; debajo, la fila de usados de 2007 es más corta que la de hoy."
+  },
+  {
+   "n": 10,
+   "quien": "hijo",
+   "funcion": "giro: el usado",
+   "voz": "Vale, vale... ¿Y ese de segunda mano?",
+   "pantalla": "«¿Y ese de segunda mano?»",
+   "sello": null,
+   "imagen": "Un compraventa de coches usados: banderines, carteles de «OCASIÓN» sin cifras en los parabrisas. El hijo señala un utilitario pequeño; el padre se rasca la cabeza."
+  },
+  {
+   "n": 11,
+   "quien": "padre",
+   "funcion": "veredicto y pregunta",
+   "voz": "Ese. Hoy, un coche nuevo cuesta más meses que en 2016, como en 2007. Y la mitad la pones tú. ¿Tu primer coche fue nuevo o de segunda mano?",
+   "pantalla": "Más meses de sueldo que en 2016, como en 2007, y más segunda mano. ¿Tu primer coche fue nuevo o usado?",
+   "sello": null,
+   "imagen": "El padre le da las llaves al hijo, que las agita feliz; el padre mira a cámara con media sonrisa."
+  }
+ ],
+ "no_dato": [
+  "18",
+  "10"
+ ],
+ "cifras": [
+  {
+   "texto": "31.555",
+   "ruta": "coche_nuevo_medio.2025.precio_con_impuestos",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "18,5",
+   "ruta": "coche_nuevo_medio.2025.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "1.702",
+   "ruta": "sueldo_neto_mes.2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "20.741",
+   "ruta": "coche_nuevo_medio.2016.precio_con_impuestos",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "15,6",
+   "ruta": "coche_nuevo_medio.2016.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "16,4",
+   "ruta": "coche_nuevo_medio.2019.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "1.332",
+   "ruta": "sueldo_neto_mes.2016",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "28",
+   "ruta": "sueldo_neto_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "51",
+   "ruta": "coche_nuevo_medio_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "16.930",
+   "ruta": "coche_nuevo_medio.2016.precio_sin_iedmt",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "25.592",
+   "ruta": "coche_nuevo_medio.2025.precio_sin_iedmt",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "2,03",
+   "ruta": "segunda_mano.2016.usados_por_cada_matriculado",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "2,19",
+   "ruta": "segunda_mano.2019.usados_por_cada_matriculado",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "2,48",
+   "ruta": "segunda_mano.2025.usados_por_cada_matriculado",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "9,1",
+   "ruta": "segunda_mano.2016.usados_importados_pct",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "18,6",
+   "ruta": "segunda_mano.2025.usados_importados_pct",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "18,3",
+   "ruta": "coche_nuevo_medio.2007.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "1,55",
+   "ruta": "segunda_mano.2007.usados_por_cada_matriculado",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "16",
+   "ruta": "coche_nuevo_medio.2007.iva_pct",
+   "decimales": 0,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "Coche nuevo medio (C): Agencia Tributaria, estadística del Impuesto sobre la Matriculación, tabla por origen, fila «Nuevo y adquirido en España»: precio medio con el impuesto de matriculación, más el IVA de cada año sobre el precio sin impuestos. 2007: 21.635 € (IVA del 16 %); 2016: 20.741 €; 2019: 22.816 €; 2025: 31.555 €.",
+  "Meses de sueldo (C): precio / sueldo neto mediano de un mes (T16: 1.185 €, 1.332 €, 1.392 € y 1.702 €): 18,3, 15,6, 16,4 y 18,5.",
+  "Subidas desde 2016 (C): coche nuevo sin impuestos 16.930 € → 25.592 € (+51,2 %); sueldo neto mediano +27,8 %.",
+  "Segunda mano (C): DGT, cambios de titularidad de turismos / turismos matriculados (series históricas 2025): 1,55 (2007), 2,03 (2016), 2,19 (2019), 2,48 (2025). El máximo de la serie es 2021 (2,99, año de rebote): no se dice «más que nunca». Los cambios de titularidad incluyen los que pasan por un compraventa.",
+  "Usados traídos de fuera (C): Agencia Tributaria, origen «Usado» / total matriculado: 16,1 % (2007), 9,1 % (2016), 11,8 % (2019), 18,6 % (2025).",
+  "«Dos y medio» (2,48), «dos» (2,03), «uno y medio» (1,55), «dieciocho meses y medio» (18,5), «quince meses y medio» (15,6) y «dieciocho» (18,3): redondeos hablados de las cifras de pantalla.",
+  "No hay precio oficial por modelo de 2016 ni de 2019 (el ranking de Hacienda empieza en 2022): este vídeo no da precios de modelos concretos."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 2016 y 2019: el coche nuevo medio pasa de 15,6 y 16,4 meses de sueldo a 18,5 (el precio sube un 51 % desde 2016 y el sueldo neto un 28 %) y se vende más segunda mano (2,03 → 2,48 usados por cada matriculado). Frente a 2007, el coche nuevo cuesta casi los mismos meses (18,3) y entonces se vendía menos segunda mano (1,55)",
+  "porque": "Precio medio de los coches nuevos (Agencia Tributaria), cambios de titularidad y matriculaciones (DGT), IVA (BOE) y sueldo mediano (INE y Eurostat).",
+  "pregunta": "¿Tu primer coche fue nuevo o de segunda mano?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno"
+}

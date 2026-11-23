@@ -638,8 +638,53 @@ def s_leche(dur=3.2, **_):
     return bordes(norm((silbido + vapor + borboteo) * env), 0.01, 0.05)
 
 
-AMBIENTES = {"concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
-NIVEL_AMB = {"concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
+def amb_salon(**_):
+    """Salón de casa (T17): un coche que pasa por la calle de vez en cuando, algún pájaro y el reloj de pared, flojito.
+    Sin ruido continuo (Bruno, 22-11-2026)."""
+    dur = 8.0
+    y = np.zeros(int(dur * SR), np.float32)
+    tp = tiempo(0.03)
+    tic = ruido(0.03, 2500, 7000) * np.exp(-tp / 0.004)
+    for k, tt in enumerate(np.arange(0.05, dur - 0.05, 1.0)):
+        i = int(tt * SR)
+        y[i:i + len(tic)] += tic * 0.18
+    d = 2.2                                         # un coche que pasa por la calle (lejano)
+    w = ruido(d, 120, 2200) * np.sin(np.pi * tiempo(d) / d) ** 4 * 0.3
+    i = int(2.5 * SR)
+    y[i:i + len(w)] += w
+    for t0 in (0.9, 5.6):                           # pájaros
+        for k in range(2):
+            d2 = 0.09
+            tp2 = tiempo(d2)
+            pj = np.sin(2 * np.pi * np.cumsum(3000 + 1500 * tp2 / d2) / SR) * np.sin(np.pi * tp2 / d2) * 0.1
+            i = int((t0 + k * 0.15) * SR)
+            y[i:i + len(pj)] += pj
+    return norm(y)
+
+
+def amb_compraventa(**_):
+    """Compraventa al aire libre (T17): coches que pasan por la calle, los banderines al viento a ratos, unas llaves
+    y una puerta de coche. Sin colchón de ruido continuo."""
+    dur = 8.0
+    y = np.zeros(int(dur * SR), np.float32)
+    for t0 in (0.4, 4.6):                           # coches que pasan
+        d = 2.0
+        w = ruido(d, 120, 2600) * np.sin(np.pi * tiempo(d) / d) ** 3 * 0.4
+        i = int(t0 * SR)
+        y[i:i + len(w)] += w[: len(y) - i]
+    for t0 in (2.6, 6.9):                           # banderines: un aleteo corto
+        d = 0.6
+        f = ruido(d, 400, 2500) * np.abs(np.sin(2 * np.pi * 7 * tiempo(d))) * np.sin(np.pi * tiempo(d) / d) * 0.25
+        i = int(t0 * SR)
+        y[i:i + len(f)] += f[: len(y) - i]
+    for t0, x, v in ((3.4, s_llaves(), 0.22), (5.8, s_puerta(), 0.3)):
+        i = int(t0 * SR)
+        y[i:i + len(x)] += x[: len(y) - i] * v
+    return norm(y)
+
+
+AMBIENTES = {"salon": amb_salon, "compraventa": amb_compraventa, "concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
+NIVEL_AMB = {"salon": 0.10, "compraventa": 0.12, "concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
 
 
 def megafonia(y):

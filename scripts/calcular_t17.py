@@ -148,6 +148,10 @@ def main():
                                "usados_por_cada_matriculado": round(camb[a] / matr[a], 2),
                                "segunda_mano_pct": round(100 * camb[a] / (camb[a] + matr[a]), 1)})
     out["segunda_mano"] = usados
+    serie = {a: round(camb[a] / matr[a], 2) for a in sorted(set(matr) & set(camb))}
+    out["usados_por_cada_matriculado_serie"] = {str(a): v for a, v in serie.items()}
+    pico = max(serie, key=serie.get)
+    out["usados_por_cada_matriculado_maximo"] = {"anyo": pico, "valor": serie[pico], "nota": "2021 es año de rebote; el máximo no es hoy"}
     CLEAN.mkdir(parents=True, exist_ok=True)
     (CLEAN / "t17_mas_vendido.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(json.dumps(out, ensure_ascii=False, indent=1))
