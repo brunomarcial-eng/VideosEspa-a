@@ -1,0 +1,52 @@
+{
+ "huella": "4f09569a09e75893",
+ "semilla": 2000,
+ "texto": "¿Nuevo? Hijo, un coche nuevo cuesta hoy 31.555 euros de media: dieciocho meses y medio de sueldo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.036,
+  "oido": "Nuevo? Hijo, un coche nuevo cuesta hoy 31.555 euros de media, 18 meses y medio de sueldo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.84,
+   1.6,
+   1.72,
+   2.04,
+   2.22,
+   2.7,
+   2.88,
+   4.82,
+   5.1,
+   5.28,
+   6.08,
+   6.44,
+   6.76,
+   7.04,
+   7.26,
+   7.4
+  ],
+  "t1": [
+   0.4,
+   1.14,
+   1.72,
+   2.04,
+   2.22,
+   2.7,
+   2.88,
+   4.82,
+   5.1,
+   5.28,
+   5.56,
+   6.44,
+   6.76,
+   7.04,
+   7.26,
+   7.4,
+   7.76
+  ],
+  "ritmo": 14.0,
+  "voz": 0.922
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "huella": "564ca0bd315051bd",
+ "semilla": 4000,
+ "texto": "Eso fue en 2016: quince meses y medio de sueldo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0298,
+  "oido": "Eso fue en 2016, 15 meses y medio de sueldo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.28,
+   0.5,
+   0.6,
+   2.04,
+   2.4,
+   2.88,
+   3.18,
+   3.4,
+   3.56
+  ],
+  "t1": [
+   0.28,
+   0.5,
+   0.6,
+   1.5,
+   2.4,
+   2.88,
+   3.18,
+   3.4,
+   3.56,
+   3.98
+  ],
+  "ritmo": 11.7,
+  "voz": 0.91
+ }
+}

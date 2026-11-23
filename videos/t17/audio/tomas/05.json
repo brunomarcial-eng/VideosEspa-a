@@ -1,0 +1,30 @@
+{
+ "huella": "91a243c605bfa42c",
+ "semilla": 5000,
+ "texto": "¿Y los sueldos no han subido?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0211,
+  "oido": "¿Y los sueldos no han subido?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.24,
+   0.74,
+   0.9,
+   1.04
+  ],
+  "t1": [
+   0.12,
+   0.24,
+   0.74,
+   0.9,
+   1.04,
+   1.46
+  ],
+  "ritmo": 13.9,
+  "voz": 0.892
+ }
+}

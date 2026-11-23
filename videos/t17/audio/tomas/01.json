@@ -1,0 +1,38 @@
+{
+ "huella": "ef0e5ba341fbfdcb",
+ "semilla": 1000,
+ "texto": "¡Papá! ¡Aprobado a la primera! ¿Me compras un coche nuevo?",
+ "ev": {
+  "ok": true,
+  "nota": 1.039,
+  "oido": "Papá, aprobado a la primera. ¿Me compras un coche nuevo?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.78,
+   1.28,
+   1.38,
+   1.42,
+   2.28,
+   2.46,
+   2.84,
+   2.98,
+   3.22
+  ],
+  "t1": [
+   0.58,
+   1.28,
+   1.38,
+   1.42,
+   1.74,
+   2.46,
+   2.84,
+   2.98,
+   3.22,
+   3.4
+  ],
+  "ritmo": 11.9,
+  "voz": 0.928
+ }
+}

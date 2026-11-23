@@ -1,0 +1,22 @@
+plano 1: «¡Papá! ¡Aprobado a la primera! ¿Me compras un coche nuevo?»
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.928 · 3.6 s · 11.9 l/s · «Papá, aprobado a la primera. ¿Me compras un coche nuevo?»
+plano 2: «¿Nuevo? Hijo, un coche nuevo cuesta hoy 31.555 euros de media: dieciocho meses y medio de sueldo.»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.922 · 7.8 s · 14.0 l/s · «Nuevo? Hijo, un coche nuevo cuesta hoy 31.555 euros de media, 18 meses y medio de sueldo.»
+plano 3: «¡Pues al primo Dani se lo comprasteis nuevo!»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.875 · 2.3 s · 15.2 l/s · «Pues al primo, Dani se lo comprasteis nuevo.»
+plano 4: «Eso fue en 2016: quince meses y medio de sueldo.»
+    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.91 · 4.1 s · 11.7 l/s · «Eso fue en 2016, 15 meses y medio de sueldo.»
+plano 5: «¿Y los sueldos no han subido?»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.892 · 1.6 s · 13.9 l/s · «¿Y los sueldos no han subido?»
+plano 6: «Sí: un 28 %. Pero el coche nuevo, un 51 %.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.932 · 4.9 s · 12.8 l/s · «Sí, un 28%, pero el coche nuevo un 51%.»
+plano 7: «Y hoy, por cada coche que se matricula, dos y medio de segunda mano cambian de dueño. En 2016, dos.»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.949 · 7.2 s · 11.9 l/s · «Y hoy, por cada coche que se matricula, dos y medio de segunda mano cambian de dueño. En 2016, dos.»
+plano 8: «¿Y antes de la crisis, en 2007?»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.903 · 1.9 s · 14.9 l/s · «y antes de la crisis en 2007.»
+plano 9: «Casi los mismos meses que hoy: dieciocho. Pero se vendía menos segunda mano: uno y medio por coche matriculado.»
+    toma 1 (semilla 9000): BUENA · 0.994 · voz 0.956 · 6.4 s · 13.9 l/s · «Casi los mismos meses que hoy, 18, pero se vendía a menos segunda mano, uno y medio por coche matriculado.»
+plano 10: «Vale, vale... ¿Y ese de segunda mano?»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.878 · 2.6 s · 9.7 l/s · «Vale, vale. ¿Y ese de segunda mano?»
+plano 11: «Ese. Hoy, un coche nuevo cuesta más meses que en 2016, como en 2007. Y la mitad la pones tú. ¿Tu primer coche fue nuevo o de segunda mano?»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.947 · 10.5 s · 11.5 l/s · «ese. Hoy un coche nuevo cuesta más meses que en 2016, como en 2007, y la mitad la pones tú. Tu primer coche fue nuevo o de segunda mano?»

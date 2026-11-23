@@ -1,0 +1,32 @@
+{
+ "huella": "b19a8007e29b227c",
+ "semilla": 10000,
+ "texto": "Vale, vale... ¿Y ese de segunda mano?",
+ "ev": {
+  "ok": true,
+  "nota": 1.014,
+  "oido": "Vale, vale. ¿Y ese de segunda mano?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.48,
+   1.28,
+   1.58,
+   1.78,
+   1.92,
+   2.16
+  ],
+  "t1": [
+   0.32,
+   0.66,
+   1.58,
+   1.78,
+   1.92,
+   2.16,
+   2.42
+  ],
+  "ritmo": 9.7,
+  "voz": 0.878
+ }
+}

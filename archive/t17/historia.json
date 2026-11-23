@@ -1,0 +1,232 @@
+{
+ "nota": "Momentos clave de T17 (coches B, padre e hijo). La música se corta en seco con el «51 %» del coche nuevo. Ambientes solo con sonidos sueltos: salón (un coche que pasa, pájaros, el reloj flojito) y compraventa (coches, banderines, llaves), sin ruido continuo.",
+ "musica": {
+  "bpm": 100,
+  "corte": "c6-51",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "salon",
+   "desde": 1,
+   "hasta": 9,
+   "vol": 1.0
+  },
+  {
+   "tipo": "compraventa",
+   "desde": 10,
+   "hasta": 11,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-aprobado",
+   "beat": 1,
+   "palabra": "Aprobado",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.3
+  },
+  {
+   "id": "c1-nuevo",
+   "beat": 1,
+   "palabra": "nuevo",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c2-31555",
+   "beat": 2,
+   "palabra": "31.555",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-dieciocho",
+   "beat": 2,
+   "palabra": "dieciocho",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c2-sueldo",
+   "beat": 2,
+   "palabra": "sueldo",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-primo",
+   "beat": 3,
+   "palabra": "primo",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-nuevo",
+   "beat": 3,
+   "palabra": "nuevo",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-2016",
+   "beat": 4,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c4-quince",
+   "beat": 4,
+   "palabra": "quince",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c5-sueldos",
+   "beat": 5,
+   "palabra": "sueldos",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-28",
+   "beat": 6,
+   "palabra": "28",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-51",
+   "beat": 6,
+   "palabra": "51",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c7-matricula",
+   "beat": 7,
+   "palabra": "matricula",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-medio",
+   "beat": 7,
+   "palabra": "medio",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c7-2016",
+   "beat": 7,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c8-crisis",
+   "beat": 8,
+   "palabra": "crisis",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-2007",
+   "beat": 8,
+   "palabra": "2007",
+   "dt": -0.1
+  },
+  {
+   "id": "c9-mismos",
+   "beat": 9,
+   "palabra": "mismos",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c9-dieciocho",
+   "beat": 9,
+   "palabra": "dieciocho",
+   "dt": -0.1
+  },
+  {
+   "id": "c9-uno",
+   "beat": 9,
+   "palabra": "uno",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-vale",
+   "beat": 10,
+   "palabra": "Vale",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-ese",
+   "beat": 10,
+   "palabra": "ese",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-mano",
+   "beat": 10,
+   "palabra": "mano",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-ese",
+   "beat": 11,
+   "palabra": "Ese",
+   "dt": -0.05,
+   "sfx": "llaves",
+   "vol": 0.4
+  },
+  {
+   "id": "c11-mitad",
+   "beat": 11,
+   "palabra": "mitad",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-primer",
+   "beat": 11,
+   "palabra": "primer",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-mano",
+   "beat": 11,
+   "palabra": "mano",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  }
+ ]
+}
