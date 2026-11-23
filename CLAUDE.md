@@ -35,7 +35,7 @@ Nombre de trabajo: **Cuánto Vale Tu Hora**. Alternativas: «El Precio del Tiemp
 - **Sin ruido continuo de fondo** (Bruno, 22-11-2026): los ambientes son sonidos sueltos; nada de colchón de ruido que suene a zumbido. Tablas y cifras, grandes.
 - **Estilo de imagen:** limpio y sencillo como las referencias de `archive/referencias/` (tarjeta blanca con etiqueta y titular, subtítulo grande de 2-3 palabras, barra de progreso, personaje sencillo en un sitio fijo).
 - **Sonido:** música y efectos que acompañen cada acción de la historia.
-- **De uno en uno:** hasta que un vídeo esté bien, no se producen los demás. T1 aprobado el 12-11-2026, T2 (v4) el 14-11-2026 y T3 el 16-11-2026; el siguiente, cuando Bruno lo elija. Orden del 22-11-2026: coches A (meses de trabajo para pagar el coche), coches B (el más vendido, 2016 frente a hoy) y la cena de Nochebuena. Estado y siguiente paso: `docs/ESTADO.md`.
+- **De uno en uno:** hasta que un vídeo esté bien, no se producen los demás. T1 aprobado el 12-11-2026, T2 (v4) el 14-11-2026 y T3 el 16-11-2026; T17 y T15 (la cena de Nochebuena, v4) el 23-11-2026; el siguiente, cuando Bruno lo elija. Orden del 22-11-2026: coches A (meses de trabajo para pagar el coche), coches B (el más vendido, 2016 frente a hoy) y la cena de Nochebuena. Estado y siguiente paso: `docs/ESTADO.md`.
 - Estructura del repo, agentes y contratos: `docs/agentes-y-pipeline.md`.
 - Identidad visual: `docs/identidad-visual.md`. Test de estilos: `docs/piloto-test.md`. Backlog: `docs/backlog-videos.md`.
 - Contexto previo e investigación: carpeta `research/` (los estados judiciales y cifras hay que re-verificar en la fuente antes de usar).
