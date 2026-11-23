@@ -1,0 +1,48 @@
+{
+ "huella": "163c5a23ae97b651",
+ "semilla": 3003,
+ "texto": "Ya no. Hoy gana el Dacia Sandero. Luego, el Clio y el MG ZS.",
+ "ev": {
+  "ok": false,
+  "nota": 0.8426,
+  "oido": "Ya no, hoy gana el Dacia Sandero. Luego el Clio y el MG ZS.",
+  "parecido": 1.0,
+  "problemas": [
+   "ritmo raro (7.6 letras/s)"
+  ],
+  "t0": [
+   0.0,
+   0.18,
+   0.92,
+   1.26,
+   1.5,
+   1.62,
+   1.84,
+   2.8,
+   3.22,
+   3.92,
+   4.36,
+   4.58,
+   4.68,
+   4.88
+  ],
+  "t1": [
+   0.18,
+   0.34,
+   1.26,
+   1.5,
+   1.62,
+   1.84,
+   2.28,
+   3.22,
+   3.92,
+   4.36,
+   4.58,
+   4.68,
+   4.88,
+   5.5
+  ],
+  "ritmo": 7.6,
+  "voz": 0.935
+ }
+}

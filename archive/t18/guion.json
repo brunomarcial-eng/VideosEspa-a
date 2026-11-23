@@ -1,0 +1,310 @@
+{
+ "id": "t18",
+ "version": 1,
+ "titulo": "¿Cuál es el coche más vendido en España? 2016 frente a hoy",
+ "titulo_alternativo": "Del León al Sandero: lo que más se vende, cuánto cuesta en meses de sueldo y los usados de fuera",
+ "pregunta": "Dos cuñados en un bar. Uno se compró en 2016 el coche más vendido; el otro se va a comprar uno hoy. ¿Qué coches se venden ahora, cuánto cuestan en meses de sueldo y cuántos usados se traen de fuera?",
+ "datos": "data/clean/t17_mas_vendido.json",
+ "aprobacion_datos": "Bruno, 22-11-2026: coches B con dos enfoques (prueba A/B). Este es el de los dos cuñados en un bar: uno compró hace diez años, el otro compra hoy y casi prefiere uno usado. Ángulo distinto al de T17: el top 3 de cada año y los usados traídos de fuera. Datos en videos/t17/paso-1-datos.md. Sin precios de catálogo de 2016 (no son oficiales).",
+ "formato": "Bar de barrio, barra y mesas altas. Dos cuñados con una caña. Uno presume del coche que se compró en 2016, el más vendido entonces; el otro le cuenta qué se vende hoy y cuánto cuesta en meses de sueldo, frente al coche nuevo medio, y que se está mirando uno usado. Pregunta abierta al final.",
+ "duracion_max_s": 80,
+ "personajes": {
+  "luis": {
+   "anyo": "unos 50, se compró el coche en 2016",
+   "voz": "padre"
+  },
+  "javi": {
+   "anyo": "unos 45, se va a comprar uno ahora",
+   "voz": "maquinista"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "El veredicto lo da Luis en el plano 10 («hoy, más meses de sueldo que en 2016, y lo que más se vende es de lo más barato»; frente a 2007 se dice en los planos 7 y 9) y acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "El bar",
+   "beats": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "nombre": "Lo que cuestan",
+   "beats": [
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "nombre": "El usado",
+   "beats": [
+    8,
+    9,
+    10
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "javi",
+   "funcion": "gancho",
+   "voz": "¿Tú sabes cuál es el coche más vendido en España? Que me quiero comprar uno.",
+   "pantalla": "¿Cuál es el coche más vendido en España?",
+   "sello": null,
+   "imagen": "Un bar de barrio en perspectiva: barra, cafetera, lámparas que cuelgan, mesas altas y gente al fondo. Javi llega a la mesa con dos cañas. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "luis",
+   "funcion": "2016",
+   "voz": "¡El mío! Un León, en 2016: el más vendido de aquel año.",
+   "pantalla": "Los más vendidos en 2016 · SEAT León · SEAT Ibiza · Volkswagen Golf",
+   "nota": "Turismos y todoterrenos nuevos: 33.657, 31.832 y 28.740. En 2019: SEAT León, Dacia Sandero y Nissan Qashqai",
+   "sello": "DATO OFICIAL · DGT (microdatos de matriculaciones)",
+   "imagen": "Un podio de tres escalones con tres coches dibujados sin marca (un compacto, un utilitario, otro compacto) y su nombre en un cartel; Luis saca pecho."
+  },
+  {
+   "n": 3,
+   "quien": "javi",
+   "funcion": "hoy",
+   "voz": "Ya no. Hoy gana el Dacia Sandero. Luego, el Clio y el MG ZS.",
+   "pantalla": "Los más vendidos en 2025 · Dacia Sandero · Renault Clio · MG ZS",
+   "nota": "Turismos y todoterrenos nuevos: 38.533, 27.102 y 23.727. El Yaris Cross cuenta aparte del Yaris",
+   "sello": "DATO OFICIAL · DGT (microdatos de matriculaciones)",
+   "imagen": "El podio cambia: bajan los de 2016 y suben tres coches más pequeños y sencillos, con sus carteles."
+  },
+  {
+   "n": 4,
+   "quien": "luis",
+   "funcion": "pregunta",
+   "voz": "¿Y eso cuánto cuesta?",
+   "pantalla": "«¿Y eso cuánto cuesta?»",
+   "sello": null,
+   "imagen": "Luis deja la caña en la mesa y se inclina hacia Javi."
+  },
+  {
+   "n": 5,
+   "quien": "javi",
+   "funcion": "dato: precios en meses",
+   "voz": "El Sandero, unos 15.750 euros: nueve meses de sueldo. El Clio, diez y medio. El MG, doce.",
+   "pantalla": "Meses de sueldo neto, 2025 · Sandero: 9,3 · Clio: 10,6 · MG ZS: 12,4",
+   "nota": "Precio medio real con IVA (Hacienda, 2025): 15.752 €, 18.012 € y 21.119 €, sin el impuesto de matriculación. Sueldo neto mediano: 1.702 € al mes",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria (ranking de ventas 2025) · INE (sueldo)",
+   "grafico": true,
+   "imagen": "Tres barras de calendario, una por coche, cada una con su número de hojas."
+  },
+  {
+   "n": 6,
+   "quien": "luis",
+   "funcion": "pregunta",
+   "voz": "¿Y un coche nuevo normal?",
+   "pantalla": "«¿Y un coche nuevo normal?»",
+   "sello": null,
+   "imagen": "Luis señala por la ventana del bar un coche grande aparcado."
+  },
+  {
+   "n": 7,
+   "quien": "javi",
+   "funcion": "dato: el coche nuevo medio",
+   "voz": "De media, 31.555 euros: dieciocho meses y medio. En 2016, quince y medio. En 2007, dieciocho.",
+   "pantalla": "Meses de sueldo para el coche nuevo medio · 2007: 18,3 · 2016: 15,6 · 2025: 18,5",
+   "nota": "Comprado nuevo en España, con IVA y matriculación: 31.555 € en 2025. En 2019, 16,4 meses. Los tres más vendidos: 9,3, 10,6 y 12,4",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria · INE",
+   "grafico": true,
+   "imagen": "Junto a las tres barras de los más vendidos aparece una cuarta, mucho más larga: el coche nuevo medio."
+  },
+  {
+   "n": 8,
+   "quien": "luis",
+   "funcion": "conclusión",
+   "voz": "O sea, que lo que más se vende cuesta bastante menos que el coche medio.",
+   "pantalla": "«Lo que más se vende cuesta bastante menos que el coche medio»",
+   "sello": null,
+   "imagen": "Luis mira las barras, se rasca la cabeza."
+  },
+  {
+   "n": 9,
+   "quien": "javi",
+   "funcion": "dato: usados de fuera",
+   "voz": "Y aun así, me miro uno usado. Hoy, casi uno de cada cinco matriculados es usado traído de fuera. En 2016, uno de cada once.",
+   "pantalla": "Usados traídos de fuera, % de las matriculaciones · 2007: 16,1 · 2016: 9,1 · 2025: 18,6",
+   "nota": "Primera matriculación en España de coches usados de otros países. En 2019, el 11,8 %",
+   "sello": "DATO OFICIAL · Agencia Tributaria (estadística del impuesto de matriculación)",
+   "grafico": true,
+   "imagen": "Por la ventana pasa un camión portacoches cargado de coches usados con matrícula extranjera, sin letras legibles."
+  },
+  {
+   "n": 10,
+   "quien": "luis",
+   "funcion": "veredicto y pregunta",
+   "voz": "En 2007 ya eran muchos, ¿eh? Hoy, más meses que en 2016, y lo más vendido, de lo más barato. ¿Tú qué te comprarías: nuevo barato o usado?",
+   "pantalla": "Más meses de sueldo que en 2016 y lo más vendido, de lo más barato. ¿Nuevo barato o usado?",
+   "sello": null,
+   "imagen": "Los dos brindan; Luis mira a cámara."
+  }
+ ],
+ "no_dato": [],
+ "cifras": [
+  {
+   "texto": "33.657",
+   "ruta": "top_modelos.2016.top[modelo=LEON].matriculados",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "31.832",
+   "ruta": "top_modelos.2016.top[modelo=IBIZA].matriculados",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "28.740",
+   "ruta": "top_modelos.2016.top[modelo=GOLF].matriculados",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "38.533",
+   "ruta": "top_modelos.2025.top[modelo=SANDERO].matriculados",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "27.102",
+   "ruta": "top_modelos.2025.top[modelo=CLIO].matriculados",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "23.727",
+   "ruta": "top_modelos.2025.top[modelo=ZS].matriculados",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "15.750",
+   "ruta": "top_modelos.2025.top[modelo=SANDERO].precio_con_iva",
+   "aprox": 15750,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "15.752",
+   "ruta": "top_modelos.2025.top[modelo=SANDERO].precio_con_iva",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "18.012",
+   "ruta": "top_modelos.2025.top[modelo=CLIO].precio_con_iva",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "21.119",
+   "ruta": "top_modelos.2025.top[modelo=ZS].precio_con_iva",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "9,3",
+   "ruta": "top_modelos.2025.top[modelo=SANDERO].meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "10,6",
+   "ruta": "top_modelos.2025.top[modelo=CLIO].meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "12,4",
+   "ruta": "top_modelos.2025.top[modelo=ZS].meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "1.702",
+   "ruta": "sueldo_neto_mes.2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "31.555",
+   "ruta": "coche_nuevo_medio.2025.precio_con_impuestos",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "18,3",
+   "ruta": "coche_nuevo_medio.2007.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "15,6",
+   "ruta": "coche_nuevo_medio.2016.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "16,4",
+   "ruta": "coche_nuevo_medio.2019.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "18,5",
+   "ruta": "coche_nuevo_medio.2025.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "16,1",
+   "ruta": "segunda_mano.2007.usados_importados_pct",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "9,1",
+   "ruta": "segunda_mano.2016.usados_importados_pct",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "11,8",
+   "ruta": "segunda_mano.2019.usados_importados_pct",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "18,6",
+   "ruta": "segunda_mano.2025.usados_importados_pct",
+   "decimales": 1,
+   "estado": "C"
+  }
+ ],
+ "comprobaciones": [
+  "Top 3 (V): DGT, microdatos mensuales de matriculaciones, turismos y todoterrenos nuevos, agrupados por familia de modelo (el León con el León ST; el Clio con su híbrido; el Yaris Cross aparte del Yaris). 2016: León 33.657, Ibiza 31.832, Golf 28.740. 2019: León 35.851, Sandero 33.880, Qashqai 30.162. 2025: Sandero 38.533, Clio 27.102, MG ZS 23.727 (el Ibiza, 4.º, 23.202). En el recuento de Hacienda (otro universo) el Ibiza va 3.º en 2025.",
+  "Precios de 2025 (C): Agencia Tributaria, ranking de ventas 2025, precio medio real sin impuestos (Sandero 13.018 €, Clio 14.886 €, MG ZS 17.454 €) más IVA del 21 %; sin el impuesto de matriculación (0 % o 4,75 % según emisiones). Meses = precio / 1.702 €.",
+  "No hay precio oficial por modelo de 2016: el vídeo no dice cuánto costó el León.",
+  "Coche nuevo medio (C): Agencia Tributaria, «Nuevo y adquirido en España», con matriculación e IVA de cada año: 18,3 (2007), 15,6 (2016), 16,4 (2019), 18,5 (2025) meses de sueldo neto mediano.",
+  "Usados traídos de fuera (C): Agencia Tributaria, origen «Usado» / total matriculado: 16,1 % (2007), 9,1 % (2016), 11,8 % (2019), 18,6 % (2025). «Casi uno de cada cinco» (18,6 %) y «uno de cada once» (9,1 %).",
+  "«Nueve meses» (9,3), «diez y medio» (10,6), «doce» (12,4), «dieciocho meses y medio» (18,5), «quince y medio» (15,6) y «dieciocho» (18,3): redondeos hablados de las cifras de pantalla."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 2016 y 2019: el coche nuevo medio pasa de 15,6 y 16,4 meses de sueldo a 18,5, los tres más vendidos pasan a ser de los más baratos (9,3 a 12,4 meses) y los usados traídos de fuera suben del 9,1 % al 18,6 % de las matriculaciones. Frente a 2007, el coche nuevo costaba casi lo mismo (18,3 meses) y los usados de fuera ya eran el 16,1 %",
+  "porque": "Matriculaciones por modelo (DGT), precios medios (Agencia Tributaria) y sueldo mediano (INE y Eurostat).",
+  "pregunta": "¿Tú qué te comprarías: el nuevo más barato o uno usado?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno"
+}

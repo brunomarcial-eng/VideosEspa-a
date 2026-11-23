@@ -1,0 +1,208 @@
+{
+ "nota": "Momentos clave de T18 (coches B, los cuñados en el bar). La música se corta en seco con los 31.555 euros del coche nuevo medio. Ambiente de bar solo con sonidos sueltos (tazas, cucharilla, monedas), sin murmullo continuo.",
+ "musica": {
+  "bpm": 104,
+  "corte": "c7-31555",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "bar",
+   "desde": 1,
+   "hasta": 10,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-vendido",
+   "beat": 1,
+   "palabra": "vendido",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c1-comprar",
+   "beat": 1,
+   "palabra": "comprar",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-mio",
+   "beat": 2,
+   "palabra": "mío",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  },
+  {
+   "id": "c2-leon",
+   "beat": 2,
+   "palabra": "León",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-sandero",
+   "beat": 3,
+   "palabra": "Sandero",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-clio",
+   "beat": 3,
+   "palabra": "Clio",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.22
+  },
+  {
+   "id": "c3-mg",
+   "beat": 3,
+   "palabra": "MG",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.22
+  },
+  {
+   "id": "c4-cuesta",
+   "beat": 4,
+   "palabra": "cuesta",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-nueve",
+   "beat": 5,
+   "palabra": "nueve",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c5-clio",
+   "beat": 5,
+   "palabra": "Clio",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.2
+  },
+  {
+   "id": "c5-mg",
+   "beat": 5,
+   "palabra": "MG",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.2
+  },
+  {
+   "id": "c6-normal",
+   "beat": 6,
+   "palabra": "normal",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c7-31555",
+   "beat": 7,
+   "palabra": "31.555",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c7-dieciocho",
+   "beat": 7,
+   "palabra": "dieciocho",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c7-2016",
+   "beat": 7,
+   "palabra": "2016",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-vende",
+   "beat": 8,
+   "palabra": "vende",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-menos",
+   "beat": 8,
+   "palabra": "menos",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c8-medio",
+   "beat": 8,
+   "palabra": "medio",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c9-usado",
+   "beat": 9,
+   "palabra": "usado",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.22
+  },
+  {
+   "id": "c9-cinco",
+   "beat": 9,
+   "palabra": "cinco",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c9-2016",
+   "beat": 9,
+   "palabra": "2016",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-hoy",
+   "beat": 10,
+   "palabra": "Hoy",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-comprarias",
+   "beat": 10,
+   "palabra": "comprarías",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-usado",
+   "beat": 10,
+   "palabra": "usado",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  }
+ ]
+}

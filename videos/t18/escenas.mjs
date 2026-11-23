@@ -88,8 +88,8 @@ export function escenas(D) {
         T("bb-c0", 600, 870, { s: 1 }); T("bb-camion", 1400, 880, { s: 1 });
         const tt = [c["c2-leon"], c["c2-leon"] + 0.5, c["c2-leon"] + 0.8];
         for (let i = 0; i < 3; i++) { const k = (t - tt[i]) / 0.4; if (k < 0) ver(`s2-po-k${i}`, false); else T(`s2-po-k${i}`, 0, -260 * Math.max(0, 1 - k) * Math.max(0, 1 - k), { s: 1, op: clamp(k * 3) }); }
-        persona("s2-l", t, { x: 190, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e, "grande"), ojos: [[0, "felices"]], brazo: [[0, "abajo"], [c["c2-mio"], "arriba"]], incl: [[0, 0], [c["c2-mio"], -6]], fase: 1 });
-        persona("s2-j", t, { x: 900, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "sonrisa"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
+        persona("s2-l", t, { x: 120, y: 1440, s: 0.76, mira: 1, vivo: true, charla: e, boca: habla(t, e, "grande"), ojos: [[0, "felices"]], brazo: [[0, "abajo"], [c["c2-mio"], "arriba"]], incl: [[0, 0], [c["c2-mio"], -6]], fase: 1 });
+        persona("s2-j", t, { x: 965, y: 1440, s: 0.76, mira: -1, vivo: true, boca: [[0, "sonrisa"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c2-mio"], e.c["c2-leon"]]); } },
 
@@ -105,8 +105,8 @@ export function escenas(D) {
         T("bb-c0", 600, 870, { s: 1 }); T("bb-camion", 1400, 880, { s: 1 });
         const tt = [c["c3-sandero"], c["c3-clio"], c["c3-mg"]];
         for (let i = 0; i < 3; i++) { const k = (t - tt[i] + 0.1) / 0.4; if (k < 0) ver(`s3-po-k${i}`, false); else T(`s3-po-k${i}`, 0, -260 * Math.max(0, 1 - k) * Math.max(0, 1 - k), { s: 1, op: clamp(k * 3) }); }
-        persona("s3-l", t, { x: 190, y: 1440, s: 0.8, mira: 1, vivo: true, boca: [[0, "sonrisa"], [c["c3-sandero"], "o"]], ojos: [[0, "normal"], [c["c3-sandero"], "grandes"]], brazo: [[0, "abajo"]], fase: 1 });
-        persona("s3-j", t, { x: 900, y: 1440, s: 0.8, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c3-sandero"] - 0.2, "senala"]], espejo: true, fase: 2 });
+        persona("s3-l", t, { x: 120, y: 1440, s: 0.76, mira: 1, vivo: true, boca: [[0, "sonrisa"], [c["c3-sandero"], "o"]], ojos: [[0, "normal"], [c["c3-sandero"], "grandes"]], brazo: [[0, "abajo"]], fase: 1 });
+        persona("s3-j", t, { x: 965, y: 1440, s: 0.76, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c3-sandero"] - 0.2, "senala"], [c["c3-mg"] - 0.3, "abajo"]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c3-sandero"]]); } },
 

@@ -1,0 +1,28 @@
+{
+ "huella": "68442912c8c8a061",
+ "semilla": 6000,
+ "texto": "¿Y un coche nuevo normal?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0202,
+  "oido": "¿Y un coche nuevo normal?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.26,
+   0.58,
+   0.8
+  ],
+  "t1": [
+   0.14,
+   0.26,
+   0.58,
+   0.8,
+   1.12
+  ],
+  "ritmo": 14.0,
+  "voz": 0.89
+ }
+}
