@@ -503,6 +503,16 @@ DESCARGAS += [
      "DGT. Cambios de titularidad de vehículos, series históricas (tabla 14: turismos)",
      "https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Cambios-de-titularidad-Series-historicas-2025/"),
 ]
+# --- T18: España frente a Alemania (Eurostat): sueldo neto medio y nivel de precios de los vehículos
+EUROSTAT_API = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data"
+DESCARGAS += [
+    ("eurostat_earn_nt_net_es_de.json", f"{EUROSTAT_API}/earn_nt_net?format=JSON&lang=EN&geo=ES&geo=DE&currency=EUR&estruct=NET&ecase=P1_NCH_AW100&sinceTimePeriod=2007",
+     "Eurostat. Ganancia neta anual, soltero sin hijos con el sueldo medio (100 % AW), España y Alemania",
+     "https://ec.europa.eu/eurostat/databrowser/view/earn_nt_net/default/table"),
+    ("eurostat_prc_ppp_ind_es_de.json", f"{EUROSTAT_API}/prc_ppp_ind?format=JSON&lang=EN&geo=ES&geo=DE&na_item=PLI_EU27_2020&ppp_cat=A010701&ppp_cat=GDP&sinceTimePeriod=2016",
+     "Eurostat. Índices de nivel de precios (UE27 = 100): equipo de transporte personal (vehículos) y PIB, España y Alemania",
+     "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/default/table"),
+]
 
 def bajar(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": "cvth-datos/1.0"})

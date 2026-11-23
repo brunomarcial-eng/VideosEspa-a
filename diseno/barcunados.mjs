@@ -65,3 +65,22 @@ export function podio(id, coches, numeros = true) {
 }
 // Caña para la mano.
 export { CANA_MANO, mesaAlta } from "./sueno.mjs";
+
+// ------------------------------------------------------------------ T18 v2 (Bruno, 23-11-2026: «mete las marcas»)
+// Placa con la marca y el modelo en grande (sin copiar logotipos: el nombre, en una placa con color propio).
+export const placa = (id, marca, modelo, col, w = 250) => `<g id="${id}"><rect x="${-w / 2}" y="-62" width="${w}" height="124" rx="18" fill="#FFFDF8" stroke="${col}" stroke-width="9"/>
+  <rect x="${-w / 2}" y="-62" width="${w}" height="50" rx="18" fill="${col}"/><rect x="${-w / 2}" y="-30" width="${w}" height="18" fill="${col}"/>
+  ${txt(0, -24, marca, 34, "#FFFDF8")}${txt(0, 44, modelo, modelo.length > 7 ? 40 : 48, C.tinta)}</g>`;
+// Podio con placas grandes. items: [{marca, modelo, col, coche, s}] en orden 1.º, 2.º, 3.º. «<id>-k<i>»: cada puesto.
+export function podioMarcas(id, items, numeros = true) {
+  const pos = [[0, 200, 1], [-300, 130, 2], [300, 80, 3]];
+  return `<g id="${id}">${pos.map(([x, h, n], i) => `<rect x="${x - 140}" y="${-h}" width="280" height="${h}" rx="10" fill="${["#E0B04A", "#C9CED3", "#C98F6B"][i]}"/>${numeros ? txt(x, -h + 70, n + "º", 60, "#FFFDF8") : ""}`).join("")}
+    ${items.map((c, i) => { const [x, h] = pos[i]; return `<g id="${id}-k${i}"><g transform="translate(${x} ${-h - 10}) scale(${c.s ?? 0.48})">${coche(`${id}-c${i}`, c.coche)}</g>
+      <g transform="translate(${x} ${-h - 210})">${placa(`${id}-p${i}`, c.marca, c.modelo, c.col)}</g></g>`; }).join("")}</g>`;
+}
+// Bandera de Alemania (tres franjas). Origen: arriba a la izquierda.
+export const banderaDE = (w = 120) => `<g><rect width="${w}" height="${w * 0.6}" rx="6" fill="#1E1E1E"/><rect y="${w * 0.2}" width="${w}" height="${w * 0.2}" fill="#C8302E"/><rect y="${w * 0.4}" width="${w}" height="${w * 0.2}" rx="0" fill="#F2C14E"/></g>`;
+export const banderaES = (w = 120) => `<g><rect width="${w}" height="${w * 0.6}" rx="6" fill="#C8302E"/><rect y="${w * 0.15}" width="${w}" height="${w * 0.3}" fill="#F2C14E"/></g>`;
+// Balanza: «<id>-b» es el brazo (gira), «<id>-i» y «<id>-d» los platos (se cuelgan del brazo en la escena).
+export const balanza = (id) => `<g id="${id}"><rect x="-14" y="-300" width="28" height="300" rx="10" fill="#8E6644"/><rect x="-110" y="-18" width="220" height="26" rx="12" fill="#8E6644"/>
+  <g id="${id}-b"><rect x="-260" y="-316" width="520" height="20" rx="10" fill="#5B4636"/><circle cy="-306" r="20" fill="#C8902E"/></g></g>`;

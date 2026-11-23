@@ -96,9 +96,19 @@ def marimba(f, vel=1.0, dur=1.1):
 
 
 def bajo(f, dur):
-    t = tiempo(dur)
-    y = (np.sin(2 * np.pi * f * t) + 0.22 * np.sin(4 * np.pi * f * t)) * np.exp(-t / 0.5)
-    return bordes(y, 0.012, 0.06)
+    """Bajo pulsado y corto (Bruno, 23-11-2026: el bajo largo y grave sonaba a «zumbido» de fondo)."""
+    t = tiempo(min(dur, 0.35))
+    y = (np.sin(2 * np.pi * f * t) + 0.3 * np.sin(4 * np.pi * f * t)) * np.exp(-t / 0.11)
+    return bordes(y, 0.006, 0.05)
+
+
+def pasa_altos(x, fc):
+    """Quita lo que está por debajo de fc (Hz) con una pendiente suave (FFT de toda la pista)."""
+    X = np.fft.rfft(x, axis=0)
+    f = np.fft.rfftfreq(x.shape[0], 1 / SR)
+    g = np.clip((f / fc) ** 4, 0, 1) / np.sqrt(1 + np.clip((f / fc) ** 4, 0, 1) ** 2) * np.sqrt(2)
+    g = np.minimum(g, 1.0)
+    return np.fft.irfft(X * (g[:, None] if x.ndim == 2 else g), n=x.shape[0], axis=0).astype(np.float32)
 
 
 def bombo():
@@ -144,7 +154,7 @@ def musica(pista, t0, t1, bpm, capas_desde, fundido_fin=0.0):
         for golpe, largo in ((0, 1.4), (2, 0.9), (3.5, 0.45)):
             tt = t + golpe * negra
             if capas_desde.get("bajo", 1e9) <= tt < t1:
-                pista.poner(bajo(hz(ac["bajo"]), largo * negra), tt, 0.62)
+                pista.poner(bajo(hz(ac["bajo"] + 12), largo * negra), tt, 0.32)
         for golpe in (0, 2):
             tt = t + golpe * negra
             if capas_desde.get("bombo", 1e9) <= tt < t1:
@@ -766,7 +776,7 @@ def main(argv):
         suave[i] = v
     aparta = 1 - 0.55 * suave
     n = int(dur * SR)
-    mus_b = mus.b[:n] * aparta[:, None] * 0.17
+    mus_b = pasa_altos(mus.b[:n], 140.0) * aparta[:, None] * 0.17   # sin graves: nada de zumbido
 
     # ---- efectos
     fx = Pista(dur)

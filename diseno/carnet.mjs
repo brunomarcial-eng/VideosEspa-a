@@ -128,3 +128,17 @@ export const SUDADERA = `<path d="M-60 -384 Q0 -340 60 -384 Q50 -360 0 -350 Q-50
   <rect x="-46" y="-250" width="92" height="44" rx="14" fill="#2F6F69" opacity=".45"/>`;
 // Llaves (las da el padre al final).
 export { LLAVES, calendario, hoja } from "./concesionario.mjs";
+
+// ------------------------------------------------------------------ T17 v2 (Bruno, 23-11-2026)
+// Sello «A MEDIAS» (el chiste que se repite: «la mitad la pones tú»). Mismo estilo que el sello oficial; se anima con selloAnim.
+export function selloMedias(id) {
+  const rojo = "#C62828";
+  return `<g id="${id}" style="display:none"><g opacity=".93"><rect x="-210" y="-96" width="420" height="192" rx="24" fill="#FFFFFF" fill-opacity=".6" stroke="${rojo}" stroke-width="13"/>
+    <rect x="-190" y="-76" width="380" height="152" rx="14" fill="none" stroke="${rojo}" stroke-width="5"/>
+    ${txt(0, -8, "A MEDIAS", 66, rojo, 'letter-spacing="2"')}${txt(0, 58, "½ Y ½", 44, rojo)}</g></g>`;
+}
+// Destello de coche nuevo (estrella de cuatro puntas). Se anima en la escena (escala y opacidad).
+export const destello = (id, s = 1) => `<g id="${id}"><circle r="${30 * s}" fill="#FFE27A" opacity=".35"/><path transform="scale(${s})" d="M0 -46 Q7 -7 46 0 Q7 7 0 46 Q-7 7 -46 0 Q-7 -7 0 -46 Z" fill="#F2C14E" stroke="#FFFFFF" stroke-width="3"/><circle r="${7 * s}" fill="#FFFFFF"/></g>`;
+// Móvil con la foto del primo y su coche nuevo (sus padres se lo compraron en 2016).
+export const movilPrimo = (id) => `<g id="${id}"><rect x="-130" y="-230" width="260" height="460" rx="34" fill="${C.tinta}"/><rect x="-114" y="-200" width="228" height="400" rx="16" fill="#DFF0F7"/>
+  <g transform="translate(0 -10) scale(.52)">${fotoPrimo(id + "-f")}</g><rect x="-40" y="-218" width="80" height="10" rx="5" fill="#3B4A57"/></g>`;
