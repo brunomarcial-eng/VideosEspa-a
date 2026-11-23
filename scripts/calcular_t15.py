@@ -30,6 +30,18 @@ CENA = {
 }
 
 
+# La cena de Nochebuena (v4, Bruno, 23-11-2026: «una mesa grande para 8 o 10 personas», y que se entienda de qué se compone):
+# para ocho, el doble de lo de arriba. Plato principal, dos piernas de cordero; entrantes, marisco, jamón y embutido y queso; y vino.
+COMENSALES = 8
+CENA8 = {
+    "cordero": (3.0, "dos piernas de cordero (3 kg)"),
+    "marisco": (2.0, "2 kg de marisco"),
+    "jamon": (0.6, "600 g de jamón y embutido"),
+    "queso": (0.6, "600 g de queso"),
+    "vino": (3.0, "cuatro botellas de vino (3 l)"),
+}
+
+
 def vu(nombre):
     for s in json.loads((RAW / "ine_73844_epf_cantidades.json").read_text(encoding="utf-8")):
         if s["Nombre"].startswith(f"{nombre}. Valor unitario"):
@@ -75,7 +87,17 @@ def main():
                      "minutos": {a: round(eur[a] / h[a] * 60, 1) for a in eur},
                      "precio_sube_pct": pct(eur["2016"], eur["2025"]),
                      "minutos_sube_pct": pct(eur["2016"] / h["2016"], eur["2025"] / h["2025"])}
-    cena = {"eur": {a: round(x, 2) for a, x in total.items()},
+    # cena para ocho: la que sale en el vídeo (cada plato con su tiempo, y todo junto)
+    cena8, total = {}, {str(a): 0.0 for a in ANOS}
+    for k, (cant, dicho) in CENA8.items():
+        v = platos[k]["precio_kg_o_l"]
+        eur = {a: v[a] * cant for a in v}
+        for a in eur:
+            total[a] += eur[a]
+        minutos = {a: round(eur[a] / h[a] * 60) for a in eur}
+        cena8[k] = {"cantidad": cant, "dicho": dicho, "eur": {a: round(x, 2) for a, x in eur.items()}, "minutos": minutos,
+                    "h": {a: m // 60 for a, m in minutos.items()}, "m": {a: m % 60 for a, m in minutos.items()}}
+    cena = {"comensales": COMENSALES, "platos": cena8, "eur": {a: round(x, 2) for a, x in total.items()},
             "minutos": {a: round(total[a] / h[a] * 60) for a in total},
             "precio_sube_pct": pct(total["2016"], total["2025"]),
             "minutos_sube_pct": pct(total["2016"] / h["2016"], total["2025"] / h["2025"])}
@@ -92,7 +114,7 @@ def main():
 
     out = {
         "tema": "¿Cuántas horas trabajas para la cena de Nochebuena? 2016 frente a hoy",
-        "nota": "Cena para cuatro con las mismas cantidades en los dos años. Precio = lo que pagan de media los hogares (EPF del INE), con marcas blancas y ofertas. "
+        "nota": "Cena para ocho con las mismas cantidades los tres años («platos» son las unidades del mercado: un kilo de marisco, una pierna de cordero). Precio = lo que pagan de media los hogares (EPF del INE), con marcas blancas y ofertas. "
                 "Horas con el sueldo neto mediano por hora (T1 y T14). 2025 es el último año de la EPF.",
         "sueldo": sueldo, "platos": platos, "cena": cena, "relativos": relativos,
         "orden_por_subida_en_minutos": sorted(platos, key=lambda k: -platos[k]["minutos_sube_pct"]),
@@ -104,7 +126,7 @@ def main():
         out["mapa_subida_precio_pct"][k] = {"fuente": "INE, Encuesta de Presupuestos Familiares (valor unitario)" if fuente == "epf" else "INE, IPC (media anual)",
                                             "categoria": nombre, "2016": serie[2016], "2025": serie[2025], "sube_pct": pct(serie[2016], serie[2025])}
     (CLEAN / "t15_navidad.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"cena para cuatro: {cena['eur']} € · {cena['horas_y_minutos']} ({cena['minutos_sube_pct']:+} % de tiempo, +{cena['minutos_mas']} min)")
+    print(f"cena para {COMENSALES}: {cena['eur']} € · {cena['horas_y_minutos']} ({cena['minutos_sube_pct']:+} % de tiempo, +{cena['minutos_mas']} min)")
     for k in out["orden_por_subida_en_minutos"]:
         p = platos[k]
         print(f"  {k:8} {p['eur']['2016']:6.2f} → {p['eur']['2025']:6.2f} € · {p['minutos']['2016']:6.1f} → {p['minutos']['2025']:6.1f} min ({p['minutos_sube_pct']:+5.1f} %)")

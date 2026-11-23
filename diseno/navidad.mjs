@@ -110,15 +110,69 @@ export const PLATOS = [
 // Mapa grande con los platos: «<id>-p<i>» es cada plato y «<id>-q<i>» la pastilla roja con su subida (aparecen por separado
 // en la escena). subidas: {clave: porcentaje entero}; sin ellas, el mapa de v1 (solo platos). nota: líneas de texto en el mar,
 // abajo a la derecha (qué es la cifra). Origen: centro del mapa.
-export function mapaPlatos(id, s = 1.15, subidas = null, nota = null) {
-  const w = MAPA.ancho * s, h = MAPA.alto * s;
+export function mapaPlatos(id, s = 1.15, subidas = null, nota = null, margen = 30) {
+  const w = MAPA.ancho * s, h = MAPA.alto * s, mg = margen;
   const anchoNombre = (t) => Math.max(t.length * 13.2 + 18, 96);
-  return `<g id="${id}"><rect x="${-w / 2 - 30}" y="${-h / 2 - 30}" width="${w + 60}" height="${h + 60}" rx="24" fill="#DCEAF0"/>
+  return `<g id="${id}"><rect x="${-w / 2 - mg}" y="${-h / 2 - mg}" width="${w + 2 * mg}" height="${h + 2 * mg}" rx="24" fill="#DCEAF0"/>
     <g transform="translate(${-w / 2} ${-h / 2}) scale(${s})"><path d="${MAPA.peninsula}" fill="${C.ocreClaro}" stroke="${C.tinta}" stroke-width="3" stroke-linejoin="round"/>
     ${PLATOS.map(([reg, plato, lon, lat, ic, clave], i) => { const [x, y] = xy(lon, lat), an = anchoNombre(plato); return `<g transform="translate(${x.toFixed(0)} ${y.toFixed(0)})">
       <g id="${id}-p${i}"><circle r="30" fill="#FFFDF8" stroke="${C.tinta}" stroke-width="2"/><g transform="scale(.9)">${icono[ic]()}</g>
       <rect x="${(-an / 2).toFixed(0)}" y="32" width="${an.toFixed(0)}" height="30" rx="10" fill="#FFFDF8" opacity=".96"/>${txt(0, 54, plato, 22, C.tinta)}</g>
-      ${subidas ? `<g id="${id}-q${i}"><rect x="-50" y="65" width="100" height="34" rx="17" fill="#B3261E"/>${txt(0, 91, `+${subidas[clave]}\u00A0%`, 25, "#FFFFFF")}</g>` : ""}</g>`; }).join("")}
-    ${nota ? `<g id="${id}-nota"><rect x="588" y="452" width="204" height="${nota.length * 24 + 16}" rx="12" fill="#FFFDF8" opacity=".9"/>${nota.map((l, i) => `<text x="602" y="${478 + i * 24}" font-family="Cap" font-weight="${i === nota.length - 1 ? 800 : 600}" font-size="18" fill="${i === nota.length - 1 ? "#B3261E" : C.tinta}">${l}</text>`).join("")}</g>` : ""}</g></g>`;
+      ${subidas ? `<g id="${id}-q${i}"><rect x="-54" y="65" width="108" height="37" rx="18" fill="#B3261E"/>${txt(0, 93, `+${subidas[clave]}\u00A0%`, 28, "#FFFFFF")}</g>` : ""}</g>`; }).join("")}
+    ${nota ? `<g id="${id}-nota"><rect x="580" y="452" width="212" height="${nota.length * 22 + 16}" rx="12" fill="#FFFDF8" opacity=".9"/>${nota.map((l, i) => `<text x="592" y="${476 + i * 22}" font-family="Cap" font-weight="${i === nota.length - 1 ? 800 : 600}" font-size="16" fill="${i === nota.length - 1 ? "#B3261E" : C.tinta}">${l}</text>`).join("")}</g>` : ""}</g></g>`;
 }
 
+
+// ------------------------------------------------------------------ la mesa de Nochebuena, vista desde arriba (v4, Bruno, 23-11-2026)
+// «Una vista cenital en la que se ve la mesa con los platos que se cenan. Una mesa grande para 8 o 10 personas.»
+// Ocupa toda la pantalla (1080 × 1920). Ocho cubiertos, cuatro por lado; en el centro, cada plato de la cena dentro de
+// «<id>-d-<clave>» (dibujado en su origen: la escena lo hace aparecer con pop en 0,0) y su etiqueta en «<id>-l-<clave>»
+// (nombre y tiempo de trabajo). «<id>-pollo»: el pollo del chiste del abuelo (oculto hasta que lo saca la escena).
+// La franja de los subtítulos (y 1404-1505) queda para el centro de mesa: ahí no hay comida ni cifras.
+export const PLATOS_MESA = { cordero: [540, 770], marisco: [540, 1030], jamon: [420, 1590], queso: [660, 1590], vino: [540, 1260] };
+const ESCALA_MESA = { cordero: 0.9, marisco: 0.86 };
+const plato = (x, y, r) => `<g transform="translate(${x} ${y}) rotate(${r})"><circle r="48" fill="#FFFFFF" stroke="#D9DEE2" stroke-width="4"/><circle r="32" fill="none" stroke="#E9EDF0" stroke-width="3"/>
+  <rect x="-66" y="-30" width="8" height="60" rx="4" fill="#B9C0C6"/><rect x="58" y="-30" width="8" height="60" rx="4" fill="#B9C0C6"/>
+  <circle cx="0" cy="-74" r="17" fill="#FFFFFF" stroke="#D9DEE2" stroke-width="3"/><circle cx="0" cy="-74" r="11" fill="#7A1F2B"/>
+  <path d="M30 40 l26 0 l-13 22 Z" fill="#B3261E" opacity=".85"/></g>`;
+const silla = (x, y, r) => `<g transform="translate(${x} ${y}) rotate(${r})"><rect x="-58" y="-46" width="116" height="92" rx="18" fill="#7A5232"/><rect x="-58" y="-62" width="116" height="22" rx="10" fill="#5E3E24"/></g>`;
+const pierna = (x, y, r) => `<g transform="translate(${x} ${y}) rotate(${r})"><path d="M-70 0 Q-74 -34 -20 -40 Q46 -44 64 -10 Q66 18 30 24 L-40 26 Q-68 24 -70 0 Z" fill="#B8653F"/>
+  <path d="M-50 -14 Q0 -30 44 -12" fill="none" stroke="#D88A5E" stroke-width="9" stroke-linecap="round"/><rect x="58" y="-12" width="36" height="18" rx="9" fill="#F4F1EA"/></g>`;
+const DISH = {
+  cordero: () => `<ellipse rx="160" ry="88" fill="#C9CED3"/><ellipse rx="146" ry="76" fill="#E9EDF0"/>${pierna(-20, -26, -8)}${pierna(10, 30, 172)}
+    ${[[-110, 20], [-96, 46], [104, -30], [120, -2], [92, 40]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="15" fill="#E8C26A" stroke="#C9A24A" stroke-width="3"/>`).join("")}
+    <path d="M-40 60 l20 -8 M-30 66 l18 -12 M60 -62 l18 6" stroke="#5E7F5A" stroke-width="5" stroke-linecap="round"/>`,
+  marisco: () => `<circle r="122" fill="#C9CED3"/><circle r="112" fill="#F4FAFD"/>${Array.from({ length: 14 }, (_, i) => { const a = i * 360 / 14;
+      return `<g transform="rotate(${a}) translate(0 -80) rotate(90)"><path d="M-24 0 Q-26 -26 2 -30 Q28 -30 30 -10 Q24 -16 12 -14 Q-4 -12 -6 6 Z" fill="#F08A6B" stroke="#C25A44" stroke-width="2"/></g>`; }).join("")}
+    <g><ellipse rx="42" ry="34" fill="#D86B4B"/>${[-1, 1].map((d) => [-20, -4, 12, 26].map((y) => `<path d="M${d * 38} ${y} q${d * 22} ${y / 3} ${d * 34} ${y / 2 + 10}" stroke="#C25A44" stroke-width="6" fill="none" stroke-linecap="round"/>`).join("")).join("")}
+      <ellipse cx="0" cy="-6" rx="26" ry="18" fill="#E58A62"/></g>`,
+  jamon: () => `<rect x="-92" y="-58" width="184" height="116" rx="16" fill="#B98A5A"/><rect x="-82" y="-48" width="164" height="96" rx="10" fill="#C99A68"/>
+    ${[-56, -22, 12, 46].map((x, i) => `<path transform="translate(${x} ${i % 2 ? 6 : -4}) rotate(${-14 + i * 8})" d="M-26 -30 Q6 -38 22 -16 Q30 10 8 30 Q-20 34 -28 8 Z" fill="#B3463A" stroke="#F3E3D3" stroke-width="7"/>`).join("")}`,
+  queso: () => `<circle r="78" fill="#B98A5A"/><circle r="68" fill="#C99A68"/>${[0, 72, 144, 216, 288].map((a) => `<g transform="rotate(${a})"><path d="M8 -6 L58 -22 Q62 0 58 22 Z" fill="#F2D27A" stroke="#D9A23B" stroke-width="5" stroke-linejoin="round"/></g>`).join("")}
+    <circle r="12" fill="#E9EDF0"/>`,
+  vino: () => [-96, -32, 32, 96].map((x) => `<g transform="translate(${x} 0)"><circle r="27" fill="#2F4A2A"/><circle r="27" fill="none" stroke="#4F6E48" stroke-width="5"/><circle r="12" fill="#B3261E"/><circle r="5" fill="#E3B23C"/></g>`).join(""),
+};
+const POLLO = `<circle r="150" fill="#FFFFFF" stroke="#D9DEE2" stroke-width="5"/><ellipse rx="96" ry="72" fill="#C98A4B"/><ellipse cx="-14" cy="-12" rx="62" ry="40" fill="#D9A062"/>
+  ${[-1, 1].map((d) => `<path d="M${d * 70} 40 q${d * 40} 30 ${d * 54} 66" stroke="#B9783E" stroke-width="30" fill="none" stroke-linecap="round"/><circle cx="${d * 126}" cy="106" r="12" fill="#F4F1EA"/>`).join("")}
+  <path d="M-40 -20 Q0 -44 40 -20" fill="none" stroke="#E8B77A" stroke-width="8" stroke-linecap="round"/>`;
+export function mesaCenital(id, etiquetas) {
+  const tablon = Array.from({ length: 13 }, (_, i) => `<line x1="${i * 90}" y1="0" x2="${i * 90}" y2="1920" stroke="#B48A5E" stroke-width="4"/>`).join("")
+    + Array.from({ length: 13 }, (_, i) => Array.from({ length: 7 }, (_, j) => `<line x1="${i * 90}" y1="${(j * 320 + (i % 2) * 160) % 1920}" x2="${i * 90 + 90}" y2="${(j * 320 + (i % 2) * 160) % 1920}" stroke="#B48A5E" stroke-width="3"/>`).join("")).join("");
+  const lados = [760, 1030, 1460, 1840];   // los cubiertos, al lado de cada plato y fuera de las filas de etiquetas
+  // Etiqueta: nombre (blanco) y tiempo de trabajo (rojo). En los platos del centro, uno al lado del otro (así caben tres filas encima de
+  // los subtítulos); en el jamón y el queso, que van de dos en dos, el tiempo debajo del nombre.
+  const etiqueta = (k) => { const [x, y] = PLATOS_MESA[k], [nom, tiempo] = etiquetas[k], dy = { cordero: 90, marisco: 116, jamon: 72, queso: 92, vino: 40 }[k];
+    const an = Math.max(nom.length * 16 + 28, 150), lado = ["cordero", "marisco", "vino"].includes(k), nx = lado ? -an / 2 - 4 : 0, tx = lado ? 76 : 0, ty = lado ? 0 : 48;
+    return `<g transform="translate(${x} ${y + dy})"><g id="${id}-l-${k}"><rect x="${nx - an / 2}" y="0" width="${an}" height="44" rx="14" fill="#FFFDF8" stroke="#1F2A33" stroke-opacity=".12" stroke-width="2"/>${txt(nx, 32, nom, 27, C.tinta)}
+      <rect x="${tx - 72}" y="${ty}" width="144" height="46" rx="23" fill="#B3261E"/>${txt(tx, ty + 34, tiempo, 33, "#FFFFFF")}</g></g>`; };
+  return `<g id="${id}"><rect x="-200" y="-200" width="1480" height="2320" fill="#C89F72"/>${tablon}
+    ${lados.map((y) => silla(178, y, -90) + silla(902, y, 90)).join("")}
+    <rect x="236" y="620" width="608" height="1330" rx="26" fill="#3C2814" opacity=".18" transform="translate(10 12)"/>
+    <rect x="236" y="620" width="608" height="1330" rx="26" fill="#FFFDF8"/><rect x="236" y="620" width="608" height="1330" rx="26" fill="none" stroke="#E9E2D5" stroke-width="10"/>
+    <rect x="478" y="620" width="124" height="1330" fill="#3F7A4A" opacity=".9"/><rect x="478" y="620" width="124" height="1330" fill="none" stroke="#E3B23C" stroke-width="4"/>
+    ${lados.map((y) => plato(296, y, 90) + plato(784, y, -90)).join("")}
+    <g transform="translate(540 1455)"><circle r="62" fill="none" stroke="#2F5E37" stroke-width="30"/>${[0, 120, 240].map((a) => `<g transform="rotate(${a}) translate(0 -62)"><circle r="14" fill="#B3261E"/><circle r="5" fill="#F2C14E"/></g>`).join("")}</g>
+    ${Object.keys(PLATOS_MESA).map((k) => `<g transform="translate(${PLATOS_MESA[k][0]} ${PLATOS_MESA[k][1]})"><g id="${id}-d-${k}"><g transform="scale(${ESCALA_MESA[k] ?? 1})">${DISH[k]()}</g></g></g>`).join("")}
+    ${Object.keys(PLATOS_MESA).map(etiqueta).join("")}
+    <g transform="translate(540 1100)"><g id="${id}-pollo" style="display:none">${POLLO}</g></g></g>`;
+}

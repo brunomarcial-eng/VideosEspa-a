@@ -1,6 +1,6 @@
 {
  "tema": "¿Cuántas horas trabajas para la cena de Nochebuena? 2016 frente a hoy",
- "nota": "Cena para cuatro con las mismas cantidades en los dos años. Precio = lo que pagan de media los hogares (EPF del INE), con marcas blancas y ofertas. Horas con el sueldo neto mediano por hora (T1 y T14). 2025 es el último año de la EPF.",
+ "nota": "Cena para ocho con las mismas cantidades los tres años («platos» son las unidades del mercado: un kilo de marisco, una pierna de cordero). Precio = lo que pagan de media los hogares (EPF del INE), con marcas blancas y ofertas. Horas con el sueldo neto mediano por hora (T1 y T14). 2025 es el último año de la EPF.",
  "sueldo": {
   "neto_hora_mediana": {
    "2016": 10.27,
@@ -133,33 +133,156 @@
   }
  },
  "cena": {
+  "comensales": 8,
+  "platos": {
+   "cordero": {
+    "cantidad": 3.0,
+    "dicho": "dos piernas de cordero (3 kg)",
+    "eur": {
+     "2016": 38.7,
+     "2019": 39.24,
+     "2025": 57.33
+    },
+    "minutos": {
+     "2016": 226,
+     "2019": 217,
+     "2025": 265
+    },
+    "h": {
+     "2016": 3,
+     "2019": 3,
+     "2025": 4
+    },
+    "m": {
+     "2016": 46,
+     "2019": 37,
+     "2025": 25
+    }
+   },
+   "marisco": {
+    "cantidad": 2.0,
+    "dicho": "2 kg de marisco",
+    "eur": {
+     "2016": 17.78,
+     "2019": 19.72,
+     "2025": 23.48
+    },
+    "minutos": {
+     "2016": 104,
+     "2019": 109,
+     "2025": 109
+    },
+    "h": {
+     "2016": 1,
+     "2019": 1,
+     "2025": 1
+    },
+    "m": {
+     "2016": 44,
+     "2019": 49,
+     "2025": 49
+    }
+   },
+   "jamon": {
+    "cantidad": 0.6,
+    "dicho": "600 g de jamón y embutido",
+    "eur": {
+     "2016": 5.89,
+     "2019": 6.52,
+     "2025": 7.67
+    },
+    "minutos": {
+     "2016": 34,
+     "2019": 36,
+     "2025": 35
+    },
+    "h": {
+     "2016": 0,
+     "2019": 0,
+     "2025": 0
+    },
+    "m": {
+     "2016": 34,
+     "2019": 36,
+     "2025": 35
+    }
+   },
+   "queso": {
+    "cantidad": 0.6,
+    "dicho": "600 g de queso",
+    "eur": {
+     "2016": 5.8,
+     "2019": 5.95,
+     "2025": 6.69
+    },
+    "minutos": {
+     "2016": 34,
+     "2019": 33,
+     "2025": 31
+    },
+    "h": {
+     "2016": 0,
+     "2019": 0,
+     "2025": 0
+    },
+    "m": {
+     "2016": 34,
+     "2019": 33,
+     "2025": 31
+    }
+   },
+   "vino": {
+    "cantidad": 3.0,
+    "dicho": "cuatro botellas de vino (3 l)",
+    "eur": {
+     "2016": 8.91,
+     "2019": 11.01,
+     "2025": 13.26
+    },
+    "minutos": {
+     "2016": 52,
+     "2019": 61,
+     "2025": 61
+    },
+    "h": {
+     "2016": 0,
+     "2019": 1,
+     "2025": 1
+    },
+    "m": {
+     "2016": 52,
+     "2019": 1,
+     "2025": 1
+    }
+   }
+  },
   "eur": {
-   "2016": 38.54,
-   "2019": 41.22,
-   "2025": 54.22
+   "2016": 77.07,
+   "2019": 82.44,
+   "2025": 108.43
   },
   "minutos": {
-   "2016": 225,
-   "2019": 228,
-   "2025": 251
+   "2016": 450,
+   "2019": 456,
+   "2025": 501
   },
   "precio_sube_pct": 40.7,
   "minutos_sube_pct": 11.3,
   "horas_y_minutos": {
-   "2016": "3 h 45 min",
-   "2019": "3 h 48 min",
-   "2025": "4 h 11 min"
+   "2016": "7 h 30 min",
+   "2019": "7 h 36 min",
+   "2025": "8 h 21 min"
   },
-  "minutos_mas": 26,
+  "minutos_mas": 51,
   "h": {
-   "2016": 3,
-   "2019": 3,
-   "2025": 4
+   "2016": 7,
+   "2019": 7,
+   "2025": 8
   },
   "m": {
-   "2016": 45,
-   "2019": 48,
-   "2025": 11
+   "2016": 30,
+   "2019": 36,
+   "2025": 21
   }
  },
  "relativos": {
