@@ -69,7 +69,7 @@ export function escenas(D) {
   // El mapa grande (v4: más protagonismo): ocupa todo el ancho, con la subida de cada plato en rojo debajo.
   const NOTA_MAPA = ["Bajo cada plato, lo", "que sube el precio", "de su ingrediente", "principal (2016-2025)", `El sueldo: +${rnd(D.sube)} %`];
   const mapa = (id, y) => `<g transform="translate(540 ${y})">${mapaPlatos(id, 1.32, D.mapa, NOTA_MAPA, 8)}</g>`;
-  const Y_MAPA = 985;
+  const Y_MAPA = 1000;
   // La mesa para ocho: cada plato con su nombre y su tiempo de trabajo de hoy (suman el total de la tarjeta).
   const M = D.mesa;
   const ETIQ = { cordero: ["Cordero, 3 kg", hm(M.cordero.h["2025"], M.cordero.m["2025"])], marisco: ["Marisco, 2 kg", hm(M.marisco.h["2025"], M.marisco.m["2025"])],
