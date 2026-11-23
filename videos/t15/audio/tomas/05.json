@@ -1,0 +1,44 @@
+{
+ "huella": "a5efd34bc7cdff22",
+ "semilla": 5000,
+ "texto": "¿Dos horas por un cordero? En mis tiempos lo criábamos en el corral.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0161,
+  "oido": "Dos horas por un cordero, en mis tiempos lo criábamos en el corral.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.2,
+   0.46,
+   0.68,
+   0.8,
+   1.76,
+   2.12,
+   2.26,
+   2.64,
+   2.76,
+   3.24,
+   3.42,
+   3.52
+  ],
+  "t1": [
+   0.20000000000000004,
+   0.46,
+   0.68,
+   0.8,
+   1.18,
+   2.12,
+   2.26,
+   2.64,
+   2.76,
+   3.24,
+   3.42,
+   3.52,
+   3.86
+  ],
+  "ritmo": 13.1,
+  "voz": 0.882
+ }
+}

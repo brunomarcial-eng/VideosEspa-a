@@ -1,0 +1,40 @@
+{
+ "huella": "11063e63a37016e3",
+ "semilla": 8000,
+ "texto": "Turrón, mazapán y polvorones: un 18 % más de tu tiempo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0252,
+  "oido": "Turrón, masapán y polvorones, un 18% más de tu tiempo.",
+  "parecido": 0.982,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.92,
+   1.58,
+   1.64,
+   2.8,
+   3.08,
+   3.56,
+   4.0,
+   4.48,
+   4.66,
+   4.76
+  ],
+  "t1": [
+   0.54,
+   1.58,
+   1.64,
+   2.32,
+   3.08,
+   3.56,
+   4.0,
+   4.48,
+   4.66,
+   4.76,
+   5.14
+  ],
+  "ritmo": 10.6,
+  "voz": 0.935
+ }
+}

@@ -1,0 +1,22 @@
+plano 1: «¿Cuántas horas de curro te cuesta la cena de Nochebuena? Este año la pongo yo. Qué ilusión… o no.»
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.923 · 7.5 s · 9.8 l/s · «¿Cuántas horas de curro te cuesta la cena de noche buena? Este año la pongo yo. ¿Qué ilusión? ¿O no?»
+plano 2: «Un kilo de marisco, guapa: 54 minutos de tu sueldo. En 2016, 52.»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.937 · 5.6 s · 14.8 l/s · «Un kilo de marisco guapa, 54 minutos de tu sueldo, en 2016, 52.»
+plano 3: «¿Casi una hora por un kilo de gambas? En mis tiempos las pescaba tu abuelo.»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.917 · 4.0 s · 14.6 l/s · «Casi una hora por un kilo de gambas, en mis tiempos las pescaba tu abuelo.»
+plano 4: «Y la pierna de cordero: dos horas y doce minutos. En 2016, una hora cincuenta y tres.»
+    toma 1 (semilla 4000): BUENA · 0.987 · voz 0.931 · 7.0 s · 10.9 l/s · «y la pierna de cordero, 2 horas y 12 minutos. En 2016, 1 hora 53.»
+plano 5: «¿Dos horas por un cordero? En mis tiempos lo criábamos en el corral.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.882 · 4.0 s · 13.1 l/s · «Dos horas por un cordero, en mis tiempos lo criábamos en el corral.»
+plano 6: «Con jamón, queso y vino, la cena para cuatro: cuatro horas y once minutos. En 2016, tres cuarenta y cinco.»
+    toma 1 (semilla 6000): BUENA · 0.979 · voz 0.958 · 9.6 s · 9.6 l/s · «Con jamón, queso y vino, la cena para cuatro. Cuatro horas y once minutos. En 2016, 3.45.»
+plano 7: «Media hora más de curro para cenar lo mismo. ¿Y el turrón, qué?»
+    toma 1 (semilla 7000): BUENA · 0.989 · voz 0.89 · 3.8 s · 12.3 l/s · «Me dio ahora más de curro para cenar lo mismo. ¿Y el turrón? ¿Qué?»
+plano 8: «Turrón, mazapán y polvorones: un 18 % más de tu tiempo.»
+    toma 1 (semilla 8000): BUENA · 0.982 · voz 0.935 · 5.4 s · 10.6 l/s · «Turrón, masapán y polvorones, un 18% más de tu tiempo.»
+plano 9: «Lo único que baja: los juguetes de Reyes. Un 36 % menos.»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.923 · 5.9 s · 10.2 l/s · «lo único que baja. Los juguetes de reyes. Un 36% menos.»
+plano 10: «Pues este año cenamos juguetes. En mis tiempos, con una naranja ibas que te matabas.»
+    toma 1 (semilla 10000): BUENA · 0.978 · voz 0.901 · 5.0 s · 13.4 l/s · «Pues este año cenamos juguetes, en mis tiempos, con una naranja hivas que te matabas.»
+plano 11: «Total: media hora más que en 2016 por la misma cena. ¿Y en tu casa, qué se come en Nochebuena?»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.963 · 8.1 s · 10.0 l/s · «total, media hora más que en 2016 por la misma cena. Y en tu casa, ¿qué se come en noche buena?»

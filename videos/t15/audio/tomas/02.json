@@ -1,0 +1,44 @@
+{
+ "huella": "9005b65cc5cdcd11",
+ "semilla": 2000,
+ "texto": "Un kilo de marisco, guapa: 54 minutos de tu sueldo. En 2016, 52.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0433,
+  "oido": "Un kilo de marisco guapa, 54 minutos de tu sueldo, en 2016, 52.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   0.34,
+   0.48,
+   0.86,
+   1.66,
+   2.04,
+   2.58,
+   2.84,
+   2.92,
+   3.74,
+   3.84,
+   4.82
+  ],
+  "t1": [
+   0.16,
+   0.34,
+   0.48,
+   0.86,
+   1.2,
+   2.04,
+   2.58,
+   2.84,
+   2.92,
+   3.28,
+   3.84,
+   4.52,
+   5.2
+  ],
+  "ritmo": 14.8,
+  "voz": 0.937
+ }
+}

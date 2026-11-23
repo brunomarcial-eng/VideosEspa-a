@@ -1,0 +1,48 @@
+{
+ "huella": "5a5df90990917a02",
+ "semilla": 10000,
+ "texto": "Pues este año cenamos juguetes. En mis tiempos, con una naranja ibas que te matabas.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0035,
+  "oido": "Pues este año cenamos juguetes, en mis tiempos, con una naranja hivas que te matabas.",
+  "parecido": 0.978,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.36,
+   0.54,
+   0.9,
+   2.12,
+   2.34,
+   2.46,
+   3.12,
+   3.28,
+   3.44,
+   3.864,
+   4.12,
+   4.26,
+   4.38
+  ],
+  "t1": [
+   0.14,
+   0.36,
+   0.54,
+   0.9,
+   1.54,
+   2.34,
+   2.46,
+   2.96,
+   3.28,
+   3.44,
+   3.8,
+   4.12,
+   4.26,
+   4.38,
+   4.88
+  ],
+  "ritmo": 13.4,
+  "voz": 0.901
+ }
+}

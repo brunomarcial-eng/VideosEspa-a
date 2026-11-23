@@ -1,0 +1,42 @@
+{
+ "huella": "9d3c3a0eef357032",
+ "semilla": 9000,
+ "texto": "Lo único que baja: los juguetes de Reyes. Un 36 % menos.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0367,
+  "oido": "lo único que baja. Los juguetes de reyes. Un 36% menos.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.4,
+   0.62,
+   1.88,
+   2.02,
+   2.5,
+   2.62,
+   3.8,
+   4.08,
+   4.56,
+   4.94
+  ],
+  "t1": [
+   0.14,
+   0.4,
+   0.62,
+   0.9,
+   2.02,
+   2.5,
+   2.62,
+   3.08,
+   4.08,
+   4.56,
+   4.94,
+   5.44
+  ],
+  "ritmo": 10.2,
+  "voz": 0.923
+ }
+}

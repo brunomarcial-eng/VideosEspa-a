@@ -1,0 +1,44 @@
+{
+ "huella": "d7ee716d3e398a15",
+ "semilla": 7000,
+ "texto": "Media hora más de curro para cenar lo mismo. ¿Y el turrón, qué?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0093,
+  "oido": "Me dio ahora más de curro para cenar lo mismo. ¿Y el turrón? ¿Qué?",
+  "parecido": 0.989,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.252,
+   0.38,
+   0.56,
+   0.68,
+   0.94,
+   1.1,
+   1.44,
+   1.54,
+   2.42,
+   2.7,
+   2.78,
+   3.52
+  ],
+  "t1": [
+   0.252,
+   0.38,
+   0.56,
+   0.68,
+   0.94,
+   1.1,
+   1.44,
+   1.54,
+   1.8,
+   2.7,
+   2.78,
+   3.18,
+   3.66
+  ],
+  "ritmo": 12.3,
+  "voz": 0.89
+ }
+}

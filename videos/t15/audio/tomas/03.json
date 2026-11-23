@@ -1,0 +1,48 @@
+{
+ "huella": "3f8a1070b86eb8e6",
+ "semilla": 3000,
+ "texto": "¿Casi una hora por un kilo de gambas? En mis tiempos las pescaba tu abuelo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0337,
+  "oido": "Casi una hora por un kilo de gambas, en mis tiempos las pescaba tu abuelo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.24,
+   0.38,
+   0.56,
+   0.72,
+   0.84,
+   1.0,
+   1.14,
+   2.0,
+   2.2,
+   2.36,
+   2.78,
+   2.92,
+   3.34,
+   3.48
+  ],
+  "t1": [
+   0.24,
+   0.38,
+   0.56,
+   0.72,
+   0.84,
+   1.0,
+   1.14,
+   2.0,
+   2.2,
+   2.36,
+   2.78,
+   2.92,
+   3.34,
+   3.48,
+   3.86
+  ],
+  "ritmo": 14.6,
+  "voz": 0.917
+ }
+}
