@@ -1,6 +1,6 @@
 // Decorado y objetos de T18 («¿Cuál es el coche más vendido?», coches B con dos cuñados en un bar; Bruno, 22-11-2026):
 // un bar de barrio en perspectiva, con la barra a la izquierda, botellas, la tele, lámparas que se mecen, gente al fondo y
-// una cristalera a la derecha que da a la calle (por ella pasan coches y el camión portacoches). Distinto del bar de T10 y T14.
+// una ventana al fondo que da a la calle (por ella pasa el camión portacoches) y la pizarra del menú a la derecha. Distinto del bar de T10 y T14.
 // Capa para ambientes() de sueno.mjs; prefijo para vidaFondo: «bb». Los personajes pisan en y = 1440.
 
 import { C, paseante } from "./limpio.mjs";
@@ -23,8 +23,16 @@ function barBarrio() {
     <!-- pared del fondo: estantes con botellas, la tele y la pizarra (sin precios) -->
     <rect x="160" y="460" width="740" height="580" fill="#E4D3B8"/>
     <rect x="180" y="620" width="300" height="12" fill="#8E6644"/><rect x="180" y="700" width="300" height="12" fill="#8E6644"/>${botellas(0)}${botellas(80)}
-    <rect x="560" y="520" width="200" height="120" rx="8" fill="${C.tinta}"/><rect x="570" y="530" width="180" height="100" rx="4" fill="#3E8E8A" opacity=".85"/><path d="M600 610 l40 -50 l30 30 l20 -20 l40 40 Z" fill="#9BC77A" opacity=".8"/>
-    <rect x="560" y="680" width="200" height="150" rx="6" fill="#2F3B35"/>${txt(660, 730, "HOY", 30, "#FFFDF8")}${txt(660, 780, "TORTILLA", 26, "#F4D06F")}
+    <clipPath id="bb-cristal"><rect x="500" y="500" width="380" height="380"/></clipPath>
+    <g clip-path="url(#bb-cristal)"><rect x="500" y="500" width="380" height="380" fill="#BFE3F2"/>
+      ${[[490, 120, 250, "#D9C7B0"], [620, 110, 300, "#C9B6A0"], [740, 150, 220, "#DCCDB8"]].map(([x, w, h, col]) => `<rect x="${x}" y="${830 - h}" width="${w}" height="${h}" fill="${col}"/>${Array.from({ length: Math.floor(h / 60) }, (_, f) => `<rect x="${x + 16}" y="${830 - h + 16 + f * 60}" width="${w - 32}" height="26" rx="3" fill="#FFFDF8" opacity=".6"/>`).join("")}`).join("")}
+      <rect x="500" y="830" width="380" height="50" fill="#9AA6AE"/><rect x="500" y="824" width="380" height="8" fill="#C9CED3"/>
+      <g id="bb-c0"><g transform="scale(.28)">${coche("bb-c0-a", "#5B6470")}</g></g>
+      <g id="bb-camion"><g transform="scale(.42)"><rect x="-260" y="-190" width="420" height="16" fill="#5B6470"/><rect x="-260" y="-100" width="420" height="16" fill="#5B6470"/>
+        <rect x="160" y="-170" width="110" height="140" rx="12" fill="#E0B04A"/><rect x="190" y="-150" width="60" height="50" rx="6" fill="#BFE3F2"/>
+        ${[-200, -60].map((x) => `<g transform="translate(${x + 60} -190) scale(.26)">${coche(`bb-cm${x}`, "#C9A0C2")}</g><g transform="translate(${x + 60} -100) scale(.26)">${coche(`bb-cn${x}`, "#9AA6AE")}</g>`).join("")}
+        ${[-220, -40, 120, 230].map((x) => `<circle cx="${x}" cy="-14" r="26" fill="${C.tinta}"/>`).join("")}</g></g></g>
+    <rect x="490" y="490" width="400" height="20" fill="#8E6644"/><rect x="490" y="870" width="400" height="20" fill="#8E6644"/><rect x="490" y="490" width="20" height="400" fill="#8E6644"/><rect x="870" y="490" width="20" height="400" fill="#8E6644"/><rect x="680" y="490" width="16" height="400" fill="#8E6644"/>
     <!-- barra a la izquierda, en perspectiva, con grifos y cafetera -->
     <path d="M${X0} ${enX(160, 880, X0).toFixed(0)} L300 ${enX(160, 880, 300).toFixed(0)} L300 ${enX(160, 1040, 300).toFixed(0)} L${X0} ${enX(160, 1040, X0).toFixed(0)} Z" fill="#8E6644"/>
     <path d="M${X0} ${(enX(160, 880, X0) - 40).toFixed(0)} L300 ${(enX(160, 880, 300) - 14).toFixed(0)} L300 ${enX(160, 880, 300).toFixed(0)} L${X0} ${enX(160, 880, X0).toFixed(0)} Z" fill="#C99A6B"/>
@@ -32,17 +40,11 @@ function barBarrio() {
       <rect x="-34" y="-84" width="10" height="34" fill="#9AA6AE"/><rect x="24" y="-84" width="10" height="34" fill="#9AA6AE"/></g>
     <g transform="translate(-140 ${(enX(160, 880, -140) - 24).toFixed(0)})"><rect x="-90" y="-150" width="180" height="150" rx="14" fill="#B8BFC6"/><rect x="-70" y="-130" width="140" height="60" rx="8" fill="#5B6470"/>
       <rect x="-60" y="-40" width="30" height="40" fill="#5B6470"/><rect x="30" y="-40" width="30" height="40" fill="#5B6470"/></g>
-    <!-- cristalera a la derecha: calle con un coche aparcado y los que pasan («bb-c0», «bb-camion») -->
+    <!-- pared derecha con la pizarra del menú (sin precios) -->
     <path d="M900 460 L${X0 + ANCHO} ${yDerT} L${X0 + ANCHO} ${yDerS} L900 1040 Z" fill="#DCCBAE"/>
-    <clipPath id="bb-cristal"><path d="M940 ${enX(900, 520, 940).toFixed(0)} L1400 ${enX(900, 520, 1400).toFixed(0)} L1400 ${enX(900, 1000, 1400).toFixed(0)} L940 ${enX(900, 1000, 940).toFixed(0)} Z"/></clipPath>
-    <g clip-path="url(#bb-cristal)"><rect x="900" y="200" width="600" height="1100" fill="#BFE3F2"/><rect x="900" y="900" width="600" height="400" fill="#9AA6AE"/>
-      <g id="bb-c0"><g transform="scale(.42)">${coche("bb-c0-a", "#5B6470")}</g></g>
-      <g id="bb-camion"><rect x="-260" y="-190" width="420" height="16" fill="#5B6470"/><rect x="-260" y="-100" width="420" height="16" fill="#5B6470"/>
-        <rect x="160" y="-170" width="110" height="140" rx="12" fill="#E0B04A"/><rect x="190" y="-150" width="60" height="50" rx="6" fill="#BFE3F2"/>
-        ${[-200, -60].map((x) => `<g transform="translate(${x + 60} -190) scale(.26)">${coche(`bb-cm${x}`, "#C9A0C2")}</g><g transform="translate(${x + 60} -100) scale(.26)">${coche(`bb-cn${x}`, "#9AA6AE")}</g>`).join("")}
-        ${[-220, -40, 120, 230].map((x) => `<circle cx="${x}" cy="-14" r="26" fill="${C.tinta}"/>`).join("")}</g></g>
-    <path d="M940 ${enX(900, 520, 940).toFixed(0)} L1400 ${enX(900, 520, 1400).toFixed(0)}" stroke="#5B4636" stroke-width="14"/><path d="M940 ${enX(900, 1000, 940).toFixed(0)} L1400 ${enX(900, 1000, 1400).toFixed(0)}" stroke="#5B4636" stroke-width="18"/>
-    <rect x="932" y="${enX(900, 520, 940).toFixed(0)}" width="16" height="${(enX(900, 1000, 940) - enX(900, 520, 940)).toFixed(0)}" fill="#5B4636"/>
+    <path d="M950 ${enX(900, 600, 950).toFixed(0)} L1250 ${enX(900, 600, 1250).toFixed(0)} L1250 ${enX(900, 860, 1250).toFixed(0)} L950 ${enX(900, 860, 950).toFixed(0)} Z" fill="#2F3B35"/>
+    <text transform="translate(1060 ${enX(900, 700, 1060).toFixed(0)}) skewY(-22)" text-anchor="middle" font-family="Cap" font-weight="800" font-size="34" fill="#FFFDF8">HOY</text>
+    <text transform="translate(1060 ${enX(900, 770, 1060).toFixed(0)}) skewY(-22)" text-anchor="middle" font-family="Cap" font-weight="800" font-size="30" fill="#F4D06F">TORTILLA</text>
     <!-- suelo de baldosas -->
     <path d="M${X0} ${yIzqS} L160 1040 H900 L${X0 + ANCHO} ${yDerS} V2300 H${X0} Z" fill="#D7CDBE"/>${baldosas}
     <!-- mesas altas al fondo con gente -->
@@ -55,9 +57,9 @@ function barBarrio() {
 export const DECORADOS_T18 = { barBarrio };
 
 // Podio de tres escalones con un coche y un cartel con el nombre en cada uno. «<id>-k0..2» son los grupos de cada puesto.
-export function podio(id, coches) {
-  const pos = [[0, -200, 1], [-300, -130, 2], [300, -80, 3]];
-  return `<g id="${id}">${pos.map(([x, h, n], i) => `<rect x="${x - 140}" y="${-h}" width="280" height="${h}" rx="10" fill="${["#E0B04A", "#C9CED3", "#C98F6B"][i]}"/>${txt(x, -h + 70, n + "º", 60, "#FFFDF8")}`).join("")}
+export function podio(id, coches, numeros = true) {
+  const pos = [[0, 200, 1], [-300, 130, 2], [300, 80, 3]];
+  return `<g id="${id}">${pos.map(([x, h, n], i) => `<rect x="${x - 140}" y="${-h}" width="280" height="${h}" rx="10" fill="${["#E0B04A", "#C9CED3", "#C98F6B"][i]}"/>${numeros ? txt(x, -h + 70, n + "º", 60, "#FFFDF8") : ""}`).join("")}
     ${coches.map((c, i) => { const [x, h] = pos[i]; return `<g id="${id}-k${i}"><g transform="translate(${x} ${-h - 10}) scale(${c.s ?? 0.48})">${coche(`${id}-c${i}`, c.col)}</g>
       <rect x="${x - 125}" y="${-h - 230}" width="250" height="58" rx="12" fill="#FFFDF8" stroke="${c.col}" stroke-width="6"/>${txt(x, -h - 190, c.nombre, 30, C.tinta)}</g>`; }).join("")}</g>`;
 }
