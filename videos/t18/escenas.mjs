@@ -123,7 +123,7 @@ export function escenas(D) {
     // 5 · Luis, con sorna: «Hombre, pues barato, ¿no?»
     { n: 5, set: "vacio",
       svg: `${mesa}${cunados("s5")}`,
-      tarjeta: cita(5, "Luis", `«Pues <mark id="m5">barato</mark>, ¿no?»`),
+      tarjeta: cita(5, "Luis", `«Pues entonces es <mark id="m5">barato</mark> ¿no?»`),
       fn: function (t, e) {
         const c = e.c;
         ambiente("barBarrio", null, t, 0);
@@ -158,7 +158,7 @@ export function escenas(D) {
     // 7 · Luis: «¿Y en Alemania, listo?»
     { n: 7, set: "vacio",
       svg: `${mesa}<g id="s7-de"><g transform="translate(-90 -54) scale(1.8)">${banderaDE(100)}</g></g>${cunados("s7")}`,
-      tarjeta: cita(7, "Luis", `«¿Y en <mark id="m7">Alemania</mark>, listo?»`),
+      tarjeta: cita(7, "Luis", `«¿Y en <mark id="m7">Alemania</mark> qué pasa?»`),
       fn: function (t, e) {
         const c = e.c;
         ambiente("barBarrio", null, t, 0);
@@ -215,7 +215,7 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c9-bmw"], e.c["c9-normalito"]]); } },
 
-    // 10 · Javi: «Y aquí, el coche normal: en 2016, doce meses. Hoy, catorce. En 2007, quince.»
+    // 10 · Luis: «Pues en 2016 un coche normal eran doce meses y ahora catorce, aunque en 2007 eran quince ¿eh?»
     { n: 10, set: "vacio",
       svg: `${panel(170, 780, 740, 520)}${[["s10-a", 320, "2007", D.tiempo["2007"], GRIS19], ["s10-b", 540, "2016", D.tiempo["2016"], ANTES_T], ["s10-c", 760, "HOY", D.tiempo["2025"], HOY]].map(([id, x, a, v, col]) => cal(id, x, 960, 0.36, a, es(v), col)).join("")}
         ${rot(540, 1270, "COCHE NUEVO MEDIO EN ESPAÑA · MESES DE SUELDO", 22, C.gris)}${cunados("s10")}`,
@@ -229,8 +229,8 @@ export function escenas(D) {
         txt("s10-a-c-m", "2007"); txt("s10-b-c-m", "2016"); txt("s10-c-c-m", "HOY");
         css("s10-b", "opacity", clamp((t - c["c10-2016"]) / 0.3)); css("s10-c", "opacity", clamp((t - c["c10-catorce"] + 0.2) / 0.3)); css("s10-a", "opacity", clamp((t - c["c10-2007"]) / 0.3));
         sube("c10-a", t, c["c10-doce"]); sube("c10-b", t, c["c10-catorce"]);
-        persona("s10-l", t, { x: 110, y: 1440, s: 0.74, mira: 1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"]], fase: 1 });
-        persona("s10-j", t, { x: 975, y: 1440, s: 0.74, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"]], espejo: true, fase: 2 });
+        persona("s10-l", t, { x: 110, y: 1440, s: 0.74, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c10-2007"] - 0.2, "hombros"]], fase: 1 });
+        persona("s10-j", t, { x: 975, y: 1440, s: 0.74, mira: -1, vivo: true, boca: [[0, "seria"], [c["c10-catorce"], "o"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c10-2016"], e.c["c10-catorce"]], { acerca: 0.03 }); } },
 

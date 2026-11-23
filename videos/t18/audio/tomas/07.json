@@ -1,26 +1,34 @@
 {
- "huella": "a3624b5ecfa0fa40",
- "semilla": 7002,
- "texto": "¿Y en Alemania, listo?",
+ "huella": "2d97ac1e7679581e",
+ "semilla": 7000,
+ "texto": "Ya, ya. ¿Y en Alemania qué pasa, listo?",
  "ev": {
   "ok": true,
-  "nota": 1.0179,
-  "oido": "¿Y en Alemania? ¿Listo?",
+  "nota": 1.0305,
+  "oido": "Ya, ya. Y en Alemania, ¿qué pasa, listo?",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.18,
-   0.3,
-   1.28
+   0.34,
+   1.26,
+   1.54,
+   1.66,
+   2.24,
+   2.32,
+   2.68
   ],
   "t1": [
-   0.18,
-   0.3,
-   0.8200000000000001,
-   1.66
+   0.22,
+   0.5,
+   1.54,
+   1.66,
+   2.1,
+   2.32,
+   2.62,
+   3.04
   ],
-  "ritmo": 8.2,
-  "voz": 0.886
+  "ritmo": 8.3,
+  "voz": 0.911
  }
 }

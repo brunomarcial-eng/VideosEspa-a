@@ -23,7 +23,7 @@
   "pausa_mismo_s": 0.3,
   "pausa_tras_dato_s": 0.45
  },
- "sin_veredicto": "El veredicto lo dice Javi en el plano 10 (el coche medio: 12 meses en 2016, 14 hoy, 15 en 2007) y la pantalla final («peor que en 2016 y que en Alemania»). Acaba con la pregunta, sin dar la causa.",
+ "sin_veredicto": "El veredicto lo da Luis en el plano 10 (el coche normal: doce meses en 2016, catorce hoy, quince en 2007) y la pantalla final («peor que en 2016 y que en Alemania»). Acaba con la pregunta, sin dar la causa.",
  "capitulos": [
   {
    "nombre": "Lo más vendido",
@@ -62,7 +62,7 @@
    "n": 1,
    "quien": "javi",
    "funcion": "gancho",
-   "voz": "¿Sabes qué coche es el que más se compra en España? El más barato, tío.",
+   "voz": "Oye ¿tú sabes cuál es el coche que más se compra en España? El más barato tío.",
    "pantalla": "¿Cuál es el coche más vendido en España?",
    "sello": null,
    "imagen": "Bar de barrio. Javi llega a la mesa alta, con dos cañas encima. Cae el sello «SOLO DATOS OFICIALES»."
@@ -71,7 +71,7 @@
    "n": 2,
    "quien": "luis",
    "funcion": "2016",
-   "voz": "¡Anda ya! Si en 2016 era el León.",
+   "voz": "Anda ya hombre, si en 2016 era el León, que me lo compré yo.",
    "pantalla": "Más vendidos en 2016 · SEAT León · SEAT Ibiza · Volkswagen Golf",
    "nota": "Turismos y todoterrenos nuevos",
    "sello": "DATO OFICIAL · DGT (microdatos de matriculaciones)",
@@ -81,7 +81,7 @@
    "n": 3,
    "quien": "javi",
    "funcion": "hoy",
-   "voz": "Pues hoy gana el Dacia Sandero. Y detrás, el Clio y el MG.",
+   "voz": "Eso era antes. Ahora gana el Dacia Sandero, y detrás el Clio y el MG.",
    "pantalla": "Más vendidos en 2025 · Dacia Sandero · Renault Clio · MG ZS",
    "nota": "Turismos y todoterrenos nuevos. El Yaris Cross cuenta aparte del Yaris",
    "sello": "DATO OFICIAL · DGT (microdatos de matriculaciones)",
@@ -91,7 +91,7 @@
    "n": 4,
    "quien": "javi",
    "funcion": "dato: la mitad",
-   "voz": "El Sandero, 15.752 euros. Y el coche nuevo medio, 31.555. ¡La mitad!",
+   "voz": "Y fíjate, el Sandero 15.752 euros y el coche medio 31.555, o sea la mitad tío.",
    "pantalla": "Dacia Sandero: 15.752 € · Coche nuevo medio: 31.555 €",
    "nota": "Precio medio real con IVA, 2025",
    "sello": "CÁLCULO PROPIO · Agencia Tributaria (ranking de ventas 2025)",
@@ -101,8 +101,8 @@
    "n": 5,
    "quien": "luis",
    "funcion": "ironía",
-   "voz": "Hombre, pues barato, ¿no?",
-   "pantalla": "«Pues barato, ¿no?»",
+   "voz": "Hombre, pues entonces es barato ¿no?",
+   "pantalla": "«Pues entonces es barato ¿no?»",
    "sello": null,
    "imagen": "Luis se encoge de hombros junto a la mesa, con las cañas encima."
   },
@@ -110,7 +110,7 @@
    "n": 6,
    "quien": "javi",
    "funcion": "dato: meses",
-   "voz": "¿Barato? Siete meses de sueldo enterito.",
+   "voz": "¿Barato? Siete meses de sueldo enteritos, sin gastarte un euro.",
    "pantalla": "Dacia Sandero · 7,0 meses de sueldo neto",
    "nota": "Sueldo neto medio (Eurostat): 2.253 € al mes",
    "sello": "CÁLCULO PROPIO · Agencia Tributaria · Eurostat (sueldo neto medio)",
@@ -120,8 +120,8 @@
    "n": 7,
    "quien": "luis",
    "funcion": "pregunta",
-   "voz": "¿Y en Alemania, listo?",
-   "pantalla": "«¿Y en Alemania?»",
+   "voz": "Ya, ya. ¿Y en Alemania qué pasa, listo?",
+   "pantalla": "«¿Y en Alemania qué pasa?»",
    "sello": null,
    "imagen": "Luis pregunta; aparece la bandera de Alemania."
   },
@@ -129,7 +129,7 @@
    "n": 8,
    "quien": "javi",
    "funcion": "dato: Alemania",
-   "voz": "Allí cobran un 35 % más. El mismo Sandero, cinco meses y medio.",
+   "voz": "Pues allí cobran un 35 % más, así que el mismo Sandero les cuesta cinco meses y medio.",
    "pantalla": "Dacia Sandero, meses de sueldo · España: 7,0 · Alemania: 5,4",
    "nota": "Allí se cobra un 35 % más (2.253 € y 3.045 € al mes) y los coches cuestan un 4,4 % más",
    "sello": "CÁLCULO PROPIO · Agencia Tributaria · Eurostat (sueldo neto medio y niveles de precios)",
@@ -140,7 +140,7 @@
    "n": 9,
    "quien": "javi",
    "funcion": "dato: el BMW",
-   "voz": "Y un BMW X1, catorce meses: lo que aquí te cuesta un coche normalito.",
+   "voz": "Y escucha, que un BMW X1 a un alemán le cuesta catorce meses, lo mismo que aquí un coche normalito.",
    "pantalla": "Meses de sueldo · BMW X1 en Alemania: 14,4 · Coche nuevo medio en España: 14,0",
    "nota": "BMW X1: 42.005 € con IVA en España",
    "sello": "CÁLCULO PROPIO · Agencia Tributaria · Eurostat (sueldo neto medio y niveles de precios)",
@@ -149,9 +149,9 @@
   },
   {
    "n": 10,
-   "quien": "javi",
+   "quien": "luis",
    "funcion": "dato: España en el tiempo",
-   "voz": "Y aquí, el coche normal: en 2016, doce meses. Hoy, catorce. En 2007, quince.",
+   "voz": "Pues en 2016 un coche normal eran doce meses y ahora catorce, aunque en 2007 eran quince ¿eh?",
    "pantalla": "Coche nuevo medio en España, meses de sueldo · 2007: 14,9 · 2016: 12,0 · 2025: 14,0",
    "sello": "CÁLCULO PROPIO · Agencia Tributaria · Eurostat (sueldo neto medio)",
    "grafico": true,
@@ -161,7 +161,7 @@
    "n": 11,
    "quien": "luis",
    "funcion": "pregunta",
-   "voz": "O sea, que con lo que aquí pagas un coche normal, allí se compran un BMW. ¿Vamos justos o somos más apañados?",
+   "voz": "O sea, que con lo que aquí pagas un coche normal allí se compran un BMW. ¿Vamos justos o somos más apañados? ¿Tú qué dices?",
    "pantalla": "Peor que en 2016 y que en Alemania; algo mejor que en 2007. ¿Vamos justos o somos más apañados?",
    "sello": null,
    "imagen": "Luis levanta los brazos y mira a cámara."
@@ -265,5 +265,5 @@
   "porque": "Matriculaciones por modelo (DGT), precios (Agencia Tributaria), sueldo neto medio y niveles de precios (Eurostat).",
   "pregunta": "¿Vamos justos o somos más apañados?"
  },
- "aprobacion_guion": "v1 enviada el 23-11-2026. Bruno: muy flojo; marcas visibles, explicar el porqué del ranking (lo más vendido cuesta la mitad que el coche medio y aun así son muchos meses) y comparar con Alemania. v2 pendiente. Las marcas van en placas con su nombre (sin copiar logotipos) y la causa, como pregunta (regla 3)."
+ "aprobacion_guion": "v3 aprobada en lo visual. 23-11-2026: Bruno pide un diálogo más natural, con su forma de hablar (skill clon-bruno): muletillas, frases que fluyen, sin pausas raras (nada de coma antes de «tío»). v4 pendiente."
 }

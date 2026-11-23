@@ -1,26 +1,30 @@
 {
- "huella": "1774f1614582cbd1",
+ "huella": "b94dddaa8d266443",
  "semilla": 5000,
- "texto": "Hombre, pues barato, ¿no?",
+ "texto": "Hombre, pues entonces es barato ¿no?",
  "ev": {
   "ok": true,
-  "nota": 1.0028,
-  "oido": "¡Hombre! Pues barato, ¿no?",
+  "nota": 1.0041,
+  "oido": "¡Hombre! Pues entonces es barato, ¿no?",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
-   0.19999999999999996,
-   0.44,
+   0.0,
+   0.52,
    0.58,
-   1.04
+   0.96,
+   1.26,
+   1.72
   ],
   "t1": [
-   0.36,
+   0.36000000000000004,
    0.58,
-   0.98,
-   1.1
+   0.96,
+   1.26,
+   1.64,
+   1.8
   ],
-  "ritmo": 15.0,
-  "voz": 0.856
+  "ritmo": 14.6,
+  "voz": 0.858
  }
 }
