@@ -190,5 +190,56 @@
   "marisco",
   "jamon",
   "queso"
- ]
+ ],
+ "mapa_subida_precio_pct": {
+  "cordero": {
+   "fuente": "INE, Encuesta de Presupuestos Familiares (valor unitario)",
+   "categoria": "Carne de ovino y caprino",
+   "2016": 12.9,
+   "2025": 19.11,
+   "sube_pct": 48.1
+  },
+  "marisco": {
+   "fuente": "INE, Encuesta de Presupuestos Familiares (valor unitario)",
+   "categoria": "Mariscos frescos o refrigerados",
+   "2016": 8.89,
+   "2025": 11.74,
+   "sube_pct": 32.1
+  },
+  "cerdo": {
+   "fuente": "INE, Encuesta de Presupuestos Familiares (valor unitario)",
+   "categoria": "Carne de porcino",
+   "2016": 6.33,
+   "2025": 8.45,
+   "sube_pct": 33.5
+  },
+  "ave": {
+   "fuente": "INE, Encuesta de Presupuestos Familiares (valor unitario)",
+   "categoria": "Carne de ave",
+   "2016": 4.82,
+   "2025": 6.2,
+   "sube_pct": 28.6
+  },
+  "pescado": {
+   "fuente": "INE, Encuesta de Presupuestos Familiares (valor unitario)",
+   "categoria": "Pescados frescos o refrigerados",
+   "2016": 9.22,
+   "2025": 11.72,
+   "sube_pct": 27.1
+  },
+  "bacalao": {
+   "fuente": "INE, Encuesta de Presupuestos Familiares (valor unitario)",
+   "categoria": "Pescados y mariscos secos, salados, en salmuera o ahumados",
+   "2016": 18.52,
+   "2025": 26.24,
+   "sube_pct": 41.7
+  },
+  "dulces": {
+   "fuente": "INE, IPC (media anual)",
+   "categoria": "Azúcar, confitura, miel, chocolate y confitería",
+   "2016": 96.959,
+   "2025": 145.184,
+   "sube_pct": 49.7
+  }
+ }
 }

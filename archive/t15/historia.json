@@ -1,20 +1,20 @@
 {
- "nota": "Momentos clave de T15 (Navidad). La música se corta en seco con las «cuatro horas y once minutos» de la cena. Mercado con sonidos de tienda (pasos, bolsas, monedas) y casa con el reloj y algún coche, sin ruido continuo; la música ya no lleva bajo grave.",
+ "nota": "Momentos clave de T15 v3 (Navidad). La música se corta en seco con las «cuatro horas y once minutos» de la cena. Mercado con sonidos de tienda y la báscula del plato principal; casa con el reloj y algún coche, sin ruido continuo; la música no lleva bajo grave.",
  "musica": {
   "bpm": 100,
-  "corte": "c6-once",
+  "corte": "c7-once",
   "silencio_s": 1.0
  },
  "ambientes": [
   {
    "tipo": "tienda",
    "desde": 1,
-   "hasta": 5,
+   "hasta": 6,
    "vol": 1.0
   },
   {
    "tipo": "salon",
-   "desde": 6,
+   "desde": 7,
    "hasta": 11,
    "vol": 1.0
   }
@@ -43,6 +43,12 @@
    "dt": -0.1
   },
   {
+   "id": "c1-no",
+   "beat": 1,
+   "palabra": "no",
+   "dt": -0.1
+  },
+  {
    "id": "c2-guapa",
    "beat": 2,
    "palabra": "guapa",
@@ -65,9 +71,21 @@
    "vol": 0.2
   },
   {
+   "id": "c2-igual",
+   "beat": 2,
+   "palabra": "igual",
+   "dt": -0.1
+  },
+  {
    "id": "c3-gambas",
    "beat": 3,
    "palabra": "gambas",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-ya",
+   "beat": 3,
+   "palabra": "ya",
    "dt": -0.1
   },
   {
@@ -79,25 +97,19 @@
    "vol": 0.3
   },
   {
-   "id": "c3-abuelo",
-   "beat": 3,
-   "palabra": "abuelo",
-   "dt": -0.1
-  },
-  {
-   "id": "c4-cordero",
+   "id": "c4-pierna",
    "beat": 4,
-   "palabra": "cordero",
-   "dt": -0.1,
-   "sfx": "pop",
-   "vol": 0.25
-  },
-  {
-   "id": "c4-horas",
-   "beat": 4,
-   "palabra": "horas",
+   "palabra": "pierna",
    "dt": -0.1,
    "sfx": "golpe",
+   "vol": 0.22
+  },
+  {
+   "id": "c4-veintiocho",
+   "beat": 4,
+   "palabra": "veintiocho",
+   "dt": -0.1,
+   "sfx": "beep",
    "vol": 0.3
   },
   {
@@ -109,130 +121,169 @@
    "vol": 0.2
   },
   {
-   "id": "c5-tiempos",
-   "beat": 5,
-   "palabra": "tiempos",
+   "id": "c4-48",
+   "beat": 4,
+   "palabra": "48",
    "dt": -0.1,
-   "sfx": "ting",
-   "vol": 0.3
+   "sfx": "golpe",
+   "vol": 0.32
   },
   {
-   "id": "c5-corral",
+   "id": "c5-sea",
    "beat": 5,
-   "palabra": "corral",
+   "palabra": "sea",
    "dt": -0.1
   },
   {
-   "id": "c6-cena",
-   "beat": 6,
-   "palabra": "cena",
-   "dt": -0.1,
-   "sfx": "pop",
-   "vol": 0.25
-  },
-  {
-   "id": "c6-cuatro",
-   "beat": 6,
-   "palabra": "cuatro",
-   "dt": -0.1
-  },
-  {
-   "id": "c6-once",
-   "beat": 6,
-   "palabra": "once",
+   "id": "c5-doce",
+   "beat": 5,
+   "palabra": "doce",
    "dt": -0.1,
    "sfx": "golpe",
    "vol": 0.3
   },
   {
-   "id": "c6-2016",
-   "beat": 6,
+   "id": "c5-2016",
+   "beat": 5,
    "palabra": "2016",
    "dt": -0.1,
    "sfx": "pop",
    "vol": 0.2
   },
   {
-   "id": "c7-curro",
-   "beat": 7,
-   "palabra": "curro",
+   "id": "c6-pierna",
+   "beat": 6,
+   "palabra": "pierna",
    "dt": -0.1
   },
   {
-   "id": "c7-turron",
+   "id": "c6-tiempos",
+   "beat": 6,
+   "palabra": "tiempos",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c6-corral",
+   "beat": 6,
+   "palabra": "corral",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-hombre",
+   "beat": 6,
+   "palabra": "hombre",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-cena",
    "beat": 7,
-   "palabra": "turrón",
+   "palabra": "cena",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-cuatro",
+   "beat": 7,
+   "palabra": "cuatro",
+   "n": 2,
+   "dt": -0.1
+  },
+  {
+   "id": "c7-once",
+   "beat": 7,
+   "palabra": "once",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.35
+  },
+  {
+   "id": "c7-2016",
+   "beat": 7,
+   "palabra": "2016",
    "dt": -0.1,
    "sfx": "pop",
-   "vol": 0.25
+   "vol": 0.2
   },
   {
-   "id": "c8-turron",
+   "id": "c8-baja",
    "beat": 8,
-   "palabra": "Turrón",
-   "dt": -0.1,
-   "sfx": "papel",
-   "vol": 0.25
+   "palabra": "baja",
+   "dt": -0.1
   },
   {
-   "id": "c8-18",
+   "id": "c8-juguetes",
    "beat": 8,
-   "palabra": "18",
+   "palabra": "juguetes",
    "dt": -0.1,
-   "sfx": "sube",
+   "sfx": "campanilla",
+   "vol": 0.3
+  },
+  {
+   "id": "c8-36",
+   "beat": 8,
+   "palabra": "36",
+   "dt": -0.1,
+   "sfx": "golpe",
    "vol": 0.3
   },
   {
    "id": "c9-juguetes",
    "beat": 9,
    "palabra": "juguetes",
-   "dt": -0.1,
-   "sfx": "pop",
-   "vol": 0.25
-  },
-  {
-   "id": "c9-36",
-   "beat": 9,
-   "palabra": "36",
-   "dt": -0.1,
-   "sfx": "sube",
-   "vol": 0.3
-  },
-  {
-   "id": "c10-juguetes",
-   "beat": 10,
-   "palabra": "juguetes",
    "dt": -0.1
   },
   {
-   "id": "c10-naranja",
-   "beat": 10,
+   "id": "c9-naranja",
+   "beat": 9,
    "palabra": "naranja",
    "dt": -0.1,
    "sfx": "ting",
-   "vol": 0.3
+   "vol": 0.25
   },
   {
-   "id": "c10-matabas",
-   "beat": 10,
+   "id": "c9-matabas",
+   "beat": 9,
    "palabra": "matabas",
    "dt": -0.1
+  },
+  {
+   "id": "c10-total",
+   "beat": 10,
+   "palabra": "total",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-misma",
+   "beat": 10,
+   "palabra": "misma",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-mira",
+   "beat": 10,
+   "palabra": "mira",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-sube",
+   "beat": 10,
+   "palabra": "sube",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.35
   },
   {
    "id": "c11-casa",
    "beat": 11,
    "palabra": "casa",
-   "dt": -0.1,
-   "sfx": "ding",
-   "vol": 0.25
+   "dt": -0.1
   },
   {
-   "id": "c11-nochebuena",
+   "id": "c11-tanto",
    "beat": 11,
-   "palabra": "Nochebuena",
-   "dt": -0.1,
-   "sfx": "ting",
-   "vol": 0.25
+   "palabra": "tanto",
+   "dt": -0.1
   }
  ]
 }

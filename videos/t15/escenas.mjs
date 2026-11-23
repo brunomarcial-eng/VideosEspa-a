@@ -144,14 +144,14 @@ export function escenas(D) {
     // 5 · La madre hace la cuenta en tiempo: «O sea dos horas y doce minutos de curro. En 2016 ni dos.»
     { n: 5, set: "vacio",
       svg: `${gente("s5", "t")}<g transform="translate(770 1460)">${mostradorCarne("s5-mo")}</g>${gente("s5", "ma")}
-        <g id="s5-rl">${relojCocina("s5-r", 80, HOY)}${rot(0, 150, rnd(D.cordero[1]) + " MIN", 44, HOY)}</g>`,
+        <g id="s5-rl">${relojCocina("s5-r", 80, HOY)}<rect x="-96" y="112" width="192" height="52" rx="26" fill="#FFFDF8"/>${rot(0, 152, rnd(D.cordero[1]) + " MIN", 44, HOY)}</g>`,
       tarjeta: grande(5, rnd(D.cordero[1]) + "&nbsp;min", { titulo: "La pierna de cordero, en tiempo de trabajo", texto: "En 2016, " + rnd(D.cordero[0]) }, `El cordero sube un ${rnd(D.corderoSube)}&nbsp;%; el sueldo, un ${rnd(D.sube)}&nbsp;%`, F),
       fn: function (t, e) {
         const c = e.c;
         ambiente("mercado", null, t, 0);
         vidaFondo("mn", t, { lamparas: 2, gente: 2, capa: "mercado", y: 1080, s: 0.42 });
         for (let i = 0; i < 22; i++) { css("mn-ba" + i, "opacity", 0.45 + 0.55 * ((Math.sin(t * 4 + i * 1.3) + 1) / 2)); if (i < 18) css("mn-bb" + i, "opacity", 0.45 + 0.55 * ((Math.sin(t * 3 + i * 0.9) + 1) / 2)); }
-        pop("s5-rl", t, c["c5-sea"] - 0.1, 560, 990, { s: 0.85 });
+        pop("s5-rl", t, c["c5-sea"] - 0.1, 560, 960, { s: 0.85 });
         const m = D.cordero[1] * suave(clamp((t - c["c5-sea"]) / 1.6));
         cuna("s5-r-v", (m % 60) / 60, 80); attr("s5-r-ag", "transform", `rotate(${(m * 6).toFixed(1)})`);
         sube("c5-a", t, c["c5-doce"]); sube("c5-b", t, c["c5-2016"]);
@@ -247,7 +247,7 @@ export function escenas(D) {
         persona("s10-a", t, { x: 150, y: 1890, s: 0.6, mira: 1, vivo: true, boca: [[0, "seria"], [c["c10-sube"] + 1.2, "o"]], ojos: [[0, "normal"], [c["c10-sube"] + 1.2, "grandes"]], brazo: [[0, "abajo"]], fase: 1 });
         persona("s10-m", t, { x: 930, y: 1890, s: 0.62, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c10-mira"] - 0.1, "senala"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [], { acerca: 0.015 }); } },
+      cam: function (t, e) { return camVivo(t, e, [], { acerca: 0 }); } },   // el mapa, quieto: sin salto entre los planos 10 y 11
 
     // 11 · La pregunta, con el mapa entero: «¿Y en tu casa qué se come en Nochebuena? ¿Te ha subido tanto?»
     { n: 11, set: "vacio",
@@ -261,6 +261,6 @@ export function escenas(D) {
         persona("s11-a", t, { x: 150, y: 1890, s: 0.6, mira: 1, vivo: true, boca: [[0, "sonrisa"]], brazo: [[0, "abajo"], [c["c11-tanto"], "hombros"]], fase: 1 });
         persona("s11-m", t, { x: 930, y: 1890, s: 0.62, mira: [[0, -1], [c["c11-casa"], 0]], vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c11-casa"], "senala"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [], { acerca: 0.015 }); } },
+      cam: function (t, e) { return camVivo(t, e, [], { acerca: 0 }); } },   // el mapa, quieto: sin salto entre los planos 10 y 11
   ];
 }
