@@ -1,0 +1,238 @@
+{
+ "nota": "Momentos clave de T15 (Navidad). La música se corta en seco con las «cuatro horas y once minutos» de la cena. Mercado con sonidos de tienda (pasos, bolsas, monedas) y casa con el reloj y algún coche, sin ruido continuo; la música ya no lleva bajo grave.",
+ "musica": {
+  "bpm": 100,
+  "corte": "c6-once",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "tienda",
+   "desde": 1,
+   "hasta": 5,
+   "vol": 1.0
+  },
+  {
+   "tipo": "salon",
+   "desde": 6,
+   "hasta": 11,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-horas",
+   "beat": 1,
+   "palabra": "horas",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c1-ilusion",
+   "beat": 1,
+   "palabra": "ilusión",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-guapa",
+   "beat": 2,
+   "palabra": "guapa",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-54",
+   "beat": 2,
+   "palabra": "54",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-2016",
+   "beat": 2,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c3-gambas",
+   "beat": 3,
+   "palabra": "gambas",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-tiempos",
+   "beat": 3,
+   "palabra": "tiempos",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-abuelo",
+   "beat": 3,
+   "palabra": "abuelo",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-cordero",
+   "beat": 4,
+   "palabra": "cordero",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c4-horas",
+   "beat": 4,
+   "palabra": "horas",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-2016",
+   "beat": 4,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c5-tiempos",
+   "beat": 5,
+   "palabra": "tiempos",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-corral",
+   "beat": 5,
+   "palabra": "corral",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-cena",
+   "beat": 6,
+   "palabra": "cena",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-cuatro",
+   "beat": 6,
+   "palabra": "cuatro",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-once",
+   "beat": 6,
+   "palabra": "once",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c6-2016",
+   "beat": 6,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c7-curro",
+   "beat": 7,
+   "palabra": "curro",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-turron",
+   "beat": 7,
+   "palabra": "turrón",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-turron",
+   "beat": 8,
+   "palabra": "Turrón",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-18",
+   "beat": 8,
+   "palabra": "18",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c9-juguetes",
+   "beat": 9,
+   "palabra": "juguetes",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c9-36",
+   "beat": 9,
+   "palabra": "36",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-juguetes",
+   "beat": 10,
+   "palabra": "juguetes",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-naranja",
+   "beat": 10,
+   "palabra": "naranja",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-matabas",
+   "beat": 10,
+   "palabra": "matabas",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-casa",
+   "beat": 11,
+   "palabra": "casa",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  },
+  {
+   "id": "c11-nochebuena",
+   "beat": 11,
+   "palabra": "Nochebuena",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.25
+  }
+ ]
+}

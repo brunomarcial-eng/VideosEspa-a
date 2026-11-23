@@ -1,159 +1,286 @@
 {
  "id": "t15",
- "version": 1,
+ "version": 2,
  "titulo": "¿Cuántas horas trabajas para la cena de Nochebuena?",
- "titulo_alternativo": "La cena de Nochebuena, en horas de trabajo: 2016 frente a hoy",
- "pregunta": "Una anfitriona, el carnicero del mercado y el abuelo. ¿Cuesta hoy más tiempo de trabajo la cena de Nochebuena que en 2016?",
+ "titulo_alternativo": "La cena de Nochebuena en horas de trabajo: 2016 frente a hoy",
+ "pregunta": "Una madre que pone la cena este año, la abuela y el del mercado. ¿Cuánto tiempo de trabajo cuesta la cena de Nochebuena para cuatro, frente a 2016? ¿Y el turrón y los juguetes?",
  "datos": "data/clean/t15_navidad.json",
- "aprobacion_datos": "Bruno, 22-11-2026: eligió la cena de Navidad (serie «¿Cuántas horas…?»), con la tabla del sueldo al principio como en T14. Precios: lo que pagan de media los hogares (INE, EPF 2016 y 2025, último año); turrón y juguetes con el IPC del INE. Sueldo neto mediano por hora de T1 y T14",
- "formato": "La anfitriona hace la compra de Nochebuena en el mercado. Primero, el sueldo con el que se cuenta. El carnicero pasa el cordero y el marisco a minutos de trabajo; en casa, el abuelo pone el vino y el turrón. La anfitriona suma la cena; el abuelo saca el contrapunto de los juguetes. Cierra la anfitriona en la mesa con la pregunta.",
- "duracion_max_s": 85,
+ "aprobacion_datos": "Bruno, 22-11-2026: eligió la cena de Navidad (serie «¿Cuántas horas…?»). El 23-11-2026 mandó la lista de comidas típicas de Navidad por regiones: la cena lleva lo que sale en toda España y tiene precio oficial por kilo en el INE (marisco, cordero o cabrito, jamón y embutido, queso, vino); turrón y polvorones van con el IPC; los platos de cada región, en el mapa final. Tono y forma como T17 (aprobado): de calle, irónico, pocas cifras y grandes, cambio de escenario y un chiste que se repite.",
+ "formato": "El mercado (pescadería y carnicería) → la casa con el árbol → el mapa de platos de cada región. La madre que pone la cena, la abuela («en mis tiempos…», el chiste que vuelve) y el del mercado. Pregunta final: ¿qué se come en tu casa en Nochebuena?",
+ "duracion_max_s": 80,
  "personajes": {
-  "anfitriona": {"anyo": "unos 40 años, la que pone la cena este año", "voz": "viajera"},
-  "carnicero": {"anyo": "unos 45 años, con bigote y barba, carnicero del mercado", "voz": "maquinista"},
-  "abuelo": {"anyo": "unos 70 años, el que trae el vino", "voz": "padre"}
+  "madre": {
+   "anyo": "unos 45, este año pone ella la cena",
+   "voz": "medica"
+  },
+  "abuela": {
+   "anyo": "unos 75, la abuela, con mucha guasa",
+   "voz": "hostelera"
+  },
+  "tendero": {
+   "anyo": "unos 45, el del puesto del mercado (pescado y carne)",
+   "voz": "profesora"
+  }
  },
  "voz_pausas": {
   "pausa_turno_s": 0.3,
   "pausa_mismo_s": 0.3,
   "pausa_tras_dato_s": 0.45
  },
- "sin_veredicto": "El veredicto lo dice la anfitriona en el plano 11 («la cena, media hora más de trabajo que en 2016; los juguetes, más baratos») y acaba con la pregunta.",
+ "sin_veredicto": "El veredicto lo dice la madre en el plano 11 («media hora más que en 2016 por la misma cena») y acaba con la pregunta.",
  "capitulos": [
-  {"nombre": "La lista", "beats": [1, 2]},
-  {"nombre": "El mercado", "beats": [3, 4, 5]},
-  {"nombre": "En casa", "beats": [6, 7, 8]},
-  {"nombre": "Los Reyes", "beats": [9, 10]},
-  {"nombre": "Te toca", "beats": [11]}
+  {
+   "nombre": "El mercado",
+   "beats": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "nombre": "La casa",
+   "beats": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    11
+   ]
+  }
  ],
  "beats": [
   {
-   "n": 1, "quien": "anfitriona", "funcion": "gancho",
-   "voz": "¿Cuántas horas tienes que trabajar para pagar la cena de Nochebuena? Este año me toca a mí. Vamos al mercado.",
-   "pantalla": "¿Cuántas horas trabajas para la cena de Nochebuena?",
+   "n": 1,
+   "quien": "madre",
+   "funcion": "gancho",
+   "voz": "¿Cuántas horas de curro te cuesta la cena de Nochebuena? Este año la pongo yo. Qué ilusión… o no.",
+   "pantalla": "¿Cuántas horas cuesta la cena de Nochebuena?",
    "sello": null,
-   "imagen": "Un salón con el árbol, luces y la mesa a medio poner. La anfitriona tacha la lista de la compra y coge el carro."
+   "imagen": "Un mercado con guirnaldas y bombillas de Navidad. La madre llega con el carro de la compra y la abuela del brazo. Cae el sello «SOLO DATOS OFICIALES»."
   },
   {
-   "n": 2, "quien": "anfitriona", "funcion": "el sueldo con el que se cuenta",
-   "voz": "Contamos con el sueldo mediano, como siempre: 19.400 euros brutos al año en 2016 y 25.300 hoy.",
-   "pantalla": "Sueldo bruto mediano al año · 2016: 19.433 € · 2025: 25.296 €",
-   "nota": "Neto: 15.987 € y 20.424 € al año; 10,27 € y 12,98 € por hora. 2025, estimado: el último dato del INE es de 2024 (24.497 €)",
-   "sello": "CÁLCULO PROPIO · INE (Encuesta de Estructura Salarial y Encuesta Trimestral de Coste Laboral) · Eurostat (impuestos sobre el salario)",
-   "grafico": true,
-   "imagen": "La tabla del sueldo de un vistazo, como en el desayuno: bruto al año, neto al año y neto por hora, en 2016 y en 2025."
+   "n": 2,
+   "quien": "tendero",
+   "funcion": "dato: el marisco",
+   "voz": "Un kilo de marisco, guapa: 54 minutos de tu sueldo. En 2016, 52.",
+   "pantalla": "Kilo de marisco · 54 minutos de trabajo",
+   "nota": "En 2016, 52. Precio medio del año, todo tipo de marisco. Sueldo neto mediano: 12,98 € la hora",
+   "sello": "CÁLCULO PROPIO · INE (Presupuestos Familiares y Estructura Salarial)",
+   "imagen": "La pescadería: gambas, langostinos y un centollo sobre hielo. El tendero pesa el marisco; un reloj de cocina da casi una vuelta."
   },
   {
-   "n": 3, "quien": "carnicero", "funcion": "dato: cordero",
-   "voz": "¿Una pierna de cordero de kilo y medio? 132 minutos de trabajo. En 2016, 113.",
-   "pantalla": "Minutos de trabajo para pagar 1,5 kg de cordero · 2016: 113 · 2025: 132",
-   "nota": "Lo que pagan de media los hogares por el cordero y el cabrito (el INE los da juntos), con el sueldo neto mediano por hora",
-   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares y Encuesta de Estructura Salarial)",
-   "grafico": true,
-   "imagen": "El mercado: puestos con toldos, guirnaldas y bombillas. La carnicería, con su vitrina; el carnicero pesa la pierna en la báscula. Dos relojes de cocina: uno da casi dos vueltas en 2016 y algo más en 2025."
-  },
-  {
-   "n": 4, "quien": "anfitriona", "funcion": "sarcasmo",
-   "voz": "¿Más de dos horas? Ni que viniera con abrigo de visón.",
-   "pantalla": "«¿Viene con abrigo de visón?»",
+   "n": 3,
+   "quien": "abuela",
+   "funcion": "gag 1",
+   "voz": "¿Casi una hora por un kilo de gambas? En mis tiempos las pescaba tu abuelo.",
+   "pantalla": "«En mis tiempos…»",
    "sello": null,
-   "imagen": "La anfitriona mira la pierna de cordero en la báscula con los ojos muy abiertos."
+   "imagen": "La abuela, con los brazos en jarras, mira las gambas."
   },
   {
-   "n": 5, "quien": "carnicero", "funcion": "contrapunto: marisco",
-   "voz": "Pues el marisco, casi igual: 54 minutos el kilo. En 2016, 52.",
-   "pantalla": "Minutos de trabajo para pagar 1 kg de marisco fresco · 2016: 52 · 2025: 54",
-   "nota": "Media de todo el marisco fresco: el INE no separa las gambas y los langostinos",
-   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares y Encuesta de Estructura Salarial)",
-   "grafico": true,
-   "imagen": "La pescadería de al lado: hielo, gambas y langostinos. Los relojes casi empatan."
+   "n": 4,
+   "quien": "tendero",
+   "funcion": "dato: el cordero",
+   "voz": "Y la pierna de cordero: dos horas y doce minutos. En 2016, una hora cincuenta y tres.",
+   "pantalla": "Pierna de cordero · 132 minutos de trabajo",
+   "nota": "En 2016, 113. Cordero y cabrito, precio medio del año",
+   "sello": "CÁLCULO PROPIO · INE (Presupuestos Familiares y Estructura Salarial)",
+   "imagen": "La carnicería: piernas de cordero colgadas y un cochinillo en el mostrador. Dos relojes: el de hoy da dos vueltas largas."
   },
   {
-   "n": 6, "quien": "abuelo", "funcion": "dato: vino",
-   "voz": "Y el vino lo traigo yo: dos botellas, 31 minutos de trabajo. En 2016, 26.",
-   "pantalla": "Minutos de trabajo para pagar dos botellas de vino · 2016: 26 · 2025: 31",
-   "nota": "Lo que pagan de media los hogares por el vino de uva, con el sueldo neto mediano por hora",
-   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares y Encuesta de Estructura Salarial)",
-   "grafico": true,
-   "imagen": "En casa, el abuelo llega con dos botellas y las deja en la mesa, orgulloso."
-  },
-  {
-   "n": 7, "quien": "abuelo", "funcion": "dato: turrón",
-   "voz": "Y el turrón y los dulces, un 18 % más de tu tiempo que en 2016.",
-   "pantalla": "Turrón y dulces de Navidad: un 18 % más de tiempo de trabajo que en 2016",
-   "nota": "El INE no da su precio en euros: suben un 50 % y el sueldo neto por hora, un 26 % (IPC de azúcar, chocolate y confitería)",
-   "sello": "CÁLCULO PROPIO · INE (IPC y Encuesta de Estructura Salarial)",
-   "grafico": true,
-   "imagen": "Una bandeja de turrones, polvorones y mazapanes; una barra que sube más que la del sueldo."
-  },
-  {
-   "n": 8, "quien": "anfitriona", "funcion": "dato: la cena entera",
-   "voz": "Total, la cena para cuatro: 4 horas y 11 minutos de trabajo. En 2016, 3 horas y 45. Casi media hora más.",
-   "pantalla": "Tiempo de trabajo para la cena de Nochebuena para cuatro · 2016: 225 minutos · 2025: 251 minutos",
-   "nota": "3 h 45 min y 4 h 11 min: cordero, marisco, jamón y embutido, queso y vino, con las mismas cantidades en los dos años",
-   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares y Encuesta de Estructura Salarial)",
-   "grafico": true,
-   "imagen": "La anfitriona suma el tique en la mesa: un reloj grande da cuatro vueltas y un poco más; la de 2016 se queda en tres y tres cuartos."
-  },
-  {
-   "n": 9, "quien": "abuelo", "funcion": "contrapunto: juguetes",
-   "voz": "Pues los juguetes de los Reyes, al revés: un 36 % menos de tu tiempo.",
-   "pantalla": "Juguetes: un 36 % menos de tiempo de trabajo que en 2016",
-   "nota": "Sus precios bajan un 19 % y el sueldo neto por hora sube un 26 % (IPC de juegos, juguetes y aficiones)",
-   "sello": "CÁLCULO PROPIO · INE (IPC y Encuesta de Estructura Salarial)",
-   "grafico": true,
-   "imagen": "Un montón de regalos bajo el árbol; una barra que baja."
-  },
-  {
-   "n": 10, "quien": "anfitriona", "funcion": "sarcasmo",
-   "voz": "O sea, que este año cenamos juguetes.",
-   "pantalla": "«Este año cenamos juguetes»",
+   "n": 5,
+   "quien": "abuela",
+   "funcion": "gag 2",
+   "voz": "¿Dos horas por un cordero? En mis tiempos lo criábamos en el corral.",
+   "pantalla": "«En mis tiempos, en el corral»",
    "sello": null,
-   "imagen": "La anfitriona pone un coche de juguete en el plato del abuelo; el abuelo se ríe."
+   "imagen": "La abuela se ríe; el tendero se encoge de hombros."
   },
   {
-   "n": 11, "quien": "anfitriona", "funcion": "veredicto y pregunta",
-   "voz": "La cena, casi media hora más de trabajo que en 2016; los juguetes, más baratos. ¿Tú vas a recortar algo esta Nochebuena?",
-   "pantalla": "La cena de Nochebuena cuesta más horas de trabajo que en 2016. ¿Vas a recortar algo?",
+   "n": 6,
+   "quien": "madre",
+   "funcion": "dato: la cena entera",
+   "voz": "Con jamón, queso y vino, la cena para cuatro: cuatro horas y once minutos. En 2016, tres cuarenta y cinco.",
+   "pantalla": "Cena de Nochebuena para cuatro, minutos de trabajo · 2016: 225 · 2019: 228 · 2025: 251",
+   "nota": "4 h 11 min hoy; 3 h 45 min en 2016; 3 h 48 min en 2019. Mismas cantidades los tres años",
+   "sello": "CÁLCULO PROPIO · INE (Presupuestos Familiares y Estructura Salarial)",
+   "grafico": true,
+   "imagen": "Cambio de escenario: la casa, con el árbol encendido. La mesa puesta con el cordero, el marisco, el jamón, el queso y el vino; un reloj grande da cuatro vueltas y un poco más."
+  },
+  {
+   "n": 7,
+   "quien": "abuela",
+   "funcion": "ironía",
+   "voz": "Media hora más de curro para cenar lo mismo. ¿Y el turrón, qué?",
+   "pantalla": "«¿Y el turrón, qué?»",
    "sello": null,
-   "imagen": "La mesa puesta con todo: cordero, marisco, vino y turrón. La anfitriona levanta la copa y mira a cámara."
+   "imagen": "La abuela abre la caja de los turrones."
+  },
+  {
+   "n": 8,
+   "quien": "madre",
+   "funcion": "dato: dulces",
+   "voz": "Turrón, mazapán y polvorones: un 18 % más de tu tiempo.",
+   "pantalla": "Turrón y dulces · +18 % de tiempo de trabajo",
+   "nota": "Suben un 50 %; el sueldo, un 26 %",
+   "sello": "CÁLCULO PROPIO · INE (IPC y Estructura Salarial)",
+   "imagen": "Una bandeja de turrón, mazapán y polvorones que crece."
+  },
+  {
+   "n": 9,
+   "quien": "madre",
+   "funcion": "dato: juguetes",
+   "voz": "Lo único que baja: los juguetes de Reyes. Un 36 % menos.",
+   "pantalla": "Juguetes · −36 % de tiempo de trabajo",
+   "nota": "Bajan un 19 %; el sueldo sube un 26 %",
+   "sello": "CÁLCULO PROPIO · INE (IPC y Estructura Salarial)",
+   "imagen": "Debajo del árbol, regalos y juguetes que encogen de precio."
+  },
+  {
+   "n": 10,
+   "quien": "abuela",
+   "funcion": "gag 3",
+   "voz": "Pues este año cenamos juguetes. En mis tiempos, con una naranja ibas que te matabas.",
+   "pantalla": "«En mis tiempos, una naranja»",
+   "sello": null,
+   "imagen": "La abuela levanta una naranja como si fuera un trofeo."
+  },
+  {
+   "n": 11,
+   "quien": "madre",
+   "funcion": "veredicto y pregunta",
+   "voz": "Total: media hora más que en 2016 por la misma cena. ¿Y en tu casa, qué se come en Nochebuena?",
+   "pantalla": "Media hora más de trabajo que en 2016 por la misma cena. ¿Qué se come en tu casa en Nochebuena?",
+   "sello": null,
+   "imagen": "El mapa de España con los platos de cada región: centollo en Galicia, besugo en el norte, cochinillo en Segovia, cocido en Madrid, turrón en Alicante, gambas en Huelva…"
   }
  ],
- "no_dato": ["1", "1,5", "4", "3"],
+ "no_dato": [
+  "1",
+  "1,5",
+  "4",
+  "3"
+ ],
  "cifras": [
-  {"texto": "19.400", "ruta": "sueldo.bruto_anual_mediano.2016", "aprox": 19400, "tolerancia_pct": 1, "estado": "V"},
-  {"texto": "25.300", "ruta": "sueldo.bruto_anual_mediano.2025", "aprox": 25300, "tolerancia_pct": 1, "estado": "C"},
-  {"texto": "19.433", "ruta": "sueldo.bruto_anual_mediano.2016", "miles": true, "estado": "V"},
-  {"texto": "25.296", "ruta": "sueldo.bruto_anual_mediano.2025", "miles": true, "estado": "C"},
-  {"texto": "24.497", "ruta": "sueldo.bruto_anual_mediano.2024", "miles": true, "estado": "V"},
-  {"texto": "15.987", "ruta": "sueldo.neto_anual_mediano.2016", "miles": true, "estado": "C"},
-  {"texto": "20.424", "ruta": "sueldo.neto_anual_mediano.2025", "miles": true, "estado": "C"},
-  {"texto": "10,27", "ruta": "sueldo.neto_hora_mediana.2016", "decimales": 2, "estado": "C"},
-  {"texto": "12,98", "ruta": "sueldo.neto_hora_mediana.2025", "decimales": 2, "estado": "C"},
-  {"texto": "132", "ruta": "platos.cordero.minutos.2025", "decimales": 0, "estado": "C"},
-  {"texto": "113", "ruta": "platos.cordero.minutos.2016", "decimales": 0, "estado": "C"},
-  {"texto": "54", "ruta": "platos.marisco.minutos.2025", "decimales": 0, "estado": "C"},
-  {"texto": "52", "ruta": "platos.marisco.minutos.2016", "decimales": 0, "estado": "C"},
-  {"texto": "31", "ruta": "platos.vino.minutos.2025", "decimales": 0, "estado": "C"},
-  {"texto": "26", "ruta": "platos.vino.minutos.2016", "decimales": 0, "estado": "C"},
-  {"texto": "18", "ruta": "relativos.dulces.tiempo_sube_pct", "decimales": 0, "estado": "C"},
-  {"texto": "50", "ruta": "relativos.dulces.precio_sube_pct", "decimales": 0, "estado": "V"},
-  {"texto": "11", "ruta": "cena.m.2025", "decimales": 0, "estado": "C"},
-  {"texto": "45", "ruta": "cena.m.2016", "decimales": 0, "estado": "C"},
-  {"texto": "225", "ruta": "cena.minutos.2016", "decimales": 0, "estado": "C"},
-  {"texto": "251", "ruta": "cena.minutos.2025", "decimales": 0, "estado": "C"},
-  {"texto": "36", "ruta": "relativos.juguetes.tiempo_sube_pct", "escala": -1, "decimales": 0, "estado": "C"},
-  {"texto": "19", "ruta": "relativos.juguetes.precio_sube_pct", "escala": -1, "decimales": 0, "estado": "V"}
+  {
+   "texto": "54",
+   "ruta": "platos.marisco.minutos.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "52",
+   "ruta": "platos.marisco.minutos.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "12,98",
+   "ruta": "sueldo.neto_hora_mediana.2025",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "132",
+   "ruta": "platos.cordero.minutos.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "113",
+   "ruta": "platos.cordero.minutos.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "225",
+   "ruta": "cena.minutos.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "228",
+   "ruta": "cena.minutos.2019",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "251",
+   "ruta": "cena.minutos.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "11",
+   "ruta": "cena.m.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "45",
+   "ruta": "cena.m.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "18",
+   "ruta": "relativos.dulces.tiempo_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "50",
+   "ruta": "relativos.dulces.precio_sube_pct",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "26",
+   "ruta": "sueldo.mediana_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "36",
+   "ruta": "relativos.juguetes.tiempo_sube_pct",
+   "escala": -1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "19",
+   "ruta": "relativos.juguetes.precio_sube_pct",
+   "escala": -1,
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "48",
+   "ruta": "cena.m.2019",
+   "decimales": 0,
+   "estado": "C"
+  }
  ],
  "comprobaciones": [
-  "Sueldo (C): el de T14 (INE, Encuesta Anual de Estructura Salarial; 2025 = EAES 2024 × ETCL; neto con la relación neto / bruto de Eurostat de T1). El «26» de la subida del sueldo neto por hora (+26,4 %) coincide con el de los minutos del vino en 2016 (26,0).",
   "Cena para cuatro (C), mismas cantidades en los dos años: 1,5 kg de cordero, 1 kg de marisco fresco, 300 g de jamón y embutido, 300 g de queso y 1,5 l de vino. Valor unitario de la EPF (INE, lo que pagan de media los hogares): ovino y caprino 12,90 → 19,11 €/kg; marisco fresco o refrigerado 8,89 → 11,74; charcutería 9,81 → 12,79; queso 9,66 → 11,15; vino de uva 2,97 → 4,42 €/l. Total 38,54 € en 2016 y 54,22 € en 2025: 225 y 251 minutos (3 h 45 min y 4 h 11 min), +26 minutos (+11,3 %). En 2019, 3 h 48 min.",
-  "Turrón y dulces (C): IPC base 2021, rúbrica «Azúcar, confitura, miel, chocolate y confitería», media anual 2016 → 2025: +49,7 %; frente al sueldo neto por hora (+26,4 %), un 18,5 % más de tiempo. Juguetes: rúbrica «Juegos, juguetes y aficiones», −18,9 %: un 35,9 % menos de tiempo."
+  "Turrón y dulces (C): IPC base 2021, rúbrica «Azúcar, confitura, miel, chocolate y confitería», media anual 2016 → 2025: +49,7 %; frente al sueldo neto por hora (+26,4 %), un 18,5 % más de tiempo. Juguetes: rúbrica «Juegos, juguetes y aficiones», −18,9 %: un 35,9 % menos de tiempo.",
+  "Sueldo (C): neto mediano por hora de T14 (INE, Encuesta Anual de Estructura Salarial; 2025 = EAES 2024 × ETCL; neto con la relación neto / bruto de Eurostat): 10,27 € en 2016 y 12,98 € en 2025 (+26,4 %).",
+  "Precios del año entero: la EPF da lo que pagan de media los hogares en todo el año, no en diciembre. «Marisco» es todo el marisco fresco o refrigerado (gambas, langostinos, mejillones, almejas…); «cordero» es ovino y caprino (cordero y cabrito).",
+  "Platos por regiones (mapa final): la lista de comidas típicas de Navidad que mandó el responsable del canal; es una imagen, sin cifras.",
+  "Redondeos hablados: «dos horas y doce minutos» (132), «una hora y cincuenta y tres» (113), «cuatro horas y once minutos» (251), «tres horas cuarenta y cinco» (225), «media hora más» (+26 minutos), «casi una hora» (54 minutos)."
  ],
  "cierre": {
-  "veredicto": "empeora frente a 2016: la cena de Nochebuena para cuatro pasa de 3 h 45 min a 4 h 11 min de trabajo (+26 min), sobre todo por el cordero (113 → 132 min) y el vino (26 → 31 min), y el turrón cuesta un 18 % más de tiempo; el marisco y el jamón, casi igual, y el queso, algo menos. Los juguetes, al revés: un 36 % menos de tiempo",
-  "porque": "Precios medios que pagan los hogares (INE, Encuesta de Presupuestos Familiares), IPC del INE y sueldo neto mediano por hora (INE).",
-  "pregunta": "¿Tú vas a recortar algo esta Nochebuena?"
+  "veredicto": "empeora frente a 2016 y 2019: la cena de Nochebuena para cuatro pasa de 225 y 228 minutos de trabajo a 251 (+26 minutos); el cordero, de 113 a 132; el marisco, casi igual (52 → 54); turrón y dulces, un 18 % más de tiempo. Lo único que mejora: los juguetes, un 36 % menos de tiempo",
+  "porque": "Precios medios que pagan los hogares e IPC (INE) y sueldo neto mediano por hora (INE).",
+  "pregunta": "¿Qué se come en tu casa en Nochebuena?"
  },
- "aprobacion_guion": "Pendiente de Bruno"
+ "aprobacion_guion": "Pendiente de Bruno (v2, 23-11-2026, con su lista de platos)"
 }
