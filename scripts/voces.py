@@ -363,10 +363,24 @@ def frases_de(texto):
     return [x for x in re.split(r"(?<=[.?!…])\s+", texto) if x.strip()]
 
 
+def viveza(a: np.ndarray) -> float:
+    """Entonación de una toma: desviación típica del tono (en semitonos) en los tramos con voz.
+    Cuanto más alta, menos monótona suena (Bruno, 23-11-2026: «voces sintéticas, monótonas y sin personalidad»)."""
+    import librosa
+    f0, sonora, _ = librosa.pyin(a.astype(np.float32), fmin=65, fmax=420, sr=SR, frame_length=1024, hop_length=240)
+    f0 = f0[sonora & np.isfinite(f0)]
+    if len(f0) < 10:
+        return 0.0
+    st = 12 * np.log2(f0 / np.median(f0))
+    return float(np.std(st[np.abs(st) < 12]))   # fuera los saltos de octava (errores del detector)
+
+
 def generar_linea(perfil, cfg, texto, semilla_base, asr, registro):
     """Mejor toma de una línea: (audio, evaluación, semilla)."""
-    intentos = cfg.get("intentos", 5) if perfil["motor"] == "qwen-clon" else 1
-    mejor, partir = None, False
+    # «viveza_tomas» (opcional, por guion): se buscan hasta N tomas buenas y se queda la de más entonación.
+    n_viv = cfg.get("viveza_tomas", 1) if perfil["motor"] == "qwen-clon" else 1
+    intentos = (cfg.get("intentos", 5) + n_viv - 1) if perfil["motor"] == "qwen-clon" else 1
+    mejor, partir, buenas = None, False, []
     for k in range(intentos):
         semilla = semilla_base + k
         if perfil["motor"] == "qwen-clon" and partir:
@@ -397,13 +411,22 @@ def generar_linea(perfil, cfg, texto, semilla_base, asr, registro):
                 ev["problemas"].append(f"voz distinta ({pv:.2f})")
                 ev["ok"] = False
             ev["nota"] = round(ev["nota"] + 0.5 * (pv - 0.85), 4)
+        if ev["ok"] and n_viv > 1:
+            ev["viveza"] = round(viveza(a), 2)
         registro.append(f"    toma {k + 1} (semilla {semilla}): {'BUENA' if ev['ok'] else 'mala'} · {ev['parecido']} · voz {ev.get('voz', '-')} · "
-                        f"{len(a) / SR:.1f} s · {ev['ritmo']} l/s · «{ev['oido']}»" + (f" · {'; '.join(ev['problemas'])}" if ev["problemas"] else ""))
+                        f"{len(a) / SR:.1f} s · {ev['ritmo']} l/s" + (f" · viveza {ev['viveza']} st" if "viveza" in ev else "") + f" · «{ev['oido']}»"
+                        + (f" · {'; '.join(ev['problemas'])}" if ev["problemas"] else ""))
         print(registro[-1], flush=True)
         if mejor is None or (ev["ok"], ev["nota"]) > (mejor[1]["ok"], mejor[1]["nota"]):
             mejor = (a, ev, semilla)
         if ev["ok"]:
-            break
+            buenas.append((a, ev, semilla))
+            if len(buenas) >= n_viv:
+                break
+    if len(buenas) > 1:
+        mejor = max(buenas, key=lambda x: x[1]["viveza"])
+        registro.append(f"    elegida la toma con más entonación: semilla {mejor[2]} ({mejor[1]['viveza']} st)")
+        print(registro[-1], flush=True)
         if ev["problemas"] and all("sin pausa" in x for x in ev["problemas"]):
             partir = True
     return mejor
@@ -411,6 +434,8 @@ def generar_linea(perfil, cfg, texto, semilla_base, asr, registro):
 
 def huella(perfil, texto, cfg):
     claves = {k: cfg.get(k) for k in ("intentos", "hueco_max_s", "hueco_queda_s", "velocidad_base", "pausa_frase_s", "pausa_duda_s")}
+    if cfg.get("viveza_tomas", 1) > 1:   # solo si el guion lo pide: así no cambia la huella de los vídeos anteriores
+        claves["viveza_tomas"] = cfg["viveza_tomas"]
     return hashlib.sha1(json.dumps([perfil, texto, claves], sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:16]
 
 

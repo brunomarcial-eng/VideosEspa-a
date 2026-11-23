@@ -93,20 +93,32 @@ const icono = {
   turron: () => `<rect x="-24" y="-12" width="48" height="24" rx="4" fill="#F2DFA7"/>${[-14, 0, 14].map((x) => `<ellipse cx="${x}" cy="0" rx="5" ry="4" fill="#C8902E"/>`).join("")}`,
   gamba: () => gamba(0, 10, 1.1),
   ave: () => `<path d="M-24 8 Q-26 -18 4 -18 Q24 -16 24 4 Q18 14 -4 14 Z" fill="#C98A4B"/><rect x="18" y="-4" width="14" height="6" rx="3" fill="#F4F1EA"/>`,
+  bacalao: () => `<path d="M-30 -8 Q-4 -20 26 -14 L34 0 L26 14 Q-4 20 -30 8 Q-36 0 -30 -8 Z" fill="#EFE8D8" stroke="#9AA6AE" stroke-width="3"/><path d="M-26 -8 Q-2 -18 24 -12" fill="none" stroke="#6F7C86" stroke-width="5" stroke-linecap="round"/>`,
   dulce: () => `<circle cx="-10" r="12" fill="#F4EEDD" stroke="#E2D6B8" stroke-width="3"/><circle cx="12" cy="2" r="12" fill="#F4EEDD" stroke="#E2D6B8" stroke-width="3"/>`,
 };
+// v3 (Bruno, 23-11-2026): solo platos cuyo ingrediente principal tiene una categoría oficial de precio (INE); los que no la
+// tienen (cocido, escudella, perdiz) se cambian por otro de su lista de la misma región. El último campo es la clave de
+// la subida (datos de calcular_t15.py, «mapa_subida_precio_pct»). Posiciones aproximadas, colocadas para que nada se pise.
 export const PLATOS = [
-  ["GALICIA", "Centollo", -7.9, 42.8, "cangrejo"], ["NORTE", "Besugo", -3.6, 43.2, "pez"], ["SEGOVIA", "Cochinillo", -4.9, 41.25, "cerdito"],
-  ["CASTILLA", "Lechazo", -5.6, 42.2, "asado"], ["ARAGÓN", "Ternasco", -0.9, 41.65, "asado"], ["CATALUÑA", "Escudella", 1.6, 41.8, "olla"],
-  ["MADRID", "Cocido", -3.3, 40.25, "olla"], ["MANCHA", "Perdiz", -3.0, 39.1, "ave"], ["ALICANTE", "Turrón", -0.5, 38.6, "turron"],
-  ["HUELVA", "Gambas", -6.9, 37.4, "gamba"], ["ESTEPA", "Polvorones", -4.9, 37.3, "dulce"], ["BALEARES", "Escaldums", 2.9, 39.6, "ave"],
+  ["GALICIA", "Centollo", -8.0, 42.75, "cangrejo", "marisco"], ["PAÍS VASCO", "Bacalao", -2.2, 43.2, "bacalao", "bacalao"],
+  ["CASTILLA Y LEÓN", "Lechazo", -5.8, 42.25, "asado", "cordero"], ["SEGOVIA", "Cochinillo", -3.4, 41.3, "cerdito", "cerdo"],
+  ["ARAGÓN", "Ternasco", -0.8, 41.35, "asado", "cordero"], ["CATALUÑA", "Pularda", 1.75, 41.95, "ave", "ave"],
+  ["MADRID", "Besugo", -3.75, 39.42, "pez", "pescado"], ["EXTREMADURA", "Caldereta", -6.3, 39.25, "olla", "cordero"],
+  ["ALICANTE", "Turrón", -0.6, 38.55, "turron", "dulces"], ["HUELVA", "Gambas", -6.95, 37.4, "gamba", "marisco"],
+  ["ESTEPA", "Polvorones", -4.3, 37.35, "dulce", "dulces"], ["BALEARES", "Escaldums", 2.95, 39.6, "ave", "ave"],
 ];
-// Mapa grande con los platos: «<id>-p<i>» es cada plato (aparecen uno a uno en la escena). Origen: centro del mapa.
-export function mapaPlatos(id, s = 1.15) {
+// Mapa grande con los platos: «<id>-p<i>» es cada plato y «<id>-q<i>» la pastilla roja con su subida (aparecen por separado
+// en la escena). subidas: {clave: porcentaje entero}; sin ellas, el mapa de v1 (solo platos). nota: líneas de texto en el mar,
+// abajo a la derecha (qué es la cifra). Origen: centro del mapa.
+export function mapaPlatos(id, s = 1.15, subidas = null, nota = null) {
   const w = MAPA.ancho * s, h = MAPA.alto * s;
+  const anchoNombre = (t) => Math.max(t.length * 13.2 + 18, 96);
   return `<g id="${id}"><rect x="${-w / 2 - 30}" y="${-h / 2 - 30}" width="${w + 60}" height="${h + 60}" rx="24" fill="#DCEAF0"/>
     <g transform="translate(${-w / 2} ${-h / 2}) scale(${s})"><path d="${MAPA.peninsula}" fill="${C.ocreClaro}" stroke="${C.tinta}" stroke-width="3" stroke-linejoin="round"/>
-    ${PLATOS.map(([reg, plato, lon, lat, ic], i) => { const [x, y] = xy(lon, lat); return `<g id="${id}-p${i}" transform="translate(${x.toFixed(0)} ${y.toFixed(0)})">
-      <circle r="30" fill="#FFFDF8" stroke="${C.tinta}" stroke-width="2"/><g transform="scale(.9)">${icono[ic]()}</g>
-      <rect x="-56" y="30" width="112" height="28" rx="10" fill="#FFFDF8" opacity=".95"/>${txt(0, 51, plato, 20, C.tinta)}</g>`; }).join("")}</g></g>`;
+    ${PLATOS.map(([reg, plato, lon, lat, ic, clave], i) => { const [x, y] = xy(lon, lat), an = anchoNombre(plato); return `<g transform="translate(${x.toFixed(0)} ${y.toFixed(0)})">
+      <g id="${id}-p${i}"><circle r="30" fill="#FFFDF8" stroke="${C.tinta}" stroke-width="2"/><g transform="scale(.9)">${icono[ic]()}</g>
+      <rect x="${(-an / 2).toFixed(0)}" y="32" width="${an.toFixed(0)}" height="30" rx="10" fill="#FFFDF8" opacity=".96"/>${txt(0, 54, plato, 22, C.tinta)}</g>
+      ${subidas ? `<g id="${id}-q${i}"><rect x="-50" y="65" width="100" height="34" rx="17" fill="#B3261E"/>${txt(0, 91, `+${subidas[clave]}\u00A0%`, 25, "#FFFFFF")}</g>` : ""}</g>`; }).join("")}
+    ${nota ? `<g id="${id}-nota"><rect x="588" y="452" width="204" height="${nota.length * 24 + 16}" rx="12" fill="#FFFDF8" opacity=".9"/>${nota.map((l, i) => `<text x="602" y="${478 + i * 24}" font-family="Cap" font-weight="${i === nota.length - 1 ? 800 : 600}" font-size="18" fill="${i === nota.length - 1 ? "#B3261E" : C.tinta}">${l}</text>`).join("")}</g>` : ""}</g></g>`;
 }
+

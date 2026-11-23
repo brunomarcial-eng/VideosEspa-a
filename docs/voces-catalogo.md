@@ -8,16 +8,18 @@ Todas son Qwen3-TTS en local (Apache-2.0), gratis y en español de España. Cada
 
 | Clave (`voz`) | Sexo y edad que aparenta | Cómo suena | Le van papeles de… | Usada en |
 |---|---|---|---|---|
-| `hombre` | hombre, unos 40 | clara y neutra, de narrador; timbre de una grabación CC0 (Piper/Nabu Casa) | narrador, padre de familia, vecino, cliente, trabajador | T1, T2 (narrador), T9 (el que vuelve), T12 (padre) |
-| `padre` | hombre, unos 60 | profunda y pausada, seria, de padre de los de antes; algo sarcástica | padre o abuelo, jubilado, paciente mayor, tendero veterano | T3-T8 (padre), T11 (paciente) |
-| `hijo` | hombre, unos 30 | joven y natural | hijo, joven trabajador, enfermero, autónomo que empieza, inquilino | T3-T8 (hijo), T9 (el que se quedó), T10 (el nuevo), T11 (enfermero) |
-| `profesora` (voz de hombre) | hombre, unos 45 | clara, cercana y firme | profesor, funcionario, técnico, médico, jefe | T12 (tutor) |
-| `comandante` | hombre, unos 55 | grave, tranquila y segura, de anuncio | piloto, directivo, juez de paz, presentador de un aviso, abuelo sereno | T13 (comandante) |
-| `maquinista` | hombre, unos 45 | llana y campechana, de trabajador de toda la vida | maquinista, camionero, albañil, mecánico, carnicero, taxista | T13 (maquinista) |
-| `alumno` | chico, 15 | adolescente, algo grave para su edad, tímido y sincero | alumno, nieto, hijo adolescente | T12 (alumno) |
-| `viajera` | mujer, unos 35 | natural y cercana, con chispa irónica | viajera, inquilina, madre joven, dependienta, autónoma, opositora | T13 (viajera) |
-| `medica` | mujer, unos 45 | firme, directa y algo grave, con autoridad | médica, profesora, abogada, jefa, madre | T11 (médica) |
-| `hostelera` | mujer, unos 62 | grave y pausada, de veterana que lo ha visto todo; cariñosa y sin pelos en la lengua | hostelera, abuela, jubilada, vecina mayor, comerciante | T10 (hostelera veterana) |
+| `hombre` | hombre, unos 40 | clara y neutra, de narrador; timbre de una grabación CC0 (Piper/Nabu Casa) | narrador, padre de familia, vecino, cliente, trabajador | T1 (narrador), T2 (narrador), T9 (vuelve), T12 (padre) |
+| `padre` | hombre, unos 60 | profunda y pausada, seria, de padre de los de antes; algo sarcástica | padre o abuelo, jubilado, paciente mayor, tendero veterano | T3 (padre), T4 (padre), T5 (padre), T6 (padre), T7 (padre), T8 (padre), T11 (paciente), T15 (abuelo), T18 (luis) |
+| `hijo` | hombre, unos 30 | joven y natural | hijo, joven trabajador, enfermero, autónomo que empieza, inquilino | T3 (hijo), T4 (hijo), T5 (hijo), T6 (hijo), T7 (hijo), T8 (hijo), T9 (quedo), T10 (nuevo), T11 (enfermero), T17 (hijo) |
+| `profesora` (voz de hombre) | hombre, unos 45 | clara, cercana y firme | profesor, funcionario, técnico, médico, jefe | T12 (profesora), T15 (tendero), T16 (vendedor) |
+| `comandante` | hombre, unos 55 | grave, tranquila y segura, de anuncio | piloto, directivo, juez de paz, presentador de un aviso, abuelo sereno | T13 (comandante), T17 (padre) |
+| `maquinista` | hombre, unos 45 | llana y campechana, de trabajador de toda la vida | maquinista, camionero, albañil, mecánico, carnicero, taxista | T13 (maquinista), T18 (javi) |
+| `alumno` | chico, 15 | adolescente, algo grave para su edad, tímido y sincero | alumno, nieto, hijo adolescente | T12 (alumno), T14 (hijo) |
+| `viajera` | mujer, unos 35 | natural y cercana, con chispa irónica | viajera, inquilina, madre joven, dependienta, autónoma, opositora | T13 (viajera), T16 (clienta) |
+| `medica` | mujer, unos 45 | firme, directa y algo grave, con autoridad | médica, profesora, abogada, jefa, madre | T11 (medica), T14 (madre), T15 (madre) |
+| `hostelera` | mujer, unos 62 | grave y pausada, de veterana que lo ha visto todo; cariñosa y sin pelos en la lengua | hostelera, abuela, jubilada, vecina mayor, comerciante | T10 (veterana), T14 (tendera) |
+
+**Ojo con la edad:** `hostelera` no vale para una abuela de unos 75: a Bruno le sonó demasiado joven (T15, 23-11-2026). En T15 la abuela pasó a ser un abuelo con `padre` (con `edad.abuelo` un 3 % más grave y más lento).
 
 **Fuera del reparto:** `secundario` (la voz 5 del casting de T2, con un acento que a Bruno le sonó «ruso»: solo si él la pide para algo puntual) y `piper_hombre` / `piper_mujer` (motores de reserva, no elegidos de oído).
 
@@ -30,3 +32,4 @@ Todas son Qwen3-TTS en local (Apache-2.0), gratis y en español de España. Cada
 6. **Ajuste fino sin voces nuevas:** si hace falta que una voz suene un poco más mayor o más joven, se toca `edad.<personaje>` en `diseno/voces.json` (`tono` ±3 %, `velocidad` ±3 %). Nada más.
 7. **Si un papel no encaja con ninguna voz** (una niña pequeña, por ejemplo), se reescribe el papel o lo dice otro personaje; no se hace casting.
 8. Se apunta en esta tabla («Usada en») cada vídeo nuevo.
+9. **Entonación (Bruno, 23-11-2026: voces «sintéticas, monótonas y sin personalidad»):** el texto se escribe con la skill `clon-bruno` (muletillas, ironía, preguntas y exclamaciones), y en `voz_pausas` del guion `"viveza_tomas": 3` hace que `scripts/voces.py` busque tres tomas buenas de cada línea y se quede con la de más variación de tono (desviación del tono en semitonos, en `voz-registro.txt`). Cada línea puede llevar además `"actuacion": {"velocidad": 1.03}` (±3 %) para que no todas vayan al mismo ritmo.

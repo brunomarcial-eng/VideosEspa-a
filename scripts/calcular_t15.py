@@ -44,6 +44,19 @@ def ipc(rubrica):
     raise SystemExit(f"IPC sin la rúbrica «{rubrica}»")
 
 
+# Mapa de platos por región (lista de Bruno, 23-11-2026): subida del precio de su ingrediente principal, 2016 → 2025.
+# Solo platos con una categoría oficial clara: EPF (valor unitario) o, para los dulces, el IPC de confitería.
+MAPA = {
+    "cordero": ("epf", "Carne de ovino y caprino"),            # lechazo, ternasco, cordero
+    "marisco": ("epf", "Mariscos frescos o refrigerados"),     # centollo, gambas
+    "cerdo": ("epf", "Carne de porcino"),                      # cochinillo
+    "ave": ("epf", "Carne de ave"),                            # pularda, capón, escaldums (pavo o gallina)
+    "pescado": ("epf", "Pescados frescos o refrigerados"),     # besugo
+    "bacalao": ("epf", "Pescados y mariscos secos, salados, en salmuera o ahumados"),
+    "dulces": ("ipc", "Azúcar, confitura, miel, chocolate y confitería"),   # turrón, mazapán, polvorones
+}
+
+
 def main():
     pct = lambda a, b: round(100 * (b / a - 1), 1)
     t14 = json.loads((CLEAN / "t14_desayuno.json").read_text(encoding="utf-8"))
@@ -85,6 +98,11 @@ def main():
         "orden_por_subida_en_minutos": sorted(platos, key=lambda k: -platos[k]["minutos_sube_pct"]),
     }
     CLEAN.mkdir(parents=True, exist_ok=True)
+    out["mapa_subida_precio_pct"] = {}
+    for k, (fuente, nombre) in MAPA.items():
+        serie = vu(nombre) if fuente == "epf" else ipc(nombre)
+        out["mapa_subida_precio_pct"][k] = {"fuente": "INE, Encuesta de Presupuestos Familiares (valor unitario)" if fuente == "epf" else "INE, IPC (media anual)",
+                                            "categoria": nombre, "2016": serie[2016], "2025": serie[2025], "sube_pct": pct(serie[2016], serie[2025])}
     (CLEAN / "t15_navidad.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"cena para cuatro: {cena['eur']} € · {cena['horas_y_minutos']} ({cena['minutos_sube_pct']:+} % de tiempo, +{cena['minutos_mas']} min)")
     for k in out["orden_por_subida_en_minutos"]:

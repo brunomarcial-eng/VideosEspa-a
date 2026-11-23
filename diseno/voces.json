@@ -177,6 +177,10 @@
   "maquinista": {
    "tono": 1.0,
    "velocidad": 1.0
+  },
+  "abuelo": {
+   "tono": 0.97,
+   "velocidad": 0.97
   }
  },
  "velocidad_base": 0.95,
