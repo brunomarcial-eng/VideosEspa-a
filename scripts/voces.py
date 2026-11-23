@@ -78,7 +78,14 @@ def decir_numero(txt: str) -> str:
     return s
 
 
+# Siglas y nombres que se leen letra a letra, en español (Bruno, 23-11-2026: «BMW» es «be eme uve», la W como V).
+# Va antes de pasar los números a palabras: «X1» es «equis uno». Se aplica también a lo que oye Whisper (letras()).
+PRONUNCIA = [(r"\bBMW\b", "be eme uve"), (r"\bX1\b", "equis uno"), (r"\bMG\b", "eme ge"), (r"\bZS\b", "zeta ese")]
+
+
 def normalizar(texto: str) -> str:
+    for patron, dicho in PRONUNCIA:
+        texto = re.sub(patron, dicho, texto)
     texto = re.sub(r"\b(\d{1,3})\.(\d{3})\b", r"\1\2", texto)   # 210.000 → 210000 (punto de miles)
     texto = re.sub(r"(\d+(?:,\d+)?)\s*%", lambda m: decir_numero(m.group(1)) + " por ciento", texto)
     texto = re.sub(r"(\d+(?:,\d+)?)\s*€", lambda m: decir_numero(m.group(1)) + " euros", texto)

@@ -65,7 +65,7 @@
    "voz": "¿Sabes qué coche es el que más se compra en España? El más barato, tío.",
    "pantalla": "¿Cuál es el coche más vendido en España?",
    "sello": null,
-   "imagen": "Bar de barrio. Javi llega con dos cañas. Cae el sello «SOLO DATOS OFICIALES»."
+   "imagen": "Bar de barrio. Javi llega a la mesa alta, con dos cañas encima. Cae el sello «SOLO DATOS OFICIALES»."
   },
   {
    "n": 2,
@@ -104,7 +104,7 @@
    "voz": "Hombre, pues barato, ¿no?",
    "pantalla": "«Pues barato, ¿no?»",
    "sello": null,
-   "imagen": "Luis se encoge de hombros, caña en mano."
+   "imagen": "Luis se encoge de hombros junto a la mesa, con las cañas encima."
   },
   {
    "n": 6,
@@ -123,7 +123,7 @@
    "voz": "¿Y en Alemania, listo?",
    "pantalla": "«¿Y en Alemania?»",
    "sello": null,
-   "imagen": "Luis señala con la caña un mapa de Europa en la pizarra del bar."
+   "imagen": "Luis pregunta; aparece la bandera de Alemania."
   },
   {
    "n": 8,
@@ -164,7 +164,7 @@
    "voz": "O sea, que con lo que aquí pagas un coche normal, allí se compran un BMW. ¿Vamos justos o somos más apañados?",
    "pantalla": "Peor que en 2016 y que en Alemania; algo mejor que en 2007. ¿Vamos justos o somos más apañados?",
    "sello": null,
-   "imagen": "Los dos brindan; Luis mira a cámara."
+   "imagen": "Luis levanta los brazos y mira a cámara."
   }
  ],
  "no_dato": [

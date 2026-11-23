@@ -8,7 +8,7 @@
 
 import { C, persona, tarjeta, selloOficial } from "../../diseno/limpio.mjs";
 import { bandera } from "../../diseno/barrio.mjs";
-import { ambientes } from "../../diseno/sueno.mjs";
+import { ambientes, cana } from "../../diseno/sueno.mjs";
 import { coche } from "../../diseno/transporte.mjs";
 import { DECORADOS_T18, podioMarcas, placa, banderaDE, banderaES, balanza, CANA_MANO, mesaAlta } from "../../diseno/barcunados.mjs";
 import { etiqueta, calendario, hoja } from "../../diseno/carnet.mjs";
@@ -30,7 +30,8 @@ const LUIS = { pelo: "corto", canas: true, barba: false, colorPelo: "#5A4A3E", r
 const JAVI = { pelo: "corto", canas: false, barba: false, colorPelo: "#241A14", ropa: ["#C77B5B", "#A86347"], piel: "#D9A77E", piel2: "#C4916A", volumen: true };
 const QUIEN = { l: LUIS, j: JAVI };
 const gente = (n, quien, manos = {}) => quien.split("").map((k) => persona(`${n}-${k}`, "hoy", { ...QUIEN[k], mano: manos[k] ? `<g id="${n}-${k}-mano">${manos[k]}</g>` : undefined })).join("");
-const cunados = (n) => gente(n, "lj", { l: CANA_MANO, j: CANA_MANO });
+// Bruno, 23-11-2026: las cañas van en la mesa, no pegadas a la mano.
+const cunados = (n) => gente(n, "lj");
 
 // ------------------------------------------------------------------ piezas
 const ANTES_T = "#8A6316", HOY = "#B3261E", GRIS19 = "#6B7480";
@@ -40,7 +41,7 @@ const miles = (v) => String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ".")
 const es = (v, d = 1) => v.toFixed(d).replace(".", ",");
 const vs = (n, vals, labs, tam = 92) => `<div class="vs">${vals.map((v, i) => `<div class="col"><div class="v ${i ? "t-hoy" : "t-pasado"}" id="c${n}-${"ab"[i]}" style="font-size:${tam}px">${v}</div><div class="n">${labs[i]}</div></div>`).join("")}</div>`;
 const cita = (n, quien, html) => tarjeta(n, quien, `<div class="tit" style="font-size:60px">${html}</div>`, { tono: "hoy" });
-const mesa = `<g transform="translate(540 1440) scale(.9)">${mesaAlta("mesa")}</g>`;
+const mesa = `<g transform="translate(540 1440) scale(.9)">${mesaAlta("mesa")}<g transform="translate(-55 -326)">${cana("mesa-c0", 0.95)}</g><g transform="translate(60 -330)">${cana("mesa-c1", 0.95)}</g></g>`;
 const P16 = [{ marca: "SEAT", modelo: "LEÓN", col: "#C8902E", coche: "#5B6470", s: 0.5 }, { marca: "SEAT", modelo: "IBIZA", col: "#C8902E", coche: "#E0B04A", s: 0.44 }, { marca: "VOLKSWAGEN", modelo: "GOLF", col: "#5B6470", coche: "#9AA6AE", s: 0.5 }];
 const P25 = [{ marca: "DACIA", modelo: "SANDERO", col: "#5E7F5A", coche: "#C9A0C2", s: 0.42 }, { marca: "RENAULT", modelo: "CLIO", col: "#D9A23B", coche: "#3E8E8A", s: 0.42 }, { marca: "MG", modelo: "ZS", col: "#8E5B4A", coche: "#D9A23B", s: 0.46 }];
 // Calendario con banderita y número grande debajo (escenas 6, 8 y 10).
@@ -62,8 +63,8 @@ export function escenas(D) {
         marca("m1", t, c["c1-barato"]);
         selloAnim("s1-sello", t, c["c1-sello"], 300, 760, { s: 0.8, r: -9 });
         const w = ruta(t, [[0.1, 1250], [1.0, 880]]);
-        persona("s1-j", t, { x: w.x, y: 1440, s: 0.8, anda: w.anda, mira: -1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "sujeta"], [c["c1-barato"] - 0.2, "senala"]], espejo: true, fase: 2 });
-        persona("s1-l", t, { x: 200, y: 1440, s: 0.8, mira: 1, vivo: true, boca: [[0, "sonrisa"], [c["c1-barato"], "o"]], ojos: [[0, "normal"], [c["c1-barato"], "grandes"]], brazo: [[0, "sujeta"]], fase: 1 });
+        persona("s1-j", t, { x: w.x, y: 1440, s: 0.8, anda: w.anda, mira: -1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c1-barato"] - 0.2, "senala"]], espejo: true, fase: 2 });
+        persona("s1-l", t, { x: 200, y: 1440, s: 0.8, mira: 1, vivo: true, boca: [[0, "sonrisa"], [c["c1-barato"], "o"]], ojos: [[0, "normal"], [c["c1-barato"], "grandes"]], brazo: [[0, "abajo"]], fase: 1 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c1-barato"]]); } },
 
@@ -76,7 +77,7 @@ export function escenas(D) {
         ambiente("barBarrio", null, t, 0);
         vidaFondo("bb", t, { lamparas: 3, gente: 2, capa: "barBarrio", y: 1080, s: 0.42 });
         T("bb-c0", 600, 870, { s: 1 }); T("bb-camion", 1400, 880, { s: 1 });
-        const tt = [c["c2-leon"] - 0.1, c["c2-leon"] + 0.25, c["c2-leon"] + 0.5];
+        const tt = [c["c2-leon"] - 0.15, c["c2-2016"], c["c2-2016"] + 0.3];
         for (let i = 0; i < 3; i++) { const k = (t - tt[i]) / 0.4; if (k < 0) ver(`s2-po-k${i}`, false); else T(`s2-po-k${i}`, 0, -300 * Math.max(0, 1 - k) ** 2, { s: 1, op: clamp(k * 3) }); }
         persona("s2-l", t, { x: 110, y: 1440, s: 0.74, mira: 1, vivo: true, charla: e, boca: habla(t, e, "grande"), brazo: [[0, "abajo"], [c["c2-anda"], "arriba"], [c["c2-leon"], "abajo"]], fase: 1 });
         persona("s2-j", t, { x: 975, y: 1440, s: 0.74, mira: -1, vivo: true, boca: [[0, "sonrisa"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
@@ -129,8 +130,8 @@ export function escenas(D) {
         vidaFondo("bb", t, { lamparas: 3, gente: 2, capa: "barBarrio", y: 1080, s: 0.42 });
         T("bb-c0", 600, 870, { s: 1 }); T("bb-camion", 1400, 880, { s: 1 });
         marca("m5", t, c["c5-barato"]);
-        persona("s5-l", t, { x: 210, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "sujeta"], [c["c5-barato"] - 0.2, "hombros"]], incl: [[0, 0], [c["c5-barato"], -6]], fase: 1 });
-        persona("s5-j", t, { x: 900, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "sujeta"]], espejo: true, fase: 2 });
+        persona("s5-l", t, { x: 210, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c5-barato"] - 0.2, "hombros"]], incl: [[0, 0], [c["c5-barato"], -6]], fase: 1 });
+        persona("s5-j", t, { x: 900, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c5-barato"]]); } },
 
@@ -165,8 +166,8 @@ export function escenas(D) {
         T("bb-c0", 600, 870, { s: 1 }); T("bb-camion", 1400, 880, { s: 1 });
         marca("m7", t, c["c7-alemania"]);
         pop("s7-de", t, c["c7-alemania"] - 0.1, 540, 960, { s: 1, r: -4 });
-        persona("s7-l", t, { x: 210, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "sujeta"], [c["c7-alemania"] - 0.2, "senala"]], fase: 1 });
-        persona("s7-j", t, { x: 900, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c7-listo"], "sonrisa"]], brazo: [[0, "sujeta"]], espejo: true, fase: 2 });
+        persona("s7-l", t, { x: 210, y: 1440, s: 0.8, mira: 1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c7-alemania"] - 0.2, "senala"]], fase: 1 });
+        persona("s7-j", t, { x: 900, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "seria"], [c["c7-listo"], "sonrisa"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c7-alemania"]]); } },
 
@@ -244,8 +245,8 @@ export function escenas(D) {
         T("bb-c0", 600, 870, { s: 1 }); T("bb-camion", 1400, 880, { s: 1 });
         marca("m11", t, c["c11-justos"]); sube("c11-sub", t, c["c11-apanados"]);
         persona("s11-l", t, { x: 230, y: 1440, s: 0.82, mira: [[0, 1], [c["c11-vamos"], 0]], vivo: true, charla: e, boca: habla(t, e, "sonrisa"),
-          brazo: [[0, "sujeta"], [c["c11-bmw"], "arriba"], [c["c11-vamos"], "senala"]], fase: 1 });
-        persona("s11-j", t, { x: 900, y: 1440, s: 0.8, mira: [[0, -1], [c["c11-vamos"], 0]], vivo: true, boca: [[0, "sonrisa"]], brazo: [[0, "sujeta"], [c["c11-bmw"], "arriba"], [c["c11-vamos"], "sujeta"]], espejo: true, fase: 2 });
+          brazo: [[0, "abajo"], [c["c11-bmw"], "arriba"], [c["c11-vamos"], "senala"]], fase: 1 });
+        persona("s11-j", t, { x: 900, y: 1440, s: 0.8, mira: [[0, -1], [c["c11-vamos"], 0]], vivo: true, boca: [[0, "sonrisa"]], brazo: [[0, "abajo"], [c["c11-bmw"], "arriba"], [c["c11-vamos"], "abajo"]], espejo: true, fase: 2 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c11-bmw"], e.c["c11-vamos"]]); } },
   ];

@@ -1,24 +1,22 @@
 plano 1: «¿Sabes qué coche es el que más se compra en España? El más barato, tío.»
-    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.943 · 4.4 s · 12.0 l/s · «¿Sabes qué coche es el que más se compra en España? El más barato, tío.»
+    toma guardada (semilla 1000): BUENA · «¿Sabes qué coche es el que más se compra en España? El más barato, tío.»
 plano 2: «¡Anda ya! Si en 2016 era el León.»
-    toma 1 (semilla 2000): BUENA · 0.97 · voz 0.91 · 3.4 s · 10.1 l/s · «¡Anda ya! Si en 2016 era león.»
+    toma guardada (semilla 2000): BUENA · «¡Anda ya! Si en 2016 era león.»
 plano 3: «Pues hoy gana el Dacia Sandero. Y detrás, el Clio y el MG.»
-    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.94 · 4.2 s · 10.2 l/s · «pues hoy gana el Dacia Sandero y detrás el Clio y el MG.»
+    toma 1 (semilla 3001): BUENA · 0.978 · voz 0.926 · 4.3 s · 10.8 l/s · «Pues hoy gana el Dacia Sandero y detrás el Clio y el MEG.»
 plano 4: «El Sandero, 15.752 euros. Y el coche nuevo medio, 31.555. ¡La mitad!»
-    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.954 · 8.6 s · 13.2 l/s · «El sandero 15.752 euros y el coche nuevo medio 31.555, la mitad.»
+    toma guardada (semilla 4000): BUENA · «El sandero 15.752 euros y el coche nuevo medio 31.555, la mitad.»
 plano 5: «Hombre, pues barato, ¿no?»
-    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.856 · 1.2 s · 15.0 l/s · «¡Hombre! Pues barato, ¿no?»
+    toma guardada (semilla 5000): BUENA · «¡Hombre! Pues barato, ¿no?»
 plano 6: «¿Barato? Siete meses de sueldo enterito.»
-    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.922 · 2.8 s · 11.3 l/s · «¿Barato? ¡Siete meses de sueldo enterito!»
+    toma guardada (semilla 6000): BUENA · «¿Barato? ¡Siete meses de sueldo enterito!»
 plano 7: «¿Y en Alemania, listo?»
-    toma 1 (semilla 7000): mala · 1.0 · voz 0.811 · 1.4 s · 11.1 l/s · «¿Y en Alemania, listo?» · voz distinta (0.81)
-    toma 2 (semilla 7001): mala · 1.0 · voz 0.844 · 1.7 s · 9.5 l/s · «¿Y en Alemania? ¿Listo?» · voz distinta (0.84)
-    toma 3 (semilla 7002): BUENA · 1.0 · voz 0.886 · 1.9 s · 8.2 l/s · «¿Y en Alemania? ¿Listo?»
+    toma guardada (semilla 7002): BUENA · «¿Y en Alemania? ¿Listo?»
 plano 8: «Allí cobran un 35 % más. El mismo Sandero, cinco meses y medio.»
-    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.94 · 5.5 s · 12.3 l/s · «Allí cobran un 35% más. El mismo sandero, 5 meses y medio.»
+    toma guardada (semilla 8000): BUENA · «Allí cobran un 35% más. El mismo sandero, 5 meses y medio.»
 plano 9: «Y un BMW X1, catorce meses: lo que aquí te cuesta un coche normalito.»
-    toma 1 (semilla 9000): BUENA · 0.982 · voz 0.923 · 4.7 s · 11.8 l/s · «y un BMW S1 14 meses, lo que aquí te cuesta un coche normalito.»
+    toma 1 (semilla 9001): BUENA · 1.0 · voz 0.894 · 4.9 s · 13.1 l/s · «y un BMW X1, 14 meses, lo que aquí te cuesta un coche normalito.»
 plano 10: «Y aquí, el coche normal: en 2016, doce meses. Hoy, catorce. En 2007, quince.»
-    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.954 · 7.8 s · 9.4 l/s · «Y aquí el coche normal, en 2016 12 meses, hoy 14, en 2007 15.»
+    toma guardada (semilla 10000): BUENA · «Y aquí el coche normal, en 2016 12 meses, hoy 14, en 2007 15.»
 plano 11: «O sea, que con lo que aquí pagas un coche normal, allí se compran un BMW. ¿Vamos justos o somos más apañados?»
-    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.912 · 8.3 s · 10.0 l/s · «O sea, que con lo que aquí pagas un coche normal, allí se compran un BMW. Vamos, Justos, o somos más apañados.»
+    toma 1 (semilla 11001): BUENA · 0.989 · voz 0.9 · 6.5 s · 13.5 l/s · «O sea, que con lo que aquí pagas un coche normal. Allí se compran un BMW. ¿Vamos justo esos somos más apañados?»

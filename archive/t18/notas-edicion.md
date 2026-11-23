@@ -1,7 +1,7 @@
 # T18 · Notas de edición (archivo por si hay apelación)
 
-**Vídeo:** «El coche que más se compra en España es el más barato. ¿Y en Alemania?» (coches B, versión B de la prueba: dos cuñados en un bar) · Short vertical 1080×1920, 58,4 s, −14,5 LUFS (v2).
-**Fichero:** `videos/t18/render/t18-limpio.mp4` · SHA-256 `00e6fd21d88cfc620b100471c06a9584d8b60e1acd5de6e7e995276014d1bcc0`.
+**Vídeo:** «El coche que más se compra en España es el más barato. ¿Y en Alemania?» (coches B, versión B de la prueba: dos cuñados en un bar) · Short vertical 1080×1920, 56,9 s, −14,3 LUFS (v3).
+**Fichero:** `videos/t18/render/t18-limpio.mp4` · SHA-256 `36af16f7d26aec8270f83691180571ae44c2a2efad8136a445157780e20057d0`.
 **Aprobación:** el responsable del canal propuso el 22-11-2026 dos enfoques de coches B para ver cuál funciona mejor (padre e hijo, T17; dos cuñados en un bar, este). Se acordó que cada uno tuviera su ángulo para no repetir contenido: este va del top 3 de cada año y los usados traídos de fuera. Cuestionó que el Yaris fuera el 2.º en 2025: tenía razón, se había sumado el Yaris Cross; contados aparte, el top 3 es Sandero, Clio y MG ZS. Sobre la v1 (23-11-2026) dijo que era muy flojo: pidió marcas visibles, explicar el porqué del ranking (lo más vendido cuesta la mitad que el coche medio y aun así son muchos meses de sueldo) y compararlo con Alemania. Las marcas van en placas con su nombre (no se copian los logotipos, que son marcas registradas); la idea de «ir justos» es la pregunta final al espectador y no una conclusión (regla 3); la comparación con Alemania se hace con Eurostat (el mismo coche en meses de sueldo neto medio). v2 pendiente de su visto bueno.
 
 ## Cómo se hizo
@@ -18,3 +18,6 @@
 - **Lo más vendido en Alemania:** no sale; la estadística oficial alemana (KBA) no se puede abrir desde el entorno de trabajo.
 - **Imagen:** podios con placas de marca y modelo, banderas de España y Alemania y una balanza (BMW X1 en Alemania frente al coche medio en España).
 - **Sonido:** la música ya no lleva el bajo grave que sonaba a zumbido.
+
+## v3 (23-11-2026)
+- Bruno aprobó T17 y pidió dos arreglos en T18: «BMW» se pronuncia en español letra a letra («be eme uve», «equis uno»; también «eme ge» para MG) y las cañas van en la mesa, no pegadas a la mano. Se rehicieron las voces de los planos 3, 9 y 11 (`scripts/voces.py`, lista `PRONUNCIA`). En el podio de 2016, los tres coches ya están puestos antes de que acabe el plano.

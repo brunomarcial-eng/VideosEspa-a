@@ -36,3 +36,39 @@ plano 10: «Y aquí, el coche normal: en 2016, doce meses. Hoy, catorce. En 2007
 plano 11: «O sea, que con lo que aquí pagas un coche normal, allí se compran un BMW. ¿Vamos justos o somos más apañados?»
     toma 1 (semilla 11000): BUENA · 1.0 · voz 0.912 · 8.3 s · 10.0 l/s · «O sea, que con lo que aquí pagas un coche normal, allí se compran un BMW. Vamos, Justos, o somos más apañados.»
 duración total 58.4 s · escrito videos/t18/audio/linea_tiempo.json
+plano 1: «¿Sabes qué coche es el que más se compra en España? El más barato, tío.»
+    toma guardada (semilla 1000): BUENA · «¿Sabes qué coche es el que más se compra en España? El más barato, tío.»
+plano 2: «¡Anda ya! Si en 2016 era el León.»
+    toma guardada (semilla 2000): BUENA · «¡Anda ya! Si en 2016 era león.»
+plano 3: «Pues hoy gana el Dacia Sandero. Y detrás, el Clio y el MG.»
+
+********
+********
+ 
+/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+    toma 1 (semilla 3001): BUENA · 0.978 · voz 0.926 · 4.3 s · 10.8 l/s · «Pues hoy gana el Dacia Sandero y detrás el Clio y el MEG.»
+plano 4: «El Sandero, 15.752 euros. Y el coche nuevo medio, 31.555. ¡La mitad!»
+    toma guardada (semilla 4000): BUENA · «El sandero 15.752 euros y el coche nuevo medio 31.555, la mitad.»
+plano 5: «Hombre, pues barato, ¿no?»
+    toma guardada (semilla 5000): BUENA · «¡Hombre! Pues barato, ¿no?»
+plano 6: «¿Barato? Siete meses de sueldo enterito.»
+    toma guardada (semilla 6000): BUENA · «¿Barato? ¡Siete meses de sueldo enterito!»
+plano 7: «¿Y en Alemania, listo?»
+    toma guardada (semilla 7002): BUENA · «¿Y en Alemania? ¿Listo?»
+plano 8: «Allí cobran un 35 % más. El mismo Sandero, cinco meses y medio.»
+    toma guardada (semilla 8000): BUENA · «Allí cobran un 35% más. El mismo sandero, 5 meses y medio.»
+plano 9: «Y un BMW X1, catorce meses: lo que aquí te cuesta un coche normalito.»
+    toma 1 (semilla 9001): BUENA · 1.0 · voz 0.894 · 4.9 s · 13.1 l/s · «y un BMW X1, 14 meses, lo que aquí te cuesta un coche normalito.»
+plano 10: «Y aquí, el coche normal: en 2016, doce meses. Hoy, catorce. En 2007, quince.»
+    toma guardada (semilla 10000): BUENA · «Y aquí el coche normal, en 2016 12 meses, hoy 14, en 2007 15.»
+plano 11: «O sea, que con lo que aquí pagas un coche normal, allí se compran un BMW. ¿Vamos justos o somos más apañados?»
+    toma 1 (semilla 11001): BUENA · 0.989 · voz 0.9 · 6.5 s · 13.5 l/s · «O sea, que con lo que aquí pagas un coche normal. Allí se compran un BMW. ¿Vamos justo esos somos más apañados?»
+duración total 56.9 s · escrito videos/t18/audio/linea_tiempo.json
