@@ -1,26 +1,42 @@
 {
- "huella": "59c7d93a0abce852",
+ "huella": "ac6944a3b96bf624",
  "semilla": 4000,
- "texto": "¿Y eso cuánto cuesta?",
+ "texto": "El Sandero, 15.752 euros. Y el coche nuevo medio, 31.555. ¡La mitad!",
  "ev": {
   "ok": true,
-  "nota": 1.0113,
-  "oido": "Y eso cuánto cuesta.",
+  "nota": 1.0519,
+  "oido": "El sandero 15.752 euros y el coche nuevo medio 31.555, la mitad.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.14,
-   0.34,
-   0.7
+   0.16,
+   0.6,
+   2.92,
+   3.3,
+   4.32,
+   4.44,
+   4.74,
+   4.88,
+   5.28,
+   7.96,
+   8.14
   ],
   "t1": [
-   0.14,
-   0.3400000000000001,
-   0.7,
-   0.98
+   0.16,
+   0.6,
+   2.92,
+   3.3,
+   4.32,
+   4.44,
+   4.74,
+   4.88,
+   5.28,
+   7.6,
+   8.14,
+   8.32
   ],
-  "ritmo": 14.0,
-  "voz": 0.873
+  "ritmo": 13.2,
+  "voz": 0.954
  }
 }

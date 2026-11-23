@@ -1,32 +1,50 @@
 {
- "huella": "f5acef7c98476226",
+ "huella": "3ff56a0e757fbb99",
  "semilla": 8000,
- "texto": "¿Y antes de la crisis, en 2007?",
+ "texto": "Un 28 %. Y el coche, un 51 %. Haz cuentas, que para algo has estudiado.",
  "ev": {
   "ok": true,
-  "nota": 1.0264,
-  "oido": "y antes de la crisis en 2007.",
+  "nota": 1.0366,
+  "oido": "Un 28% y el coche, un 51%, haz cuentas que para algo has estudiado.",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.16,
-   0.34,
-   0.52,
+   0.18,
    0.62,
-   0.94,
-   1.24
+   1.16,
+   2.22,
+   2.34,
+   2.9,
+   3.02,
+   4.000909090909091,
+   4.68,
+   4.98,
+   5.46,
+   5.58,
+   5.78,
+   6.0,
+   6.16
   ],
   "t1": [
-   0.16,
-   0.34,
-   0.52,
-   0.62,
-   0.94,
-   1.24,
-   1.58
+   0.18,
+   0.6200000000000001,
+   1.16,
+   2.22,
+   2.34,
+   2.76,
+   3.02,
+   4.000909090909091,
+   4.68,
+   4.98,
+   5.46,
+   5.58,
+   5.78,
+   6.0,
+   6.16,
+   6.64
   ],
-  "ritmo": 14.9,
-  "voz": 0.903
+  "ritmo": 12.8,
+  "voz": 0.923
  }
 }

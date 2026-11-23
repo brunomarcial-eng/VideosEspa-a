@@ -1,4 +1,4 @@
-plano 1: «¿Tú sabes cuál es el coche más vendido en España? Que me quiero comprar uno.»
+plano 1: «¿Sabes qué coche es el que más se compra en España? El más barato, tío.»
 
 ********
 ********
@@ -12,29 +12,27 @@ SoX could not be found!
     If you do (or think that you should) have SoX, double-check your
     path variables.
     
-    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.92 · 3.9 s · 15.3 l/s · «¿Tú sabes cuál es el coche más vendido en España? Que me quiero comprar uno.»
-plano 2: «¡El mío! Un León, en 2016: el más vendido de aquel año.»
-    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.907 · 4.3 s · 11.5 l/s · «El mío, un león en 2016, el más vendido de aquel año.»
-plano 3: «Ya no. Hoy gana el Dacia Sandero. Luego, el Clio y el MG ZS.»
-    toma 1 (semilla 3000): mala · 0.977 · voz 0.936 · 6.2 s · 7.0 l/s · «Ya no, hoy gana el Dacia Sandero, luego el Clio y el MKZS.» · ritmo raro (7.0 letras/s)
-    toma 2 (semilla 3001): mala · 0.943 · voz 0.95 · 5.7 s · 7.6 l/s · «Ya no, hoy gana el Dacia Sandero, luego el Clio y el MKCTS.» · ritmo raro (7.6 letras/s)
-    toma 3 (semilla 3002): mala · 1.0 · voz 0.918 · 5.5 s · 7.8 l/s · «Ya no. Hoy gana el Dacia Sandero. Luego el Clio y el MG ZS.» · ritmo raro (7.8 letras/s)
-    toma 4 (semilla 3003): mala · 1.0 · voz 0.935 · 5.7 s · 7.6 l/s · «Ya no, hoy gana el Dacia Sandero. Luego el Clio y el MG ZS.» · ritmo raro (7.6 letras/s)
-    toma 5 (semilla 3004): mala · 0.966 · voz 0.938 · 5.7 s · 7.5 l/s · «Ya no. Hoy, gana el Dacia Sandero. Luego, el Clio y el MKZTS.» · ritmo raro (7.5 letras/s)
-plano 4: «¿Y eso cuánto cuesta?»
-    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.873 · 1.1 s · 14.0 l/s · «Y eso cuánto cuesta.»
-plano 5: «El Sandero, unos 15.750 euros: nueve meses de sueldo. El Clio, diez y medio. El MG, doce.»
-    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.94 · 9.0 s · 10.0 l/s · «El Sandero, unos 15.750 euros, 9 meses de sueldo. El Clio, 10 y medio. El MG 12.»
-plano 6: «¿Y un coche nuevo normal?»
-    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.89 · 1.4 s · 14.0 l/s · «¿Y un coche nuevo normal?»
-plano 7: «De media, 31.555 euros: dieciocho meses y medio. En 2016, quince y medio. En 2007, dieciocho.»
-    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.948 · 10.2 s · 12.1 l/s · «de media, 31.555 euros, 18 meses y medio, en 2016, 15 y medio, en 2007, 18.»
-plano 8: «O sea, que lo que más se vende cuesta bastante menos que el coche medio.»
-    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.932 · 3.9 s · 14.3 l/s · «O sea, que lo que más se vende cuesta bastante menos que el coche medio.»
-plano 9: «Y aun así, me miro uno usado. Hoy, casi uno de cada cinco matriculados es usado traído de fuera. En 2016, uno de cada once.»
-    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.947 · 9.8 s · 10.6 l/s · «y aún así, me miro uno usado. Hoy, casi uno de cada cinco matriculados es usado traído de fuera. En 2016, uno de cada once.»
-plano 10: «En 2007 ya eran muchos, ¿eh? Hoy, más meses que en 2016, y lo más vendido, de lo más barato. ¿Tú qué te comprarías: nuevo barato o usado?»
-    toma 1 (semilla 10000): BUENA · 0.996 · voz 0.945 · 10.0 s · 11.8 l/s · «En 2007 ya eran muchos, ¿eh? Hoy, más meses que en 2016 y lo más vendido de lo más barato, ¿tú qué te comprarías? Nuevo barato usado.»
-duración total 64.3 s · escrito videos/t18/audio/linea_tiempo.json
-FALLA (escucha esas líneas o repítelas con --rehacer N):
-- plano 3: ritmo raro (7.6 letras/s)
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.943 · 4.4 s · 12.0 l/s · «¿Sabes qué coche es el que más se compra en España? El más barato, tío.»
+plano 2: «¡Anda ya! Si en 2016 era el León.»
+    toma 1 (semilla 2000): BUENA · 0.97 · voz 0.91 · 3.4 s · 10.1 l/s · «¡Anda ya! Si en 2016 era león.»
+plano 3: «Pues hoy gana el Dacia Sandero. Y detrás, el Clio y el MG.»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.94 · 4.2 s · 10.2 l/s · «pues hoy gana el Dacia Sandero y detrás el Clio y el MG.»
+plano 4: «El Sandero, 15.752 euros. Y el coche nuevo medio, 31.555. ¡La mitad!»
+    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.954 · 8.6 s · 13.2 l/s · «El sandero 15.752 euros y el coche nuevo medio 31.555, la mitad.»
+plano 5: «Hombre, pues barato, ¿no?»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.856 · 1.2 s · 15.0 l/s · «¡Hombre! Pues barato, ¿no?»
+plano 6: «¿Barato? Siete meses de sueldo enterito.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.922 · 2.8 s · 11.3 l/s · «¿Barato? ¡Siete meses de sueldo enterito!»
+plano 7: «¿Y en Alemania, listo?»
+    toma 1 (semilla 7000): mala · 1.0 · voz 0.811 · 1.4 s · 11.1 l/s · «¿Y en Alemania, listo?» · voz distinta (0.81)
+    toma 2 (semilla 7001): mala · 1.0 · voz 0.844 · 1.7 s · 9.5 l/s · «¿Y en Alemania? ¿Listo?» · voz distinta (0.84)
+    toma 3 (semilla 7002): BUENA · 1.0 · voz 0.886 · 1.9 s · 8.2 l/s · «¿Y en Alemania? ¿Listo?»
+plano 8: «Allí cobran un 35 % más. El mismo Sandero, cinco meses y medio.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.94 · 5.5 s · 12.3 l/s · «Allí cobran un 35% más. El mismo sandero, 5 meses y medio.»
+plano 9: «Y un BMW X1, catorce meses: lo que aquí te cuesta un coche normalito.»
+    toma 1 (semilla 9000): BUENA · 0.982 · voz 0.923 · 4.7 s · 11.8 l/s · «y un BMW S1 14 meses, lo que aquí te cuesta un coche normalito.»
+plano 10: «Y aquí, el coche normal: en 2016, doce meses. Hoy, catorce. En 2007, quince.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.954 · 7.8 s · 9.4 l/s · «Y aquí el coche normal, en 2016 12 meses, hoy 14, en 2007 15.»
+plano 11: «O sea, que con lo que aquí pagas un coche normal, allí se compran un BMW. ¿Vamos justos o somos más apañados?»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.912 · 8.3 s · 10.0 l/s · «O sea, que con lo que aquí pagas un coche normal, allí se compran un BMW. Vamos, Justos, o somos más apañados.»
+duración total 58.4 s · escrito videos/t18/audio/linea_tiempo.json

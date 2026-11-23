@@ -1,8 +1,8 @@
 # T18 · Notas de edición (archivo por si hay apelación)
 
-**Vídeo:** «¿Cuál es el coche más vendido en España? 2016 frente a hoy» (coches B, versión B de la prueba: dos cuñados en un bar) · Short vertical 1080×1920, 64,3 s, −14,3 LUFS (v1).
-**Fichero:** `videos/t18/render/t18-limpio.mp4` · SHA-256 `614a828f7c6ef08f6fbc2743a6cb60b68c7810a872f56ca54e9d60477b5269d1`.
-**Aprobación:** el responsable del canal propuso el 22-11-2026 dos enfoques de coches B para ver cuál funciona mejor (padre e hijo, T17; dos cuñados en un bar, este). Se acordó que cada uno tuviera su ángulo para no repetir contenido: este va del top 3 de cada año y los usados traídos de fuera. Cuestionó que el Yaris fuera el 2.º en 2025: tenía razón, se había sumado el Yaris Cross; contados aparte, el top 3 es Sandero, Clio y MG ZS. v1 pendiente de su visto bueno.
+**Vídeo:** «El coche que más se compra en España es el más barato. ¿Y en Alemania?» (coches B, versión B de la prueba: dos cuñados en un bar) · Short vertical 1080×1920, 58,4 s, −14,5 LUFS (v2).
+**Fichero:** `videos/t18/render/t18-limpio.mp4` · SHA-256 `00e6fd21d88cfc620b100471c06a9584d8b60e1acd5de6e7e995276014d1bcc0`.
+**Aprobación:** el responsable del canal propuso el 22-11-2026 dos enfoques de coches B para ver cuál funciona mejor (padre e hijo, T17; dos cuñados en un bar, este). Se acordó que cada uno tuviera su ángulo para no repetir contenido: este va del top 3 de cada año y los usados traídos de fuera. Cuestionó que el Yaris fuera el 2.º en 2025: tenía razón, se había sumado el Yaris Cross; contados aparte, el top 3 es Sandero, Clio y MG ZS. Sobre la v1 (23-11-2026) dijo que era muy flojo: pidió marcas visibles, explicar el porqué del ranking (lo más vendido cuesta la mitad que el coche medio y aun así son muchos meses de sueldo) y compararlo con Alemania. Las marcas van en placas con su nombre (no se copian los logotipos, que son marcas registradas); la idea de «ir justos» es la pregunta final al espectador y no una conclusión (regla 3); la comparación con Alemania se hace con Eurostat (el mismo coche en meses de sueldo neto medio). v2 pendiente de su visto bueno.
 
 ## Cómo se hizo
 - **Guion:** dos cuñados en un bar, inventados. Luis se compró en 2016 el coche más vendido aquel año; Javi se va a comprar uno hoy. Comparan el top 3 de 2016 y de 2025, lo que cuestan hoy en meses de sueldo frente al coche nuevo medio, y los usados traídos de fuera. Cierra con una pregunta. No da causas ni nombra partidos. Se nombran los modelos más vendidos (dato oficial), pero los coches se dibujan sin marcas.
@@ -12,3 +12,9 @@
 - **Imagen:** dibujada con código (`escenas.mjs` y `diseno/barcunados.mjs`): un bar de barrio nuevo, distinto del de T10 y T14, con un podio para los más vendidos.
 - **Voces:** Qwen3-TTS en local, del catálogo de voces del canal (`docs/voces-catalogo.md`): Luis con la voz «padre» y Javi con «maquinista». Cada toma se revisa con Whisper (`voz-registro.txt`). El plano 3 se queda con la mejor de cinco tomas: el texto lo oye entero, pero va algo lento al deletrear «MG ZS».
 - **Música, efectos y ambiente:** generados con código (`scripts/sonido.py`): tazas, cucharilla y monedas del bar, sin murmullo continuo. Contenido sintético: sí.
+
+## v2 (23-11-2026)
+- **Cifras nuevas:** sueldo neto medio de un soltero sin hijos (Eurostat, earn_nt_net) en España y Alemania, 2007-2025, y niveles de precios del equipo de transporte personal (Eurostat, prc_ppp_ind, 2024) para estimar el precio del mismo coche en Alemania. Script: `scripts/calcular_t18.py` → `t18_alemania.json`. Para comparar países se usa el sueldo MEDIO de cada uno (Eurostat no da el mediano neto por país con la misma medida); por eso los meses no coinciden con los de T16 y T17, que usan el mediano del INE.
+- **Lo más vendido en Alemania:** no sale; la estadística oficial alemana (KBA) no se puede abrir desde el entorno de trabajo.
+- **Imagen:** podios con placas de marca y modelo, banderas de España y Alemania y una balanza (BMW X1 en Alemania frente al coche medio en España).
+- **Sonido:** la música ya no lleva el bajo grave que sonaba a zumbido.

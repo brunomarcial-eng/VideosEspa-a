@@ -1,28 +1,30 @@
 {
- "huella": "68442912c8c8a061",
+ "huella": "fe5feb543432a3dd",
  "semilla": 6000,
- "texto": "¿Y un coche nuevo normal?",
+ "texto": "¿Barato? Siete meses de sueldo enterito.",
  "ev": {
   "ok": true,
-  "nota": 1.0202,
-  "oido": "¿Y un coche nuevo normal?",
+  "nota": 1.036,
+  "oido": "¿Barato? ¡Siete meses de sueldo enterito!",
   "parecido": 1.0,
   "problemas": [],
   "t0": [
    0.0,
-   0.14,
-   0.26,
-   0.58,
-   0.8
+   1.04,
+   1.4,
+   1.62,
+   1.88,
+   2.2
   ],
   "t1": [
-   0.14,
-   0.26,
-   0.58,
-   0.8,
-   1.12
+   0.42,
+   1.4,
+   1.62,
+   1.88,
+   2.2,
+   2.62
   ],
-  "ritmo": 14.0,
-  "voz": 0.89
+  "ritmo": 11.3,
+  "voz": 0.922
  }
 }

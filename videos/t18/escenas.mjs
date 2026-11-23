@@ -191,7 +191,7 @@ export function escenas(D) {
 
     // 9 · Javi: «Y un BMW X1, catorce meses: lo que aquí te cuesta un coche normalito.» Balanza igualada.
     { n: 9, set: "vacio",
-      svg: `<g transform="translate(540 1330)">${balanza("s9-bz")}</g>
+      svg: `<g transform="translate(540 1420)">${balanza("s9-bz")}</g>
         <g id="s9-i"><g transform="scale(.36)">${coche("s9-ci", "#1E3A44")}</g><g transform="translate(0 -150)">${placa("s9-pi", "BMW", "X1", "#3B4A57", 180)}</g><g transform="translate(-50 -290)">${banderaDE(100)}</g></g>
         <g id="s9-d"><g transform="scale(.36)">${coche("s9-cd", "#9AA6AE")}</g><g transform="translate(0 -150)"><rect x="-120" y="-40" width="240" height="80" rx="16" fill="#FFFDF8" stroke="${HOY}" stroke-width="7"/>${rot(0, 12, "COCHE MEDIO", 30, HOY)}</g><g transform="translate(-50 -290)">${banderaES(100)}</g></g>
         ${cunados("s9")}`,
@@ -206,8 +206,8 @@ export function escenas(D) {
         const k = clamp((t - c["c9-normalito"] + 0.3) / 1.2), ang = (1 - k) * 9 * Math.cos((t - e.t0) * 5) * (t > c["c9-bmw"] ? 1 : 0);
         attr("s9-bz-b", "transform", `rotate(${ang.toFixed(2)} 0 -306)`);
         const dy = 250 * Math.sin(ang * Math.PI / 180);
-        T("s9-i", 540 - 250, 1330 - 306 - 10 + dy, { s: 1, op: clamp((t - c["c9-bmw"] + 0.2) / 0.3) });
-        T("s9-d", 540 + 250, 1330 - 306 - 10 - dy, { s: 1, op: clamp((t - c["c9-normalito"] + 0.4) / 0.3) });
+        T("s9-i", 540 - 250, 1420 - 306 - 10 + dy, { s: 1, op: clamp((t - c["c9-bmw"] + 0.2) / 0.3) });
+        T("s9-d", 540 + 250, 1420 - 306 - 10 - dy, { s: 1, op: clamp((t - c["c9-normalito"] + 0.4) / 0.3) });
         sube("c9-a", t, c["c9-catorce"]); sube("c9-b", t, c["c9-normalito"]);
         persona("s9-l", t, { x: 80, y: 1440, s: 0.68, mira: 1, vivo: true, boca: [[0, "seria"], [c["c9-normalito"], "o"]], ojos: [[0, "normal"], [c["c9-normalito"], "grandes"]], brazo: [[0, "abajo"]], fase: 1 });
         persona("s9-j", t, { x: 1000, y: 1440, s: 0.68, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"]], espejo: true, fase: 2 });

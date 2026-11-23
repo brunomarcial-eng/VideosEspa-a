@@ -1,4 +1,4 @@
-plano 1: «¡Papá! ¡Aprobado a la primera! ¿Me compras un coche nuevo?»
+plano 1: «¡Papá! ¡Aprobado a la primera! Ya me puedes comprar un coche, ¿no?»
 
 ********
 ********
@@ -12,25 +12,28 @@ SoX could not be found!
     If you do (or think that you should) have SoX, double-check your
     path variables.
     
-    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.928 · 3.6 s · 11.9 l/s · «Papá, aprobado a la primera. ¿Me compras un coche nuevo?»
-plano 2: «¿Nuevo? Hijo, un coche nuevo cuesta hoy 31.555 euros de media: dieciocho meses y medio de sueldo.»
-    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.922 · 7.8 s · 14.0 l/s · «Nuevo? Hijo, un coche nuevo cuesta hoy 31.555 euros de media, 18 meses y medio de sueldo.»
-plano 3: «¡Pues al primo Dani se lo comprasteis nuevo!»
-    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.875 · 2.3 s · 15.2 l/s · «Pues al primo, Dani se lo comprasteis nuevo.»
-plano 4: «Eso fue en 2016: quince meses y medio de sueldo.»
-    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.91 · 4.1 s · 11.7 l/s · «Eso fue en 2016, 15 meses y medio de sueldo.»
-plano 5: «¿Y los sueldos no han subido?»
-    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.892 · 1.6 s · 13.9 l/s · «¿Y los sueldos no han subido?»
-plano 6: «Sí: un 28 %. Pero el coche nuevo, un 51 %.»
-    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.932 · 4.9 s · 12.8 l/s · «Sí, un 28%, pero el coche nuevo un 51%.»
-plano 7: «Y hoy, por cada coche que se matricula, dos y medio de segunda mano cambian de dueño. En 2016, dos.»
-    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.949 · 7.2 s · 11.9 l/s · «Y hoy, por cada coche que se matricula, dos y medio de segunda mano cambian de dueño. En 2016, dos.»
-plano 8: «¿Y antes de la crisis, en 2007?»
-    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.903 · 1.9 s · 14.9 l/s · «y antes de la crisis en 2007.»
-plano 9: «Casi los mismos meses que hoy: dieciocho. Pero se vendía menos segunda mano: uno y medio por coche matriculado.»
-    toma 1 (semilla 9000): BUENA · 0.994 · voz 0.956 · 6.4 s · 13.9 l/s · «Casi los mismos meses que hoy, 18, pero se vendía a menos segunda mano, uno y medio por coche matriculado.»
-plano 10: «Vale, vale... ¿Y ese de segunda mano?»
-    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.878 · 2.6 s · 9.7 l/s · «Vale, vale. ¿Y ese de segunda mano?»
-plano 11: «Ese. Hoy, un coche nuevo cuesta más meses que en 2016, como en 2007. Y la mitad la pones tú. ¿Tu primer coche fue nuevo o de segunda mano?»
-    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.947 · 10.5 s · 11.5 l/s · «ese. Hoy un coche nuevo cuesta más meses que en 2016, como en 2007, y la mitad la pones tú. Tu primer coche fue nuevo o de segunda mano?»
-duración total 58.3 s · escrito videos/t17/audio/linea_tiempo.json
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.948 · 3.8 s · 12.8 l/s · «Papá, aprobado a la primera, ya me puedes comprar un coche, ¿no?»
+plano 2: «¿Comprarte? Querrás decir pagarlo a medias, campeón.»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.926 · 3.6 s · 11.5 l/s · «Comprarte, querrás decir pagarlo a medias, campeón.»
+plano 3: «¡Hala, qué maravilla! ¿Nos llevamos este, nuevecito?»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.922 · 3.2 s · 12.6 l/s · «¡Hala! ¡Qué maravilla! ¿Nos llevamos este nuevecito?»
+plano 4: «Este, de media, 31.555 euros. Dieciocho meses y medio de sueldo, chaval. Y la mitad la pones tú.»
+    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.946 · 8.6 s · 12.5 l/s · «Este, de media, 31.555 euros. 18 meses y medio de sueldo, chaval, y la mitad la pones tú.»
+plano 5: «¡Pero si al primo Dani sus padres se lo compraron nuevo!»
+    toma 1 (semilla 5000): BUENA · 0.989 · voz 0.916 · 2.8 s · 15.5 l/s · «Pero si al primo Dani y sus padres se lo compraron nuevo.»
+plano 6: «Ya, en 2016. Entonces eran quince meses y medio, no dieciocho. Qué tiempos.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.932 · 6.9 s · 10.0 l/s · «Ya en 2016, entonces eran 15 meses y medio, no 18, ¿qué tiempos?»
+plano 7: «¿Y a ti no te han subido el sueldo, o qué?»
+    toma 1 (semilla 7000): mala · 1.0 · voz 0.844 · 2.0 s · 14.4 l/s · «¿Y a ti no te han subido el sueldo o qué?» · voz distinta (0.84)
+    toma 2 (semilla 7001): BUENA · 1.0 · voz 0.886 · 1.7 s · 16.7 l/s · «¿Y a ti no te han subido el sueldo o qué?»
+plano 8: «Un 28 %. Y el coche, un 51 %. Haz cuentas, que para algo has estudiado.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.923 · 6.7 s · 12.8 l/s · «Un 28% y el coche, un 51%, haz cuentas que para algo has estudiado.»
+plano 9: «Anda, vámonos. Bienvenido al mundo real.»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.904 · 2.9 s · 11.1 l/s · «¡Andá vámonos! ¡Bienvenido al mundo real!»
+plano 10: «Hoy, por cada coche que se matricula, se venden dos y medio de segunda mano. En 2007, uno y medio.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.951 · 7.0 s · 11.5 l/s · «Hoy, por cada coche que se matricula, se venden dos y medio de segunda mano, en 2007, uno y medio.»
+plano 11: «Vale, vale... ¿Y ese de ahí? Pocos kilómetros y está muy bien.»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.879 · 4.3 s · 10.3 l/s · «Vale, vale. Y ese de ahí, pocos kilómetros y está muy bien.»
+plano 12: «Ese. Más meses de sueldo que en 2016, pero ese. Y la mitad, ya sabes quién la pone. ¿Tu primer coche fue nuevo o de segunda mano?»
+    toma 1 (semilla 12000): BUENA · 1.0 · voz 0.939 · 9.0 s · 11.9 l/s · «ese. Más meses de sueldo que en 2016, pero ese, y la mitad, ya sabes quién la pone. Tu primer coche fue nuevo o de segunda mano?»
+duración total 66.0 s · escrito videos/t17/audio/linea_tiempo.json

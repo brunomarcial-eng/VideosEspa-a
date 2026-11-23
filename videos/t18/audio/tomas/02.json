@@ -1,42 +1,34 @@
 {
- "huella": "61af63e53f0dd021",
+ "huella": "1c8ea3369e3f44b6",
  "semilla": 2000,
- "texto": "¡El mío! Un León, en 2016: el más vendido de aquel año.",
+ "texto": "¡Anda ya! Si en 2016 era el León.",
  "ev": {
   "ok": true,
-  "nota": 1.0285,
-  "oido": "El mío, un león en 2016, el más vendido de aquel año.",
-  "parecido": 1.0,
+  "nota": 0.9998,
+  "oido": "¡Anda ya! Si en 2016 era león.",
+  "parecido": 0.97,
   "problemas": [],
   "t0": [
    0.0,
-   0.16,
-   1.16,
-   1.48,
-   1.84,
-   1.98,
-   3.06,
-   3.12,
-   3.28,
-   3.7,
-   3.84,
-   4.08
+   0.4,
+   1.26,
+   1.52,
+   1.62,
+   2.5,
+   2.9,
+   2.9
   ],
   "t1": [
-   0.16,
-   0.58,
-   1.48,
-   1.84,
-   1.98,
-   2.7,
-   3.12,
-   3.28,
-   3.7,
-   3.84,
-   4.08,
-   4.24
+   0.4,
+   0.56,
+   1.52,
+   1.62,
+   2.5,
+   2.9,
+   2.9,
+   3.34
   ],
-  "ritmo": 11.5,
-  "voz": 0.907
+  "ritmo": 10.1,
+  "voz": 0.91
  }
 }
