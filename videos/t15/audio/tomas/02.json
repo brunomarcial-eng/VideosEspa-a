@@ -1,0 +1,41 @@
+{
+ "huella": "05f71a0259fb0339",
+ "semilla": 2006,
+ "texto": "Este año la cena la pongo yo… qué ilusión. O no.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0325,
+  "oido": "Este año la cena la pongo yo ¿Qué ilusión? ¿O no?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.24,
+   0.52,
+   0.68,
+   0.9,
+   1.06,
+   1.38,
+   1.6,
+   2.52,
+   3.88,
+   3.94
+  ],
+  "t1": [
+   0.24,
+   0.52,
+   0.68,
+   0.9,
+   1.06,
+   1.38,
+   1.6,
+   2.52,
+   3.06,
+   3.94,
+   4.14
+  ],
+  "ritmo": 8.1,
+  "voz": 0.915,
+  "viveza": 2.83
+ }
+}
