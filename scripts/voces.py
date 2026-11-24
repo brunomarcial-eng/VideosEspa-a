@@ -95,8 +95,10 @@ def normalizar(texto: str) -> str:
 
 def letras(s: str) -> str:
     """Forma hablada de un texto, solo letras y sin tildes (para comparar con Whisper)."""
-    s = re.sub(r"(\d)[.](\d)", r"\1,\2", s)
+    # primero el punto de miles («300.000» es «trescientos mil»); antes iba al revés y salía «trescientos coma cero»
+    # (falsos «no oigo» en T19 y T20, 24-11-2026)
     s = re.sub(r"(\d)\.(?=\d{3}\b)", r"\1", s)
+    s = re.sub(r"(\d)[.](\d)", r"\1,\2", s)
     # un «%» o «€» suelto (la palabra siguiente al número, como en «15 %,») se dice igual
     s = unicodedata.normalize("NFD", normalizar(s).replace("%", " por ciento ").replace("€", " euros ").lower())
     return re.sub(r"[^a-zñ]", "", "".join(c for c in s if unicodedata.category(c) != "Mn" or c == "̃"))

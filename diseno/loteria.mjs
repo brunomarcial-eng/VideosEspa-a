@@ -158,3 +158,36 @@ export function premioHacienda(id) {
     <g id="${id}-h">${billete(230, -30, 8)}${billete(250, 10, -6)}</g>
     <g id="${id}-s" transform="translate(420 40)"><rect x="-120" y="-80" width="240" height="160" rx="10" fill="#F4F1EA" stroke="#9AA6AE" stroke-width="5"/><path d="M-120 -80 L0 10 L120 -80" fill="none" stroke="#9AA6AE" stroke-width="5"/>${txt(0, 58, "HACIENDA", 32, C.tinta)}</g></g>`;
 }
+
+// ------------------------------------------------------------------ T19: el Gordo (Bruno, 24-11-2026)
+// Tele con el sorteo: un bombo genérico que gira («<id>-bombo») y bolas que caen («<id>-b<i>»). Origen: centro de la base.
+export function teleSorteo(id) {
+  return `<g id="${id}"><rect x="-210" y="-300" width="420" height="270" rx="16" fill="${C.tinta}"/><rect x="-194" y="-284" width="388" height="238" rx="8" fill="#2E4A6B"/>
+    <g transform="translate(-40 -165)"><g id="${id}-bombo"><circle r="80" fill="none" stroke="#D9A23B" stroke-width="8"/>
+      ${[0, 45, 90, 135].map((a) => `<ellipse rx="80" ry="22" fill="none" stroke="#D9A23B" stroke-width="5" transform="rotate(${a})"/>`).join("")}
+      ${Array.from({ length: 9 }, (_, i) => `<circle cx="${(Math.cos(i * 0.7) * 48).toFixed(0)}" cy="${(Math.sin(i * 1.3) * 44).toFixed(0)}" r="11" fill="#F4EEDD"/>`).join("")}</g>
+      <rect x="-14" y="80" width="28" height="40" fill="#8C969C"/></g>
+    ${[0, 1, 2].map((i) => `<circle id="${id}-b${i}" cx="${110 + i * 0}" cy="-120" r="20" fill="#F4EEDD" stroke="#C9A27A" stroke-width="3"/>`).join("")}
+    <rect x="-30" y="-30" width="60" height="30" fill="#5B6470"/><rect x="-120" y="-6" width="240" height="14" rx="6" fill="#5B6470"/></g>`;
+}
+
+// Fila de pisos (bloques pequeños): n pisos encendidos de 10, con el último cortado por la parte decimal.
+// «<id>-p<i>» cada piso; «<id>-luz» el grupo de pisos de verdad (se ve el valor) y «<id>-diez» los diez del sueño.
+export function filaPisos(id, valor, rotulo) {
+  const bloque = (x, k) => `<g transform="translate(${x} 0)"><rect x="-34" y="-110" width="68" height="110" rx="4" fill="${k ? "#C8902E" : "#C9CED3"}"/><path d="M-40 -110 L0 -142 L40 -110 Z" fill="${k ? "#8E3B2F" : "#B9C0C6"}"/>
+    ${[-86, -56, -26].map((y) => [-16, 16].map((dx) => `<rect x="${dx - 8}" y="${y}" width="16" height="18" rx="2" fill="${k ? "#FFF3C4" : "#E9EDF0"}"/>`).join("")).join("")}</g>`;
+  const entero = Math.floor(valor), parte = valor - entero, paso = 84;
+  return `<g id="${id}"><text x="-470" y="-40" text-anchor="start" font-family="Cap" font-weight="800" font-size="34" fill="${C.tinta}">${rotulo}</text>
+    <g id="${id}-diez">${Array.from({ length: 10 }, (_, i) => `<g id="${id}-p${i}">${bloque(-330 + i * paso, 1)}</g>`).join("")}</g>
+    <g id="${id}-luz" opacity="0">${Array.from({ length: 10 }, (_, i) => bloque(-330 + i * paso, 0)).join("")}
+      ${Array.from({ length: entero }, (_, i) => bloque(-330 + i * paso, 1)).join("")}
+      <clipPath id="${id}-cp"><rect x="${-330 + entero * paso - 40}" y="-150" width="${(80 * parte).toFixed(1)}" height="160"/></clipPath>
+      <g clip-path="url(#${id}-cp)">${bloque(-330 + entero * paso, 1)}</g></g></g>`;
+}
+
+// Calendarios en fila (años de sueldo): n calendarios; «<id>-c<i>» cada uno (salen uno a uno).
+export function filaCalendarios(id, n, rotulo, color) {
+  const cal = `<rect x="-22" y="-30" width="44" height="46" rx="6" fill="#FFFFFF" stroke="#C9CED3" stroke-width="3"/><rect x="-22" y="-30" width="44" height="14" rx="6" fill="${color}"/>`;
+  return `<g id="${id}"><text x="-470" y="12" text-anchor="start" font-family="Cap" font-weight="800" font-size="34" fill="${C.tinta}">${rotulo}</text>
+    ${Array.from({ length: n }, (_, i) => `<g transform="translate(${-300 + (i % 11) * 56} ${Math.floor(i / 11) * 58})"><g id="${id}-c${i}">${cal}</g></g>`).join("")}</g>`;
+}

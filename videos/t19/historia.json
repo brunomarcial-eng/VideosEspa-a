@@ -1,0 +1,180 @@
+{
+ "nota": "Momentos clave de T19 (el Gordo). La música se corta en seco con los «16» años de sueldo de hoy. Salón con el sorteo, calle (los pisos) y oficina (los años de curro), con sonidos sueltos y sin ruido continuo.",
+ "musica": {
+  "bpm": 100,
+  "corte": "c7-16",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "salon",
+   "desde": 1,
+   "hasta": 4,
+   "vol": 1.0
+  },
+  {
+   "tipo": "cola",
+   "desde": 5,
+   "hasta": 6,
+   "vol": 0.8
+  },
+  {
+   "tipo": "oficina",
+   "desde": 7,
+   "hasta": 7,
+   "vol": 1.0
+  },
+  {
+   "tipo": "salon",
+   "desde": 8,
+   "hasta": 9,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-gordo",
+   "beat": 1,
+   "palabra": "Gordo",
+   "dt": -0.1,
+   "sfx": "campanilla",
+   "vol": 0.25
+  },
+  {
+   "id": "c1-diez",
+   "beat": 1,
+   "palabra": "diez",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-300000",
+   "beat": 2,
+   "palabra": "300.000",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-hacienda",
+   "beat": 2,
+   "palabra": "Hacienda",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-400000",
+   "beat": 3,
+   "palabra": "400.000",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-72000",
+   "beat": 3,
+   "palabra": "72.000",
+   "dt": -0.1,
+   "sfx": "rasgado",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-328000",
+   "beat": 3,
+   "palabra": "328.000",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-diez",
+   "beat": 4,
+   "palabra": "Diez",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c5-anda",
+   "beat": 5,
+   "palabra": "Anda",
+   "dt": -0.1,
+   "sfx": "fwip",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-2007",
+   "beat": 5,
+   "palabra": "2007",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c5-hoy",
+   "beat": 5,
+   "palabra": "hoy",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c6-sueldos",
+   "beat": 6,
+   "palabra": "sueldos",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-21",
+   "beat": 7,
+   "palabra": "21",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c7-16",
+   "beat": 7,
+   "palabra": "16",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.35
+  },
+  {
+   "id": "c7-cinco",
+   "beat": 7,
+   "palabra": "Cinco",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-gordo",
+   "beat": 8,
+   "palabra": "Gordo",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-430000",
+   "beat": 8,
+   "palabra": "430.000",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c9-hacienda",
+   "beat": 9,
+   "palabra": "Hacienda",
+   "dt": -0.1
+  },
+  {
+   "id": "c9-curro",
+   "beat": 9,
+   "palabra": "curro",
+   "dt": -0.1
+  }
+ ]
+}
