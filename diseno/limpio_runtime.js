@@ -144,6 +144,22 @@ function vapor(p, n, t, x, y) {
     attr(p + k, "r", (12 + f * 22).toFixed(1)); css(p + k, "opacity", (0.8 * (1 - f)).toFixed(2));
   }
 }
+// Vaho al hablar con frío (T23): tres nubecitas que salen de la boca (x, y), se hinchan y se deshacen («<p>0…2»).
+function vaho(p, t, x, y, on, dir = 1) {
+  for (let k = 0; k < 3; k++) {
+    const f = (t * 1.1 + k / 3) % 1;
+    attr(p + k, "cx", (x + dir * (62 + f * 90)).toFixed(1)); attr(p + k, "cy", (y + 6 - f * 46).toFixed(1));
+    attr(p + k, "r", (8 + f * 26).toFixed(1)); css(p + k, "opacity", on ? (0.6 * (1 - f)).toFixed(2) : "0");
+  }
+}
+// Nieve por una ventana (T23): copos «<p>0…» que caen dentro del rectángulo [x0, x0+w] × [y0, y0+h].
+function nieva(p, n, t, x0, y0, w, h) {
+  for (let i = 0; i < n; i++) {
+    const v = 50 + (i % 3) * 22;
+    attr(p + i, "cy", (y0 + ((i * 97 + t * v) % h)).toFixed(1));
+    attr(p + i, "cx", (x0 + ((i * 151) % w) + Math.sin(t * 1.4 + i) * 10).toFixed(1));
+  }
+}
 // Recorrido de un personaje: [[t, x], …]. Entre dos puntos con distinta x anda; con la misma x, se queda quieto.
 // Devuelve {x, anda, dir} (dir: −1 si va hacia la izquierda, 1 a la derecha, 0 parado) para pasárselo a persona().
 function ruta(t, pts) {

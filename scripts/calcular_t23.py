@@ -72,7 +72,7 @@ def main():
             "luz": round(partes["Electricidad"][a], 2), "gas": round(partes["Gas"][a], 2),
             "gasoleo": round(partes["Combustibles líquidos"][a], 2), "lena_carbon": round(partes["Combustibles sólidos"][a], 2),
             "neto_hora_mediana": hora[a],
-            "horas_anyo": round(g / hora[a], 1), "horas_mes": round(g / 12 / hora[a], 1),
+            "horas_anyo": round(g / hora[a], 2), "horas_mes": round(g / 12 / hora[a], 2),
             "no_puede_calentar_pct": frio[a],
             "no_puede_calentar_65_pct": frio65[a], "no_puede_calentar_menores16_pct": frio_men[a],
             "no_puede_calentar_decil5_pct": decil["Quinto"].get(a), "no_puede_calentar_decil1_pct": decil["Primer"].get(a),

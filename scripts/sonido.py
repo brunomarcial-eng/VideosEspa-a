@@ -696,6 +696,30 @@ def amb_barrio(**_):
     return norm(y)
 
 
+def amb_invierno(**_):
+    """Salón en invierno con la calefacción apagada (T23): dos rachas de viento contra la ventana, el cristal que vibra
+    un poco y el reloj de pared, flojito. Todo suelto, sin colchón de ruido continuo (Bruno, 22-11-2026)."""
+    dur = 9.0
+    y = np.zeros(int(dur * SR), np.float32)
+    tp = tiempo(0.03)
+    tic = ruido(0.03, 2500, 7000) * np.exp(-tp / 0.004)
+    for tt in np.arange(0.05, dur - 0.05, 1.0):     # el reloj de pared
+        i = int(tt * SR)
+        y[i:i + len(tic)] += tic * 0.14
+    for t0, d in ((0.8, 2.2), (5.2, 1.8)):          # rachas de viento: un soplido que sube y baja de tono
+        td = tiempo(d)
+        env = np.sin(np.pi * td / d) ** 2
+        w = banda(ruido(d, 200, 1400) * env, 250, 1200) * 0.42
+        i = int(t0 * SR)
+        y[i:i + len(w)] += w[: len(y) - i]
+        dv = 0.25                                   # el cristal que vibra en lo alto de la racha
+        tv = tiempo(dv)
+        cr = np.sin(2 * np.pi * 95 * tv) * (np.sin(2 * np.pi * 31 * tv) > 0) * np.sin(np.pi * tv / dv) * 0.05
+        j = int((t0 + d * 0.5) * SR)
+        y[j:j + len(cr)] += banda(cr, 80, 2000)[: len(y) - j]
+    return norm(y)
+
+
 def amb_cola(**_):
     """Cola en la calle en Navidad (T20, Doña Manolita): pasos sueltos, un murmullo corto de vez en cuando y unas
     campanillas lejanas. Nada continuo (Bruno, 22-11-2026)."""
@@ -767,8 +791,8 @@ def amb_compraventa(**_):
     return norm(y)
 
 
-AMBIENTES = {"barrio": amb_barrio, "cola": amb_cola, "oficina": amb_oficina, "salon": amb_salon, "compraventa": amb_compraventa, "concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
-NIVEL_AMB = {"barrio": 0.10, "cola": 0.10, "oficina": 0.10, "salon": 0.10, "compraventa": 0.12, "concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
+AMBIENTES = {"invierno": amb_invierno, "barrio": amb_barrio, "cola": amb_cola, "oficina": amb_oficina, "salon": amb_salon, "compraventa": amb_compraventa, "concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
+NIVEL_AMB = {"invierno": 0.10, "barrio": 0.10, "cola": 0.10, "oficina": 0.10, "salon": 0.10, "compraventa": 0.12, "concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
 
 
 def megafonia(y):
