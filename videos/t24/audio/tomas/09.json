@@ -1,0 +1,31 @@
+{
+ "huella": "6e501796c4bc437f",
+ "semilla": 9001,
+ "texto": "Por eso cojo menos el coche.",
+ "ev": {
+  "ok": true,
+  "nota": 1.019,
+  "oido": "Por eso cojo menos el coche.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.3,
+   0.6,
+   0.78,
+   1.04
+  ],
+  "t1": [
+   0.12,
+   0.30000000000000004,
+   0.6,
+   0.78,
+   1.04,
+   1.34
+  ],
+  "ritmo": 14.5,
+  "voz": 0.888,
+  "viveza": 4.84
+ }
+}

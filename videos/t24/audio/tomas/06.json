@@ -1,0 +1,37 @@
+{
+ "huella": "388e598bbe6dbae1",
+ "semilla": 6001,
+ "texto": "Pues yo en 2007 lo llenaba con 50 euros…",
+ "ev": {
+  "ok": true,
+  "nota": 1.0244,
+  "oido": "Pues yo en 2007 lo llenaba con 50 euros.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.36,
+   0.42,
+   0.98,
+   1.2,
+   1.56,
+   1.74,
+   2.08
+  ],
+  "t1": [
+   0.14,
+   0.36,
+   0.42,
+   0.98,
+   1.2,
+   1.56,
+   1.74,
+   2.08,
+   2.38
+  ],
+  "ritmo": 16.9,
+  "voz": 0.899,
+  "viveza": 4.41
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "huella": "ad41169933c37003",
+ "semilla": 7002,
+ "texto": "Ya pero cobrabas menos. Eran 5 horas y 42 minutos… casi una hora menos que hoy.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0387,
+  "oido": "Ya pero cobrabas menos. Eran 5 horas y 42 minutos, casi una hora menos que hoy.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.2,
+   0.44,
+   0.96,
+   1.64,
+   1.98,
+   2.3,
+   2.64,
+   2.84,
+   3.24,
+   4.4,
+   4.64,
+   4.92,
+   5.1,
+   5.3,
+   5.58
+  ],
+  "t1": [
+   0.2,
+   0.44,
+   0.96,
+   1.18,
+   1.98,
+   2.3,
+   2.64,
+   2.84,
+   3.24,
+   3.88,
+   4.64,
+   4.92,
+   5.1,
+   5.3,
+   5.58,
+   5.74
+  ],
+  "ritmo": 12.7,
+  "voz": 0.927,
+  "viveza": 4.27
+ }
+}
