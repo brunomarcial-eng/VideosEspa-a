@@ -124,8 +124,9 @@
    "funcion": "la duda",
    "voz": "¿Y lo de 2008 qué? Que la bolsa también se hunde.",
    "pantalla": "«¿Y lo de 2008?»",
-   "sello": null,
-   "imagen": "Ella señala el bache de 2008 en la gráfica."
+   "sello": "CÁLCULO PROPIO · INE Y BCE",
+   "imagen": "Ella señala el bache de 2008 en la gráfica.",
+   "nota": "Desde 2007: 2.818 € jugados y 13.160 € en bolsa. En 2008 la bolsa cayó un 36 %"
   },
   {
    "n": 8,
@@ -133,7 +134,7 @@
    "funcion": "dato y veredicto: empieces cuando empieces",
    "voz": "Claro que se hunde… en 2008 un 36 %. Pero empieces cuando empieces gana. Desde 2016 el doble y desde 2019 casi el doble.",
    "pantalla": "Desde 2016 · jugado: 1.355 € · en bolsa: 3.023 €",
-   "nota": "Desde 2019: 895 € jugados y 1.589 € en bolsa. En 2008 la bolsa cayó un 36 % y lo invertido estuvo por debajo de lo jugado hasta 2010",
+   "nota": "Desde 2019: 895 € jugados y 1.589 € en bolsa. Desde 2007: 2.818 € y 13.160 €. En 2008 la bolsa cayó un 36 % y lo invertido estuvo por debajo de lo jugado hasta 2010",
    "sello": "CÁLCULO PROPIO · INE Y BCE",
    "grafico": true,
    "imagen": "La misma gráfica: el bache de 2008 en rojo y, al lado, las cajas de 2016 y 2019."
@@ -172,7 +173,8 @@
  ],
  "no_dato": [
   "10",
-  "500"
+  "500",
+  "58213"
  ],
  "cifras": [
   {
