@@ -28,3 +28,7 @@ Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
     toma 2 (semilla 2001): BUENA · 0.982 · voz 0.919 · 4.2 s · 13.5 l/s · viveza 4.14 st · «Hombre es que llenarlo hoy es como en plena crisis, una barbaridad.»
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 2002): BUENA · 0.982 · voz 0.944 · 4.2 s · 13.5 l/s · viveza 3.53 st · «Hombre es que llenarlo hoy es como en plena crisis, una barbaridad.»
+    elegida la toma con más entonación: semilla 2000 (4.46 st)
+plano 3: «A ver… 50 litros hoy son unos 89 euros. Unas 6 horas y media de curro.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
