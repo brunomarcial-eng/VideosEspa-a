@@ -1,0 +1,56 @@
+{
+ "huella": "cc2e4775f2f096ea",
+ "semilla": 3001,
+ "texto": "Ya pero hoy son 400.000. Lo que pasa es que Hacienda se queda 72.000… y te quedan 328.000.",
+ "ev": {
+  "ok": false,
+  "nota": 0.9728,
+  "oido": "Ya pero hoy son 400.000, lo que pasa es que Hacienda se queda 72.000 y te quedan 328.000.",
+  "parecido": 1.0,
+  "problemas": [
+   "sobran 12 letras (¿repite?)"
+  ],
+  "t0": [
+   0.0,
+   0.2,
+   0.38,
+   0.6,
+   0.76,
+   2.4,
+   2.6,
+   2.72,
+   2.94,
+   3.14,
+   3.24,
+   3.68,
+   4.06,
+   4.32,
+   6.0,
+   6.08,
+   6.2,
+   6.46
+  ],
+  "t1": [
+   0.2,
+   0.38,
+   0.6,
+   0.76,
+   1.22,
+   2.6,
+   2.72,
+   2.94,
+   3.14,
+   3.24,
+   3.68,
+   4.06,
+   4.32,
+   4.84,
+   6.08,
+   6.2,
+   6.46,
+   7.52
+  ],
+  "ritmo": 13.2,
+  "voz": 0.916
+ }
+}
