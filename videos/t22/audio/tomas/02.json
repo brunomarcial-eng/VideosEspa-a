@@ -1,0 +1,51 @@
+{
+ "huella": "166f584f21ee5afb",
+ "semilla": 2000,
+ "texto": "Hombre… la pensión media de jubilación son 1.451 euros al mes y tú cobras mucho más.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0376,
+  "oido": "Hombre, la pensión media de jubilación son 1.451 euros al mes y tú cobras mucho más.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   1.2,
+   1.26,
+   1.66,
+   1.92,
+   2.08,
+   2.7,
+   3.44,
+   5.24,
+   5.56,
+   5.76,
+   6.02,
+   6.52,
+   6.72,
+   7.14,
+   7.46
+  ],
+  "t1": [
+   0.4000000000000001,
+   1.26,
+   1.66,
+   1.92,
+   2.08,
+   2.7,
+   3.44,
+   5.24,
+   5.56,
+   5.76,
+   6.02,
+   6.52,
+   6.72,
+   7.14,
+   7.46,
+   7.64
+  ],
+  "ritmo": 11.5,
+  "voz": 0.925,
+  "viveza": 4.24
+ }
+}
