@@ -7,6 +7,7 @@
 // Los personajes pisan en y = 1440 (escena entera) o en y = 1700 (en las esquinas, con un objeto en medio).
 
 import { C } from "./limpio.mjs";
+import { maleta } from "./horas.mjs";
 
 const X0 = -400, ANCHO = 1900, VX = 540, VY = 720;
 const txt = (x, y, t, tam, color, o = "", ancla = "middle") => `<text x="${x}" y="${y}" text-anchor="${ancla}" font-family="Cap" font-weight="800" font-size="${tam}" fill="${color}" ${o}>${t}</text>`;
@@ -142,4 +143,21 @@ export function movil(id, mensajes = ["No llego a fin de mes", "Yo tampoco", "¿
     ${mensajes.map((m, i) => { const y = -170 + i * 130, der = i % 2 === 1;
       return `<g id="${id}-m${i}" opacity="0"><rect x="${der ? -60 : -116}" y="${y}" width="176" height="96" rx="20" fill="${der ? "#D8F0C8" : "#FFFFFF"}" stroke="#D9DEE2" stroke-width="3"/>
         <foreignObject x="${der ? -52 : -108}" y="${y + 8}" width="160" height="84"><div xmlns="http://www.w3.org/1999/xhtml" style="font:800 27px Cap;color:${C.tinta};line-height:1.12">${m}</div></foreignObject></g>`; }).join("")}</g>`;
+}
+
+// Dos caminos desde la casa de los padres (2007 y hoy): la maleta («<id>-m0», «<id>-m1») sale de la casa y llega a la
+// edad media a la que los jóvenes se van (bandera «<id>-f0/f1» con su edad). La escala va de 25 a 32 años, sin números
+// (solo las dos edades). En data-a y data-b, la x de salida y de llegada de cada maleta. Origen: centro.
+export function caminosCasa(id, edades, rotulos, o = {}) {
+  const W = o.W ?? 780, x0 = -W / 2 + 170, x1 = W / 2 - 50, desde = 25, hasta = 32;
+  const X = (e) => x0 + (e - desde) / (hasta - desde) * (x1 - x0);
+  const fila = (i) => { const y = i ? 150 : -90, xe = X(edades[i]), col = i ? ROJO : OCRE;
+    return `<g transform="translate(0 ${y})">${txt(-W / 2 + 14, -132, rotulos[i], 38, col, "", "start")}
+      <g transform="translate(${-W / 2 + 78} 0) scale(.72)"><rect x="-60" y="-110" width="120" height="110" rx="6" fill="#E3C9A6"/><path d="M-74 -110 L0 -170 L74 -110 Z" fill="#B3261E" opacity=".85"/>
+        <rect x="-18" y="-64" width="36" height="64" rx="4" fill="#8E6644"/></g>
+      <line x1="${x0 - 30}" y1="6" x2="${x1}" y2="6" stroke="#9AA6AE" stroke-width="8" stroke-dasharray="22 16" stroke-linecap="round"/>
+      <g id="${id}-f${i}" opacity="0"><line x1="${xe.toFixed(1)}" y1="6" x2="${xe.toFixed(1)}" y2="-118" stroke="${col}" stroke-width="7"/>
+        <path d="M${xe.toFixed(1)} -118 h70 l-14 22 l14 22 h-70 Z" fill="${col}"/>${txt(xe, -136, `${String(edades[i]).replace(".", ",")} años`, 40, col)}</g>
+      <g id="${id}-m${i}" data-a="${x0}" data-b="${(xe - 46).toFixed(1)}" transform="translate(${x0} 0)"><g transform="scale(.36)">${maleta(`${id}-mm${i}`, i ? "#7C5C8E" : "#5F7F62")}</g></g></g>`; };
+  return `<g id="${id}"><rect x="${-W / 2 - 30}" y="-300" width="${W + 60}" height="520" rx="24" fill="#FFFDF8" opacity=".95"/>${fila(0)}${fila(1)}</g>`;
 }
