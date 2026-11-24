@@ -2,7 +2,7 @@
 
 **Vídeo:** «¿Cuántas horas trabajas para llenar el depósito?» · Short vertical 1080×1920, 57,9 s, −14,1 LUFS (v1).
 **Fichero:** `videos/t24/render/t24-limpio.mp4` · SHA-256 `f8ea0b1078deeae739e21abba7f14b775f247692c3a1737abd1039e7175875a2`.
-**Aprobación:** el responsable del canal eligió el tema el 24-11-2026 («llenar el depósito», entre regalos de Reyes, llenar el depósito, móvil e internet y matrícula). v1: pendiente de su visto bueno.
+**Aprobación:** el responsable del canal eligió el tema el 24-11-2026 («llenar el depósito», entre regalos de Reyes, llenar el depósito, móvil e internet y matrícula). v1 **aprobada** (24-11-2026: «Top»).
 
 ## Cómo se hizo
 - **Guion:** un padre y su hijo de 15 años, inventados, en una gasolinera de barrio al atardecer; hablan con la forma de hablar del responsable del canal (skill `clon-bruno`). El padre cree que llenar el depósito está como en la crisis; el hijo lo comprueba: casi (24 minutos menos), y más que en 2007, 2016 y 2019. El porqué, con datos (el carburante ha subido más que el sueldo), y un dato más: los hogares echan menos litros. Acaba con una pregunta («¿Y tú coges menos el coche que antes?»). No da causas (petróleo, impuestos, guerras) ni nombra partidos ni marcas; el tótem de la gasolinera no lleva marca ni precios.
