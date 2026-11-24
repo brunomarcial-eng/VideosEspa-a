@@ -17,7 +17,7 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 8 | 51-55 s | padre (unos 60, el padre, convencido de que antes el Gordo daba para diez pisos) | Vamos que aquel Gordo hoy serían casi 430.000 euros. | El Gordo de 2007, en euros de hoy: 427.929 € <br>_Con el IPC del INE. Hoy te quedan 328.000 €: un 23 % menos_ | CÁLCULO PROPIO · BOE E INE (IPC) | El montón de 2007 crece hasta su tamaño en euros de hoy, más grande que el de ahora. |
 | 9 | 55-63 s | hija (unos 35, la hija, que lo comprueba todo) | Total que para Hacienda más y para ti menos años. ¿Y tú con el Gordo de hoy dejarías el curro? | ¿Con el Gordo de hoy dejarías de trabajar? | — | Los dos en el sofá, con el sorteo de fondo; la hija pregunta a cámara. |
 
-**Cierre:** Empeora frente a 2007 en años de sueldo (21,1 → 16,1) y en euros de hoy (−23 %); igual en pisos (1,6 → 1,7, piso y medio). Hacienda pasa de no llevarse nada a 72.000 € por décimo.. El premio por décimo sube un 33 % (de 300.000 a 400.000 €), pero desde 2013 tributa y los precios y los sueldos han subido más.
+**Cierre:** Empeora frente a 2007 en años de sueldo (21,1 → 16,1) y en euros de hoy (−23 %); igual en pisos (1,6 → 1,7, piso y medio). Hacienda pasa de no llevarse nada a 72.000 € por décimo. El premio por décimo sube un 33 % (de 300.000 a 400.000 €), pero desde 2013 tributa y los precios y los sueldos han subido más.
 
 ## Cifras verificadas contra los datos
 

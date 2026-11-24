@@ -1,0 +1,61 @@
+{
+ "tema": "¿Para cuánto te da hoy el Gordo? 2007 frente a hoy",
+ "piso_m2": 90,
+ "nota": "«Hoy»: el Gordo de 2026 con el sueldo, el piso y el IPC del último año completo (2025).",
+ "sueldo_neto_anual": {
+  "2007": 14220,
+  "2016": 15987,
+  "2019": 16704,
+  "2025": 20424
+ },
+ "precio_m2": {
+  "2007": 2056.35,
+  "2016": 1502.62,
+  "2019": 1641.2,
+  "2025": 2127.57
+ },
+ "anyos": {
+  "2007": {
+   "fuente_premio": "BOE-A-2007-21550",
+   "estado": "V",
+   "decimo_eur": 20,
+   "gordo_decimo": 300000,
+   "exento_eur": null,
+   "hacienda_eur": 0,
+   "hacienda_pct": 0.0,
+   "te_queda": 300000,
+   "euros_por_euro_jugado": 15000,
+   "anyos_sueldo": 21.1,
+   "piso_90m2_eur": 185072,
+   "pisos": 1.6,
+   "te_queda_en_euros_de_2025": 427929
+  },
+  "2016": {
+   "sin_programa_oficial": true,
+   "exento_eur": 2500
+  },
+  "2019": {
+   "sin_programa_oficial": true,
+   "exento_eur": 20000
+  },
+  "hoy": {
+   "fuente_premio": "Loterías y Apuestas del Estado, programa de premios de 2026 (copiado por Bruno)",
+   "estado": "V",
+   "decimo_eur": 20,
+   "gordo_decimo": 400000,
+   "exento_eur": 40000,
+   "hacienda_eur": 72000,
+   "hacienda_pct": 18.0,
+   "te_queda": 328000,
+   "euros_por_euro_jugado": 20000,
+   "anyos_sueldo": 16.1,
+   "piso_90m2_eur": 191481,
+   "pisos": 1.7,
+   "te_queda_en_euros_de_2025": 328000
+  }
+ },
+ "hoy_frente_2007": {
+  "anyos_sueldo_menos": 5.0,
+  "valor_real_pct": -23.4
+ }
+}
