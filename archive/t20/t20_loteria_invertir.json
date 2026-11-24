@@ -78,6 +78,7 @@
    "jugado_eur": 2818,
    "en_bolsa_eur": 13160,
    "veces": 4.7,
+   "gana_pct": 367.0,
    "por_anyo": {
     "2007": {
      "jugado": 186,
@@ -164,6 +165,7 @@
    "jugado_eur": 1355,
    "en_bolsa_eur": 3023,
    "veces": 2.2,
+   "gana_pct": 123.1,
    "por_anyo": {
     "2016": {
      "jugado": 151,
@@ -214,6 +216,7 @@
    "jugado_eur": 895,
    "en_bolsa_eur": 1589,
    "veces": 1.8,
+   "gana_pct": 77.5,
    "por_anyo": {
     "2019": {
      "jugado": 146,

@@ -187,7 +187,7 @@ export function escenas(D) {
     { n: 8, set: "vacio",
       svg: `${grafica("s8-g", [2016, 2019], "2008: −" + rnd(-D.caida08) + "\u00A0%")}${gente("s8", "vc")}`,
       tarjeta: tarjeta(8, "Si empiezas en 2016", `${vs(8, [miles(I16.jugado_eur) + "&nbsp;€", miles(I16.en_bolsa_eur) + "&nbsp;€"], ["jugado", "en bolsa hoy"])}
-        <div class="nota">Desde 2019: ${I19.jugado_eur}&nbsp;€ jugados y ${miles(I19.en_bolsa_eur)}&nbsp;€ en bolsa. En 2008 la bolsa cayó un ${rnd(-D.caida08)}&nbsp;%</div>`, { fuente: F_BOLSA, icono: bandera(44) }),
+        <div class="nota">Desde 2019: ${I19.jugado_eur}&nbsp;€ jugados y ${miles(I19.en_bolsa_eur)}&nbsp;€ en bolsa (<b style="color:#3F7A4A">+${rnd(I19.gana_pct)}&nbsp;%</b>). En 2008 la bolsa cayó un ${rnd(-D.caida08)}&nbsp;%</div>`, { fuente: F_BOLSA, icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c;
         ambiente("oficinaNavidad", null, t, 0);

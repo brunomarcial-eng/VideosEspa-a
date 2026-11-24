@@ -7,8 +7,26 @@
  },
  "ambientes": [
   {
-   "tipo": "oficina",
+   "tipo": "cola",
    "desde": 1,
+   "hasta": 1,
+   "vol": 1.0
+  },
+  {
+   "tipo": "oficina",
+   "desde": 2,
+   "hasta": 2,
+   "vol": 1.0
+  },
+  {
+   "tipo": "salon",
+   "desde": 3,
+   "hasta": 3,
+   "vol": 1.0
+  },
+  {
+   "tipo": "oficina",
+   "desde": 4,
    "hasta": 11,
    "vol": 1.0
   }
@@ -221,6 +239,28 @@
    "beat": 11,
    "palabra": "Ilusión",
    "dt": -0.1
+  },
+  {
+   "id": "c3-hogar",
+   "beat": 3,
+   "palabra": "hogar",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c3-apuestas",
+   "beat": 3,
+   "palabra": "apuestas",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-78",
+   "beat": 8,
+   "palabra": "78",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
   }
  ]
 }
