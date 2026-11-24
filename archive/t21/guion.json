@@ -1,0 +1,337 @@
+{
+ "id": "t21",
+ "version": 2,
+ "titulo": "¿Alquilar hoy cuesta más horas de trabajo que en plena crisis?",
+ "titulo_alternativo": "El alquiler en horas de curro: 2007, la crisis, 2016, 2019 y hoy. ¿Y quién alquila?",
+ "pregunta": "¿Cuántas horas de trabajo se lleva el alquiler medio hoy frente a 2007, la crisis (2013), 2016 y 2019? ¿Y quién alquila hoy?",
+ "datos": "data/clean/t21_alquiler.json",
+ "aprobacion_datos": "Bruno eligió el alquiler el 24-11-2026 (entre alquiler, calefacción y matrícula). Tabla en videos/t21/paso-1-datos.md. Bruno, 24-11-2026: le gustó el paso de propietarios a inquilinos; pidió meter los datos de la crisis («estamos igual que en la crisis»), la comparación con 2016, la parte del sueldo que se lleva el alquiler y que la gente se va de casa más tarde. Sin «por mucho que nos digan» (apunta al Gobierno: regla 3); lo de la crisis lo dice un personaje con el dato.",
+ "formato": "Dos hermanos inventados en el piso de alquiler de él, recién mudado y con cajas: él (unos 32) vive de alquiler; ella (unos 45) alquiló en 2007 y luego compró. Horas de trabajo del alquiler medio en 2007, en plena crisis (2013), 2016, 2019 y hoy; cuántos hogares de 30 a 44 años tienen casa propia o alquilan; y a qué edad se van de casa. Pregunta final al espectador.",
+ "duracion_max_s": 80,
+ "personajes": {
+  "hermano": {
+   "anyo": "unos 32, vive de alquiler y acaba de mudarse",
+   "voz": "hijo"
+  },
+  "hermana": {
+   "anyo": "unos 45, la hermana mayor: alquiló en 2007 y luego compró",
+   "voz": "medica"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.5,
+  "viveza_tomas": 3
+ },
+ "sin_veredicto": "El veredicto lo da el hermano en el plano 9: alquilar cuesta hoy como en plena crisis (40 → 41 h al mes) y más que en 2016 (39 h: casi cuatro días más de curro al año), y tener piso propio, mucho más difícil (74 % → 53 % de los hogares de 30 a 44 años). La hermana dice en el plano 4 que frente a 2007 es algo menos (42 h). Acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "Como en la crisis",
+   "beats": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "nombre": "Las horas",
+   "beats": [
+    4,
+    5
+   ]
+  },
+  {
+   "nombre": "Quién alquila",
+   "beats": [
+    6,
+    7,
+    8,
+    9
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "hermano",
+   "funcion": "gancho",
+   "voz": "¿Alquilar hoy te cuesta más horas de curro que en plena crisis? Porque mi hermana dice que ni de broma…",
+   "pantalla": "¿El alquiler te cuesta hoy más horas que en plena crisis?",
+   "sello": null,
+   "imagen": "El piso de alquiler recién estrenado, lleno de cajas de mudanza. Los dos entre las cajas. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "hermana",
+   "funcion": "dato: el alquiler en plena crisis",
+   "voz": "Hombre… en 2013 el alquiler medio eran 399 euros y con el sueldo mediano salían 40 horas de curro al mes.",
+   "pantalla": "En plena crisis (2013): 399 € al mes = 40 horas de trabajo",
+   "nota": "Lo que pagaban de media los hogares inquilinos. Sueldo neto mediano: 9,90 € la hora",
+   "sello": "CÁLCULO PROPIO · MICRODATOS DE LA EPF E INE",
+   "imagen": "Un sobre de «ALQUILER» con una etiqueta de 2013 encima de una caja."
+  },
+  {
+   "n": 3,
+   "quien": "hermano",
+   "funcion": "dato: hoy, más que en la crisis",
+   "voz": "Ya pero hoy son 534. O sea 41 horas al mes… más que en plena crisis.",
+   "pantalla": "Hoy: 534 € al mes = 41 horas de trabajo",
+   "nota": "Sueldo neto mediano: 12,98 € la hora; el alquiler se lleva el 31 % del sueldo. Es la media de todos los inquilinos, con contratos viejos y nuevos",
+   "sello": "INE · EPF Y ESTRUCTURA SALARIAL · CÁLCULO PROPIO",
+   "imagen": "El sobre de hoy, más gordo, y una semana de curro (lunes a viernes) que se tacha entera."
+  },
+  {
+   "n": 4,
+   "quien": "hermana",
+   "funcion": "matiz: frente a 2007, algo menos",
+   "voz": "Bueno pero en 2007 eran 42 ¿eh? Más que ahora.",
+   "pantalla": "Horas de trabajo para pagar un mes de alquiler · 2007: 42 · hoy: 41",
+   "nota": "2013: 40 · 2016: 39 · 2019: 42. Alquiler medio de los hogares inquilinos entre el sueldo neto mediano por hora",
+   "sello": "CÁLCULO PROPIO · INE",
+   "imagen": "Cinco columnas de horas (2007, 2013, 2016, 2019 y hoy); se marcan 2007 y hoy."
+  },
+  {
+   "n": 5,
+   "quien": "hermano",
+   "funcion": "dato: frente a 2016, peor",
+   "voz": "Ya y en 2016 eran 39. O sea casi cuatro días más de curro al año que entonces.",
+   "pantalla": "Horas de trabajo para pagar un mes de alquiler · 2016: 39 · hoy: 41",
+   "nota": "Al año, 29 horas más que en 2016. 2007: 42 · 2013: 40 · 2019: 42",
+   "sello": "CÁLCULO PROPIO · INE",
+   "imagen": "Las mismas columnas; se marcan 2016 y hoy, y salta una etiqueta de horas de más al año."
+  },
+  {
+   "n": 6,
+   "quien": "hermana",
+   "funcion": "dato: quién tiene casa propia",
+   "voz": "Eso sí… en 2007 tres de cada cuatro de tu edad tenían piso propio y hoy poco más de la mitad.",
+   "pantalla": "Hogares de 30 a 44 años con casa en propiedad · 2007: 74 % · hoy: 53 %",
+   "nota": "2013: 68 % · 2016: 64 % · 2019: 59 %",
+   "sello": "INE · ENCUESTA DE CONDICIONES DE VIDA",
+   "imagen": "Dos bloques de pisos, 2007 y hoy, con veinte ventanas cada uno: en las de los propietarios, unas llaves. En el de hoy hay muchas menos."
+  },
+  {
+   "n": 7,
+   "quien": "hermano",
+   "funcion": "dato: quién alquila",
+   "voz": "Y los que alquilamos a precio de mercado nos hemos duplicado… del 16 al 32 %.",
+   "pantalla": "Hogares de 30 a 44 años de alquiler a precio de mercado · 2007: 16 % · hoy: 32 %",
+   "nota": "2013: 21 % · 2016: 24 % · 2019: 29 %",
+   "sello": "INE · ENCUESTA DE CONDICIONES DE VIDA",
+   "imagen": "En los dos bloques se encienden los carteles de «SE ALQUILA»: tres ventanas en 2007 y seis hoy."
+  },
+  {
+   "n": 8,
+   "quien": "hermana",
+   "funcion": "dato: os vais de casa más tarde",
+   "voz": "Y encima os vais de casa a los 30… casi dos años más tarde que en 2007.",
+   "pantalla": "Edad media a la que los jóvenes se van de casa de sus padres · 2007: 28,4 · hoy: 30,2",
+   "nota": "2013: 28,9 · 2016: 29,4 · 2019: 29,5. La serie cambió de método a mitad de camino",
+   "sello": "EUROSTAT",
+   "imagen": "Dos caminos que salen de la casa de los padres, 2007 y hoy: una maleta llega a los 28,4 años y otra, más lejos, a los 30,2."
+  },
+  {
+   "n": 9,
+   "quien": "hermano",
+   "funcion": "veredicto y pregunta",
+   "voz": "Total que alquilar cuesta como en plena crisis y tener piso propio mucho más difícil. ¿Tú alquilas porque quieres o porque no te queda otra?",
+   "pantalla": "¿Alquilas porque quieres o porque no te queda otra?",
+   "sello": null,
+   "imagen": "Los dos en el piso, entre las cajas; él pregunta a cámara."
+  }
+ ],
+ "no_dato": [
+  "30",
+  "44"
+ ],
+ "cifras": [
+  {
+   "texto": "399",
+   "ruta": "alquiler.2013.alquiler_mes",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "40",
+   "ruta": "alquiler.2013.horas_mes",
+   "aprox": 40,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "9,90",
+   "ruta": "alquiler.2013.neto_hora_mediana",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "534",
+   "ruta": "alquiler.2025.alquiler_mes",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "41",
+   "ruta": "alquiler.2025.horas_mes",
+   "aprox": 41,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "12,98",
+   "ruta": "alquiler.2025.neto_hora_mediana",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "31",
+   "ruta": "alquiler.2025.parte_sueldo_pct",
+   "aprox": 31,
+   "tolerancia_pct": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "42",
+   "ruta": "alquiler.2007.horas_mes",
+   "aprox": 42,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "39",
+   "ruta": "alquiler.2016.horas_mes",
+   "aprox": 39,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "42",
+   "ruta": "alquiler.2019.horas_mes",
+   "aprox": 42,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "29",
+   "ruta": "horas_al_anyo_mas_que_2016",
+   "aprox": 29,
+   "tolerancia_pct": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "74",
+   "ruta": "quien_alquila.30_44.propiedad_pct.2007",
+   "aprox": 74,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "53",
+   "ruta": "quien_alquila.30_44.propiedad_pct.2025",
+   "aprox": 53,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "68",
+   "ruta": "quien_alquila.30_44.propiedad_pct.2013",
+   "aprox": 68,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "64",
+   "ruta": "quien_alquila.30_44.propiedad_pct.2016",
+   "aprox": 64,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "59",
+   "ruta": "quien_alquila.30_44.propiedad_pct.2019",
+   "aprox": 59,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "16",
+   "ruta": "quien_alquila.30_44.alquiler_mercado_pct.2007",
+   "aprox": 16,
+   "tolerancia_pct": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "32",
+   "ruta": "quien_alquila.30_44.alquiler_mercado_pct.2025",
+   "aprox": 32,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "21",
+   "ruta": "quien_alquila.30_44.alquiler_mercado_pct.2013",
+   "aprox": 21,
+   "tolerancia_pct": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "24",
+   "ruta": "quien_alquila.30_44.alquiler_mercado_pct.2016",
+   "aprox": 24,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "29",
+   "ruta": "quien_alquila.30_44.alquiler_mercado_pct.2019",
+   "aprox": 29,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "28,4",
+   "ruta": "edad_emancipacion.2007",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "30,2",
+   "ruta": "edad_emancipacion.2025",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "28,9",
+   "ruta": "edad_emancipacion.2013",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "29,4",
+   "ruta": "edad_emancipacion.2016",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "29,5",
+   "ruta": "edad_emancipacion.2019",
+   "decimales": 1,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "Alquiler de 2016, 2019 y 2025 (V): INE, EPF, tabla 73827, gasto medio de los hogares con gasto en «alquileres reales (vivienda principal)»: 4.775,12 €, 5.507,76 € y 6.408,15 € al año (398, 459 y 534 € al mes).",
+  "Alquiler de 2007 y 2013 (C): microdatos de la EPF del INE (scripts/extraer_epf_alquiler.py), hogares en alquiler (régimen 3 y 4): 4.428,45 € y 4.786,92 € al año (369 y 399 € al mes). El gasto medio de todos los hogares cuadra al céntimo con la tabla 10630 cada año (625,10 € y 809,42 €). Con el mismo método, 2016 sale un 1,6 % por debajo de la tabla publicada.",
+  "Horas (C): alquiler al mes / sueldo neto mediano por hora (método de T1): 8,79 €, 9,90 €, 10,27 €, 10,85 € y 12,98 € → 42,0 · 40,3 · 38,7 · 42,3 · 41,1 horas. Al año, frente a 2016: 12 × 2,4 = 28,7 horas, casi cuatro jornadas de 8 horas.",
+  "Parte del sueldo (C): 534 € / 1.702 € de sueldo neto mediano al mes = 31,4 %.",
+  "Hogares de 30 a 44 años (V): INE, ECV, tabla 9994 (edad de la persona de referencia): propiedad 74,3 · 67,9 · 64,4 · 59,4 · 53,1 %; alquiler a precio de mercado 15,8 · 21,3 · 24,2 · 28,8 · 32,1 %. «Tres de cada cuatro» y «poco más de la mitad»; «se han duplicado» (×2,03).",
+  "Edad de emancipación (V): Eurostat, yth_demo_030: 28,4 · 28,9 · 29,4 · 29,5 · 30,2 años (corte de serie en 2021). «Casi dos más tarde»: 1,8 años."
+ ],
+ "cierre": {
+  "veredicto": "Empeora frente a la crisis (2013: 40 → 41 h al mes) y frente a 2016 (39 → 41 h); algo menos que en 2007 y 2019 (42 h). Para tener casa propia, empeora frente a todos los años: los hogares de 30 a 44 años con casa en propiedad bajan del 74 % al 53 %, los que alquilan a precio de mercado se duplican (16 → 32 %) y los jóvenes se van de casa más tarde (28,4 → 30,2 años)",
+  "porque": "El alquiler medio sube más que el sueldo neto mediano por hora desde 2013 y 2016, y hoy vive de alquiler mucha más gente de menos de 45 años.",
+  "pregunta": "¿Alquilas porque quieres o porque no te queda otra?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno (v2, 24-11-2026: con la crisis, 2016 y la edad de emancipación)"
+}
