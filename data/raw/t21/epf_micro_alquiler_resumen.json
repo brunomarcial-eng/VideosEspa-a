@@ -1,0 +1,78 @@
+{
+ "2007": {
+  "url": "https://www.ine.es/ftp/microdatos/epf2006/epf_2007.zip",
+  "sha256_zip": "2d457fc4309ebe26a9b29895236bdc8b4b6b2623905553b8fdd205e59839f9a5",
+  "bytes_zip": 28602589,
+  "codigo_alquiler": "04111",
+  "hogares_muestra": 21542,
+  "hogares_elevados": 16643003,
+  "hogares_inquilinos_pct": 13.99,
+  "alquiler_medio_inquilino_anual": 4428.45,
+  "alquiler_medio_inquilino_mes": 369.04,
+  "alquiler_medio_todos_los_hogares_anual": 625.1,
+  "por_regimen": {
+   "1": {
+    "pct_hogares": 50.1,
+    "alquiler_medio_anual": 0.52
+   },
+   "2": {
+    "pct_hogares": 30.8,
+    "alquiler_medio_anual": 1.66
+   },
+   "3": {
+    "pct_hogares": 12.57,
+    "alquiler_medio_anual": 4781.37
+   },
+   "4": {
+    "pct_hogares": 1.42,
+    "alquiler_medio_anual": 1306.81
+   },
+   "5": {
+    "pct_hogares": 2.48,
+    "alquiler_medio_anual": 169.14
+   },
+   "6": {
+    "pct_hogares": 2.62,
+    "alquiler_medio_anual": 28.14
+   }
+  }
+ },
+ "2016": {
+  "url": "https://www.ine.es/ftp/microdatos/epf2006/epf_2016.zip",
+  "sha256_zip": "42344f9e6f9d38791552d0e92095d8a8df4b012ad8b47eb1d6f31fa2a82baf4d",
+  "bytes_zip": 31441136,
+  "codigo_alquiler": "04110",
+  "hogares_muestra": 22011,
+  "hogares_elevados": 18444023,
+  "hogares_inquilinos_pct": 17.56,
+  "alquiler_medio_inquilino_anual": 4698.49,
+  "alquiler_medio_inquilino_mes": 391.54,
+  "alquiler_medio_todos_los_hogares_anual": 832.77,
+  "por_regimen": {
+   "1": {
+    "pct_hogares": 47.56,
+    "alquiler_medio_anual": 3.11
+   },
+   "2": {
+    "pct_hogares": 28.68,
+    "alquiler_medio_anual": 6.49
+   },
+   "3": {
+    "pct_hogares": 16.47,
+    "alquiler_medio_anual": 4918.86
+   },
+   "4": {
+    "pct_hogares": 1.09,
+    "alquiler_medio_anual": 1368.63
+   },
+   "5": {
+    "pct_hogares": 3.34,
+    "alquiler_medio_anual": 101.11
+   },
+   "6": {
+    "pct_hogares": 2.86,
+    "alquiler_medio_anual": 37.26
+   }
+  }
+ }
+}
