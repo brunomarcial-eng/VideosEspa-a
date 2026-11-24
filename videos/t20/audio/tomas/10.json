@@ -1,0 +1,54 @@
+{
+ "huella": "0e3fe012910ac3c8",
+ "semilla": 10000,
+ "texto": "Pues Hacienda se queda el 20 % de lo que pase de 40.000 euros. En 2007 nada.",
+ "ev": {
+  "ok": false,
+  "nota": 0.8929,
+  "oido": "Pues hacienda se queda el 20% de lo que pase de 40.000 euros, en 2007 nada.",
+  "parecido": 1.0,
+  "problemas": [
+   "no oigo: 40.000"
+  ],
+  "t0": [
+   0.0,
+   0.62,
+   1.08,
+   1.24,
+   1.4,
+   1.52,
+   1.74,
+   2.16,
+   2.44,
+   2.52,
+   2.64,
+   2.86,
+   3.0,
+   3.54,
+   4.16,
+   4.4,
+   4.92
+  ],
+  "t1": [
+   0.62,
+   1.08,
+   1.24,
+   1.4,
+   1.52,
+   1.74,
+   2.16,
+   2.44,
+   2.52,
+   2.64,
+   2.86,
+   3.0,
+   3.54,
+   3.8,
+   4.4,
+   4.92,
+   5.24
+  ],
+  "ritmo": 17.5,
+  "voz": 0.936
+ }
+}
