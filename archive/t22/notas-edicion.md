@@ -2,7 +2,7 @@
 
 **Vídeo:** «¿Quién cobra más: un jubilado o un joven que trabaja?» · Short vertical 1080×1920, 77,0 s, −14,1 LUFS (v2).
 **Fichero:** `videos/t22/render/t22-limpio.mp4` · SHA-256 `24716c30984bf64be7594e37e20e50a40a7ad388ce3d18bb7776a85b68bfdaff`.
-**Aprobación:** el responsable del canal eligió el tema el 24-11-2026 («pensión frente a sueldo joven», entre pensiones, calefacción y matrícula). v1: «lo que has dicho y lo que has hecho en el vídeo está fantástico», pero pidió meter «el segmento más joven todavía, los de 18 a 25». v2 con los menores de 25 años (la EAES los agrupa así, de 16 a 24): pendiente de su visto bueno.
+**Aprobación:** el responsable del canal eligió el tema el 24-11-2026 («pensión frente a sueldo joven», entre pensiones, calefacción y matrícula). v1: «lo que has dicho y lo que has hecho en el vídeo está fantástico», pero pidió meter «el segmento más joven todavía, los de 18 a 25». v2 con los menores de 25 años (la EAES los agrupa así, de 16 a 24): **aprobada** (24-11-2026, «Siguiente video»).
 
 ## Cómo se hizo
 - **Guion:** un abuelo jubilado y su nieta, inventados, en un banco del parque; hablan con la forma de hablar del responsable del canal (skill `clon-bruno`). El abuelo cree que cobra la mitad que su nieta; ella lo comprueba. El abuelo dice que desde 2016 está igual, y es verdad (81 %): la conclusión cambia con el año base y se dice. Acaba con una pregunta («¿Y en tu casa quién llega mejor a fin de mes?»). No da causas (revalorizaciones, crisis, mercado laboral) ni nombra partidos ni marcas.
