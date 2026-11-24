@@ -1,0 +1,45 @@
+plano 1: «¿Quién cobra más hoy: un jubilado o un joven que curra? Porque mi abuelo dice que él ni la mitad que yo…»
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.928 · 6.9 s · 11.5 l/s · viveza 4.34 st · «¿Quién cobra más hoy? Un jubilado o un joven que curra. Porque mi abuelo dice que él ni la mitad que yo.»
+    toma 2 (semilla 1001): BUENA · 1.0 · voz 0.915 · 6.3 s · 12.6 l/s · viveza 3.98 st · «¿Quién cobra más hoy? Un jubilado o un joven que curra. Porque mi abuelo dice que él ni la mitad que yo.»
+    toma 3 (semilla 1002): BUENA · 1.0 · voz 0.904 · 6.8 s · 11.6 l/s · viveza 3.64 st · «¿Quién cobra más hoy? Un jubilado o un joven que curra. Porque mi abuelo dice que él ni la mitad que yo.»
+    elegida la toma con más entonación: semilla 1000 (4.34 st)
+plano 2: «Hombre… la pensión media de jubilación son 1.451 euros al mes y tú cobras mucho más.»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.925 · 7.9 s · 11.5 l/s · viveza 4.24 st · «Hombre, la pensión media de jubilación son 1.451 euros al mes y tú cobras mucho más.»
+    toma 2 (semilla 2001): BUENA · 1.0 · voz 0.933 · 7.1 s · 12.8 l/s · viveza 3.49 st · «Hombre, la pensión media de jubilación son 1451 euros al mes y tu cobras mucho más.»
+    toma 3 (semilla 2002): BUENA · 1.0 · voz 0.936 · 7.3 s · 12.5 l/s · viveza 3.92 st · «Hombre, la pensión media de jubilación son 1.451 euros al mes y tú cobras mucho más.»
+    elegida la toma con más entonación: semilla 2000 (4.24 st)
+plano 3: «Ya pero un joven de mi edad cobra de media más de 25.000 euros al año y tú unos 20.000… el 81 % de lo mío.»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.924 · 8.1 s · 13.3 l/s · viveza 4.2 st · «Ya pero un joven de mi edad cobra de media más de 25.000 euros al año y tú unos 20.000, el 81% de lo mío.»
+    toma 2 (semilla 3001): BUENA · 1.0 · voz 0.93 · 7.8 s · 13.7 l/s · viveza 4.18 st · «Ya pero un joven de mi edad cobra de media más de 25.000 euros al año y tú unos 20.000, el 81% de lo mío.»
+    toma 3 (semilla 3002): BUENA · 1.0 · voz 0.91 · 8.7 s · 12.3 l/s · viveza 4.01 st · «Ya pero un joven de mi edad cobra de media más de 25.000 euros al año y tú, unos 20.000, el 81% de lo mío.»
+    elegida la toma con más entonación: semilla 3000 (4.2 st)
+plano 4: «¿El 81 %? Anda ya… en 2007 era poco más de la mitad.»
+    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.943 · 5.5 s · 10.9 l/s · viveza 3.83 st · «El 81%, anda ya, en 2007 era poco más de la mitad.»
+    toma 2 (semilla 4001): BUENA · 1.0 · voz 0.926 · 5.9 s · 10.1 l/s · viveza 4.81 st · «el 81%, anda ya, en 2007 era poco más de la mitad.»
+    toma 3 (semilla 4002): BUENA · 1.0 · voz 0.904 · 5.1 s · 11.7 l/s · viveza 4.33 st · «El 81% anda ya, en 2007 era poco más de la mitad.»
+    elegida la toma con más entonación: semilla 4001 (4.81 st)
+plano 5: «Eso. En 2007 el 58 % y hoy el 81 %… y en plena crisis ya el 76 %.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.947 · 8.7 s · 12.2 l/s · viveza 3.87 st · «Eso. En 2007 el 58% y hoy el 81%, y en plena crisis ya el 76%.»
+    toma 2 (semilla 5001): BUENA · 1.0 · voz 0.924 · 8.8 s · 12.1 l/s · viveza 4.06 st · «Eso. En 2007 el 58% y hoy el 81%. Y en plena crisis, ya el 76%.»
+    toma 3 (semilla 5002): BUENA · 1.0 · voz 0.919 · 9.1 s · 11.6 l/s · viveza 4.16 st · «Eso. En 2007 el 58% y hoy el 81%. Y en plena crisis ya el 76%.»
+    elegida la toma con más entonación: semilla 5002 (4.16 st)
+plano 6: «Bueno pero desde 2016 está igual ¿no?»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.9 · 3.3 s · 12.3 l/s · viveza 4.83 st · «Bueno, pero desde 2016 está igual, ¿no?»
+    toma 2 (semilla 6001): BUENA · 1.0 · voz 0.906 · 2.8 s · 14.3 l/s · viveza 3.38 st · «Bueno, pero desde 2016 está igual, ¿no?»
+    toma 3 (semilla 6002): BUENA · 1.0 · voz 0.906 · 3.0 s · 13.2 l/s · viveza 3.29 st · «Bueno, pero desde 2016 está igual, ¿no?»
+    elegida la toma con más entonación: semilla 6000 (4.83 st)
+plano 7: «Lo gordo viene de antes. Desde 2007 tu pensión sube un 91 % y el sueldo joven un 37 %… y los precios un 39 %.»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.926 · 11.4 s · 12.5 l/s · viveza 3.2 st · «Lo gordo viene de antes. Desde 2007 tu pensión sube un 91% y el sueldo joven un 37% y los precios un 39%.»
+    toma 2 (semilla 7001): BUENA · 1.0 · voz 0.915 · 10.5 s · 13.6 l/s · viveza 4.76 st · «Lo gordo viene de antes. Desde 2007 tu pensión sube un 91% y el sueldo joven un 37% y los precios un 39%.»
+    toma 3 (semilla 7002): BUENA · 1.0 · voz 0.914 · 11.4 s · 12.6 l/s · viveza 3.44 st · «Lo gordo viene de antes. Desde 2007 tu pensión sube un 91% y el sueldo joven un 37% y los precios un 39%.»
+    elegida la toma con más entonación: semilla 7001 (4.76 st)
+plano 8: «O sea que en euros de hoy yo gano más de un tercio y tú… lo mismo que en 2007.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.921 · 5.3 s · 12.0 l/s · viveza 3.6 st · «O sea que en euros de hoy yo gano más de un tercio y tú, lo mismo que en 2007.»
+    toma 2 (semilla 8001): BUENA · 1.0 · voz 0.929 · 4.7 s · 13.7 l/s · viveza 2.48 st · «O sea que en euros de hoy yo gano más de un tercio y tú, lo mismo que en 2007.»
+    toma 3 (semilla 8002): BUENA · 1.0 · voz 0.932 · 5.6 s · 11.4 l/s · viveza 4.24 st · «O sea, que en euros de hoy yo gano más de un tercio y tú lo mismo que en 2007.»
+    elegida la toma con más entonación: semilla 8002 (4.24 st)
+plano 9: «Total que el jubilado gana poder de compra y el joven se queda igual. ¿Y en tu casa quién llega mejor a fin de mes?»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.911 · 7.0 s · 12.6 l/s · viveza 3.99 st · «Total que el jubilado gana poder de compra y el joven se queda igual. ¿Y en tu casa quién llega mejor a fin de mes?»
+    toma 2 (semilla 9001): BUENA · 1.0 · voz 0.921 · 7.1 s · 12.4 l/s · viveza 3.81 st · «Total que el jubilado gana poder de compra y el joven se queda igual. ¿Y en tu casa quién llega mejor a fin de mes?»
+    toma 3 (semilla 9002): BUENA · 1.0 · voz 0.907 · 6.5 s · 13.5 l/s · viveza 4.1 st · «Total que el jubilado gana poder de compra y el joven se queda igual. ¿Y en tu casa quién llega mejor a fin de mes?»
+    elegida la toma con más entonación: semilla 9002 (4.1 st)
