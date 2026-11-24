@@ -1,7 +1,7 @@
 # T19 · Notas de edición (archivo por si hay apelación)
 
-**Vídeo:** «¿Para cuánto te da hoy el Gordo? 2007 frente a 2026» · Short vertical 1080×1920, DURACION, LUFS.
-**Fichero:** `videos/t19/render/t19-limpio.mp4` · SHA-256 `SHA`.
+**Vídeo:** «¿Para cuánto te da hoy el Gordo? 2007 frente a 2026» · Short vertical 1080×1920, 55,8 s, −14,2 LUFS.
+**Fichero:** `videos/t19/render/t19-limpio.mp4` · SHA-256 `6df2a802c81d90aeb7ed7c05c4bba368d585240e410df3770139f55589526ab3`.
 **Aprobación:** el responsable del canal eligió la lotería de Navidad el 23-11-2026 y el 24-11-2026 pidió dos vídeos; este, cuánto te deja el Gordo hoy y antes: lo que se queda Hacienda, los años de sueldo y los pisos (él creía que antes daba para diez casas y pidió contrastarlo). Aprobó comparar solo 2007 y hoy (excepción a la regla de tres años) porque el BOE dejó de publicar los programas de premios en 2011 y no hay programa oficial citable de 2016 ni de 2019.
 
 ## Cómo se hizo

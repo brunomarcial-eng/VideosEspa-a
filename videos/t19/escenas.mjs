@@ -131,12 +131,14 @@ export function escenas(D) {
     // 6 · El padre recula: «Bueno… piso y medio. Pero es que antes los sueldos eran otros.»
     { n: 6, set: "vacio",
       svg: `<g transform="translate(580 940) scale(.92)">${filaPisos("s6-a", D.v.pisos, "2007")}</g><g transform="translate(580 1200) scale(.92)">${filaPisos("s6-b", D.h.pisos, "Hoy")}</g>${gente("s6", "hp")}`,
-      tarjeta: tarjeta(6, "El padre", `<div class="tit" style="font-size:64px">«Antes los <mark id="m6">sueldos</mark> eran otros»</div>`, { tono: "hoy", fuente: F_PISO }),
+      // la misma tarjeta de los pisos: el 1,7 sale al final del plano 5 y así se queda en pantalla para leerlo
+      tarjeta: vs(6, "Pisos de 90 m² con lo que te queda", [es(D.v.pisos), es(D.h.pisos)], ["en 2007", "hoy"],
+        `Valor tasado medio de la vivienda libre: ${miles(D.m2["2007"])}&nbsp;€/m² en 2007 y ${miles(D.m2["2025"])}&nbsp;€/m² en 2025`, F_PISO),
       fn: function (t, e) {
         const c = e.c;
         ambiente("calle", null, t, 0);
         for (const f of ["s6-a", "s6-b"]) { css(f + "-diez", "opacity", 0); css(f + "-luz", "opacity", 1); }
-        marca("m6", t, c["c6-sueldos"]);
+        sube("c6-a", t, e.t0 - 1); sube("c6-b", t, e.t0 - 1);
         persona("s6-h", t, { x: 130, y: 1700, s: 0.64, mira: 1, vivo: true, boca: [[0, "sonrisa"]], brazo: [[0, "abajo"]], fase: 1 });
         persona("s6-p", t, { x: 950, y: 1700, s: 0.66, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "piensa"], [c["c6-sueldos"] - 0.2, "senala"]], incl: [[0, -5], [c["c6-sueldos"], 0]], espejo: true, fase: 2 });
       },
@@ -174,7 +176,7 @@ export function escenas(D) {
         pop("s8-a", t, c["c8-gordo"] - 0.2, 300, 1060, { s: 1 }); pop("s8-b", t, c["c8-gordo"] + 0.2, 790, 1100, { s: 1 });
         T("s8-la", 300, 1250, {}); T("s8-lb", 790, 1250, {});
         css("s8-la", "opacity", clamp((t - c["c8-430000"]) / 0.3)); css("s8-lb", "opacity", clamp((t - c["c8-430000"] - 0.4) / 0.3));
-        sube("c8-a", t, c["c8-430000"]); sube("c8-b", t, c["c8-430000"] + 0.5);
+        sube("c8-a", t, c["c8-gordo"]); sube("c8-b", t, c["c8-430000"]);
         persona("s8-h", t, { x: 120, y: 1700, s: 0.64, mira: 1, vivo: true, boca: [[0, "seria"], [c["c8-430000"] + 0.3, "o"]], brazo: [[0, "abajo"]], fase: 1 });
         persona("s8-p", t, { x: 960, y: 1700, s: 0.66, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c8-gordo"] - 0.2, "senala"]], espejo: true, fase: 2 });
       },

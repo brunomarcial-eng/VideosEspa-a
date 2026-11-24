@@ -112,9 +112,10 @@
    "quien": "padre",
    "funcion": "la duda",
    "voz": "Bueno… piso y medio. Pero es que antes los sueldos eran otros.",
-   "pantalla": "«Antes los sueldos eran otros»",
-   "sello": null,
-   "imagen": "El padre se rasca la cabeza."
+   "pantalla": "Pisos de 90 m² con lo que te queda · 2007: 1,6 · hoy: 1,7",
+   "sello": "CÁLCULO PROPIO · BOE, LOTERÍAS Y MINISTERIO DE VIVIENDA",
+   "imagen": "Sigue la calle con los pisos (piso y medio en 2007 y hoy) y la misma tarjeta, para que dé tiempo a leerla; el padre se rasca la cabeza y señala.",
+   "nota": "Valor tasado medio de la vivienda libre: 2.056 €/m² en 2007 y 2.128 €/m² en 2025"
   },
   {
    "n": 7,
@@ -144,7 +145,10 @@
    "voz": "Total que para Hacienda más y para ti menos años. ¿Y tú con el Gordo de hoy dejarías el curro?",
    "pantalla": "¿Con el Gordo de hoy dejarías de trabajar?",
    "sello": null,
-   "imagen": "Los dos en el sofá, con el sorteo de fondo; la hija pregunta a cámara."
+   "imagen": "Los dos en el sofá, con el sorteo de fondo; la hija pregunta a cámara.",
+   "actuacion": {
+    "pausa_antes": 1.5
+   }
   }
  ],
  "no_dato": [
