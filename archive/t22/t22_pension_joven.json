@@ -1,0 +1,79 @@
+{
+ "tema": "La pensión media de jubilación frente al sueldo de un joven de 25 a 34 años: 2007, 2013, 2016, 2018 y hoy",
+ "nota": "En bruto. Pensión en 14 pagas; sueldo anual de la EAES (con pagas extra). «Hoy» = 2024, último año de la EAES; la pensión de 2024 es la de diciembre.",
+ "filas": {
+  "2007": {
+   "pension_mes": 760.0,
+   "pension_anual": 10640,
+   "estado_pension": "V",
+   "joven_anual": 18317,
+   "joven_mes_14": 1308,
+   "estado_joven": "C",
+   "pension_sobre_joven_pct": 58.1,
+   "joven_cobra_mas_pct": 72.2,
+   "ipc": 70.105,
+   "pension_mes_euros_2024": 1056,
+   "joven_anual_euros_2024": 25448
+  },
+  "2013": {
+   "pension_mes": 979.52,
+   "pension_anual": 13713,
+   "estado_pension": "V",
+   "joven_anual": 17973,
+   "joven_mes_14": 1284,
+   "estado_joven": "V",
+   "pension_sobre_joven_pct": 76.3,
+   "joven_cobra_mas_pct": 31.1,
+   "ipc": 79.401,
+   "pension_mes_euros_2024": 1202,
+   "joven_anual_euros_2024": 22047
+  },
+  "2016": {
+   "pension_mes": 1042.7,
+   "pension_anual": 14598,
+   "estado_pension": "V",
+   "joven_anual": 17978,
+   "joven_mes_14": 1284,
+   "estado_joven": "V",
+   "pension_sobre_joven_pct": 81.2,
+   "joven_cobra_mas_pct": 23.2,
+   "ipc": 78.725,
+   "pension_mes_euros_2024": 1290,
+   "joven_anual_euros_2024": 22242
+  },
+  "2018": {
+   "pension_mes": 1090.7,
+   "pension_anual": 15270,
+   "estado_pension": "V",
+   "joven_anual": 19350,
+   "joven_mes_14": 1382,
+   "estado_joven": "V",
+   "pension_sobre_joven_pct": 78.9,
+   "joven_cobra_mas_pct": 26.7,
+   "ipc": 81.609,
+   "pension_mes_euros_2024": 1302,
+   "joven_anual_euros_2024": 23093
+  },
+  "2024": {
+   "pension_mes": 1450.92,
+   "pension_anual": 20313,
+   "estado_pension": "V",
+   "joven_anual": 25103,
+   "joven_mes_14": 1793,
+   "estado_joven": "V",
+   "pension_sobre_joven_pct": 80.9,
+   "joven_cobra_mas_pct": 23.6,
+   "ipc": 97.396,
+   "pension_mes_euros_2024": 1451,
+   "joven_anual_euros_2024": 25103
+  }
+ },
+ "desde_2007": {
+  "pension_sube_pct": 90.9,
+  "joven_sube_pct": 37.0,
+  "precios_suben_pct": 38.9,
+  "pension_real_pct": 37.4,
+  "joven_real_pct": -1.4
+ },
+ "pension_dic_2025": 1513.87
+}

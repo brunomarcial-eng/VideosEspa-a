@@ -141,7 +141,7 @@ export function escenas(D) {
         vidaFondo("pq", t, { capa: "parquePlaza" });
         const dim = suave(clamp((t - c["c6-2016"]) / 0.5));
         for (let i = 0; i < 5; i++) { const o = i === 2 || i === 4 ? 1 : 1 - 0.65 * dim; css(`s6-h-b${i}`, "opacity", o); css(`s6-h-v${i}`, "opacity", o); }
-        sube("c6-a", t, c["c6-2016"]); sube("c6-b", t, c["c6-igual"]);
+        sube("c6-a", t, e.t0 - 1); sube("c6-b", t, e.t0 - 1);   // las dos cifras desde el principio: el plano es corto
         persona("s6-b", t, { x: 130, y: 1700, s: 0.66, mira: 1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c6-2016"] - 0.2, "senala"], [c["c6-igual"], "hombros"]], fase: 1 });
         persona("s6-n", t, { x: 950, y: 1700, s: 0.64, mira: -1, vivo: true, boca: [[0, "seria"], [c["c6-igual"] + 0.3, "sonrisa"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
       },

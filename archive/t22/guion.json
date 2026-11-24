@@ -1,0 +1,275 @@
+{
+ "id": "t22",
+ "version": 1,
+ "titulo": "¿Quién cobra más: un jubilado o un joven que trabaja?",
+ "titulo_alternativo": "La pensión media frente al sueldo de un joven: 2007, la crisis, 2016, 2018 y hoy",
+ "pregunta": "¿Cuánto es la pensión media de jubilación frente al sueldo de un joven de 25 a 34 años, hoy y en 2007, 2013, 2016 y 2018? ¿Y cuánto ha subido cada uno?",
+ "datos": "data/clean/t22_pension_joven.json",
+ "aprobacion_datos": "Bruno eligió el 24-11-2026 «pensión frente a sueldo joven» (entre pensiones, calefacción y matrícula). Tabla en videos/t22/paso-1-datos.md.",
+ "formato": "Un abuelo jubilado (unos 75) y su nieta (unos 29) en un banco del parque. Pensión media de jubilación frente al salario medio de 25 a 34 años, en bruto: hoy, 2007, la crisis (2013), 2016 y 2018; y cuánto ha subido cada uno desde 2007 frente a los precios. Pregunta final al espectador.",
+ "duracion_max_s": 80,
+ "personajes": {
+  "nieta": {
+   "anyo": "unos 29, trabaja y lo comprueba todo",
+   "voz": "viajera"
+  },
+  "abuelo": {
+   "anyo": "unos 75, jubilado, convencido de que cobra la mitad que su nieta",
+   "voz": "padre"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.5,
+  "viveza_tomas": 3
+ },
+ "sin_veredicto": "El veredicto lo da la nieta en el plano 9: el jubilado gana poder de compra (+37 % en euros de hoy desde 2007) y el joven se queda igual (−1 %); la pensión pasa del 58 % al 81 % del sueldo de un joven. El abuelo dice en el plano 6 que desde 2016 está igual (81 %), y es verdad. Acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "Hoy",
+   "beats": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "nombre": "Antes",
+   "beats": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "nombre": "Lo que sube cada uno",
+   "beats": [
+    7,
+    8,
+    9
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "nieta",
+   "funcion": "gancho",
+   "voz": "¿Quién cobra más hoy: un jubilado o un joven que curra? Porque mi abuelo dice que él ni la mitad que yo…",
+   "pantalla": "¿Quién cobra más: un jubilado o un joven que trabaja?",
+   "sello": null,
+   "imagen": "Un banco del parque por la tarde. El abuelo, con su periódico, y la nieta, que llega del curro. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "abuelo",
+   "funcion": "dato: la pensión media",
+   "voz": "Hombre… la pensión media de jubilación son 1.451 euros al mes y tú cobras mucho más.",
+   "pantalla": "Pensión media de jubilación: 1.451 € al mes",
+   "nota": "En bruto, en 14 pagas. Todo el sistema de la Seguridad Social, a final de 2024",
+   "sello": "SEGURIDAD SOCIAL · PENSIONES EN VIGOR",
+   "imagen": "Una carta de la pensión con su importe; catorce sobres en fila (las catorce pagas)."
+  },
+  {
+   "n": 3,
+   "quien": "nieta",
+   "funcion": "dato: el sueldo de un joven frente a la pensión",
+   "voz": "Ya pero un joven de mi edad cobra de media más de 25.000 euros al año y tú unos 20.000… el 81 % de lo mío.",
+   "pantalla": "Al año: pensión 20.313 € · joven de 25 a 34 años 25.103 €",
+   "nota": "La pensión es el 81 % del sueldo de un joven. En bruto: pensión media × 14 pagas y salario medio de 25 a 34 años (2024)",
+   "sello": "SEGURIDAD SOCIAL · INE (ESTRUCTURA SALARIAL)",
+   "imagen": "Dos montones de billetes, el de la pensión y el del sueldo joven, casi iguales."
+  },
+  {
+   "n": 4,
+   "quien": "abuelo",
+   "funcion": "réplica",
+   "voz": "¿El 81 %? Anda ya… en 2007 era poco más de la mitad.",
+   "pantalla": "«Antes era poco más de la mitad»",
+   "sello": "CÁLCULO PROPIO · INE Y SEGURIDAD SOCIAL",
+   "imagen": "El abuelo deja el periódico, sorprendido."
+  },
+  {
+   "n": 5,
+   "quien": "nieta",
+   "funcion": "dato: la pensión en % del sueldo joven, por años",
+   "voz": "Eso. En 2007 el 58 % y hoy el 81 %… y en plena crisis ya el 76 %.",
+   "pantalla": "La pensión media, en % del sueldo de un joven · 2007: 58 % · hoy: 81 %",
+   "nota": "2013: 76 % · 2016: 81 % · 2018: 79 %. En bruto; el sueldo de 2007 está estimado con la evolución del coste salarial",
+   "sello": "CÁLCULO PROPIO · INE Y SEGURIDAD SOCIAL",
+   "imagen": "Cinco columnas (2007, 2013, 2016, 2018 y hoy) que suben del 58 % al 81 %."
+  },
+  {
+   "n": 6,
+   "quien": "abuelo",
+   "funcion": "matiz: desde 2016, igual",
+   "voz": "Bueno pero desde 2016 está igual ¿no?",
+   "pantalla": "La pensión media, en % del sueldo de un joven · 2016: 81 % · hoy: 81 %",
+   "nota": "2007: 58 % · 2013: 76 % · 2018: 79 %",
+   "sello": "CÁLCULO PROPIO · INE Y SEGURIDAD SOCIAL",
+   "imagen": "Las mismas columnas; se marcan 2016 y hoy, iguales."
+  },
+  {
+   "n": 7,
+   "quien": "nieta",
+   "funcion": "dato: cuánto ha subido cada uno desde 2007",
+   "voz": "Lo gordo viene de antes. Desde 2007 tu pensión sube un 91 % y el sueldo joven un 37 %… y los precios un 39 %.",
+   "pantalla": "Desde 2007: pensión +91 % · sueldo de un joven +37 %",
+   "nota": "Los precios (IPC), +39 %. En euros de cada año",
+   "sello": "CÁLCULO PROPIO · SEGURIDAD SOCIAL E INE",
+   "imagen": "Tres barras que crecen: la pensión, el sueldo joven y los precios."
+  },
+  {
+   "n": 8,
+   "quien": "abuelo",
+   "funcion": "dato: en euros de hoy",
+   "voz": "O sea que en euros de hoy yo gano más de un tercio y tú… lo mismo que en 2007.",
+   "pantalla": "En euros de hoy, desde 2007: pensión +37 % · sueldo de un joven, igual",
+   "nota": "Con el IPC del INE: pensión de 1.056 € a 1.451 € al mes; sueldo joven de 25.448 € a 25.103 € al año",
+   "sello": "CÁLCULO PROPIO · SEGURIDAD SOCIAL E INE (IPC)",
+   "imagen": "Dos carros de la compra: el del abuelo, más lleno que en 2007; el de la nieta, igual."
+  },
+  {
+   "n": 9,
+   "quien": "nieta",
+   "funcion": "veredicto y pregunta",
+   "voz": "Total que el jubilado gana poder de compra y el joven se queda igual. ¿Y en tu casa quién llega mejor a fin de mes?",
+   "pantalla": "¿En tu casa quién llega mejor a fin de mes?",
+   "sello": null,
+   "imagen": "Los dos en el banco; la nieta pregunta a cámara."
+  }
+ ],
+ "no_dato": [
+  "25",
+  "34",
+  "14"
+ ],
+ "cifras": [
+  {
+   "texto": "1.451",
+   "ruta": "filas.2024.pension_mes",
+   "aprox": 1451,
+   "tolerancia_pct": 0.1,
+   "estado": "V"
+  },
+  {
+   "texto": "20.313",
+   "ruta": "filas.2024.pension_anual",
+   "decimales": 0,
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "25.103",
+   "ruta": "filas.2024.joven_anual",
+   "decimales": 0,
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "81",
+   "ruta": "filas.2024.pension_sobre_joven_pct",
+   "aprox": 81,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "58",
+   "ruta": "filas.2007.pension_sobre_joven_pct",
+   "aprox": 58,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "76",
+   "ruta": "filas.2013.pension_sobre_joven_pct",
+   "aprox": 76,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "81",
+   "ruta": "filas.2016.pension_sobre_joven_pct",
+   "aprox": 81,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "79",
+   "ruta": "filas.2018.pension_sobre_joven_pct",
+   "aprox": 79,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "91",
+   "ruta": "desde_2007.pension_sube_pct",
+   "aprox": 91,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "37",
+   "ruta": "desde_2007.joven_sube_pct",
+   "aprox": 37,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "39",
+   "ruta": "desde_2007.precios_suben_pct",
+   "aprox": 39,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "37",
+   "ruta": "desde_2007.pension_real_pct",
+   "aprox": 37,
+   "tolerancia_pct": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "1.056",
+   "ruta": "filas.2007.pension_mes_euros_2024",
+   "decimales": 0,
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "25.448",
+   "ruta": "filas.2007.joven_anual_euros_2024",
+   "decimales": 0,
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "25.000",
+   "ruta": "filas.2024.joven_anual",
+   "aprox": 25000,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "20.000",
+   "ruta": "filas.2024.pension_anual",
+   "aprox": 20000,
+   "tolerancia_pct": 2,
+   "estado": "C"
+  }
+ ],
+ "comprobaciones": [
+  "Pensión media de jubilación, todo el sistema (V): INE, Anuario Estadístico de España, tabla 7.3.5 (medias anuales, datos del Ministerio de Trabajo): 760,00 € (2007, edición 2009), 979,52 € (2013, edición 2015), 1.042,7 € (2016) y 1.090,7 € (2018, edición 2020). Hoy: Seguridad Social, pensiones en vigor a 31-12-2024, 1.450,92 €.",
+  "Salario medio bruto anual de 25 a 34 años (V): INE, EAES, tabla 28201: 17.973 € (2013), 17.978 € (2016), 19.350 € (2018), 25.103 € (2024). 2007 (C): EAES 2008 (19.206 €) × ETCL 2007/2008 (12.713/13.33) = 18.317 €.",
+  "Pensión en % del sueldo joven (C): pensión × 14 / salario anual: 58,1 · 76,3 · 81,2 · 78,9 · 80,9 %.",
+  "Subidas desde 2007 (C): pensión 760 → 1.450,92 € (+90,9 %); sueldo joven 18.317 → 25.103 € (+37,0 %); IPC medio 70,105 → 97,396 (+38,9 %). En euros de 2024: pensión 1.056 → 1.451 € (+37,4 %); sueldo joven 25.448 → 25.103 € (−1,4 %).",
+  "«Poco más de la mitad» = 58 %; «más de un tercio» = +37 %; «lo mismo que en 2007» = −1,4 %."
+ ],
+ "cierre": {
+  "veredicto": "Empeora para el joven frente a 2007 y frente a la crisis: la pensión media pasa del 58 % (2007) y el 76 % (2013) al 81 % del sueldo de un joven; igual que en 2016 (81 %) y algo más que en 2018 (79 %). En euros de hoy, desde 2007 la pensión media gana un 37 % y el sueldo de un joven pierde un 1 %",
+  "porque": "La pensión media sube un 91 % desde 2007 y el sueldo medio de 25 a 34 años un 37 %, con los precios un 39 % más caros.",
+  "pregunta": "¿En tu casa quién llega mejor a fin de mes?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno (v1, 24-11-2026)"
+}
