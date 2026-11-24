@@ -1,0 +1,53 @@
+{
+ "huella": "00f677bc84bcc393",
+ "semilla": 3002,
+ "texto": "Un hogar medio se deja 104 euros al año en loterías y apuestas. En 2007 eran 186.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0248,
+  "oido": "Un hogar medio se deja 104 euros al año en loterías y apuestas. En 2007 eran 186.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   0.38,
+   0.64,
+   0.84,
+   1.06,
+   1.58,
+   1.98,
+   2.16,
+   2.32,
+   2.36,
+   2.84,
+   2.98,
+   3.82,
+   3.98,
+   4.56,
+   5.34
+  ],
+  "t1": [
+   0.18,
+   0.38,
+   0.64,
+   0.84,
+   1.06,
+   1.58,
+   1.98,
+   2.16,
+   2.32,
+   2.36,
+   2.84,
+   2.98,
+   3.34,
+   3.98,
+   4.56,
+   5.34,
+   6.3
+  ],
+  "ritmo": 13.7,
+  "voz": 0.9,
+  "viveza": 3.48
+ }
+}
