@@ -1,0 +1,47 @@
+{
+ "huella": "27bd92f0e08ae8bb",
+ "semilla": 8002,
+ "texto": "Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0362,
+  "oido": "Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.6,
+   0.86,
+   1.02,
+   1.14,
+   1.24,
+   1.48,
+   1.72,
+   1.94,
+   2.18,
+   2.34,
+   2.74,
+   3.02
+  ],
+  "t1": [
+   0.14,
+   0.6,
+   0.86,
+   1.02,
+   1.14,
+   1.24,
+   1.48,
+   1.72,
+   1.94,
+   2.18,
+   2.34,
+   2.74,
+   3.02,
+   3.44
+  ],
+  "ritmo": 16.9,
+  "voz": 0.922,
+  "viveza": 2.5
+ }
+}

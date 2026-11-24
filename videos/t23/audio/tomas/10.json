@@ -1,0 +1,43 @@
+{
+ "huella": "2b0d742d74105e01",
+ "semilla": 10000,
+ "texto": "Y en los hogares de renta media el triple que en 2019.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0404,
+  "oido": "y en los hogares de renta media, el triple que en 2019.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.22,
+   0.3,
+   0.72,
+   0.82,
+   1.12,
+   1.6,
+   1.68,
+   2.02,
+   2.22,
+   2.36
+  ],
+  "t1": [
+   0.12,
+   0.22,
+   0.3,
+   0.72,
+   0.82,
+   1.12,
+   1.32,
+   1.68,
+   2.02,
+   2.22,
+   2.36,
+   2.84
+  ],
+  "ritmo": 16.3,
+  "voz": 0.931,
+  "viveza": 3.45
+ }
+}

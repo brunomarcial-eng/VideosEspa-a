@@ -71,3 +71,45 @@ Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
     toma 2 (semilla 7001): BUENA · 0.996 · voz 0.951 · 9.6 s · 13.4 l/s · viveza 3.7 st · «porque desde 2016 la factura ha subido un 19%, y el sueldo un 26. Eso sí, en 2007 era 93, algo menos.»
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 7002): mala · 0.966 · voz 0.937 · 9.5 s · 13.4 l/s · «porque desde 2016 la factura ha subido un 19% y el sueldo un 26%. Eso sí, en 2007 eran 93, algo menos.» · sobran 9 letras (¿repite?)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 4 (semilla 7003): mala · 0.955 · voz 0.937 · 8.5 s · 15.1 l/s · «Porque desde 2016 la factura ha subido a un 19% y el sueldo a un 26%. Eso sí, en 2007 era 93, algo menos.» · sobran 11 letras (¿repite?)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 5 (semilla 7004): mala · 0.962 · voz 0.938 · 10.3 s · 12.4 l/s · «porque desde 2016 la factura ha subido un 19% y el sueldo un 26%. Eso sí, en 2007 era 93, algo menos.» · sobran 9 letras (¿repite?)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 6 (semilla 7005): mala · 0.962 · voz 0.942 · 9.5 s · 13.5 l/s · «Porque desde 2016 la factura ha subido un 19% y el sueldo un 26%. Eso sí, en 2007 era 93, algo menos.» · sobran 9 letras (¿repite?)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 7 (semilla 7006): mala · 0.966 · voz 0.936 · 10.0 s · 12.8 l/s · «Porque desde 2016, la factura ha subido un 19% y el sueldo un 26%. Eso sí, en 2007 eran 93, algo menos.» · sobran 9 letras (¿repite?)
+plano 8: «Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.91 · 3.8 s · 15.9 l/s · viveza 2.18 st · «Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 8001): BUENA · 1.0 · voz 0.888 · 3.4 s · 17.8 l/s · viveza 1.94 st · «Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 8002): BUENA · 1.0 · voz 0.922 · 3.5 s · 16.9 l/s · viveza 2.5 st · «Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.»
+    elegida la toma con más entonación: semilla 8002 (2.5 st)
+plano 9: «Ahí sí tiene razón. Hoy casi 16 de cada 100 personas no pueden tener la casa caliente… el doble que en la crisis.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.956 · 7.2 s · 13.4 l/s · viveza 2.75 st · «Ahí sí tiene razón. Hoy casi 16 de cada 100 personas no pueden tener la casa caliente. El doble que en la crisis.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 9001): BUENA · 0.995 · voz 0.965 · 7.7 s · 12.5 l/s · viveza 3.8 st · «Ahí sí tienes razón. Hoy casi 16 de cada 100 personas no pueden tener la casa caliente. El doble que en la crisis.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 9002): BUENA · 1.0 · voz 0.95 · 6.9 s · 14.0 l/s · viveza 3.68 st · «Ahí sí tiene razón. Hoy casi 16 de cada 100 personas no pueden tener la casa caliente. El doble que en la crisis.»
+    elegida la toma con más entonación: semilla 9001 (3.8 st)
+plano 10: «Y en los hogares de renta media el triple que en 2019.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.931 · 3.3 s · 16.3 l/s · viveza 3.45 st · «y en los hogares de renta media, el triple que en 2019.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 10001): BUENA · 1.0 · voz 0.92 · 3.0 s · 17.9 l/s · viveza 2.56 st · «y en los hogares de renta media el triple que en 2019.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 10002): BUENA · 1.0 · voz 0.906 · 3.4 s · 15.9 l/s · viveza 2.94 st · «y en los hogares de renta media, el triple que en 2019.»
+    elegida la toma con más entonación: semilla 10000 (3.45 st)
+plano 11: «O sea que la factura cuesta menos horas pero hay el doble de gente pasando frío. ¿Y tú enciendes la calefacción o tiras de manta?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.903 · 7.0 s · 14.7 l/s · viveza 1.96 st · «O sea que la factura cuesta menos horas, pero hay el doble de gente pasando frío. ¿Y tú enciendes la calefacción o tiras de manta?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 11001): BUENA · 1.0 · voz 0.905 · 6.5 s · 15.7 l/s · viveza 2.28 st · «O sea, que la factura cuesta menos horas, pero hay el doble de gente pasando frío. ¿Y tú enciendes la calefacción o tiras de manta?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 11002): BUENA · 1.0 · voz 0.892 · 7.0 s · 14.6 l/s · viveza 3.04 st · «O sea que la factura cuesta menos horas pero hay el doble de gente pasando frío. ¿Y tú enciendes la calefacción o tiras de manta?»
+    elegida la toma con más entonación: semilla 11002 (3.04 st)
+duración total 66.4 s · escrito videos/t23/audio/linea_tiempo.json

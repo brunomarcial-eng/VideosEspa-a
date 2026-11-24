@@ -279,14 +279,14 @@ export function escenas(D) {
         pinta("si-led", "#46B05A");
         for (const i of [1, 4, 6, 9, 11]) css(`si-vp${i}`, "opacity", 1);
         pop("s10-d", t, e.t0 + 0.05, 0, 0, { s: 1 });
-        const k = suave(clamp((t - c["c10-triple"] + 0.6) / 0.9));
+        const k = suave(clamp((t - c["c10-triple"] + 0.1) / 0.8));
         for (let i = 0; i < 10; i++) {
           const el = $(`s10-d-d${i}`);
           if (!el) continue;
           const a = +el.dataset.a, b = +el.dataset.b, hh = a + (b - a) * k;
           el.setAttribute("y", (-hh).toFixed(1)); el.setAttribute("height", hh.toFixed(1));
         }
-        css("s10-d-va", "opacity", 1 - clamp(k * 3));
+        css("s10-d-va", "opacity", 1 - clamp(k * 2));
         css("s10-d-vb", "opacity", clamp((k - 0.8) * 5));
         sube("c10-a", t, c["c10-renta"]); sube("c10-b", t, c["c10-triple"]);
         persona("s10-v", t, { x: 130, y: 1700, s: 0.66, mira: 1, vivo: true, boca: [[0, "seria"], [c["c10-triple"] + 0.2, "o"]], ojos: [[0, "normal"], [c["c10-triple"] + 0.2, "grandes"]], brazo: [[0, "abajo"]], fase: 1 });
