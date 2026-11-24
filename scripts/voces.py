@@ -259,7 +259,16 @@ def escuchar(asr, a: np.ndarray):
                              condition_on_previous_text=False)
     segs = list(segs)
     oido = " ".join(s.text.strip() for s in segs)
-    ww = [(w.word.strip(), float(w.start), float(w.end)) for s in segs for w in (s.words or [])]
+    ww = []
+    for s in segs:
+        for w in (s.words or []):
+            pal = w.word.strip()
+            # Whisper parte las cifras de miles en dos palabras («400» y «.000»): se vuelven a juntar
+            # (si no, sobran letras y la toma se da por mala; T19, 24-11-2026)
+            if ww and re.match(r"^[.,]\d", pal) and re.search(r"\d$", ww[-1][0]):
+                ww[-1] = (ww[-1][0] + pal, ww[-1][1], float(w.end))
+            else:
+                ww.append((pal, float(w.start), float(w.end)))
     return oido, ww
 
 
@@ -315,8 +324,9 @@ def alinear(tokens, ww, dur):
 
 def cifras_ok(texto, oido):
     fallos = []
-    oido_c = oido.replace(".", ",")
-    for c in re.findall(r"\d+(?:,\d+)?", texto):
+    miles = lambda t: re.sub(r"(\d)\.(?=\d{3}\b)", r"\1", t)   # «400.000» es una cifra, no «400» y «000»
+    oido_c = miles(oido).replace(".", ",")
+    for c in re.findall(r"\d+(?:,\d+)?", miles(texto)):
         if letras(c) not in letras(oido_c):
             fallos.append(c)
     return fallos
