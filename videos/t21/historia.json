@@ -1,0 +1,44 @@
+{
+ "nota": "Momentos clave de T21 (el alquiler). La música se corta en seco con «la mitad» (los hogares de 30 a 44 años con casa propia). Piso de alquiler con cajas (ambiente de casa) y calle de barrio con los dos bloques, con sonidos sueltos y sin ruido continuo.",
+ "musica": {
+  "bpm": 98,
+  "corte": "c7-mitad",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {"tipo": "salon", "desde": 1, "hasta": 6, "vol": 0.9},
+  {"tipo": "barrio", "desde": 7, "hasta": 8, "vol": 1.0},
+  {"tipo": "salon", "desde": 9, "hasta": 9, "vol": 0.9}
+ ],
+ "cues": [
+  {"id": "c1-sello", "beat": 1, "en": "inicio", "dt": 1.0, "sfx": "sello", "vol": 0.5},
+  {"id": "c1-horas", "beat": 1, "palabra": "horas", "dt": -0.1, "sfx": "ting", "vol": 0.2},
+  {"id": "c1-hermana", "beat": 1, "palabra": "hermana", "dt": -0.1},
+  {"id": "c2-2007", "beat": 2, "palabra": "2007", "dt": -0.1},
+  {"id": "c2-369", "beat": 2, "palabra": "369", "dt": -0.1, "sfx": "moneda", "vol": 0.3},
+  {"id": "c2-menos", "beat": 2, "palabra": "menos", "dt": -0.1},
+  {"id": "c3-534", "beat": 3, "palabra": "534", "dt": -0.1, "sfx": "moneda", "vol": 0.3},
+  {"id": "c3-41", "beat": 3, "palabra": "41", "dt": -0.1, "sfx": "golpe", "vol": 0.3},
+  {"id": "c3-semana", "beat": 3, "palabra": "semana", "dt": -0.1, "sfx": "papel", "vol": 0.25},
+  {"id": "c4-2007", "beat": 4, "palabra": "2007", "dt": -0.1},
+  {"id": "c4-42", "beat": 4, "palabra": "42", "dt": -0.1, "sfx": "pop", "vol": 0.25},
+  {"id": "c4-mismas", "beat": 4, "palabra": "mismas", "dt": -0.1},
+  {"id": "c5-anda", "beat": 5, "palabra": "Anda", "dt": -0.1, "sfx": "fwip", "vol": 0.3},
+  {"id": "c5-amigos", "beat": 5, "palabra": "amigos", "dt": -0.1, "sfx": "notif", "vol": 0.25},
+  {"id": "c5-llegan", "beat": 5, "palabra": "llegan", "dt": -0.1, "sfx": "notif", "vol": 0.2},
+  {"id": "c6-2016", "beat": 6, "palabra": "2016", "dt": -0.1, "sfx": "pop", "vol": 0.2},
+  {"id": "c6-subido", "beat": 6, "palabra": "subido", "dt": -0.1, "sfx": "sube", "vol": 0.25},
+  {"id": "c6-39", "beat": 6, "palabra": "39", "dt": -0.1},
+  {"id": "c7-alquilamos", "beat": 7, "palabra": "alquilamos", "dt": -0.1},
+  {"id": "c7-2007", "beat": 7, "palabra": "2007", "dt": -0.1, "sfx": "llaves", "vol": 0.25},
+  {"id": "c7-hoy", "beat": 7, "palabra": "hoy", "dt": -0.1, "sfx": "llaves", "vol": 0.2},
+  {"id": "c7-mitad", "beat": 7, "palabra": "mitad", "dt": -0.1, "sfx": "golpe", "vol": 0.35},
+  {"id": "c8-alquilan", "beat": 8, "palabra": "alquilan", "dt": -0.1},
+  {"id": "c8-duplicado", "beat": 8, "palabra": "duplicado", "dt": -0.1},
+  {"id": "c8-16", "beat": 8, "palabra": "16", "dt": -0.1, "sfx": "pop", "vol": 0.25},
+  {"id": "c8-32", "beat": 8, "palabra": "32", "dt": -0.1, "sfx": "golpe", "vol": 0.3},
+  {"id": "c9-igual", "beat": 9, "palabra": "igual", "dt": -0.1},
+  {"id": "c9-peor", "beat": 9, "palabra": "peor", "dt": -0.1, "sfx": "golpe", "vol": 0.25},
+  {"id": "c9-tu", "beat": 9, "palabra": "tú", "dt": -0.1}
+ ]
+}
