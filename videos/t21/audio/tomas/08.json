@@ -1,0 +1,53 @@
+{
+ "huella": "31d20245117e3572",
+ "semilla": 8002,
+ "texto": "Y encima os vais de casa a los 30… casi dos años más tarde que en 2007.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0413,
+  "oido": "Y encima os vais de casa a los 30, casi dos años más tarde que en 2007.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.54,
+   0.7,
+   0.86,
+   1.04,
+   1.26,
+   1.46,
+   1.56,
+   2.68,
+   3.0,
+   3.3,
+   3.56,
+   3.8,
+   4.14,
+   4.36,
+   4.48
+  ],
+  "t1": [
+   0.14,
+   0.54,
+   0.7,
+   0.86,
+   1.04,
+   1.26,
+   1.46,
+   1.56,
+   1.96,
+   3.0,
+   3.3,
+   3.56,
+   3.8,
+   4.14,
+   4.36,
+   4.48,
+   4.78
+  ],
+  "ritmo": 12.4,
+  "voz": 0.933,
+  "viveza": 3.0
+ }
+}
