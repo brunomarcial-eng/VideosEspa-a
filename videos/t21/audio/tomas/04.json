@@ -1,0 +1,39 @@
+{
+ "huella": "db2021f813d6d0c7",
+ "semilla": 4002,
+ "texto": "Bueno pero en 2007 eran 42 ¿eh? Más que ahora.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0208,
+  "oido": "Bueno, pero en 2007 eran 42, ¿eh?, más que ahora.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.76,
+   0.84,
+   0.96,
+   1.52,
+   1.86,
+   2.72,
+   3.78,
+   3.96,
+   4.14
+  ],
+  "t1": [
+   0.34,
+   0.84,
+   0.96,
+   1.52,
+   1.86,
+   2.42,
+   3.78,
+   3.96,
+   4.14,
+   4.38
+  ],
+  "ritmo": 11.1,
+  "voz": 0.892,
+  "viveza": 2.51
+ }
+}
