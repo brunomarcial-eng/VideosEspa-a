@@ -159,10 +159,10 @@ export function escenas(D) {
     // 7 · Los menores de 25 años (EAES). La nieta: «Eso sí. Los menores de 25 cobran de media 15.136 euros y tu pensión un 34 % más… en 2007 al revés.»
     { n: 7, set: "vacio",
       svg: `<g transform="translate(540 1330)">${dosMontones("s7-m", [D.F["2024"].pension_anual, D.F["2024"].menor25_anual], ["Pensión", "Menor de 25"], [`${miles(D.F["2024"].pension_anual)} €`, `${miles(D.F["2024"].menor25_anual)} €`])}</g>
-        <g id="s7-r"><g transform="translate(540 765) rotate(-4)"><rect x="-230" y="-48" width="460" height="96" rx="18" fill="#5B6470"/><text x="0" y="16" text-anchor="middle" font-family="Cap" font-weight="800" font-size="40" fill="#FFFFFF">En 2007, al revés</text></g></g>
+        <g id="s7-r"><g transform="translate(540 1665) rotate(-4)"><rect x="-230" y="-48" width="460" height="96" rx="18" fill="#5B6470"/><text x="0" y="16" text-anchor="middle" font-family="Cap" font-weight="800" font-size="40" fill="#FFFFFF">En 2007, al revés</text></g></g>
         ${gente("s7", "bn")}`,
       tarjeta: vs(7, "Al año, en bruto", [`${miles(D.F["2024"].pension_anual)}&nbsp;€`, `${miles(D.F["2024"].menor25_anual)}&nbsp;€`], ["pensión media", "menores de 25 años"],
-        `La pensión es un ${Math.round(D.F["2024"].pension_mas_que_menor25_pct)}&nbsp;% más. En 2007, al revés: un menor de 25 cobraba un ${Math.round(D.F["2007"].menor25_mas_que_pension_pct)}&nbsp;% más que la pensión media. En bruto; el sueldo incluye jornada parcial`, F_HOY, 84),
+        `La pensión, un ${Math.round(D.F["2024"].pension_mas_que_menor25_pct)}&nbsp;% más. En 2007, al revés: el menor de 25 cobraba un ${Math.round(D.F["2007"].menor25_mas_que_pension_pct)}&nbsp;% más. Con jornada parcial`, F_HOY, 84),
       fn: function (t, e) {
         const c = e.c;
         ambiente("parquePlaza", null, t, 0);
