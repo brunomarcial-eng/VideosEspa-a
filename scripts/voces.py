@@ -124,7 +124,14 @@ def qwen(perfil):
         import torch
         from qwen_tts import Qwen3TTSModel
         torch.set_num_threads(os.cpu_count() or 4)
-        _qwen[modelo] = Qwen3TTSModel.from_pretrained(modelo, device_map="cpu", dtype=torch.float32)
+        # Si el modelo ya está en la caché local, se carga desde su carpeta: así transformers no consulta la web de
+        # Hugging Face (que limita las consultas por IP; fallo del 24-11-2026, error 429).
+        try:
+            from huggingface_hub import snapshot_download
+            ruta = snapshot_download(modelo, local_files_only=True)
+        except Exception:
+            ruta = modelo
+        _qwen[modelo] = Qwen3TTSModel.from_pretrained(ruta, device_map="cpu", dtype=torch.float32)
     m = _qwen[modelo]
     clave = (modelo, perfil["ref"], perfil["ref_txt"])
     if clave not in _qwen:
