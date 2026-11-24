@@ -1,0 +1,33 @@
+{
+ "huella": "ad63fdf7e36214e5",
+ "semilla": 6000,
+ "texto": "Bueno pero desde 2016 está igual ¿no?",
+ "ev": {
+  "ok": true,
+  "nota": 1.025,
+  "oido": "Bueno, pero desde 2016 está igual, ¿no?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.52,
+   0.68,
+   0.96,
+   1.78,
+   2.46,
+   2.94
+  ],
+  "t1": [
+   0.3,
+   0.68,
+   0.96,
+   1.78,
+   2.46,
+   2.78,
+   3.04
+  ],
+  "ritmo": 12.3,
+  "voz": 0.9,
+  "viveza": 4.83
+ }
+}
