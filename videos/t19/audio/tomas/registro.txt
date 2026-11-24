@@ -1,0 +1,39 @@
+plano 1: «¿Para cuánto te da hoy el Gordo? Porque mi padre dice que en 2007 te comprabas diez pisos…»
+    toma guardada (semilla 1000): BUENA · «¿Para cuánto te da hoy el gordo? Porque mi padre dice que en 2007 te comprabas 10 pisos.»
+plano 2: «Hombre claro… en 2007 te tocaban 300.000 euros por décimo y ni un duro para Hacienda.»
+    toma guardada (semilla 2004): BUENA · «Hombre claro, en 2007 te tocaban 300.000 euros por décimo y ni un duro para Hacienda.»
+plano 3: «Ya pero hoy son 400.000. Lo que pasa es que Hacienda se queda 72.000… y te quedan 328.000.»
+    toma 1 (semilla 3000): BUENA · 0.995 · voz 0.9 · 7.3 s · 14.2 l/s · viveza 4.15 st · «Ya pero hoy son 400 mil. Lo que pasa es que Hacienda se queda a 72 mil y te quedan 328 mil.»
+    toma 2 (semilla 3001): BUENA · 1.0 · voz 0.916 · 7.9 s · 13.2 l/s · viveza 4.12 st · «Ya pero hoy son 400.000, lo que pasa es que Hacienda se queda 72.000 y te quedan 328.000.»
+    toma 3 (semilla 3002): BUENA · 1.0 · voz 0.91 · 7.7 s · 13.5 l/s · viveza 4.12 st · «Ya, pero hoy son 400.000, lo que pasa es que Hacienda se queda 72.000 y te quedan 328.000.»
+    elegida la toma con más entonación: semilla 3000 (4.15 st)
+plano 4: «¿Ves? Más que en 2007. Diez pisos por lo menos.»
+    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.922 · 4.3 s · 9.6 l/s · viveza 2.77 st · «¿Ves? Más que en 2007. 10 pisos por lo menos.»
+    toma 2 (semilla 4001): BUENA · 1.0 · voz 0.865 · 4.0 s · 10.4 l/s · viveza 4.66 st · «¿Ves? Más que en 2007. 10 pisos por lo menos.»
+    toma 3 (semilla 4002): BUENA · 1.0 · voz 0.888 · 4.3 s · 9.6 l/s · viveza 3.84 st · «¿Ves? Más que en 2007. 10 pisos por lo menos.»
+    elegida la toma con más entonación: semilla 4001 (4.66 st)
+plano 5: «¿Diez pisos? Anda ya papá. En 2007 te daba para piso y medio… y hoy igual.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.918 · 6.2 s · 9.8 l/s · viveza 4.29 st · «10 pisos? Anda ya papá. En 2007 te daba para piso y medio. Y hoy igual.»
+    toma 2 (semilla 5001): BUENA · 1.0 · voz 0.927 · 6.8 s · 9.0 l/s · viveza 4.48 st · «10 pisos? Anda ya, papá. En 2007 te daba para piso y medio. Y hoy igual.»
+    toma 3 (semilla 5002): BUENA · 1.0 · voz 0.913 · 6.0 s · 10.2 l/s · viveza 4.35 st · «¿Diez pisos? Anda ya, papá. En 2007 te daba para piso y medio. Y hoy igual.»
+    elegida la toma con más entonación: semilla 5001 (4.48 st)
+plano 6: «Bueno… piso y medio. Pero es que antes los sueldos eran otros.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.923 · 4.4 s · 10.9 l/s · viveza 2.76 st · «Bueno, piso y medio, pero es que antes los sueldos eran otros.»
+    toma 2 (semilla 6001): BUENA · 1.0 · voz 0.942 · 4.4 s · 10.9 l/s · viveza 2.65 st · «Bueno, piso y medio, pero es que antes los sueldos eran otros.»
+    toma 3 (semilla 6002): BUENA · 1.0 · voz 0.934 · 4.8 s · 10.0 l/s · viveza 2.75 st · «Bueno, piso y medio, pero es que antes los sueldos eran otros.»
+    elegida la toma con más entonación: semilla 6000 (2.76 st)
+plano 7: «Eso sí. En 2007 eran 21 años de sueldo y hoy 16. Cinco años menos de vida resuelta.»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.922 · 7.6 s · 11.1 l/s · viveza 3.69 st · «Eso sí, en 2007 eran 21 años de sueldo y hoy 16, 5 años menos de vida resuelta.»
+    toma 2 (semilla 7001): BUENA · 1.0 · voz 0.921 · 7.0 s · 12.0 l/s · viveza 4.32 st · «Eso sí, en 2007 eran 21 años de sueldo y hoy 16, 5 años menos de vida resuelta.»
+    toma 3 (semilla 7002): BUENA · 1.0 · voz 0.939 · 7.3 s · 11.5 l/s · viveza 3.65 st · «Eso sí, en 2007 eran 21 años de sueldo y hoy 16, 5 años menos de vida resuelta.»
+    elegida la toma con más entonación: semilla 7001 (4.32 st)
+plano 8: «Vamos que aquel Gordo hoy serían casi 430.000 euros.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.926 · 3.4 s · 17.4 l/s · viveza 4.12 st · «Vamos que aquel gordo hoy serían casi 430 mil euros.»
+    toma 2 (semilla 8001): BUENA · 1.0 · voz 0.914 · 3.6 s · 16.6 l/s · viveza 3.07 st · «Vamos que aquel gordo hoy serían casi 430.000 euros.»
+    toma 3 (semilla 8002): BUENA · 1.0 · voz 0.925 · 3.8 s · 15.4 l/s · viveza 2.65 st · «Vamos que aquel gordo hoy serían casi 430 mil euros.»
+    elegida la toma con más entonación: semilla 8000 (4.12 st)
+plano 9: «Total que para Hacienda más y para ti menos años. ¿Y tú con el Gordo de hoy dejarías el curro?»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.898 · 5.2 s · 13.9 l/s · viveza 4.58 st · «Total que para hacienda más y para ti menos años. ¿Y tú con el gordo de hoy dejarías el curro?»
+    toma 2 (semilla 9001): BUENA · 1.0 · voz 0.897 · 5.2 s · 13.8 l/s · viveza 3.99 st · «Total que para hacienda más y para ti menos años. ¿Y tú con el gordo de hoy dejarías el curro?»
+    toma 3 (semilla 9002): BUENA · 1.0 · voz 0.873 · 5.5 s · 13.0 l/s · viveza 3.85 st · «Total que para hacienda más y para ti menos años. ¿Y tú con el gordo de hoy dejarías el curro?»
+    elegida la toma con más entonación: semilla 9000 (4.58 st)
