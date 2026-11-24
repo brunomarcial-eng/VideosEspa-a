@@ -78,7 +78,7 @@ def main():
             serie[a] = {"jugado": round(aportado), "en_bolsa": round(partes * sp_eur[f"{a}-12"])}
         valor = partes * sp_eur[ultimo]
         return {"desde": desde, "hasta_aportacion": hasta, "valorado_en": ultimo, "jugado_eur": round(aportado), "en_bolsa_eur": round(valor),
-                "veces": round(valor / aportado, 1), "por_anyo": serie}
+                "veces": round(valor / aportado, 1), "gana_pct": round(100 * (valor / aportado - 1), 1), "por_anyo": serie}
 
     out = {
         "tema": "¿Lotería o invertir? Lo que un hogar medio se gasta en loterías y apuestas frente a meterlo en bolsa (S&P 500)",

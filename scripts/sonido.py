@@ -672,6 +672,31 @@ def amb_salon(**_):
     return norm(y)
 
 
+def amb_cola(**_):
+    """Cola en la calle en Navidad (T20, Doña Manolita): pasos sueltos, un murmullo corto de vez en cuando y unas
+    campanillas lejanas. Nada continuo (Bruno, 22-11-2026)."""
+    dur = 8.0
+    y = np.zeros(int(dur * SR), np.float32)
+    rng = np.random.default_rng(7)
+    tp = tiempo(0.06)
+    paso = ruido(0.06, 150, 1800) * np.exp(-tp / 0.012)
+    for t0 in (0.3, 2.9, 5.6):                      # alguien que se acerca a la cola
+        for k in range(6):
+            i = int((t0 + k * 0.42) * SR)
+            y[i:i + len(paso)] += paso * (0.25 - 0.02 * k)
+    for t0 in (1.4, 4.4, 6.8):                      # murmullo corto de la gente
+        d = 0.9
+        m = ruido(d, 250, 1400) * (0.5 + 0.5 * np.sin(2 * np.pi * rng.uniform(3, 5) * tiempo(d))) * np.sin(np.pi * tiempo(d) / d) * 0.12
+        i = int(t0 * SR)
+        y[i:i + len(m)] += m
+    for t0 in (3.6, 3.8, 4.0):                      # campanillas lejanas
+        d = 0.5
+        c = np.sin(2 * np.pi * 2200 * tiempo(d)) * np.exp(-tiempo(d) / 0.15) * 0.05
+        i = int(t0 * SR)
+        y[i:i + len(c)] += c
+    return norm(y)
+
+
 def amb_oficina(**_):
     """Oficina en Navidad (T20): rachas cortas de teclas, una taza que se deja en la mesa y un teléfono lejano que suena
     dos veces. Todo suelto, sin ruido continuo (Bruno, 22-11-2026)."""
@@ -718,8 +743,8 @@ def amb_compraventa(**_):
     return norm(y)
 
 
-AMBIENTES = {"oficina": amb_oficina, "salon": amb_salon, "compraventa": amb_compraventa, "concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
-NIVEL_AMB = {"oficina": 0.10, "salon": 0.10, "compraventa": 0.12, "concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
+AMBIENTES = {"cola": amb_cola, "oficina": amb_oficina, "salon": amb_salon, "compraventa": amb_compraventa, "concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
+NIVEL_AMB = {"cola": 0.10, "oficina": 0.10, "salon": 0.10, "compraventa": 0.12, "concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
 
 
 def megafonia(y):

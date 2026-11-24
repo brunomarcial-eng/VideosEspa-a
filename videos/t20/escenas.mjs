@@ -4,13 +4,16 @@
 //   · «compi»: unos 40, el compañero que invierte cada mes; jersey verde agua (voz «hombre»).
 //   · «veterana»: unos 60, la de administración que lleva treinta años organizando el décimo de la oficina; canas, gafas
 //     y rebeca mostaza (voz «hostelera»).
-// Decorado: la oficina en Navidad de diseno/loteria.mjs.
+// Decorados: la cola de Doña Manolita y la oficina en Navidad de diseno/loteria.mjs, y el salón de T17 con el árbol (la familia).
+// v2 (Bruno, 24-11-2026): sin repetir «el doble», la cola de Doña Manolita al empezar y una familia que se pasa un décimo.
 /* eslint-disable no-undef */
 
 import { persona, tarjeta, selloOficial } from "../../diseno/limpio.mjs";
 import { bandera } from "../../diseno/barrio.mjs";
 import { ambientes } from "../../diseno/sueno.mjs";
-import { DECORADOS_T20, mesaTrabajo, decimo, diezDecimos, barritasGasto, graficaBolsa, premioHacienda } from "../../diseno/loteria.mjs";
+import { DECORADOS_T20, COLA_MANOLITA, mesaTrabajo, decimo, diezDecimos, barritasGasto, graficaBolsa, premioHacienda } from "../../diseno/loteria.mjs";
+import { DECORADOS_T17 } from "../../diseno/carnet.mjs";
+import { arbol } from "../../diseno/navidad.mjs";
 
 export const ESTILO = "limpio";
 const F_INE = "INE · Encuesta de Presupuestos Familiares";
@@ -27,14 +30,16 @@ export function datos(d) {
            inv, caida08: d.bolsa_2008_caida_pct, grav: d.gravamen_premios };
 }
 
-export const capas = () => ambientes(DECORADOS_T20);
+export const capas = () => ambientes({ ...DECORADOS_T20, salon: DECORADOS_T17.salon });
 
 // ------------------------------------------------------------------ personajes (inventados), con volumen
 const GAFAS = `<g fill="none" stroke="#4A4038" stroke-width="5"><circle cx="-34" cy="-487" r="24"/><circle cx="34" cy="-487" r="24"/><path d="M-10 -492 Q0 -498 10 -492"/><path d="M-58 -492 L-92 -500 M58 -492 L92 -500"/></g>`;
 const REBECA = `<path d="M0 -374 V-172" stroke="#8A6418" stroke-width="6"/>${[-336, -290, -244, -198].map((y) => `<circle cx="13" cy="${y}" r="7" fill="#FFF3D6"/>`).join("")}`;
 const COMPI = { pelo: "corto", canas: false, barba: false, colorPelo: "#3A2A1E", ropa: ["#5E7F7A", "#4A6763"], piel: "#F0C7A2", volumen: true };
 const VETERANA = { pelo: "largo", canas: true, barba: false, colorPelo: "#BDB6AC", ropa: ["#C8902E", "#A9781F"], piel: "#EBC3A0", piel2: "#D9AE8C", volumen: true, gorro: GAFAS, encima: REBECA };
-const QUIEN = { c: COMPI, v: VETERANA };
+const ABUELA = { pelo: "largo", canas: true, barba: false, colorPelo: "#D8D2C6", ropa: ["#7A3E5A", "#64324A"], piel: "#EBC3A0", piel2: "#D9AE8C", volumen: true };
+const NIETO = { pelo: "corto", canas: false, barba: false, colorPelo: "#5A3A22", ropa: ["#5E8F5C", "#4C7A4A"], piel: "#F2CBA8", volumen: true };
+const QUIEN = { c: COMPI, v: VETERANA, a: ABUELA, n: NIETO };
 const DECIMO_MANO = `<g transform="translate(18 -46) rotate(-8) scale(.34)">${decimo("dm", "58213")}</g>`;
 const gente = (n, quien, manos = {}) => quien.split("").map((k) => persona(`${n}-${k}`, "hoy", { ...QUIEN[k], mano: manos[k] ? `<g id="${n}-${k}-mano">${manos[k]}</g>` : undefined })).join("");
 
@@ -46,24 +51,26 @@ const grande = (n, titulo, cifra, sub, nota, fuente, color = HOY) => tarjeta(n, 
 const vs = (n, vals, labs) => `<div class="vs">${vals.map((v, i) => `<div class="col"><div class="v" id="c${n}-${"ab"[i]}" style="font-size:84px;color:${i ? VERDE : "#5B6470"}">${v}</div><div class="n">${labs[i]}</div></div>`).join("")}</div>`;
 
 export function escenas(D) {
+  void COLA_MANOLITA;   // 34 personas en la cola (en fn va el número tal cual: solo vale el runtime)
   const I7 = D.inv["2007"], I16 = D.inv["2016"], I19 = D.inv["2019"];
   const FIN = { jugado: I7.jugado_eur, en_bolsa: I7.en_bolsa_eur, jugado_txt: miles(I7.jugado_eur) + " €", en_bolsa_txt: miles(I7.en_bolsa_eur) + " €" };
   const grafica = (id, marcas = [], bache = "") => `<g transform="translate(540 1270)">${graficaBolsa(id, I7.por_anyo, FIN, { W: 760, H: 500, marcas, bache })}</g>`;
   const oficina = "ambiente(\"oficinaNavidad\", null, t, 0);";   // (recordatorio: en fn solo vale el runtime)
   void oficina;
   return [
-    // 1 · Gancho. El compañero, junto a su mesa: «¿Cuánto llevas jugado a la lotería desde 2007? ¿Y si lo hubieras metido en bolsa?»
+    // 1 · Gancho, en la cola de Doña Manolita (Madrid). El compañero pasa por delante: «¿Cuánto llevas jugado a la lotería desde 2007? ¿Y si lo hubieras metido en bolsa?»
     { n: 1, set: "vacio",
-      svg: `${gente("s1", "c")}<g transform="translate(830 1440)">${mesaTrabajo("s1-me")}</g>${selloOficial("s1-sello")}`,
+      svg: `${gente("s1", "c")}${selloOficial("s1-sello")}`,
       tarjeta: tarjeta(1, "Navidad · 2007, 2016, 2019 y hoy", `<div class="tit" style="font-size:66px">¿Lotería o <mark id="m1">invertir</mark>?</div>`, { icono: bandera(44) }),
       fn: function (t, e) {
         const c = e.c;
-        ambiente("oficinaNavidad", null, t, 0);
-        vidaFondo("ol", t, { lamparas: 2, gente: 2, capa: "oficinaNavidad", y: 1080, s: 0.42 });
-        for (let i = 0; i < 12; i++) css("ol-b" + i, "opacity", 0.4 + 0.6 * ((Math.sin(t * 3.2 + i * 1.7) + 1) / 2));
+        ambiente("calleManolita", null, t, 0);
+        for (let i = 0; i < 22; i++) { css("ml-a" + i, "opacity", 0.45 + 0.55 * ((Math.sin(t * 4 + i * 1.3) + 1) / 2)); if (i < 16) css("ml-b" + i, "opacity", 0.45 + 0.55 * ((Math.sin(t * 3 + i * 0.9) + 1) / 2)); }
+        for (let i = 0; i < 34; i++) attr("ml-q" + i, "transform", `translate(${(Math.sin(t * 1.1 + i * 2.3) * 2).toFixed(1)} ${(Math.abs(Math.sin(t * 0.9 + i * 1.7)) * -3).toFixed(1)})`);
         marca("m1", t, c["c1-bolsa"]);
-        selloAnim("s1-sello", t, c["c1-sello"], 300, 1680, { s: 0.85, r: -8 });
-        persona("s1-c", t, { x: 560, y: 1440, s: 0.82, mira: [[0, 0], [c["c1-bolsa"] + 0.4, 1]], vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c1-jugado"] - 0.2, "senala"], [c["c1-bolsa"] + 0.3, "hombros"]], fase: 1 });
+        selloAnim("s1-sello", t, c["c1-sello"], 300, 780, { s: 0.8, r: -9 });
+        const w = ruta(t, [[0.1, 1260], [1.4, 860]]);
+        persona("s1-c", t, { x: w.x, y: 1760, s: 0.9, anda: w.anda, mira: [[0, -1], [c["c1-jugado"], 0]], vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c1-jugado"] - 0.2, "senala"], [c["c1-bolsa"] + 0.3, "hombros"]], espejo: true, fase: 1 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c1-jugado"], e.c["c1-bolsa"]]); } },
 
@@ -83,20 +90,26 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c2-decimo"]]); } },
 
-    // 3 · Lo que gasta un hogar (INE): «Un hogar medio se deja 104 euros al año en loterías y apuestas. En 2007 eran 186.»
+    // 3 · En casa, la abuela le da un décimo al nieto; luego, el gasto del hogar (INE): «Un hogar medio se deja 104 euros al año en loterías y apuestas. En 2007 eran 186.»
     { n: 3, set: "vacio",
-      svg: `<g transform="translate(540 1200)">${barritasGasto("s3-g", D.gasto, { 2007: rnd(D.gasto["2007"]) + " €", 2025: rnd(D.gasto["2025"]) + " €" }, { W: 560, H: 300 })}</g>${gente("s3", "vc")}`,
+      svg: `<g transform="translate(140 1300) scale(.7)">${arbol("s3-ar")}</g>${gente("s3", "a")}${gente("s3", "n")}
+        <g id="s3-dec"><g transform="scale(.34)">${decimo("s3-d", "58213")}</g></g>
+        <g transform="translate(540 1150)">${barritasGasto("s3-g", D.gasto, { 2007: rnd(D.gasto["2007"]) + "\u00A0€", 2025: rnd(D.gasto["2025"]) + "\u00A0€" }, { W: 470, H: 260 })}</g>`,
       tarjeta: grande(3, "Lo que gasta un hogar al año en loterías y apuestas", rnd(D.gasto["2025"]) + "&nbsp;€", "En 2007, " + rnd(D.gasto["2007"]) + "&nbsp;€",
         `En 2016, ${rnd(D.gasto["2016"])}&nbsp;€; en 2019, ${rnd(D.gasto["2019"])}&nbsp;€. Lo que declaran los hogares`, F_INE),
       fn: function (t, e) {
         const c = e.c;
-        ambiente("oficinaNavidad", null, t, 0);
-        vidaFondo("ol", t, { lamparas: 2, gente: 2, capa: "oficinaNavidad", y: 1080, s: 0.42 });
-        pop("s3-g", t, e.t0 + 0.1, 0, 0, { s: 1 });
-        for (let i = 0; i < 19; i++) css("s3-g-b" + i, "transform", `scaleY(${suave(clamp((t - e.t0 - 0.3 - i * 0.06) / 0.35)).toFixed(3)})`);
+        ambiente("salon", "oficinaNavidad", t, e.t0);
+        vidaFondo("sl", t, { lamparas: 1, capa: "salon" });
+        for (let i = 0; i < 16; i++) css("s3-ar-b" + i, "opacity", 0.35 + 0.65 * ((Math.sin(t * 3.4 + i * 1.7) + 1) / 2));
+        // el décimo pasa de la mano de la abuela a la del nieto, en arco
+        const k = suave(clamp((t - c["c3-hogar"]) / 1.1)), x = 248 + (832 - 248) * k, y = 1270 - Math.sin(k * Math.PI) * 140;
+        T("s3-dec", x, y, { s: 1, r: -8 + 16 * k });
+        pop("s3-g", t, c["c3-apuestas"], 0, 0, { s: 1 });
+        for (let i = 0; i < 19; i++) css("s3-g-b" + i, "transform", `scaleY(${suave(clamp((t - c["c3-apuestas"] - 0.2 - i * 0.05) / 0.35)).toFixed(3)})`);
         sube("c3-a", t, c["c3-104"]); sube("c3-b", t, c["c3-2007"]);
-        persona("s3-v", t, { x: 130, y: 1440, s: 0.72, mira: 1, vivo: true, boca: [[0, "seria"], [c["c3-104"] + 0.4, "o"]], brazo: [[0, "abajo"]], fase: 2 });
-        persona("s3-c", t, { x: 950, y: 1440, s: 0.76, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c3-104"] - 0.2, "senala"], [c["c3-2007"] + 0.5, "abajo"]], espejo: true, fase: 1 });
+        persona("s3-a", t, { x: 172, y: 1440, s: 0.76, mira: 1, vivo: true, boca: [[0, "sonrisa"]], ojos: [[0, "felices"], [c["c3-apuestas"], "normal"]], brazo: [[0, "senala"], [c["c3-hogar"] + 1.2, "abajo"]], fase: 2 });
+        persona("s3-n", t, { x: 908, y: 1440, s: 0.8, mira: -1, vivo: true, boca: [[0, "sonrisa"], [c["c3-hogar"] + 1.1, "grande"], [c["c3-apuestas"], "sonrisa"]], ojos: [[0, "normal"], [c["c3-hogar"] + 1.1, "felices"]], brazo: [[0, "abajo"], [c["c3-hogar"] + 0.5, "senala"]], espejo: true, fase: 1 });
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c3-104"]]); } },
 

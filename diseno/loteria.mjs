@@ -50,7 +50,47 @@ function oficinaNavidad() {
       ${Array.from({ length: 12 }, (_, i) => { const y = -470 + (i % 6) * 60, w = 70 + (i % 6) * 28, x = ((i * 37) % (2 * w)) - w; return `<circle id="ol-b${i}" cx="${x}" cy="${y + 40}" r="16" fill="${["#F2C14E", "#E07A3F", "#FFFDF8", "#7FB3D5"][i % 4]}"/>`; }).join("")}</g>
     ${paseante("ol-w0", "#7C9A7E", "#F2CBA8", 1)}${paseante("ol-w1", "#C9A0C2", "#E9BE98", 1)}`;
 }
-export const DECORADOS_T20 = { oficinaNavidad };
+// ------------------------------------------------------------------ la cola de Doña Manolita (Madrid), en Navidad
+// Bruno, 24-11-2026: la cola histórica para comprar lotería en Doña Manolita. Calle en perspectiva con fachadas de Madrid
+// (balcones de hierro), luces de Navidad que cruzan la calle («ml-a<i>», «ml-b<i>»), la administración con su rótulo (solo
+// texto, sin logotipo) y una cola larguísima desde la puerta hasta delante (la escena la mueve un poco: «ml-q<i>»).
+// Sin cifras ni fechas. Prefijo para vidaFondo: «ml».
+const COLA = Array.from({ length: 34 }, (_, i) => {
+  const k = i / 33, y = 1085 + Math.pow(k, 1.7) * 760, x = 600 - Math.pow(k, 1.15) * 520 + (i % 2 ? 18 : -12) * (0.3 + k);
+  return { x, y, s: 0.3 + Math.pow(k, 1.3) * 1.35, col: ["#7C9A7E", "#C9A0C2", "#5E7F7A", "#C8902E", "#8E3B4A", "#4A6175", "#B98A5E", "#6F8FA8", "#9AA6AE", "#3F6B5A"][i % 10],
+           piel: ["#F2CBA8", "#E9BE98", "#D8A27E", "#F0C7A2", "#C99A72"][i % 5], pelo: ["#3A2A1E", "#BDB6AC", "#4A2E20", "#2B1D14", "#7A5638"][(i * 3) % 5] };
+});
+export const COLA_MANOLITA = COLA.length;   // 34
+function calleManolita() {
+  const fachadaI = `<path d="M${X0} -400 L320 520 L320 1060 L${X0} 2300 Z" fill="#E8D3B0"/>`, fachadaD = `<path d="M${X0 + ANCHO} -400 L760 520 L760 1060 L${X0 + ANCHO} 2300 Z" fill="#E2C6A0"/>`;
+  // balcones y ventanas en perspectiva (lado izquierdo y derecho)
+  const balcones = (lado) => [0.08, 0.26, 0.46, 0.66, 0.84].map((u) => {
+    const xf = lado < 0 ? X0 : X0 + ANCHO, xb = lado < 0 ? 320 : 760, x = xf + (xb - xf) * u, top = -400 + (520 + 400) * u, bot = 2300 - (2300 - 1060) * u, w = 150 * (1 - u * 0.78);
+    return [0.42, 0.62, 0.82].map((v) => { const y = bot - (bot - top) * v; return `<rect x="${(x - w / 2).toFixed(0)}" y="${(y - w * 1.6).toFixed(0)}" width="${w.toFixed(0)}" height="${(w * 1.6).toFixed(0)}" fill="#5E4A3A"/>
+      <rect x="${(x - w / 2 + w * 0.12).toFixed(0)}" y="${(y - w * 1.45).toFixed(0)}" width="${(w * 0.76).toFixed(0)}" height="${(w * 0.9).toFixed(0)}" fill="#FFE2A0" opacity=".8"/>
+      <rect x="${(x - w / 2 - w * 0.12).toFixed(0)}" y="${(y - w * 0.45).toFixed(0)}" width="${(w * 1.24).toFixed(0)}" height="${(w * 0.45).toFixed(0)}" fill="none" stroke="#2E3A44" stroke-width="${(6 * (1 - u * 0.7)).toFixed(1)}"/>
+      ${[0.25, 0.5, 0.75].map((f) => `<line x1="${(x - w / 2 - w * 0.12 + w * 1.24 * f).toFixed(0)}" y1="${(y - w * 0.45).toFixed(0)}" x2="${(x - w / 2 - w * 0.12 + w * 1.24 * f).toFixed(0)}" y2="${y.toFixed(0)}" stroke="#2E3A44" stroke-width="${(4 * (1 - u * 0.7)).toFixed(1)}"/>`).join("")}`; }).join(""); }).join("");
+  const guirnalda = (fase, y0, x0, x1, n) => Array.from({ length: n }, (_, i) => { const x = x0 + i * (x1 - x0) / (n - 1), y = y0 + 50 * Math.sin(i / (n - 1) * Math.PI);
+    return `<circle id="ml-${fase}${i}" cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${fase === "a" ? 12 : 8}" fill="${["#F2C14E", "#FFFDF8", "#E07A3F", "#F2C14E"][i % 4]}"/>`; }).join("");
+  return `<rect x="${X0}" y="-400" width="${ANCHO}" height="2700" fill="#1F2A44"/>
+    <rect x="320" y="300" width="440" height="760" fill="#2B3A5C"/>${Array.from({ length: 14 }, (_, k) => `<circle cx="${340 + (k * 61) % 400}" cy="${330 + (k * 47) % 300}" r="${2 + (k % 3)}" fill="#FFFFFF" opacity=".8"/>`).join("")}
+    <!-- fondo de la calle: edificios lejanos -->
+    <rect x="320" y="560" width="440" height="500" fill="#D9C2A0"/>${[0, 1, 2, 3].map((r) => [0, 1, 2, 3, 4].map((k) => `<rect x="${346 + k * 84}" y="${600 + r * 105}" width="40" height="62" fill="#FFE9A8" opacity="${(r + k) % 3 ? 0.9 : 0.4}"/>`).join("")).join("")}
+    ${fachadaI}${fachadaD}${balcones(-1)}${balcones(1)}
+    <!-- acera y calzada en perspectiva -->
+    <path d="M${X0} 2300 L320 1060 H760 L${X0 + ANCHO} 2300 Z" fill="#9AA6AE"/>
+    <path d="M${X0 + 300} 2300 L420 1060 H660 L${X0 + ANCHO - 300} 2300 Z" fill="#7F8B94"/>
+    ${Array.from({ length: 8 }, (_, i) => { const y = 1060 + Math.pow(i / 7, 1.8) * 1240; return `<line x1="${(540 - (120 + (y - 1060) * 1.0)).toFixed(0)}" y1="${y.toFixed(0)}" x2="${(540 + (120 + (y - 1060) * 1.0)).toFixed(0)}" y2="${y.toFixed(0)}" stroke="#8C979F" stroke-width="3"/>`; }).join("")}
+    <!-- la administración de lotería, a la derecha del fondo -->
+    <g transform="translate(700 1060)"><rect x="-40" y="-330" width="250" height="330" fill="#7A2E2A"/><rect x="-26" y="-230" width="100" height="230" fill="#F7E7A6"/><rect x="92" y="-230" width="100" height="160" fill="#F7E7A6"/>
+      <rect x="-80" y="-376" width="330" height="60" rx="6" fill="#2E3A44"/>${txt(85, -335, "DOÑA MANOLITA", 30, "#F2C14E")}${txt(85, -262, "LOTERÍAS", 22, "#FFFDF8")}</g>
+    <!-- luces de Navidad que cruzan la calle -->
+    <path d="M${X0} 150 Q540 260 ${X0 + ANCHO} 150" fill="none" stroke="#3A3A3A" stroke-width="4"/>${guirnalda("a", 160, -300, 1380, 22)}
+    <path d="M140 430 Q540 500 940 430" fill="none" stroke="#3A3A3A" stroke-width="3"/>${guirnalda("b", 438, 140, 940, 16)}
+    <!-- la cola, de la puerta hacia delante -->
+    ${COLA.map((q, i) => `<g transform="translate(${q.x.toFixed(0)} ${q.y.toFixed(0)}) scale(${(q.s / 0.42).toFixed(3)})"><g id="ml-q${i}">${paseante(`ml-p${i}`, q.col, q.piel, 0.42, q.pelo)}</g></g>`).join("")}`;
+}
+export const DECORADOS_T20 = { oficinaNavidad, calleManolita };
 
 // ------------------------------------------------------------------ objetos
 // Mesa de trabajo de delante (con su ordenador y una taza). Origen: el suelo, en el centro.
