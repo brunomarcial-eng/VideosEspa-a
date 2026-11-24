@@ -9,6 +9,8 @@
   · Sueldo de un joven: salario medio bruto anual de 25 a 34 años (INE, Encuesta Anual de Estructura Salarial,
     tabla 28201) de 2013, 2016, 2018 y 2024 (V; 2024 es el último año publicado). 2007 no existe (la EAES empieza en
     2008): EAES 2008 × ETCL 2007/2008 (12.713/13.33), como en T1 (C).
+  · Los más jóvenes (Bruno, 24-11-2026: «el segmento de 18 a 25»): salario medio bruto anual de los menores de 25 años,
+    misma tabla 28201 (incluye jornada parcial). 2007, con el mismo ajuste del ETCL (C).
   · IPC general, media anual (INE, tabla 24077), para pasar a euros de hoy (C).
   · Años: 2007 (antes de la crisis), 2013 (la crisis), 2016, 2018 y hoy (2024, el último año de la EAES).
 """
@@ -52,6 +54,9 @@ def main():
     serie = next(s for s in eaes if s["Nombre"].startswith("Ambos sexos. De 25 a 34 años. Dato base. Total Nacional"))
     joven = {str(x["Anyo"]): x["Valor"] for x in serie["Data"]}
     joven["2007"] = joven["2008"] * ETCL_2007_2008
+    s25 = next(s for s in eaes if s["Nombre"].startswith("Ambos sexos. Menos de 25 años. Dato base. Total Nacional"))
+    menor25 = {str(x["Anyo"]): x["Valor"] for x in s25["Data"]}
+    menor25["2007"] = menor25["2008"] * ETCL_2007_2008
 
     ipc_s = json.loads((RAW / "ine_24077_ipc_desde_1961.json").read_text(encoding="utf-8"))[0]["Data"]
     por = {}
@@ -66,6 +71,10 @@ def main():
             "pension_mes": round(pension[a], 2), "pension_anual": round(p_anual), "estado_pension": "V",
             "joven_anual": round(joven[a]), "joven_mes_14": round(joven[a] / 14), "estado_joven": "C" if a == "2007" else "V",
             "pension_sobre_joven_pct": round(100 * p_anual / joven[a], 1),
+            "menor25_anual": round(menor25[a]), "estado_menor25": "C" if a == "2007" else "V",
+            "pension_sobre_menor25_pct": round(100 * p_anual / menor25[a], 1),
+            "pension_mas_que_menor25_pct": round(100 * (p_anual / menor25[a] - 1), 1),
+            "menor25_mas_que_pension_pct": round(100 * (menor25[a] / p_anual - 1), 1),
             "joven_cobra_mas_pct": round(100 * (joven[a] / p_anual - 1), 1),
             "ipc": round(ipc[a], 3),
             "pension_mes_euros_2024": round(pension[a] * ipc["2024"] / ipc[a]),

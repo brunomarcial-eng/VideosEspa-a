@@ -72,12 +72,13 @@ export function dosMontones(id, valores, rotulos, cifras, colores = ["#5B6470", 
 }
 
 // Barras horizontales de subida (+%), una por fila («<id>-b0…», cifras «<id>-v0…»). items: [{rotulo, valor, color}]. Origen: centro.
+// o.conValor: solo esas filas llevan la cifra (para no enseñar antes de tiempo una cifra que aún no se ha dicho).
 export function barrasSubida(id, items, o = {}) {
   const W = o.W ?? 470, max = Math.max(...items.map((x) => x.valor)), alto = 92, paso = 132;
   return `<g id="${id}"><rect x="-390" y="-100" width="780" height="${items.length * paso + 50}" rx="24" fill="#FFFDF8" opacity=".95"/>
     ${items.map((it, i) => { const y = -40 + i * paso, w = it.valor / max * W;
       return `${txt(-350, y - 6, it.rotulo, 36, C.tinta, "", "start")}<rect id="${id}-b${i}" x="-350" y="${y + 6}" width="${w.toFixed(1)}" height="${alto - 40}" rx="12" fill="${it.color}" style="transform-box:fill-box;transform-origin:0 50%"/>
-        <g id="${id}-v${i}">${txt(-350 + w + 20, y + 48, `+${Math.round(it.valor)}&nbsp;%`, 46, it.color, "", "start")}</g>`; }).join("")}</g>`;
+        <g id="${id}-v${i}">${!o.conValor || o.conValor.includes(i) ? txt(-350 + w + 20, y + 48, `+${Math.round(it.valor)}&nbsp;%`, 46, it.color, "", "start") : ""}</g>`; }).join("")}</g>`;
 }
 
 // Dos carros de la compra («<id>-a» y «<id>-b») con productos que se pueden añadir («<id>-a-x0…»). Origen: centro.

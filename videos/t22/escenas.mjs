@@ -1,6 +1,6 @@
 // Escenas de T22 («¿Quién cobra más: un jubilado o un joven que trabaja?») en estilo «limpio». Bruno, 24-11-2026:
 // la pensión media de jubilación (Seguridad Social, INE) frente al salario medio de 25 a 34 años (INE, EAES), en bruto:
-// hoy, 2007, la crisis (2013), 2016 y 2018; y cuánto ha subido cada uno desde 2007 frente a los precios.
+// hoy, 2007, la crisis (2013), 2016 y 2018; los menores de 25 años (Bruno, 24-11-2026); y cuánto ha subido cada uno desde 2007.
 //   · «abuelo»: unos 75, canas y bigote, cárdigan marrón; jubilado, cree que cobra la mitad que su nieta (voz «padre»).
 //   · «nieta»: unos 29, melena castaña oscura, chaqueta verde salvia; trabaja y lo comprueba todo (voz «viajera»).
 // Decorado (diseno/pension.mjs): un parque de barrio por la tarde, con bancos, farolas y palomas.
@@ -10,7 +10,7 @@ import { persona, tarjeta, selloOficial } from "../../diseno/limpio.mjs";
 import { bandera } from "../../diseno/barrio.mjs";
 import { ambientes } from "../../diseno/sueno.mjs";
 import { columnasHoras } from "../../diseno/alquiler.mjs";
-import { DECORADOS_T22, cartaPension, catorcePagas, dosMontones, barrasSubida, dosCarros } from "../../diseno/pension.mjs";
+import { DECORADOS_T22, cartaPension, catorcePagas, dosMontones, barrasSubida } from "../../diseno/pension.mjs";
 
 export const ESTILO = "limpio";
 const F_SS = "Seguridad Social · Pensiones contributivas en vigor";
@@ -30,6 +30,7 @@ export const capas = () => ambientes({ parquePlaza: DECORADOS_T22.parquePlaza })
 // ------------------------------------------------------------------ personajes (inventados), con volumen
 const ABUELO = { pelo: "corto", canas: true, barba: false, bigote: true, colorPelo: "#B8B0A4", colorBigote: "#C9C2B6", ropa: ["#8C6F5A", "#6E5444"], piel: "#EBC3A0", piel2: "#D9AE8C", volumen: true };
 const NIETA = { pelo: "largo", canas: false, barba: false, colorPelo: "#4A3020", ropa: ["#7C9A7E", "#647F66"], piel: "#F2CBA8", volumen: true };
+const HERMANO = { pelo: "corto", canas: false, barba: false, colorPelo: "#3B2A20", ropa: ["#3E8E8A", "#33746F"], piel: "#F1C9A5", volumen: true };   // solo en la foto
 const QUIEN = { b: ABUELO, n: NIETA };
 const gente = (n, quien) => quien.split("").map((k) => persona(`${n}-${k}`, "hoy", QUIEN[k])).join("");
 
@@ -46,6 +47,10 @@ export function escenas(D) {
   const r = D.ratio.map((x) => Math.round(x));      // 2007, 2013, 2016, 2018, hoy
   const COLS = (id) => columnasHoras(id, D.ratio, ["2007", "2013", "2016", "2018", "Hoy"], { W: 690, H: 360, fmt: (v) => `${Math.round(v)} %` });
   const TIT_R = "La pensión media, en % del sueldo de un joven";
+  const BARRAS = (id, o = {}) => barrasSubida(id, [
+    { rotulo: "Pensión media", valor: D.sube.pension_sube_pct, color: "#C8902E" },
+    { rotulo: "Sueldo de un joven", valor: D.sube.joven_sube_pct, color: "#3F7A4A" },
+    { rotulo: "Precios (IPC)", valor: D.sube.precios_suben_pct, color: "#8C969C" }], o);
   return [
     // 1 · Gancho. El parque. La nieta: «¿Quién cobra más hoy: un jubilado o un joven que curra? Porque mi abuelo dice que él ni la mitad que yo…»
     { n: 1, set: "vacio",
@@ -131,9 +136,12 @@ export function escenas(D) {
       },
       cam: function (t, e) { return camVivo(t, e, [e.c["c5-81"]]); } },
 
-    // 6 · Desde 2016, igual. El abuelo: «Bueno pero desde 2016 está igual ¿no?»
+    // 6 · Desde 2016, igual; y el hermano pequeño. El abuelo: «Bueno desde 2016 igual… y a tu hermano el de 22 le gano.»
     { n: 6, set: "vacio",
-      svg: `<g transform="translate(540 1330)">${COLS("s6-h")}</g>${gente("s6", "bn")}`,
+      svg: `<g transform="translate(540 1330)">${COLS("s6-h")}</g>
+        <g id="s6-f"><g transform="translate(330 1010) rotate(-5)"><rect x="-110" y="-140" width="220" height="250" rx="12" fill="#8E6644"/><rect x="-94" y="-124" width="188" height="200" fill="#DDEFF7"/>
+          <g transform="translate(0 70) scale(.3)">${persona("s6-fh", "hoy", HERMANO)}</g>${`<text x="0" y="100" text-anchor="middle" font-family="Cap" font-weight="800" font-size="30" fill="#FFFFFF">22 años</text>`}</g></g>
+        ${gente("s6", "bn")}`,
       tarjeta: vs(6, TIT_R, [pct(D.ratio[2]), pct(D.ratio[4])], ["en 2016", "hoy"], `2007: ${r[0]}&nbsp;% · 2013: ${r[1]}&nbsp;% · 2018: ${r[3]}&nbsp;%`, F_RATIO),
       fn: function (t, e) {
         const c = e.c;
@@ -141,66 +149,85 @@ export function escenas(D) {
         vidaFondo("pq", t, { capa: "parquePlaza" });
         const dim = suave(clamp((t - c["c6-2016"]) / 0.5));
         for (let i = 0; i < 5; i++) { const o = i === 2 || i === 4 ? 1 : 1 - 0.65 * dim; css(`s6-h-b${i}`, "opacity", o); css(`s6-h-v${i}`, "opacity", o); }
-        sube("c6-a", t, e.t0 - 1); sube("c6-b", t, e.t0 - 1);   // las dos cifras desde el principio: el plano es corto
-        persona("s6-b", t, { x: 130, y: 1700, s: 0.66, mira: 1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c6-2016"] - 0.2, "senala"], [c["c6-igual"], "hombros"]], fase: 1 });
-        persona("s6-n", t, { x: 950, y: 1700, s: 0.64, mira: -1, vivo: true, boca: [[0, "seria"], [c["c6-igual"] + 0.3, "sonrisa"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
+        pop("s6-f", t, c["c6-hermano"] - 0.1, 0, 0, { s: 1 });
+        sube("c6-a", t, e.t0 - 1); sube("c6-b", t, e.t0 - 1);
+        persona("s6-b", t, { x: 130, y: 1700, s: 0.66, mira: 1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c6-2016"] - 0.2, "senala"], [c["c6-hermano"], "arriba"]], fase: 1 });
+        persona("s6-n", t, { x: 950, y: 1700, s: 0.64, mira: -1, vivo: true, boca: [[0, "seria"], [c["c6-hermano"] + 0.3, "sonrisa"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c6-2016"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c6-hermano"]]); } },
 
-    // 7 · Cuánto sube cada uno desde 2007. La nieta: «Lo gordo viene de antes. Desde 2007 tu pensión sube un 91 % y el sueldo joven un 37 %… y los precios un 39 %.»
+    // 7 · Los menores de 25 años (EAES). La nieta: «Eso sí. Los menores de 25 cobran de media 15.136 euros y tu pensión un 34 % más… en 2007 al revés.»
     { n: 7, set: "vacio",
-      svg: `<g transform="translate(540 1010)">${barrasSubida("s7-s", [
-        { rotulo: "Pensión media", valor: D.sube.pension_sube_pct, color: "#C8902E" },
-        { rotulo: "Sueldo de un joven", valor: D.sube.joven_sube_pct, color: "#3F7A4A" },
-        { rotulo: "Precios (IPC)", valor: D.sube.precios_suben_pct, color: "#8C969C" }])}</g>${gente("s7", "bn")}`,
-      tarjeta: vs(7, "Desde 2007, en euros de cada año", [`+${Math.round(D.sube.pension_sube_pct)}&nbsp;%`, `+${Math.round(D.sube.joven_sube_pct)}&nbsp;%`], ["pensión", "sueldo de un joven"],
-        `Los precios (IPC), +${Math.round(D.sube.precios_suben_pct)}&nbsp;%`, "Cálculo propio · Seguridad Social e INE"),
+      svg: `<g transform="translate(540 1330)">${dosMontones("s7-m", [D.F["2024"].pension_anual, D.F["2024"].menor25_anual], ["Pensión", "Menor de 25"], [`${miles(D.F["2024"].pension_anual)} €`, `${miles(D.F["2024"].menor25_anual)} €`])}</g>
+        <g id="s7-r"><g transform="translate(540 765) rotate(-4)"><rect x="-230" y="-48" width="460" height="96" rx="18" fill="#5B6470"/><text x="0" y="16" text-anchor="middle" font-family="Cap" font-weight="800" font-size="40" fill="#FFFFFF">En 2007, al revés</text></g></g>
+        ${gente("s7", "bn")}`,
+      tarjeta: vs(7, "Al año, en bruto", [`${miles(D.F["2024"].pension_anual)}&nbsp;€`, `${miles(D.F["2024"].menor25_anual)}&nbsp;€`], ["pensión media", "menores de 25 años"],
+        `La pensión es un ${Math.round(D.F["2024"].pension_mas_que_menor25_pct)}&nbsp;% más. En 2007, al revés: un menor de 25 cobraba un ${Math.round(D.F["2007"].menor25_mas_que_pension_pct)}&nbsp;% más que la pensión media. En bruto; el sueldo incluye jornada parcial`, F_HOY, 84),
       fn: function (t, e) {
         const c = e.c;
         ambiente("parquePlaza", null, t, 0);
         vidaFondo("pq", t, { capa: "parquePlaza" });
-        pop("s7-s", t, e.t0 + 0.05, 0, 0, { s: 1 });
-        [c["c7-91"], c["c7-37"], c["c7-39"]].forEach((x, i) => {
-          const k = suave(clamp((t - x + 0.1) / 0.6));
-          css(`s7-s-b${i}`, "transform", `scaleX(${k.toFixed(3)})`); css(`s7-s-v${i}`, "opacity", clamp((t - x - 0.3) / 0.3));
-        });
-        sube("c7-a", t, c["c7-91"]); sube("c7-b", t, c["c7-37"]);
-        persona("s7-b", t, { x: 130, y: 1700, s: 0.66, mira: 1, vivo: true, boca: [[0, "seria"], [c["c7-91"] + 0.3, "sonrisa"]], ojos: [[0, "normal"]], brazo: [[0, "abajo"]], fase: 1 });
-        persona("s7-n", t, { x: 950, y: 1700, s: 0.64, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c7-91"] - 0.2, "senala"], [c["c7-39"], "hombros"]], espejo: true, fase: 2 });
+        pop("s7-m-m1", t, c["c7-15136"] - 0.2, 210, 0, { s: 1 });
+        pop("s7-m-m0", t, c["c7-34"] - 0.3, -210, 0, { s: 1 });
+        pop("s7-r", t, c["c7-reves"] - 0.1, 0, 0, { s: 1 });
+        sube("c7-b", t, c["c7-15136"]); sube("c7-a", t, c["c7-34"]);
+        persona("s7-b", t, { x: 130, y: 1700, s: 0.66, mira: 1, vivo: true, boca: [[0, "sonrisa"], [c["c7-reves"] + 0.2, "o"]], ojos: [[0, "felices"], [c["c7-reves"] + 0.2, "grandes"]], brazo: [[0, "abajo"]], fase: 1 });
+        persona("s7-n", t, { x: 950, y: 1700, s: 0.64, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c7-15136"] - 0.2, "senala"], [c["c7-reves"], "hombros"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c7-37"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c7-34"]]); } },
 
-    // 8 · En euros de hoy (IPC). El abuelo: «O sea que en euros de hoy yo gano más de un tercio y tú… lo mismo que en 2007.»
+    // 8 · La subida de la pensión. El abuelo: «Hombre… es que desde 2007 mi pensión ha subido un 91 %.»
     { n: 8, set: "vacio",
-      svg: `<g transform="translate(540 1250)">${dosCarros("s8-k", ["Pensión", "Sueldo joven"])}</g>${gente("s8", "bn")}`,
-      tarjeta: vs(8, "En euros de hoy, desde 2007", [`+${Math.round(D.sube.pension_real_pct)}&nbsp;%`, "igual"], ["pensión", "sueldo de un joven"],
-        `Con el IPC del INE: pensión de ${miles(D.F["2007"].pension_mes_euros_2024)}&nbsp;€ a ${miles(D.F["2024"].pension_mes)}&nbsp;€ al mes; sueldo joven de ${miles(D.F["2007"].joven_anual_euros_2024)}&nbsp;€ a ${miles(D.F["2024"].joven_anual)}&nbsp;€ al año`, F_IPC),
+      svg: `<g transform="translate(540 1010)">${BARRAS("s8-s", { conValor: [0] })}</g>${gente("s8", "bn")}`,
+      tarjeta: grande(8, "Desde 2007, la pensión media", `+${Math.round(D.sube.pension_sube_pct)}&nbsp;%`, "en euros de cada año", `De ${miles(D.F["2007"].pension_mes)}&nbsp;€ a ${miles(D.F["2024"].pension_mes)}&nbsp;€ al mes`, "Cálculo propio · Seguridad Social e INE", "#A9781F"),
       fn: function (t, e) {
         const c = e.c;
         ambiente("parquePlaza", null, t, 0);
         vidaFondo("pq", t, { capa: "parquePlaza" });
-        pop("s8-k", t, e.t0 + 0.05, 0, 0, { s: 1 });
-        for (let j = 0; j < 3; j++) pop(`s8-k-a-x${j}`, t, c["c8-tercio"] + j * 0.15, 0, 0, { s: 1 });
-        sube("c8-a", t, c["c8-tercio"]); sube("c8-b", t, c["c8-mismo"]);
-        persona("s8-b", t, { x: 130, y: 1700, s: 0.66, mira: 1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c8-tercio"] - 0.2, "senala"], [c["c8-mismo"], "hombros"]], fase: 1 });
-        persona("s8-n", t, { x: 950, y: 1700, s: 0.64, mira: -1, vivo: true, boca: [[0, "seria"], [c["c8-mismo"] + 0.2, "o"]], ojos: [[0, "normal"], [c["c8-mismo"] + 0.2, "grandes"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
+        pop("s8-s", t, e.t0 + 0.05, 0, 0, { s: 1 });
+        const k = suave(clamp((t - c["c8-91"] + 0.2) / 0.7));
+        css("s8-s-b0", "transform", `scaleX(${k.toFixed(3)})`); css("s8-s-v0", "opacity", clamp((t - c["c8-91"]) / 0.3));
+        for (const i of [1, 2]) { css(`s8-s-b${i}`, "transform", "scaleX(0)"); css(`s8-s-v${i}`, "opacity", 0); }
+        sube("c8-a", t, c["c8-91"]); sube("c8-b", t, c["c8-91"] + 0.3);
+        persona("s8-b", t, { x: 130, y: 1700, s: 0.66, mira: 1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c8-91"] - 0.3, "senala"]], fase: 1 });
+        persona("s8-n", t, { x: 950, y: 1700, s: 0.64, mira: -1, vivo: true, boca: [[0, "seria"]], brazo: [[0, "abajo"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c8-mismo"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c8-91"]]); } },
 
-    // 9 · Veredicto y pregunta. La nieta: «Total que el jubilado gana poder de compra y el joven se queda igual. ¿Y en tu casa quién llega mejor a fin de mes?»
+    // 9 · El sueldo joven y los precios. La nieta: «Y el sueldo joven un 37 %… con los precios un 39 % más caros.»
     { n: 9, set: "vacio",
-      svg: `${gente("s9", "bn")}`,
-      tarjeta: tarjeta(9, "Te toca", `<div class="tit" style="font-size:60px">¿En tu casa quién llega mejor a fin de <mark id="m9">mes</mark>?</div><div class="sub" id="c9-sub">Te leo en los comentarios.</div>`),
+      svg: `<g transform="translate(540 1010)">${BARRAS("s9-s")}</g>${gente("s9", "bn")}`,
+      tarjeta: vs(9, "Desde 2007, en euros de cada año", [`+${Math.round(D.sube.joven_sube_pct)}&nbsp;%`, `+${Math.round(D.sube.precios_suben_pct)}&nbsp;%`], ["sueldo de un joven", "precios (IPC)"],
+        `Pensión, +${Math.round(D.sube.pension_sube_pct)}&nbsp;%. En euros de hoy: pensión +${Math.round(D.sube.pension_real_pct)}&nbsp;% y sueldo de un joven, igual`, F_IPC),
+      fn: function (t, e) {
+        const c = e.c;
+        ambiente("parquePlaza", null, t, 0);
+        vidaFondo("pq", t, { capa: "parquePlaza" });
+        css("s9-s-b0", "transform", "scaleX(1)"); css("s9-s-v0", "opacity", 1);
+        [[1, c["c9-37"]], [2, c["c9-39"]]].forEach(([i, x]) => {
+          const k = suave(clamp((t - x + 0.1) / 0.6));
+          css(`s9-s-b${i}`, "transform", `scaleX(${k.toFixed(3)})`); css(`s9-s-v${i}`, "opacity", clamp((t - x - 0.3) / 0.3));
+        });
+        sube("c9-a", t, c["c9-37"]); sube("c9-b", t, c["c9-39"]);
+        persona("s9-b", t, { x: 130, y: 1700, s: 0.66, mira: 1, vivo: true, boca: [[0, "sonrisa"], [c["c9-39"] + 0.3, "seria"]], ojos: [[0, "normal"]], brazo: [[0, "abajo"]], fase: 1 });
+        persona("s9-n", t, { x: 950, y: 1700, s: 0.64, mira: -1, vivo: true, charla: e, boca: habla(t, e, "seria"), brazo: [[0, "abajo"], [c["c9-37"] - 0.2, "senala"], [c["c9-39"], "hombros"]], espejo: true, fase: 2 });
+      },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c9-39"]]); } },
+
+    // 10 · Veredicto y pregunta. La nieta: «Total que el jubilado gana poder de compra y el joven se queda igual. ¿Y en tu casa quién llega mejor a fin de mes?»
+    { n: 10, set: "vacio",
+      svg: `${gente("s10", "bn")}`,
+      tarjeta: tarjeta(10, "Te toca", `<div class="tit" style="font-size:60px">¿En tu casa quién llega mejor a fin de <mark id="m10">mes</mark>?</div><div class="sub" id="c10-sub">Te leo en los comentarios.</div>`),
       fn: function (t, e) {
         const c = e.c;
         ambiente("parquePlaza", null, t, 0);
         vidaFondo("pq", t, { capa: "parquePlaza" });
         for (let i = 0; i < 3; i++) attr(`pq-p${i}-c`, "transform", `rotate(${(Math.max(0, Math.sin(t * 3 + i * 2)) * 18).toFixed(1)} 20 -20)`);
-        marca("m9", t, c["c9-casa"] + 0.8);
-        sube("c9-sub", t, c["c9-casa"] + 1.2);
-        persona("s9-b", t, { x: 300, y: 1440, s: 0.8, mira: 1, vivo: true, boca: [[0, "seria"], [c["c9-casa"], "sonrisa"]], ojos: [[0, "normal"]], brazo: [[0, "abajo"], [c["c9-igual"], "hombros"]], fase: 1 });
-        persona("s9-n", t, { x: 790, y: 1440, s: 0.78, mira: [[0, -1], [c["c9-casa"] - 0.2, 0]], vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c9-igual"], "hombros"], [c["c9-casa"], "senala"]], espejo: true, fase: 2 });
+        marca("m10", t, c["c10-casa"] + 0.8);
+        sube("c10-sub", t, c["c10-casa"] + 1.2);
+        persona("s10-b", t, { x: 300, y: 1440, s: 0.8, mira: 1, vivo: true, boca: [[0, "seria"], [c["c10-casa"], "sonrisa"]], ojos: [[0, "normal"]], brazo: [[0, "abajo"], [c["c10-igual"], "hombros"]], fase: 1 });
+        persona("s10-n", t, { x: 790, y: 1440, s: 0.78, mira: [[0, -1], [c["c10-casa"] - 0.2, 0]], vivo: true, charla: e, boca: habla(t, e, "sonrisa"), brazo: [[0, "abajo"], [c["c10-igual"], "hombros"], [c["c10-casa"], "senala"]], espejo: true, fase: 2 });
       },
-      cam: function (t, e) { return camVivo(t, e, [e.c["c9-igual"], e.c["c9-casa"]]); } },
+      cam: function (t, e) { return camVivo(t, e, [e.c["c10-igual"], e.c["c10-casa"]]); } },
   ];
 }
