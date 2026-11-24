@@ -1,0 +1,236 @@
+{
+ "nota": "Momentos clave de T24 (llenar el depósito en horas de trabajo). La música se corta en seco con el «34 %» del gasóleo. Todo en una gasolinera de barrio al atardecer, con sonidos sueltos (coches que pasan por la carretera, el surtidor) y sin ruido continuo.",
+ "musica": {
+  "bpm": 100,
+  "corte": "c8-34",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "gasolinera",
+   "desde": 1,
+   "hasta": 11,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-horas",
+   "beat": 1,
+   "palabra": "horas",
+   "dt": -0.1
+  },
+  {
+   "id": "c1-deposito",
+   "beat": 1,
+   "palabra": "depósito",
+   "dt": -0.1
+  },
+  {
+   "id": "c1-nunca",
+   "beat": 1,
+   "palabra": "nunca",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-crisis",
+   "beat": 2,
+   "palabra": "crisis",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.2
+  },
+  {
+   "id": "c2-barbaridad",
+   "beat": 2,
+   "palabra": "barbaridad",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-50",
+   "beat": 3,
+   "palabra": "50",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-89",
+   "beat": 3,
+   "palabra": "89",
+   "dt": -0.1,
+   "sfx": "beep",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-6",
+   "beat": 3,
+   "palabra": "6",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-curro",
+   "beat": 3,
+   "palabra": "curro",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-ves",
+   "beat": 4,
+   "palabra": "Ves",
+   "dt": -0.1,
+   "sfx": "fwip",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-crisis",
+   "beat": 4,
+   "palabra": "crisis",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-casi",
+   "beat": 5,
+   "palabra": "Casi",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-7",
+   "beat": 5,
+   "palabra": "7",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c5-2016",
+   "beat": 5,
+   "palabra": "2016",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-5",
+   "beat": 5,
+   "palabra": "5",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c6-2007",
+   "beat": 6,
+   "palabra": "2007",
+   "dt": -0.1,
+   "sfx": "fwip",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-50",
+   "beat": 6,
+   "palabra": "50",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.3
+  },
+  {
+   "id": "c7-menos",
+   "beat": 7,
+   "palabra": "menos",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-5",
+   "beat": 7,
+   "palabra": "5",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c7-42",
+   "beat": 7,
+   "palabra": "42",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-hora",
+   "beat": 7,
+   "palabra": "hora",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-34",
+   "beat": 8,
+   "palabra": "34",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-19",
+   "beat": 8,
+   "palabra": "19",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.2
+  },
+  {
+   "id": "c8-5",
+   "beat": 8,
+   "palabra": "5",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c9-coche",
+   "beat": 9,
+   "palabra": "coche",
+   "dt": -0.1,
+   "sfx": "llaves",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-unico",
+   "beat": 10,
+   "palabra": "único",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-39",
+   "beat": 10,
+   "palabra": "39",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-2007",
+   "beat": 10,
+   "palabra": "2007",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-crisis",
+   "beat": 11,
+   "palabra": "crisis",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-coche",
+   "beat": 11,
+   "palabra": "coche",
+   "dt": -0.1
+  }
+ ]
+}

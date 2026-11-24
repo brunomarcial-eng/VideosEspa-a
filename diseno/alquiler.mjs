@@ -111,7 +111,7 @@ export function columnasHoras(id, horas, rotulos, o = {}) {
   return `<g id="${id}"><rect x="${-W / 2 - 40}" y="${-H - 120}" width="${W + 80}" height="${H + 210}" rx="24" fill="#FFFDF8" opacity=".95"/>
     ${horas.map((h, i) => { const alto = h / max * H, x = -W / 2 + i * paso + paso / 2, col = i === n - 1 ? ROJO : OCRE;
       return `<rect id="${id}-b${i}" x="${(x - paso * 0.32).toFixed(1)}" y="${(-alto).toFixed(1)}" width="${(paso * 0.64).toFixed(1)}" height="${alto.toFixed(1)}" rx="10" fill="${col}" style="transform-box:fill-box;transform-origin:50% 100%"/>
-        <g id="${id}-v${i}">${txt(x, -alto - 22, o.fmt ? o.fmt(h) : `${Math.round(h)} h`, 46, col)}</g>
+        <g id="${id}-v${i}">${txt(x, -alto - 22, o.fmt ? o.fmt(h) : `${Math.round(h)} h`, o.tam ?? 46, col)}</g>
         ${txt(x, 50, rotulos[i], 36, C.tinta)}`; }).join("")}
     <line x1="${-W / 2}" y1="0" x2="${W / 2}" y2="0" stroke="${C.tinta}" stroke-width="4"/></g>`;
 }
