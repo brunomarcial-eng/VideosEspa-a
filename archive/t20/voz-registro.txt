@@ -1,0 +1,78 @@
+plano 1: «¿Cuánto llevas jugado a la lotería desde 2007? ¿Y si lo hubieras metido en bolsa?»
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.896 · 5.0 s · 14.1 l/s · viveza 4.13 st · «¿Cuánto llevas jugado a la lotería desde 2007? ¿Y si lo hubieras metido en bolsa?»
+    toma 2 (semilla 1001): BUENA · 1.0 · voz 0.899 · 4.4 s · 15.8 l/s · viveza 3.49 st · «¿Cuánto llevas jugado a la lotería desde 2007 y si lo hubieras metido en bolsa?»
+    toma 3 (semilla 1002): BUENA · 1.0 · voz 0.908 · 4.4 s · 15.8 l/s · viveza 3.72 st · «¿Cuánto llevas jugado a la lotería desde 2007? ¿Y si lo hubieras metido en bolsa?»
+    elegida la toma con más entonación: semilla 1000 (4.13 st)
+plano 2: «Venga hombre que es el décimo de la oficina… como toque y no estés te da algo.»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.882 · 4.5 s · 13.3 l/s · viveza 2.74 st · «Venga hombre que es el décimo de la oficina, como toque y no estés te da algo.»
+    toma 2 (semilla 2001): BUENA · 1.0 · voz 0.917 · 4.2 s · 14.1 l/s · viveza 3.29 st · «Venga hombre que es el décimo de la oficina, como toque y no estés te da algo.»
+    toma 3 (semilla 2002): BUENA · 1.0 · voz 0.88 · 4.9 s · 12.1 l/s · viveza 1.81 st · «Venga hombre que es el décimo de la oficina, como toque y no estés te da algo.»
+    elegida la toma con más entonación: semilla 2001 (3.29 st)
+plano 3: «Un hogar medio se deja 104 euros al año en loterías y apuestas. En 2007 eran 186.»
+    toma 1 (semilla 3000): mala · 0.984 · voz 0.915 · 7.1 s · 13.2 l/s · «Un hogar medio se deja a 100, 4 euros al año en loterías y apuestas, en 2007 eran 186.» · cifras no oídas: 104
+    toma 2 (semilla 3001): BUENA · 1.0 · voz 0.93 · 6.7 s · 14.0 l/s · viveza 3.05 st · «Un hogar medio se deja 104 euros al año en loterías y apuestas, en 2007 eran 186.»
+    toma 3 (semilla 3002): BUENA · 1.0 · voz 0.9 · 6.8 s · 13.7 l/s · viveza 3.48 st · «Un hogar medio se deja 104 euros al año en loterías y apuestas. En 2007 eran 186.»
+    toma 4 (semilla 3003): BUENA · 1.0 · voz 0.932 · 6.1 s · 15.5 l/s · viveza 1.88 st · «Un hogar medio se deja 104 euros al año en loterías y apuestas. En 2007 eran 186.»
+    elegida la toma con más entonación: semilla 3002 (3.48 st)
+plano 4: «Y de cada diez décimos siete no cobran nada. Ni el reintegro.»
+    toma 1 (semilla 4000): mala · 0.957 · voz 0.853 · 3.9 s · 12.3 l/s · «Y de cada 10-17 no cobran nada, ni el reintegro.» · no oigo: décimos
+    toma 2 (semilla 4001): mala · 0.957 · voz 0.886 · 3.4 s · 14.3 l/s · «y de cada 10, 17 no cobran nada, ni el reintegro.» · no oigo: décimos
+    toma 3 (semilla 4002): mala · 0.903 · voz 0.837 · 4.1 s · 11.8 l/s · «Y de cada 1017 no cobran nada, ni el reintegro.» · no oigo: décimos; voz distinta (0.84)
+    toma 4 (semilla 4003): BUENA · 1.0 · voz 0.876 · 3.5 s · 13.8 l/s · viveza 1.61 st · «Y de cada 10 décimos 7 no cobran nada, ni el reintegro.»
+    toma 5 (semilla 4004): BUENA · 1.0 · voz 0.881 · 3.9 s · 12.4 l/s · viveza 3.71 st · «y de cada 10 décimos 7 no cobran nada, ni el reintegro.»
+    toma 6 (semilla 4005): BUENA · 1.0 · voz 0.865 · 3.6 s · 13.2 l/s · viveza 3.46 st · «Y de cada 10 décimos, 7 no cobran nada, ni el reintegro.»
+    elegida la toma con más entonación: semilla 4004 (3.71 st)
+plano 5: «Ya majo pero la ilusión no tiene precio.»
+    toma 1 (semilla 5000): mala · 1.0 · voz 0.765 · 1.9 s · 17.2 l/s · «Ya majo, pero la ilusión no tiene precio.» · voz distinta (0.76)
+    toma 2 (semilla 5001): mala · 1.0 · voz 0.833 · 2.1 s · 15.5 l/s · «Yamajo, pero la ilusión no tiene precio.» · voz distinta (0.83)
+    toma 3 (semilla 5002): BUENA · 1.0 · voz 0.86 · 2.2 s · 14.7 l/s · viveza 1.73 st · «Ya majo, pero la ilusión no tiene precio.»
+    toma 4 (semilla 5003): mala · 0.954 · voz 0.848 · 2.1 s · 15.4 l/s · «Llamajo, pero la ilusión no tiene precio.» · voz distinta (0.85)
+    toma 5 (semilla 5004): BUENA · 1.0 · voz 0.865 · 2.4 s · 13.2 l/s · viveza 1.24 st · «Yamajo, pero la ilusión no tiene precio.»
+    toma 6 (semilla 5005): mala · 1.0 · voz 0.825 · 2.5 s · 13.0 l/s · «Yamajo, pero la ilusión no tiene precio.» · voz distinta (0.83)
+    toma 7 (semilla 5006): BUENA · 1.0 · voz 0.876 · 2.0 s · 16.0 l/s · viveza 2.48 st · «Yamajo, pero la ilusión no tiene precio.»
+    elegida la toma con más entonación: semilla 5006 (2.48 st)
+plano 6: «Pues mira lo que cuesta. Si desde 2007 metes ese dinero en bolsa cada Navidad… casi tres mil euros hoy son trece mil.»
+    toma 1 (semilla 6000): mala · 0.848 · voz 0.9 · 7.3 s · 13.6 l/s · «Pues mira lo que cuesta. Si desde 2007 metes ese dinero en bolsa cada navidad casi 3.000 euros, hoy son 13.000.» · no oigo: mil, mil.; sobran 8 letras (¿repite?)
+    toma 2 (semilla 6001): mala · 0.848 · voz 0.909 · 6.9 s · 14.4 l/s · «Pues mira lo que cuesta, si desde 2007 metes ese dinero en bolsa cada navidad, casi 3.000 euros hoy son 13.000.» · no oigo: mil, mil.; sobran 8 letras (¿repite?)
+    toma 3 (semilla 6002): mala · 0.848 · voz 0.937 · 7.4 s · 13.5 l/s · «Pues mira lo que cuesta si desde 2007 metes ese dinero en bolsa cada navidad. Casi 3.000 euros, hoy son 13.000.» · no oigo: mil, mil.; sobran 8 letras (¿repite?)
+    toma 4 (semilla 6003): mala · 0.848 · voz 0.895 · 7.6 s · 13.1 l/s · «Pues mira lo que cuesta, si desde 2007 metes ese dinero en bolsa cada navidad, casi 3.000 euros hoy son 13.000.» · no oigo: mil, mil.; sobran 8 letras (¿repite?)
+    toma 5 (semilla 6004): mala · 0.848 · voz 0.916 · 8.0 s · 12.3 l/s · «Pues mira lo que cuesta. Si desde 2007 metes ese dinero en bolsa, cada Navidad casi 3.000 euros hoy son 13.000.» · no oigo: mil, mil.; sobran 8 letras (¿repite?)
+    toma 6 (semilla 6005): mala · 0.848 · voz 0.908 · 6.9 s · 14.4 l/s · «Pues mira lo que cuesta, si desde 2007 metes ese dinero en bolsa cada navidad, casi 3.000 euros hoy son 13.000.» · no oigo: mil, mil.; sobran 8 letras (¿repite?); sin pausa tras «Navidad…» (0.22 s)
+    toma 7 (semilla 6006): mala · 0.848 · voz 0.938 · 7.7 s · 12.8 l/s · «Pues mira lo que cuesta, si desde 2007 metes ese dinero en bolsa, cada navidad, casi 3.000 euros hoy son 13.000.» · no oigo: mil, mil.; sobran 8 letras (¿repite?)
+plano 7: «¿Y lo de 2008 qué? Que la bolsa también se hunde.»
+    toma 1 (semilla 7000): mala · 0.963 · voz 0.868 · 3.7 s · 11.4 l/s · «y lo de 2008 que la bolsa también se hunde.» · no oigo: qué?
+    toma 2 (semilla 7001): BUENA · 1.0 · voz 0.924 · 3.9 s · 10.9 l/s · viveza 2.54 st · «Y lo de 2008 que, que la bolsa también se hunde.»
+    toma 3 (semilla 7002): BUENA · 1.0 · voz 0.897 · 3.4 s · 12.4 l/s · viveza 1.53 st · «y lo de 2008 que… que la bolsa también se hunde.»
+    toma 4 (semilla 7003): mala · 0.988 · voz 0.813 · 3.3 s · 12.8 l/s · «Y lo de 2008, ¿o qué? Que la bolsa también se hunde.» · voz distinta (0.81)
+    toma 5 (semilla 7004): BUENA · 1.0 · voz 0.91 · 3.4 s · 12.5 l/s · viveza 1.85 st · «y lo de 2008 que, que la bolsa también se hunde.»
+    elegida la toma con más entonación: semilla 7001 (2.54 st)
+plano 8: «Claro que se hunde… en 2008 un 36 %. Pero empieces cuando empieces gana. Desde 2016 el doble y desde 2019 casi el doble.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.903 · 10.2 s · 13.8 l/s · viveza 3.95 st · «Claro que se hunde, en 2008 un 36%, pero empieces cuando empieces gana, desde 2016 el doble y desde 2019 casi el doble.»
+    toma 2 (semilla 8001): mala · 1.0 · voz 0.908 · 10.6 s · 13.3 l/s · «Claro que se hunde en 2008 un 36%, pero empieces cuando empieces gana, desde 2016 el doble y desde 2019 casi el doble.» · sin pausa tras «hunde…» (0.20 s)
+    toma 3 (semilla 8002): mala · 1.0 · voz 0.922 · 9.5 s · 14.7 l/s · «Claro que se hunde. En 2008 un 36%, pero empieces cuando empieces gana. Desde 2016 el doble y desde 2019 casi el doble.» · sin pausa tras «hunde…» (0.24 s)
+    toma 4 (semilla 8003): mala · 1.0 · voz 0.927 · 9.3 s · 15.0 l/s · «Claro que se hunde en 2008 un 36%, pero empieces cuando empieces gana. Desde 2016 el doble y desde 2019 casi el doble.» · sin pausa tras «hunde…» (0.00 s)
+    toma 5 (semilla 8004): BUENA · 1.0 · voz 0.929 · 9.4 s · 14.9 l/s · viveza 3.31 st · «Claro que se hunde en 2008 un 36%, pero empieces cuando empieces gana, desde 2016 el doble y desde 2019 casi el doble.»
+    toma 6 (semilla 8005): mala · 1.0 · voz 0.909 · 8.7 s · 16.2 l/s · «Claro que se hunde, en 2008 un 36%, pero empieces cuando empieces gana, desde 2016 el doble y desde 2019 casi el doble.» · sin pausa tras «hunde…» (0.00 s)
+    toma 7 (semilla 8006): mala · 1.0 · voz 0.893 · 10.0 s · 14.0 l/s · «Claro que se hunde, en 2008 un 36%, pero empieces cuando empieces gana. Desde 2016 el doble, y desde 2019 casi el doble.» · sin pausa tras «hunde…» (0.20 s)
+    elegida la toma con más entonación: semilla 8000 (3.95 st)
+plano 9: «¿Y si me toca el Gordo listo?»
+    toma 1 (semilla 9000): mala · 1.0 · voz 0.814 · 1.3 s · 15.7 l/s · «¿Y si me toca el gordo listo?» · voz distinta (0.81)
+    toma 2 (semilla 9001): mala · 1.0 · voz 0.769 · 1.3 s · 15.7 l/s · «¿Y si me toca el gordo, listo?» · voz distinta (0.77)
+    toma 3 (semilla 9002): mala · 1.0 · voz 0.823 · 1.4 s · 15.0 l/s · «¿Y si me toca el gordo, listo?» · voz distinta (0.82)
+    toma 4 (semilla 9003): mala · 1.0 · voz 0.843 · 1.5 s · 14.2 l/s · «¿Y si me toca el gordo, listo?» · voz distinta (0.84)
+    toma 5 (semilla 9004): mala · 1.0 · voz 0.799 · 1.7 s · 12.7 l/s · «¿Y si me toca el gordo listo?» · voz distinta (0.80)
+    toma 6 (semilla 9005): BUENA · 1.0 · voz 0.861 · 1.4 s · 15.4 l/s · viveza 2.67 st · «¿Y si me toca el gordo, listo?»
+    toma 7 (semilla 9006): mala · 1.0 · voz 0.827 · 1.5 s · 13.8 l/s · «¿Y si me toca el gordo, listo?» · voz distinta (0.83)
+plano 10: «Pues Hacienda se queda el 20 % de lo que pase de 40.000 euros. En 2007 nada.»
+    toma 1 (semilla 10000): mala · 1.0 · voz 0.936 · 5.4 s · 17.5 l/s · «Pues hacienda se queda el 20% de lo que pase de 40.000 euros, en 2007 nada.» · no oigo: 40.000
+    toma 2 (semilla 10001): mala · 0.989 · voz 0.908 · 5.1 s · 18.6 l/s · «Pues hacienda se queda al 20% de lo que pase de 40.000 euros, en 2007 nada.» · no oigo: 40.000
+    toma 3 (semilla 10002): mala · 1.0 · voz 0.883 · 5.2 s · 18.3 l/s · «Pues hacienda se queda el 20% de lo que pase de 40.000 euros. En 2007 nada.» · no oigo: 40.000
+    toma 4 (semilla 10003): mala · 0.989 · voz 0.902 · 5.0 s · 19.2 l/s · «Pues hacienda se queda al 20% de lo que pase de 40.000 euros, en 2007 nada.» · no oigo: 40.000; ritmo raro (19.2 letras/s)
+    toma 5 (semilla 10004): mala · 0.99 · voz 0.91 · 5.5 s · 17.4 l/s · «Pues la hacienda se queda el 20% de lo que pase de 40.000 euros, en 2007 nada.» · no oigo: 40.000
+    toma 6 (semilla 10005): mala · 1.0 · voz 0.917 · 5.4 s · 17.5 l/s · «Pues hacienda se queda el 20% de lo que pase de 40.000 euros. En 2007 nada.» · no oigo: 40.000
+    toma 7 (semilla 10006): mala · 1.0 · voz 0.91 · 6.0 s · 15.9 l/s · «Pues hacienda se queda el 20% de lo que pase de 40.000 euros. En 2007 nada.» · no oigo: 40.000
+plano 11: «¿Y tú qué haces este año décimo o bolsa? ¿Ilusión o impuesto voluntario?»
+    toma 1 (semilla 11000): BUENA · 0.937 · voz 0.869 · 3.4 s · 16.6 l/s · viveza 3.83 st · «Y tú que haces este año décimo bolsa ilusiona un puesto voluntario.»
+    toma 2 (semilla 11001): BUENA · 1.0 · voz 0.885 · 4.3 s · 12.9 l/s · viveza 4.16 st · «¿Y tú qué haces este año décimo o bolsa? Ilusión o impuesto voluntario.»
+    toma 3 (semilla 11002): BUENA · 1.0 · voz 0.883 · 4.4 s · 12.7 l/s · viveza 2.95 st · «¿Y tú qué haces este año décimo o bolsa? ¿ilusión o impuesto voluntario?»
+    elegida la toma con más entonación: semilla 11001 (4.16 st)

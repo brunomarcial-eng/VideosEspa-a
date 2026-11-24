@@ -1,0 +1,15 @@
+# T20 · Notas de edición (archivo por si hay apelación)
+
+**Vídeo:** «¿Lotería o invertir? Lo que has jugado desde 2007 y lo que tendrías en bolsa» · Short vertical 1080×1920, 60,3 s, −14,4 LUFS (v1).
+**Fichero:** `videos/t20/render/t20-limpio.mp4` · SHA-256 `1b8b39420f5f20ec90ea702796015638d9cbfb351784ce17b28720b02163495f`.
+**Aprobación:** el responsable del canal eligió la lotería de Navidad el 23-11-2026 y el 24-11-2026 pidió dos vídeos; este, la diferencia entre jugar (azar, probabilidades bajas) e invertir de forma constante, con la bolsa del BCE, y lo que se lleva Hacienda ahora y antes. v1 pendiente de su visto bueno.
+
+## Cómo se hizo
+- **Guion:** una oficina en Navidad. La compañera veterana que organiza el décimo de la oficina y un compañero que invierte, inventados, con la forma de hablar del responsable del canal (skill `clon-bruno`). La veterana defiende la ilusión; él pone los datos, incluido lo malo de la bolsa (2008). Acaba con una pregunta («¿décimo o bolsa? ¿ilusión o impuesto voluntario?»). No da causas ni nombra partidos ni marcas.
+- **Cifras:** gasto medio por hogar en juegos de azar (INE, EPF, lo que declaran los hogares); décimos jugados y premiados y euros jugados y repartidos en la Lotería Nacional de 2022 (Tribunal de Cuentas, BOE-A-2025-14671); S&P 500 y dólar/euro (BCE); gravamen especial sobre premios (Ley del IRPF y AEAT). Script: `scripts/calcular_t20.py`; detalle en `guion.md` y `t20_loteria_invertir.json`.
+- **Cálculo de la bolsa:** cada diciembre de 2007 a 2025 se compra índice (S&P 500 en euros, media de diciembre) por el gasto medio del hogar de ese año; se valora con la media de octubre de 2026. Sin dividendos, comisiones ni impuestos. No es una recomendación de inversión.
+- **Lo que no entra:** el oro (sin serie oficial en el BCE ni en el Banco de España), Bitcoin (sin dato oficial), el premio del Gordo por décimo de hoy (solo lo publica SELAE, cuya web no se pudo leer desde el entorno) y encuestas privadas.
+- **Ficheros originales:** `datos-crudos/`, con enlace, fecha y huella SHA-256 en `datos-crudos/MANIFEST.csv`.
+- **Imagen:** dibujada con código (`escenas.mjs` y `diseno/loteria.mjs`): oficina en Navidad, un décimo genérico inventado (sin logotipos ni escudo), diez décimos, la gráfica de lo jugado frente a la bolsa y el sobre de Hacienda.
+- **Voces:** Qwen3-TTS en local, del catálogo del canal: el compañero con «hombre» y la veterana con «hostelera». Tres tomas buenas por línea y se elige la de más entonación; cada toma se revisa con Whisper (`voz-registro.txt`). En los planos 6 y 10 Whisper escribe las cifras en número («13.000», «40.000») y el comprobador las da por no oídas: se ha escuchado el texto transcrito y es correcto.
+- **Música, efectos y ambiente:** generados con código (`scripts/sonido.py`, ambiente «oficina» con sonidos sueltos), sin ruido continuo y con la música sin bajo grave. Contenido sintético: sí.

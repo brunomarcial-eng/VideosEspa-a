@@ -1,0 +1,226 @@
+{
+ "nota": "Momentos clave de T20 (lotería o invertir). La música se corta en seco con los «trece mil» de la bolsa. Oficina en Navidad con sonidos sueltos (teclas, una taza, un teléfono lejos), sin ruido continuo; la música no lleva bajo grave.",
+ "musica": {
+  "bpm": 100,
+  "corte": "c6-trece",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "oficina",
+   "desde": 1,
+   "hasta": 11,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-jugado",
+   "beat": 1,
+   "palabra": "jugado",
+   "dt": -0.1
+  },
+  {
+   "id": "c1-bolsa",
+   "beat": 1,
+   "palabra": "bolsa",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c2-decimo",
+   "beat": 2,
+   "palabra": "décimo",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-toque",
+   "beat": 2,
+   "palabra": "toque",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-algo",
+   "beat": 2,
+   "palabra": "algo",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-104",
+   "beat": 3,
+   "palabra": "104",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-2007",
+   "beat": 3,
+   "palabra": "2007",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c4-diez",
+   "beat": 4,
+   "palabra": "diez",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c4-siete",
+   "beat": 4,
+   "palabra": "siete",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-reintegro",
+   "beat": 4,
+   "palabra": "reintegro",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-ilusion",
+   "beat": 5,
+   "palabra": "ilusión",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-2007",
+   "beat": 6,
+   "palabra": "2007",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-bolsa",
+   "beat": 6,
+   "palabra": "bolsa",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.35
+  },
+  {
+   "id": "c6-tres",
+   "beat": 6,
+   "palabra": "tres",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c6-trece",
+   "beat": 6,
+   "palabra": "trece",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.4
+  },
+  {
+   "id": "c7-2008",
+   "beat": 7,
+   "palabra": "2008",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c7-hunde",
+   "beat": 7,
+   "palabra": "hunde",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-36",
+   "beat": 8,
+   "palabra": "36",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-empieces",
+   "beat": 8,
+   "palabra": "empieces",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-2016",
+   "beat": 8,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c8-2019",
+   "beat": 8,
+   "palabra": "2019",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c9-gordo",
+   "beat": 9,
+   "palabra": "Gordo",
+   "dt": -0.1,
+   "sfx": "campanilla",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-20",
+   "beat": 10,
+   "palabra": "20",
+   "dt": -0.1,
+   "sfx": "rasgado",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-40000",
+   "beat": 10,
+   "palabra": "40.000",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-nada",
+   "beat": 10,
+   "palabra": "nada",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-decimo",
+   "beat": 11,
+   "palabra": "décimo",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-bolsa",
+   "beat": 11,
+   "palabra": "bolsa",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-ilusion",
+   "beat": 11,
+   "palabra": "Ilusión",
+   "dt": -0.1
+  }
+ ]
+}

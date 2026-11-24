@@ -191,7 +191,7 @@ export function escenas(D) {
     // 9 · El sueño del Gordo: «¿Y si me toca el Gordo listo?»
     { n: 9, set: "vacio",
       svg: `<g transform="translate(830 1440)">${mesaTrabajo("s9-me")}</g>${gente("s9", "c")}${gente("s9", "v")}
-        <g id="s9-nube"><ellipse rx="300" ry="170" fill="#FFFDF8" opacity=".95"/><circle cx="-210" cy="190" r="26" fill="#FFFDF8" opacity=".95"/><circle cx="-250" cy="250" r="16" fill="#FFFDF8" opacity=".95"/>
+        <g id="s9-nube"><ellipse rx="300" ry="170" fill="#FFFDF8" opacity=".95"/><circle cx="-150" cy="182" r="26" fill="#FFFDF8" opacity=".95"/><circle cx="-185" cy="232" r="16" fill="#FFFDF8" opacity=".95"/>
           <g transform="translate(-40 40) scale(.9)">${premioHacienda("s9-p")}</g></g>`,
       tarjeta: cita(9, "La del décimo de la oficina", `«¿Y si me toca el <mark id="m9">Gordo</mark>?»`),
       fn: function (t, e) {
@@ -201,7 +201,7 @@ export function escenas(D) {
         for (let i = 0; i < 12; i++) css("ol-b" + i, "opacity", 0.4 + 0.6 * ((Math.sin(t * 3.2 + i * 1.7) + 1) / 2));
         marca("m9", t, c["c9-gordo"]);
         ver("s9-p-s", false);
-        pop("s9-nube", t, c["c9-gordo"] - 0.2, 540, 760, { s: 1 });
+        pop("s9-nube", t, c["c9-gordo"] - 0.2, 600, 740, { s: 1 });
         persona("s9-v", t, { x: 300, y: 1440, s: 0.78, mira: 1, vivo: true, charla: e, boca: habla(t, e, "sonrisa"), ojos: [[0, "normal"], [c["c9-gordo"], "felices"]], brazo: [[0, "abajo"], [c["c9-gordo"], "arriba"]], salta: c["c9-gordo"] + 0.2, fase: 2 });
         persona("s9-c", t, { x: 600, y: 1440, s: 0.82, mira: -1, vivo: true, boca: [[0, "sonrisa"]], brazo: [[0, "abajo"]], fase: 1 });
       },
