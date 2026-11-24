@@ -13,8 +13,8 @@ Todas son Qwen3-TTS en local (Apache-2.0), gratis y en español de España. Cada
 | `hijo` | hombre, unos 30 | joven y natural | hijo, joven trabajador, enfermero, autónomo que empieza, inquilino | T3 (hijo), T4 (hijo), T5 (hijo), T6 (hijo), T7 (hijo), T8 (hijo), T9 (quedo), T10 (nuevo), T11 (enfermero), T17 (hijo), T21 (hermano) |
 | `profesora` (voz de hombre) | hombre, unos 45 | clara, cercana y firme | profesor, funcionario, técnico, médico, jefe | T12 (profesora), T15 (tendero), T16 (vendedor), T23 (técnico de la caldera) |
 | `comandante` | hombre, unos 55 | grave, tranquila y segura, de anuncio | piloto, directivo, juez de paz, presentador de un aviso, abuelo sereno | T13 (comandante), T17 (padre), T19 (padre) |
-| `maquinista` | hombre, unos 45 | llana y campechana, de trabajador de toda la vida | maquinista, camionero, albañil, mecánico, carnicero, taxista | T13 (maquinista), T18 (javi) |
-| `alumno` | chico, 15 | adolescente, algo grave para su edad, tímido y sincero | alumno, nieto, hijo adolescente | T12 (alumno), T14 (hijo) |
+| `maquinista` | hombre, unos 45 | llana y campechana, de trabajador de toda la vida | maquinista, camionero, albañil, mecánico, carnicero, taxista | T13 (maquinista), T18 (javi), T24 (padre) |
+| `alumno` | chico, 15 | adolescente, algo grave para su edad, tímido y sincero | alumno, nieto, hijo adolescente | T12 (alumno), T14 (hijo), T24 (hijo) |
 | `viajera` | mujer, unos 35 | natural y cercana, con chispa irónica | viajera, inquilina, madre joven, dependienta, autónoma, opositora | T13 (viajera), T16 (clienta), T19 (hija), T22 (nieta) |
 | `medica` | mujer, unos 45 | firme, directa y algo grave, con autoridad | médica, profesora, abogada, jefa, madre | T11 (medica), T14 (madre), T15 (madre), T21 (hermana) |
 | `hostelera` | mujer, unos 62 | grave y pausada, de veterana que lo ha visto todo; cariñosa y sin pelos en la lengua | hostelera, abuela, jubilada, vecina mayor, comerciante | T10 (veterana), T14 (tendera), T23 (vecina, con `edad.vecina` un 2 % más grave y más lenta) |

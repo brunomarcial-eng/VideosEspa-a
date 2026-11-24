@@ -1,0 +1,53 @@
+{
+ "huella": "33dc61d813b9d2bc",
+ "semilla": 1000,
+ "texto": "¿Cuántas horas tienes que trabajar para llenar el depósito? Porque mi padre ya no lo llena nunca.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0261,
+  "oido": "¿Cuántas horas tienes que trabajar para llenar el depósito? Porque mi padre ya no lo llena nunca.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.34,
+   0.54,
+   0.82,
+   1.04,
+   1.4,
+   1.7,
+   2.06,
+   2.16,
+   3.14,
+   3.34,
+   3.52,
+   3.76,
+   3.98,
+   4.1,
+   4.2,
+   4.46
+  ],
+  "t1": [
+   0.34,
+   0.54,
+   0.82,
+   1.04,
+   1.4,
+   1.7,
+   2.06,
+   2.16,
+   2.68,
+   3.34,
+   3.52,
+   3.76,
+   3.98,
+   4.1,
+   4.2,
+   4.46,
+   4.64
+  ],
+  "ritmo": 16.0,
+  "voz": 0.902,
+  "viveza": 4.05
+ }
+}
