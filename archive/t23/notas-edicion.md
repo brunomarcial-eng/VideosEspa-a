@@ -2,7 +2,7 @@
 
 **Vídeo:** «¿Cuántas horas trabajas para tener la casa caliente?» · Short vertical 1080×1920, 66,4 s, −14,1 LUFS (v1).
 **Fichero:** `videos/t23/render/t23-limpio.mp4` · SHA-256 `b46dc8cd7cb26d6337c6334a4534533ecf56be1ea4d9b10015f627c4e0cb66f9`.
-**Aprobación:** el responsable del canal eligió el tema el 24-11-2026 («calefacción», entre calefacción, comprar un piso, matrícula y regalos de Reyes). v1: pendiente de su visto bueno.
+**Aprobación:** el responsable del canal eligió el tema el 24-11-2026 («calefacción», entre calefacción, comprar un piso, matrícula y regalos de Reyes). v1 **aprobada** (24-11-2026: «Top. Nada que corregir»).
 
 ## Cómo se hizo
 - **Guion:** una vecina mayor con el abrigo puesto en casa y el técnico que viene a revisar la caldera, inventados, en el salón de un piso antiguo en invierno; hablan con la forma de hablar del responsable del canal (skill `clon-bruno`). Ella cree que la luz y el gas cuestan más horas que en la crisis; él lo comprueba (no es así), y ella le da la vuelta: en su bloque hay cada vez más vecinos pasando frío, y es verdad (el doble). La conclusión cambia con la medida y se dice. Acaba con una pregunta («¿Y tú enciendes la calefacción o tiras de manta?»). No da causas (precios de 2022, alquileres, sueldos) ni nombra partidos ni marcas.
