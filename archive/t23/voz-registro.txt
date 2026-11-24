@@ -1,0 +1,76 @@
+plano 1: «¿Cuántas horas trabajas al año para tener la casa calentita? Porque yo estoy en casa con el abrigo puesto.»
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.913 · 5.3 s · 16.2 l/s · viveza 2.55 st · «¿Cuántas horas trabajas al año para tener la casa calentita? Porque yo estoy en casa con el abrigo puesto.»
+    toma 2 (semilla 1001): BUENA · 1.0 · voz 0.88 · 5.5 s · 15.5 l/s · viveza 3.49 st · «¿Cuántas horas trabajas al año para tener la casa calentita? Porque yo estoy en casa con el abrigo puesto.»
+    toma 3 (semilla 1002): BUENA · 1.0 · voz 0.916 · 5.3 s · 16.0 l/s · viveza 2.54 st · «¿Cuántas horas trabajas al año para tener la casa calentita? Porque yo estoy en casa con el abrigo puesto.»
+    elegida la toma con más entonación: semilla 1001 (3.49 st)
+plano 2: «Pues la caldera está perfecta señora… ¿por qué no la enciende?»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.917 · 3.6 s · 13.6 l/s · viveza 3.33 st · «Pues la caldera está perfecta, señora, porque no la enciende.»
+    toma 2 (semilla 2001): BUENA · 1.0 · voz 0.921 · 3.3 s · 14.7 l/s · viveza 3.82 st · «Pues la caldera está perfecta, señora. ¿Por qué no la enciende?»
+    toma 3 (semilla 2002): BUENA · 1.0 · voz 0.888 · 3.1 s · 16.0 l/s · viveza 2.57 st · «Pues la caldera está perfecta señora, porque no la enciende.»
+    elegida la toma con más entonación: semilla 2001 (3.82 st)
+plano 3: «¿Con lo que cuesta hoy? Hijo eso cuesta más que en la crisis seguro.»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.924 · 3.7 s · 14.0 l/s · viveza 3.26 st · «Con lo que cuesta hoy, hijo, eso cuesta más que en la crisis seguro.»
+    toma 2 (semilla 3001): BUENA · 1.0 · voz 0.899 · 3.9 s · 13.2 l/s · viveza 2.71 st · «con lo que cuesta hoy? Hijo eso cuesta más que en la crisis seguro.»
+    toma 3 (semilla 3002): BUENA · 0.981 · voz 0.886 · 3.8 s · 13.7 l/s · viveza 3.02 st · «Con lo que cuesta hoy, hijo de eso cuesta más que en la crisis seguro.»
+    elegida la toma con más entonación: semilla 3000 (3.26 st)
+plano 4: «A ver… un hogar gasta de media 1.255 euros al año en luz gas y gasóleo. Unas 97 horas de trabajo.»
+    toma 1 (semilla 4000): BUENA · 0.991 · voz 0.954 · 8.0 s · 13.4 l/s · viveza 3.57 st · «A ver, un hogar gasta de media 1.255 euros al año en luz, gas y gasolio, unas 97 horas de trabajo.»
+    toma 2 (semilla 4001): BUENA · 0.991 · voz 0.946 · 7.3 s · 14.7 l/s · viveza 3.11 st · «A ver, un hogar gasta de media 1.255 euros al año en luz gas y gasolio, unas 97 horas de trabajo.»
+    toma 3 (semilla 4002): BUENA · 0.991 · voz 0.953 · 8.2 s · 13.1 l/s · viveza 3.05 st · «A ver, un hogar gasta de media 1.255 euros al año en luz gas y gasolio, unas 97 horas de trabajo.»
+    elegida la toma con más entonación: semilla 4000 (3.57 st)
+plano 5: «Y en plena crisis eran 118 horas… y en 2016 103. Hoy cuesta menos tiempo.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.953 · 7.2 s · 12.0 l/s · viveza 2.9 st · «Y en plena crisis eran 118 horas y en 2016 103. Hoy cuesta menos tiempo.»
+    toma 2 (semilla 5001): BUENA · 1.0 · voz 0.935 · 6.4 s · 13.5 l/s · viveza 2.43 st · «Y en plena crisis eran 118 horas y en 2016 103, hoy cuesta menos tiempo.»
+    toma 3 (semilla 5002): BUENA · 1.0 · voz 0.929 · 6.4 s · 13.5 l/s · viveza 3.12 st · «Y en plena crisis eran 118 horas y en 2016 103, hoy cuesta menos tiempo.»
+    elegida la toma con más entonación: semilla 5002 (3.12 st)
+plano 6: «Anda ya… ¿y eso cómo puede ser?»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.883 · 2.4 s · 9.0 l/s · viveza 2.3 st · «Anda ya. ¿Y eso cómo puede ser?»
+    toma 2 (semilla 6001): BUENA · 1.0 · voz 0.853 · 2.4 s · 9.4 l/s · viveza 4.34 st · «Anda ya, y eso como puede ser.»
+    toma 3 (semilla 6002): mala · 1.0 · voz 0.767 · 2.2 s · 10.0 l/s · «¿Anda ya? ¿Y eso cómo puede ser?» · voz distinta (0.77)
+    toma 4 (semilla 6003): BUENA · 1.0 · voz 0.859 · 2.1 s · 10.6 l/s · viveza 2.54 st · «Anda ya. ¿Y eso cómo puede ser?»
+    elegida la toma con más entonación: semilla 6001 (4.34 st)
+plano 7: «Porque desde 2016 la factura ha subido un 19 % y el sueldo un 26. Eso sí… en 2007 eran 93, algo menos.»
+    toma 1 (semilla 7000): mala · 0.962 · voz 0.948 · 9.1 s · 14.1 l/s · «porque desde 2016 la factura ha subido un 19% y el sueldo un 26%. Eso sí, en 2007 era 93, algo menos.» · sobran 9 letras (¿repite?)
+    toma 2 (semilla 7001): BUENA · 0.996 · voz 0.951 · 9.6 s · 13.4 l/s · viveza 3.7 st · «porque desde 2016 la factura ha subido un 19%, y el sueldo un 26. Eso sí, en 2007 era 93, algo menos.»
+    toma 3 (semilla 7002): mala · 0.966 · voz 0.937 · 9.5 s · 13.4 l/s · «porque desde 2016 la factura ha subido un 19% y el sueldo un 26%. Eso sí, en 2007 eran 93, algo menos.» · sobran 9 letras (¿repite?)
+    toma 4 (semilla 7003): mala · 0.955 · voz 0.937 · 8.5 s · 15.1 l/s · «Porque desde 2016 la factura ha subido a un 19% y el sueldo a un 26%. Eso sí, en 2007 era 93, algo menos.» · sobran 11 letras (¿repite?)
+    toma 5 (semilla 7004): mala · 0.962 · voz 0.938 · 10.3 s · 12.4 l/s · «porque desde 2016 la factura ha subido un 19% y el sueldo un 26%. Eso sí, en 2007 era 93, algo menos.» · sobran 9 letras (¿repite?)
+    toma 6 (semilla 7005): mala · 0.962 · voz 0.942 · 9.5 s · 13.5 l/s · «Porque desde 2016 la factura ha subido un 19% y el sueldo un 26%. Eso sí, en 2007 era 93, algo menos.» · sobran 9 letras (¿repite?)
+    toma 7 (semilla 7006): mala · 0.966 · voz 0.936 · 10.0 s · 12.8 l/s · «Porque desde 2016, la factura ha subido un 19% y el sueldo un 26%. Eso sí, en 2007 eran 93, algo menos.» · sobran 9 letras (¿repite?)
+plano 8: «Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.91 · 3.8 s · 15.9 l/s · viveza 2.18 st · «Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.»
+    toma 2 (semilla 8001): BUENA · 1.0 · voz 0.888 · 3.4 s · 17.8 l/s · viveza 1.94 st · «Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.»
+    toma 3 (semilla 8002): BUENA · 1.0 · voz 0.922 · 3.5 s · 16.9 l/s · viveza 2.5 st · «Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.»
+    elegida la toma con más entonación: semilla 8002 (2.5 st)
+plano 9: «Ahí sí tiene razón. Hoy casi 16 de cada 100 personas no pueden tener la casa caliente… el doble que en la crisis.»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.956 · 7.2 s · 13.4 l/s · viveza 2.75 st · «Ahí sí tiene razón. Hoy casi 16 de cada 100 personas no pueden tener la casa caliente. El doble que en la crisis.»
+    toma 2 (semilla 9001): BUENA · 0.995 · voz 0.965 · 7.7 s · 12.5 l/s · viveza 3.8 st · «Ahí sí tienes razón. Hoy casi 16 de cada 100 personas no pueden tener la casa caliente. El doble que en la crisis.»
+    toma 3 (semilla 9002): BUENA · 1.0 · voz 0.95 · 6.9 s · 14.0 l/s · viveza 3.68 st · «Ahí sí tiene razón. Hoy casi 16 de cada 100 personas no pueden tener la casa caliente. El doble que en la crisis.»
+    elegida la toma con más entonación: semilla 9001 (3.8 st)
+plano 10: «Y en los hogares de renta media el triple que en 2019.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.931 · 3.3 s · 16.3 l/s · viveza 3.45 st · «y en los hogares de renta media, el triple que en 2019.»
+    toma 2 (semilla 10001): BUENA · 1.0 · voz 0.92 · 3.0 s · 17.9 l/s · viveza 2.56 st · «y en los hogares de renta media el triple que en 2019.»
+    toma 3 (semilla 10002): BUENA · 1.0 · voz 0.906 · 3.4 s · 15.9 l/s · viveza 2.94 st · «y en los hogares de renta media, el triple que en 2019.»
+    elegida la toma con más entonación: semilla 10000 (3.45 st)
+plano 11: «O sea que la factura cuesta menos horas pero hay el doble de gente pasando frío. ¿Y tú enciendes la calefacción o tiras de manta?»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.903 · 7.0 s · 14.7 l/s · viveza 1.96 st · «O sea que la factura cuesta menos horas, pero hay el doble de gente pasando frío. ¿Y tú enciendes la calefacción o tiras de manta?»
+    toma 2 (semilla 11001): BUENA · 1.0 · voz 0.905 · 6.5 s · 15.7 l/s · viveza 2.28 st · «O sea, que la factura cuesta menos horas, pero hay el doble de gente pasando frío. ¿Y tú enciendes la calefacción o tiras de manta?»
+    toma 3 (semilla 11002): BUENA · 1.0 · voz 0.892 · 7.0 s · 14.6 l/s · viveza 3.04 st · «O sea que la factura cuesta menos horas pero hay el doble de gente pasando frío. ¿Y tú enciendes la calefacción o tiras de manta?»
+    elegida la toma con más entonación: semilla 11002 (3.04 st)
+duración total 66.4 s · escrito videos/t23/audio/linea_tiempo.json

@@ -1,0 +1,292 @@
+{
+ "id": "t23",
+ "version": 1,
+ "titulo": "¿Cuántas horas trabajas para tener la casa caliente?",
+ "titulo_alternativo": "La luz y el gas en horas de trabajo: 2007, la crisis, 2016, 2019 y hoy. Y cuánta gente pasa frío en casa",
+ "pregunta": "¿Cuántas horas de trabajo cuesta al año la luz, el gas y el gasóleo de casa, hoy y en 2007, 2013, 2016 y 2019? ¿Y cuánta gente no puede tener la casa caliente?",
+ "datos": "data/clean/t23_calefaccion.json",
+ "aprobacion_datos": "Bruno eligió la calefacción el 24-11-2026 (entre calefacción, comprar un piso, matrícula y regalos de Reyes). Tabla en videos/t23/paso-1-datos.md.",
+ "formato": "Una vecina mayor (unos 68), con el abrigo puesto en su salón y la calefacción apagada, y el técnico de la caldera (unos 45), que viene a revisarla. Gasto medio por hogar en luz, gas y gasóleo en horas del sueldo neto mediano: hoy, 2007, la crisis (2013), 2016 y 2019; y las personas que no pueden mantener la casa caliente (ECV). Pregunta final al espectador.",
+ "duracion_max_s": 85,
+ "personajes": {
+  "vecina": {
+   "anyo": "unos 68, jubilada, con el abrigo puesto en casa para no encender la calefacción",
+   "voz": "hostelera"
+  },
+  "tecnico": {
+   "anyo": "unos 45, técnico de calderas, tranquilo y con los datos",
+   "voz": "profesora"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.5,
+  "viveza_tomas": 3
+ },
+ "sin_veredicto": "El veredicto lo da la vecina en el plano 11: la factura media cuesta menos horas (118 en plena crisis, 103 en 2016 y 109 en 2019 frente a 97 hoy; en 2007, 93, algo menos), pero hay el doble de gente que no puede tener la casa caliente (del 8 % en 2007 y en plena crisis al 15,9 %). El porqué de la factura lo dice el técnico (plano 7): desde 2016 la factura sube un 19 % y el sueldo un 26 %. Acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "La factura",
+   "beats": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "nombre": "El frío",
+   "beats": [
+    8,
+    9,
+    10,
+    11
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "vecina",
+   "funcion": "gancho",
+   "voz": "¿Cuántas horas trabajas al año para tener la casa calentita? Porque yo estoy en casa con el abrigo puesto.",
+   "pantalla": "¿Cuántas horas trabajas para tener la casa caliente?",
+   "sello": null,
+   "imagen": "Un salón de piso antiguo en invierno: nieva por la ventana, radiador apagado, mesa camilla. La vecina, con abrigo y bufanda, habla a cámara; le sale vaho al hablar. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "tecnico",
+   "funcion": "la caldera funciona",
+   "voz": "Pues la caldera está perfecta señora… ¿por qué no la enciende?",
+   "pantalla": "La caldera, perfecta",
+   "sello": null,
+   "imagen": "El técnico, con su caja de herramientas en el suelo, cierra la tapa de la caldera de la pared; se enciende la lucecita verde."
+  },
+  {
+   "n": 3,
+   "quien": "vecina",
+   "funcion": "lo que cree la vecina",
+   "voz": "¿Con lo que cuesta hoy? Hijo eso cuesta más que en la crisis seguro.",
+   "pantalla": "«Más que en la crisis, seguro»",
+   "sello": null,
+   "imagen": "La vecina, muy convencida; el termómetro de la pared marca frío."
+  },
+  {
+   "n": 4,
+   "quien": "tecnico",
+   "funcion": "dato: la factura en horas",
+   "voz": "A ver… un hogar gasta de media 1.255 euros al año en luz gas y gasóleo. Unas 97 horas de trabajo.",
+   "pantalla": "Luz, gas y gasóleo: 1.255 € al año = 97 horas de trabajo",
+   "nota": "Gasto medio por hogar (2025) en horas del sueldo neto mediano: unas 8 horas al mes",
+   "sello": "INE · PRESUPUESTOS FAMILIARES Y ESTRUCTURA SALARIAL",
+   "imagen": "Una factura de la luz y el gas grande; un reloj que da vueltas hasta 97 horas."
+  },
+  {
+   "n": 5,
+   "quien": "tecnico",
+   "funcion": "dato: la crisis y 2016",
+   "voz": "Y en plena crisis eran 118 horas… y en 2016 103. Hoy cuesta menos tiempo.",
+   "pantalla": "Horas de trabajo al año: 118 en plena crisis, 97 hoy",
+   "nota": "2007: 93 · 2013: 118 · 2016: 103 · 2019: 109 · hoy (2025): 97",
+   "grafico": true,
+   "sello": "INE · PRESUPUESTOS FAMILIARES Y ESTRUCTURA SALARIAL",
+   "imagen": "Columnas de horas de cada año: 2007, 2013 (la más alta), 2016, 2019 y hoy."
+  },
+  {
+   "n": 6,
+   "quien": "vecina",
+   "funcion": "sorpresa",
+   "voz": "Anda ya… ¿y eso cómo puede ser?",
+   "pantalla": "«¿Y eso cómo puede ser?»",
+   "sello": null,
+   "imagen": "La vecina se quita la bufanda de golpe, sorprendida."
+  },
+  {
+   "n": 7,
+   "quien": "tecnico",
+   "funcion": "el porqué y 2007",
+   "voz": "Porque desde 2016 la factura ha subido un 19 % y el sueldo un 26. Eso sí… en 2007 eran 93, algo menos.",
+   "pantalla": "Desde 2016: la factura +19 %, el sueldo +26 %",
+   "nota": "En 2007, 93 horas al año: algo menos que hoy (97)",
+   "sello": "INE · PRESUPUESTOS FAMILIARES Y ESTRUCTURA SALARIAL",
+   "imagen": "Dos barras que suben: la factura y el sueldo; el sueldo sube más."
+  },
+  {
+   "n": 8,
+   "quien": "vecina",
+   "funcion": "el giro",
+   "voz": "Pues explícame por qué en mi bloque hay cada vez más vecinos pasando frío.",
+   "pantalla": "«Cada vez más vecinos pasando frío»",
+   "sello": null,
+   "imagen": "Por la ventana, el bloque de enfrente: en varias ventanas, gente con manta y gorro."
+  },
+  {
+   "n": 9,
+   "quien": "tecnico",
+   "funcion": "dato: la gente que pasa frío",
+   "voz": "Ahí sí tiene razón. Hoy casi 16 de cada 100 personas no pueden tener la casa caliente… el doble que en la crisis.",
+   "pantalla": "No pueden tener la casa caliente: 15,9 % de la gente",
+   "nota": "Casi 8 millones de personas. En 2007 y en plena crisis (2013), el 8 %; en 2019, el 7,6 %",
+   "sello": "INE · CONDICIONES DE VIDA",
+   "imagen": "Cien muñequitos en una cuadrícula: casi 16 se ponen azules, con bufanda."
+  },
+  {
+   "n": 10,
+   "quien": "tecnico",
+   "funcion": "dato: la renta media",
+   "voz": "Y en los hogares de renta media el triple que en 2019.",
+   "pantalla": "Renta media: del 5,7 % (2019) al 17,2 % (hoy)",
+   "nota": "Personas del decil de renta del medio (el quinto) que no pueden tener la casa caliente",
+   "sello": "INE · CONDICIONES DE VIDA",
+   "imagen": "Una escalera de diez barras (de los que menos ganan a los que más); la del medio crece."
+  },
+  {
+   "n": 11,
+   "quien": "vecina",
+   "funcion": "veredicto y pregunta",
+   "voz": "O sea que la factura cuesta menos horas pero hay el doble de gente pasando frío. ¿Y tú enciendes la calefacción o tiras de manta?",
+   "pantalla": "¿Enciendes la calefacción o tiras de manta?",
+   "sello": null,
+   "imagen": "La vecina, en la mesa camilla con la manta; el técnico, con la caja de herramientas. Ella pregunta a cámara."
+  }
+ ],
+ "no_dato": [
+  "100"
+ ],
+ "cifras": [
+  {
+   "texto": "1.255",
+   "ruta": "filas.2025.gasto_anual",
+   "aprox": 1255,
+   "tolerancia_pct": 0.1,
+   "estado": "V"
+  },
+  {
+   "texto": "97",
+   "ruta": "filas.2025.horas_anyo",
+   "aprox": 97,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "8",
+   "ruta": "filas.2025.horas_mes",
+   "aprox": 8,
+   "tolerancia_pct": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "118",
+   "ruta": "filas.2013.horas_anyo",
+   "aprox": 118,
+   "tolerancia_pct": 0.5,
+   "estado": "C"
+  },
+  {
+   "texto": "103",
+   "ruta": "filas.2016.horas_anyo",
+   "aprox": 103,
+   "tolerancia_pct": 0.5,
+   "estado": "C"
+  },
+  {
+   "texto": "109",
+   "ruta": "filas.2019.horas_anyo",
+   "aprox": 109,
+   "tolerancia_pct": 0.5,
+   "estado": "C"
+  },
+  {
+   "texto": "93",
+   "ruta": "filas.2007.horas_anyo",
+   "aprox": 93,
+   "tolerancia_pct": 0.5,
+   "estado": "C"
+  },
+  {
+   "texto": "19",
+   "ruta": "factura_sube_pct.2016",
+   "aprox": 19,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "26",
+   "ruta": "sueldo_hora_sube_pct.2016",
+   "aprox": 26,
+   "tolerancia_pct": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "16",
+   "ruta": "filas.2025.no_puede_calentar_pct",
+   "aprox": 16,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "15,9",
+   "ruta": "filas.2025.no_puede_calentar_pct",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "8",
+   "ruta": "filas.2013.no_puede_calentar_pct",
+   "aprox": 8,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "8",
+   "ruta": "filas.2007.no_puede_calentar_pct",
+   "aprox": 8,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "8",
+   "ruta": "personas_no_puede_calentar_hoy",
+   "escala": 1e-06,
+   "aprox": 8,
+   "tolerancia_pct": 3,
+   "estado": "C"
+  },
+  {
+   "texto": "7,6",
+   "ruta": "filas.2019.no_puede_calentar_pct",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "5,7",
+   "ruta": "filas.2019.no_puede_calentar_decil5_pct",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "17,2",
+   "ruta": "filas.2025.no_puede_calentar_decil5_pct",
+   "decimales": 1,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "Gasto medio por hogar en «Electricidad, gas y otros combustibles» (V): INE, EPF; 2007 y 2013, base 2006 (tabla 10628): 814,67 € y 1.172,88 €; 2016, 2019 y 2025, base 2016 (tabla 73779, gasto total): 1.054,75 €, 1.177,96 € y 1.254,63 €. Cambio de base en 2016 (2015: 1.110,40 € en base 2006).",
+  "Sueldo neto mediano por hora (C): 8,79 € (2007), 9,90 € (2013), 10,27 € (2016), 10,85 € (2019), 12,98 € (2025); INE, EAES y ETCL, método de T1 (data/clean/t21_alquiler.json).",
+  "Horas de trabajo al año (C) = gasto / sueldo neto mediano por hora: 92,7 (2007), 118,5 (2013), 102,7 (2016), 108,6 (2019), 96,7 (2025).",
+  "No pueden permitirse mantener la vivienda con una temperatura adecuada, personas (V): INE, ECV, tabla 9967: 8,0 % (2007), 8,0 % (2013), 10,1 % (2016), 7,6 % (2019), 20,7 % (2023, el récord), 15,9 % (2025). Quinto decil de renta por unidad de consumo (tabla 9973): 5,7 % (2019) y 17,2 % (2025): ×3,0.",
+  "Casi 8 millones de personas (C, orientativo): 15,9 % × 49,4 millones de residentes (INE, ECP, media de 2025) = 7,84 millones."
+ ],
+ "cierre": {
+  "veredicto": "La factura media de luz, gas y gasóleo, en horas de trabajo, mejora frente a la crisis (118 → 97 horas al año), frente a 2016 (103) y frente a 2019 (109), y empeora un poco frente a 2007 (93). Pero la gente que no puede tener la casa caliente empeora frente a todos los años: del 8 % en 2007 y en plena crisis, y del 7,6 % en 2019, al 15,9 % hoy (el doble); en los hogares de renta media, del 5,7 % al 17,2 % desde 2019 (el triple)",
+  "porque": "Desde 2016 la factura media sube un 19 % y el sueldo neto mediano por hora un 26 %; la media no dice cuánta gente no llega: eso lo cuenta la Encuesta de Condiciones de Vida.",
+  "pregunta": "¿Enciendes la calefacción o tiras de manta?"
+ },
+ "aprobacion_guion": "pendiente (v1)"
+}
