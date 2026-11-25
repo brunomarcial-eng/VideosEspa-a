@@ -696,6 +696,31 @@ def amb_barrio(**_):
     return norm(y)
 
 
+def amb_almacen(**_):
+    """Almacén de un banco de alimentos (T27): una caja que se deja en la mesa (golpe sordo de cartón), la cinta de
+    embalar que se despega y unas latas que chocan, sueltos. Sin ruido continuo (Bruno, 22-11-2026)."""
+    dur = 9.0
+    y = np.zeros(int(dur * SR), np.float32)
+    for t0 in (0.7, 5.9):                                     # caja de cartón en la mesa
+        d = 0.25
+        td = tiempo(d)
+        golpe = (np.sin(2 * np.pi * 85 * td) * 0.8 + ruido(d, 150, 900) * 0.5) * np.exp(-td / 0.05) * 0.5
+        i = int(t0 * SR)
+        y[i:i + len(golpe)] += golpe
+    d = 0.8                                                   # cinta de embalar
+    td = tiempo(d)
+    cinta = ruido(d, 1200, 6000) * (0.6 + 0.4 * np.abs(np.sin(2 * np.pi * 23 * td))) * np.sin(np.pi * td / d) * 0.25
+    i = int(3.2 * SR)
+    y[i:i + len(cinta)] += cinta
+    for k in range(3):                                        # latas que chocan
+        d = 0.12
+        td = tiempo(d)
+        lata = sum(np.sin(2 * np.pi * f * td) for f in (1800, 2650, 3900)) * np.exp(-td / 0.03) * 0.06
+        i = int((7.6 + k * 0.16) * SR)
+        y[i:i + len(lata)] += lata
+    return norm(y)
+
+
 def amb_llegadas(**_):
     """Sala de llegadas en Navidad (T26): rachas cortas de pasos, una maleta de ruedas que pasa y el aviso de megafonía
     (dos notas), sueltos. Sin murmullo continuo (Bruno, 22-11-2026; amb_aeropuerto sí lo tiene)."""
@@ -834,8 +859,8 @@ def amb_compraventa(**_):
     return norm(y)
 
 
-AMBIENTES = {"llegadas": amb_llegadas, "gasolinera": amb_gasolinera, "invierno": amb_invierno, "barrio": amb_barrio, "cola": amb_cola, "oficina": amb_oficina, "salon": amb_salon, "compraventa": amb_compraventa, "concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
-NIVEL_AMB = {"llegadas": 0.10, "gasolinera": 0.10, "invierno": 0.10, "barrio": 0.10, "cola": 0.10, "oficina": 0.10, "salon": 0.10, "compraventa": 0.12, "concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
+AMBIENTES = {"almacen": amb_almacen, "llegadas": amb_llegadas, "gasolinera": amb_gasolinera, "invierno": amb_invierno, "barrio": amb_barrio, "cola": amb_cola, "oficina": amb_oficina, "salon": amb_salon, "compraventa": amb_compraventa, "concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
+NIVEL_AMB = {"almacen": 0.10, "llegadas": 0.10, "gasolinera": 0.10, "invierno": 0.10, "barrio": 0.10, "cola": 0.10, "oficina": 0.10, "salon": 0.10, "compraventa": 0.12, "concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
 
 
 def megafonia(y):
