@@ -1,0 +1,45 @@
+plano 1: «¿En qué tramo de sueldo estás tú? Porque yo con 40.000 euros al año me veo clase media normalita ¿eh?»
+    toma guardada (semilla 1001): BUENA · «¿En qué tramo de sueldo estás tú? Porque yo con 40 mil euros al año me veo clase mede normalita, ¿eh?»
+plano 2: «¿Normalita? Casi 4 de cada 10 cobran menos de 16.500 euros al año… contando a los de media jornada.»
+    toma guardada (semilla 2001): BUENA · «Normalita, casi 4 de cada 10, cobran menos de 16.500 euros al año, contando a los de media jornada.»
+plano 3: «Y otros tantos hasta 33.000. O sea que 3 de cada 4 cobran menos de 33.000.»
+    toma guardada (semilla 3001): BUENA · «y otros tantos hasta 33.000, o sea que 3 de cada 4 cobran menos de 33.000.»
+plano 4: «Anda ya… ¿y los de 40.000 como yo?»
+    toma guardada (semilla 4005): BUENA · «Anda ya y los de 40.000 como yo.»
+plano 5: «De 33.000 a 50.000 solo el 15 %. Tú ya estás en la cuarta parte que más gana.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.948 · 7.4 s · 11.5 l/s · viveza 2.89 st · «De 33.000 a 50.000 solo, el 15%. Tú ya estás en la cuarta parte que más gana.»
+    toma 2 (semilla 5001): BUENA · 1.0 · voz 0.952 · 6.4 s · 13.2 l/s · viveza 2.78 st · «de 33.000 a 50.000 solo el 15%. Tú ya estás en la cuarta parte que más gana.»
+    toma 3 (semilla 5002): BUENA · 1.0 · voz 0.936 · 6.5 s · 13.1 l/s · viveza 2.45 st · «De 33.000 a 50.000 solo el 15%. Tú ya estás en la cuarta parte que más gana.»
+    elegida la toma con más entonación: semilla 5000 (2.89 st)
+plano 6: «Y de 83.000 para arriba ni 3 de cada 100.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.923 · 3.2 s · 13.9 l/s · viveza 2.35 st · «y de 83 mil para arriba, ni tres de cada cien.»
+    toma 2 (semilla 6001): BUENA · 1.0 · voz 0.907 · 3.1 s · 14.3 l/s · viveza 1.95 st · «y de 83.000 para arriba ni 3 de cada 100.»
+    toma 3 (semilla 6002): BUENA · 1.0 · voz 0.888 · 4.1 s · 10.8 l/s · viveza 1.94 st · «y de 83 mil, para arriba ni tres de cada cien.»
+    elegida la toma con más entonación: semilla 6000 (2.35 st)
+plano 7: «Pues el sueldo medio ese de casi 26.000 euros que sale en la tele…»
+    toma 1 (semilla 7000): mala · 1.0 · voz 0.844 · 3.4 s · 17.6 l/s · «pues el sueldo medio ese de casi 26 mil euros que sale en la tele.» · voz distinta (0.84)
+    toma 2 (semilla 7001): BUENA · 0.991 · voz 0.91 · 3.3 s · 17.9 l/s · viveza 2.75 st · «pues el sueldo medio es de casi 26 mil euros que sale en la tele.»
+    toma 3 (semilla 7002): BUENA · 0.991 · voz 0.866 · 3.5 s · 16.7 l/s · viveza 1.96 st · «pues el sueldo medio es de casi 26 mil euros que sale en la tele.»
+    toma 4 (semilla 7003): BUENA · 1.0 · voz 0.91 · 4.1 s · 14.5 l/s · viveza 3.38 st · «pues el sueldo medio ese de casi 26 mil euros que sale en la tele.»
+    elegida la toma con más entonación: semilla 7003 (3.38 st)
+plano 8: «Engaña. Más de 6 de cada 10 cobran menos que la media… los que ganan mucho tiran de ella para arriba.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.942 · 7.7 s · 10.7 l/s · viveza 2.51 st · «Engaña. Más de seis de cada diez cobran menos que la media, los que ganan mucho tiran de ella para arriba.»
+    toma 2 (semilla 8001): BUENA · 1.0 · voz 0.94 · 7.1 s · 11.7 l/s · viveza 2.51 st · «Engaña. Más de seis de cada diez cobran menos que la media. Los que ganan mucho tiran de ella para arriba.»
+    toma 3 (semilla 8002): BUENA · 1.0 · voz 0.931 · 7.2 s · 11.5 l/s · viveza 2.81 st · «Engaña, más de seis de cada diez cobran menos que la media, los que ganan mucho tiran de ella para arriba.»
+    elegida la toma con más entonación: semilla 8002 (2.81 st)
+plano 9: «¿Y por lo menos ganamos más que antes de la crisis?»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.894 · 2.3 s · 16.7 l/s · viveza 3.75 st · «Y por lo menos ganamos más que antes de la crisis.»
+    toma 2 (semilla 9001): BUENA · 1.0 · voz 0.876 · 2.9 s · 13.3 l/s · viveza 2.42 st · «y por lo menos ganamos más que antes de la crisis.»
+    toma 3 (semilla 9002): BUENA · 1.0 · voz 0.854 · 2.3 s · 17.1 l/s · viveza 2.71 st · «y por lo menos ganamos más que antes de la crisis.»
+    elegida la toma con más entonación: semilla 9000 (3.75 st)
+plano 10: «Con los precios de hoy compra lo mismo que en 2007. Eso sí un 11 % más que en plena crisis.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.937 · 6.6 s · 13.0 l/s · viveza 2.59 st · «Con los precios de hoy compra lo mismo que en 2007. Eso sí, un 11% más que en plena crisis.»
+    toma 2 (semilla 10001): BUENA · 1.0 · voz 0.942 · 6.6 s · 13.1 l/s · viveza 2.55 st · «Con los precios de hoy compra lo mismo que en 2007. Eso sí, un 11% más que en plena crisis.»
+    toma 3 (semilla 10002): BUENA · 1.0 · voz 0.938 · 6.7 s · 12.9 l/s · viveza 2.88 st · «Con los precios de hoy compra lo mismo que en 2007. Eso sí, un 11% más que en plena crisis.»
+    elegida la toma con más entonación: semilla 10002 (2.88 st)
+plano 11: «O sea que dieciocho años después igual… ¿Y tú en qué tramo estás?»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.912 · 3.4 s · 14.8 l/s · viveza 3.53 st · «O sea, que 18 años después igual. ¿Y tú en qué tramo estás?»
+    toma 2 (semilla 11001): BUENA · 1.0 · voz 0.895 · 5.7 s · 8.8 l/s · viveza 3.1 st · «O sea que 18 años después igual. ¿Y tú en qué tramo estás?»
+    toma 3 (semilla 11002): mala · 1.0 · voz 0.836 · 4.4 s · 11.3 l/s · «O sea, que 18 años después igual. ¿Y tú en qué tramo estás?» · voz distinta (0.84)
+    toma 4 (semilla 11003): BUENA · 1.0 · voz 0.884 · 3.3 s · 15.2 l/s · viveza 3.8 st · «O sea, que 18 años después igual. ¿Y tú en qué tramo estás?»
+    elegida la toma con más entonación: semilla 11003 (3.8 st)

@@ -1,0 +1,45 @@
+{
+ "huella": "9973bcf81f3cda3e",
+ "semilla": 11003,
+ "texto": "O sea que dieciocho años después igual… ¿Y tú en qué tramo estás?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0171,
+  "oido": "O sea, que 18 años después igual. ¿Y tú en qué tramo estás?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.1,
+   0.3,
+   0.42,
+   0.68,
+   1.0,
+   1.26,
+   2.02,
+   2.18,
+   2.3,
+   2.42,
+   2.5,
+   2.8
+  ],
+  "t1": [
+   0.1,
+   0.26,
+   0.42,
+   0.68,
+   1.0,
+   1.26,
+   1.62,
+   2.18,
+   2.3,
+   2.42,
+   2.5,
+   2.8,
+   2.98
+  ],
+  "ritmo": 15.2,
+  "voz": 0.884,
+  "viveza": 3.8
+ }
+}

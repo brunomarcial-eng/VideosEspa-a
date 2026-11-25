@@ -1,0 +1,41 @@
+{
+ "huella": "a4928d968949109a",
+ "semilla": 9000,
+ "texto": "¿Y por lo menos ganamos más que antes de la crisis?",
+ "ev": {
+  "ok": true,
+  "nota": 1.022,
+  "oido": "Y por lo menos ganamos más que antes de la crisis.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   0.36,
+   0.5,
+   0.64,
+   1.08,
+   1.26,
+   1.42,
+   1.62,
+   1.72,
+   1.82
+  ],
+  "t1": [
+   0.18,
+   0.36,
+   0.5,
+   0.64,
+   1.08,
+   1.26,
+   1.42,
+   1.62,
+   1.72,
+   1.82,
+   2.0
+  ],
+  "ritmo": 16.7,
+  "voz": 0.894,
+  "viveza": 3.75
+ }
+}
