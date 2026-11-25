@@ -1,0 +1,33 @@
+{
+ "huella": "604e322002ac59d1",
+ "semilla": 4005,
+ "texto": "Anda ya… ¿y entonces quién viene aquí?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0141,
+  "oido": "Anda ya, y entonces, ¿quién viene aquí?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   0.96,
+   1.32,
+   1.82,
+   1.96,
+   2.16
+  ],
+  "t1": [
+   0.18,
+   0.42,
+   1.32,
+   1.6,
+   1.96,
+   2.16,
+   2.36
+  ],
+  "ritmo": 11.3,
+  "voz": 0.878,
+  "viveza": 1.32
+ }
+}

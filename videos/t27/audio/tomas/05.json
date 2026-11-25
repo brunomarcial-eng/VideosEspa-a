@@ -1,0 +1,47 @@
+{
+ "huella": "20b973e6c5ca3e95",
+ "semilla": 5002,
+ "texto": "Con la vara de cada año seguimos como en 2008… uno de cada cinco.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0321,
+  "oido": "Con la vara de cada año seguimos como en 2008, uno de cada cinco.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.28,
+   0.46,
+   0.6,
+   0.74,
+   1.02,
+   1.48,
+   1.68,
+   1.8,
+   3.04,
+   3.46,
+   3.6,
+   3.78
+  ],
+  "t1": [
+   0.14,
+   0.28,
+   0.46,
+   0.6,
+   0.74,
+   1.02,
+   1.48,
+   1.68,
+   1.8,
+   2.42,
+   3.46,
+   3.6,
+   3.78,
+   4.12
+  ],
+  "ritmo": 12.8,
+  "voz": 0.914,
+  "viveza": 4.07
+ }
+}
