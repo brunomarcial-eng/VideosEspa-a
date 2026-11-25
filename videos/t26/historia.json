@@ -1,0 +1,208 @@
+{
+ "nota": "Momentos clave de T26 (España frente a la media de la UE en riqueza por persona). La música se corta en seco con el «8 % por debajo». Todo en la sala de llegadas de un aeropuerto en Navidad, con sonidos sueltos (pasos, una maleta, el aviso de megafonía) y sin murmullo continuo.",
+ "musica": {
+  "bpm": 98,
+  "corte": "c5-8",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "llegadas",
+   "desde": 1,
+   "hasta": 10,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-ricos",
+   "beat": 1,
+   "palabra": "ricos",
+   "dt": -0.1
+  },
+  {
+   "id": "c1-sitio",
+   "beat": 1,
+   "palabra": "sitio",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-claro",
+   "beat": 2,
+   "palabra": "claro",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-cuarta",
+   "beat": 2,
+   "palabra": "cuarta",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c3-tamano",
+   "beat": 3,
+   "palabra": "tamaño",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-14",
+   "beat": 3,
+   "palabra": "14",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-27",
+   "beat": 3,
+   "palabra": "27",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-anda",
+   "beat": 4,
+   "palabra": "Anda",
+   "dt": -0.1,
+   "sfx": "fwip",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-cuando",
+   "beat": 4,
+   "palabra": "cuándo",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-2007",
+   "beat": 5,
+   "palabra": "2007",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c5-4",
+   "beat": 5,
+   "palabra": "4",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-8",
+   "beat": 5,
+   "palabra": "8",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c6-crisis",
+   "beat": 6,
+   "palabra": "crisis",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c6-2016",
+   "beat": 6,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c7-italia",
+   "beat": 7,
+   "palabra": "Italia",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c7-francia",
+   "beat": 7,
+   "palabra": "Francia",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c7-bajado",
+   "beat": 7,
+   "palabra": "bajado",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-polonia",
+   "beat": 8,
+   "palabra": "Polonia",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-54",
+   "beat": 8,
+   "palabra": "54",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-79",
+   "beat": 8,
+   "palabra": "79",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-chequia",
+   "beat": 8,
+   "palabra": "Chequia",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-91",
+   "beat": 8,
+   "palabra": "91",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c9-pillando",
+   "beat": 9,
+   "palabra": "pillando",
+   "dt": -0.1,
+   "sfx": "fwip",
+   "vol": 0.2
+  },
+  {
+   "id": "c10-2007",
+   "beat": 10,
+   "palabra": "2007",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-debajo",
+   "beat": 10,
+   "palabra": "debajo",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.2
+  },
+  {
+   "id": "c10-mejor",
+   "beat": 10,
+   "palabra": "mejor",
+   "dt": -0.1
+  }
+ ]
+}

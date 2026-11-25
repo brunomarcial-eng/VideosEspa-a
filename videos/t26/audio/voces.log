@@ -1,0 +1,36 @@
+plano 1: «¿Somos más ricos o más pobres que los europeos? Porque mi padre dice que como en España no se vive en ningún sitio.»
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.905 · 6.8 s · 13.3 l/s · viveza 3.31 st · «¿Somos más ricos o más pobres que los europeos? Porque mi padre dice que como en España no se vive en ningún sitio.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 1001): BUENA · 1.0 · voz 0.914 · 6.7 s · 13.5 l/s · viveza 4.18 st · «¿Somos más ricos o más pobres que los europeos? Porque mi padre dice que como en España no se vive en ningún sitio.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 1002): BUENA · 1.0 · voz 0.92 · 6.4 s · 14.0 l/s · viveza 4.16 st · «Somos más ricos o más pobres que los europeos. Porque mi padre dice que como en España no se vive en ningún sitio.»
+    elegida la toma con más entonación: semilla 1001 (4.18 st)
+plano 2: «Hombre claro. Y encima somos la cuarta economía de Europa ¿o no?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.919 · 4.5 s · 11.0 l/s · viveza 3.49 st · «Hombre claro y encima somos la cuarta economía de Europa o no?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 2001): BUENA · 1.0 · voz 0.927 · 4.3 s · 11.5 l/s · viveza 2.24 st · «Hombre claro, ¿y encima somos la cuarta economía de Europa o no?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 2002): BUENA · 1.0 · voz 0.88 · 3.7 s · 13.7 l/s · viveza 3.1 st · «Hombre claro. ¿Y encima somos la cuarta economía de Europa o no?»
+    elegida la toma con más entonación: semilla 2000 (3.49 st)
+plano 3: «La cuarta en tamaño sí… pero por persona y con lo que cuestan las cosas aquí estamos en el puesto 14 de 27.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.908 · 7.5 s · 12.9 l/s · viveza 3.18 st · «La cuarta en tamaño sí, pero por persona y con lo que cuestan las cosas aquí estamos en el puesto 14 de 27.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.

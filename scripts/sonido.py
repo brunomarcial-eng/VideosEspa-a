@@ -696,6 +696,29 @@ def amb_barrio(**_):
     return norm(y)
 
 
+def amb_llegadas(**_):
+    """Sala de llegadas en Navidad (T26): rachas cortas de pasos, una maleta de ruedas que pasa y el aviso de megafonía
+    (dos notas), sueltos. Sin murmullo continuo (Bruno, 22-11-2026; amb_aeropuerto sí lo tiene)."""
+    dur = 10.0
+    y = np.zeros(int(dur * SR), np.float32)
+    tp = tiempo(0.06)
+    paso = np.sin(2 * np.pi * 110 * tp) * np.exp(-tp / 0.015) + ruido(0.06, 700, 3500) * np.exp(-tp / 0.006) * 0.3
+    for t0 in (0.4, 5.6):                                     # alguien que pasa andando
+        for k in range(6):
+            i = int((t0 + k * 0.42) * SR)
+            y[i:i + len(paso)] += paso * 0.22
+    r = ruido(1.6, 300, 2500) * np.abs(np.sin(2 * np.pi * 7 * tiempo(1.6))) ** 4 * np.sin(np.pi * tiempo(1.6) / 1.6) * 0.32
+    i = int(2.6 * SR)                                         # una maleta de ruedas
+    y[i:i + len(r)] += r
+    for k, f in enumerate((660, 523)):                        # aviso de megafonía: ding-dong
+        d = 0.7
+        td = tiempo(d)
+        tono = (np.sin(2 * np.pi * f * td) + 0.3 * np.sin(2 * np.pi * 2 * f * td)) * np.exp(-td / 0.35) * 0.12
+        i = int((8.0 + k * 0.45) * SR)
+        y[i:i + len(tono)] += tono[: len(y) - i]
+    return norm(y)
+
+
 def amb_gasolinera(**_):
     """Gasolinera de barrio al atardecer (T24): coches que pasan por la carretera, el clic del surtidor y una puerta de
     coche a lo lejos. Todo suelto, sin colchón de ruido continuo (Bruno, 22-11-2026)."""
@@ -811,8 +834,8 @@ def amb_compraventa(**_):
     return norm(y)
 
 
-AMBIENTES = {"gasolinera": amb_gasolinera, "invierno": amb_invierno, "barrio": amb_barrio, "cola": amb_cola, "oficina": amb_oficina, "salon": amb_salon, "compraventa": amb_compraventa, "concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
-NIVEL_AMB = {"gasolinera": 0.10, "invierno": 0.10, "barrio": 0.10, "cola": 0.10, "oficina": 0.10, "salon": 0.10, "compraventa": 0.12, "concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
+AMBIENTES = {"llegadas": amb_llegadas, "gasolinera": amb_gasolinera, "invierno": amb_invierno, "barrio": amb_barrio, "cola": amb_cola, "oficina": amb_oficina, "salon": amb_salon, "compraventa": amb_compraventa, "concesionario": amb_concesionario, "bar": amb_bar, "aeropuerto": amb_aeropuerto, "cabina": amb_cabina, "anden": amb_anden, "trafico": amb_trafico, "cocina": amb_cocina, "tienda": amb_tienda}
+NIVEL_AMB = {"llegadas": 0.10, "gasolinera": 0.10, "invierno": 0.10, "barrio": 0.10, "cola": 0.10, "oficina": 0.10, "salon": 0.10, "compraventa": 0.12, "concesionario": 0.12, "bar": 0.11, "aeropuerto": 0.07, "cabina": 0.08, "anden": 0.09, "trafico": 0.08, "cocina": 0.12, "tienda": 0.12}
 
 
 def megafonia(y):
