@@ -13,7 +13,7 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 4 | 26-29 s | padre (unos 62, convencido de que criar hoy es un lujo) | Anda ya… ¿y la leche y los potitos? | «¿Y la leche y los potitos?» | — | El padre coge con la mirada un bote de leche de la estantería (el bote, en la estantería). |
 | 5 | 29-38 s | hija (unos 38, embarazada de su primer hijo) | Cuestan un 9 % menos tiempo de trabajo que en 2007. Eso sí un 9 % más que en 2019. | Leche infantil y potitos: un 9 % menos horas que en 2007 <br>_Precio (IPC de alimentos para bebé) entre el sueldo neto mediano por hora. Hoy, frente a 2007: −9,4 %; a 2013: −3,7 %; a 2016: +2,2 %; a 2019: +9,2 %_ | INE · IPC Y SALARIOS | Columnas de tiempo de trabajo por año para la comida del bebé: más alta en 2007, más baja en 2019, hoy en medio. |
 | 6 | 38-43 s | padre (unos 62, convencido de que criar hoy es un lujo) | Pues entonces criar sale más barato que en mis tiempos ¿no? | «Más barato que en mis tiempos» | — | El padre, sorprendido, se apoya en un carrito. |
-| 7 | 43-53 s | hija (unos 38, embarazada de su primer hijo) | En horas sí. Y aun así nacen menos niños… en 2007 eran 1,38 hijos por mujer y hoy 1,11. | Hijos por mujer: 1,38 en 2007, 1,11 hoy <br>_2013: 1,27; 2016: 1,33; 2019: 1,23; 2025: 1,11. Nacimientos por cada mil habitantes: 10,9 en 2007 y 6,5 en 2025_ | INE · MOVIMIENTO NATURAL DE LA POBLACIÓN | Una fila de cunas: en 2007 más llenas que hoy. |
+| 7 | 43-53 s | hija (unos 38, embarazada de su primer hijo) | En horas sí. Y aun así nacen menos niños… en 2007 eran 1,38 hijos por mujer y hoy 1,11. | Hijos por mujer: 1,38 en 2007, 1,11 hoy <br>_Por cada 10 mujeres, 14 hijos en 2007 y 11 hoy. 2013: 1,27; 2016: 1,33; 2019: 1,23; 2025: 1,11. Nacimientos por cada mil habitantes: 10,9 en 2007 y 6,5 en 2025_ | INE · MOVIMIENTO NATURAL DE LA POBLACIÓN | Una fila de cunas: en 2007 más llenas que hoy. |
 | 8 | 54-61 s | padre (unos 62, convencido de que criar hoy es un lujo) | O sea que criar cuesta menos horas pero tenemos menos hijos. ¿Tú por qué crees que nacen menos niños? | ¿Por qué crees que nacen menos niños? | — | Los dos junto a una cuna; el padre pregunta a cámara. |
 
 **Cierre:** En horas de trabajo, la guardería mejora frente a 2016 (156 → 129 horas al año) y 2019 (176); la leche y los potitos mejoran frente a 2007 (−9 %) y la crisis (−4 %), y empeoran frente a 2016 (+2 %) y 2019 (+9 %). Y aun así tenemos menos hijos: 1,38 por mujer en 2007, 1,11 hoy. Los sueldos han subido más que el precio de la comida del bebé desde 2007, y lo que pagan de guardería los hogares que la pagan es menos en horas que en 2016. La natalidad baja igual: el vídeo no da la causa.
@@ -41,5 +41,7 @@ Un solo guion para los tres estilos (A pizarra, B cápsula, C baraja). La column
 | 1,23 | 1,23 | V | `filas.2019.hijos_por_mujer` |
 | 10,9 | 10,9 | V | `filas.2007.natalidad_por_mil` |
 | 6,5 | 6,5 | V | `filas.2025.natalidad_por_mil` |
+| 14 | 13.8 (dicho «14» ≈ 14) | C | `filas.2007.hijos_por_mujer` |
+| 11 | 11.1 (dicho «11» ≈ 11) | C | `filas.2025.hijos_por_mujer` |
 
 Generado por `scripts/verificar_guion.py`. No editar a mano: se edita `guion.json` y se vuelve a ejecutar.

@@ -34,3 +34,19 @@ plano 3: «Pues mira. Con la misma vara de 2008 hay menos pobres que nunca… el
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
     toma 1 (semilla 3000): mala · 1.0 · voz 0.944 · 9.1 s · 13.7 l/s · «Pues mira, con la misma vara de 2008 hay menos pobres que nunca, el 17,5%. En 2016 casi el 30%.» · sin pausa tras «nunca…» (0.28 s)
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 3001): BUENA · 1.0 · voz 0.951 · 9.6 s · 13.0 l/s · viveza 3.44 st · «Pues mira, con la misma vara de 2008 hay menos pobres que nunca, el 17,5%. En 2016 casi el 30%.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 3002): BUENA · 1.0 · voz 0.94 · 9.4 s · 13.4 l/s · viveza 3.57 st · «Pues mira, con la misma vara de 2008 hay menos pobres que nunca. El 17,5%. En 2016, casi el 30%.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 4 (semilla 3003): BUENA · 1.0 · voz 0.953 · 9.2 s · 13.5 l/s · viveza 3.96 st · «Pues mira, con la misma vara de 2008 hay menos pobres que nunca, el 17,5%, en 2016 casi el 30%.»
+    elegida la toma con más entonación: semilla 3003 (3.96 st)
+plano 4: «Anda ya… ¿y entonces quién viene aquí?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 4000): mala · 1.0 · voz 0.776 · 2.6 s · 11.3 l/s · «¿Anda ya? ¿Y entonces quién viene aquí?» · voz distinta (0.78)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 4001): mala · 1.0 · voz 0.798 · 2.2 s · 13.4 l/s · «Anda ya, ¿y entonces quién viene aquí?» · voz distinta (0.80)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 4002): mala · 1.0 · voz 0.837 · 2.4 s · 12.3 l/s · «¿Anda ya? ¿Y entonces quién viene aquí?» · voz distinta (0.84)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 4 (semilla 4003): mala · 1.0 · voz 0.834 · 2.6 s · 11.3 l/s · «¿Anda ya? ¿Y entonces quién viene aquí?» · voz distinta (0.83)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
