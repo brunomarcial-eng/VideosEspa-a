@@ -14,3 +14,23 @@ SoX could not be found!
     path variables.
     
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.934 · 6.2 s · 15.6 l/s · viveza 3.72 st · «Hay más pobres que antes, porque mi madre lleva 20 años en el banco de alimentos y dice que cada vez viene más gente.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 1001): BUENA · 1.0 · voz 0.944 · 6.2 s · 15.5 l/s · viveza 3.27 st · «Hay más pobres que antes, porque mi madre lleva 20 años en el banco de alimentos y dice que cada vez viene más gente.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 1002): BUENA · 1.0 · voz 0.943 · 6.8 s · 14.2 l/s · viveza 4.12 st · «¿Hay más pobres que antes? Porque mi madre lleva 20 años en el banco de alimentos y dice que cada vez viene más gente.»
+    elegida la toma con más entonación: semilla 1002 (4.12 st)
+plano 2: «Hombre claro hijo. Esto está peor que en la crisis.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.898 · 3.3 s · 12.3 l/s · viveza 3.07 st · «Hombre claro hijo, esto está peor que en la crisis.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 2001): BUENA · 1.0 · voz 0.881 · 3.2 s · 12.7 l/s · viveza 1.98 st · «Hombre claro hijo, esto está peor que en la crisis.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 2002): BUENA · 1.0 · voz 0.917 · 3.0 s · 13.2 l/s · viveza 2.94 st · «Hombre claro hijo, esto está peor que en la crisis.»
+    elegida la toma con más entonación: semilla 2000 (3.07 st)
+plano 3: «Pues mira. Con la misma vara de 2008 hay menos pobres que nunca… el 17,5 %. En 2016 casi el 30 %.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 3000): mala · 1.0 · voz 0.944 · 9.1 s · 13.7 l/s · «Pues mira, con la misma vara de 2008 hay menos pobres que nunca, el 17,5%. En 2016 casi el 30%.» · sin pausa tras «nunca…» (0.28 s)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
