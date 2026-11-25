@@ -50,3 +50,5 @@ Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
     toma 4 (semilla 4003): mala · 1.0 · voz 0.834 · 2.6 s · 11.3 l/s · «¿Anda ya? ¿Y entonces quién viene aquí?» · voz distinta (0.83)
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 5 (semilla 4004): mala · 1.0 · voz 0.794 · 2.2 s · 13.3 l/s · «¿Anda ya? Y entonces, ¿quién viene aquí?» · voz distinta (0.79)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
