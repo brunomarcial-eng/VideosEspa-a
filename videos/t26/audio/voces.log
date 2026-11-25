@@ -34,3 +34,5 @@ plano 3: «La cuarta en tamaño sí… pero por persona y con lo que cuestan las
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
     toma 1 (semilla 3000): BUENA · 1.0 · voz 0.908 · 7.5 s · 12.9 l/s · viveza 3.18 st · «La cuarta en tamaño sí, pero por persona y con lo que cuestan las cosas aquí estamos en el puesto 14 de 27.»
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 3001): BUENA · 1.0 · voz 0.915 · 6.1 s · 16.0 l/s · viveza 3.51 st · «La cuarta en tamaño sí, pero por persona y con lo que cuestan las cosas aquí estamos en el puesto 14 de 27.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
