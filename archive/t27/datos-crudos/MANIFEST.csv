@@ -1,0 +1,6 @@
+fichero,descripcion,url,consultado,sha256,bytes
+ine_59962_ecv_pobreza_umbral_fijo_2008.json,"INE: ECV, tasa de riesgo de pobreza con umbral fijo en el año 2008 por edad y sexo",https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/59962?tip=A&nult=25,2026-11-25,f5aa744bfce65f71d13b651cf05f801835085912a0047ce5b2d2c082c08a55a2,112087
+ine_9958_ecv_riesgo_pobreza_edad.json,"INE: ECV, tasa de riesgo de pobreza por edad y sexo",https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/9958?tip=A&nult=25,2026-11-25,3eacebfbfeeb5b9df4e9f3f6214a6aaa7468b3d128a5129e33b98f3bc80749ed,110986
+ine_9964_ecv_umbral_pobreza.json,"INE: ECV, umbral de riesgo de pobreza (valores ilustrativos)",https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/9964?tip=A&nult=25,2026-11-25,44117c3c96774c369bf69bb36e14f32e4e24a86052a4e5b67fd57a3e35f1053a,9277
+ine_9967_ecv_carencia_edad.json,"INE: ECV, personas con carencia material por edad y sexo",https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/9967?tip=A&nult=25,2026-11-25,767e06e4484d22f9a9c7721f3a31529c3518b14e08bd964598a568a2c428b4bd,577753
+ine_9985_ecv_fin_de_mes.json,"INE: ECV, personas por dificultades para llegar a fin de mes y edad y sexo",https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/9985?tip=A&nult=25,2026-11-25,68201fae3412560c6efe5a04ffee2df7d966d716731957a25a5d91e022cbf4f8,456168
