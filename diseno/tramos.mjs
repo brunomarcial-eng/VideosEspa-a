@@ -72,16 +72,16 @@ export const DECORADOS_T25 = { gestoria };
 // (crecen con scaleX desde la izquierda) y valores «<id>-v<i>». «tu»: índice del tramo donde va la flecha «tú».
 // Origen: centro.
 export function escaleraTramos(id, tramos, ver, o = {}) {
-  const W = 470, alto = 70, paso = 96, n = tramos.length, max = Math.max(...tramos.map((t) => t.pct));
+  const X = -20, W = 340, alto = 64, paso = 96, n = tramos.length, max = Math.max(...tramos.map((t) => t.pct));
   const y0 = (n - 1) * paso / 2;
-  return `<g id="${id}"><rect x="-400" y="${-y0 - 90}" width="800" height="${n * paso + 70}" rx="24" fill="#FFFDF8" opacity=".96"/>
+  return `<g id="${id}"><rect x="-430" y="${-y0 - 90}" width="880" height="${n * paso + 70}" rx="24" fill="#FFFDF8" opacity=".96"/>
     ${tramos.map((t, i) => { const y = y0 - i * paso, si = ver.includes(i), w = Math.max(14, t.pct / max * W), col = o.colores?.[i] ?? (i === 0 ? ROJO : OCRE);
       return `<g transform="translate(0 ${y})">
-        ${si ? txt(-370, 8, t.rotulo, 30, C.tinta, "", "start") : `<rect x="-370" y="-12" width="190" height="20" rx="10" fill="#E3E7EA"/>`}
-        <rect x="-110" y="${-alto / 2}" width="${W}" height="${alto}" rx="12" fill="#EEF1F3"/>
-        <rect id="${id}-b${i}" x="-110" y="${-alto / 2}" width="${w.toFixed(1)}" height="${alto}" rx="12" fill="${si ? col : GRIS}" style="transform-box:fill-box;transform-origin:0 50%"/>
-        <g id="${id}-v${i}">${si ? txt(-110 + w + 14, 14, `${String(t.pct).replace(".", ",")}&nbsp;%`, 40, col, "", "start") : ""}</g></g>`; }).join("")}
-    ${o.tu !== undefined ? `<g id="${id}-tu" transform="translate(${-110 + tramos[o.tu].pct / max * W + 130} ${y0 - o.tu * paso})"><path d="M0 0 l40 -26 v52 Z" fill="${VERDE}"/>${txt(96, 14, "tú", 40, VERDE)}</g>` : ""}</g>`;
+        ${si ? txt(-400, 10, t.rotulo, 28, C.tinta, "", "start") : `<rect x="-400" y="-12" width="200" height="20" rx="10" fill="#E3E7EA"/>`}
+        <rect x="${X}" y="${-alto / 2}" width="${W}" height="${alto}" rx="12" fill="#EEF1F3"/>
+        <rect id="${id}-b${i}" x="${X}" y="${-alto / 2}" width="${w.toFixed(1)}" height="${alto}" rx="12" fill="${si ? col : GRIS}" style="transform-box:fill-box;transform-origin:0 50%"/>
+        <g id="${id}-v${i}">${si ? txt(X + w + 12, 14, `${String(t.pct).replace(".", ",")}&nbsp;%`, 38, col, "", "start") : ""}</g></g>`; }).join("")}
+    ${o.tu !== undefined ? `<g transform="translate(${X + tramos[o.tu].pct / max * W + 120} ${y0 - o.tu * paso})"><g id="${id}-tu"><path d="M0 0 l36 -24 v48 Z" fill="${VERDE}"/>${txt(76, 14, "tú", 38, VERDE)}</g></g>` : ""}</g>`;
 }
 
 // Una tele de las de antes en la estantería con un titular (texto que se pasa). Origen: centro.

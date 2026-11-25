@@ -208,19 +208,19 @@ export function escenas(D) {
 
     // 10 · El sueldo medio en euros de hoy (AEAT e IPC). La gestora: «Con los precios de hoy compra lo mismo que en 2007. Eso sí un 11 % más que en plena crisis.»
     { n: 10, set: "vacio",
-      svg: `<g transform="translate(540 1330)">${columnasHoras("s10-c", D.real, D.anos, { W: 740, H: 360, tam: 34, fmt: (v) => `${miles(v)} €` })}</g>${gente("s10", "cg")}`,
+      svg: `<g transform="translate(540 1330)">${columnasHoras("s10-k", D.real, D.anos, { W: 680, H: 360, tam: 32, fmt: (v) => miles(v) })}</g>${gente("s10", "cg")}`,
       tarjeta: vs(10, "Sueldo medio en euros de hoy", [`${miles(D.real[0])}&nbsp;€`, `${miles(D.real[4])}&nbsp;€`], ["2007", "2025"],
         `Plena crisis (2013): ${miles(D.real[1])} €; hoy, un ${Math.round(D.vs["2013"])}&nbsp;% más. 2016: ${miles(D.real[2])} €; 2019: ${miles(D.real[3])} €`, F_REAL, 80),
       fn: function (t, e) {
         const c = e.c;
         ambiente("gestoria", null, t, 0);
         vidaFondo("ge", t, { capa: "gestoria", lamparas: 1, balanceo: 1 });
-        pop("s10-c", t, e.t0 + 0.05, 0, 0, { s: 1 });
+        pop("s10-k", t, e.t0 + 0.05, 0, 0, { s: 1 });
         const cuando = [c["c10-2007"] - 0.3, c["c10-crisis"] - 0.4, e.t0 + 0.5, e.t0 + 0.6, c["c10-2007"] + 0.1];
         for (let i = 0; i < 5; i++) {
           const k = suave(clamp((t - cuando[i]) / 0.5));
-          css(`s10-c-b${i}`, "transform", `scaleY(${k.toFixed(3)})`);
-          css(`s10-c-v${i}`, "opacity", clamp((t - cuando[i] - 0.35) / 0.25));
+          css(`s10-k-b${i}`, "transform", `scaleY(${k.toFixed(3)})`);
+          css(`s10-k-v${i}`, "opacity", clamp((t - cuando[i] - 0.35) / 0.25));
         }
         sube("c10-a", t, c["c10-2007"]); sube("c10-b", t, c["c10-2007"] + 0.3);
         persona("s10-c", t, { x: 130, y: 1700, s: 0.66, mira: 1, vivo: true, boca: [[0, "seria"], [c["c10-11"], "sonrisa"]], brazo: [[0, "abajo"]], fase: 1 });
