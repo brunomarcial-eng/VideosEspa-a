@@ -1,0 +1,398 @@
+{
+ "id": "t25",
+ "version": 1,
+ "titulo": "¿En qué tramo de sueldo estás tú?",
+ "titulo_alternativo": "Cuánta gente cobra cuánto en España: los tramos de sueldo de Hacienda y el sueldo medio desde 2007",
+ "pregunta": "¿Cuántos asalariados hay en cada tramo de sueldo (de menos de 16.576 € a más de 124.320 € al año) y cuánto compra hoy el sueldo medio frente a 2007, la crisis, 2016 y 2019?",
+ "datos": "data/clean/t25_tramos.json",
+ "aprobacion_datos": "Bruno, 24-11-2026: «Todos. 4 vídeos… Ponte con ellos uno por uno»; el primero, los tramos de sueldo que propuso al principio (menos de 14.000, 14.000-30.000, 30.000-50.000, 50.000-80.000, 80.000-120.000 y más de 120.000 €). Hacienda los da en veces el salario mínimo: en 2025 quedan casi en sus tramos. Tabla en videos/t25/paso-1-datos.md.",
+ "formato": "Un cliente (unos 40) que cree que con 40.000 € al año es «clase media normalita» y su gestora (unos 45) en la gestoría. Tramos de sueldo de 2025 (Agencia Tributaria), el sueldo medio que engaña y lo que compra el sueldo medio frente a 2007, la crisis (2013), 2016 y 2019. Pregunta final al espectador.",
+ "duracion_max_s": 85,
+ "personajes": {
+  "cliente": {
+   "anyo": "unos 40, se cree clase media normalita",
+   "voz": "hombre"
+  },
+  "gestora": {
+   "anyo": "unos 45, gestora con los papeles de Hacienda",
+   "voz": "medica"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.5,
+  "viveza_tomas": 3
+ },
+ "sin_veredicto": "El veredicto lo da el cliente en el plano 11: dieciocho años después, el sueldo medio compra lo mismo que en 2007 (+0,1 % en euros de hoy); la gestora dice en el plano 10 que es un 11 % más que en plena crisis, y la nota añade +8 % frente a 2016 y +3,2 % frente a 2019. Mejora frente a la crisis, 2016 y 2019; igual que en 2007. Acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "Los tramos",
+   "beats": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "nombre": "La media",
+   "beats": [
+    7,
+    8
+   ]
+  },
+  {
+   "nombre": "Antes",
+   "beats": [
+    9,
+    10,
+    11
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "cliente",
+   "funcion": "gancho",
+   "voz": "¿En qué tramo de sueldo estás tú? Porque yo con 40.000 euros al año me veo clase media normalita ¿eh?",
+   "pantalla": "¿En qué tramo de sueldo estás tú?",
+   "sello": null,
+   "imagen": "Una gestoría de barrio: mesa con carpetas, estanterías de archivadores, ventana. El cliente, sentado, habla a cámara; la gestora, al otro lado de la mesa. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "gestora",
+   "funcion": "dato: el tramo de abajo",
+   "voz": "¿Normalita? Casi 4 de cada 10 cobran menos de 16.500 euros al año… contando a los de media jornada.",
+   "pantalla": "Menos de 16.576 € al año: el 37 % de los asalariados",
+   "nota": "Casi 4 de cada 10. Agencia Tributaria, 2025 (16.576 €, un salario mínimo al año). Cuenta a todo el que cobró un sueldo en el año, aunque fuera a media jornada o solo unos meses",
+   "sello": "AGENCIA TRIBUTARIA · MERCADO DE TRABAJO",
+   "imagen": "Una escalera de seis tramos; se ilumina el de abajo y se llena de gente."
+  },
+  {
+   "n": 3,
+   "quien": "gestora",
+   "funcion": "dato: 3 de cada 4",
+   "voz": "Y otros tantos hasta 33.000. O sea que 3 de cada 4 cobran menos de 33.000.",
+   "pantalla": "Menos de 33.152 € al año: el 75 % de los asalariados",
+   "nota": "3 de cada 4: menos de 16.576 €, el 37 %; de 16.576 a 33.152 €, otro 38 %",
+   "sello": "AGENCIA TRIBUTARIA · MERCADO DE TRABAJO",
+   "imagen": "El segundo escalón se llena; de cada cuatro muñequitos, tres quedan abajo."
+  },
+  {
+   "n": 4,
+   "quien": "cliente",
+   "funcion": "sorpresa",
+   "voz": "Anda ya… ¿y los de 40.000 como yo?",
+   "pantalla": "«¿Y los de 40.000 como yo?»",
+   "sello": null,
+   "imagen": "El cliente se echa para atrás en la silla."
+  },
+  {
+   "n": 5,
+   "quien": "gestora",
+   "funcion": "dato: el tramo del cliente",
+   "voz": "De 33.000 a 50.000 solo el 15 %. Tú ya estás en la cuarta parte que más gana.",
+   "pantalla": "De 33.152 a 49.728 €: el 15 %",
+   "nota": "Por encima de 33.152 €, el 25 % que más gana. Menos de 16.576 €, el 37 %; hasta 33.152 €, otro 38 % (Agencia Tributaria, 2025)",
+   "grafico": true,
+   "sello": "AGENCIA TRIBUTARIA · MERCADO DE TRABAJO",
+   "imagen": "En la escalera, una flecha «tú» en el tercer escalón; por encima quedan muy pocos."
+  },
+  {
+   "n": 6,
+   "quien": "gestora",
+   "funcion": "dato: los de arriba",
+   "voz": "Y de 83.000 para arriba ni 3 de cada 100.",
+   "pantalla": "Más de 82.880 € al año: el 2,5 %",
+   "nota": "Ni 3 de cada 100. De 49.728 a 82.880 €, el 7,6 %; de 82.880 a 124.320 €, el 1,7 %; más de 124.320 €, el 0,7 % (Agencia Tributaria, 2025)",
+   "grafico": false,
+   "sello": "AGENCIA TRIBUTARIA · MERCADO DE TRABAJO",
+   "imagen": "Los dos escalones de arriba, casi vacíos: un par de muñequitos."
+  },
+  {
+   "n": 7,
+   "quien": "cliente",
+   "funcion": "la media",
+   "voz": "Pues el sueldo medio ese de casi 26.000 euros que sale en la tele…",
+   "pantalla": "Sueldo medio: 25.830 € al año",
+   "nota": "Agencia Tributaria, 2025: salarios entre asalariados, en bruto",
+   "sello": "AGENCIA TRIBUTARIA · MERCADO DE TRABAJO",
+   "imagen": "Una tele vieja en la estantería con el titular «sueldo medio»."
+  },
+  {
+   "n": 8,
+   "quien": "gestora",
+   "funcion": "dato: la media engaña",
+   "voz": "Engaña. Más de 6 de cada 10 cobran menos que la media… los que ganan mucho tiran de ella para arriba.",
+   "pantalla": "Más de 6 de cada 10 cobran menos que la media",
+   "nota": "Al menos el 61 %: los tramos enteros por debajo de 25.830 € (Agencia Tributaria, 2025). Los que ganan mucho suben la media",
+   "sello": "AGENCIA TRIBUTARIA · MERCADO DE TRABAJO",
+   "imagen": "Un balancín: muchos muñequitos a un lado y unos pocos muy pesados al otro, que lo inclinan."
+  },
+  {
+   "n": 9,
+   "quien": "cliente",
+   "funcion": "la pregunta del cliente",
+   "voz": "¿Y por lo menos ganamos más que antes de la crisis?",
+   "pantalla": "«¿Ganamos más que antes de la crisis?»",
+   "sello": null,
+   "imagen": "El cliente, esperanzado."
+  },
+  {
+   "n": 10,
+   "quien": "gestora",
+   "funcion": "dato: el sueldo medio en euros de hoy",
+   "voz": "Con los precios de hoy compra lo mismo que en 2007. Eso sí un 11 % más que en plena crisis.",
+   "pantalla": "Sueldo medio en euros de hoy: igual que en 2007",
+   "nota": "En euros de 2025: 25.799 € (2007), 23.305 € (2013), 23.926 € (2016), 25.026 € (2019) y 25.830 € (2025). Hoy, +0,1 % frente a 2007, +11 % frente a 2013, +8 % frente a 2016 y +3,2 % frente a 2019",
+   "grafico": true,
+   "sello": "AGENCIA TRIBUTARIA E INE (IPC)",
+   "imagen": "Columnas del sueldo medio en euros de hoy: 2007, 2013 (la más baja), 2016, 2019 y hoy, que llega a la altura de 2007."
+  },
+  {
+   "n": 11,
+   "quien": "cliente",
+   "funcion": "veredicto y pregunta",
+   "voz": "O sea que dieciocho años después igual… ¿Y tú en qué tramo estás?",
+   "pantalla": "¿Y tú en qué tramo estás?",
+   "sello": null,
+   "imagen": "Los dos en la mesa; el cliente pregunta a cámara."
+  }
+ ],
+ "no_dato": [
+  "40.000",
+  "10",
+  "100"
+ ],
+ "cifras": [
+  {
+   "texto": "16.500",
+   "ruta": "hoy_resumen.limite_1smi",
+   "aprox": 16500,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "16.576",
+   "ruta": "hoy_resumen.limite_1smi",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "4",
+   "ruta": "hoy_resumen.menos_1smi_pct",
+   "escala": 0.1,
+   "aprox": 4,
+   "tolerancia_pct": 8,
+   "estado": "V"
+  },
+  {
+   "texto": "37",
+   "ruta": "hoy_resumen.menos_1smi_pct",
+   "aprox": 37,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "33.000",
+   "ruta": "hoy_resumen.limite_2smi",
+   "aprox": 33000,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "33.152",
+   "ruta": "hoy_resumen.limite_2smi",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "38",
+   "ruta": "hoy_resumen.de1a2_pct",
+   "aprox": 38,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "3",
+   "ruta": "hoy_resumen.menos_2smi_pct",
+   "escala": 0.04,
+   "aprox": 3,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "75",
+   "ruta": "hoy_resumen.menos_2smi_pct",
+   "aprox": 75,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "50.000",
+   "ruta": "hoy_resumen.limite_3smi",
+   "aprox": 50000,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "49.728",
+   "ruta": "hoy_resumen.limite_3smi",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "15",
+   "ruta": "hoy_resumen.de2a3_pct",
+   "aprox": 15,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "25",
+   "ruta": "hoy_resumen.mas_2smi_pct",
+   "aprox": 25,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "83.000",
+   "ruta": "hoy_resumen.limite_5smi",
+   "aprox": 83000,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "82.880",
+   "ruta": "hoy_resumen.limite_5smi",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "2,5",
+   "ruta": "hoy_resumen.mas_5smi_pct",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "124.320",
+   "ruta": "hoy_resumen.limite_7_5smi",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "0,7",
+   "ruta": "hoy_resumen.mas_7_5smi_pct",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "26.000",
+   "ruta": "filas.2025.salario_medio",
+   "aprox": 26000,
+   "tolerancia_pct": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "25.830",
+   "ruta": "filas.2025.salario_medio",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "6",
+   "ruta": "filas.2025.cobran_menos_que_la_media_pct_min",
+   "escala": 0.1,
+   "aprox": 6.1,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "61",
+   "ruta": "filas.2025.cobran_menos_que_la_media_pct_min",
+   "aprox": 61,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "11",
+   "ruta": "salario_medio_real_vs_hoy_pct.2013",
+   "aprox": 11,
+   "tolerancia_pct": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "8",
+   "ruta": "salario_medio_real_vs_hoy_pct.2016",
+   "aprox": 8,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "0,1",
+   "ruta": "salario_medio_real_vs_hoy_pct.2007",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "3,2",
+   "ruta": "salario_medio_real_vs_hoy_pct.2019",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "25.799",
+   "ruta": "filas.2007.salario_medio_euros_2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "23.305",
+   "ruta": "filas.2013.salario_medio_euros_2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "23.926",
+   "ruta": "filas.2016.salario_medio_euros_2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "25.026",
+   "ruta": "filas.2019.salario_medio_euros_2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "7,6",
+   "ruta": "hoy_resumen.de3a5_pct",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "1,7",
+   "ruta": "hoy_resumen.de5a7_5_pct",
+   "decimales": 1,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "Tramos de 2025 (V): Agencia Tributaria, Mercado de trabajo y pensiones en las fuentes tributarias 2025, asalariados por tramos de salario (en veces el SMI, 16.576 € al año): 21.139.690 asalariados; menos de 1 SMI 7.834.599 (37,06 %); de 1 a 2 SMI 8.017.866 (37,93 %); de 2 a 3 SMI 3.167.168 (14,98 %); de 3 a 5 SMI 1.599.307 (7,57 %); de 5 a 7,5 SMI 368.681 (1,74 %); más de 7,5 SMI 152.069 (0,72 %).",
+  "«Ni 3 de cada 100» por encima de 82.880 €: 2,46 %. «Menos de 1» por encima de 124.320 €: 0,72 %.",
+  "Salario medio (V): salarios / asalariados de la AEAT: 18.087 € (2007), 18.505 € (2013), 18.835 € (2016), 20.566 € (2019), 25.830 € (2025). En euros de 2025 con el IPC medio anual del INE (C): 25.799, 23.305, 23.926, 25.026 y 25.830 €.",
+  "Más de 6 de cada 10 por debajo de la media (C): los tramos enteros por debajo de 25.830 € (hasta 1,5 SMI, 24.864 €) suman el 60,9 %; con los del tramo siguiente que también quedan por debajo, más.",
+  "El SMI de 2019 (12.600 € al año, 900 € × 14) no lo escribe la página de la AEAT de ese año; solo se usa para la tabla, no en el vídeo."
+ ],
+ "cierre": {
+  "veredicto": "Tres de cada cuatro asalariados cobran menos de 33.152 € al año y más de 6 de cada 10 menos que el sueldo medio (25.830 €). En euros de hoy, el sueldo medio mejora frente a la crisis (+11 %), 2016 (+8 %) y 2019 (+3,2 %), y está igual que en 2007 (+0,1 %)",
+  "porque": "La media la suben los pocos que ganan mucho; y en euros de hoy, los sueldos han subido lo mismo que los precios desde 2007.",
+  "pregunta": "¿Y tú en qué tramo estás?"
+ },
+ "aprobacion_guion": "pendiente (v1)"
+}
