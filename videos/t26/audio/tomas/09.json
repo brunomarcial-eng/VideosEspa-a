@@ -1,0 +1,31 @@
+{
+ "huella": "26513c2740f2d3c5",
+ "semilla": 9000,
+ "texto": "Pues sí que nos están pillando…",
+ "ev": {
+  "ok": true,
+  "nota": 1.0053,
+  "oido": "pues sí que nos están pillando.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.3,
+   0.4,
+   0.54,
+   0.82
+  ],
+  "t1": [
+   0.14,
+   0.3,
+   0.4,
+   0.54,
+   0.82,
+   1.32
+  ],
+  "ritmo": 16.2,
+  "voz": 0.861,
+  "viveza": 3.82
+ }
+}

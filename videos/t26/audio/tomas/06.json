@@ -1,0 +1,43 @@
+{
+ "huella": "30e419b467782cea",
+ "semilla": 6001,
+ "texto": "Y desde la crisis estamos ahí parados… en 2016 igual que hoy.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0158,
+  "oido": "Y desde la crisis estamos ahí parados, en 2016 igual que hoy.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.1,
+   0.24,
+   0.46,
+   0.8,
+   1.36,
+   1.68,
+   2.58,
+   2.86,
+   3.42,
+   4.0,
+   4.26
+  ],
+  "t1": [
+   0.1,
+   0.24,
+   0.46,
+   0.8,
+   1.36,
+   1.68,
+   2.16,
+   2.86,
+   3.42,
+   4.0,
+   4.26,
+   4.42
+  ],
+  "ritmo": 13.0,
+  "voz": 0.882,
+  "viveza": 4.39
+ }
+}

@@ -42,3 +42,62 @@ plano 4: «Anda ya… ¿y eso desde cuándo?»
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
     toma 1 (semilla 4000): BUENA · 1.0 · voz 0.906 · 2.4 s · 8.7 l/s · viveza 3.99 st · «¡Anda ya! ¿Y eso desde cuándo?»
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 4001): BUENA · 1.0 · voz 0.9 · 2.5 s · 8.3 l/s · viveza 4.42 st · «¡Anda ya! ¿Y eso desde cuándo?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 4002): mala · 1.0 · voz 0.822 · 2.0 s · 10.4 l/s · «¿Anda ya? ¿Y eso desde cuándo?» · voz distinta (0.82)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 4 (semilla 4003): BUENA · 1.0 · voz 0.879 · 2.3 s · 9.2 l/s · viveza 3.74 st · «Anda ya. ¿Y eso desde cuándo?»
+    elegida la toma con más entonación: semilla 4001 (4.42 st)
+plano 5: «En 2007 estábamos un 4 % por encima de la media europea. Hoy un 8 % por debajo.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.936 · 6.4 s · 14.3 l/s · viveza 4.02 st · «En 2007 estábamos un 4% por encima de la media europea, hoy un 8% por debajo.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 5001): BUENA · 1.0 · voz 0.909 · 6.7 s · 13.5 l/s · viveza 4.12 st · «En 2007 estábamos un 4% por encima de la media europea, hoy un 8% por debajo.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 5002): BUENA · 1.0 · voz 0.917 · 7.0 s · 13.0 l/s · viveza 3.59 st · «En 2007 estábamos un 4% por encima de la media europea, hoy un 8% por debajo.»
+    elegida la toma con más entonación: semilla 5001 (4.12 st)
+plano 6: «Y desde la crisis estamos ahí parados… en 2016 igual que hoy.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.943 · 4.9 s · 12.0 l/s · viveza 4.32 st · «Y desde la crisis estamos ahí parados, en 2016 igual que hoy.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 6001): BUENA · 1.0 · voz 0.882 · 4.5 s · 13.0 l/s · viveza 4.39 st · «Y desde la crisis estamos ahí parados, en 2016 igual que hoy.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 6002): BUENA · 1.0 · voz 0.905 · 4.7 s · 12.4 l/s · viveza 3.39 st · «Y desde la crisis estamos ahí parados, en 2016 igual que hoy.»
+    elegida la toma con más entonación: semilla 6001 (4.39 st)
+plano 7: «Bueno pero Italia y Francia también han bajado ¿no?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.928 · 2.5 s · 16.5 l/s · viveza 2.56 st · «Bueno, pero Italia y Francia también han bajado ¿no?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 7001): BUENA · 1.0 · voz 0.907 · 2.6 s · 15.8 l/s · viveza 2.65 st · «Bueno, pero Italia y Francia también han bajado, ¿no?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 7002): BUENA · 1.0 · voz 0.937 · 2.6 s · 15.6 l/s · viveza 3.9 st · «Bueno, pero Italia y Francia también han bajado, ¿no?»
+    elegida la toma con más entonación: semilla 7002 (3.9 st)
+plano 8: «Sí… pero mira Polonia: en 2007 estaba al 54 % de la media y hoy al 79. Y Chequia ya está al 91… casi como nosotros.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 8000): mala · 0.937 · voz 0.924 · 10.6 s · 12.6 l/s · «Sí, pero mira Polonia, en 2007 estaba al 54% de la media y hoy al 79% y Chequia ya está al 91% casi como nosotros.» · sobran 18 letras (¿repite?); sin pausa tras «91…» (0.26 s)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 8001): BUENA · 1.0 · voz 0.926 · 11.7 s · 11.4 l/s · viveza 4.38 st · «Sí. Pero mira, Polonia. En 2007 estaba al 54% de la media y hoy al 79. Y Chequia ya está al 91, casi como nosotros.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 8002): BUENA · 0.985 · voz 0.935 · 11.4 s · 11.7 l/s · viveza 4.25 st · «Sí, pero mira Polonia, en 2007 estaba el 54% de la media y hoy al 79. Y Chequie ya está al 91, casi como nosotros.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 4 (semilla 8003): BUENA · 0.993 · voz 0.939 · 11.2 s · 11.9 l/s · viveza 5.03 st · «Sí, pero mira Polonia, en 2007 estaba el 54% de la media y hoy al 79. Y Chequia ya está al 91, casi como nosotros.»
+    elegida la toma con más entonación: semilla 8003 (5.03 st)
+plano 9: «Pues sí que nos están pillando…»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.861 · 1.5 s · 16.2 l/s · viveza 3.82 st · «pues sí que nos están pillando.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 9001): mala · 1.0 · voz 0.843 · 1.5 s · 16.7 l/s · «Pues sí que nos están pillando.» · voz distinta (0.84)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 9002): BUENA · 1.0 · voz 0.871 · 1.6 s · 15.8 l/s · viveza 3.81 st · «Pues sí que nos están pillando.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 4 (semilla 9003): BUENA · 1.0 · voz 0.897 · 1.5 s · 16.7 l/s · viveza 2.65 st · «pues sí que nos están pillando.»
+    elegida la toma con más entonación: semilla 9000 (3.82 st)
+plano 10: «O sea que en 2007 éramos más ricos que la media y hoy estamos por debajo. ¿Y tú dónde crees que se vive mejor?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.925 · 6.1 s · 14.8 l/s · viveza 2.59 st · «O sea que en 2007 éramos más ricos que la media y hoy estamos por debajo, y tú donde crees que se vive mejor.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 10001): BUENA · 1.0 · voz 0.955 · 6.8 s · 13.3 l/s · viveza 2.37 st · «O sea que en 2007 éramos más ricos que la media y hoy estamos por debajo. ¿Y tú dónde crees que se vive mejor?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 10002): BUENA · 1.0 · voz 0.935 · 6.3 s · 14.4 l/s · viveza 2.88 st · «O sea que en 2007 éramos más ricos que la media y hoy estamos por debajo. ¿Y tú dónde crees que se vive mejor?»
+    elegida la toma con más entonación: semilla 10002 (2.88 st)
+duración total 58.3 s · escrito videos/t26/audio/linea_tiempo.json
