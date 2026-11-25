@@ -1,0 +1,35 @@
+{
+ "huella": "5d9d16e5b7bbc623",
+ "semilla": 4002,
+ "texto": "Anda ya… ¿y la leche y los potitos?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0241,
+  "oido": "¿Anda ya? ¿Y la leche y los potitos?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.36,
+   1.3,
+   1.54,
+   1.66,
+   1.92,
+   2.2,
+   2.34
+  ],
+  "t1": [
+   0.36,
+   0.58,
+   1.54,
+   1.66,
+   1.92,
+   2.2,
+   2.34,
+   2.76
+  ],
+  "ritmo": 8.2,
+  "voz": 0.898,
+  "viveza": 5.44
+ }
+}

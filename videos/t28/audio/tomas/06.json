@@ -1,0 +1,41 @@
+{
+ "huella": "d50d79eaea0b064a",
+ "semilla": 6001,
+ "texto": "Pues entonces criar sale más barato que en mis tiempos ¿no?",
+ "ev": {
+  "ok": true,
+  "nota": 1.039,
+  "oido": "Pues entonces, criar sale más barato que en mis tiempos, no.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.78,
+   1.02,
+   1.36,
+   1.58,
+   1.98,
+   2.12,
+   2.22,
+   2.36,
+   2.98
+  ],
+  "t1": [
+   0.14,
+   0.56,
+   1.02,
+   1.36,
+   1.58,
+   1.98,
+   2.12,
+   2.22,
+   2.36,
+   2.88,
+   3.08
+  ],
+  "ritmo": 14.2,
+  "voz": 0.928,
+  "viveza": 3.73
+ }
+}
