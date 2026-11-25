@@ -14,3 +14,7 @@ SoX could not be found!
     path variables.
     
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.939 · 6.7 s · 13.1 l/s · viveza 2.44 st · «Tener un bebé cuesta hoy más horas de trabajo que antes, porque mi padre dice que criar un hijo hoy es un lujo.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
