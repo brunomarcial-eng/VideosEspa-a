@@ -1,0 +1,961 @@
+[{"COD":"ECV6918", "Nombre":"Total Nacional. Ambos sexos. Total. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":17.5}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":18.7}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":20.1}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":20.5}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":22.8}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":21.8}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":24.9}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":25.5}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":26.5}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":29.2}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":29.9}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":30.9}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":28.1}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":25.9}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":23.7}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":20.6}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":19.7}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":19.8}
+]
+}
+,{"COD":"ECV6917", "Nombre":"Total Nacional. Ambos sexos. Total. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":15.7}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.9}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":17.2}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":17.0}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":19.5}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":19.0}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":21.5}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":21.9}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":22.7}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":25.7}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":27.1}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":27.3}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":25.8}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":23.3}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":20.5}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":17.3}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":17.2}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":17.1}
+]
+}
+,{"COD":"ECV6916", "Nombre":"Total Nacional. Ambos sexos. Menores de 16 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":26.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":28.0}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":28.4}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":27.8}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":30.0}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":28.5}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":31.1}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":29.6}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":33.0}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":34.9}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":36.9}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":38.8}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":35.2}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":32.0}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":30.8}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":28.7}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":28.1}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":26.8}
+]
+}
+,{"COD":"ECV6915", "Nombre":"Total Nacional. Ambos sexos. Menores de 16 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":26.7}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":29.1}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":28.1}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":26.4}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":29.4}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":28.5}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":30.0}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":28.3}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":31.2}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":34.7}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":36.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":38.1}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":35.6}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":32.7}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":30.4}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":27.3}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":28.6}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":27.7}
+]
+}
+,{"COD":"ECV6910", "Nombre":"Total Nacional. Ambos sexos. De 16 a 29 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":18.5}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":19.7}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":21.3}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":22.3}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":25.6}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":23.6}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":29.9}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":31.8}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":32.7}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":36.4}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":36.9}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":36.4}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":31.8}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":30.1}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":24.8}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":21.3}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":17.7}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":18.1}
+]
+}
+,{"COD":"ECV6909", "Nombre":"Total Nacional. Ambos sexos. De 16 a 29 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":19.2}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":19.5}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":20.0}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":20.5}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":24.4}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":22.9}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":29.7}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":30.9}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":30.7}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":35.4}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":36.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":35.3}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":32.0}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":29.8}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":25.0}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":20.7}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":17.6}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":18.6}
+]
+}
+,{"COD":"ECV6908", "Nombre":"Total Nacional. Ambos sexos. De 30 a 44 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":16.6}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":18.3}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":18.5}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":19.2}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":22.0}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":20.1}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":22.5}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":22.4}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":24.1}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":27.5}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":28.1}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":30.4}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":28.1}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":25.2}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":22.5}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":18.7}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":17.6}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":17.6}
+]
+}
+,{"COD":"ECV6907", "Nombre":"Total Nacional. Ambos sexos. De 30 a 44 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":16.6}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":18.6}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":18.1}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":18.1}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":20.9}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":19.4}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":21.4}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":21.1}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":22.3}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":26.1}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":27.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":29.3}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":28.0}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":25.1}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":21.4}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":17.4}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":17.8}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":17.4}
+]
+}
+,{"COD":"ECV6906", "Nombre":"Total Nacional. Ambos sexos. De 45 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":15.9}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.0}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":17.7}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":18.0}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":20.7}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":20.0}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":22.6}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":24.1}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":24.6}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":27.7}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":27.9}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":28.4}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":24.9}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":22.2}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":19.4}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":16.3}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":15.5}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":15.2}
+]
+}
+,{"COD":"ECV6905", "Nombre":"Total Nacional. Ambos sexos. De 45 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":13.7}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":13.9}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":14.5}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":14.5}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":17.1}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":16.8}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":19.5}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":20.7}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":20.9}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":24.2}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":25.4}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":24.4}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":22.2}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":19.1}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":16.1}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":13.3}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":12.5}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":12.0}
+]
+}
+,{"COD":"ECV6914", "Nombre":"Total Nacional. Ambos sexos. 65 y más años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":14.2}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":15.9}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":18.2}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":18.7}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":19.2}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":19.6}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":22.0}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":23.4}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":22.3}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":22.9}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":23.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":23.6}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":23.0}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":22.8}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":23.9}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":21.4}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":23.2}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":25.5}
+]
+}
+,{"COD":"ECV6913", "Nombre":"Total Nacional. Ambos sexos. 65 y más años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":7.8}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":9.1}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":10.2}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":10.0}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":10.4}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":11.3}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":11.4}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":12.4}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":12.5}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":12.0}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":13.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":12.3}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":13.6}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":12.2}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":12.1}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":9.8}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":11.6}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":12.0}
+]
+}
+,{"COD":"ECV6912", "Nombre":"Total Nacional. Ambos sexos. Menos de 18 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":26.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":27.9}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":28.7}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":27.9}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":30.1}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":28.2}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":31.5}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":30.3}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":33.0}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":36.1}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":37.6}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":39.3}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":35.8}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":33.1}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":31.2}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":29.2}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":28.2}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":27.3}
+]
+}
+,{"COD":"ECV6911", "Nombre":"Total Nacional. Ambos sexos. Menos de 18 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":26.7}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":29.1}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":28.2}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":26.4}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":29.5}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":28.1}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":30.4}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":29.2}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":31.3}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":35.7}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":37.2}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":38.5}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":36.2}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":33.7}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":30.8}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":27.8}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":28.6}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":28.0}
+]
+}
+,{"COD":"ECV6904", "Nombre":"Total Nacional. Ambos sexos. De 18 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":16.4}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":17.2}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":18.3}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":19.0}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":21.9}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":20.6}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":23.8}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":24.9}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":25.9}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":29.0}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":29.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":30.5}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":27.3}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":24.7}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":21.5}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":18.0}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":16.5}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":16.5}
+]
+}
+,{"COD":"ECV6903", "Nombre":"Total Nacional. Ambos sexos. De 18 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":15.5}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.2}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":16.4}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":16.6}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":19.6}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":18.8}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":22.0}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":22.6}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":23.2}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":26.8}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":28.1}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":28.3}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":26.2}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":23.3}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":19.9}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":16.2}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":15.4}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":15.4}
+]
+}
+,{"COD":"ECV6902", "Nombre":"Total Nacional. Hombres. Total. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":16.7}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":17.9}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":19.4}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":19.8}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":22.2}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":20.9}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":23.8}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":24.4}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":25.5}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":28.9}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":29.8}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":30.4}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":28.3}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":25.4}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":22.7}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":19.9}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":18.7}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":18.4}
+]
+}
+,{"COD":"ECV6901", "Nombre":"Total Nacional. Hombres. Total. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":15.4}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.6}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":17.1}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":16.7}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":19.4}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":18.8}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":21.3}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":21.5}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":22.2}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":26.0}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":27.4}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":27.5}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":26.6}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":23.6}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":20.3}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":17.2}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":16.9}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":16.5}
+]
+}
+,{"COD":"ECV6900", "Nombre":"Total Nacional. Hombres. Menores de 16 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":25.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":28.3}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":29.0}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":28.4}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":30.5}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":28.6}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":30.3}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":28.9}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":32.7}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":34.8}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":37.4}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":39.0}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":37.3}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":31.4}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":29.9}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":27.9}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":28.6}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":25.5}
+]
+}
+,{"COD":"ECV6899", "Nombre":"Total Nacional. Hombres. Menores de 16 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":25.6}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":29.2}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":29.0}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":26.9}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":29.7}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":29.0}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":28.6}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":27.4}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":31.0}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":34.8}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":37.2}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":38.5}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":37.8}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":32.8}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":29.8}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":26.4}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":28.9}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":26.2}
+]
+}
+,{"COD":"ECV6894", "Nombre":"Total Nacional. Hombres. De 16 a 29 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":18.4}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":18.7}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":21.7}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":22.8}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":25.4}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":23.4}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":28.0}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":29.1}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":31.0}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":36.2}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":37.2}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":36.6}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":31.9}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":29.3}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":23.1}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":19.5}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":16.3}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":16.3}
+]
+}
+,{"COD":"ECV6893", "Nombre":"Total Nacional. Hombres. De 16 a 29 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":19.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":18.4}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":19.9}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":20.2}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":24.0}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":22.7}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":28.0}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":28.3}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":28.1}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":34.7}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":36.0}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":34.6}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":31.7}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":28.7}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":23.0}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":19.5}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":16.1}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":16.8}
+]
+}
+,{"COD":"ECV6892", "Nombre":"Total Nacional. Hombres. De 30 a 44 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":15.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.5}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":16.5}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":17.2}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":21.0}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":18.2}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":21.2}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":20.6}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":22.5}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":27.5}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":27.6}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":29.3}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":28.0}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":24.2}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":21.5}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":18.6}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":16.5}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":16.6}
+]
+}
+,{"COD":"ECV6891", "Nombre":"Total Nacional. Hombres. De 30 a 44 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":15.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.6}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":16.1}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":16.1}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":19.9}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":17.5}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":20.4}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":19.4}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":20.9}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":25.8}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":26.6}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":28.6}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":28.1}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":24.4}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":20.4}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":17.0}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":16.3}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":16.6}
+]
+}
+,{"COD":"ECV6890", "Nombre":"Total Nacional. Hombres. De 45 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":16.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.0}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":17.5}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":17.7}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":20.5}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":19.8}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":22.6}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":25.0}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":24.9}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":27.8}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":28.4}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":28.6}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":25.5}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":23.2}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":20.1}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":17.0}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":15.4}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":15.1}
+]
+}
+,{"COD":"ECV6889", "Nombre":"Total Nacional. Hombres. De 45 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":13.6}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":14.3}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":14.6}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":14.3}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":17.0}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":16.4}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":19.9}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":21.6}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":21.6}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":24.6}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":26.4}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":24.9}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":22.5}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":20.4}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":17.1}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":14.3}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":13.0}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":12.2}
+]
+}
+,{"COD":"ECV6898", "Nombre":"Total Nacional. Hombres. 65 y más años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":11.9}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":13.5}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":15.8}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":16.3}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":16.2}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":17.1}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":19.4}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":20.0}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":18.4}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":20.1}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":20.7}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":20.1}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":19.8}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":20.3}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":20.9}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":19.0}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":20.5}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":22.1}
+]
+}
+,{"COD":"ECV6897", "Nombre":"Total Nacional. Hombres. 65 y más años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":7.4}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":8.4}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":9.6}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":9.4}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":9.4}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":11.3}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":11.7}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":12.5}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":11.1}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":12.0}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":12.2}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":11.3}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":13.2}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":12.0}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":11.6}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":9.6}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":11.8}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":12.1}
+]
+}
+,{"COD":"ECV6896", "Nombre":"Total Nacional. Hombres. Menos de 18 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":24.9}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":28.2}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":29.6}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":28.7}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":30.2}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":28.3}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":30.6}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":29.4}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":32.7}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":36.2}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":38.2}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":40.2}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":37.8}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":32.6}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":30.4}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":28.6}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":28.7}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":26.1}
+]
+}
+,{"COD":"ECV6895", "Nombre":"Total Nacional. Hombres. Menos de 18 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":25.5}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":29.1}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":29.3}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":26.9}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":29.4}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":28.6}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":28.9}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":28.2}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":31.0}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":36.0}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":37.9}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":39.4}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":38.3}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":33.6}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":30.3}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":27.1}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":28.7}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":26.7}
+]
+}
+,{"COD":"ECV6888", "Nombre":"Total Nacional. Hombres. De 18 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":16.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.4}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":17.6}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":18.3}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":21.5}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":19.9}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":23.0}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":24.1}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":25.1}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":28.9}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":29.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":30.0}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":27.5}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":24.5}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":21.0}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":17.7}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":15.6}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":15.6}
+]
+}
+,{"COD":"ECV6887", "Nombre":"Total Nacional. Hombres. De 18 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":15.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":15.5}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":15.7}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":15.8}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":19.2}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":17.9}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":21.6}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":21.9}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":22.5}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":26.6}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":28.1}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":27.9}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":26.3}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":23.4}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":19.3}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":16.1}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":14.8}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":14.7}
+]
+}
+,{"COD":"ECV6886", "Nombre":"Total Nacional. Mujeres. Total. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":18.2}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":19.5}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":20.7}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":21.1}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":23.4}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":22.6}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":25.8}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":26.7}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":27.6}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":29.4}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":30.0}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":31.4}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":27.9}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":26.4}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":24.6}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":21.1}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":20.6}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":21.2}
+]
+}
+,{"COD":"ECV6885", "Nombre":"Total Nacional. Mujeres. Total. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":16.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":17.2}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":17.3}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":17.3}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":19.7}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":19.3}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":21.7}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":22.2}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":23.1}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":25.3}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":26.8}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":27.1}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":25.1}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":23.0}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":20.7}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":17.3}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":17.4}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":17.6}
+]
+}
+,{"COD":"ECV6884", "Nombre":"Total Nacional. Mujeres. Menores de 16 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":27.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":27.6}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":27.7}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":27.1}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":29.6}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":28.3}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":32.0}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":30.3}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":33.3}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":35.2}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":36.4}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":38.6}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":33.1}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":32.6}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":31.8}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":29.5}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":27.6}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":28.2}
+]
+}
+,{"COD":"ECV6883", "Nombre":"Total Nacional. Mujeres. Menores de 16 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":27.8}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":29.1}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":27.1}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":25.8}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":29.0}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":28.0}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":31.5}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":29.3}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":31.4}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":34.6}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":35.8}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":37.7}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":33.2}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":32.6}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":30.9}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":28.2}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":28.3}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":29.3}
+]
+}
+,{"COD":"ECV6878", "Nombre":"Total Nacional. Mujeres. De 16 a 29 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":18.7}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":20.8}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":20.9}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":21.8}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":25.8}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":23.9}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":31.8}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":34.7}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":34.4}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":36.7}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":36.7}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":36.1}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":31.6}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":30.9}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":26.6}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":23.1}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":19.3}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":20.1}
+]
+}
+,{"COD":"ECV6877", "Nombre":"Total Nacional. Mujeres. De 16 a 29 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":19.4}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":20.7}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":20.1}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":20.9}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":24.7}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":23.2}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":31.3}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":33.5}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":33.4}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":36.1}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":37.1}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":36.1}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":32.2}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":31.0}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":27.1}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":21.9}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":19.0}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":20.6}
+]
+}
+,{"COD":"ECV6876", "Nombre":"Total Nacional. Mujeres. De 30 a 44 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":18.3}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":20.1}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":20.5}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":21.1}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":23.1}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":21.9}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":23.8}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":24.2}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":25.7}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":27.4}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":28.6}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":31.4}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":28.3}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":26.3}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":23.5}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":18.8}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":18.9}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":18.6}
+]
+}
+,{"COD":"ECV6875", "Nombre":"Total Nacional. Mujeres. De 30 a 44 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":18.2}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":20.5}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":20.0}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":20.0}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":22.0}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":21.3}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":22.4}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":22.8}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":23.8}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":26.4}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":28.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":30.1}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":27.9}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":25.9}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":22.4}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":17.9}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":19.4}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":18.2}
+]
+}
+,{"COD":"ECV6874", "Nombre":"Total Nacional. Mujeres. De 45 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":15.7}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.0}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":17.9}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":18.3}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":20.9}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":20.2}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":22.5}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":23.3}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":24.3}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":27.6}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":27.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":28.3}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":24.4}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":21.2}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":18.7}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":15.6}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":15.5}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":15.4}
+]
+}
+,{"COD":"ECV6873", "Nombre":"Total Nacional. Mujeres. De 45 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":13.7}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":13.6}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":14.5}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":14.6}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":17.2}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":17.3}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":19.1}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":19.7}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":20.2}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":23.8}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":24.4}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":23.9}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":21.9}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":17.7}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":15.2}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":12.4}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":11.9}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":11.8}
+]
+}
+,{"COD":"ECV6882", "Nombre":"Total Nacional. Mujeres. 65 y más años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":16.0}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":17.7}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":20.1}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":20.6}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":21.6}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":21.6}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":24.1}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":26.0}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":25.3}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":25.1}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":25.6}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":26.3}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":25.4}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":24.7}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":26.2}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":23.2}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":25.2}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":28.0}
+]
+}
+,{"COD":"ECV6881", "Nombre":"Total Nacional. Mujeres. 65 y más años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":8.2}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":9.7}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":10.7}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":10.6}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":11.1}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":11.2}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":11.1}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":12.3}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":13.6}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":12.0}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":14.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":13.0}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":13.9}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":12.3}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":12.4}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":10.0}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":11.4}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":11.9}
+]
+}
+,{"COD":"ECV6880", "Nombre":"Total Nacional. Mujeres. Menos de 18 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":27.1}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":27.7}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":27.8}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":27.0}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":30.1}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":28.2}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":32.4}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":31.2}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":33.4}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":36.0}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":37.0}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":38.4}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":33.8}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":33.6}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":32.2}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":29.8}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":27.8}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":28.7}
+]
+}
+,{"COD":"ECV6879", "Nombre":"Total Nacional. Mujeres. Menos de 18 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":27.9}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":29.0}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":27.0}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":25.8}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":29.6}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":27.7}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":32.0}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":30.3}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":31.5}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":35.3}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":36.4}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":37.5}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":34.0}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":33.7}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":31.2}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":28.6}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":28.5}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":29.4}
+]
+}
+,{"COD":"ECV6872", "Nombre":"Total Nacional. Mujeres. De 18 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":16.8}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":18.0}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":19.0}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":19.7}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":22.3}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":21.4}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":24.7}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":25.6}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":26.7}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":29.0}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":29.5}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":31.0}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":27.1}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":24.9}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":22.0}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":18.2}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":17.4}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":17.4}
+]
+}
+,{"COD":"ECV6871", "Nombre":"Total Nacional. Mujeres. De 18 a 64 años. Tasa de riesgo de pobreza con umbral fijo año 2008 (con alquiler imputado) (renta del año anterior a la entrevista). Base 2013. ", "T3_Unidad":"Porcentaje", "T3_Escala":" ", "Data":[{"Fecha":"2025-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2025, "Valor":15.9}
+,{"Fecha":"2024-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2024, "Valor":16.9}
+,{"Fecha":"2023-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2023, "Valor":17.1}
+,{"Fecha":"2022-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2022, "Valor":17.4}
+,{"Fecha":"2021-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2021, "Valor":19.9}
+,{"Fecha":"2020-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2020, "Valor":19.7}
+,{"Fecha":"2019-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2019, "Valor":22.5}
+,{"Fecha":"2018-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2018, "Valor":23.2}
+,{"Fecha":"2017-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2017, "Valor":23.9}
+,{"Fecha":"2016-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2016, "Valor":26.9}
+,{"Fecha":"2015-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2015, "Valor":28.2}
+,{"Fecha":"2014-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2014, "Valor":28.7}
+,{"Fecha":"2013-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2013, "Valor":26.1}
+,{"Fecha":"2012-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2012, "Valor":23.3}
+,{"Fecha":"2011-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2011, "Valor":20.4}
+,{"Fecha":"2010-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2010, "Valor":16.3}
+,{"Fecha":"2009-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2009, "Valor":16.1}
+,{"Fecha":"2008-01-01T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"A", "Anyo":2008, "Valor":16.1}
+]
+}
+]
