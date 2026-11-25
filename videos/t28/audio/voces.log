@@ -18,3 +18,5 @@ Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
   import pkg_resources
     toma 1 (semilla 1000): BUENA · 1.0 · voz 0.939 · 6.7 s · 13.1 l/s · viveza 2.44 st · «Tener un bebé cuesta hoy más horas de trabajo que antes, porque mi padre dice que criar un hijo hoy es un lujo.»
 Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 1001): BUENA · 1.0 · voz 0.937 · 6.4 s · 13.6 l/s · viveza 1.77 st · «Tener un bebé cuesta hoy más horas de trabajo que antes, porque mi padre dice que criar un hijo hoy es un lujo.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
