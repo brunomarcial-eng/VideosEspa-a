@@ -78,6 +78,7 @@ def main():
             "mas_7_5smi_pct": g["más de 7,5 SMI"]["pct"], "mas_7_5smi_personas": g["más de 7,5 SMI"]["asalariados"],
             "mas_3smi_pct": round(g["de 3 a 5 SMI"]["pct"] + g["de 5 a 7,5 SMI"]["pct"] + g["más de 7,5 SMI"]["pct"], 1),
             "mas_2smi_pct": round(100 - g["menos de 1 SMI"]["pct"] - g["de 1 a 2 SMI"]["pct"], 1),
+            "de5a7_5_pct": g["de 5 a 7,5 SMI"]["pct"],
             "limite_1smi": round(smi[HOY]), "limite_2smi": round(2 * smi[HOY]), "limite_3smi": round(3 * smi[HOY]),
             "limite_5smi": round(5 * smi[HOY]), "limite_7_5smi": round(7.5 * smi[HOY]),
         },
