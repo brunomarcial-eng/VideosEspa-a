@@ -1,0 +1,33 @@
+{
+ "huella": "617606f738d80377",
+ "semilla": 9005,
+ "texto": "¿Y si me toca el Gordo listo?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0053,
+  "oido": "¿Y si me toca el gordo, listo?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.1,
+   0.22,
+   0.3,
+   0.44,
+   0.6,
+   0.84
+  ],
+  "t1": [
+   0.1,
+   0.22,
+   0.3,
+   0.44,
+   0.6,
+   0.82,
+   1.16
+  ],
+  "ritmo": 15.4,
+  "voz": 0.861,
+  "viveza": 2.67
+ }
+}

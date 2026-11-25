@@ -1,0 +1,22 @@
+plano 1: «¿Cuántos meses de tu vida trabajas para pagar un coche? Vengo a comprarme uno. A ver qué me cuentan.»
+    toma guardada (semilla 1000): BUENA · «¿Cuántos meses de tu vida trabajas para pagar un coche? Vengo a comprarme uno. A ver qué me cuentan.»
+plano 2: «Yo cobro el sueldo mediano: 1.702 euros netos al mes. En 2016 eran 1.332.»
+    toma guardada (semilla 2002): BUENA · «Yo cobro el sueldo mediano, 1.702 euros netos al mes, en 2016 eran 1.332.»
+plano 3: «Bienvenida. El coche medio que se compra en España cuesta 28.661 euros. En 2016, 20.252.»
+    toma guardada (semilla 3000): BUENA · «Bienvenida. El coche medio que se compra en España cuesta 28.661 euros. En 2016, 20.252.»
+plano 4: «¿Y cuánto de eso son impuestos?»
+    toma guardada (semilla 4000): BUENA · «¿Y cuánto de esos son impuestos?»
+plano 5: «5.473 euros: el 19 % del precio. IVA y matriculación.»
+    toma guardada (semilla 5000): BUENA · «5473 euros, el 19% del precio, IVA y matriculación.»
+plano 6: «Si lo pagas al contado: casi diecisiete meses de tu sueldo entero. En 2016, quince.»
+    toma guardada (semilla 6000): BUENA · «Si lo pagas al contado, casi 17 meses de tu sueldo entero, en 2016, 15.»
+plano 7: «¿Financiado a cinco años, al tipo medio de los bancos? 5.780 euros de intereses: veinte meses de sueldo.»
+    toma guardada (semilla 7000): BUENA · «¿Financiado a cinco años al tipo medio de los bancos? 5,780 euros de intereses, 20 meses de sueldo.»
+plano 8: «La cuota: 574 euros al mes. Un tercio de tu sueldo, cinco años.»
+    toma guardada (semilla 8000): BUENA · «La cuota, 574 euros al mes, un tercio de tu sueldo, 5 años.»
+plano 9: «Vale. ¿Y las bicicletas, dónde las tienen?»
+    toma guardada (semilla 9000): BUENA · «Vale. Y las bicicletas, ¿dónde las tienen?»
+plano 10: «Eso sí: en 2007, antes de la crisis, era peor. Casi dieciocho meses al contado, y los préstamos, casi al 10 %.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.939 · 8.0 s · 12.4 l/s · «Eso sí, en 2007 antes de la crisis era peor, casi 18 meses al contado, y los préstamos casi al 10%.»
+plano 11: «El coche medio: casi diecisiete meses de sueldo al contado y veinte financiado. Más que en 2016, menos que en 2007. ¿Cuántos meses trabajaste tú para pagar el tuyo?»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.94 · 12.5 s · 11.9 l/s · «El coche medio. Casi 17 meses de sueldo al contado y veinte financiado. Más que en 2016, menos que en 2007. ¿Cuántos meses trabajaste tú para pagar el tuyo?»

@@ -1,0 +1,16 @@
+# T19 · Notas de edición (archivo por si hay apelación)
+
+**Vídeo:** «¿Para cuánto te da hoy el Gordo? 2007 frente a 2026» · Short vertical 1080×1920, 55,8 s, −14,2 LUFS.
+**Fichero:** `videos/t19/render/t19-limpio.mp4` · SHA-256 `6df2a802c81d90aeb7ed7c05c4bba368d585240e410df3770139f55589526ab3`.
+**Aprobación:** el responsable del canal eligió la lotería de Navidad el 23-11-2026 y el 24-11-2026 pidió dos vídeos; este, cuánto te deja el Gordo hoy y antes: lo que se queda Hacienda, los años de sueldo y los pisos (él creía que antes daba para diez casas y pidió contrastarlo). Aprobó comparar solo 2007 y hoy (excepción a la regla de tres años) porque el BOE dejó de publicar los programas de premios en 2011 y no hay programa oficial citable de 2016 ni de 2019. **v1 aprobada (24-11-2026).**
+
+## Cómo se hizo
+- **Guion:** padre e hija en el salón en Navidad, inventados, con la forma de hablar del responsable del canal (skill `clon-bruno`). El padre cree que en 2007 el Gordo daba para diez pisos; la hija lo comprueba con los datos. Acaba con una pregunta («¿Y tú con el Gordo de hoy dejarías el curro?»). No da causas ni nombra partidos, marcas ni personas reales.
+- **Cifras:** premio por décimo de 2007 (BOE-A-2007-21550) y de 2026 (programa de premios de Loterías y Apuestas del Estado, copiado de su web por el responsable del canal porque la web rechaza los accesos automáticos; se guarda tal cual en `datos-crudos/`); gravamen especial (Ley del IRPF, DA 33.ª, y AEAT); valor tasado medio del m² de la vivienda libre (Ministerio de Vivienda, vía Banco de España); sueldo neto mediano anual (INE, cálculo de T16); IPC general (INE). Script: `scripts/calcular_t19.py`; detalle en `guion.md` y `t19_gordo.json`.
+- **Cálculos (C):** te queda = premio − 20 % de lo que pase de 40.000 € (en 2007, sin gravamen). Pisos = te queda / (90 m² × precio medio del m² del año; 2025 para hoy). Años de sueldo = te queda / sueldo neto mediano anual (2025 para hoy). Euros de hoy = te queda de 2007 × IPC medio de 2025 / IPC medio de 2007.
+- **Redondeos dichos en voz:** «21» y «16» años (21,1 y 16,1 en pantalla); «casi 430.000» (427.929 € en pantalla); «piso y medio» (1,6 y 1,7 en pantalla).
+- **Lo que no entra:** 2016 y 2019 (sin programa oficial citable), los demás premios del sorteo y las encuestas privadas.
+- **Ficheros originales:** `datos-crudos/`, con enlace, fecha y huella SHA-256 en `datos-crudos/MANIFEST.csv`. El sueldo y el precio del m² vienen de los datos limpios de T16 y T3 (crudos en `archive/t3/` y `archive/t16/`).
+- **Imagen:** dibujada con código (`escenas.mjs` y `diseno/loteria.mjs`): salón en Navidad con el sorteo en la tele (un bombo genérico, sin logotipos), montones de billetes, el sobre de Hacienda, una fila de diez pisitos, calendarios y una oficina en Navidad. El décimo es genérico e inventado.
+- **Voces:** Qwen3-TTS en local, del catálogo del canal: la hija con «viajera» y el padre con «comandante». Tres tomas buenas por línea y se elige la de más entonación; cada toma se revisa con Whisper (`voz-registro.txt`). Arreglado el comprobador: leía «300.000» como «300 coma 000» y daba por no oídas las cifras de miles (falsos fallos también en T20).
+- **Música, efectos y ambiente:** generados con código (`scripts/sonido.py`, ambientes de salón, cola y oficina con sonidos sueltos), sin ruido continuo. Contenido sintético: sí.

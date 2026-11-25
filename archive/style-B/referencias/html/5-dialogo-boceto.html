@@ -1,0 +1,84 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
+@font-face{font-family:Fraunces;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/fraunces-latin-700-normal.woff2");font-weight:700}
+@font-face{font-family:Fraunces;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/fraunces-latin-900-normal.woff2");font-weight:900}
+@font-face{font-family:Fraunces;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/fraunces-latin-400-normal.woff2");font-weight:400}
+@font-face{font-family:Plex;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/ibm-plex-mono-latin-400-normal.woff2");font-weight:400}
+@font-face{font-family:Plex;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/ibm-plex-mono-latin-600-normal.woff2");font-weight:600}
+@font-face{font-family:Plex;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/ibm-plex-mono-latin-700-normal.woff2");font-weight:700}
+@font-face{font-family:Mano;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/caveat-brush-latin-400-normal.woff2")}
+:root{--ocre:#C8902E;--azul:#1F5F8B;--papel:#F4EDE0;--pizarra:#23302B;--tp:#1E1E1E;
+--tz:#F4EDE0;--salvia:#7C9A7E;--gris:#8A8378;--rojo:#B3261E;--ocre-t:#86601F;
+--azul-tiza:#6AADDF;--gris-t:#6A645B;--gris-tiza:#B1AB9F;--salvia-tiza:#93B096;
+--papel2:#E7DCC8;--carton:#CDBB98}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden}
+.marco{position:relative;width:1080px;height:1920px;overflow:hidden}
+.abs{position:absolute}
+.sello{position:absolute;left:70px;width:860px;top:1385px;display:flex;gap:18px;align-items:center;
+  background:var(--papel);color:var(--rojo);border:4px solid var(--rojo);outline:2px solid var(--rojo);outline-offset:5px;
+  padding:14px 20px;font:600 30px/1.3 Plex;transform:rotate(-1.2deg)}
+.sello b{font-weight:700;letter-spacing:.04em}
+.sello svg{flex:none}
+.sello svg .l{stroke:var(--rojo);stroke-width:12;fill:none}
+.sello svg .f,.sello svg .f2,.sello svg .f3{fill:none}
+.ficha{display:inline-block;padding:6px 26px 10px;border-radius:14px;font-family:Plex;font-weight:700}
+.pasado.ficha{background:var(--ocre);color:var(--tp)}
+.hoy.ficha{background:var(--azul);color:var(--papel)}
+.obj{overflow:visible}
+.obj .l{stroke-linecap:round;stroke-linejoin:round}
+
+.estilo-B{color:var(--tp);font-family:Plex}
+.estilo-B h1{font:900 82px/1.04 Fraunces;letter-spacing:-.01em}
+.estilo-B .obj{filter:url(#carton)}
+.estilo-B .obj .l{stroke:var(--tp);stroke-width:5}
+.estilo-B .obj .f{fill:var(--papel2)} .estilo-B .obj .f2{fill:var(--salvia)} .estilo-B .obj .f3{fill:var(--carton)}
+.estilo-B .obj path.l:not(.f):not(.f2):not(.f3),.estilo-B .obj circle.l:not(.f):not(.f2):not(.f3){fill:none}
+.estilo-B .t-pasado{color:var(--ocre-t)} .estilo-B .t-hoy{color:var(--azul)} .estilo-B .tenue{color:var(--gris-t)}.pj .l{stroke:#1E1E1E;stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
+.pj .piel{fill:#D8B894} .pj .pelo{fill:#4A3F35} .pj .ojo{fill:#1E1E1E} .pj .boca{fill:#6B3A2E}
+.pj .canas{stroke:#E7DCC8;stroke-width:9;fill:none;stroke-linecap:round} .pj .vidrio{fill:rgba(244,237,224,.35)}
+.pj-antes .ropa{fill:#C8902E} .pj-hoy .ropa{fill:#1F5F8B} .pj{filter:url(#carton)}
+.burbuja{position:absolute;background:#F4EDE0;border:5px solid #1E1E1E;border-radius:40px;padding:24px 32px;
+font:700 46px/1.15 Fraunces;color:#1E1E1E;box-shadow:10px 12px 0 rgba(30,30,30,.18)}.burbuja::after{content:"";position:absolute;bottom:-44px;left:var(--cola);border-left:24px solid transparent;
+border-right:24px solid transparent;border-top:44px solid #1E1E1E}</style></head>
+<body><svg width="0" height="0" style="position:absolute">
+<filter id="grano" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4"/>
+  <feColorMatrix type="matrix" values="0 0 0 0 0.12 0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0.10 0"/></filter>
+<filter id="carton"><feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="2" seed="9" result="r"/>
+  <feColorMatrix in="r" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0" result="m"/>
+  <feComposite in="SourceGraphic" in2="m" operator="arithmetic" k1="0" k2="1" k3="-0.25" k4="0"/></filter></svg>
+<div class="marco estilo-B"><svg class="abs" width="1080" height="1920" style="left:0;top:0"><rect width="1080" height="1920" fill="#F4EDE0"/>
+<rect width="1080" height="1920" filter="url(#grano)"/></svg>
+<div class="abs  tenue" style="left:70px;top:210px;width:940px;font:900 60px/1.05 Fraunces">La comida de un mes, en horas de trabajo</div>
+<div class="burbuja" style="left:60px;top:370px;width:640px;--cola:90px">¿14,5 horas para la compra del mes? Yo la pagaba con 12,8.</div>
+<div class="burbuja" style="left:390px;top:610px;width:630px;--cola:430px">Ya. Ahora cobro más por hora… pero la compra ha subido más.</div>
+<div class="abs " style="left:60px;top:900px"><svg class="pj pj-antes " viewBox="0 0 300 440" width="327.27272727272725" height="480" aria-hidden="true">
+
+  <path class="ropa l" d="M58 440 V352 Q58 278 150 278 Q242 278 242 352 V440 Z"/>
+  <path class="piel l" d="M130 236 H170 V286 Q150 300 130 286 Z"/>
+  <ellipse class="piel l" cx="150" cy="172" rx="72" ry="82"/>
+  <circle class="ojo" cx="196" cy="206" r="3.5"/>
+  <path class="pelo l" d="M76 180 Q66 78 150 80 Q234 78 224 180 L236 270 Q214 262 210 206 Q204 132 150 124 Q96 132 90 206 Q86 262 64 270 Z"/>
+  <ellipse class="ojo" cx="124" cy="176" rx="9" ry="11"/><ellipse class="ojo" cx="176" cy="176" rx="9" ry="11"/>
+  <path class="l" d="M104 142 Q122 126 140 138 M160 138 Q178 126 196 142"/>
+  <ellipse class="boca l" cx="150" cy="218" rx="13" ry="16"/></svg></div>
+<div class="abs " style="left:640px;top:900px"><svg class="pj pj-hoy " viewBox="0 0 300 440" width="327.27272727272725" height="480" aria-hidden="true">
+
+  <path class="ropa l" d="M58 440 V352 Q58 278 150 278 Q242 278 242 352 V440 Z"/>
+  <path class="piel l" d="M130 236 H170 V286 Q150 300 130 286 Z"/>
+  <ellipse class="piel l" cx="150" cy="172" rx="72" ry="82"/>
+  <circle class="ojo" cx="196" cy="206" r="3.5"/>
+  <path class="pelo l" d="M78 176 Q72 86 150 84 Q228 86 222 176 Q214 126 150 118 Q92 124 78 176 Z"/>
+  <circle class="pelo l" cx="150" cy="70" r="26"/>
+  <path class="canas" d="M164 88 Q182 100 196 128"/>
+  <rect class="vidrio l" x="102" y="158" width="44" height="36" rx="12"/><rect class="vidrio l" x="154" y="158" width="44" height="36" rx="12"/>
+  <path class="l" d="M146 172 H154"/>
+  <ellipse class="ojo" cx="124" cy="177" rx="7" ry="8"/><ellipse class="ojo" cx="176" cy="177" rx="7" ry="8"/>
+  <path class="l" d="M104 148 Q122 142 140 148 M160 142 Q178 128 196 138"/>
+  <path class="boca l" d="M130 214 Q150 234 170 214 Q150 222 130 214 Z"/></svg></div>
+<div class="abs" style="left:60px;top:890px"><span class="ficha pasado" style="font-size:46px">2016</span></div><div class="abs" style="left:640px;top:890px"><span class="ficha hoy" style="font-size:46px">2024</span></div>
+<div class="sello"><svg class="obj obj-reloj " viewBox="0 0 200 200" width="54" height="54" aria-hidden="true">
+    <rect class="f2 l" x="88" y="14" width="24" height="16" rx="4"/>
+    <circle class="f l" cx="100" cy="112" r="76"/>
+    <circle class="f2 l" cx="100" cy="112" r="62"/>
+    <path class="l" d="M100 56 V66 M100 158 V168 M44 112 H54 M146 112 H156"/>
+    <path class="l" d="M100 112 V72 M100 112 L130 126"/><circle class="f3" cx="100" cy="112" r="6"/></svg><div><b>CÁLCULO PROPIO (C)</b> · horas = cesta ÷ sueldo neto por hora (mediana) · INE y Eurostat</div></div></div></body></html>

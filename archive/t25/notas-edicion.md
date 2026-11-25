@@ -1,0 +1,16 @@
+# T25 · Notas de edición (archivo por si hay apelación)
+
+**Vídeo:** «¿En qué tramo de sueldo estás tú?» · Short vertical 1080×1920, 64,8 s, −14,2 LUFS (v1).
+**Fichero:** `videos/t25/render/t25-limpio.mp4` · SHA-256 `ef5af44696f617ab0b6f0dff7c470cf8032de629e7375f5fb7c9137075019a8e`.
+**Aprobación:** el responsable del canal pidió el 24-11-2026 rescatar los temas del principio («Todos. 4 vídeos… uno por uno»); este es el primero, con los tramos que él propuso. v1: pendiente de su visto bueno.
+
+## Cómo se hizo
+- **Guion:** un cliente que se cree «clase media normalita» con 40.000 € y su gestora, inventados, en una gestoría de barrio; hablan con la forma de hablar del responsable del canal (skill `clon-bruno`). La gestora le enseña los tramos de Hacienda: tres de cada cuatro cobran menos de 33.152 €, y él está en la cuarta parte que más gana. La media engaña. En euros de hoy, el sueldo medio compra lo mismo que en 2007. Acaba con una pregunta («¿Y tú en qué tramo estás?»). Sin causas, partidos ni marcas.
+- **Cifras:** Agencia Tributaria, «Mercado de trabajo y pensiones en las fuentes tributarias» (2007, 2013, 2016, 2019, 2024 y 2025): asalariados, salarios y salario medio por tramos de salario en veces el SMI. Los tramos de 2025 (1, 2, 3, 5 y 7,5 SMI de 16.576 €) quedan casi en los del responsable del canal (14.000, 30.000, 50.000, 80.000 y 120.000 €). Asalariado: todo el que cobró algún sueldo en el año, también a media jornada o unos meses (se dice en voz y en pantalla). Sueldo medio = salarios / asalariados; en euros de 2025 con el IPC medio anual del INE. Script: `scripts/calcular_t25.py`; detalle en `paso-1-datos.md`, `guion.md` y `t25_tramos.json`.
+- **Años:** 2007, 2013 (plena crisis), 2016, 2019 y 2025. Los tramos no se comparan entre años: van en veces el SMI, que ha subido mucho más que los precios.
+- **Redondeos dichos en voz:** «casi 4 de cada 10» (37,1 %), «16.500» (16.576 €), «otros tantos» (37,9 %), «3 de cada 4» (75,0 %), «la cuarta parte que más gana» (25,0 %), «ni 3 de cada 100» (2,46 %), «casi 26.000» (25.830 €), «más de 6 de cada 10» (al menos el 60,9 %), «lo mismo que en 2007» (+0,1 %), «un 11 % más» (+10,8 %).
+- **Lo que no entra:** «clase media» como dato (no hay definición oficial con tramos; es la frase del personaje), comparaciones de tramos entre años y cualquier causa.
+- **Ficheros originales:** `datos-crudos/` (páginas de la AEAT guardadas), con enlace, fecha y huella SHA-256 en `datos-crudos/MANIFEST.csv`.
+- **Imagen:** dibujada con código (`escenas.mjs` y `diseno/tramos.mjs`): la gestoría en perspectiva (ventana, estanterías de archivadores, reloj sin números, planta, mesa con ordenador, lámpara), la escalera de seis tramos (solo se escriben los que el plano cuenta), una tele con el sueldo medio, un balancín y columnas del sueldo medio en euros de hoy. Nada pegado a la mano.
+- **Voces:** Qwen3-TTS en local, del catálogo del canal: el cliente con «hombre» y la gestora con «medica». Tres tomas buenas por línea y se elige la de más entonación; cada toma se revisa con Whisper (`voz-registro.txt`).
+- **Música, efectos y ambiente:** generados con código (`scripts/sonido.py`, ambiente «oficina»: teclas, una taza y un teléfono lejos), con sonidos sueltos y sin ruido continuo. La música se corta con el «Engaña». Contenido sintético: sí.

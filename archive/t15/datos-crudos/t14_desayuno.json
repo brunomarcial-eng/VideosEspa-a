@@ -1,0 +1,444 @@
+{
+ "tema": "¿Cuántos minutos trabajas para desayunar? 2016 frente a hoy",
+ "nota": "Precio = lo que pagan de media los hogares (gasto / cantidad de la EPF del INE), no un precio de catálogo: incluye marcas blancas y ofertas. Minutos con el sueldo neto mediano por hora de T1. 2025 es el último año de la EPF.",
+ "sueldo": {
+  "neto_hora_mediana": {
+   "2016": 10.27,
+   "2019": 10.85,
+   "2025": 12.98
+  },
+  "neto_hora_media": {
+   "2016": 11.94,
+   "2019": 12.67,
+   "2025": 15.22
+  },
+  "estado_2025": "C: EAES 2024 × ETCL 2025/2024 (la EAES 2025 aún no está publicada)",
+  "mediana_sube_pct": 26.4,
+  "media_sube_pct": 27.5,
+  "bruto_anual_mediano": {
+   "2016": 19433,
+   "2024": 24497,
+   "2025": 25296
+  },
+  "neto_anual_mediano": {
+   "2016": 15987,
+   "2025": 20424
+  },
+  "neto_anual_2016_en_euros_de_2025": 20307,
+  "neto_real_sube_pct": 0.6
+ },
+ "productos": {
+  "cacao": {
+   "nombre_epf": "Chocolate, cacao y productos a base de cacao",
+   "paquete": "el kilo de chocolate y cacao",
+   "precio_unidad_epf_eur": {
+    "2016": 6.84,
+    "2019": 7.28,
+    "2025": 11.98
+   },
+   "valor_unitario_ine": {
+    "2016": 6.84,
+    "2019": 7.28,
+    "2025": 11.98
+   },
+   "precio_calculado_con": {
+    "2016": "valor unitario del INE",
+    "2019": "valor unitario del INE",
+    "2025": "valor unitario del INE"
+   },
+   "precio_paquete_eur": {
+    "2016": 6.84,
+    "2019": 7.28,
+    "2025": 11.98
+   },
+   "minutos_mediana": {
+    "2016": 40.0,
+    "2019": 40.3,
+    "2025": 55.4
+   },
+   "minutos_media": {
+    "2016": 34.4,
+    "2019": 34.5,
+    "2025": 47.2
+   },
+   "precio_sube_pct": 75.1,
+   "minutos_sube_pct": 38.6
+  },
+  "huevos": {
+   "nombre_epf": "Huevos",
+   "paquete": "la docena de huevos",
+   "precio_unidad_epf_eur": {
+    "2016": 0.146,
+    "2019": 0.158,
+    "2025": 0.254
+   },
+   "valor_unitario_ine": {
+    "2016": 0.15,
+    "2019": 0.16,
+    "2025": 0.25
+   },
+   "precio_calculado_con": {
+    "2016": "gasto / cantidad",
+    "2019": "gasto / cantidad",
+    "2025": "gasto / cantidad"
+   },
+   "precio_paquete_eur": {
+    "2016": 1.75,
+    "2019": 1.89,
+    "2025": 3.04
+   },
+   "minutos_mediana": {
+    "2016": 10.2,
+    "2019": 10.5,
+    "2025": 14.1
+   },
+   "minutos_media": {
+    "2016": 8.8,
+    "2019": 9.0,
+    "2025": 12.0
+   },
+   "precio_sube_pct": 73.7,
+   "minutos_sube_pct": 37.4
+  },
+  "cafe": {
+   "nombre_epf": "Café, no en cápsulas y sustitutivos del café",
+   "paquete": "el paquete de café de 250 g",
+   "precio_unidad_epf_eur": {
+    "2016": 8.87,
+    "2019": 7.93,
+    "2025": 13.11
+   },
+   "valor_unitario_ine": {
+    "2016": 8.87,
+    "2019": 7.93,
+    "2025": 13.11
+   },
+   "precio_calculado_con": {
+    "2016": "valor unitario del INE",
+    "2019": "valor unitario del INE",
+    "2025": "valor unitario del INE"
+   },
+   "precio_paquete_eur": {
+    "2016": 2.22,
+    "2019": 1.98,
+    "2025": 3.28
+   },
+   "minutos_mediana": {
+    "2016": 13.0,
+    "2019": 11.0,
+    "2025": 15.2
+   },
+   "minutos_media": {
+    "2016": 11.1,
+    "2019": 9.4,
+    "2025": 12.9
+   },
+   "precio_sube_pct": 47.8,
+   "minutos_sube_pct": 16.9
+  },
+  "naranjas": {
+   "nombre_epf": "Cítricos (frescos o refrigerados)",
+   "paquete": "el kilo de naranjas y otros cítricos",
+   "precio_unidad_epf_eur": {
+    "2016": 1.276,
+    "2019": 1.305,
+    "2025": 1.887
+   },
+   "valor_unitario_ine": {
+    "2016": 1.28,
+    "2019": 1.31,
+    "2025": 1.89
+   },
+   "precio_calculado_con": {
+    "2016": "gasto / cantidad",
+    "2019": "gasto / cantidad",
+    "2025": "gasto / cantidad"
+   },
+   "precio_paquete_eur": {
+    "2016": 1.28,
+    "2019": 1.31,
+    "2025": 1.89
+   },
+   "minutos_mediana": {
+    "2016": 7.5,
+    "2019": 7.2,
+    "2025": 8.7
+   },
+   "minutos_media": {
+    "2016": 6.4,
+    "2019": 6.2,
+    "2025": 7.4
+   },
+   "precio_sube_pct": 47.9,
+   "minutos_sube_pct": 17.0
+  },
+  "zumo": {
+   "nombre_epf": "Zumos de frutas y/o vegetales sin leche añadida",
+   "paquete": "el litro de zumo",
+   "precio_unidad_epf_eur": {
+    "2016": 1.07,
+    "2019": 1.174,
+    "2025": 1.516
+   },
+   "valor_unitario_ine": {
+    "2016": 1.07,
+    "2019": 1.18,
+    "2025": 1.52
+   },
+   "precio_calculado_con": {
+    "2016": "gasto / cantidad",
+    "2019": "gasto / cantidad",
+    "2025": "gasto / cantidad"
+   },
+   "precio_paquete_eur": {
+    "2016": 1.07,
+    "2019": 1.17,
+    "2025": 1.52
+   },
+   "minutos_mediana": {
+    "2016": 6.3,
+    "2019": 6.5,
+    "2025": 7.0
+   },
+   "minutos_media": {
+    "2016": 5.4,
+    "2019": 5.6,
+    "2025": 6.0
+   },
+   "precio_sube_pct": 41.6,
+   "minutos_sube_pct": 12.1
+  },
+  "leche": {
+   "nombre_epf": "Leche entera de origen animal",
+   "paquete": "el litro de leche entera",
+   "precio_unidad_epf_eur": {
+    "2016": 0.793,
+    "2019": 0.784,
+    "2025": 1.078
+   },
+   "valor_unitario_ine": {
+    "2016": 0.79,
+    "2019": 0.78,
+    "2025": 1.08
+   },
+   "precio_calculado_con": {
+    "2016": "gasto / cantidad",
+    "2019": "gasto / cantidad",
+    "2025": "gasto / cantidad"
+   },
+   "precio_paquete_eur": {
+    "2016": 0.79,
+    "2019": 0.78,
+    "2025": 1.08
+   },
+   "minutos_mediana": {
+    "2016": 4.6,
+    "2019": 4.3,
+    "2025": 5.0
+   },
+   "minutos_media": {
+    "2016": 4.0,
+    "2019": 3.7,
+    "2025": 4.3
+   },
+   "precio_sube_pct": 36.0,
+   "minutos_sube_pct": 7.6
+  },
+  "azucar": {
+   "nombre_epf": "Azúcar (de caña y remolacha)",
+   "paquete": "el kilo de azúcar",
+   "precio_unidad_epf_eur": {
+    "2016": 0.98,
+    "2019": 1.01,
+    "2025": 1.28
+   },
+   "valor_unitario_ine": {
+    "2016": 0.98,
+    "2019": 1.01,
+    "2025": 1.28
+   },
+   "precio_calculado_con": {
+    "2016": "valor unitario del INE",
+    "2019": "valor unitario del INE",
+    "2025": "valor unitario del INE"
+   },
+   "precio_paquete_eur": {
+    "2016": 0.98,
+    "2019": 1.01,
+    "2025": 1.28
+   },
+   "minutos_mediana": {
+    "2016": 5.7,
+    "2019": 5.6,
+    "2025": 5.9
+   },
+   "minutos_media": {
+    "2016": 4.9,
+    "2019": 4.8,
+    "2025": 5.0
+   },
+   "precio_sube_pct": 30.6,
+   "minutos_sube_pct": 3.3
+  },
+  "aceite": {
+   "nombre_epf": "Aceite de oliva",
+   "paquete": "el litro de aceite de oliva",
+   "precio_unidad_epf_eur": {
+    "2016": 3.81,
+    "2019": 3.42,
+    "2025": 4.95
+   },
+   "valor_unitario_ine": {
+    "2016": 3.81,
+    "2019": 3.42,
+    "2025": 4.95
+   },
+   "precio_calculado_con": {
+    "2016": "valor unitario del INE",
+    "2019": "valor unitario del INE",
+    "2025": "valor unitario del INE"
+   },
+   "precio_paquete_eur": {
+    "2016": 3.81,
+    "2019": 3.42,
+    "2025": 4.95
+   },
+   "minutos_mediana": {
+    "2016": 22.3,
+    "2019": 18.9,
+    "2025": 22.9
+   },
+   "minutos_media": {
+    "2016": 19.1,
+    "2019": 16.2,
+    "2025": 19.5
+   },
+   "precio_sube_pct": 29.9,
+   "minutos_sube_pct": 2.8
+  },
+  "pan": {
+   "nombre_epf": "Pan",
+   "paquete": "la barra de pan de 250 g",
+   "precio_unidad_epf_eur": {
+    "2016": 2.57,
+    "2019": 2.794,
+    "2025": 3.281
+   },
+   "valor_unitario_ine": {
+    "2016": 2.57,
+    "2019": 2.8,
+    "2025": 3.28
+   },
+   "precio_calculado_con": {
+    "2016": "gasto / cantidad",
+    "2019": "gasto / cantidad",
+    "2025": "gasto / cantidad"
+   },
+   "precio_paquete_eur": {
+    "2016": 0.64,
+    "2019": 0.7,
+    "2025": 0.82
+   },
+   "minutos_mediana": {
+    "2016": 3.8,
+    "2019": 3.9,
+    "2025": 3.8
+   },
+   "minutos_media": {
+    "2016": 3.2,
+    "2019": 3.3,
+    "2025": 3.2
+   },
+   "precio_sube_pct": 27.6,
+   "minutos_sube_pct": 1.0
+  }
+ },
+ "orden_por_subida_en_minutos": [
+  "cacao",
+  "huevos",
+  "naranjas",
+  "cafe",
+  "zumo",
+  "leche",
+  "azucar",
+  "aceite",
+  "pan"
+ ],
+ "mas_minutos_que_en_2016": [
+  "cacao",
+  "huevos",
+  "naranjas",
+  "cafe",
+  "zumo",
+  "leche"
+ ],
+ "casi_igual": [
+  "azucar",
+  "aceite",
+  "pan"
+ ],
+ "menos_minutos": [],
+ "tostada_aguacate_salmon": {
+  "receta_kg": {
+   "pan": 0.05,
+   "aguacate": 0.08,
+   "queso_crema": 0.025,
+   "salmon": 0.03
+  },
+  "grupo_epf": {
+   "pan": "Pan",
+   "aguacate": "Aguacate, mango y otras frutas tropicales (frescas o refrigeradas)",
+   "queso_crema": "Queso y requesón de origen animal y no animal",
+   "salmon": "Pescados y mariscos secos, salados, en salmuera o ahumados"
+  },
+  "precio_kg": {
+   "pan": {
+    "2016": 2.57,
+    "2019": 2.8,
+    "2025": 3.28
+   },
+   "aguacate": {
+    "2016": 1.92,
+    "2019": 2.21,
+    "2025": 4.29
+   },
+   "queso_crema": {
+    "2016": 9.66,
+    "2019": 9.92,
+    "2025": 11.15
+   },
+   "salmon": {
+    "2016": 18.52,
+    "2019": 20.76,
+    "2025": 26.24
+   }
+  },
+  "subida_precio_grupo_pct": {
+   "pan": 27.6,
+   "aguacate": 123.4,
+   "queso_crema": 15.4,
+   "salmon": 41.7
+  },
+  "precio_eur": {
+   "2016": 1.08,
+   "2019": 1.19,
+   "2025": 1.57
+  },
+  "minutos_mediana": {
+   "2016": 6.3,
+   "2019": 6.6,
+   "2025": 7.3
+  },
+  "precio_sube_pct": 45.8,
+  "minutos_sube_pct": 15.3
+ },
+ "bar": {
+  "ipc_restauracion_media_anual": {
+   "2016": 92.072,
+   "2019": 96.997,
+   "2025": 122.743
+  },
+  "precios_suben_pct": 33.3,
+  "tiempo_sube_pct": 5.5
+ }
+}

@@ -1,0 +1,66 @@
+plano 1: «¿Hay más pobres que antes? Porque mi madre lleva veinte años en el banco de alimentos y dice que cada vez viene más gente.»
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.934 · 6.2 s · 15.6 l/s · viveza 3.72 st · «Hay más pobres que antes, porque mi madre lleva 20 años en el banco de alimentos y dice que cada vez viene más gente.»
+    toma 2 (semilla 1001): BUENA · 1.0 · voz 0.944 · 6.2 s · 15.5 l/s · viveza 3.27 st · «Hay más pobres que antes, porque mi madre lleva 20 años en el banco de alimentos y dice que cada vez viene más gente.»
+    toma 3 (semilla 1002): BUENA · 1.0 · voz 0.943 · 6.8 s · 14.2 l/s · viveza 4.12 st · «¿Hay más pobres que antes? Porque mi madre lleva 20 años en el banco de alimentos y dice que cada vez viene más gente.»
+    elegida la toma con más entonación: semilla 1002 (4.12 st)
+plano 2: «Hombre claro hijo. Esto está peor que en la crisis.»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.898 · 3.3 s · 12.3 l/s · viveza 3.07 st · «Hombre claro hijo, esto está peor que en la crisis.»
+    toma 2 (semilla 2001): BUENA · 1.0 · voz 0.881 · 3.2 s · 12.7 l/s · viveza 1.98 st · «Hombre claro hijo, esto está peor que en la crisis.»
+    toma 3 (semilla 2002): BUENA · 1.0 · voz 0.917 · 3.0 s · 13.2 l/s · viveza 2.94 st · «Hombre claro hijo, esto está peor que en la crisis.»
+    elegida la toma con más entonación: semilla 2000 (3.07 st)
+plano 3: «Pues mira. Con la misma vara de 2008 hay menos pobres que nunca… el 17,5 %. En 2016 casi el 30 %.»
+    toma 1 (semilla 3000): mala · 1.0 · voz 0.944 · 9.1 s · 13.7 l/s · «Pues mira, con la misma vara de 2008 hay menos pobres que nunca, el 17,5%. En 2016 casi el 30%.» · sin pausa tras «nunca…» (0.28 s)
+    toma 2 (semilla 3001): BUENA · 1.0 · voz 0.951 · 9.6 s · 13.0 l/s · viveza 3.44 st · «Pues mira, con la misma vara de 2008 hay menos pobres que nunca, el 17,5%. En 2016 casi el 30%.»
+    toma 3 (semilla 3002): BUENA · 1.0 · voz 0.94 · 9.4 s · 13.4 l/s · viveza 3.57 st · «Pues mira, con la misma vara de 2008 hay menos pobres que nunca. El 17,5%. En 2016, casi el 30%.»
+    toma 4 (semilla 3003): BUENA · 1.0 · voz 0.953 · 9.2 s · 13.5 l/s · viveza 3.96 st · «Pues mira, con la misma vara de 2008 hay menos pobres que nunca, el 17,5%, en 2016 casi el 30%.»
+    elegida la toma con más entonación: semilla 3003 (3.96 st)
+plano 4: «Anda ya… ¿y entonces quién viene aquí?»
+    toma 1 (semilla 4000): mala · 1.0 · voz 0.776 · 2.6 s · 11.3 l/s · «¿Anda ya? ¿Y entonces quién viene aquí?» · voz distinta (0.78)
+    toma 2 (semilla 4001): mala · 1.0 · voz 0.798 · 2.2 s · 13.4 l/s · «Anda ya, ¿y entonces quién viene aquí?» · voz distinta (0.80)
+    toma 3 (semilla 4002): mala · 1.0 · voz 0.837 · 2.4 s · 12.3 l/s · «¿Anda ya? ¿Y entonces quién viene aquí?» · voz distinta (0.84)
+    toma 4 (semilla 4003): mala · 1.0 · voz 0.834 · 2.6 s · 11.3 l/s · «¿Anda ya? ¿Y entonces quién viene aquí?» · voz distinta (0.83)
+    toma 5 (semilla 4004): mala · 1.0 · voz 0.794 · 2.2 s · 13.3 l/s · «¿Anda ya? Y entonces, ¿quién viene aquí?» · voz distinta (0.79)
+    toma 6 (semilla 4005): BUENA · 1.0 · voz 0.878 · 2.6 s · 11.3 l/s · viveza 1.32 st · «Anda ya, y entonces, ¿quién viene aquí?»
+    toma 7 (semilla 4006): mala · 1.0 · voz 0.83 · 2.6 s · 11.0 l/s · «¿Anda ya? ¿Y entonces quién viene aquí?» · voz distinta (0.83)
+plano 5: «Con la vara de cada año seguimos como en 2008… uno de cada cinco.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.907 · 3.8 s · 14.6 l/s · viveza 3.63 st · «Con la vara de cada año seguimos como en 2008, uno de cada cinco.»
+    toma 2 (semilla 5001): BUENA · 1.0 · voz 0.898 · 4.2 s · 13.5 l/s · viveza 2.57 st · «Con la vara de cada año seguimos como en 2008, uno de cada cinco.»
+    toma 3 (semilla 5002): BUENA · 1.0 · voz 0.914 · 4.4 s · 12.8 l/s · viveza 4.07 st · «Con la vara de cada año seguimos como en 2008, uno de cada cinco.»
+    elegida la toma con más entonación: semilla 5002 (4.07 st)
+plano 6: «Y lo que ha empeorado es lo básico. Los que no pueden comer carne o pescado cada dos días son más del doble que en 2008.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.94 · 7.4 s · 13.4 l/s · viveza 2.85 st · «Y lo que ha empeorado es lo básico. Los que no pueden comer carne o pescado cada dos días son más del doble que en 2008.»
+    toma 2 (semilla 6001): BUENA · 1.0 · voz 0.942 · 7.0 s · 14.2 l/s · viveza 3.2 st · «Y lo que ha empeorado es lo básico. Los que no pueden comer carne o pescado cada dos días son más del doble que en 2008.»
+    toma 3 (semilla 6002): BUENA · 1.0 · voz 0.955 · 7.3 s · 13.5 l/s · viveza 3.42 st · «Y lo que ha empeorado es lo básico, los que no pueden comer carne o pescado cada dos días son más del doble que en 2008.»
+    elegida la toma con más entonación: semilla 6002 (3.42 st)
+plano 7: «Y casi 4 de cada 10 no podrían pagar un gasto imprevisto. En 2008 eran 3.»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.944 · 5.2 s · 13.8 l/s · viveza 4.21 st · «y casi 4 de cada 10 no podrían pagar un gasto imprevisto. En 2008 eran 3.»
+    toma 2 (semilla 7001): BUENA · 1.0 · voz 0.91 · 5.0 s · 14.5 l/s · viveza 3.47 st · «Y casi 4 de cada 10 no podrían pagar un gasto imprevisto. En 2008 eran 3.»
+    toma 3 (semilla 7002): BUENA · 1.0 · voz 0.949 · 5.6 s · 12.9 l/s · viveza 3.8 st · «y casi 4 de cada 10 no podrían pagar un gasto imprevisto. En 2008 eran 3.»
+    elegida la toma con más entonación: semilla 7000 (4.21 st)
+plano 8: «¿Ves? Eso es lo que yo veo aquí todos los días.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.875 · 3.1 s · 10.8 l/s · viveza 2.36 st · «¿Ves? Eso es lo que yo veo aquí todos los días.»
+    toma 2 (semilla 8001): BUENA · 1.0 · voz 0.885 · 3.4 s · 9.9 l/s · viveza 2.42 st · «¿Ves? Eso es lo que yo veo aquí todos los días.»
+    toma 3 (semilla 8002): BUENA · 1.0 · voz 0.861 · 3.2 s · 10.6 l/s · viveza 2.51 st · «¿Ves? Eso es lo que yo veo aquí todos los días.»
+    elegida la toma con más entonación: semilla 8002 (2.51 st)
+plano 9: «O sea que hay menos pobres en la estadística pero más gente que no llega a lo básico. ¿Y tú podrías pagar mañana un gasto que no esperabas?»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.909 · 7.6 s · 14.3 l/s · viveza 2.35 st · «O sea que hay menos pobres en la estadística, pero más gente que no llega a lo básico. ¿Y tú podrías pagar mañana un gasto que no esperabas?»
+    toma 2 (semilla 9001): BUENA · 1.0 · voz 0.859 · 6.9 s · 15.7 l/s · viveza 1.43 st · «O sea que hay menos pobres en la estadística, pero más gente que no llega a lo básico. ¿Y tú podrías pagar mañana un gasto que no esperabas?»
+    toma 3 (semilla 9002): BUENA · 1.0 · voz 0.886 · 7.0 s · 15.5 l/s · viveza 2.58 st · «O sea que hay menos pobres en la estadística, pero más gente que no llega a lo básico. ¿Y tú podrías pagar mañana un gasto que no esperabas?»
+    elegida la toma con más entonación: semilla 9002 (2.58 st)
+duración total 53.8 s · escrito videos/t27/audio/linea_tiempo.json

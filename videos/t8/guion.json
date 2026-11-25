@@ -1,0 +1,402 @@
+{
+ "id": "t8",
+ "version": 2,
+ "titulo": "¿Cuánto de tu sueldo se queda el Estado?",
+ "titulo_alternativo": "Padre contra hijo (6): con el mismo sueldo, hoy te queda menos",
+ "pregunta": "Padre (62) contra hijo (31), sexta parte: con el mismo sueldo, ¿te queda hoy menos que a tus padres?",
+ "datos": "data/clean/t8_impuestos_sueldo.json",
+ "aprobacion_datos": "Versión 2 (Bruno, 18-11-2026): balance de lo que ha empeorado; carburante con los impuestos de la ley, sin rebajas temporales; fuera el cajero, el IVA del pan y los ahorros. Bruno: «no me preguntes, ponte a editar». Datos de la versión 1 aprobados el 18-11-2026",
+ "formato": "Sexta parte de padre contra hijo: mismos personajes y voces; decorados como en un sueño (cocina, banco, súper, gasolinera, cocina). Los personajes andan y gesticulan. El hijo le da la razón al padre con datos. Sin veredicto hablado: acaba con la pregunta.",
+ "duracion_max_s": 85,
+ "personajes": {
+  "padre": {
+   "anyo": "62 años",
+   "genero": "padre"
+  },
+  "hijo": {
+   "anyo": "31 años",
+   "genero": "hijo"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "Formato padre-hijo: acaba con la pregunta al espectador (Bruno, 15-11-2026). El veredicto va en la descripción.",
+ "capitulos": [
+  {
+   "nombre": "La nómina",
+   "beats": [
+    1,
+    2
+   ]
+  },
+  {
+   "nombre": "Banca",
+   "beats": [
+    3,
+    4
+   ]
+  },
+  {
+   "nombre": "IVA",
+   "beats": [
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "nombre": "Gasóleo",
+   "beats": [
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    11
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "padre",
+   "funcion": "gancho: la nómina",
+   "voz": "¡Menuda nómina! En mis tiempos Hacienda no te sangraba así.",
+   "pantalla": "¿Cuánto de tu sueldo se queda el Estado?",
+   "sello": null,
+   "imagen": "La cocina. El padre agita la nómina del hijo; una lupa sobre las retenciones."
+  },
+  {
+   "n": 2,
+   "quien": "hijo",
+   "funcion": "dato: el mismo sueldo, menos limpio",
+   "voz": "Pues tienes razón: con el mismo sueldo, hoy me quedan 625 € menos al año que en 2006, y 405 menos que en 1986.",
+   "pantalla": "Lo que te queda limpio al año, en euros de hoy · 1986: 24.758 € · 2006: 24.978 € · 2026: 24.353 €",
+   "nota": "Con el sueldo medio de hoy: 31.335 € brutos (INE). Hoy, 625 € menos que en 2006 y 405 menos que en 1986",
+   "sello": "CÁLCULO PROPIO con las normas del BOE de cada año (cotizaciones e IRPF; Madrid hoy) · INE (sueldo medio e IPC)",
+   "grafico": true,
+   "imagen": "En la cocina. Tres fajos de billetes, lo que le queda limpio cada año; del de hoy se escapa un billete: «−625 € al año»."
+  },
+  {
+   "n": 3,
+   "quien": "padre",
+   "funcion": "réplica: el que gana bien",
+   "voz": "¿Y uno de banca, que gana bien?",
+   "pantalla": "«¿Y uno de banca?»",
+   "sello": null,
+   "imagen": "La cocina se deshace y están en la oficina de un banco. El padre se ajusta la corbata imaginaria."
+  },
+  {
+   "n": 4,
+   "quien": "hijo",
+   "funcion": "dato: banca",
+   "voz": "Con 40.000 € de hoy, el Estado se quedaba 40 de cada 100 en 1986. Hoy, 43: 960 € menos en su bolsillo.",
+   "pantalla": "Empleado de banca · al Estado, de cada 100 € que cuesta · 1986: 40 · 2006: 41 · 2026: 43",
+   "nota": "Gana 40.000 € brutos de hoy (con el IPC: 1.958.000 pesetas en 1986 y 26.407 € en 2006). En euros de hoy le llegan 960 € menos que en 1986",
+   "sello": "CÁLCULO PROPIO con las normas del BOE de cada año (salario mínimo, cotizaciones e IRPF; Madrid hoy)",
+   "grafico": true,
+   "imagen": "Un billete de 100 € se parte: la parte del Estado crece de 40 a 43. Una moneda se escapa del bolsillo del empleado."
+  },
+  {
+   "n": 5,
+   "quien": "padre",
+   "funcion": "réplica: la compra",
+   "voz": "¡Y luego vas a la compra y otra vez a pagar!",
+   "pantalla": "«¡Y luego, la compra!»",
+   "sello": null,
+   "imagen": "El banco se deshace y están en un pasillo del súper. El padre empuja el carro."
+  },
+  {
+   "n": 6,
+   "quien": "hijo",
+   "funcion": "dato: IVA de la carne",
+   "voz": "La carne y el pescado pagaban un 6 % de IVA en 1986. Hoy, un 10.",
+   "pantalla": "IVA de la carne y el pescado · 1986: 6 % · 2006: 7 % · 2026: 10 %",
+   "nota": "También el resto de la comida que no es básica y el bar",
+   "sello": "DATO OFICIAL · BOE (leyes del IVA de 1985 y 1992)",
+   "grafico": true,
+   "imagen": "Un filete con su etiqueta de IVA, que sube de 6 a 7 y a 10; tres barras."
+  },
+  {
+   "n": 7,
+   "quien": "hijo",
+   "funcion": "dato: IVA de la ropa",
+   "voz": "Y la ropa, del 12 al 21.",
+   "pantalla": "IVA de la ropa · 1986: 12 % · 2006: 16 % · 2026: 21 %",
+   "nota": "El 12, 16 y 21 % es el tipo general: también la luz, el móvil y casi todo lo demás",
+   "sello": "DATO OFICIAL · BOE (leyes del IVA de 1985 y 1992)",
+   "grafico": true,
+   "imagen": "Una camiseta con su etiqueta: el IVA sube de 12 a 16 y a 21."
+  },
+  {
+   "n": 8,
+   "quien": "padre",
+   "funcion": "réplica: gasolina",
+   "voz": "¡Y la gasolina, que es todo impuestos!",
+   "pantalla": "«¡La gasolina es todo impuestos!»",
+   "sello": null,
+   "imagen": "El súper se deshace y están en una gasolinera. El padre llena el depósito y mira el surtidor."
+  },
+  {
+   "n": 9,
+   "quien": "hijo",
+   "funcion": "dato: el gasóleo, más caro",
+   "voz": "Y cada vez más cara: el gasóleo, ya descontada la inflación, cuesta un 27 % más que en 2006 y un 39 % más que en 2016.",
+   "pantalla": "Litro de gasóleo, en euros de hoy · 2006: 1,45 € · 2016: 1,33 € · 2026: 1,85 €",
+   "nota": "Gasolina 95: 1,57 € en 2006, 1,51 € en 2016 y 1,77 € en 2026. Media de cada año",
+   "sello": "DATO OFICIAL · Comisión Europea (boletín petrolero) · impuestos de la ley · cálculo propio con el IPC del INE",
+   "grafico": true,
+   "imagen": "En la gasolinera. El contador del surtidor corre y marca el precio de cada año; tres barras, la de hoy la más alta."
+  },
+  {
+   "n": 10,
+   "quien": "hijo",
+   "funcion": "dato: más IVA por litro",
+   "voz": "Y como el IVA va en porcentaje, cuanto más cara, más se lleva Hacienda: 20 céntimos de hoy por litro en 2006, y 32 ahora.",
+   "pantalla": "IVA de cada litro de gasóleo, en euros de hoy · 2006: 0,20 € · 2016: 0,23 € · 2026: 0,32 €",
+   "nota": "IVA del 16 % en 2006 y del 21 % hoy, sobre un litro cada vez más caro",
+   "sello": "DATO OFICIAL · Comisión Europea (boletín petrolero) · cálculo propio con el IPC del INE",
+   "grafico": true,
+   "imagen": "Tres gotas de IVA que caen del surtidor y crecen; la de hoy, la más grande."
+  },
+  {
+   "n": 11,
+   "quien": "hijo",
+   "funcion": "pregunta para el debate",
+   "voz": "¿Pagamos mucho o poco al Estado? ¿Tú qué opinas?",
+   "pantalla": "¿Pagamos mucho o poco al Estado?",
+   "sello": null,
+   "imagen": "La gasolinera se deshace y vuelven a la cocina. Dos botones: MUCHO y POCO; cada uno señala el suyo y acaban mirando a cámara."
+  }
+ ],
+ "no_dato": [
+  "100",
+  "95"
+ ],
+ "cifras": [
+  {
+   "texto": "625",
+   "ruta": "sueldo_medio.menos_que_2006",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "405",
+   "ruta": "sueldo_medio.menos_que_1986",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "24.758",
+   "ruta": "sueldo_medio.1986.neto_en_euros_de_2026",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "24.978",
+   "ruta": "sueldo_medio.2006.neto_en_euros_de_2026",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "24.353",
+   "ruta": "sueldo_medio.2026.neto_en_euros_de_2026",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "31.335",
+   "ruta": "sueldo_medio.bruto_en_euros_de_2026",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "40.000",
+   "ruta": "casos.banca.2026.bruto",
+   "decimales": 0,
+   "estado": "V",
+   "miles": true
+  },
+  {
+   "texto": "40",
+   "ruta": "casos.banca.1986.pct_estado_del_coste",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "41",
+   "ruta": "casos.banca.2006.pct_estado_del_coste",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "43",
+   "ruta": "casos.banca.2026.pct_estado_del_coste",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "960",
+   "decimales": 0,
+   "estado": "C",
+   "op": "resta",
+   "rutas": [
+    "casos.banca.2026.en_euros_de_2026.neto",
+    "casos.banca.1986.en_euros_de_2026.neto"
+   ]
+  },
+  {
+   "texto": "1.958.000",
+   "ruta": "casos.banca.1986.bruto",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "26.407",
+   "ruta": "casos.banca.2006.bruto",
+   "decimales": 0,
+   "estado": "C",
+   "miles": true
+  },
+  {
+   "texto": "6",
+   "ruta": "iva_pct.resto_de_la_comida_carne_pescado.1986",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "7",
+   "ruta": "iva_pct.resto_de_la_comida_carne_pescado.2006",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "10",
+   "ruta": "iva_pct.resto_de_la_comida_carne_pescado.2026",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "12",
+   "ruta": "iva_pct.ropa_y_calzado.1986",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "16",
+   "ruta": "iva_pct.ropa_y_calzado.2006",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "21",
+   "ruta": "iva_pct.ropa_y_calzado.2026",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "27",
+   "ruta": "carburante.gasoleo.sube_pct_real.2006",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "39",
+   "ruta": "carburante.gasoleo.sube_pct_real.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "1,45",
+   "ruta": "carburante.gasoleo.2006.en_euros_de_2026.precio",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "1,33",
+   "ruta": "carburante.gasoleo.2016.en_euros_de_2026.precio",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "1,85",
+   "ruta": "carburante.gasoleo.2026.en_euros_de_2026.precio",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "1,57",
+   "ruta": "carburante.gasolina95.2006.en_euros_de_2026.precio",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "1,51",
+   "ruta": "carburante.gasolina95.2016.en_euros_de_2026.precio",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "1,77",
+   "ruta": "carburante.gasolina95.2026.en_euros_de_2026.precio",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "20",
+   "ruta": "carburante.gasoleo.2006.en_euros_de_2026.iva_por_litro",
+   "decimales": 0,
+   "estado": "C",
+   "escala": 100
+  },
+  {
+   "texto": "32",
+   "ruta": "carburante.gasoleo.2026.en_euros_de_2026.iva_por_litro",
+   "decimales": 0,
+   "estado": "C",
+   "escala": 100
+  },
+  {
+   "texto": "0,20",
+   "ruta": "carburante.gasoleo.2006.en_euros_de_2026.iva_por_litro",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "0,23",
+   "ruta": "carburante.gasoleo.2016.en_euros_de_2026.iva_por_litro",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "0,32",
+   "ruta": "carburante.gasoleo.2026.en_euros_de_2026.iva_por_litro",
+   "decimales": 2,
+   "estado": "C"
+  }
+ ],
+ "comprobaciones": [
+  "«625 € menos al año que en 2006. Y 405 menos que en 1986» (C): sueldo medio bruto de 2024 (INE, EAES: 29.540 €) pasado a euros de 2026 con el IPC (31.335 €) y el mismo poder de compra en 1986 y 2006; neto = bruto − cotizaciones del trabajador − IRPF con las normas del BOE de cada año (Madrid en 2026), en euros de 2026.",
+  "«el Estado se quedaba 40 de cada 100 en 1986. Hoy, 43: 960 € menos» (C): empleado de banca con 40.000 € brutos de 2026, igual que en la versión 1.",
+  "«La carne y el pescado pagaban un 6 % de IVA en 1986. Hoy, un 10» (V): Ley 30/1985 (6 %), Ley 37/1992 en 2006 (7 %) y hoy (10 %). «Y la ropa, del 12 al 21» (V): tipo general.",
+  "«el gasóleo, ya descontada la inflación, cuesta un 27 % más que en 2006 y un 39 % más que en 2016» (C): Comisión Europea, boletín petrolero, media anual del precio en España (2006: 0,959 €; 2016: 1,012 €), en euros de 2026 con el IPC. 2026: precio medio antes de impuestos de enero a noviembre (1,150 €) más los impuestos que fija la ley (Ley 38/1992, art. 50: 307 + 72 € por 1.000 litros; IVA del 21 %) = 1,85 €. Sin las rebajas temporales de 2026 (decisión de Bruno, 18-11-2026).",
+  "«20 céntimos de hoy por litro en 2006, y 32 ahora» (C): IVA de cada litro = precio × IVA / (100 + IVA), en euros de 2026."
+ ],
+ "cierre": {
+  "veredicto": "empeora. Con el mismo sueldo real, hoy le queda limpio menos que en 2006 y que en 1986 (sueldo medio: 625 € y 405 € menos al año; con 40.000 €: el Estado se queda 43 de cada 100 € que cuesta, frente a 40 en 1986, y llegan 960 € menos). El IVA de la carne ha pasado del 6 al 10 % y el de la ropa y casi todo, del 12 al 21 %. El gasóleo cuesta un 27 % más que en 2006 y un 39 % más que en 2016, ya descontada la inflación, y su IVA por litro ha pasado de 20 a 32 céntimos de hoy",
+  "porque": "BOE de cada año (cotizaciones, IRPF, IVA e impuestos especiales), INE (sueldo medio e IPC) y boletín petrolero de la Comisión Europea; IRPF de hoy con la escala de la Comunidad de Madrid; carburante de 2026 con los impuestos de la ley.",
+  "pregunta": "¿Pagamos mucho o poco al Estado? ¿Tú qué opinas?"
+ },
+ "aprobacion_guion": "Versión 2 decidida por Claude por encargo de Bruno (18-11-2026: «Decídelo tú todo. Y no me preguntes»)"
+}

@@ -1,0 +1,50 @@
+{
+ "huella": "a3b0c7c94eaf970f",
+ "semilla": 8000,
+ "texto": "Y hacia Galicia o Asturias, poco más de la mitad. En 2019, tres de cada cuatro.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0475,
+  "oido": "y hacia Galicia o Asturias poco más de la mitad. En 2019, 3 de cada 4.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.3,
+   0.76,
+   1.02,
+   1.56,
+   2.0,
+   2.26,
+   2.38,
+   2.44,
+   3.36,
+   3.58,
+   4.96,
+   5.32,
+   5.48,
+   5.64
+  ],
+  "t1": [
+   0.14,
+   0.3,
+   0.76,
+   1.02,
+   1.56,
+   2.0,
+   2.26,
+   2.38,
+   2.44,
+   2.64,
+   3.58,
+   4.24,
+   5.32,
+   5.48,
+   5.64,
+   5.94
+  ],
+  "ritmo": 11.7,
+  "voz": 0.945
+ }
+}

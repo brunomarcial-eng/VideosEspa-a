@@ -1,0 +1,40 @@
+{
+ "huella": "389e7a69dc6b2f44",
+ "semilla": 5000,
+ "texto": "Luego, protocolo contra el acoso, prohibido fumar, alérgenos y desconexión digital.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0199,
+  "oido": "Luego, protocolo contra el acoso, prohibido fumar alérgenos y desconexión digital.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.58,
+   1.22,
+   1.42,
+   1.56,
+   2.38,
+   2.94,
+   3.42,
+   4.18,
+   4.28,
+   4.86
+  ],
+  "t1": [
+   0.32,
+   1.22,
+   1.42,
+   1.56,
+   1.94,
+   2.94,
+   3.42,
+   4.18,
+   4.28,
+   4.86,
+   5.16
+  ],
+  "ritmo": 12.6,
+  "voz": 0.89
+ }
+}

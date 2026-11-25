@@ -1,0 +1,49 @@
+{
+ "huella": "586a837b961a2806",
+ "semilla": 9000,
+ "texto": "¿Y fue poco a poco? Qué va. En 2019 le costaba 12,6. El salto vino después.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "y fue poco a poco. ¿Qué va? En 2019 le costaba 12,6. El salto vino después.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.24,
+   0.44,
+   0.56,
+   1.64,
+   1.8,
+   2.36,
+   2.48,
+   3.22,
+   3.64,
+   4.02,
+   4.98,
+   5.1,
+   5.38,
+   5.56
+  ],
+  "t1": [
+   0.12,
+   0.24,
+   0.44,
+   0.56,
+   0.76,
+   1.8,
+   1.92,
+   2.48,
+   3.22,
+   3.64,
+   4.02,
+   4.7,
+   5.1,
+   5.38,
+   5.56,
+   5.84
+  ],
+  "ritmo": 12.4
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "huella": "9389c15c57d3af53",
+ "semilla": 6001,
+ "texto": "¡Pero si pagamos más que nunca!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0202,
+  "oido": "Pero sí, pagamos más que nunca.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.2,
+   0.46,
+   0.74,
+   0.92,
+   1.04
+  ],
+  "t1": [
+   0.2,
+   0.36,
+   0.74,
+   0.92,
+   1.04,
+   1.24
+  ],
+  "ritmo": 16.0,
+  "voz": 0.89
+ }
+}

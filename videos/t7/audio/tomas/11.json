@@ -1,0 +1,32 @@
+{
+ "huella": "8c931f79bb4a9a89",
+ "semilla": 11001,
+ "texto": "¿Y el cine? ¡Ahora es un lujo!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0042,
+  "oido": "Y el cine ahora es un lujo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   0.26,
+   0.58,
+   1.12,
+   1.36,
+   1.46
+  ],
+  "t1": [
+   0.16,
+   0.26,
+   0.58,
+   1.12,
+   1.36,
+   1.46,
+   1.82
+  ],
+  "ritmo": 10.8,
+  "voz": 0.858
+ }
+}

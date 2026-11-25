@@ -1,0 +1,46 @@
+{
+ "huella": "6e9f9ebb5c442ff2",
+ "semilla": 12000,
+ "texto": "¿Y la tostada de moda, con aguacate y salmón? 7,3 minutos. En 2016, 6,3.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0416,
+  "oido": "y la tostada de moda con aguacate y salmón, 7,3 minutos, en 2016, 6,3.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.1,
+   0.18,
+   0.56,
+   0.7,
+   1.12,
+   1.34,
+   1.86,
+   1.98,
+   3.02,
+   3.96,
+   5.1,
+   5.18,
+   6.38
+  ],
+  "t1": [
+   0.1,
+   0.18,
+   0.56,
+   0.7,
+   1.12,
+   1.34,
+   1.86,
+   1.98,
+   2.36,
+   3.96,
+   4.36,
+   5.18,
+   5.62,
+   7.24
+  ],
+  "ritmo": 11.3,
+  "voz": 0.933
+ }
+}

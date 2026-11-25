@@ -1,0 +1,117 @@
+{
+ "nota": "Datos limpios de T24: ¿cuántas horas trabajas para llenar el depósito? (Bruno lo eligió el 24-11-2026).",
+ "deposito_litros": 50,
+ "anos": [
+  "2007",
+  "2013",
+  "2016",
+  "2019",
+  "2025",
+  "hoy"
+ ],
+ "hoy": "octubre de 2026",
+ "crisis": "2013",
+ "filas": {
+  "2007": {
+   "euros_litro": 1.0027,
+   "deposito_euros": 50.13,
+   "neto_hora_mediana": 8.79,
+   "horas_deposito": 5.704,
+   "horas_y_minutos": "5 h 42 min",
+   "h": 5,
+   "min": 42,
+   "jornada_pct": 71.3,
+   "litros_por_hogar": 1346.4
+  },
+  "2013": {
+   "euros_litro": 1.3665,
+   "deposito_euros": 68.33,
+   "neto_hora_mediana": 9.9,
+   "horas_deposito": 6.902,
+   "horas_y_minutos": "6 h 54 min",
+   "h": 6,
+   "min": 54,
+   "jornada_pct": 86.3,
+   "litros_por_hogar": 988.0
+  },
+  "2016": {
+   "euros_litro": 1.0568,
+   "deposito_euros": 52.84,
+   "neto_hora_mediana": 10.27,
+   "horas_deposito": 5.145,
+   "horas_y_minutos": "5 h 09 min",
+   "h": 5,
+   "min": 9,
+   "jornada_pct": 64.3,
+   "gasoleo_euros_litro": 1.0141,
+   "gasolina_euros_litro": 1.1069,
+   "litros_por_hogar": 1030.6
+  },
+  "2019": {
+   "euros_litro": 1.2258,
+   "deposito_euros": 61.29,
+   "neto_hora_mediana": 10.85,
+   "horas_deposito": 5.649,
+   "horas_y_minutos": "5 h 39 min",
+   "h": 5,
+   "min": 39,
+   "jornada_pct": 70.6,
+   "gasoleo_euros_litro": 1.2044,
+   "gasolina_euros_litro": 1.2498,
+   "litros_por_hogar": 1041.6
+  },
+  "2025": {
+   "euros_litro": 1.4157,
+   "deposito_euros": 70.79,
+   "neto_hora_mediana": 12.98,
+   "horas_deposito": 5.453,
+   "horas_y_minutos": "5 h 27 min",
+   "h": 5,
+   "min": 27,
+   "jornada_pct": 68.2,
+   "gasoleo_euros_litro": 1.3843,
+   "gasolina_euros_litro": 1.4412,
+   "litros_por_hogar": 826.7
+  },
+  "hoy": {
+   "euros_litro": 1.7754,
+   "deposito_euros": 88.77,
+   "neto_hora_mediana": 13.64,
+   "horas_deposito": 6.508,
+   "horas_y_minutos": "6 h 30 min",
+   "h": 6,
+   "min": 30,
+   "jornada_pct": 81.3,
+   "gasoleo_euros_litro": 1.8554,
+   "gasolina_euros_litro": 1.7106
+  }
+ },
+ "ipc_octubre_2026_sobre_media_2025": {
+  "gasoleo": 134.037,
+  "gasolina": 118.698
+ },
+ "sube_desde_2025_pct": {
+  "gasoleo": 34.0,
+  "gasolina": 18.7,
+  "sueldo": 5.1
+ },
+ "etcl_semestre": {
+  "2025": 35.84,
+  "2026": 37.66
+ },
+ "horas_mas_que": {
+  "2007": 0.8,
+  "2013": -0.39,
+  "2016": 1.36,
+  "2019": 0.86,
+  "2025": 1.05
+ },
+ "litros_por_hogar_baja_desde_2007_pct": -38.6,
+ "estado": {
+  "precio_2007_2013": "C (microdatos EPF)",
+  "precio_2016_2025": "C (tablas EPF: gasto / litros)",
+  "precio_hoy": "C (EPF 2025 × IPC)",
+  "sueldo": "C (método de T1; hoy con la ETCL)",
+  "litros_2016_2025": "V"
+ }
+}

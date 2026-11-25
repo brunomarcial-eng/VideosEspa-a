@@ -1,0 +1,48 @@
+{
+ "huella": "e7b914fa9d3f4f1d",
+ "semilla": 3000,
+ "texto": "Eso era antes. Ahora gana el Dacia Sandero, y detrás el Clio y el MG.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0489,
+  "oido": "Eso era antes. Ahora gana el Dacia Sandero y detrás el Clio y el MG.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.24,
+   0.48,
+   1.56,
+   1.72,
+   2.04,
+   2.12,
+   2.36,
+   2.82,
+   3.32,
+   3.68,
+   3.84,
+   4.22,
+   4.36,
+   4.46
+  ],
+  "t1": [
+   0.24,
+   0.48,
+   0.8,
+   1.72,
+   2.04,
+   2.12,
+   2.36,
+   2.82,
+   3.32,
+   3.68,
+   3.84,
+   4.22,
+   4.36,
+   4.46,
+   4.68
+  ],
+  "ritmo": 11.2,
+  "voz": 0.948
+ }
+}

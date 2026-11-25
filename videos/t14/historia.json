@@ -1,0 +1,390 @@
+{
+ "nota": "Momentos clave de T14 (el desayuno en minutos de trabajo, 2016 frente a hoy). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t14/escenas.mjs) y el sonido (scripts/sonido.py). Debajo, el ambiente de cada sitio, sin ruido continuo (Bruno, 22-11-2026), y la cafetera del bar calentando la leche: cocina por la mañana, tienda de barrio y bar. La música se corta en seco con el +74 % de los huevos.",
+ "musica": {
+  "bpm": 98,
+  "corte": "c9-74",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "cocina",
+   "desde": 1,
+   "hasta": 3,
+   "vol": 1.0
+  },
+  {
+   "tipo": "tienda",
+   "desde": 4,
+   "hasta": 12,
+   "vol": 1.0
+  },
+  {
+   "tipo": "bar",
+   "desde": 13,
+   "hasta": 13,
+   "vol": 1.0
+  },
+  {
+   "tipo": "cocina",
+   "desde": 14,
+   "hasta": 14,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-cafetera",
+   "beat": 1,
+   "en": "inicio",
+   "dt": -0.6,
+   "sfx": "vapor",
+   "vol": 0.35
+  },
+  {
+   "id": "c1-minutos",
+   "beat": 1,
+   "palabra": "minutos",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c1-desayuno",
+   "beat": 1,
+   "palabra": "desayuno",
+   "dt": -0.1
+  },
+  {
+   "id": "c1-2016",
+   "beat": 1,
+   "palabra": "2016",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c2-mediano",
+   "beat": 2,
+   "palabra": "mediano",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.35
+  },
+  {
+   "id": "c2-19400",
+   "beat": 2,
+   "palabra": "19.400",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-25300",
+   "beat": 2,
+   "palabra": "25.300",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-doble",
+   "beat": 2,
+   "palabra": "doble",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.25
+  },
+  {
+   "id": "c3-mama",
+   "beat": 3,
+   "palabra": "mamá",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-cacao",
+   "beat": 3,
+   "palabra": "cacao",
+   "dt": -0.05,
+   "sfx": "rasgado",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-campanilla",
+   "beat": 4,
+   "en": "inicio",
+   "dt": -0.5,
+   "sfx": "campanilla",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-buenos",
+   "beat": 4,
+   "palabra": "buenos",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-55",
+   "beat": 4,
+   "palabra": "55",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.35
+  },
+  {
+   "id": "c4-2016",
+   "beat": 4,
+   "palabra": "2016",
+   "dt": -0.05
+  },
+  {
+   "id": "c4-40",
+   "beat": 4,
+   "palabra": "40",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-cafe",
+   "beat": 5,
+   "palabra": "café",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-mayores",
+   "beat": 5,
+   "palabra": "mayores",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-libras",
+   "beat": 6,
+   "palabra": "libras",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-15",
+   "beat": 6,
+   "palabra": "15",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3
+  },
+  {
+   "id": "c6-13",
+   "beat": 6,
+   "palabra": "13",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c7-docena",
+   "beat": 7,
+   "palabra": "docena",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.3
+  },
+  {
+   "id": "c7-14",
+   "beat": 7,
+   "palabra": "14",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3
+  },
+  {
+   "id": "c7-10",
+   "beat": 7,
+   "palabra": "10",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c8-sueldo",
+   "beat": 8,
+   "palabra": "sueldo",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.35
+  },
+  {
+   "id": "c9-26",
+   "beat": 9,
+   "palabra": "26",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c9-74",
+   "beat": 9,
+   "palabra": "74",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.45
+  },
+  {
+   "id": "c10-pan",
+   "beat": 10,
+   "palabra": "pan",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-aceite",
+   "beat": 10,
+   "palabra": "aceite",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-mismos",
+   "beat": 10,
+   "palabra": "mismos",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-pan",
+   "beat": 11,
+   "palabra": "pan",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-abuelo",
+   "beat": 11,
+   "palabra": "abuelo",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-lujo",
+   "beat": 11,
+   "palabra": "lujo",
+   "dt": -0.05,
+   "sfx": "campanilla",
+   "vol": 0.3
+  },
+  {
+   "id": "c12-moda",
+   "beat": 12,
+   "palabra": "moda",
+   "dt": -0.1,
+   "sfx": "campanilla",
+   "vol": 0.25
+  },
+  {
+   "id": "c12-73",
+   "beat": 12,
+   "palabra": "7,3",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3
+  },
+  {
+   "id": "c12-63",
+   "beat": 12,
+   "palabra": "6,3",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c13-sueno",
+   "beat": 13,
+   "en": "inicio",
+   "dt": -0.6,
+   "sfx": "sueno",
+   "vol": 0.3
+  },
+  {
+   "id": "c13-churros",
+   "beat": 13,
+   "palabra": "churros",
+   "dt": -0.1
+  },
+  {
+   "id": "c13-33",
+   "beat": 13,
+   "palabra": "33",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c13-26",
+   "beat": 13,
+   "palabra": "26",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c13-leche",
+   "beat": 13,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "leche",
+   "vol": 0.6
+  },
+  {
+   "id": "c14-sueno",
+   "beat": 14,
+   "en": "inicio",
+   "dt": -0.6,
+   "sfx": "sueno",
+   "vol": 0.3
+  },
+  {
+   "id": "c14-nueve",
+   "beat": 14,
+   "palabra": "nueve",
+   "dt": -0.1
+  },
+  {
+   "id": "c14-seis",
+   "beat": 14,
+   "palabra": "seis",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.35
+  },
+  {
+   "id": "c14-ninguno",
+   "beat": 14,
+   "palabra": "ninguno",
+   "dt": -0.05
+  },
+  {
+   "id": "c14-cambiar",
+   "beat": 14,
+   "palabra": "cambiar",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c14-tu",
+   "beat": 14,
+   "palabra": "tú",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  }
+ ]
+}

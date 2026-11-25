@@ -1,0 +1,70 @@
+plano 1: «¿Somos más ricos o más pobres que los europeos? Porque mi padre dice que como en España no se vive en ningún sitio.»
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.905 · 6.8 s · 13.3 l/s · viveza 3.31 st · «¿Somos más ricos o más pobres que los europeos? Porque mi padre dice que como en España no se vive en ningún sitio.»
+    toma 2 (semilla 1001): BUENA · 1.0 · voz 0.914 · 6.7 s · 13.5 l/s · viveza 4.18 st · «¿Somos más ricos o más pobres que los europeos? Porque mi padre dice que como en España no se vive en ningún sitio.»
+    toma 3 (semilla 1002): BUENA · 1.0 · voz 0.92 · 6.4 s · 14.0 l/s · viveza 4.16 st · «Somos más ricos o más pobres que los europeos. Porque mi padre dice que como en España no se vive en ningún sitio.»
+    elegida la toma con más entonación: semilla 1001 (4.18 st)
+plano 2: «Hombre claro. Y encima somos la cuarta economía de Europa ¿o no?»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.919 · 4.5 s · 11.0 l/s · viveza 3.49 st · «Hombre claro y encima somos la cuarta economía de Europa o no?»
+    toma 2 (semilla 2001): BUENA · 1.0 · voz 0.927 · 4.3 s · 11.5 l/s · viveza 2.24 st · «Hombre claro, ¿y encima somos la cuarta economía de Europa o no?»
+    toma 3 (semilla 2002): BUENA · 1.0 · voz 0.88 · 3.7 s · 13.7 l/s · viveza 3.1 st · «Hombre claro. ¿Y encima somos la cuarta economía de Europa o no?»
+    elegida la toma con más entonación: semilla 2000 (3.49 st)
+plano 3: «La cuarta en tamaño sí… pero por persona y con lo que cuestan las cosas aquí estamos en el puesto 14 de 27.»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.908 · 7.5 s · 12.9 l/s · viveza 3.18 st · «La cuarta en tamaño sí, pero por persona y con lo que cuestan las cosas aquí estamos en el puesto 14 de 27.»
+    toma 2 (semilla 3001): BUENA · 1.0 · voz 0.915 · 6.1 s · 16.0 l/s · viveza 3.51 st · «La cuarta en tamaño sí, pero por persona y con lo que cuestan las cosas aquí estamos en el puesto 14 de 27.»
+    toma 3 (semilla 3002): BUENA · 1.0 · voz 0.87 · 6.9 s · 14.1 l/s · viveza 3.13 st · «La cuarta en tamaño sí, pero por persona y con lo que cuestan las cosas aquí estamos en el puesto 14 de 27.»
+    elegida la toma con más entonación: semilla 3001 (3.51 st)
+plano 4: «Anda ya… ¿y eso desde cuándo?»
+    toma 1 (semilla 4000): BUENA · 1.0 · voz 0.906 · 2.4 s · 8.7 l/s · viveza 3.99 st · «¡Anda ya! ¿Y eso desde cuándo?»
+    toma 2 (semilla 4001): BUENA · 1.0 · voz 0.9 · 2.5 s · 8.3 l/s · viveza 4.42 st · «¡Anda ya! ¿Y eso desde cuándo?»
+    toma 3 (semilla 4002): mala · 1.0 · voz 0.822 · 2.0 s · 10.4 l/s · «¿Anda ya? ¿Y eso desde cuándo?» · voz distinta (0.82)
+    toma 4 (semilla 4003): BUENA · 1.0 · voz 0.879 · 2.3 s · 9.2 l/s · viveza 3.74 st · «Anda ya. ¿Y eso desde cuándo?»
+    elegida la toma con más entonación: semilla 4001 (4.42 st)
+plano 5: «En 2007 estábamos un 4 % por encima de la media europea. Hoy un 8 % por debajo.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.936 · 6.4 s · 14.3 l/s · viveza 4.02 st · «En 2007 estábamos un 4% por encima de la media europea, hoy un 8% por debajo.»
+    toma 2 (semilla 5001): BUENA · 1.0 · voz 0.909 · 6.7 s · 13.5 l/s · viveza 4.12 st · «En 2007 estábamos un 4% por encima de la media europea, hoy un 8% por debajo.»
+    toma 3 (semilla 5002): BUENA · 1.0 · voz 0.917 · 7.0 s · 13.0 l/s · viveza 3.59 st · «En 2007 estábamos un 4% por encima de la media europea, hoy un 8% por debajo.»
+    elegida la toma con más entonación: semilla 5001 (4.12 st)
+plano 6: «Y desde la crisis estamos ahí parados… en 2016 igual que hoy.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.943 · 4.9 s · 12.0 l/s · viveza 4.32 st · «Y desde la crisis estamos ahí parados, en 2016 igual que hoy.»
+    toma 2 (semilla 6001): BUENA · 1.0 · voz 0.882 · 4.5 s · 13.0 l/s · viveza 4.39 st · «Y desde la crisis estamos ahí parados, en 2016 igual que hoy.»
+    toma 3 (semilla 6002): BUENA · 1.0 · voz 0.905 · 4.7 s · 12.4 l/s · viveza 3.39 st · «Y desde la crisis estamos ahí parados, en 2016 igual que hoy.»
+    elegida la toma con más entonación: semilla 6001 (4.39 st)
+plano 7: «Bueno pero Italia y Francia también han bajado ¿no?»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.928 · 2.5 s · 16.5 l/s · viveza 2.56 st · «Bueno, pero Italia y Francia también han bajado ¿no?»
+    toma 2 (semilla 7001): BUENA · 1.0 · voz 0.907 · 2.6 s · 15.8 l/s · viveza 2.65 st · «Bueno, pero Italia y Francia también han bajado, ¿no?»
+    toma 3 (semilla 7002): BUENA · 1.0 · voz 0.937 · 2.6 s · 15.6 l/s · viveza 3.9 st · «Bueno, pero Italia y Francia también han bajado, ¿no?»
+    elegida la toma con más entonación: semilla 7002 (3.9 st)
+plano 8: «Sí… pero mira Polonia: en 2007 estaba al 54 % de la media y hoy al 79. Y Chequia ya está al 91… casi como nosotros.»
+    toma 1 (semilla 8000): mala · 0.937 · voz 0.924 · 10.6 s · 12.6 l/s · «Sí, pero mira Polonia, en 2007 estaba al 54% de la media y hoy al 79% y Chequia ya está al 91% casi como nosotros.» · sobran 18 letras (¿repite?); sin pausa tras «91…» (0.26 s)
+    toma 2 (semilla 8001): BUENA · 1.0 · voz 0.926 · 11.7 s · 11.4 l/s · viveza 4.38 st · «Sí. Pero mira, Polonia. En 2007 estaba al 54% de la media y hoy al 79. Y Chequia ya está al 91, casi como nosotros.»
+    toma 3 (semilla 8002): BUENA · 0.985 · voz 0.935 · 11.4 s · 11.7 l/s · viveza 4.25 st · «Sí, pero mira Polonia, en 2007 estaba el 54% de la media y hoy al 79. Y Chequie ya está al 91, casi como nosotros.»
+    toma 4 (semilla 8003): BUENA · 0.993 · voz 0.939 · 11.2 s · 11.9 l/s · viveza 5.03 st · «Sí, pero mira Polonia, en 2007 estaba el 54% de la media y hoy al 79. Y Chequia ya está al 91, casi como nosotros.»
+    elegida la toma con más entonación: semilla 8003 (5.03 st)
+plano 9: «Pues sí que nos están pillando…»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.861 · 1.5 s · 16.2 l/s · viveza 3.82 st · «pues sí que nos están pillando.»
+    toma 2 (semilla 9001): mala · 1.0 · voz 0.843 · 1.5 s · 16.7 l/s · «Pues sí que nos están pillando.» · voz distinta (0.84)
+    toma 3 (semilla 9002): BUENA · 1.0 · voz 0.871 · 1.6 s · 15.8 l/s · viveza 3.81 st · «Pues sí que nos están pillando.»
+    toma 4 (semilla 9003): BUENA · 1.0 · voz 0.897 · 1.5 s · 16.7 l/s · viveza 2.65 st · «pues sí que nos están pillando.»
+    elegida la toma con más entonación: semilla 9000 (3.82 st)
+plano 10: «O sea que en 2007 éramos más ricos que la media y hoy estamos por debajo. ¿Y tú dónde crees que se vive mejor?»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.925 · 6.1 s · 14.8 l/s · viveza 2.59 st · «O sea que en 2007 éramos más ricos que la media y hoy estamos por debajo, y tú donde crees que se vive mejor.»
+    toma 2 (semilla 10001): BUENA · 1.0 · voz 0.955 · 6.8 s · 13.3 l/s · viveza 2.37 st · «O sea que en 2007 éramos más ricos que la media y hoy estamos por debajo. ¿Y tú dónde crees que se vive mejor?»
+    toma 3 (semilla 10002): BUENA · 1.0 · voz 0.935 · 6.3 s · 14.4 l/s · viveza 2.88 st · «O sea que en 2007 éramos más ricos que la media y hoy estamos por debajo. ¿Y tú dónde crees que se vive mejor?»
+    elegida la toma con más entonación: semilla 10002 (2.88 st)
+duración total 58.3 s · escrito videos/t26/audio/linea_tiempo.json

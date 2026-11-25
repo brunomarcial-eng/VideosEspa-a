@@ -1,0 +1,39 @@
+{
+ "huella": "72d5af545cb74d82",
+ "semilla": 4001,
+ "texto": "¿Ves? Más que en 2007. Diez pisos por lo menos.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0076,
+  "oido": "¿Ves? Más que en 2007. 10 pisos por lo menos.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.8,
+   1.2,
+   1.3,
+   1.4,
+   2.54,
+   2.82,
+   3.24,
+   3.42,
+   3.56
+  ],
+  "t1": [
+   0.36000000000000004,
+   1.2,
+   1.3,
+   1.4,
+   1.94,
+   2.82,
+   3.24,
+   3.42,
+   3.56,
+   3.74
+  ],
+  "ritmo": 10.4,
+  "voz": 0.865,
+  "viveza": 4.66
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "huella": "d40d3ea61b3dacfd",
+ "semilla": 9000,
+ "texto": "¿Lo ves? Y aun así, ahorrábamos.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "lo ves, y aun así ahorrabamos.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   1.06,
+   1.16,
+   1.26,
+   1.54
+  ],
+  "t1": [
+   0.18,
+   0.42,
+   1.16,
+   1.26,
+   1.54,
+   2.32
+  ],
+  "ritmo": 9.3
+ }
+}

@@ -1,0 +1,43 @@
+plano 1: «¿Cuántas horas de curro te cuesta la cena de Nochebuena? Mira cómo ha subido lo típico de cada sitio.»
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.948 · 6.0 s · 13.4 l/s · viveza 2.6 st · «¿Cuántas horas de curro te cuesta la cena de noche buena? Mira cómo ha subido lo típico de cada sitio.»
+    toma 2 (semilla 1001): BUENA · 1.0 · voz 0.94 · 6.1 s · 13.2 l/s · viveza 2.8 st · «¿Cuántas horas de curro te cuesta la cena de noche buena? Mira cómo ha subido lo típico de cada sitio.»
+    toma 3 (semilla 1002): BUENA · 1.0 · voz 0.943 · 6.1 s · 13.0 l/s · viveza 3.35 st · «¿Cuántas horas de curro te cuesta la cena de noche buena? Mira cómo ha subido lo típico de cada sitio.»
+    elegida la toma con más entonación: semilla 1002 (3.35 st)
+plano 2: «Este año la cena la pongo yo… qué ilusión. O no.»
+    toma 1 (semilla 2000): mala · 1.0 · voz 0.904 · 4.7 s · 7.5 l/s · «Este año la cena la pongo yo. ¿Qué ilusión? ¿O no?» · ritmo raro (7.5 letras/s)
+    toma 2 (semilla 2001): mala · 1.0 · voz 0.912 · 5.2 s · 6.8 l/s · «Este año la cena la pongo yo ¿Qué ilusión? ¿O no?» · ritmo raro (6.8 letras/s)
+    toma 3 (semilla 2002): mala · 1.0 · voz 0.888 · 4.5 s · 7.8 l/s · «¿Este año la cena la pongo yo? ¿Qué ilusión? ¿O no?» · ritmo raro (7.8 letras/s)
+    toma 4 (semilla 2003): mala · 1.0 · voz 0.91 · 5.0 s · 6.9 l/s · «Este año la cena la pongo yo ¿Qué ilusión o no?» · ritmo raro (6.9 letras/s)
+    toma 5 (semilla 2004): mala · 1.0 · voz 0.891 · 4.7 s · 7.4 l/s · «Este año la cena la pongo yo, ¿qué ilusión o no?» · ritmo raro (7.4 letras/s)
+    toma 6 (semilla 2005): mala · 1.0 · voz 0.915 · 4.6 s · 7.6 l/s · «Este año la cena la pongo yo. ¿Qué ilusión? ¿O no?» · ritmo raro (7.6 letras/s)
+    toma 7 (semilla 2006): BUENA · 1.0 · voz 0.915 · 4.3 s · 8.1 l/s · viveza 2.83 st · «Este año la cena la pongo yo ¿Qué ilusión? ¿O no?»
+plano 3: «Un kilo de marisco guapa son 54 minutos. En 2016 eran 52… o sea casi igual.»
+    toma guardada (semilla 2005): BUENA · «un kilo de marisco guapa son cincuenta y cuatro minutos en dos mil dieciséis eran cincuenta y dos o sea casi igual.»
+plano 4: «¿Una hora por unas gambas? Anda ya… en mis tiempos las pescaba yo.»
+    toma guardada (semilla 3000): BUENA · «Una hora por unas gambas, anda ya, en mis tiempos las pescaba yo.»
+plano 5: «Y el plato fuerte… la pierna de cordero. Veintiocho euros y pico. En 2016 diecinueve. Un 48 % más.»
+    toma guardada (semilla 4000): BUENA · «y el plato fuerte, la pierna de cordero, 28 euros y pico, en 2016 19, un 48% más.»
+plano 6: «O sea dos horas y doce minutos de curro. En 2016 ni dos.»
+    toma guardada (semilla 5000): BUENA · «O sea, dos horas y 12 minutos de curro. En 2016, ni dos.»
+plano 7: «¿Dos horas por una pierna? En mis tiempos el cordero lo teníamos en el corral hombre.»
+    toma guardada (semilla 6000): BUENA · «¿Dos horas por una pierna? En mis tiempos el cordero lo teníamos en el corral hombre.»
+plano 8: «Y la cena para ocho todo junto… dos piernas de cordero, dos kilos de marisco, jamón, queso y cuatro botellas de vino.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.956 · 9.7 s · 9.4 l/s · viveza 2.67 st · «y la cena para ocho todo junto. Dos piernas de cordero, dos kilos de marisco, jamón, queso y cuatro botellas de vino.»
+    toma 2 (semilla 8001): BUENA · 1.0 · voz 0.956 · 9.0 s · 10.1 l/s · viveza 2.2 st · «y la cena para ocho todo junto, dos piernas de cordero, dos kilos de marisco, jamón, queso y cuatro botellas de vino.»
+    toma 3 (semilla 8002): BUENA · 1.0 · voz 0.964 · 10.0 s · 9.1 l/s · viveza 2.37 st · «y la cena para ocho todo junto. Dos piernas de cordero, dos kilos de marisco, jamón, queso y cuatro botellas de vino.»
+    elegida la toma con más entonación: semilla 8000 (2.67 st)
+plano 9: «Todo junto ciento ocho euros. O sea ocho horas y veintiún minutos de curro. En 2016 siete y media… casi una hora más por la misma cena.»
+    toma 1 (semilla 9000): BUENA · 0.996 · voz 0.953 · 9.9 s · 11.7 l/s · viveza 2.76 st · «Todo junto 108 euros, o sea, 8 horas y 21 minutos de curro, en 2016, 7 y media, casi una hora más por la misma cena.»
+    toma 2 (semilla 9001): BUENA · 0.991 · voz 0.957 · 10.5 s · 11.1 l/s · viveza 2.48 st · «todo junto a 108 euros, o sea, 8 horas y 21 minutos de curro, en 2016, 7 y media, casi una hora más por la misma cena.»
+    toma 3 (semilla 9002): BUENA · 0.991 · voz 0.954 · 10.2 s · 11.3 l/s · viveza 3.19 st · «Todo junto a 108 euros, o sea, 8 horas y 21 minutos de curro. En 2016, 7 y media, casi una hora más por la misma cena.»
+    elegida la toma con más entonación: semilla 9002 (3.19 st)
+plano 10: «¿Una jornada entera por una cena? En mis tiempos con un pollo cenábamos diez.»
+    toma 1 (semilla 10000): BUENA · 0.984 · voz 0.91 · 4.9 s · 12.5 l/s · viveza 4.97 st · «una jornada entera por una cena, en mis tiempos con un pollo senábamos diez.»
+    toma 2 (semilla 10001): BUENA · 1.0 · voz 0.933 · 5.1 s · 11.9 l/s · viveza 3.83 st · «Una jornada entera por una cena, en mis tiempos con un pollo cenábamos diez.»
+    toma 3 (semilla 10002): BUENA · 1.0 · voz 0.924 · 4.9 s · 12.4 l/s · viveza 3.95 st · «Una jornada entera por una cena, en mis tiempos con un pollo cenábamos diez.»
+    elegida la toma con más entonación: semilla 10000 (4.97 st)
+plano 11: «¿Y en tu casa qué se come en Nochebuena? ¿Te ha subido tanto?»
+    toma 1 (semilla 11000): BUENA · 0.966 · voz 0.921 · 3.8 s · 11.8 l/s · viveza 2.56 st · «¿Y en tu casa que se come noche buena? ¿Te has subido tanto?»
+    toma 2 (semilla 11001): BUENA · 0.966 · voz 0.913 · 3.7 s · 12.0 l/s · viveza 2.85 st · «Y en tu casa, ¿qué se come noche buena? ¿Te has subido tanto?»
+    toma 3 (semilla 11002): BUENA · 1.0 · voz 0.903 · 3.9 s · 11.5 l/s · viveza 4.55 st · «y en tu casa que se come en noche buena. ¿Te ha subido tanto?»
+    elegida la toma con más entonación: semilla 11002 (4.55 st)

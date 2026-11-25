@@ -1,0 +1,39 @@
+{
+ "huella": "64e21c305f052e82",
+ "semilla": 2000,
+ "texto": "Hombre claro hijo. Esto está peor que en la crisis.",
+ "ev": {
+  "ok": true,
+  "nota": 1.024,
+  "oido": "Hombre claro hijo, esto está peor que en la crisis.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.32,
+   0.54,
+   1.56,
+   1.88,
+   2.08,
+   2.38,
+   2.46,
+   2.54,
+   2.64
+  ],
+  "t1": [
+   0.32,
+   0.54,
+   0.82,
+   1.88,
+   2.08,
+   2.38,
+   2.46,
+   2.54,
+   2.64,
+   2.88
+  ],
+  "ritmo": 12.3,
+  "voz": 0.898,
+  "viveza": 3.07
+ }
+}

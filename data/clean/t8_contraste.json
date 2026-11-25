@@ -1,0 +1,249 @@
+{
+ "tema": "Contraste de T8: ¿estamos mejor o peor que hace 10, 20 y 40 años? (Bruno, 18-11-2026)",
+ "ipc_media_anual": {
+  "1986": 30.397,
+  "1987": 31.994,
+  "2006": 68.205,
+  "2016": 78.725,
+  "2024": 97.396,
+  "2025": 100.0,
+  "2026": 103.314,
+  "2022": 91.534
+ },
+ "carburantes": {
+  "ultima_semana": "2026-11-09",
+  "gasolina95": {
+   "2006": {
+    "semanas": 49,
+    "precio": 1.035,
+    "sin_impuestos": 0.485,
+    "impuestos": 0.55,
+    "pct_impuestos": 53.2,
+    "en_euros_de_2026": {
+     "precio": 1.568,
+     "sin_impuestos": 0.735,
+     "impuestos": 0.834
+    }
+   },
+   "2016": {
+    "semanas": 50,
+    "precio": 1.149,
+    "sin_impuestos": 0.488,
+    "impuestos": 0.661,
+    "pct_impuestos": 57.5,
+    "en_euros_de_2026": {
+     "precio": 1.508,
+     "sin_impuestos": 0.641,
+     "impuestos": 0.868
+    }
+   },
+   "2022": {
+    "semanas": 51,
+    "precio": 1.781,
+    "sin_impuestos": 0.999,
+    "impuestos": 0.782,
+    "pct_impuestos": 43.9,
+    "en_euros_de_2026": {
+     "precio": 2.01,
+     "sin_impuestos": 1.128,
+     "impuestos": 0.882
+    }
+   },
+   "2026": {
+    "semanas": 45,
+    "precio": 1.611,
+    "sin_impuestos": 0.99,
+    "impuestos": 0.621,
+    "pct_impuestos": 38.5,
+    "en_euros_de_2026": {
+     "precio": 1.611,
+     "sin_impuestos": 0.99,
+     "impuestos": 0.621
+    }
+   },
+   "ultima_semana": {
+    "precio": 1.73,
+    "sin_impuestos": 1.157,
+    "impuestos": 0.573,
+    "pct_impuestos": 33.1,
+    "si_no_hubiera_rebaja": {
+     "precio": 1.972,
+     "impuestos": 0.815,
+     "pct_impuestos": 41.3
+    }
+   }
+  },
+  "gasoleo": {
+   "2006": {
+    "semanas": 49,
+    "precio": 0.959,
+    "sin_impuestos": 0.523,
+    "impuestos": 0.436,
+    "pct_impuestos": 45.4,
+    "en_euros_de_2026": {
+     "precio": 1.452,
+     "sin_impuestos": 0.792,
+     "impuestos": 0.66
+    }
+   },
+   "2016": {
+    "semanas": 50,
+    "precio": 1.012,
+    "sin_impuestos": 0.468,
+    "impuestos": 0.544,
+    "pct_impuestos": 53.7,
+    "en_euros_de_2026": {
+     "precio": 1.328,
+     "sin_impuestos": 0.615,
+     "impuestos": 0.713
+    }
+   },
+   "2022": {
+    "semanas": 51,
+    "precio": 1.795,
+    "sin_impuestos": 1.104,
+    "impuestos": 0.691,
+    "pct_impuestos": 38.5,
+    "en_euros_de_2026": {
+     "precio": 2.026,
+     "sin_impuestos": 1.247,
+     "impuestos": 0.779
+    }
+   },
+   "2026": {
+    "semanas": 45,
+    "precio": 1.694,
+    "sin_impuestos": 1.15,
+    "impuestos": 0.543,
+    "pct_impuestos": 32.1,
+    "en_euros_de_2026": {
+     "precio": 1.694,
+     "sin_impuestos": 1.15,
+     "impuestos": 0.543
+    }
+   },
+   "ultima_semana": {
+    "precio": 1.898,
+    "sin_impuestos": 1.39,
+    "impuestos": 0.508,
+    "pct_impuestos": 26.8,
+    "si_no_hubiera_rebaja": {
+     "precio": 2.14,
+     "impuestos": 0.75,
+     "pct_impuestos": 35.1
+    }
+   }
+  }
+ },
+ "rebajas_2026": {
+  "gasolina95_por_litro": {
+   "ley_38_1992": 0.47269,
+   "21mar_30jun": 0.359,
+   "octubre": 0.27269
+  },
+  "iva_carburantes": {
+   "21mar_30jun": 10,
+   "resto": 21
+  },
+  "nota": "Real Decreto-ley 7/2026 (desde su entrada en vigor, en marzo, hasta el 30-6-2026): gasolina 95 a 304,32 + 54,68 € por 1.000 litros e IVA del 10 %. Real Decreto-ley 18/2026: retirada gradual en julio, agosto y septiembre, con salvaguarda si el IPC de la gasolina sube más de un 15 %. Real Decreto-ley 25/2026: 20 céntimos menos por litro en octubre (231,15 + 41,54), y 13 y 6 en noviembre y diciembre, o 20 si el IPC de la gasolina o del gasóleo de septiembre u octubre supera en más de un 15 % el del año anterior. El boletín de la Comisión Europea da 272,69 € por 1.000 litros desde el 12-10-2026."
+ },
+ "sueldos": {
+  "crecimiento_etcl_1s2024_1s2026": 1.0783,
+  "nota": "Sueldo bruto anual. 1986: Encuesta de Salarios del INE (retribución por hora × jornada pactada; industria y servicios). 2006: Encuesta de Estructura Salarial. 2016 y 2024: Encuesta Anual de Estructura Salarial. 2026: el último dato anual (2024) por lo que han subido los sueldos según la ETCL del INE entre el primer semestre de 2024 y el de 2026 (estimación, C).",
+  "bruto_en_euros_de_2026": {
+   "media": {
+    "1986": 27010,
+    "2006": 29820,
+    "2016": 30389,
+    "2024": 31335,
+    "2026": 31852
+   },
+   "mediana": {
+    "2006": 23841,
+    "2016": 25502,
+    "2024": 25986,
+    "2026": 26414
+   }
+  },
+  "neto_en_euros_de_2026": {
+   "media": {
+    "1986": {
+     "neto": 21576,
+     "al_estado": 14266,
+     "pct_estado_del_coste": 39.8,
+     "pct_irpf_del_bruto": 14.1
+    },
+    "2006": {
+     "neto": 23900,
+     "al_estado": 15514,
+     "pct_estado_del_coste": 39.4,
+     "pct_irpf_del_bruto": 13.5
+    },
+    "2026": {
+     "neto": 24702,
+     "al_estado": 17438,
+     "pct_estado_del_coste": 41.4,
+     "pct_irpf_del_bruto": 15.9
+    }
+   },
+   "mediana": {
+    "2006": {
+     "neto": 19644,
+     "al_estado": 11867,
+     "pct_estado_del_coste": 37.7,
+     "pct_irpf_del_bruto": 11.3
+    },
+    "2026": {
+     "neto": 21031,
+     "al_estado": 13915,
+     "pct_estado_del_coste": 39.8,
+     "pct_irpf_del_bruto": 13.9
+    }
+   }
+  },
+  "mismo_sueldo_real": {
+   "media": {
+    "bruto_en_euros_de_2026": 31852,
+    "1986": {
+     "neto": 25130,
+     "al_estado": 17137,
+     "pct_estado_del_coste": 40.5,
+     "pct_irpf_del_bruto": 15.1
+    },
+    "2006": {
+     "neto": 25346,
+     "al_estado": 16754,
+     "pct_estado_del_coste": 39.8,
+     "pct_irpf_del_bruto": 14.1
+    },
+    "2026": {
+     "neto": 24702,
+     "al_estado": 17438,
+     "pct_estado_del_coste": 41.4,
+     "pct_irpf_del_bruto": 15.9
+    }
+   },
+   "mediana": {
+    "bruto_en_euros_de_2026": 26414,
+    "1986": {
+     "neto": 21160,
+     "al_estado": 13891,
+     "pct_estado_del_coste": 39.6,
+     "pct_irpf_del_bruto": 13.9
+    },
+    "2006": {
+     "neto": 21476,
+     "al_estado": 13437,
+     "pct_estado_del_coste": 38.5,
+     "pct_irpf_del_bruto": 12.3
+    },
+    "2026": {
+     "neto": 21031,
+     "al_estado": 13915,
+     "pct_estado_del_coste": 39.8,
+     "pct_irpf_del_bruto": 13.9
+    }
+   }
+  }
+ }
+}

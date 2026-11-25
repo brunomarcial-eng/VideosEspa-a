@@ -1,0 +1,48 @@
+{
+ "huella": "8c4a0dd3e65696d3",
+ "semilla": 7000,
+ "texto": "Súbase. En la alta velocidad, llegan en hora 86 de cada 100. En 2019, 95.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0578,
+  "oido": "Subase. En la alta velocidad llegan en hora 86 de cada 100. En 2019, 95.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   1.22,
+   1.5,
+   1.6,
+   1.74,
+   2.2,
+   3.0,
+   3.08,
+   3.2,
+   3.86,
+   4.08,
+   4.24,
+   5.3,
+   5.48,
+   6.66
+  ],
+  "t1": [
+   0.54,
+   1.5,
+   1.6,
+   1.74,
+   2.2,
+   3.0,
+   3.08,
+   3.2,
+   3.86,
+   4.08,
+   4.24,
+   4.58,
+   5.48,
+   5.96,
+   7.0
+  ],
+  "ritmo": 11.6,
+  "voz": 0.966
+ }
+}

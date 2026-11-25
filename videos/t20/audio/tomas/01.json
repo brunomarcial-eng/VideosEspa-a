@@ -1,0 +1,49 @@
+{
+ "huella": "7636afabd076a087",
+ "semilla": 1000,
+ "texto": "¿Cuánto llevas jugado a la lotería desde 2007? ¿Y si lo hubieras metido en bolsa?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0228,
+  "oido": "¿Cuánto llevas jugado a la lotería desde 2007? ¿Y si lo hubieras metido en bolsa?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.3,
+   0.56,
+   0.96,
+   1.04,
+   1.1,
+   1.6,
+   1.82,
+   3.22,
+   3.36,
+   3.44,
+   3.6,
+   3.98,
+   4.34,
+   4.42
+  ],
+  "t1": [
+   0.3,
+   0.56,
+   0.96,
+   1.04,
+   1.1,
+   1.6,
+   1.82,
+   2.48,
+   3.36,
+   3.44,
+   3.6,
+   3.98,
+   4.34,
+   4.42,
+   4.76
+  ],
+  "ritmo": 14.1,
+  "voz": 0.896,
+  "viveza": 4.13
+ }
+}

@@ -1,0 +1,304 @@
+{
+ "id": "t19",
+ "version": 1,
+ "titulo": "¿Para cuánto te da hoy el Gordo? 2007 frente a hoy",
+ "titulo_alternativo": "El Gordo de Navidad en años de sueldo y en pisos: 2007 frente a hoy",
+ "pregunta": "¿Para cuánto da un décimo con el Gordo hoy frente a 2007: lo que se queda Hacienda, años de sueldo y pisos?",
+ "datos": "data/clean/t19_gordo.json",
+ "aprobacion_datos": "Bruno, 23 y 24-11-2026: dos vídeos de lotería; este, cuánto te deja el Gordo hoy y antes (lo que se queda Hacienda, años de sueldo y pisos; él creía que antes daba para diez casas: «contrástalo»). Pegó el programa de premios de 2026 de la web de Loterías. Excepción a los tres años (Bruno, 24-11-2026): solo 2007 y hoy, porque el BOE dejó de publicar los programas en 2011.",
+ "formato": "El salón en Navidad con el sorteo en la tele. Un padre de unos 60 («en 2007 con el Gordo te comprabas diez pisos») y su hija de unos 35, que lo comprueba. Premio y Hacienda, pisos, años de sueldo y euros de hoy. Pregunta final al espectador.",
+ "duracion_max_s": 80,
+ "personajes": {
+  "hija": {
+   "anyo": "unos 35, la hija, que lo comprueba todo",
+   "voz": "viajera"
+  },
+  "padre": {
+   "anyo": "unos 60, el padre, convencido de que antes el Gordo daba para diez pisos",
+   "voz": "comandante"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.5,
+  "viveza_tomas": 3
+ },
+ "sin_veredicto": "El veredicto lo da la hija en el plano 9: el Gordo de hoy da para menos años de sueldo (21 → 16) y vale un 23 % menos en euros de hoy, da para los mismos pisos (piso y medio) y Hacienda pasa de nada a 72.000 €. Acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "El sorteo",
+   "beats": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "nombre": "¿Diez pisos?",
+   "beats": [
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    8,
+    9
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "hija",
+   "funcion": "gancho",
+   "voz": "¿Para cuánto te da hoy el Gordo? Porque mi padre dice que en 2007 te comprabas diez pisos…",
+   "pantalla": "¿Para cuánto te da hoy el Gordo?",
+   "sello": null,
+   "actuacion": {
+    "velocidad": 1.02
+   },
+   "imagen": "El salón en Navidad, con el sorteo en la tele (un bombo y bolas que giran). La hija mira a cámara; el padre, en el sofá. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "padre",
+   "funcion": "dato: el Gordo de 2007",
+   "voz": "Hombre claro… en 2007 te tocaban 300.000 euros por décimo y ni un duro para Hacienda.",
+   "pantalla": "2007: 300.000 € por décimo, sin impuestos",
+   "nota": "Décimo de 20 €. Primer premio: 3.000.000 € por serie",
+   "sello": "BOE · PROGRAMA DE PREMIOS DE NAVIDAD DE 2007",
+   "imagen": "Un décimo de 2007 y un montón de billetes enteros, sin sobre de Hacienda."
+  },
+  {
+   "n": 3,
+   "quien": "hija",
+   "funcion": "dato: el Gordo de hoy y Hacienda",
+   "voz": "Ya pero hoy son 400.000. Lo que pasa es que Hacienda se queda 72.000… y te quedan 328.000.",
+   "pantalla": "Hoy: 400.000 € por décimo · Hacienda se queda 72.000 €",
+   "nota": "Te quedan 328.000 €: el 20 % de lo que pase de 40.000 €. Programa de premios de 2026",
+   "sello": "LOTERÍAS Y APUESTAS DEL ESTADO · BOE (LEY DEL IRPF)",
+   "imagen": "El montón de billetes de hoy, más grande; una porción se va al sobre de Hacienda."
+  },
+  {
+   "n": 4,
+   "quien": "padre",
+   "funcion": "ironía",
+   "voz": "¿Ves? Más que en 2007. Diez pisos por lo menos.",
+   "pantalla": "«Diez pisos por lo menos»",
+   "sello": null,
+   "actuacion": {
+    "velocidad": 0.98
+   },
+   "imagen": "Diez pisitos aparecen en fila delante del padre."
+  },
+  {
+   "n": 5,
+   "quien": "hija",
+   "funcion": "dato: pisos",
+   "voz": "¿Diez pisos? Anda ya papá. En 2007 te daba para piso y medio… y hoy igual.",
+   "pantalla": "Pisos de 90 m² con lo que te queda · 2007: 1,6 · hoy: 1,7",
+   "nota": "Valor tasado medio de la vivienda libre: 2.056 €/m² en 2007 y 2.128 €/m² en 2025",
+   "sello": "CÁLCULO PROPIO · BOE, LOTERÍAS Y MINISTERIO DE VIVIENDA",
+   "grafico": true,
+   "imagen": "De los diez pisitos se apagan ocho y medio: quedan uno y medio en 2007 y uno y medio largo hoy."
+  },
+  {
+   "n": 6,
+   "quien": "padre",
+   "funcion": "la duda",
+   "voz": "Bueno… piso y medio. Pero es que antes los sueldos eran otros.",
+   "pantalla": "Pisos de 90 m² con lo que te queda · 2007: 1,6 · hoy: 1,7",
+   "sello": "CÁLCULO PROPIO · BOE, LOTERÍAS Y MINISTERIO DE VIVIENDA",
+   "imagen": "Sigue la calle con los pisos (piso y medio en 2007 y hoy) y la misma tarjeta, para que dé tiempo a leerla; el padre se rasca la cabeza y señala.",
+   "nota": "Valor tasado medio de la vivienda libre: 2.056 €/m² en 2007 y 2.128 €/m² en 2025"
+  },
+  {
+   "n": 7,
+   "quien": "hija",
+   "funcion": "dato: años de sueldo",
+   "voz": "Eso sí. En 2007 eran 21 años de sueldo y hoy 16. Cinco años menos de vida resuelta.",
+   "pantalla": "Lo que te queda, en años de sueldo · 2007: 21,1 · hoy: 16,1",
+   "nota": "Sueldo neto mediano: 14.220 € al año en 2007 y 20.424 € en 2025",
+   "sello": "CÁLCULO PROPIO · BOE, LOTERÍAS E INE",
+   "grafico": true,
+   "imagen": "Dos filas de calendarios: veintiún años en 2007 y dieciséis hoy."
+  },
+  {
+   "n": 8,
+   "quien": "padre",
+   "funcion": "dato: euros de hoy",
+   "voz": "Vamos que aquel Gordo hoy serían casi 430.000 euros.",
+   "pantalla": "El Gordo de 2007, en euros de hoy: 427.929 €",
+   "nota": "Con el IPC del INE. Hoy te quedan 328.000 €: un 23 % menos",
+   "sello": "CÁLCULO PROPIO · BOE E INE (IPC)",
+   "imagen": "El montón de 2007 crece hasta su tamaño en euros de hoy, más grande que el de ahora."
+  },
+  {
+   "n": 9,
+   "quien": "hija",
+   "funcion": "veredicto y pregunta",
+   "voz": "Total que para Hacienda más y para ti menos años. ¿Y tú con el Gordo de hoy dejarías el curro?",
+   "pantalla": "¿Con el Gordo de hoy dejarías de trabajar?",
+   "sello": null,
+   "imagen": "Los dos en el sofá, con el sorteo de fondo; la hija pregunta a cámara.",
+   "actuacion": {
+    "pausa_antes": 1.5
+   }
+  }
+ ],
+ "no_dato": [
+  "3.000.000",
+  "58213",
+  "90"
+ ],
+ "cifras": [
+  {
+   "texto": "300.000",
+   "ruta": "anyos.2007.gordo_decimo",
+   "decimales": 0,
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "20",
+   "ruta": "anyos.2007.decimo_eur",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "400.000",
+   "ruta": "anyos.hoy.gordo_decimo",
+   "decimales": 0,
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "72.000",
+   "ruta": "anyos.hoy.hacienda_eur",
+   "decimales": 0,
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "328.000",
+   "ruta": "anyos.hoy.te_queda",
+   "decimales": 0,
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "1,6",
+   "ruta": "anyos.2007.pisos",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "1,7",
+   "ruta": "anyos.hoy.pisos",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "2.056",
+   "ruta": "precio_m2.2007",
+   "decimales": 0,
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "2.128",
+   "ruta": "precio_m2.2025",
+   "decimales": 0,
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "21,1",
+   "ruta": "anyos.2007.anyos_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "16,1",
+   "ruta": "anyos.hoy.anyos_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "14.220",
+   "ruta": "sueldo_neto_anual.2007",
+   "decimales": 0,
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "20.424",
+   "ruta": "sueldo_neto_anual.2025",
+   "decimales": 0,
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "427.929",
+   "ruta": "anyos.2007.te_queda_en_euros_de_2025",
+   "decimales": 0,
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "23",
+   "ruta": "hoy_frente_2007.valor_real_pct",
+   "escala": -1,
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "40.000",
+   "ruta": "anyos.hoy.exento_eur",
+   "decimales": 0,
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "21",
+   "ruta": "anyos.2007.anyos_sueldo",
+   "aprox": 21,
+   "tolerancia_pct": 3,
+   "estado": "C"
+  },
+  {
+   "texto": "16",
+   "ruta": "anyos.hoy.anyos_sueldo",
+   "aprox": 16,
+   "tolerancia_pct": 3,
+   "estado": "C"
+  },
+  {
+   "texto": "430.000",
+   "ruta": "anyos.2007.te_queda_en_euros_de_2025",
+   "aprox": 430000,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  }
+ ],
+ "comprobaciones": [
+  "2007 (V): BOE-A-2007-21550, programa de premios del sorteo del 22-12-2007: billete de 200 € en décimos de 20 €; primer premio de 3.000.000 € por serie (300.000 € por décimo). Los premios no tributaban: el gravamen especial está en vigor desde el 1-1-2013 (AEAT).",
+  "Hoy (V): programa de premios de la Lotería de Navidad de 2026, de la web de Loterías y Apuestas del Estado (copiado por Bruno el 24-11-2026, `data/raw/t19/selae_programa_navidad_2026.txt`): 4.000.000 € por serie, 400.000 € por décimo; Hacienda 72.000 € (20 % de lo que pase de 40.000 €, Ley 35/2006 del IRPF, DA 33.ª) y al ganador 328.000 €.",
+  "Pisos (C): lo que te queda entre el precio de un piso de 90 m² al valor tasado medio de la vivienda libre (Ministerio de Vivienda, vía Banco de España; media anual): 2.056,35 €/m² en 2007 (185.072 €) y 2.127,57 €/m² en 2025 (191.481 €). 300.000 / 185.072 = 1,6 pisos; 328.000 / 191.481 = 1,7. «Piso y medio» en los dos años.",
+  "Años de sueldo (C): sueldo neto mediano anual de T16 (INE y Eurostat): 14.220 € en 2007 y 20.424 € en 2025. 300.000 / 14.220 = 21,1 años; 328.000 / 20.424 = 16,1 años.",
+  "Euros de hoy (C): IPC general, media anual (INE, tabla 24077): 70,105 en 2007 y 100 en 2025. 300.000 × 100 / 70,105 = 427.929 €; 328.000 es un 23,4 % menos.",
+  "Excepción a la regla de los tres años (Bruno, 24-11-2026): solo 2007 y hoy, porque el BOE dejó de publicar los programas de premios en 2011 y la web de Loterías no se puede leer desde el entorno.",
+  "Redondeos hablados: «piso y medio» (1,6 y 1,7), «21 años» (21,1), «16» (16,1), «cinco años menos» (21,1 − 16,1), «casi 430.000 euros» (427.929)."
+ ],
+ "cierre": {
+  "veredicto": "Empeora frente a 2007 en años de sueldo (21,1 → 16,1) y en euros de hoy (−23 %); igual en pisos (1,6 → 1,7, piso y medio). Hacienda pasa de no llevarse nada a 72.000 € por décimo",
+  "porque": "El premio por décimo sube un 33 % (de 300.000 a 400.000 €), pero desde 2013 tributa y los precios y los sueldos han subido más.",
+  "pregunta": "¿Con el Gordo de hoy dejarías de trabajar?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno (v1, 24-11-2026)"
+}

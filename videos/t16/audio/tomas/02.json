@@ -1,0 +1,46 @@
+{
+ "huella": "021e5b8eaafa7776",
+ "semilla": 2002,
+ "texto": "Yo cobro el sueldo mediano: 1.702 euros netos al mes. En 2016 eran 1.332.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0411,
+  "oido": "Yo cobro el sueldo mediano, 1.702 euros netos al mes, en 2016 eran 1.332.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.22,
+   0.58,
+   0.7,
+   1.0,
+   1.94,
+   3.14,
+   3.44,
+   4.14,
+   4.32,
+   5.12,
+   5.42,
+   6.2,
+   6.52
+  ],
+  "t1": [
+   0.22,
+   0.58,
+   0.7,
+   1.0,
+   1.42,
+   3.14,
+   3.44,
+   4.14,
+   4.32,
+   4.58,
+   5.42,
+   6.2,
+   6.52,
+   7.86
+  ],
+  "ritmo": 13.2,
+  "voz": 0.932
+ }
+}

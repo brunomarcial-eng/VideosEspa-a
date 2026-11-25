@@ -1,0 +1,41 @@
+{
+ "huella": "b034b653a2a8930b",
+ "semilla": 14000,
+ "texto": "Por eso hoy, de cada 100 habitantes, trabajan 46. Como en 2007.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Por eso hoy de cada 100 habitantes trabajan 46, como en 2007.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.3,
+   0.52,
+   0.64,
+   0.78,
+   0.98,
+   1.6,
+   2.18,
+   3.36,
+   3.8,
+   3.92
+  ],
+  "t1": [
+   0.12,
+   0.30000000000000004,
+   0.52,
+   0.64,
+   0.78,
+   0.98,
+   1.6,
+   2.18,
+   2.74,
+   3.8,
+   3.92,
+   4.4
+  ],
+  "ritmo": 11.9
+ }
+}

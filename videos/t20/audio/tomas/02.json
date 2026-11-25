@@ -1,0 +1,53 @@
+{
+ "huella": "eb664da2da310c8a",
+ "semilla": 2001,
+ "texto": "Venga hombre que es el décimo de la oficina… como toque y no estés te da algo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0335,
+  "oido": "Venga hombre que es el décimo de la oficina, como toque y no estés te da algo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.28,
+   0.48,
+   0.64,
+   0.78,
+   0.9,
+   1.24,
+   1.32,
+   1.4,
+   2.42,
+   2.76,
+   3.1,
+   3.24,
+   3.36,
+   3.64,
+   3.68,
+   3.84
+  ],
+  "t1": [
+   0.28,
+   0.48,
+   0.64,
+   0.78,
+   0.9,
+   1.24,
+   1.32,
+   1.4,
+   1.84,
+   2.76,
+   3.1,
+   3.24,
+   3.36,
+   3.64,
+   3.68,
+   3.84,
+   4.06
+  ],
+  "ritmo": 14.1,
+  "voz": 0.917,
+  "viveza": 3.29
+ }
+}

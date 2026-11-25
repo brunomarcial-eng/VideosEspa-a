@@ -1,0 +1,48 @@
+{
+ "huella": "0079f5a1568abe02",
+ "semilla": 6001,
+ "texto": "Registro de jornada, registro de sueldos, agua del grifo gratis y táper para las sobras.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0274,
+  "oido": "Registro de jornada, registro de sueldos, agua del grifo gratis y taper para las obras.",
+  "parecido": 0.993,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.5,
+   0.58,
+   1.68,
+   2.0,
+   2.1,
+   3.2,
+   3.34,
+   3.5,
+   3.82,
+   4.3,
+   4.42,
+   4.72,
+   4.92,
+   5.1
+  ],
+  "t1": [
+   0.5,
+   0.58,
+   1.04,
+   2.0,
+   2.1,
+   2.6,
+   3.34,
+   3.5,
+   3.82,
+   4.3,
+   4.42,
+   4.72,
+   4.92,
+   5.1,
+   5.34
+  ],
+  "ritmo": 12.4,
+  "voz": 0.919
+ }
+}

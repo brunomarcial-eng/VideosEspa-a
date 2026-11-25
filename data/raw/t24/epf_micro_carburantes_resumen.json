@@ -1,0 +1,24 @@
+{
+ "2007": {
+  "url": "https://www.ine.es/ftp/microdatos/epf2006/epf_2007.zip",
+  "sha256_zip": "2d457fc4309ebe26a9b29895236bdc8b4b6b2623905553b8fdd205e59839f9a5",
+  "bytes_zip": 28602589,
+  "hogares": 16643003,
+  "registros_carburantes": 14889,
+  "carburantes_gasto_por_hogar": 1350.03,
+  "carburantes_litros_por_hogar": 1346.4,
+  "carburantes_euros_litro": 1.0027,
+  "comprobacion_luz_gasto_por_hogar": 479.33
+ },
+ "2013": {
+  "url": "https://www.ine.es/ftp/microdatos/epf2006/epf_2013.zip",
+  "sha256_zip": "7141a24f3ed6a9a7a431ba54575757c4e298566a0ee0139fd1631b7b842d1e84",
+  "bytes_zip": 27303273,
+  "hogares": 18212214,
+  "registros_carburantes": 14668,
+  "carburantes_gasto_por_hogar": 1350.08,
+  "carburantes_litros_por_hogar": 988.0,
+  "carburantes_euros_litro": 1.3665,
+  "comprobacion_luz_gasto_por_hogar": 745.35
+ }
+}

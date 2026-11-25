@@ -1,0 +1,30 @@
+{
+ "huella": "b94dddaa8d266443",
+ "semilla": 5000,
+ "texto": "Hombre, pues entonces es barato ¿no?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0041,
+  "oido": "¡Hombre! Pues entonces es barato, ¿no?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.52,
+   0.58,
+   0.96,
+   1.26,
+   1.72
+  ],
+  "t1": [
+   0.36000000000000004,
+   0.58,
+   0.96,
+   1.26,
+   1.64,
+   1.8
+  ],
+  "ritmo": 14.6,
+  "voz": 0.858
+ }
+}

@@ -1,0 +1,34 @@
+plano 1: «¿Quién cobra más hoy: un jubilado o un joven que curra? Porque mi abuelo dice que él ni la mitad que yo…»
+    toma guardada (semilla 1000): BUENA · «¿Quién cobra más hoy? Un jubilado o un joven que curra. Porque mi abuelo dice que él ni la mitad que yo.»
+plano 2: «Hombre… la pensión media de jubilación son 1.451 euros al mes y tú cobras mucho más.»
+    toma guardada (semilla 2000): BUENA · «Hombre, la pensión media de jubilación son 1.451 euros al mes y tú cobras mucho más.»
+plano 3: «Ya pero un joven de mi edad cobra de media más de 25.000 euros al año y tú unos 20.000… el 81 % de lo mío.»
+    toma guardada (semilla 3000): BUENA · «Ya pero un joven de mi edad cobra de media más de 25.000 euros al año y tú unos 20.000, el 81% de lo mío.»
+plano 4: «¿El 81 %? Anda ya… en 2007 era poco más de la mitad.»
+    toma guardada (semilla 4001): BUENA · «el 81%, anda ya, en 2007 era poco más de la mitad.»
+plano 5: «Eso. En 2007 el 58 % y hoy el 81 %… y en plena crisis ya el 76 %.»
+    toma guardada (semilla 5002): BUENA · «Eso. En 2007 el 58% y hoy el 81%. Y en plena crisis ya el 76%.»
+plano 6: «Bueno desde 2016 igual… y a tu hermano el de 22 le gano.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.933 · 4.9 s · 12.3 l/s · viveza 4.57 st · «Bueno, desde 2016 igual, y a tu hermano, el de 22 Legano.»
+    toma 2 (semilla 6001): BUENA · 1.0 · voz 0.941 · 4.8 s · 12.6 l/s · viveza 4.0 st · «Bueno, desde 2016 igual y a tu hermano el de 22 le gano.»
+    toma 3 (semilla 6002): mala · 1.0 · voz 0.906 · 4.1 s · 14.5 l/s · «Bueno, desde 2016 igual y a tu hermano el de 22 le gano.» · sin pausa tras «igual…» (0.20 s)
+    toma 4 (semilla 6003): BUENA · 1.0 · voz 0.928 · 4.9 s · 12.1 l/s · viveza 3.92 st · «Bueno desde 2016 igual, y a tu hermano el de 22 le gano.»
+    elegida la toma con más entonación: semilla 6000 (4.57 st)
+plano 7: «Eso sí. Los menores de 25 cobran de media 15.136 euros y tu pensión un 34 % más… en 2007 al revés.»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.933 · 9.5 s · 13.8 l/s · viveza 4.29 st · «Eso sí, los menores de 25 cobran de media 15.136€ y tu pensión un 34% más, en 2007 al revés.»
+    toma 2 (semilla 7001): BUENA · 1.0 · voz 0.924 · 9.8 s · 13.4 l/s · viveza 3.92 st · «Eso sí, los menores de 25 cobran de media 15.136 euros y tu pensión un 34% más, en 2007 al revés.»
+    toma 3 (semilla 7002): BUENA · 1.0 · voz 0.923 · 9.2 s · 14.2 l/s · viveza 4.07 st · «Eso sí, los menores de 25 cobran de media 15.136€ y tu pensión un 34% más, en 2007 al revés.»
+    elegida la toma con más entonación: semilla 7000 (4.29 st)
+plano 8: «Hombre… es que desde 2007 mi pensión ha subido un 91 %.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.932 · 5.6 s · 11.9 l/s · viveza 2.48 st · «Hombre, es que desde 2007 mi pensión ha subido un 91%.»
+    toma 2 (semilla 8001): mala · 1.0 · voz 0.93 · 4.8 s · 13.9 l/s · «Hombre es que desde 2007 mi pensión ha subido un 91%.» · sin pausa tras «Hombre…» (0.04 s)
+    toma 3 (semilla 8002): BUENA · 1.0 · voz 0.919 · 4.9 s · 13.5 l/s · viveza 2.63 st · «Hombre, es que desde 2007 mi pensión ha subido un 91%»
+    toma 4 (semilla 8003): BUENA · 1.0 · voz 0.918 · 5.4 s · 12.2 l/s · viveza 3.91 st · «Hombre, es que desde 2007 mi pensión ha subido un 91%.»
+    elegida la toma con más entonación: semilla 8003 (3.91 st)
+plano 9: «Y el sueldo joven un 37 %… con los precios un 39 % más caros.»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.887 · 5.7 s · 14.7 l/s · viveza 3.75 st · «y el sueldo joven un 37%, con los precios un 39% más caros.»
+    toma 2 (semilla 9001): BUENA · 1.0 · voz 0.941 · 6.2 s · 13.4 l/s · viveza 3.81 st · «y el sueldo joven un 37%, con los precios un 39% más caros.»
+    toma 3 (semilla 9002): BUENA · 1.0 · voz 0.911 · 6.4 s · 13.0 l/s · viveza 3.47 st · «y el sueldo joven un 37%, con los precios un 39% más caros.»
+    elegida la toma con más entonación: semilla 9001 (3.81 st)
+plano 10: «Total que el jubilado gana poder de compra y el joven se queda igual. ¿Y en tu casa quién llega mejor a fin de mes?»
+    toma guardada (semilla 9002): BUENA · «Total que el jubilado gana poder de compra y el joven se queda igual. ¿Y en tu casa quién llega mejor a fin de mes?»

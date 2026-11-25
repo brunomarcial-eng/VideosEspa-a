@@ -1,0 +1,285 @@
+{
+ "id": "t28",
+ "version": 1,
+ "titulo": "¿Tener un bebé cuesta hoy más horas de trabajo?",
+ "titulo_alternativo": "Guardería, leche y potitos en horas de trabajo: 2007, la crisis, 2016, 2019 y hoy. Y los hijos que tenemos",
+ "pregunta": "¿Cuántas horas de trabajo cuestan la guardería (0-3 años) y los alimentos para bebé, hoy y en 2007, 2013, 2016 y 2019? ¿Y cuántos hijos tenemos?",
+ "datos": "data/clean/t28_bebe.json",
+ "aprobacion_datos": "Bruno, 24-11-2026: «Todos. 4 vídeos… Ponte con ellos uno por uno»; el cuarto, lo que cuesta un bebé (familias con hijos, del principio). Tabla en videos/t28/paso-1-datos.md.",
+ "formato": "Una hija embarazada (unos 38) y su padre (unos 62) en una tienda de cosas de bebé. Guardería (EPF, hogares que la pagan) y alimentos para bebé (IPC) en horas del sueldo neto mediano; hijos por mujer (INE): 2007, 2013, 2016, 2019 y 2025. Pregunta final al espectador.",
+ "duracion_max_s": 85,
+ "personajes": {
+  "hija": {
+   "anyo": "unos 38, embarazada de su primer hijo",
+   "voz": "medica"
+  },
+  "padre": {
+   "anyo": "unos 62, convencido de que criar hoy es un lujo",
+   "voz": "padre"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.5,
+  "viveza_tomas": 3
+ },
+ "sin_veredicto": "El veredicto lo da el padre en el plano 8: criar cuesta menos horas (la guardería, 129 horas al año frente a 156 en 2016 y 176 en 2019; la leche y los potitos, un 9 % menos tiempo que en 2007 aunque un 9 % más que en 2019), pero tenemos menos hijos (1,38 por mujer en 2007 y 1,11 hoy). Acaba con la pregunta, sin dar la causa.",
+ "capitulos": [
+  {
+   "nombre": "Lo que cuesta",
+   "beats": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "nombre": "Los hijos",
+   "beats": [
+    6,
+    7,
+    8
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "hija",
+   "funcion": "gancho",
+   "voz": "¿Tener un bebé cuesta hoy más horas de trabajo que antes? Porque mi padre dice que criar un hijo hoy es un lujo.",
+   "pantalla": "¿Tener un bebé cuesta hoy más horas de trabajo?",
+   "sello": null,
+   "imagen": "Una tienda de cosas de bebé: cunas, carritos, estanterías con leche y pañales, ropita colgada. La hija, embarazada, habla a cámara; el padre mira el precio de una cuna. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "padre",
+   "funcion": "lo que cree el padre",
+   "voz": "Hombre claro. Solo la guardería ya te cuesta un riñón ¿eh?",
+   "pantalla": "«Solo la guardería ya te cuesta un riñón»",
+   "sello": null,
+   "imagen": "El padre, señalando un cartel de una guardería en el tablón de la tienda."
+  },
+  {
+   "n": 3,
+   "quien": "hija",
+   "funcion": "dato: la guardería",
+   "voz": "Pues los que la pagan gastan de media 1.675 euros al año… unas 129 horas de trabajo. En 2016 eran 156.",
+   "pantalla": "Guardería: 1.675 € al año = 129 horas de trabajo",
+   "nota": "Primer ciclo de Educación Infantil, de 0 a 3 años: gasto medio de los hogares que la pagan (2025). 2016: 1.603 € (156 horas); 2019: 1.905 € (176 horas). Sueldo neto mediano por hora",
+   "sello": "INE · PRESUPUESTOS FAMILIARES Y SALARIOS",
+   "imagen": "Una mochila de guardería y un reloj de horas que se vacía un poco frente a 2016."
+  },
+  {
+   "n": 4,
+   "quien": "padre",
+   "funcion": "sorpresa",
+   "voz": "Anda ya… ¿y la leche y los potitos?",
+   "pantalla": "«¿Y la leche y los potitos?»",
+   "sello": null,
+   "imagen": "El padre coge con la mirada un bote de leche de la estantería (el bote, en la estantería)."
+  },
+  {
+   "n": 5,
+   "quien": "hija",
+   "funcion": "dato: la comida del bebé",
+   "voz": "Cuestan un 9 % menos tiempo de trabajo que en 2007. Eso sí un 9 % más que en 2019.",
+   "pantalla": "Leche infantil y potitos: un 9 % menos horas que en 2007",
+   "nota": "Precio (IPC de alimentos para bebé) entre el sueldo neto mediano por hora. Hoy, frente a 2007: −9,4 %; a 2013: −3,7 %; a 2016: +2,2 %; a 2019: +9,2 %",
+   "grafico": true,
+   "sello": "INE · IPC Y SALARIOS",
+   "imagen": "Columnas de tiempo de trabajo por año para la comida del bebé: más alta en 2007, más baja en 2019, hoy en medio."
+  },
+  {
+   "n": 6,
+   "quien": "padre",
+   "funcion": "el padre",
+   "voz": "Pues entonces criar sale más barato que en mis tiempos ¿no?",
+   "pantalla": "«Más barato que en mis tiempos»",
+   "sello": null,
+   "imagen": "El padre, sorprendido, se apoya en un carrito."
+  },
+  {
+   "n": 7,
+   "quien": "hija",
+   "funcion": "dato: los hijos",
+   "voz": "En horas sí. Y aun así nacen menos niños… en 2007 eran 1,38 hijos por mujer y hoy 1,11.",
+   "pantalla": "Hijos por mujer: 1,38 en 2007, 1,11 hoy",
+   "nota": "Por cada 10 mujeres, 14 hijos en 2007 y 11 hoy. 2013: 1,27; 2016: 1,33; 2019: 1,23; 2025: 1,11. Nacimientos por cada mil habitantes: 10,9 en 2007 y 6,5 en 2025",
+   "sello": "INE · MOVIMIENTO NATURAL DE LA POBLACIÓN",
+   "imagen": "Una fila de cunas: en 2007 más llenas que hoy."
+  },
+  {
+   "n": 8,
+   "quien": "padre",
+   "funcion": "veredicto y pregunta",
+   "voz": "O sea que criar cuesta menos horas pero tenemos menos hijos. ¿Tú por qué crees que nacen menos niños?",
+   "pantalla": "¿Por qué crees que nacen menos niños?",
+   "sello": null,
+   "imagen": "Los dos junto a una cuna; el padre pregunta a cámara."
+  }
+ ],
+ "no_dato": [
+  "0",
+  "3",
+  "10"
+ ],
+ "cifras": [
+  {
+   "texto": "1.675",
+   "ruta": "filas.2025.guarderia_anual",
+   "aprox": 1675,
+   "tolerancia_pct": 0.1,
+   "estado": "V"
+  },
+  {
+   "texto": "129",
+   "ruta": "filas.2025.guarderia_horas",
+   "aprox": 129,
+   "tolerancia_pct": 0.5,
+   "estado": "C"
+  },
+  {
+   "texto": "156",
+   "ruta": "filas.2016.guarderia_horas",
+   "aprox": 156,
+   "tolerancia_pct": 0.5,
+   "estado": "C"
+  },
+  {
+   "texto": "1.603",
+   "ruta": "filas.2016.guarderia_anual",
+   "aprox": 1603,
+   "tolerancia_pct": 0.1,
+   "estado": "V"
+  },
+  {
+   "texto": "1.905",
+   "ruta": "filas.2019.guarderia_anual",
+   "aprox": 1905,
+   "tolerancia_pct": 0.1,
+   "estado": "V"
+  },
+  {
+   "texto": "176",
+   "ruta": "filas.2019.guarderia_horas",
+   "aprox": 176,
+   "tolerancia_pct": 0.5,
+   "estado": "C"
+  },
+  {
+   "texto": "9",
+   "ruta": "alimentos_bebe_hoy_frente_a_pct.2007",
+   "escala": -1,
+   "aprox": 9.4,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "9",
+   "ruta": "alimentos_bebe_hoy_frente_a_pct.2019",
+   "aprox": 9.2,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "9,4",
+   "ruta": "alimentos_bebe_hoy_frente_a_pct.2007",
+   "escala": -1,
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "3,7",
+   "ruta": "alimentos_bebe_hoy_frente_a_pct.2013",
+   "escala": -1,
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "2,2",
+   "ruta": "alimentos_bebe_hoy_frente_a_pct.2016",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "9,2",
+   "ruta": "alimentos_bebe_hoy_frente_a_pct.2019",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "1,38",
+   "ruta": "filas.2007.hijos_por_mujer",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "1,11",
+   "ruta": "filas.2025.hijos_por_mujer",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "1,27",
+   "ruta": "filas.2013.hijos_por_mujer",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "1,33",
+   "ruta": "filas.2016.hijos_por_mujer",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "1,23",
+   "ruta": "filas.2019.hijos_por_mujer",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "10,9",
+   "ruta": "filas.2007.natalidad_por_mil",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "6,5",
+   "ruta": "filas.2025.natalidad_por_mil",
+   "decimales": 1,
+   "estado": "V"
+  },
+  {
+   "texto": "14",
+   "ruta": "filas.2007.hijos_por_mujer",
+   "escala": 10,
+   "aprox": 14,
+   "tolerancia_pct": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "11",
+   "ruta": "filas.2025.hijos_por_mujer",
+   "escala": 10,
+   "aprox": 11,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  }
+ ],
+ "comprobaciones": [
+  "Guardería (V): INE, EPF, tabla 73827, gasto medio por hogar de los hogares con gasto en el primer ciclo de Educación Infantil (0-3 años): 1.603,30 € (2016), 1.905,27 € (2019), 1.675,43 € (2025). Solo el 2-3 % de los hogares tiene ese gasto. En horas del sueldo neto mediano (C): 156,1, 175,6 y 129,1.",
+  "Alimentos para bebé (V): INE, IPC, subclase «Alimentos para bebé» (tabla 79184, media anual, base 2025 = 100): 74,7 (2007), 79,2 (2013), 77,4 (2016), 76,5 (2019), 100 (2025): +33,8 % desde 2007, con el sueldo neto mediano por hora +47,7 %. En tiempo de trabajo, hoy −9,4 % frente a 2007, −3,7 % frente a 2013, +2,2 % frente a 2016 y +9,2 % frente a 2019 (C).",
+  "Hijos por mujer (V): INE, tabla 1407: 1,38 (2007), 1,27 (2013), 1,33 (2016), 1,23 (2019), 1,11 (2025). Tasa bruta de natalidad (tabla 1381): 10,86 ‰ (2007) y 6,50 ‰ (2025)."
+ ],
+ "cierre": {
+  "veredicto": "En horas de trabajo, la guardería mejora frente a 2016 (156 → 129 horas al año) y 2019 (176); la leche y los potitos mejoran frente a 2007 (−9 %) y la crisis (−4 %), y empeoran frente a 2016 (+2 %) y 2019 (+9 %). Y aun así tenemos menos hijos: 1,38 por mujer en 2007, 1,11 hoy",
+  "porque": "Los sueldos han subido más que el precio de la comida del bebé desde 2007, y lo que pagan de guardería los hogares que la pagan es menos en horas que en 2016. La natalidad baja igual: el vídeo no da la causa.",
+  "pregunta": "¿Por qué crees que nacen menos niños?"
+ },
+ "aprobacion_guion": "pendiente (v1)"
+}

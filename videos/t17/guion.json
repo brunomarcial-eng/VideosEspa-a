@@ -1,0 +1,250 @@
+{
+ "id": "t17",
+ "version": 2,
+ "titulo": "Papá, ya tengo el carnet: ¿me compras un coche nuevo?",
+ "titulo_alternativo": "¿Nuevo o de segunda mano? El coche nuevo, en meses de sueldo, de 2007 a hoy",
+ "pregunta": "Un chaval de 18 años aprueba el carnet y le pide un coche nuevo a su padre. ¿Cuántos meses de sueldo cuesta hoy un coche nuevo frente a 2007 y 2016, y cuánto más se compra de segunda mano?",
+ "datos": "data/clean/t17_mas_vendido.json",
+ "aprobacion_datos": "Bruno, 22-11-2026: coches B con dos enfoques (prueba A/B). Este es el del padre y el hijo: el hijo acaba de sacarse el carnet, le pide un coche nuevo, debate de precios frente a hace diez años (el primo) y acaban eligiendo uno de segunda mano. Datos del paso 1 en videos/t17/paso-1-datos.md. Sin precios de catálogo (km77 o marcas): no son oficiales (regla 1).",
+ "formato": "Casa: el hijo entra con el aprobado. Concesionario de coches nuevos relucientes: el padre le canta el precio y los meses de sueldo, y lo del primo. Compraventa de usados: la segunda mano y la elección. Chiste que se repite: «la mitad la pones tú». Pregunta abierta al final.",
+ "duracion_max_s": 80,
+ "personajes": {
+  "hijo": {
+   "anyo": "18 años recién cumplidos, acaba de aprobar el carnet de conducir",
+   "voz": "hijo"
+  },
+  "padre": {
+   "anyo": "unos 50 años, padre del chaval",
+   "voz": "comandante"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "El veredicto lo dice el padre en el plano 12 («más meses de sueldo que en 2016») y la pantalla añade «como en 2007, y más segunda mano»; la segunda mano, con 2007, en el plano 10. Acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "El carnet",
+   "beats": [
+    1,
+    2
+   ]
+  },
+  {
+   "nombre": "El concesionario",
+   "beats": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "nombre": "El compraventa",
+   "beats": [
+    9,
+    10,
+    11,
+    12
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "hijo",
+   "funcion": "gancho",
+   "voz": "¡Papá! ¡Aprobado a la primera! Ya me puedes comprar un coche, ¿no?",
+   "pantalla": "¿Nuevo o de segunda mano?",
+   "sello": null,
+   "imagen": "El salón de casa. El hijo entra con el papel del APTO en alto; el padre baja el periódico. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "padre",
+   "funcion": "gag 1",
+   "voz": "¿Comprarte? Querrás decir pagarlo a medias, campeón.",
+   "pantalla": "«¿Comprarte? Querrás decir a medias»",
+   "sello": null,
+   "imagen": "El padre levanta una ceja; el hijo pone cara de póquer."
+  },
+  {
+   "n": 3,
+   "quien": "hijo",
+   "funcion": "el concesionario",
+   "voz": "¡Hala, qué maravilla! ¿Nos llevamos este, nuevecito?",
+   "pantalla": "«¿Nos llevamos este, nuevecito?»",
+   "sello": null,
+   "imagen": "Cambio de escenario: un concesionario de coches nuevos y relucientes, focos y destellos. El hijo abraza el capó de uno."
+  },
+  {
+   "n": 4,
+   "quien": "padre",
+   "funcion": "dato: el coche nuevo",
+   "voz": "Este, de media, 31.555 euros. Dieciocho meses y medio de sueldo, chaval. Y la mitad la pones tú.",
+   "pantalla": "Coche nuevo medio · 31.555 € · 18,5 meses de sueldo",
+   "nota": "Con IVA y matriculación. Sueldo neto mediano: 1.702 € al mes",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria · INE",
+   "imagen": "Etiqueta de precio enorme que cae en el coche; un calendario arranca dieciocho hojas y media."
+  },
+  {
+   "n": 5,
+   "quien": "hijo",
+   "funcion": "réplica",
+   "voz": "¡Pero si al primo Dani sus padres se lo compraron nuevo!",
+   "pantalla": "«¡Al primo se lo compraron nuevo!»",
+   "sello": null,
+   "imagen": "El hijo enseña en el móvil una foto del primo con su coche nuevo y un lazo."
+  },
+  {
+   "n": 6,
+   "quien": "padre",
+   "funcion": "dato: 2016",
+   "voz": "Ya, en 2016. Entonces eran quince meses y medio, no dieciocho. Qué tiempos.",
+   "pantalla": "Meses de sueldo para el coche nuevo medio · 2007: 18,3 · 2016: 15,6 · 2025: 18,5",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria · INE",
+   "grafico": true,
+   "imagen": "Tres calendarios en fila, 2007, 2016 y hoy, cada uno con sus hojas; el de 2016 es el más fino."
+  },
+  {
+   "n": 7,
+   "quien": "hijo",
+   "funcion": "ironía",
+   "voz": "¿Y a ti no te han subido el sueldo, o qué?",
+   "pantalla": "«¿Y a ti no te han subido el sueldo?»",
+   "sello": null,
+   "imagen": "El hijo, de brazos cruzados."
+  },
+  {
+   "n": 8,
+   "quien": "padre",
+   "funcion": "dato: sueldo frente a coche",
+   "voz": "Un 28 %. Y el coche, un 51 %. Haz cuentas, que para algo has estudiado.",
+   "pantalla": "Desde 2016 · sueldo: +28 % · coche nuevo: +51 %",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria · INE",
+   "imagen": "Dos columnas suben: la del sueldo se queda a medias y la del coche sigue hasta casi el doble."
+  },
+  {
+   "n": 9,
+   "quien": "padre",
+   "funcion": "giro",
+   "voz": "Anda, vámonos. Bienvenido al mundo real.",
+   "pantalla": "«Bienvenido al mundo real»",
+   "sello": null,
+   "imagen": "Cambio de escenario: un compraventa de usados al aire libre, con banderines y carteles de «OCASIÓN» sin cifras."
+  },
+  {
+   "n": 10,
+   "quien": "padre",
+   "funcion": "dato: la segunda mano",
+   "voz": "Hoy, por cada coche que se matricula, se venden dos y medio de segunda mano. En 2007, uno y medio.",
+   "pantalla": "Usados vendidos por cada coche matriculado · 2007: 1,55 · 2016: 2,03 · 2025: 2,48",
+   "nota": "Cambios de titularidad de turismos (incluye los que pasan por un compraventa) entre turismos matriculados",
+   "sello": "DATO OFICIAL · DGT (cambios de titularidad y matriculaciones)",
+   "grafico": true,
+   "imagen": "Filas de coches: uno nuevo y, detrás, dos y medio usados, que se llenan uno a uno."
+  },
+  {
+   "n": 11,
+   "quien": "hijo",
+   "funcion": "la elección",
+   "voz": "Vale, vale... ¿Y ese de ahí? Pocos kilómetros y está muy bien.",
+   "pantalla": "«¿Y ese de ahí?»",
+   "sello": null,
+   "imagen": "El hijo señala un utilitario pequeño; el padre se rasca la cabeza y sonríe."
+  },
+  {
+   "n": 12,
+   "quien": "padre",
+   "funcion": "veredicto, gag final y pregunta",
+   "voz": "Ese. Más meses de sueldo que en 2016, pero ese. Y la mitad, ya sabes quién la pone. ¿Tu primer coche fue nuevo o de segunda mano?",
+   "pantalla": "Más meses de sueldo que en 2016, como en 2007, y más segunda mano. ¿Tu primer coche, nuevo o usado?",
+   "sello": null,
+   "imagen": "El padre le da las llaves; el hijo salta de alegría y luego se queda pensando en «la mitad»."
+  }
+ ],
+ "no_dato": [
+  "18"
+ ],
+ "cifras": [
+  {
+   "texto": "31.555",
+   "ruta": "coche_nuevo_medio.2025.precio_con_impuestos",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "18,5",
+   "ruta": "coche_nuevo_medio.2025.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "1.702",
+   "ruta": "sueldo_neto_mes.2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "15,6",
+   "ruta": "coche_nuevo_medio.2016.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "28",
+   "ruta": "sueldo_neto_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "51",
+   "ruta": "coche_nuevo_medio_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "2,03",
+   "ruta": "segunda_mano.2016.usados_por_cada_matriculado",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "2,48",
+   "ruta": "segunda_mano.2025.usados_por_cada_matriculado",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "18,3",
+   "ruta": "coche_nuevo_medio.2007.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "1,55",
+   "ruta": "segunda_mano.2007.usados_por_cada_matriculado",
+   "decimales": 2,
+   "estado": "C"
+  }
+ ],
+ "comprobaciones": [
+  "Coche nuevo medio (C): Agencia Tributaria, estadística del Impuesto sobre la Matriculación, tabla por origen, fila «Nuevo y adquirido en España»: precio medio con el impuesto de matriculación, más el IVA de cada año sobre el precio sin impuestos. 2007: 21.635 € (IVA del 16 %); 2016: 20.741 €; 2019: 22.816 €; 2025: 31.555 €.",
+  "Meses de sueldo (C): precio / sueldo neto mediano de un mes (T16: 1.185 €, 1.332 €, 1.392 € y 1.702 €): 18,3, 15,6, 16,4 y 18,5.",
+  "Subidas desde 2016 (C): coche nuevo sin impuestos 16.930 € → 25.592 € (+51,2 %); sueldo neto mediano +27,8 %.",
+  "Segunda mano (C): DGT, cambios de titularidad de turismos / turismos matriculados (series históricas 2025): 1,55 (2007), 2,03 (2016), 2,19 (2019), 2,48 (2025). El máximo de la serie es 2021 (2,99, año de rebote): no se dice «más que nunca». Los cambios de titularidad incluyen los que pasan por un compraventa.",
+  "Usados traídos de fuera (C): Agencia Tributaria, origen «Usado» / total matriculado: 16,1 % (2007), 9,1 % (2016), 11,8 % (2019), 18,6 % (2025).",
+  "«Dos y medio» (2,48), «dos» (2,03), «uno y medio» (1,55), «dieciocho meses y medio» (18,5), «quince meses y medio» (15,6) y «dieciocho» (18,3): redondeos hablados de las cifras de pantalla.",
+  "No hay precio oficial por modelo de 2016 ni de 2019 (el ranking de Hacienda empieza en 2022): este vídeo no da precios de modelos concretos."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 2016 y 2019: el coche nuevo medio pasa de 15,6 y 16,4 meses de sueldo a 18,5 (el precio sube un 51 % desde 2016 y el sueldo neto un 28 %) y se vende más segunda mano (2,03 → 2,48 usados por cada matriculado). Frente a 2007, el coche nuevo cuesta casi los mismos meses (18,3) y entonces se vendía menos segunda mano (1,55)",
+  "porque": "Precio medio de los coches nuevos (Agencia Tributaria), cambios de titularidad y matriculaciones (DGT), IVA (BOE) y sueldo mediano (INE y Eurostat).",
+  "pregunta": "¿Tu primer coche fue nuevo o de segunda mano?"
+ },
+ "aprobacion_guion": "v1 enviada el 23-11-2026. Bruno: más coloquial e irónico, menos datos y más grandes, el primo se lo compraron sus padres, repetir lo de «la mitad la pones tú» y cambiar de escenario (concesionario de coches nuevos y luego otro sitio para los usados). v2 pendiente."
+}

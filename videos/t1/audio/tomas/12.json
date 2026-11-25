@@ -1,0 +1,37 @@
+{
+ "huella": "412b4af71a351d1f",
+ "semilla": 12000,
+ "texto": "El sueldo sube por la escalera. La compra, en ascensor.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "el sueldo sube por la escalera, la compra en ascensor.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   0.58,
+   1.02,
+   1.16,
+   1.28,
+   2.0,
+   2.52,
+   2.88,
+   3.34
+  ],
+  "t1": [
+   0.16,
+   0.58,
+   1.02,
+   1.16,
+   1.28,
+   1.74,
+   2.52,
+   2.88,
+   3.34,
+   3.8
+  ],
+  "ritmo": 10.9
+ }
+}

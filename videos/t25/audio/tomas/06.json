@@ -1,0 +1,39 @@
+{
+ "huella": "913782bba89476e8",
+ "semilla": 6000,
+ "texto": "Y de 83.000 para arriba ni 3 de cada 100.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0363,
+  "oido": "y de 83 mil para arriba, ni tres de cada cien.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.22,
+   1.06,
+   1.38,
+   2.0,
+   2.12,
+   2.34,
+   2.48,
+   2.62
+  ],
+  "t1": [
+   0.12,
+   0.22,
+   1.06,
+   1.38,
+   1.72,
+   2.12,
+   2.34,
+   2.48,
+   2.62,
+   3.0
+  ],
+  "ritmo": 13.9,
+  "voz": 0.923,
+  "viveza": 2.35
+ }
+}

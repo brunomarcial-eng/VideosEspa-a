@@ -1,0 +1,47 @@
+{
+ "huella": "7cf11cba0ad5fb51",
+ "semilla": 7003,
+ "texto": "Pues el sueldo medio ese de casi 26.000 euros que sale en la tele…",
+ "ev": {
+  "ok": true,
+  "nota": 1.0302,
+  "oido": "pues el sueldo medio ese de casi 26 mil euros que sale en la tele.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.26,
+   0.64,
+   0.88,
+   1.18,
+   1.38,
+   1.54,
+   2.4,
+   2.7,
+   3.24,
+   3.46,
+   3.58,
+   3.7
+  ],
+  "t1": [
+   0.14,
+   0.26,
+   0.6400000000000001,
+   0.88,
+   1.18,
+   1.38,
+   1.54,
+   2.4,
+   2.7,
+   3.24,
+   3.46,
+   3.58,
+   3.7,
+   3.88
+  ],
+  "ritmo": 14.5,
+  "voz": 0.91,
+  "viveza": 3.38
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "huella": "a38a2b30b71f8ef5",
+ "semilla": 3000,
+ "texto": "¿Una hora por unas gambas? Anda ya… en mis tiempos las pescaba yo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0386,
+  "oido": "Una hora por unas gambas, anda ya, en mis tiempos las pescaba yo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.2,
+   0.46,
+   0.7,
+   0.86,
+   1.98,
+   2.56,
+   3.42,
+   3.64,
+   3.78,
+   4.22,
+   4.32,
+   4.78
+  ],
+  "t1": [
+   0.20000000000000004,
+   0.46,
+   0.7,
+   0.86,
+   1.98,
+   2.56,
+   2.78,
+   3.64,
+   3.78,
+   4.22,
+   4.32,
+   4.78,
+   4.96
+  ],
+  "ritmo": 9.7,
+  "voz": 0.927,
+  "viveza": 3.79
+ }
+}

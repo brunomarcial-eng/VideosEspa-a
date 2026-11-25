@@ -1,0 +1,29 @@
+{
+ "huella": "87dcab62cfd71019",
+ "semilla": 3204,
+ "texto": "¡Pues casaos y a vivir!",
+ "ev": {
+  "ok": true,
+  "nota": 0.9412,
+  "oido": "¡Pues cazaos y a vivir!",
+  "parecido": 0.941,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.2,
+   0.8,
+   0.92,
+   1.0
+  ],
+  "t1": [
+   0.2,
+   0.8,
+   0.92,
+   1.0,
+   1.12
+  ],
+  "ritmo": 11.5,
+  "voz": 0.856
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.004; parecido 0.871)"
+}

@@ -1,0 +1,292 @@
+{
+ "nota": "Momentos clave de T15 v4 (Navidad). Abre con el mapa (portada). La música se corta en seco con las «ocho horas y veintiún minutos» de la cena para ocho. Mercado con sonidos de tienda y la báscula; la mesa con un pop por plato; sin ruido continuo; la música no lleva bajo grave.",
+ "musica": {
+  "bpm": 100,
+  "corte": "c9-veintiun",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "salon",
+   "desde": 1,
+   "hasta": 1,
+   "vol": 1.0
+  },
+  {
+   "tipo": "tienda",
+   "desde": 2,
+   "hasta": 7,
+   "vol": 1.0
+  },
+  {
+   "tipo": "salon",
+   "desde": 8,
+   "hasta": 11,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-subido",
+   "beat": 1,
+   "palabra": "subido",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c1-mira",
+   "beat": 1,
+   "palabra": "mira",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-yo",
+   "beat": 2,
+   "palabra": "yo",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-ilusion",
+   "beat": 2,
+   "palabra": "ilusión",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-no",
+   "beat": 2,
+   "palabra": "no",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-guapa",
+   "beat": 3,
+   "palabra": "guapa",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-54",
+   "beat": 3,
+   "palabra": "54",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-2016",
+   "beat": 3,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c3-igual",
+   "beat": 3,
+   "palabra": "igual",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-gambas",
+   "beat": 4,
+   "palabra": "gambas",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-ya",
+   "beat": 4,
+   "palabra": "ya",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-tiempos",
+   "beat": 4,
+   "palabra": "tiempos",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-pierna",
+   "beat": 5,
+   "palabra": "pierna",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.22
+  },
+  {
+   "id": "c5-veintiocho",
+   "beat": 5,
+   "palabra": "veintiocho",
+   "dt": -0.1,
+   "sfx": "beep",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-2016",
+   "beat": 5,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c5-48",
+   "beat": 5,
+   "palabra": "48",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.32
+  },
+  {
+   "id": "c6-sea",
+   "beat": 6,
+   "palabra": "sea",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-doce",
+   "beat": 6,
+   "palabra": "doce",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c6-2016",
+   "beat": 6,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c7-pierna",
+   "beat": 7,
+   "palabra": "pierna",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-tiempos",
+   "beat": 7,
+   "palabra": "tiempos",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c7-corral",
+   "beat": 7,
+   "palabra": "corral",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-hombre",
+   "beat": 7,
+   "palabra": "hombre",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-junto",
+   "beat": 8,
+   "palabra": "junto",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-cordero",
+   "beat": 8,
+   "palabra": "cordero",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-marisco",
+   "beat": 8,
+   "palabra": "marisco",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-jamon",
+   "beat": 8,
+   "palabra": "jamón",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-queso",
+   "beat": 8,
+   "palabra": "queso",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-vino",
+   "beat": 8,
+   "palabra": "vino",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c9-todo",
+   "beat": 9,
+   "palabra": "todo",
+   "dt": -0.1
+  },
+  {
+   "id": "c9-veintiun",
+   "beat": 9,
+   "palabra": "veintiún",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.35
+  },
+  {
+   "id": "c9-2016",
+   "beat": 9,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c10-jornada",
+   "beat": 10,
+   "palabra": "jornada",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-pollo",
+   "beat": 10,
+   "palabra": "pollo",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-casa",
+   "beat": 11,
+   "palabra": "casa",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-tanto",
+   "beat": 11,
+   "palabra": "tanto",
+   "dt": -0.1
+  }
+ ]
+}

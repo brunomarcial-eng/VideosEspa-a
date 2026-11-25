@@ -1,0 +1,32 @@
+{
+ "huella": "a1109f7f87650096",
+ "semilla": 7000,
+ "texto": "¡Pero si me han subido el sueldo!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0264,
+  "oido": "pero si me han subido el sueldo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   0.4,
+   0.58,
+   0.72,
+   1.18,
+   1.28
+  ],
+  "t1": [
+   0.18,
+   0.4,
+   0.58,
+   0.72,
+   1.18,
+   1.28,
+   1.72
+  ],
+  "ritmo": 13.3,
+  "voz": 0.903
+ }
+}

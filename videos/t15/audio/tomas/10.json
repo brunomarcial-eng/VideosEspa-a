@@ -1,0 +1,47 @@
+{
+ "huella": "6c9bceff6c3a8202",
+ "semilla": 10000,
+ "texto": "¿Una jornada entera por una cena? En mis tiempos con un pollo cenábamos diez.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0134,
+  "oido": "una jornada entera por una cena, en mis tiempos con un pollo senábamos diez.",
+  "parecido": 0.984,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   0.7,
+   1.1,
+   1.32,
+   1.46,
+   2.32,
+   2.64,
+   2.78,
+   3.14,
+   3.28,
+   3.38,
+   3.74,
+   4.38
+  ],
+  "t1": [
+   0.18000000000000002,
+   0.7,
+   1.1,
+   1.32,
+   1.46,
+   1.74,
+   2.64,
+   2.78,
+   3.14,
+   3.28,
+   3.38,
+   3.66,
+   4.38,
+   4.56
+  ],
+  "ritmo": 12.5,
+  "voz": 0.91,
+  "viveza": 4.97
+ }
+}

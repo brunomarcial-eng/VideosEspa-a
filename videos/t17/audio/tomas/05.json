@@ -1,0 +1,40 @@
+{
+ "huella": "99595b3d77937957",
+ "semilla": 5000,
+ "texto": "¡Pero si al primo Dani sus padres se lo compraron nuevo!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0218,
+  "oido": "Pero si al primo Dani y sus padres se lo compraron nuevo.",
+  "parecido": 0.989,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.3,
+   0.4,
+   0.58,
+   0.98,
+   1.12,
+   1.44,
+   1.86,
+   1.98,
+   2.48
+  ],
+  "t1": [
+   0.14,
+   0.3,
+   0.4,
+   0.58,
+   0.88,
+   1.12,
+   1.44,
+   1.86,
+   1.98,
+   2.48,
+   2.68
+  ],
+  "ritmo": 15.5,
+  "voz": 0.916
+ }
+}

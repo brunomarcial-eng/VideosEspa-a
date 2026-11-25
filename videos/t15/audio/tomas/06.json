@@ -1,0 +1,45 @@
+{
+ "huella": "741d14a4e9e057cb",
+ "semilla": 5000,
+ "texto": "O sea dos horas y doce minutos de curro. En 2016 ni dos.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0552,
+  "oido": "O sea, dos horas y 12 minutos de curro. En 2016, ni dos.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.52,
+   0.56,
+   0.9,
+   1.16,
+   1.36,
+   1.74,
+   2.02,
+   2.86,
+   3.34,
+   4.34,
+   4.48
+  ],
+  "t1": [
+   0.14,
+   0.32000000000000006,
+   0.56,
+   0.9,
+   1.16,
+   1.36,
+   1.74,
+   2.02,
+   2.44,
+   3.34,
+   4.16,
+   4.48,
+   4.7
+  ],
+  "ritmo": 10.5,
+  "voz": 0.96,
+  "viveza": 2.96
+ }
+}

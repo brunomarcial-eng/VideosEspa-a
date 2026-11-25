@@ -1,0 +1,26 @@
+plano 1: «¡Diez años fuera! ¿Vuelves para quedarte?»
+    toma guardada (semilla 1000): BUENA · «10 años fuera. ¿Vuelves para quedarte?»
+plano 2: «Si me llega el sueldo… Tú lo tuviste más fácil: te independizaste en 2016.»
+    toma guardada (semilla 2000): BUENA · «Si me llega el sueldo, tú lo tuviste más fácil. Te independizaste en 2016.»
+plano 3: «¿Más fácil? ¡Si hoy se cobra más!»
+    toma guardada (semilla 3000): BUENA · «Más fácil, si hoy se cobra más.»
+plano 4: «Un 2 % más que en 2016, ya descontada la inflación. Vamos a contarlo en horas de trabajo.»
+    toma guardada (semilla 4000): BUENA · «un 2%, más que en 2016 ya descontada la inflación. Vamos a contarlo en horas de trabajo.»
+plano 5: «Un piso: 7 años y medio de sueldo en 2016. Hoy, más de 8 y medio.»
+    toma guardada (semilla 5000): BUENA · «un piso, siete años y medio de sueldo en 2016, hoy más de ocho y medio.»
+plano 6: «Llenar el depósito: 4 horas de trabajo en 2016. Hoy, casi 6.»
+    toma guardada (semilla 6001): BUENA · «Llenar el depósito, 4 horas de trabajo en 2016, hoy casi 6.»
+plano 7: «Pues la luz me cuesta menos: 67 horas al año en 2016. Hoy, 62.»
+    toma guardada (semilla 7000): BUENA · «Pues la luz me cuesta menos, 67 horas al año en 2016, hoy 62.»
+plano 8: «Ya, pero la comida del mes: 11 horas en 2016. Hoy, 12.»
+    toma guardada (semilla 8001): BUENA · «Ya, pero la comida del mes, 11 horas en 2016, hoy 12.»
+plano 9: «Y solo en IRPF y cotizaciones, trabajas para el Estado hasta el 31 de mayo. En 2016, hasta el 24.»
+    toma 1 (semilla 9000): BUENA · 0.995 · voz 0.912 · 7.0 s · 14.8 l/s · «y solo en ir EPF y cotizaciones, trabajas para el estado hasta el 31 de mayo, en 2016 hasta el 24.»
+plano 10: «Y súmale la comida, el carburante y los recibos de casa: en 2016 trabajabas para todo eso hasta el 28 de junio. Hoy, hasta el 3 de julio.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.927 · 9.1 s · 13.9 l/s · «Y súmale la comida, el carburante y los recibos de casa. En 2016 trabajabas para todo eso hasta el 28 de junio. Hoy, hasta el 3 de julio.»
+plano 11: «O sea, que me quedan casi 6 días menos al año para mí.»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.924 · 3.0 s · 14.3 l/s · «O sea, que me quedan casi seis días menos al año para mí.»
+plano 12: «Bueno… ¡Bienvenido a casa!»
+    toma guardada (semilla 10000): BUENA · «Bueno, bienvenido a casa.»
+plano 13: «Tal y como está España… ¿me quedo o me vuelvo a marchar? ¿Tú qué harías?»
+    toma guardada (semilla 11001): BUENA · «Tal y como está España, me quedo o me vuelvo a marchar, ¿tu qué harías?»

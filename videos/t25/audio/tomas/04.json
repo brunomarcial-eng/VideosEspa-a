@@ -1,0 +1,35 @@
+{
+ "huella": "15b5840167cc2092",
+ "semilla": 4005,
+ "texto": "Anda ya… ¿y los de 40.000 como yo?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0035,
+  "oido": "Anda ya y los de 40.000 como yo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.22,
+   0.5,
+   1.18,
+   1.3,
+   1.42,
+   1.9,
+   2.1
+  ],
+  "t1": [
+   0.22,
+   0.5,
+   1.18,
+   1.3,
+   1.42,
+   1.9,
+   2.1,
+   2.3
+  ],
+  "ritmo": 8.8,
+  "voz": 0.857,
+  "viveza": 4.15
+ }
+}

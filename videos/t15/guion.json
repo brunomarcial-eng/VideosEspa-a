@@ -1,0 +1,400 @@
+{
+ "id": "t15",
+ "version": 4,
+ "titulo": "¿Cuántas horas trabajas para la cena de Nochebuena?",
+ "titulo_alternativo": "La cena de Nochebuena en horas de trabajo: 2016 frente a hoy",
+ "pregunta": "Una madre que pone la cena este año, el abuelo y el del mercado. ¿Cuánto tiempo de trabajo cuesta la cena de Nochebuena para ocho, todo junto, frente a 2016? ¿Y el plato principal?",
+ "datos": "data/clean/t15_navidad.json",
+ "aprobacion_datos": "Bruno, 22-11-2026: eligió la cena de Navidad (serie «¿Cuántas horas…?»). El 23-11-2026 mandó la lista de comidas típicas de Navidad por regiones: la cena lleva lo que sale en toda España y tiene precio oficial por kilo en el INE (marisco, cordero o cabrito, jamón y embutido, queso, vino); turrón y polvorones van con el IPC; los platos de cada región, en el mapa final. Tono y forma como T17 (aprobado): de calle, irónico, pocas cifras y grandes, cambio de escenario y un chiste que se repite. v3 (Bruno, 23-11-2026): «está bien en general»; pide voces con más vida y una abuela que no suene joven (pasa a abuelo, voz «padre»), quitar lo azul de la mano de la madre, un plato principal con la diferencia en euros de 2016 a hoy y su porcentaje en lugar de los turrones, y el mapa más grande con la subida bajo cada plato. v4 (Bruno, 23-11-2026): el mapa abre el vídeo y es la portada, más grande; fuera los juguetes y la naranja; la cena tiene que entenderse (de qué se compone y que el tiempo es todo junto) y verse en una mesa grande para 8 o 10, desde arriba, con los platos que se cenan.",
+ "formato": "El mapa de platos de cada región con lo que ha subido cada uno (gancho y portada) → el mercado (marisco y el plato principal) → la mesa de Nochebuena para ocho vista desde arriba, plato a plato y todo junto → el mapa otra vez con la pregunta. La madre que pone la cena, el abuelo («en mis tiempos…», el chiste que vuelve) y el del mercado.",
+ "duracion_max_s": 80,
+ "personajes": {
+  "madre": {
+   "anyo": "unos 45, este año pone ella la cena",
+   "voz": "medica"
+  },
+  "abuelo": {
+   "anyo": "unos 75, el abuelo, con mucha guasa",
+   "voz": "padre"
+  },
+  "tendero": {
+   "anyo": "unos 45, el del puesto del mercado (pescado y carne)",
+   "voz": "profesora"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45,
+  "viveza_tomas": 3
+ },
+ "sin_veredicto": "El veredicto lo dice la madre en el plano 9 («casi una hora más por la misma cena» que en 2016; en pantalla, también 2019) y el vídeo acaba con la pregunta del plano 11.",
+ "capitulos": [
+  {
+   "nombre": "Lo típico de cada sitio",
+   "beats": [
+    1
+   ]
+  },
+  {
+   "nombre": "El mercado",
+   "beats": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "nombre": "La mesa",
+   "beats": [
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    11
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "madre",
+   "funcion": "gancho (y portada)",
+   "voz": "¿Cuántas horas de curro te cuesta la cena de Nochebuena? Mira cómo ha subido lo típico de cada sitio.",
+   "pantalla": "¿Cuánto ha subido la cena de Nochebuena?",
+   "nota": "Subida del precio de su ingrediente principal, 2016-2025: cordero 48 %, marisco 32 %, cerdo 34 %, ave 29 %, pescado fresco 27 %, bacalao 42 %, turrón y dulces 50 %. El sueldo, 26 %",
+   "sello": "CÁLCULO PROPIO · INE (Presupuestos Familiares e IPC)",
+   "actuacion": {
+    "velocidad": 1.02
+   },
+   "imagen": "Desde el primer fotograma, el mapa de España grande con el plato típico de cada región y su subida en rojo debajo (es también la portada). Cae el sello «SOLO DATOS OFICIALES». La madre y el abuelo, abajo."
+  },
+  {
+   "n": 2,
+   "quien": "madre",
+   "funcion": "presentación",
+   "voz": "Este año la cena la pongo yo… qué ilusión. O no.",
+   "pantalla": "«Este año la cena la pongo yo»",
+   "sello": null,
+   "actuacion": {
+    "velocidad": 1.02
+   },
+   "imagen": "El mercado con guirnaldas y bombillas. La madre llega con el abuelo, con las manos libres."
+  },
+  {
+   "n": 3,
+   "quien": "tendero",
+   "funcion": "dato: el marisco",
+   "voz": "Un kilo de marisco guapa son 54 minutos. En 2016 eran 52… o sea casi igual.",
+   "pantalla": "Kilo de marisco · 54 minutos de trabajo",
+   "nota": "En 2016, 52. Precio medio del año, todo tipo de marisco. Sueldo neto mediano: 12,98 € la hora",
+   "sello": "CÁLCULO PROPIO · INE (Presupuestos Familiares y Estructura Salarial)",
+   "actuacion": {
+    "velocidad": 1.03,
+    "tono": 1.01
+   },
+   "imagen": "La pescadería: gambas, langostinos y un centollo sobre hielo. Un reloj de cocina da casi una vuelta."
+  },
+  {
+   "n": 4,
+   "quien": "abuelo",
+   "funcion": "gag 1",
+   "voz": "¿Una hora por unas gambas? Anda ya… en mis tiempos las pescaba yo.",
+   "pantalla": "«En mis tiempos…»",
+   "sello": null,
+   "actuacion": {
+    "velocidad": 0.98
+   },
+   "imagen": "El abuelo, con las manos en la cintura, mira las gambas."
+  },
+  {
+   "n": 5,
+   "quien": "tendero",
+   "funcion": "dato: el plato principal en euros",
+   "voz": "Y el plato fuerte… la pierna de cordero. Veintiocho euros y pico. En 2016 diecinueve. Un 48 % más.",
+   "pantalla": "El plato principal: pierna de cordero · 28,66 € · +48 %",
+   "nota": "En 2016, 19,35 €. Kilo y medio; precio medio del año, cordero y cabrito",
+   "sello": "CÁLCULO PROPIO · INE (Encuesta de Presupuestos Familiares)",
+   "actuacion": {
+    "velocidad": 1.0,
+    "tono": 1.01
+   },
+   "imagen": "La carnicería: el tendero levanta la pierna de cordero y la pone en la báscula; el precio de 2016 y el de hoy, con la subida en rojo."
+  },
+  {
+   "n": 6,
+   "quien": "madre",
+   "funcion": "dato: el plato principal en tiempo",
+   "voz": "O sea dos horas y doce minutos de curro. En 2016 ni dos.",
+   "pantalla": "Pierna de cordero · 132 minutos de trabajo",
+   "nota": "En 2016, 113. El cordero sube un 48 %; el sueldo, un 26 %",
+   "sello": "CÁLCULO PROPIO · INE (Presupuestos Familiares y Estructura Salarial)",
+   "imagen": "Dos relojes de cocina: el de hoy da dos vueltas largas."
+  },
+  {
+   "n": 7,
+   "quien": "abuelo",
+   "funcion": "gag 2",
+   "voz": "¿Dos horas por una pierna? En mis tiempos el cordero lo teníamos en el corral hombre.",
+   "pantalla": "«En mis tiempos, en el corral»",
+   "sello": null,
+   "actuacion": {
+    "velocidad": 0.98
+   },
+   "imagen": "El abuelo se ríe; el tendero se encoge de hombros."
+  },
+  {
+   "n": 8,
+   "quien": "madre",
+   "funcion": "de qué se compone la cena",
+   "voz": "Y la cena para ocho todo junto… dos piernas de cordero, dos kilos de marisco, jamón, queso y cuatro botellas de vino.",
+   "pantalla": "La cena de Nochebuena para 8, todo junto: cordero, marisco, jamón, queso y vino",
+   "nota": "Dos piernas de cordero (3 kg), 2 kg de marisco, 600 g de jamón y embutido, 600 g de queso y 4 botellas de vino (3 l). En tiempo de trabajo, hoy: cordero 4 h 25 min, marisco 1 h 49 min, jamón y embutido 35 min, queso 31 min y vino 61 min",
+   "sello": "CÁLCULO PROPIO · INE (Presupuestos Familiares y Estructura Salarial)",
+   "imagen": "La mesa de Nochebuena para ocho vista desde arriba: mantel, ocho platos con sus copas y, en el centro, cada plato aparece cuando se nombra, con su nombre y su tiempo de trabajo debajo."
+  },
+  {
+   "n": 9,
+   "quien": "madre",
+   "funcion": "dato: la cena entera y veredicto",
+   "voz": "Todo junto ciento ocho euros. O sea ocho horas y veintiún minutos de curro. En 2016 siete y media… casi una hora más por la misma cena.",
+   "pantalla": "Cena de Nochebuena para 8, minutos de trabajo · 2016: 450 · 2019: 456 · 2025: 501",
+   "nota": "8 h 21 min hoy; 7 h 30 min en 2016; 7 h 36 min en 2019. Todo junto: 108,43 € hoy y 77,07 € en 2016. Mismas cantidades los tres años. Plato a plato, hoy: cordero 4 h 25 min, marisco 1 h 49 min, jamón y embutido 35 min, queso 31 min y vino 61 min",
+   "sello": "CÁLCULO PROPIO · INE (Presupuestos Familiares y Estructura Salarial)",
+   "grafico": true,
+   "imagen": "La misma mesa, con todo servido; los tiempos de cada plato laten y la tarjeta da el total de 2016 y de hoy."
+  },
+  {
+   "n": 10,
+   "quien": "abuelo",
+   "funcion": "gag 3",
+   "voz": "¿Una jornada entera por una cena? En mis tiempos con un pollo cenábamos diez.",
+   "pantalla": "«En mis tiempos, un pollo para diez»",
+   "sello": "CÁLCULO PROPIO · INE (Presupuestos Familiares y Estructura Salarial)",
+   "actuacion": {
+    "velocidad": 0.98
+   },
+   "imagen": "En la mesa, todo se va y queda un pollo asado en el centro.",
+   "nota": "Dos piernas de cordero (3 kg), 2 kg de marisco, 600 g de jamón y embutido, 600 g de queso y 4 botellas de vino (3 l). En tiempo de trabajo, hoy: cordero 4 h 25 min, marisco 1 h 49 min, jamón y embutido 35 min, queso 31 min y vino 61 min"
+  },
+  {
+   "n": 11,
+   "quien": "madre",
+   "funcion": "pregunta",
+   "voz": "¿Y en tu casa qué se come en Nochebuena? ¿Te ha subido tanto?",
+   "pantalla": "¿Qué se come en tu casa? ¿Te ha subido tanto?",
+   "nota": "Subida del precio de su ingrediente principal, 2016-2025: cordero 48 %, marisco 32 %, cerdo 34 %, ave 29 %, pescado fresco 27 %, bacalao 42 %, turrón y dulces 50 %. El sueldo, 26 %",
+   "sello": "CÁLCULO PROPIO · INE (Presupuestos Familiares e IPC)",
+   "actuacion": {
+    "velocidad": 1.02
+   },
+   "imagen": "El mapa otra vez, grande; la madre pregunta al espectador."
+  }
+ ],
+ "no_dato": [
+  "1",
+  "1,5",
+  "3",
+  "4",
+  "8",
+  "2",
+  "600"
+ ],
+ "cifras": [
+  {
+   "texto": "54",
+   "ruta": "platos.marisco.minutos.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "52",
+   "ruta": "platos.marisco.minutos.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "12,98",
+   "ruta": "sueldo.neto_hora_mediana.2025",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "28,66",
+   "ruta": "platos.cordero.eur.2025",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "19,35",
+   "ruta": "platos.cordero.eur.2016",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "48",
+   "ruta": "platos.cordero.precio_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "132",
+   "ruta": "platos.cordero.minutos.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "113",
+   "ruta": "platos.cordero.minutos.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "26",
+   "ruta": "sueldo.mediana_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "25",
+   "ruta": "cena.platos.cordero.m.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "49",
+   "ruta": "cena.platos.marisco.m.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "35",
+   "ruta": "cena.platos.jamon.minutos.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "31",
+   "ruta": "cena.platos.queso.minutos.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "61",
+   "ruta": "cena.platos.vino.minutos.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "450",
+   "ruta": "cena.minutos.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "456",
+   "ruta": "cena.minutos.2019",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "501",
+   "ruta": "cena.minutos.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "21",
+   "ruta": "cena.m.2025",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "30",
+   "ruta": "cena.m.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "36",
+   "ruta": "cena.m.2019",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "7",
+   "ruta": "cena.h.2016",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "108,43",
+   "ruta": "cena.eur.2025",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "77,07",
+   "ruta": "cena.eur.2016",
+   "decimales": 2,
+   "estado": "C"
+  },
+  {
+   "texto": "32",
+   "ruta": "mapa_subida_precio_pct.marisco.sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "34",
+   "ruta": "mapa_subida_precio_pct.cerdo.sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "29",
+   "ruta": "mapa_subida_precio_pct.ave.sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "27",
+   "ruta": "mapa_subida_precio_pct.pescado.sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "42",
+   "ruta": "mapa_subida_precio_pct.bacalao.sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "50",
+   "ruta": "mapa_subida_precio_pct.dulces.sube_pct",
+   "decimales": 0,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "Cena para ocho (C), mismas cantidades los tres años: dos piernas de cordero (3 kg), 2 kg de marisco fresco, 600 g de jamón y embutido, 600 g de queso y cuatro botellas de vino (3 l). Valor unitario de la EPF (INE, lo que pagan de media los hogares): ovino y caprino 12,90 → 19,11 €/kg; marisco fresco o refrigerado 8,89 → 11,74; charcutería 9,81 → 12,79; queso 9,66 → 11,15; vino de uva 2,97 → 4,42 €/l. Total 77,07 € en 2016, 82,44 € en 2019 y 108,43 € en 2025: 450, 456 y 501 minutos (7 h 30, 7 h 36 y 8 h 21), +51 minutos («casi una hora más»). Hoy, plato a plato: cordero 265 min (4 h 25), marisco 109 (1 h 49), jamón y embutido 35, queso 31 y vino 61; suman 501.",
+  "Plato principal (C): pierna de cordero de kilo y medio al precio medio de «carne de ovino y caprino» de la EPF (INE): 12,90 €/kg en 2016 y 19,11 €/kg en 2025, o sea 19,35 € y 28,66 € (+48,1 %). En tiempo: 113 y 132 minutos (132,5, redondeo al par). Se dice «veintiocho euros y pico» y «diecinueve» (19,35).",
+  "Mapa (C): subida del precio de 2016 a 2025 del ingrediente principal de cada plato típico (lista de Bruno), con la categoría oficial más cercana. EPF, valor unitario: ovino y caprino +48,1 % (lechazo, ternasco, caldereta); marisco fresco +32,1 % (centollo, gambas); porcino +33,5 % (cochinillo); ave +28,6 % (pularda, escaldums de pavo o gallina); pescado fresco +27,1 % (besugo); pescados secos y salados +41,7 % (bacalao). IPC, «azúcar, confitura, miel, chocolate y confitería», +49,7 % (turrón, polvorones). Los platos sin categoría clara (cocido, escudella, perdiz) se cambian por otro de la lista de la misma región. Las posiciones son aproximadas.",
+  "Sueldo (C): neto mediano por hora de T14 (INE, Encuesta Anual de Estructura Salarial; 2025 = EAES 2024 × ETCL; neto con la relación neto / bruto de Eurostat): 10,27 € en 2016 y 12,98 € en 2025 (+26,4 %).",
+  "Precios del año entero: la EPF da lo que pagan de media los hogares en todo el año, no en diciembre. «Marisco» es todo el marisco fresco o refrigerado (gambas, langostinos, mejillones, almejas…); «cordero» es ovino y caprino (cordero y cabrito).",
+  "Redondeos hablados: «una hora» (54 minutos), «veintiocho euros y pico» (28,66), «diecinueve» (19,35), «dos horas y doce minutos» (132), «en 2016 ni dos» (113 minutos), «ciento ocho euros» (108,43), «ocho horas y veintiún minutos» (501), «siete y media» (450), «casi una hora más» (+51 minutos), «una jornada entera» (más de ocho horas)."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 2016 y 2019: la cena de Nochebuena para ocho, todo junto, pasa de 450 y 456 minutos de trabajo a 501 (+51 minutos, casi una hora); el plato principal, la pierna de cordero, sube un 48 % (de 19,35 a 28,66 €) y pasa de 113 a 132 minutos; el marisco, casi igual (52 → 54 el kilo)",
+  "porque": "Los precios de la cena suben más que el sueldo neto (el cordero +48 %, la cena entera +41 %, el sueldo +26 %). Precios medios que pagan los hogares e IPC (INE) y sueldo neto mediano por hora (INE).",
+  "pregunta": "¿Qué se come en tu casa en Nochebuena? ¿Te ha subido tanto?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno (v4, 23-11-2026)"
+}

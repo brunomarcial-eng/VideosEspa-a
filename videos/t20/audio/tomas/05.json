@@ -1,0 +1,35 @@
+{
+ "huella": "541b07e8d3b3e8b7",
+ "semilla": 5006,
+ "texto": "Ya majo pero la ilusión no tiene precio.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0132,
+  "oido": "Yamajo, pero la ilusión no tiene precio.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14666666666666667,
+   0.5,
+   0.62,
+   0.78,
+   1.18,
+   1.32,
+   1.48
+  ],
+  "t1": [
+   0.14666666666666667,
+   0.44,
+   0.62,
+   0.78,
+   1.18,
+   1.32,
+   1.48,
+   1.72
+  ],
+  "ritmo": 16.0,
+  "voz": 0.876,
+  "viveza": 2.48
+ }
+}

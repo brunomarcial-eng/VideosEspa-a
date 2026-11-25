@@ -1,0 +1,368 @@
+{
+ "nota": "Momentos clave de T4 v4 (padre contra hijo, 2.ª parte; el decorado cambia como en un sueño). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t4/escenas.mjs) y el sonido (scripts/sonido.py). Los «cN-ini» son el sonido del cambio de decorado.",
+ "musica": {
+  "bpm": 100,
+  "corte": "c6-33",
+  "silencio_s": 1.2
+ },
+ "cues": [
+  {
+   "id": "c1-netflix",
+   "beat": 1,
+   "palabra": "Netflix,",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c1-glovo",
+   "beat": 1,
+   "palabra": "Glovo,",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.1
+  },
+  {
+   "id": "c1-gim",
+   "beat": 1,
+   "palabra": "gimnasio,",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.2
+  },
+  {
+   "id": "c1-fest",
+   "beat": 1,
+   "palabra": "festivales…",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.3
+  },
+  {
+   "id": "c1-ahorre",
+   "beat": 1,
+   "palabra": "ahorre!",
+   "dt": -0.15,
+   "sfx": "ting",
+   "vol": 0.35
+  },
+  {
+   "id": "c2-ini",
+   "beat": 2,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c2-86",
+   "beat": 2,
+   "palabra": "12",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c2-hoy",
+   "beat": 2,
+   "palabra": "Hoy,",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.8,
+   "hasta": 1.25
+  },
+  {
+   "id": "c2-17",
+   "beat": 2,
+   "palabra": "17.",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4,
+   "tono": 1.2
+  },
+  {
+   "id": "c4-ini",
+   "beat": 4,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c4-super",
+   "beat": 4,
+   "palabra": "súper.",
+   "dt": -0.2,
+   "sfx": "carro",
+   "vol": 0.4,
+   "dur": 0.9
+  },
+  {
+   "id": "c4-p0",
+   "beat": 4,
+   "palabra": "súper.",
+   "dt": 0.75,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-p1",
+   "beat": 4,
+   "palabra": "súper.",
+   "dt": 1.0,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.15
+  },
+  {
+   "id": "c4-p2",
+   "beat": 4,
+   "palabra": "súper.",
+   "dt": 1.25,
+   "sfx": "pop",
+   "vol": 0.4,
+   "tono": 1.3
+  },
+  {
+   "id": "c4-28",
+   "beat": 4,
+   "palabra": "28",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c4-hoy",
+   "beat": 4,
+   "palabra": "Hoy,",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.8,
+   "hasta": 0.7
+  },
+  {
+   "id": "c4-16",
+   "beat": 4,
+   "palabra": "16.",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4,
+   "tono": 0.85
+  },
+  {
+   "id": "c5-pasta",
+   "beat": 5,
+   "palabra": "pasta?",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.45
+  },
+  {
+   "id": "c6-ini",
+   "beat": 6,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c6-casa",
+   "beat": 6,
+   "palabra": "casa,",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.45,
+   "hasta": 1.2
+  },
+  {
+   "id": "c6-19",
+   "beat": 6,
+   "palabra": "19",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c6-hoy",
+   "beat": 6,
+   "palabra": "Hoy,",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.32,
+   "dur": 1.2,
+   "hasta": 1.7
+  },
+  {
+   "id": "c6-f5",
+   "beat": 6,
+   "palabra": "Hoy,",
+   "dt": 0.2,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c6-f6",
+   "beat": 6,
+   "palabra": "Hoy,",
+   "dt": 0.52,
+   "sfx": "golpe",
+   "vol": 0.35
+  },
+  {
+   "id": "c6-f7",
+   "beat": 6,
+   "palabra": "Hoy,",
+   "dt": 0.84,
+   "sfx": "golpe",
+   "vol": 0.4
+  },
+  {
+   "id": "c6-33",
+   "beat": 6,
+   "palabra": "33.",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.6
+  },
+  {
+   "id": "c6-tercio",
+   "beat": 6,
+   "palabra": "tercio",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.35
+  },
+  {
+   "id": "c7-alquila",
+   "beat": 7,
+   "palabra": "alquila",
+   "dt": -0.1,
+   "sfx": "desenrolla",
+   "vol": 0.4,
+   "dur": 0.45
+  },
+  {
+   "id": "c8-ini",
+   "beat": 8,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c8-39",
+   "beat": 8,
+   "palabra": "39",
+   "dt": -0.05,
+   "sfx": "pinza",
+   "vol": 0.45
+  },
+  {
+   "id": "c8-pareja",
+   "beat": 8,
+   "palabra": "pareja,",
+   "dt": -0.35,
+   "sfx": "campanilla",
+   "vol": 0.35
+  },
+  {
+   "id": "c8-27",
+   "beat": 8,
+   "palabra": "27.",
+   "dt": -0.05,
+   "sfx": "ding",
+   "vol": 0.4
+  },
+  {
+   "id": "c8-compartido",
+   "beat": 8,
+   "palabra": "compartido.",
+   "dt": -0.25,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c8-comp2",
+   "beat": 8,
+   "palabra": "compartido.",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.45,
+   "tono": 1.2
+  },
+  {
+   "id": "c9-ini",
+   "beat": 9,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c9-tacos",
+   "beat": 9,
+   "palabra": "tacos?",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.4
+  },
+  {
+   "id": "c10-es",
+   "beat": 10,
+   "palabra": "30,2",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.7,
+   "hasta": 1.35
+  },
+  {
+   "id": "c10-ue",
+   "beat": 10,
+   "palabra": "26.",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3,
+   "dur": 0.6,
+   "hasta": 1.15
+  },
+  {
+   "id": "c13-ini",
+   "beat": 13,
+   "en": "inicio",
+   "dt": -0.2,
+   "sfx": "sueno",
+   "vol": 0.5
+  },
+  {
+   "id": "c13-comes",
+   "beat": 13,
+   "palabra": "comes",
+   "dt": -0.1,
+   "sfx": "vapor",
+   "vol": 0.35
+  },
+  {
+   "id": "c14-botones",
+   "beat": 14,
+   "palabra": "¿Quién",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.45
+  },
+  {
+   "id": "c14-boc",
+   "beat": 14,
+   "palabra": "opinas?",
+   "dt": -0.25,
+   "sfx": "notif",
+   "vol": 0.5
+  }
+ ]
+}

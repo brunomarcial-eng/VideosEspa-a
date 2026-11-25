@@ -1,0 +1,57 @@
+{
+ "tema": "El coche que más se compra en España, en meses de sueldo, frente a Alemania",
+ "nota": "Sueldo neto MEDIO de un soltero sin hijos (Eurostat, earn_nt_net) para poder comparar países; precios de España de la Agencia Tributaria con IVA; precio en Alemania estimado con los niveles de precios de Eurostat (vehículos).",
+ "sueldo_neto_medio_anual": {
+  "ES": {
+   "2007": 17461,
+   "2016": 20828,
+   "2019": 21482,
+   "2025": 27041
+  },
+  "DE": {
+   "2007": 23195,
+   "2016": 28986,
+   "2019": 31486,
+   "2025": 36535
+  }
+ },
+ "sueldo_neto_medio_mes_2025": {
+  "ES": 2253,
+  "DE": 3045
+ },
+ "sueldo_aleman_mas_pct": 35.1,
+ "nivel_precios_vehiculos": {
+  "anyo": "2024",
+  "ES": 96.2,
+  "DE": 100.4,
+  "alemania_mas_cara_pct": 4.4
+ },
+ "sandero": {
+  "precio_es": 15752,
+  "precio_de_estimado": 16440,
+  "meses_es": 7.0,
+  "meses_de": 5.4
+ },
+ "bmw": {
+  "modelo": "X1",
+  "matriculados": 10408,
+  "precio_medio_sin_impuestos": 34715,
+  "precio_con_iva": 42005,
+  "precio_es": 42005,
+  "precio_de_estimado": 43839,
+  "meses_es": 18.6,
+  "meses_de": 14.4
+ },
+ "coche_nuevo_medio": {
+  "precio_es": 31555,
+  "precio_de_estimado": 32933,
+  "meses_es": 14.0,
+  "meses_de": 10.8
+ },
+ "coche_nuevo_medio_espana_meses_sueldo_medio": {
+  "2007": 14.9,
+  "2016": 12.0,
+  "2019": 12.7,
+  "2025": 14.0
+ }
+}

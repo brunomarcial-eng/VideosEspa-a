@@ -1,0 +1,36 @@
+{
+ "huella": "1a0c79333018466e",
+ "semilla": 2000,
+ "texto": "Lo de su rodilla es del traumatólogo. Le derivo.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0398,
+  "oido": "Lo de su rodilla es del traumatólogo, le derivo.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   0.3,
+   0.4,
+   0.86,
+   1.14,
+   1.28,
+   2.74,
+   3.24
+  ],
+  "t1": [
+   0.16,
+   0.3,
+   0.4,
+   0.86,
+   1.14,
+   1.28,
+   2.14,
+   3.24,
+   3.66
+  ],
+  "ritmo": 9.8,
+  "voz": 0.93
+ }
+}

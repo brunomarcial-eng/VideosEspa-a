@@ -1,0 +1,42 @@
+{
+ "huella": "38e1158fbfb00385",
+ "semilla": 5000,
+ "texto": "Tampoco te libras: el paquete de café, 15 minutos. En 2016, 13.",
+ "ev": {
+  "ok": true,
+  "nota": 1.031,
+  "oido": "Tampoco te libras el paquete de café, 15 minutos, en 2016, 13.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.28,
+   0.4,
+   0.88,
+   1.42,
+   1.74,
+   1.82,
+   2.7,
+   3.08,
+   4.18,
+   4.74,
+   6.18
+  ],
+  "t1": [
+   0.28,
+   0.4,
+   0.88,
+   1.42,
+   1.74,
+   1.82,
+   2.1,
+   3.08,
+   3.58,
+   4.74,
+   5.24,
+   6.64
+  ],
+  "ritmo": 9.4,
+  "voz": 0.912
+ }
+}

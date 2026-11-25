@@ -1,0 +1,34 @@
+{
+ "huella": "d3c6141a39c661e1",
+ "semilla": 4001,
+ "texto": "Pues me paso al café, como los mayores.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0059,
+  "oido": "Pues me paso al café como los mayores.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   0.34,
+   0.6,
+   0.76,
+   1.08,
+   1.38,
+   1.56
+  ],
+  "t1": [
+   0.16,
+   0.34,
+   0.6,
+   0.76,
+   1.08,
+   1.38,
+   1.56,
+   2.0
+  ],
+  "ritmo": 13.2,
+  "voz": 0.862
+ }
+}

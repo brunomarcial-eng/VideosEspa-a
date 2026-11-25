@@ -1,0 +1,51 @@
+{
+ "huella": "6d87732104a9b94d",
+ "semilla": 2005,
+ "texto": "Un kilo de marisco guapa son 54 minutos. En 2016 eran 52… o sea casi igual.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0494,
+  "oido": "un kilo de marisco guapa son cincuenta y cuatro minutos en dos mil dieciséis eran cincuenta y dos o sea casi igual.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   0.38,
+   0.54,
+   0.94,
+   1.32,
+   1.6,
+   2.26,
+   2.68,
+   3.7,
+   4.62,
+   4.9,
+   5.62,
+   6.3,
+   6.42,
+   6.74
+  ],
+  "t1": [
+   0.18,
+   0.38,
+   0.54,
+   0.94,
+   1.32,
+   1.6,
+   2.26,
+   2.68,
+   3.7,
+   4.62,
+   4.9,
+   5.62,
+   6.3,
+   6.42,
+   6.74,
+   6.98
+  ],
+  "ritmo": 12.9,
+  "voz": 0.949,
+  "viveza": 3.97
+ }
+}

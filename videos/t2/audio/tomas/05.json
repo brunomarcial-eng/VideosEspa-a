@@ -1,0 +1,33 @@
+{
+ "huella": "1a8660b3938a08c6",
+ "semilla": 5000,
+ "texto": "O sea, de cada 100 habitantes, trabajaban 46.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "O sea, ¿de cada 100 habitantes trabajaban 46?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.1,
+   0.48,
+   0.72,
+   0.92,
+   1.12,
+   1.64,
+   2.22
+  ],
+  "t1": [
+   0.1,
+   0.24,
+   0.72,
+   0.92,
+   1.12,
+   1.64,
+   2.22,
+   2.62
+  ],
+  "ritmo": 15.3
+ }
+}

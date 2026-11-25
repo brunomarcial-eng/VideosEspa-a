@@ -1,0 +1,23 @@
+plano 1: «Oye ¿tú sabes cuál es el coche que más se compra en España? El más barato tío.»
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.934 · 4.4 s · 13.4 l/s · «Oye, ¿tú sabes cuál es el coche que más se compra en España? El más barato tío.»
+plano 2: «Anda ya hombre, si en 2016 era el León, que me lo compré yo.»
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.921 · 4.6 s · 12.0 l/s · «Anda ya hombre, si en 2016 era el león que me lo compré yo.»
+plano 3: «Eso era antes. Ahora gana el Dacia Sandero, y detrás el Clio y el MG.»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.948 · 4.9 s · 11.2 l/s · «Eso era antes. Ahora gana el Dacia Sandero y detrás el Clio y el MG.»
+plano 4: «Y fíjate, el Sandero 15.752 euros y el coche medio 31.555, o sea la mitad tío.»
+    toma 1 (semilla 4000): BUENA · 0.996 · voz 0.952 · 8.0 s · 15.2 l/s · «Y fíjate, el Sandero 15.752 euros y el coche medio 31.555, o sea, a la mitad, tío.»
+plano 5: «Hombre, pues entonces es barato ¿no?»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.858 · 1.9 s · 14.6 l/s · «¡Hombre! Pues entonces es barato, ¿no?»
+plano 6: «¿Barato? Siete meses de sueldo enteritos, sin gastarte un euro.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.913 · 3.7 s · 13.5 l/s · «Barato, siete meses de sueldo enteritos sin gastarte un euro.»
+plano 7: «Ya, ya. ¿Y en Alemania qué pasa, listo?»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.911 · 3.2 s · 8.3 l/s · «Ya, ya. Y en Alemania, ¿qué pasa, listo?»
+plano 8: «Pues allí cobran un 35 % más, así que el mismo Sandero les cuesta cinco meses y medio.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.939 · 5.2 s · 16.7 l/s · «Pues allí cobran un 35% más, así que el mismo sandero les cuesta 5 meses y medio.»
+plano 9: «Y escucha, que un BMW X1 a un alemán le cuesta catorce meses, lo mismo que aquí un coche normalito.»
+    toma 1 (semilla 9000): mala · 0.934 · voz 0.942 · 6.3 s · 14.1 l/s · «y escucha que un BM-VX-1 a un alemán le cuesta 14 meses, lo mismo que aquí un coche normalito.» · no oigo: BMW, X1
+    toma 2 (semilla 9001): BUENA · 1.0 · voz 0.961 · 7.3 s · 12.0 l/s · «Y escucha que un BMW X1 a un alemán le cuesta 14 meses, lo mismo que aquí un coche normalito.»
+plano 10: «Pues en 2016 un coche normal eran doce meses y ahora catorce, aunque en 2007 eran quince ¿eh?»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.946 · 8.0 s · 11.3 l/s · «Pues en 2016 un coche normal eran 12 meses y ahora 14, aunque en 2007 eran 15, ¿eh?»
+plano 11: «O sea, que con lo que aquí pagas un coche normal allí se compran un BMW. ¿Vamos justos o somos más apañados? ¿Tú qué dices?»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.944 · 9.7 s · 10.1 l/s · «O sea, que con lo que aquí pagas un coche normal, allí se compran un BMW. Vamos justos o somos más apañados. ¿Tú qué dices?»

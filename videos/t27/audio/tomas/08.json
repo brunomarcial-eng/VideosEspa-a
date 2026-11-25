@@ -1,0 +1,41 @@
+{
+ "huella": "c3346492002e94a9",
+ "semilla": 8002,
+ "texto": "¿Ves? Eso es lo que yo veo aquí todos los días.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0053,
+  "oido": "¿Ves? Eso es lo que yo veo aquí todos los días.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.84,
+   1.06,
+   1.2,
+   1.32,
+   1.44,
+   1.62,
+   1.82,
+   2.06,
+   2.32,
+   2.62
+  ],
+  "t1": [
+   0.26,
+   1.06,
+   1.2,
+   1.32,
+   1.44,
+   1.62,
+   1.82,
+   2.06,
+   2.32,
+   2.62,
+   2.84
+  ],
+  "ritmo": 10.6,
+  "voz": 0.861,
+  "viveza": 2.51
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "huella": "c66f2e98e57f272a",
+ "semilla": 7000,
+ "texto": "Y de 1,55 hijos por mujer hemos pasado a 1,1.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0135,
+  "oido": "y de 1,55 hijos por mujer hemos pasado a 1,1.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.24,
+   1.08,
+   1.76,
+   2.0,
+   2.36,
+   2.86,
+   3.28,
+   3.5
+  ],
+  "t1": [
+   0.14,
+   0.24,
+   1.08,
+   1.76,
+   2.0,
+   2.36,
+   2.86,
+   3.28,
+   3.5,
+   4.18
+  ],
+  "ritmo": 13.9,
+  "voz": 0.877
+ }
+}

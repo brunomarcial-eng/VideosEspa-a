@@ -1,0 +1,33 @@
+{
+ "huella": "1534af32fd4634e6",
+ "semilla": 3204,
+ "texto": "¡Claro, como es de usar y tirar!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Claro, como es de usar y tirar.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.76,
+   0.96,
+   1.1,
+   1.18,
+   1.38,
+   1.52
+  ],
+  "t1": [
+   0.32,
+   0.96,
+   1.1,
+   1.18,
+   1.38,
+   1.52,
+   1.7
+  ],
+  "ritmo": 11.9,
+  "voz": 0.859
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.0; parecido 0.896)"
+}

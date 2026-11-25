@@ -1,0 +1,107 @@
+{
+ "nota": "Datos limpios de T28: ¿tener un bebé cuesta hoy más horas de trabajo que antes? (Bruno, 24-11-2026: rescatar los",
+ "anos": [
+  "2007",
+  "2013",
+  "2016",
+  "2019",
+  "2025"
+ ],
+ "hoy": "2025",
+ "filas": {
+  "2007": {
+   "neto_hora_mediana": 8.79,
+   "alimentos_bebe_ipc": 74.737,
+   "ipc_general": 70.105,
+   "hijos_por_mujer": 1.38,
+   "natalidad_por_mil": 10.86,
+   "alimentos_bebe_coste_tiempo": 8.5025,
+   "alimentos_bebe_horas_vs_hoy_pct": 10.4
+  },
+  "2013": {
+   "neto_hora_mediana": 9.9,
+   "alimentos_bebe_ipc": 79.184,
+   "ipc_general": 79.401,
+   "hijos_por_mujer": 1.27,
+   "natalidad_por_mil": 9.11,
+   "alimentos_bebe_coste_tiempo": 7.9983,
+   "alimentos_bebe_horas_vs_hoy_pct": 3.8
+  },
+  "2016": {
+   "neto_hora_mediana": 10.27,
+   "alimentos_bebe_ipc": 77.429,
+   "ipc_general": 78.725,
+   "hijos_por_mujer": 1.33,
+   "natalidad_por_mil": 8.8,
+   "guarderia_anual": 1603.3,
+   "guarderia_horas": 156.1,
+   "guarderia_hogares_pct": 2.79,
+   "alimentos_bebe_coste_tiempo": 7.5393,
+   "alimentos_bebe_horas_vs_hoy_pct": -2.1
+  },
+  "2019": {
+   "neto_hora_mediana": 10.85,
+   "alimentos_bebe_ipc": 76.537,
+   "ipc_general": 82.18,
+   "hijos_por_mujer": 1.23,
+   "natalidad_por_mil": 7.62,
+   "guarderia_anual": 1905.27,
+   "guarderia_horas": 175.6,
+   "guarderia_hogares_pct": 2.76,
+   "alimentos_bebe_coste_tiempo": 7.0541,
+   "alimentos_bebe_horas_vs_hoy_pct": -8.4
+  },
+  "2025": {
+   "neto_hora_mediana": 12.98,
+   "alimentos_bebe_ipc": 100.0,
+   "ipc_general": 100.0,
+   "hijos_por_mujer": 1.11,
+   "natalidad_por_mil": 6.5,
+   "guarderia_anual": 1675.43,
+   "guarderia_horas": 129.1,
+   "guarderia_hogares_pct": 1.97,
+   "alimentos_bebe_coste_tiempo": 7.7042,
+   "alimentos_bebe_horas_vs_hoy_pct": 0.0
+  }
+ },
+ "guarderia_serie": {
+  "2016": 1603.3,
+  "2017": 1699.3,
+  "2018": 1741.41,
+  "2019": 1905.27,
+  "2020": 1541.82,
+  "2021": 1625.86,
+  "2022": 1796.66,
+  "2023": 1811.83,
+  "2024": 1401.96,
+  "2025": 1675.43
+ },
+ "alimentos_bebe_hoy_frente_a_pct": {
+  "2007": -9.4,
+  "2013": -3.7,
+  "2016": 2.2,
+  "2019": 9.2
+ },
+ "alimentos_bebe_precio_sube_pct": {
+  "2007": 33.8,
+  "2013": 26.3,
+  "2016": 29.2,
+  "2019": 30.7
+ },
+ "sueldo_hora_sube_pct": {
+  "2007": 47.7,
+  "2013": 31.1,
+  "2016": 26.4,
+  "2019": 19.6
+ },
+ "guarderia_horas_menos_que": {
+  "2016": 27.0,
+  "2019": 46.5
+ },
+ "estado": {
+  "guarderia": "V (INE, EPF)",
+  "guarderia_horas": "C",
+  "alimentos_bebe": "V (IPC) / C (en tiempo de trabajo)",
+  "natalidad": "V (INE)"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "huella": "c1a5b5da9b918218",
+ "semilla": 13000,
+ "texto": "Y a conciertos va uno de cada tres, más que hace diez años.",
+ "ev": {
+  "ok": true,
+  "nota": 1.035,
+  "oido": "Y a conciertos va uno de cada tres, más que hace diez años.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   0.24,
+   0.74,
+   0.92,
+   1.1,
+   1.24,
+   1.4,
+   2.1,
+   2.48,
+   2.68,
+   2.84,
+   3.08
+  ],
+  "t1": [
+   0.16,
+   0.24,
+   0.74,
+   0.92,
+   1.1,
+   1.24,
+   1.4,
+   1.74,
+   2.48,
+   2.68,
+   2.84,
+   3.08,
+   3.38
+  ],
+  "ritmo": 12.5,
+  "voz": 0.92
+ }
+}

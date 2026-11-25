@@ -1,0 +1,37 @@
+{
+ "huella": "638ff85c98a5b70e",
+ "semilla": 7002,
+ "texto": "Bueno pero Italia y Francia también han bajado ¿no?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0437,
+  "oido": "Bueno, pero Italia y Francia también han bajado, ¿no?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.4,
+   0.46,
+   0.74,
+   0.92,
+   1.32,
+   1.56,
+   1.8,
+   2.28
+  ],
+  "t1": [
+   0.24,
+   0.46,
+   0.74,
+   0.92,
+   1.32,
+   1.56,
+   1.8,
+   2.24,
+   2.38
+  ],
+  "ritmo": 15.6,
+  "voz": 0.937,
+  "viveza": 3.9
+ }
+}

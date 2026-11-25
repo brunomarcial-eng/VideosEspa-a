@@ -1,0 +1,31 @@
+{
+ "huella": "cfd5575ef8fbd0b8",
+ "semilla": 4001,
+ "texto": "Anda ya… ¿y eso desde cuándo?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0251,
+  "oido": "¡Anda ya! ¿Y eso desde cuándo?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.32,
+   1.26,
+   1.48,
+   1.7,
+   1.88
+  ],
+  "t1": [
+   0.32,
+   0.46,
+   1.48,
+   1.7,
+   1.88,
+   2.4
+  ],
+  "ritmo": 8.3,
+  "voz": 0.9,
+  "viveza": 4.42
+ }
+}

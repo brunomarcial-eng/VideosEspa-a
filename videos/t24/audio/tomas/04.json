@@ -1,0 +1,39 @@
+{
+ "huella": "110da4e007ee5ea3",
+ "semilla": 4000,
+ "texto": "¿Ves? Lo que yo te digo… como en la crisis.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0069,
+  "oido": "¿Ves? Lo que yo te digo como en la crisis.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.98,
+   1.18,
+   1.28,
+   1.4,
+   1.52,
+   1.76,
+   2.52,
+   2.66,
+   2.76
+  ],
+  "t1": [
+   0.38000000000000006,
+   1.18,
+   1.28,
+   1.4,
+   1.52,
+   1.76,
+   2.52,
+   2.66,
+   2.76,
+   2.96
+  ],
+  "ritmo": 8.9,
+  "voz": 0.864,
+  "viveza": 4.64
+ }
+}

@@ -1,0 +1,87 @@
+plano 1: «¿Tener un bebé cuesta hoy más horas de trabajo que antes? Porque mi padre dice que criar un hijo hoy es un lujo.»
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.939 · 6.7 s · 13.1 l/s · viveza 2.44 st · «Tener un bebé cuesta hoy más horas de trabajo que antes, porque mi padre dice que criar un hijo hoy es un lujo.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 1001): BUENA · 1.0 · voz 0.937 · 6.4 s · 13.6 l/s · viveza 1.77 st · «Tener un bebé cuesta hoy más horas de trabajo que antes, porque mi padre dice que criar un hijo hoy es un lujo.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 1002): BUENA · 1.0 · voz 0.911 · 6.6 s · 13.1 l/s · viveza 3.1 st · «Tener un bebé cuesta hoy más horas de trabajo que antes, porque mi padre dice que criar un hijo hoy es un lujo.»
+    elegida la toma con más entonación: semilla 1002 (3.1 st)
+plano 2: «Hombre claro. Solo la guardería ya te cuesta un riñón ¿eh?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.896 · 3.9 s · 11.5 l/s · viveza 2.52 st · «Hombre claro, solo la guardería ya te cuesta un riñón, ¿eh?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 2001): BUENA · 1.0 · voz 0.91 · 3.9 s · 11.7 l/s · viveza 3.56 st · «Hombre claro, solo la guardería ya te cuesta un riñón, ¿eh?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 2002): BUENA · 1.0 · voz 0.903 · 3.3 s · 13.6 l/s · viveza 3.98 st · «Hombre claro, solo la guardería ya te cuesta un riñón, ¿eh?»
+    elegida la toma con más entonación: semilla 2002 (3.98 st)
+plano 3: «Pues los que la pagan gastan de media 1.675 euros al año… unas 129 horas de trabajo. En 2016 eran 156.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.954 · 10.8 s · 13.2 l/s · viveza 2.15 st · «pues los que la pagan gastan de media 1.675 euros al año, unas 129 horas de trabajo. En 2016 eran 156.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 3001): BUENA · 1.0 · voz 0.944 · 11.5 s · 12.5 l/s · viveza 2.0 st · «pues los que la pagan gastan de media 1.675 euros al año, unas 129 horas de trabajo. En 2016 eran 156.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 3002): BUENA · 1.0 · voz 0.947 · 11.1 s · 12.9 l/s · viveza 2.32 st · «Pues los que la pagan gastan de media 1.675 euros al año. Unas 129 horas de trabajo. En 2016 eran 156.»
+    elegida la toma con más entonación: semilla 3002 (2.32 st)
+plano 4: «Anda ya… ¿y la leche y los potitos?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 4000): mala · 1.0 · voz 0.894 · 3.2 s · 7.9 l/s · «Anda ya y la leche y los potitos.» · ritmo raro (7.9 letras/s)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 4001): mala · 1.0 · voz 0.817 · 2.7 s · 9.1 l/s · «Anda ya. ¿Y la leche y los potitos?» · voz distinta (0.82)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 4002): BUENA · 1.0 · voz 0.898 · 3.0 s · 8.2 l/s · viveza 5.44 st · «¿Anda ya? ¿Y la leche y los potitos?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 4 (semilla 4003): BUENA · 1.0 · voz 0.9 · 2.8 s · 8.8 l/s · viveza 3.48 st · «¡Anda ya! ¿Y la leche y los potitos?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 5 (semilla 4004): mala · 1.0 · voz 0.895 · 3.4 s · 7.3 l/s · «¿Anda ya? ¿Y la leche y los potitos?» · ritmo raro (7.3 letras/s)
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 6 (semilla 4005): BUENA · 1.0 · voz 0.918 · 3.0 s · 8.4 l/s · viveza 2.87 st · «¡Anda ya! Y la leche y los potitos...»
+    elegida la toma con más entonación: semilla 4002 (5.44 st)
+plano 5: «Cuestan un 9 % menos tiempo de trabajo que en 2007. Eso sí un 9 % más que en 2019.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.952 · 7.5 s · 13.8 l/s · viveza 2.52 st · «Cuestan un 9% menos tiempo de trabajo que en 2007, eso sí un 9% más que en 2019.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 5001): BUENA · 1.0 · voz 0.932 · 7.2 s · 14.4 l/s · viveza 2.04 st · «Cuestan un 9% menos tiempo de trabajo que en 2007. Eso sí, un 9% más que en 2019.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 5002): BUENA · 1.0 · voz 0.934 · 7.6 s · 13.6 l/s · viveza 2.51 st · «Cuestan un 9% menos tiempo de trabajo que en 2007, eso sí un 9% más que en 2019.»
+    elegida la toma con más entonación: semilla 5000 (2.52 st)
+plano 6: «Pues entonces criar sale más barato que en mis tiempos ¿no?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.923 · 3.3 s · 14.4 l/s · viveza 3.63 st · «Pues entonces, criar sale más barato que en mis tiempos no.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 6001): BUENA · 1.0 · voz 0.928 · 3.3 s · 14.2 l/s · viveza 3.73 st · «Pues entonces, criar sale más barato que en mis tiempos, no.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 6002): BUENA · 1.0 · voz 0.908 · 3.1 s · 15.4 l/s · viveza 3.5 st · «Pues entonces, criar sale más barato que en mis tiempos, ¿no?»
+    elegida la toma con más entonación: semilla 6001 (3.73 st)
+plano 7: «En horas sí. Y aun así nacen menos niños… en 2007 eran 1,38 hijos por mujer y hoy 1,11.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 7000): BUENA · 0.984 · voz 0.953 · 9.7 s · 9.8 l/s · viveza 2.27 st · «Enhorací y aún así nacen menos niños. En 2007 eran 1,38 hijos por mujer y hoy 1,11.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 7001): BUENA · 0.984 · voz 0.957 · 9.6 s · 9.9 l/s · viveza 2.53 st · «En horas sí, y a unas cinas en menos niños, en 2007 eran 1,38 hijos por mujer y hoy 1,11.»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 7002): BUENA · 0.984 · voz 0.956 · 8.9 s · 10.7 l/s · viveza 2.35 st · «en horas sí y a unas cinas en menos niños. En 2007 eran 1,38 hijos por mujer y hoy 1,11.»
+    elegida la toma con más entonación: semilla 7001 (2.53 st)
+plano 8: «O sea que criar cuesta menos horas pero tenemos menos hijos. ¿Tú por qué crees que nacen menos niños?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.913 · 5.9 s · 13.6 l/s · viveza 3.67 st · «O sea que criar cuesta menos horas, pero tenemos menos hijos. ¿Tú por qué crees que nacen menos niños?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 2 (semilla 8001): BUENA · 1.0 · voz 0.913 · 6.0 s · 13.3 l/s · viveza 3.38 st · «O sea que criar cuesta menos horas, pero tenemos menos hijos. ¿Tú por qué crees que nacen menos niños?»
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
+    toma 3 (semilla 8002): BUENA · 1.0 · voz 0.909 · 6.2 s · 13.0 l/s · viveza 2.67 st · «O sea que criar cuesta menos horas, pero tenemos menos hijos. ¿Tú por qué crees que nacen menos niños?»
+    elegida la toma con más entonación: semilla 8000 (3.67 st)
+duración total 54.6 s · escrito videos/t28/audio/linea_tiempo.json

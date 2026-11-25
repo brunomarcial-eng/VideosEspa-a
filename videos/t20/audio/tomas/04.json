@@ -1,0 +1,43 @@
+{
+ "huella": "2ac2a95f300ac805",
+ "semilla": 4004,
+ "texto": "Y de cada diez décimos siete no cobran nada. Ni el reintegro.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0157,
+  "oido": "y de cada 10 décimos 7 no cobran nada, ni el reintegro.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.1,
+   0.18,
+   0.34,
+   0.6,
+   1.1,
+   1.46,
+   1.72,
+   2.08,
+   2.8,
+   3.12,
+   3.24
+  ],
+  "t1": [
+   0.1,
+   0.18,
+   0.34,
+   0.6,
+   1.1,
+   1.46,
+   1.72,
+   2.08,
+   2.32,
+   3.12,
+   3.24,
+   3.76
+  ],
+  "ritmo": 12.4,
+  "voz": 0.881,
+  "viveza": 3.71
+ }
+}

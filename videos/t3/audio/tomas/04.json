@@ -1,0 +1,46 @@
+{
+ "huella": "ec2f45ef78d9b920",
+ "semilla": 4001,
+ "texto": "Ya. Pues hoy ese piso cuesta 210.000 pavos. Siete años de sueldo. El doble.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Ya, pues hoy ese piso cuesta 210.000 pavos, 7 años de sueldo, el doble.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   1.02,
+   1.2,
+   1.4,
+   1.56,
+   1.88,
+   2.22,
+   3.26,
+   3.94,
+   4.26,
+   4.6,
+   4.76,
+   5.68,
+   5.84
+  ],
+  "t1": [
+   0.28,
+   1.2,
+   1.4,
+   1.56,
+   1.88,
+   2.22,
+   3.26,
+   3.7,
+   4.26,
+   4.6,
+   4.76,
+   5.16,
+   5.84,
+   6.24
+  ],
+  "ritmo": 12.6
+ },
+ "nota_voz": "toma dada por buena por Bruno (primeros 45 s); es la referencia de la voz del hijo"
+}

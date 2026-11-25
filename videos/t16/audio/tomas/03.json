@@ -1,0 +1,48 @@
+{
+ "huella": "31c201d06df5359a",
+ "semilla": 3000,
+ "texto": "Bienvenida. El coche medio que se compra en España cuesta 28.661 euros. En 2016, 20.252.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0558,
+  "oido": "Bienvenida. El coche medio que se compra en España cuesta 28.661 euros. En 2016, 20.252.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.92,
+   1.06,
+   1.32,
+   1.5,
+   1.66,
+   1.76,
+   1.98,
+   2.1,
+   2.36,
+   2.76,
+   4.44,
+   5.18,
+   5.42,
+   6.66
+  ],
+  "t1": [
+   0.62,
+   1.06,
+   1.32,
+   1.5,
+   1.66,
+   1.76,
+   1.98,
+   2.1,
+   2.36,
+   2.76,
+   4.44,
+   4.74,
+   5.42,
+   6.1,
+   8.1
+  ],
+  "ritmo": 16.4,
+  "voz": 0.962
+ }
+}

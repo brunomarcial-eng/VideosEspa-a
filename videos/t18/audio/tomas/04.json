@@ -1,0 +1,50 @@
+{
+ "huella": "ecf9ea1d2a21ddab",
+ "semilla": 4000,
+ "texto": "Y fíjate, el Sandero 15.752 euros y el coche medio 31.555, o sea la mitad tío.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0467,
+  "oido": "Y fíjate, el Sandero 15.752 euros y el coche medio 31.555, o sea, a la mitad, tío.",
+  "parecido": 0.996,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.16,
+   1.08,
+   1.34,
+   1.74,
+   3.44,
+   3.82,
+   4.06,
+   4.18,
+   4.46,
+   4.62,
+   6.94,
+   7.08,
+   7.42,
+   7.42,
+   7.84
+  ],
+  "t1": [
+   0.16,
+   0.56,
+   1.34,
+   1.74,
+   3.4399999999999995,
+   3.82,
+   4.06,
+   4.18,
+   4.46,
+   4.62,
+   6.46,
+   7.08,
+   7.28,
+   7.42,
+   7.62,
+   8.02
+  ],
+  "ritmo": 15.2,
+  "voz": 0.952
+ }
+}

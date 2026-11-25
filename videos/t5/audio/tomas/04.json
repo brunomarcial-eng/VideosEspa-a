@@ -1,0 +1,38 @@
+{
+ "huella": "395360e636b7decc",
+ "semilla": 4000,
+ "texto": "Vosotros os casabais a los 26. Ahora, a los 36.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0345,
+  "oido": "Vosotros os casabais a los 26, ahora a los 36.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.46,
+   0.64,
+   1.2,
+   1.36,
+   1.46,
+   2.68,
+   3.0,
+   3.58,
+   3.74
+  ],
+  "t1": [
+   0.46,
+   0.64,
+   1.2,
+   1.36,
+   1.46,
+   1.9,
+   3.0,
+   3.58,
+   3.74,
+   4.3
+  ],
+  "ritmo": 11.1,
+  "voz": 0.919
+ }
+}

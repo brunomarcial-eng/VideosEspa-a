@@ -1,0 +1,141 @@
+plano 1: «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto: más que en 2016.»
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1928.19it/s]
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.938 · 6.8 s · 12.8 l/s · «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto. Más que en 2016.»
+plano 2: «Mamá, ¡que no queda cacao!»
+    toma 1 (semilla 2000): mala · 0.947 · voz 0.762 · 1.6 s · 11.6 l/s · «¡Mama! ¡Que no quede cacao!» · voz distinta (0.76)
+    toma 2 (semilla 2001): mala · 1.0 · voz 0.846 · 1.4 s · 13.4 l/s · «¡Mamá, que no queda cacao!» · voz distinta (0.85)
+    toma 3 (semilla 2002): mala · 1.0 · voz 0.848 · 1.4 s · 14.0 l/s · «¡Mama, que no queda cacao!» · voz distinta (0.85)
+    toma 4 (semilla 2003): mala · 1.0 · voz 0.763 · 1.3 s · 14.2 l/s · «¡Mamá, que no queda cacao!» · voz distinta (0.76)
+    toma 5 (semilla 2004): BUENA · 1.0 · voz 0.858 · 1.8 s · 10.7 l/s · «¡Mama, que no queda cacao!»
+plano 3: «Buenos días. El kilo de chocolate y cacao: 55 minutos de trabajo. En 2016, 40.»
+    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.935 · 7.3 s · 12.2 l/s · «Buenos días. El kilo de chocolate y cacao. 55 minutos de trabajo. En 2016, 40.»
+plano 4: «Pues me paso al café, como los mayores.»
+    toma 1 (semilla 4000): mala · 1.0 · voz 0.824 · 2.4 s · 12.5 l/s · «Pues me paso al café, como los mayores.» · voz distinta (0.82)
+    toma 2 (semilla 4001): BUENA · 1.0 · voz 0.862 · 2.3 s · 13.2 l/s · «Pues me paso al café como los mayores.»
+plano 5: «Tampoco te libras: el paquete de café, 15 minutos. En 2016, 13.»
+    toma 1 (semilla 5000): BUENA · 1.0 · voz 0.912 · 6.9 s · 9.4 l/s · «Tampoco te libras el paquete de café, 15 minutos, en 2016, 13.»
+plano 6: «Y la docena de huevos, 14 minutos. En 2016, 10.»
+    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.91 · 5.0 s · 10.4 l/s · «y la docena de huevos, 14 minutos, en 2016, 10.»
+plano 7: «¡Pero si me han subido el sueldo!»
+    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.903 · 1.9 s · 13.3 l/s · «pero si me han subido el sueldo.»
+plano 8: «Un 26 % por hora, sí. Pero los huevos, un 74 %.»
+    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.887 · 5.4 s · 12.5 l/s · «Un 26% por hora, ¿sí? Pero los huevos, un 74%»
+plano 9: «Eso sí: el pan y el aceite cuestan casi los mismos minutos que en 2016.»
+    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.928 · 4.9 s · 13.4 l/s · «Eso sí, el pan y el aceite cuestan casi los mismos minutos que en 2016.»
+plano 10: «Pues pan con aceite, como el abuelo. Desayuno de lujo.»
+    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.904 · 3.4 s · 12.2 l/s · «Pues pan con aceite como el abuelo. Desayuno de lujo.»
+plano 11: «De nueve básicos del desayuno, seis cuestan más minutos que en 2016, y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
+    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.943 · 9.1 s · 12.1 l/s · «De 9 básicos del desayuno, 6 cuestan más minutos que en 2016 y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
+duración total 60.1 s · escrito videos/t14/audio/linea_tiempo.json
+plano 1: «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto: más que en 2016.»
+    toma guardada (semilla 1000): BUENA · «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto. Más que en 2016.»
+plano 2: «Ojo: lo medimos con el sueldo mediano. Unos 19.400 euros brutos al año en 2016; hoy, unos 25.300. Si ganas el doble, la mitad de minutos.»
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1422.16it/s]
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.949 · 14.0 s · 11.2 l/s · «Ojo, lo medimos con el sueldo mediano. Unos 19.400 euros brutos al año en 2016, hoy, unos 25.300. Si ganas el doble, la mitad de minutos.»
+plano 3: «Mamá, ¡que no queda cacao!»
+    toma guardada (semilla 2004): BUENA · «¡Mama, que no queda cacao!»
+plano 4: «Buenos días. El kilo de chocolate y cacao: 55 minutos de trabajo. En 2016, 40.»
+    toma guardada (semilla 3000): BUENA · «Buenos días. El kilo de chocolate y cacao. 55 minutos de trabajo. En 2016, 40.»
+plano 5: «Pues me paso al café, como los mayores.»
+    toma guardada (semilla 4001): BUENA · «Pues me paso al café como los mayores.»
+plano 6: «Tampoco te libras: el paquete de café, 15 minutos. En 2016, 13.»
+    toma guardada (semilla 5000): BUENA · «Tampoco te libras el paquete de café, 15 minutos, en 2016, 13.»
+plano 7: «Y la docena de huevos, 14 minutos. En 2016, 10.»
+    toma guardada (semilla 6000): BUENA · «y la docena de huevos, 14 minutos, en 2016, 10.»
+plano 8: «¡Pero si me han subido el sueldo!»
+    toma guardada (semilla 7000): BUENA · «pero si me han subido el sueldo.»
+plano 9: «Un 26 % por hora, sí. Pero los huevos, un 74 %.»
+    toma guardada (semilla 8000): BUENA · «Un 26% por hora, ¿sí? Pero los huevos, un 74%»
+plano 10: «Eso sí: el pan y el aceite cuestan casi los mismos minutos que en 2016.»
+    toma guardada (semilla 9000): BUENA · «Eso sí, el pan y el aceite cuestan casi los mismos minutos que en 2016.»
+plano 11: «Pues pan con aceite, como el abuelo. Desayuno de lujo.»
+    toma guardada (semilla 10000): BUENA · «Pues pan con aceite como el abuelo. Desayuno de lujo.»
+plano 12: «¿Y la tostada de moda? Aguacate, queso crema y salmón: 7,3 minutos. En 2016, 6,3.»
+    toma 1 (semilla 12000): BUENA · 1.0 · voz 0.915 · 8.2 s · 11.0 l/s · «y la tostada de moda? Aguacate, queso, crema y salmón. 7,3 minutos. En 2016, 6,3.»
+plano 13: «Y en el bar, con sus churros: los precios suben un 33 % desde 2016. El sueldo, un 26.»
+    toma 1 (semilla 13000): mala · 0.957 · voz 0.949 · 8.6 s · 11.5 l/s · «y en el bar con sus churros. Los precios suben un 33% desde 2016. El sueldo un 26%.» · sobran 9 letras (¿repite?)
+    toma 2 (semilla 13001): mala · 0.957 · voz 0.963 · 8.0 s · 12.4 l/s · «y en el bar con sus churros. Los precios suben un 33% desde 2016. El sueldo, un 26%.» · sobran 9 letras (¿repite?)
+    toma 3 (semilla 13002): BUENA · 1.0 · voz 0.957 · 8.8 s · 11.3 l/s · «y en el bar con sus churros. Los precios suben un 33% desde 2016. El sueldo, un 26.»
+plano 14: «De nueve básicos del desayuno, seis cuestan más minutos que en 2016, y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
+    toma guardada (semilla 11000): BUENA · «De 9 básicos del desayuno, 6 cuestan más minutos que en 2016 y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
+duración total 92.4 s · escrito videos/t14/audio/linea_tiempo.json
+AVISO: duración 92.4 s fuera de 45-80 s
+plano 1: «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto: más que en 2016.»
+    toma guardada (semilla 1000): BUENA · «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto. Más que en 2016.»
+plano 2: «Ojo: contamos con el sueldo mediano: 19.400 euros brutos al año en 2016 y 25.300 hoy. Si ganas el doble, la mitad de minutos.»
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 2655.46it/s]
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 2000): BUENA · 1.0 · voz 0.953 · 13.6 s · 11.0 l/s · «Ojo, contamos con el sueldo mediano, 19.400 euros brutos al año, en 2016 y 25.300 hoy. Si ganas el doble, la mitad de minutos.»
+plano 3: «Mamá, ¡que no queda cacao!»
+    toma guardada (semilla 2004): BUENA · «¡Mama, que no queda cacao!»
+plano 4: «Buenos días. El kilo de chocolate y cacao: 55 minutos de trabajo. En 2016, 40.»
+    toma guardada (semilla 3000): BUENA · «Buenos días. El kilo de chocolate y cacao. 55 minutos de trabajo. En 2016, 40.»
+plano 5: «Pues me paso al café, como los mayores.»
+    toma guardada (semilla 4001): BUENA · «Pues me paso al café como los mayores.»
+plano 6: «Tampoco te libras: el paquete de café, 15 minutos. En 2016, 13.»
+    toma guardada (semilla 5000): BUENA · «Tampoco te libras el paquete de café, 15 minutos, en 2016, 13.»
+plano 7: «Y la docena de huevos, 14 minutos. En 2016, 10.»
+    toma guardada (semilla 6000): BUENA · «y la docena de huevos, 14 minutos, en 2016, 10.»
+plano 8: «¡Pero si me han subido el sueldo!»
+    toma guardada (semilla 7000): BUENA · «pero si me han subido el sueldo.»
+plano 9: «Un 26 % por hora, sí. Pero los huevos, un 74 %.»
+    toma guardada (semilla 8000): BUENA · «Un 26% por hora, ¿sí? Pero los huevos, un 74%»
+plano 10: «Eso sí: el pan y el aceite cuestan casi los mismos minutos que en 2016.»
+    toma guardada (semilla 9000): BUENA · «Eso sí, el pan y el aceite cuestan casi los mismos minutos que en 2016.»
+plano 11: «Pues pan con aceite, como el abuelo. Desayuno de lujo.»
+    toma guardada (semilla 10000): BUENA · «Pues pan con aceite como el abuelo. Desayuno de lujo.»
+plano 12: «¿Y la tostada de moda, con aguacate y salmón? 7,3 minutos. En 2016, 6,3.»
+    toma 1 (semilla 12000): BUENA · 1.0 · voz 0.933 · 7.4 s · 11.3 l/s · «y la tostada de moda con aguacate y salmón, 7,3 minutos, en 2016, 6,3.»
+plano 13: «¿Y en el bar, con churros? Los precios han subido un 33 %; el sueldo, un 26.»
+    toma 1 (semilla 13000): mala · 0.947 · voz 0.926 · 8.3 s · 9.7 l/s · «Y en el bar, con churros, los precios han subido un 33%, el sueldo un 26%.» · sobran 9 letras (¿repite?)
+    toma 2 (semilla 13001): mala · 0.947 · voz 0.945 · 8.8 s · 9.1 l/s · «y en el bar con churros, los precios han subido un 33%, el sueldo, un 26%.» · sobran 9 letras (¿repite?)
+    toma 3 (semilla 13002): mala · 0.947 · voz 0.927 · 7.9 s · 10.1 l/s · «Y en el bar con churros, los precios han subido un 33%, el sueldo un 26%.» · sobran 9 letras (¿repite?)
+    toma 4 (semilla 13003): mala · 0.947 · voz 0.928 · 7.9 s · 10.2 l/s · «Y en el bar, con churros, los precios han subido un 33%, el sueldo un 26%.» · sobran 9 letras (¿repite?)
+    toma 5 (semilla 13004): mala · 0.947 · voz 0.929 · 7.8 s · 10.3 l/s · «Y en el bar con churros, los precios han subido un 33%. El sueldo, un 26%.» · sobran 9 letras (¿repite?)
+plano 14: «De nueve básicos del desayuno, seis cuestan más minutos que en 2016, y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
+    toma guardada (semilla 11000): BUENA · «De 9 básicos del desayuno, 6 cuestan más minutos que en 2016 y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
+duración total 91.3 s · escrito videos/t14/audio/linea_tiempo.json
+FALLA (escucha esas líneas o repítelas con --rehacer N):
+- plano 13: sobran 9 letras (¿repite?)
+plano 1: «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto: más que en 2016.»
+    toma guardada (semilla 1000): BUENA · «¿Cuántos minutos tienes que trabajar para pagarte el desayuno? Te lo adelanto. Más que en 2016.»
+plano 2: «Ojo: contamos con el sueldo mediano: 19.400 euros brutos al año en 2016 y 25.300 hoy. Si ganas el doble, la mitad de minutos.»
+    toma guardada (semilla 2000): BUENA · «Ojo, contamos con el sueldo mediano, 19.400 euros brutos al año, en 2016 y 25.300 hoy. Si ganas el doble, la mitad de minutos.»
+plano 3: «Mamá, ¡que no queda cacao!»
+    toma guardada (semilla 2004): BUENA · «¡Mama, que no queda cacao!»
+plano 4: «Buenos días. El kilo de chocolate y cacao: 55 minutos de trabajo. En 2016, 40.»
+    toma guardada (semilla 3000): BUENA · «Buenos días. El kilo de chocolate y cacao. 55 minutos de trabajo. En 2016, 40.»
+plano 5: «Pues me paso al café, como los mayores.»
+    toma guardada (semilla 4001): BUENA · «Pues me paso al café como los mayores.»
+plano 6: «Tampoco te libras: el paquete de café, 15 minutos. En 2016, 13.»
+    toma guardada (semilla 5000): BUENA · «Tampoco te libras el paquete de café, 15 minutos, en 2016, 13.»
+plano 7: «Y la docena de huevos, 14 minutos. En 2016, 10.»
+    toma guardada (semilla 6000): BUENA · «y la docena de huevos, 14 minutos, en 2016, 10.»
+plano 8: «¡Pero si me han subido el sueldo!»
+    toma guardada (semilla 7000): BUENA · «pero si me han subido el sueldo.»
+plano 9: «Un 26 % por hora, sí. Pero los huevos, un 74 %.»
+    toma guardada (semilla 8000): BUENA · «Un 26% por hora, ¿sí? Pero los huevos, un 74%»
+plano 10: «Eso sí: el pan y el aceite cuestan casi los mismos minutos que en 2016.»
+    toma guardada (semilla 9000): BUENA · «Eso sí, el pan y el aceite cuestan casi los mismos minutos que en 2016.»
+plano 11: «Pues pan con aceite, como el abuelo. Desayuno de lujo.»
+    toma guardada (semilla 10000): BUENA · «Pues pan con aceite como el abuelo. Desayuno de lujo.»
+plano 12: «¿Y la tostada de moda, con aguacate y salmón? 7,3 minutos. En 2016, 6,3.»
+    toma guardada (semilla 12000): BUENA · «y la tostada de moda con aguacate y salmón, 7,3 minutos, en 2016, 6,3.»
+plano 13: «¿Y en el bar, con churros? Los precios han subido un 33 %; el sueldo, un 26 %.»
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1910.19it/s]
+/root/.venv-qwen/lib/python3.12/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+    toma 1 (semilla 13000): BUENA · 1.0 · voz 0.926 · 8.4 s · 10.6 l/s · «y en el bar con churros, los precios han subido un 33%, el sueldo un 26%.»
+plano 14: «De nueve básicos del desayuno, seis cuestan más minutos que en 2016, y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
+    toma guardada (semilla 11000): BUENA · «De 9 básicos del desayuno, 6 cuestan más minutos que en 2016 y ninguno menos. ¿Tú has tenido que cambiar el desayuno?»
+duración total 90.8 s · escrito videos/t14/audio/linea_tiempo.json
+AVISO: duración 90.8 s fuera de 45-80 s

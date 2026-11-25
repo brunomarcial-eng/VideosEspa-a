@@ -1,0 +1,37 @@
+{
+ "huella": "d2dd8e40bca08f74",
+ "semilla": 8000,
+ "texto": "Vamos que aquel Gordo hoy serían casi 430.000 euros.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0379,
+  "oido": "Vamos que aquel gordo hoy serían casi 430 mil euros.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.24,
+   0.44,
+   0.7,
+   1.0,
+   1.22,
+   1.56,
+   1.76,
+   2.96
+  ],
+  "t1": [
+   0.24,
+   0.44000000000000006,
+   0.7,
+   1.0,
+   1.22,
+   1.56,
+   1.76,
+   2.96,
+   3.18
+  ],
+  "ritmo": 17.4,
+  "voz": 0.926,
+  "viveza": 4.12
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "huella": "b205b185271d9bb4",
+ "semilla": 3203,
+ "texto": "¡Pues ahí lo tienes!",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Pues ahí lo tienes.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.34,
+   0.48
+  ],
+  "t1": [
+   0.14,
+   0.3400000000000001,
+   0.48,
+   0.7
+  ],
+  "ritmo": 14.2,
+  "voz": 0.802
+ },
+ "eleccion": "la más parecida a la voz de padre en t3 y menos a la de hijo (diferencia 0.029; parecido 0.833)"
+}

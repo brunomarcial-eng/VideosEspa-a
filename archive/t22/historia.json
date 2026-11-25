@@ -1,0 +1,212 @@
+{
+ "nota": "Momentos clave de T22 v2 (la pensión media frente al sueldo de un joven, con los menores de 25). La música se corta en seco con el «34 %» (la pensión frente a los menores de 25). Todo en un parque de barrio por la tarde, con sonidos sueltos (pájaros, una bici, un coche lejos) y sin ruido continuo.",
+ "musica": {
+  "bpm": 96,
+  "corte": "c7-34",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "barrio",
+   "desde": 1,
+   "hasta": 10,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-jubilado",
+   "beat": 1,
+   "palabra": "jubilado",
+   "dt": -0.1
+  },
+  {
+   "id": "c1-abuelo",
+   "beat": 1,
+   "palabra": "abuelo",
+   "dt": -0.1
+  },
+  {
+   "id": "c1-mitad",
+   "beat": 1,
+   "palabra": "mitad",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-pension",
+   "beat": 2,
+   "palabra": "pensión",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c2-1451",
+   "beat": 2,
+   "palabra": "1.451",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-mas",
+   "beat": 2,
+   "palabra": "más",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-25000",
+   "beat": 3,
+   "palabra": "25.000",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.25
+  },
+  {
+   "id": "c3-20000",
+   "beat": 3,
+   "palabra": "20.000",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.25
+  },
+  {
+   "id": "c3-81",
+   "beat": 3,
+   "palabra": "81",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-anda",
+   "beat": 4,
+   "palabra": "Anda",
+   "dt": -0.1,
+   "sfx": "fwip",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-2007",
+   "beat": 4,
+   "palabra": "2007",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-mitad",
+   "beat": 4,
+   "palabra": "mitad",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-58",
+   "beat": 5,
+   "palabra": "58",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c5-81",
+   "beat": 5,
+   "palabra": "81",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c5-76",
+   "beat": 5,
+   "palabra": "76",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c6-2016",
+   "beat": 6,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c6-hermano",
+   "beat": 6,
+   "palabra": "hermano",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.2
+  },
+  {
+   "id": "c7-15136",
+   "beat": 7,
+   "palabra": "15.136",
+   "dt": -0.1,
+   "sfx": "moneda",
+   "vol": 0.25
+  },
+  {
+   "id": "c7-34",
+   "beat": 7,
+   "palabra": "34",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c7-reves",
+   "beat": 7,
+   "palabra": "revés",
+   "dt": -0.3,
+   "sfx": "fwip",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-91",
+   "beat": 8,
+   "palabra": "91",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c9-37",
+   "beat": 9,
+   "palabra": "37",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c9-39",
+   "beat": 9,
+   "palabra": "39",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c10-igual",
+   "beat": 10,
+   "palabra": "igual",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-casa",
+   "beat": 10,
+   "palabra": "casa",
+   "dt": -0.1
+  }
+ ]
+}

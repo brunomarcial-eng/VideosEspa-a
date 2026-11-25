@@ -1,0 +1,43 @@
+{
+ "huella": "36ba55bd9b9433f7",
+ "semilla": 8003,
+ "texto": "Hombre… es que desde 2007 mi pensión ha subido un 91 %.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0338,
+  "oido": "Hombre, es que desde 2007 mi pensión ha subido un 91%.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   1.02,
+   1.2,
+   1.34,
+   1.54,
+   2.36,
+   2.66,
+   3.16,
+   3.48,
+   3.94,
+   4.04,
+   4.601
+  ],
+  "t1": [
+   0.42,
+   1.2,
+   1.34,
+   1.54,
+   2.36,
+   2.66,
+   3.16,
+   3.48,
+   3.94,
+   4.04,
+   4.601,
+   5.06
+  ],
+  "ritmo": 12.2,
+  "voz": 0.918,
+  "viveza": 3.91
+ }
+}

@@ -1,0 +1,211 @@
+{
+ "nota": "Solo voces gratuitas, locales y de España. Narrador: la voz 3 del casting (Qwen3-TTS 0.6B, Apache-2.0, clonando la grabación humana CC0 diseno/voces/ref-dave.wav), elegida por Bruno el 10-11-2026. La voz 5 del casting (mujer, Qwen3-TTS 1.7B VoiceDesign) le hizo gracia por su acento «ruso»: queda reservada para un segundo personaje o una aparición puntual. Piper y Kokoro quedan como motores de reserva.",
+ "perfiles": {
+  "hombre": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-dave.wav",
+   "ref_txt": "diseno/voces/ref-dave.txt"
+  },
+  "secundario": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-voz5.wav",
+   "ref_txt": "diseno/voces/ref-voz5.txt",
+   "estado": "en prueba: muestra para Bruno (T2, escena 9)",
+   "nota": "Voz 5 del casting (mujer, acento «ruso» según Bruno). Se fija clonando su propia toma del casting (ref-voz5.wav, 9,8 s) con el mismo motor que el narrador, para que suene igual en cada frase."
+  },
+  "piper_hombre": {
+   "motor": "piper",
+   "voz": "es_ES-davefx-medium",
+   "noise_scale": 0.62,
+   "noise_w": 0.5
+  },
+  "piper_mujer": {
+   "motor": "piper",
+   "voz": "es_ES-sharvard-medium#1",
+   "noise_scale": 0.62,
+   "noise_w": 0.5
+  },
+  "padre": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-padre.wav",
+   "ref_txt": "diseno/voces/ref-padre.txt",
+   "estado": "elegida por Bruno el 15-11-2026 (opción C del casting del padre)",
+   "nota": "Padre de T3 (62 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/padre_voz.py, opción C), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "hijo": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-hijo.wav",
+   "ref_txt": "diseno/voces/ref-hijo.txt",
+   "estado": "elegida por Bruno el 15-11-2026 (la voz del hijo en los primeros 45 s de T3)",
+   "nota": "Hijo de T3 (31 años). Salió al clonar la voz del padre con otras semillas; Bruno la da por buena. Se fija clonando su propia toma (línea 2 de T3).",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "hostelera": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-hostelera.wav",
+   "ref_txt": "diseno/voces/ref-hostelera.txt",
+   "estado": "elegida por Bruno el 20-11-2026 (voz C del casting de la hostelera)",
+   "nota": "Hostelera veterana de T10 (unos 62 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/hostelera_voz.py, opción C), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "medica": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-medica.wav",
+   "ref_txt": "diseno/voces/ref-medica.txt",
+   "estado": "elegida por Bruno el 21-11-2026 (voz B del casting de la médica)",
+   "nota": "Médica de familia de T11 (unos 45 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/medica_voz.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "profesora": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-profesora.wav",
+   "ref_txt": "diseno/voces/ref-profesora.txt",
+   "estado": "elegida por Bruno el 21-11-2026 (voz A del casting de la profesora; suena masculina, así que en el vídeo el tutor es un hombre)",
+   "nota": "Tutor de 4.º de ESO de T12 (la voz A del casting salió masculina: el personaje es un hombre). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/educacion_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "alumno": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-alumno.wav",
+   "ref_txt": "diseno/voces/ref-alumno.txt",
+   "estado": "elegida por Bruno el 21-11-2026 (voz B del casting del alumno)",
+   "nota": "Alumno de 15 años de T12. Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/educacion_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "viajera": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-viajera.wav",
+   "ref_txt": "diseno/voces/ref-viajera.txt",
+   "estado": "elegida por Bruno el 21-11-2026 (voz A del casting de la viajera)",
+   "nota": "Viajera de T13 (unos 35 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/transporte_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "comandante": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-comandante.wav",
+   "ref_txt": "diseno/voces/ref-comandante.txt",
+   "estado": "elegida por Bruno el 21-11-2026 (voz A del casting del comandante)",
+   "nota": "Comandante de avión de T13 (unos 55 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/transporte_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  },
+  "maquinista": {
+   "motor": "qwen-clon",
+   "modelo": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+   "ref": "diseno/voces/ref-maquinista.wav",
+   "ref_txt": "diseno/voces/ref-maquinista.txt",
+   "estado": "elegida por Bruno el 21-11-2026 (voz A del casting del maquinista)",
+   "nota": "Maquinista de tren de T13 (unos 45 años). Voz inventada con Qwen3-TTS 1.7B VoiceDesign (Apache-2.0) a partir de una descripción (scripts/pruebas/transporte_voces.py), sin clonar a nadie. Se fija clonando esa toma con el mismo motor que el narrador.",
+   "credito": "Voces: Qwen3-TTS (Apache-2.0), inventadas a partir de una descripción, sin clonar a nadie"
+  }
+ },
+ "edad": {
+  "antes": {
+   "tono": 1.07,
+   "velocidad": 0.98
+  },
+  "hoy": {
+   "tono": 0.97,
+   "velocidad": 0.97
+  },
+  "narrador": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "padre": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "hijo": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "quedo": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "vuelve": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "veterana": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "nuevo": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "paciente": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "medica": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "enfermero": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "profesora": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "alumno": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "viajera": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "comandante": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "maquinista": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  },
+  "abuelo": {
+   "tono": 0.97,
+   "velocidad": 0.97
+  },
+  "vecina": {
+   "tono": 0.98,
+   "velocidad": 0.98
+  },
+  "tecnico": {
+   "tono": 1.0,
+   "velocidad": 1.0
+  }
+ },
+ "velocidad_base": 0.95,
+ "pausa_turno_s": 0.45,
+ "pausa_mismo_s": 0.45,
+ "creditos": {
+  "piper:es_ES-davefx-medium": "Voz: Piper davefx (CC0)",
+  "piper:es_ES-sharvard-medium": "Voz: Piper sharvard (Universidad de Edimburgo, CC BY 3.0)",
+  "qwen:Qwen3-TTS-12Hz-0.6B-Base": "Voz: Qwen3-TTS (Apache-2.0) con timbre de una grabación CC0 del proyecto Piper/Nabu Casa"
+ },
+ "pausa_frase_s": 0.26,
+ "pausa_duda_s": 0.45,
+ "formantes": "preserved",
+ "intentos": 5,
+ "hueco_max_s": 1.0,
+ "hueco_queda_s": 0.75,
+ "pausa_tras_dato_s": 1.0,
+ "nota_pausas": "Pausas: las naturales de la voz no se tocan (solo se acortan silencios de más de 1 s, que son fallos del modelo). Entre líneas, 0,45 s; tras una línea con dato en la tarjeta, 1 s, para que dé tiempo a leerlo.",
+ "parecido_voz_min": 0.85
+}

@@ -1,0 +1,265 @@
+{
+ "tema": "¿Lotería o invertir? Lo que un hogar medio se gasta en loterías y apuestas frente a meterlo en bolsa (S&P 500)",
+ "gasto_juegos_azar_eur": {
+  "fuente": "INE, Encuesta de Presupuestos Familiares (lo que declaran los hogares; todas las loterías y apuestas)",
+  "por_hogar": {
+   "2007": 186.42,
+   "2008": 177.41,
+   "2009": 197.31,
+   "2010": 167.71,
+   "2011": 164.94,
+   "2012": 149.53,
+   "2013": 135.11,
+   "2014": 141.29,
+   "2015": 142.97,
+   "2016": 151.25,
+   "2017": 159.2,
+   "2018": 149.4,
+   "2019": 146.02,
+   "2020": 123.75,
+   "2021": 143.29,
+   "2022": 125.9,
+   "2023": 138.84,
+   "2024": 113.17,
+   "2025": 104.47
+  },
+  "por_persona": {
+   "2007": 69.14,
+   "2008": 66.42,
+   "2009": 74.62,
+   "2010": 64.12,
+   "2011": 63.75,
+   "2012": 58.4,
+   "2013": 53.32,
+   "2014": 56.23,
+   "2015": 57.15,
+   "2016": 60.67,
+   "2017": 63.96,
+   "2018": 60.11,
+   "2019": 58.67,
+   "2020": 49.73,
+   "2021": 56.92,
+   "2022": 50.43,
+   "2023": 55.85,
+   "2024": 45.29,
+   "2025": 41.86
+  }
+ },
+ "loteria_nacional_2022": {
+  "fuente": "Tribunal de Cuentas, BOE-A-2025-14671, cuadro n.º 4",
+  "decimos_jugados": 492570958,
+  "jugado_millones": 5734.23,
+  "premios": 140615529,
+  "premios_millones": 4025.38,
+  "vuelve_pct": 70.2,
+  "sin_premio_pct": 71.5,
+  "sin_premio_de_cada_10": 7,
+  "decimos_millones": 492.6,
+  "premios_num_millones": 140.6
+ },
+ "todos_los_juegos_selae_2022": {
+  "jugado_millones": 9686.62,
+  "premios_millones": 6148.18,
+  "vuelve_pct": 63.5
+ },
+ "sp500_eur": {
+  "fuente": "BCE: FM.M.US.USD.DS.EI.S_PCOMP.HSTA y EXR.M.USD.EUR.SP00.A (medias mensuales)",
+  "2007-12": 1015.8,
+  "2016-12": 2130.9,
+  "2019-12": 2860.4,
+  "2025-12": 5852.9,
+  "2026-10": 6897.9
+ },
+ "invertir": {
+  "2007": {
+   "desde": 2007,
+   "hasta_aportacion": 2025,
+   "valorado_en": "2026-10",
+   "jugado_eur": 2818,
+   "en_bolsa_eur": 13160,
+   "veces": 4.7,
+   "gana_pct": 367.0,
+   "por_anyo": {
+    "2007": {
+     "jugado": 186,
+     "en_bolsa": 186
+    },
+    "2008": {
+     "jugado": 364,
+     "en_bolsa": 297
+    },
+    "2009": {
+     "jugado": 561,
+     "en_bolsa": 543
+    },
+    "2010": {
+     "jugado": 729,
+     "en_bolsa": 839
+    },
+    "2011": {
+     "jugado": 894,
+     "en_bolsa": 1008
+    },
+    "2012": {
+     "jugado": 1043,
+     "en_bolsa": 1308
+    },
+    "2013": {
+     "jugado": 1178,
+     "en_bolsa": 1727
+    },
+    "2014": {
+     "jugado": 1320,
+     "en_bolsa": 2322
+    },
+    "2015": {
+     "jugado": 1463,
+     "en_bolsa": 2775
+    },
+    "2016": {
+     "jugado": 1614,
+     "en_bolsa": 3283
+    },
+    "2017": {
+     "jugado": 1773,
+     "en_bolsa": 3627
+    },
+    "2018": {
+     "jugado": 1923,
+     "en_bolsa": 3783
+    },
+    "2019": {
+     "jugado": 2069,
+     "en_bolsa": 4944
+    },
+    "2020": {
+     "jugado": 2192,
+     "en_bolsa": 5372
+    },
+    "2021": {
+     "jugado": 2336,
+     "en_bolsa": 7464
+    },
+    "2022": {
+     "jugado": 2462,
+     "en_bolsa": 6791
+    },
+    "2023": {
+     "jugado": 2600,
+     "en_bolsa": 8042
+    },
+    "2024": {
+     "jugado": 2714,
+     "en_bolsa": 10844
+    },
+    "2025": {
+     "jugado": 2818,
+     "en_bolsa": 11166
+    }
+   }
+  },
+  "2016": {
+   "desde": 2016,
+   "hasta_aportacion": 2025,
+   "valorado_en": "2026-10",
+   "jugado_eur": 1355,
+   "en_bolsa_eur": 3023,
+   "veces": 2.2,
+   "gana_pct": 123.1,
+   "por_anyo": {
+    "2016": {
+     "jugado": 151,
+     "en_bolsa": 151
+    },
+    "2017": {
+     "jugado": 310,
+     "en_bolsa": 319
+    },
+    "2018": {
+     "jugado": 460,
+     "en_bolsa": 469
+    },
+    "2019": {
+     "jugado": 606,
+     "en_bolsa": 741
+    },
+    "2020": {
+     "jugado": 730,
+     "en_bolsa": 910
+    },
+    "2021": {
+     "jugado": 873,
+     "en_bolsa": 1384
+    },
+    "2022": {
+     "jugado": 999,
+     "en_bolsa": 1361
+    },
+    "2023": {
+     "jugado": 1138,
+     "en_bolsa": 1723
+    },
+    "2024": {
+     "jugado": 1251,
+     "en_bolsa": 2412
+    },
+    "2025": {
+     "jugado": 1355,
+     "en_bolsa": 2565
+    }
+   }
+  },
+  "2019": {
+   "desde": 2019,
+   "hasta_aportacion": 2025,
+   "valorado_en": "2026-10",
+   "jugado_eur": 895,
+   "en_bolsa_eur": 1589,
+   "veces": 1.8,
+   "gana_pct": 77.5,
+   "por_anyo": {
+    "2019": {
+     "jugado": 146,
+     "en_bolsa": 146
+    },
+    "2020": {
+     "jugado": 270,
+     "en_bolsa": 279
+    },
+    "2021": {
+     "jugado": 413,
+     "en_bolsa": 523
+    },
+    "2022": {
+     "jugado": 539,
+     "en_bolsa": 593
+    },
+    "2023": {
+     "jugado": 678,
+     "en_bolsa": 829
+    },
+    "2024": {
+     "jugado": 791,
+     "en_bolsa": 1219
+    },
+    "2025": {
+     "jugado": 895,
+     "en_bolsa": 1348
+    }
+   }
+  }
+ },
+ "bolsa_2008_caida_pct": -35.8,
+ "gravamen_premios": {
+  "fuente": "Ley 35/2006 del IRPF, DA 33.ª y DT 35.ª (BOE); AEAT",
+  "tipo_pct": 20,
+  "exento_eur": {
+   "2007": null,
+   "2013-2017": 2500,
+   "2018 (desde el 5-7)": 10000,
+   "2019": 20000,
+   "hoy": 40000
+  },
+  "nota": "En 2007 los premios de lotería no pagaban impuestos: el gravamen está en vigor desde el 1-1-2013. «hoy»: desde el ejercicio que sigue a 2019 (40.000 €)."
+ }
+}

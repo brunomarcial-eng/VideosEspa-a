@@ -1,0 +1,34 @@
+{
+ "huella": "50f267cb017cc70d",
+ "semilla": 4002,
+ "texto": "Ya, pero es que ahora vuela más gente.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0029,
+  "oido": "Ya, pero es que ahora vuela más gente.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.66,
+   0.84,
+   1.04,
+   1.14,
+   1.36,
+   1.66,
+   1.8
+  ],
+  "t1": [
+   0.28,
+   0.84,
+   1.04,
+   1.14,
+   1.36,
+   1.66,
+   1.8,
+   2.1
+  ],
+  "ritmo": 12.4,
+  "voz": 0.856
+ }
+}

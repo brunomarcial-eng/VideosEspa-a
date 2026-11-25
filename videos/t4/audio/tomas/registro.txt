@@ -1,0 +1,22 @@
+plano 1: «¡Es que os lo fundís todo! Netflix, Glovo, el gimnasio, festivales… ¡Así no hay quien ahorre!»
+    toma guardada (semilla 1002): BUENA · «es que os lo fundís todo. Netflix, Globo, El Gimnasio, Festivales, así no hay quien ahorre.»
+plano 2: «Vale, ahí te doy algo. De cada 100 euros, en ocio, bares y móvil se iban 12 en 1986. Hoy, 17.»
+    toma guardada (semilla 2000): BUENA · «Vale, ahí te doy algo. De cada 100 euros, en Osio, bares y móviles se iban 12 en 1986. Hoy, 17.»
+plano 4: «Pero vente al súper. En 1986, la comida se llevaba 28 de cada 100. Hoy, 16.»
+    toma guardada (semilla 4000): BUENA · «Pero vente al súper. En 1986, la comida se llevaba 28 de cada 100. Hoy 16.»
+plano 5: «¡Pues mejor me lo pones! ¿Dónde se os va la pasta?»
+    toma guardada (semilla 5205): BUENA · «Pues mejor me lo pones, ¿dónde se os va la pasta?»
+plano 6: «En la casa, papá. En 1986, 19 de cada 100. Hoy, 33. Un tercio de todo lo que gastas.»
+    toma guardada (semilla 6000): BUENA · «En la Casa Papá. En 1986, 19 de cada 100. Hoy, 33. Un tercio de todo lo que gastas.»
+plano 7: «Pues alquila algo, que no es para tanto.»
+    toma guardada (semilla 7205): BUENA · «pues alquila algo que no es para tanto.»
+plano 8: «¿Solo? El alquiler se come el 39 % de lo que ganas. En pareja, el 27 %. O pareja… o piso compartido.»
+    toma guardada (semilla 8000): BUENA · «Solo, el alquiler se come el 39% de lo que ganas, en pareja el 27%, o pareja o piso compartido.»
+plano 9: «¿Y por eso seguís en casa con treinta tacos?»
+    toma guardada (semilla 9202): BUENA · «¿Y por eso seguís en casa con 30 atacos?»
+plano 10: «Con 30,2 de media. En Europa, a los 26.»
+    toma guardada (semilla 10000): BUENA · «con 30,2 de media, en Europa a los 26.»
+plano 13: «Pues aquí estás muy bien, majo. Y comes caliente.»
+    toma guardada (semilla 13102): BUENA · «Pues aquí estás muy bien, majo, y come es caliente.»
+plano 14: «¿Quién tiene razón? ¿Tú qué opinas?»
+    toma guardada (semilla 14101): BUENA · «¿Quién tiene razón? ¿Tú qué opinas?»

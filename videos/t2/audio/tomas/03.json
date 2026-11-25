@@ -1,0 +1,23 @@
+{
+ "huella": "53e73cf706e2bb8c",
+ "semilla": 3000,
+ "texto": "Trabajando, 20,8 millones.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0,
+  "oido": "Trabajando 20,8 millones.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.56,
+   1.52
+  ],
+  "t1": [
+   0.56,
+   1.52,
+   1.76
+  ],
+  "ritmo": 15.8
+ }
+}

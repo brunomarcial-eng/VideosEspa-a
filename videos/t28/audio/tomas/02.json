@@ -1,0 +1,41 @@
+{
+ "huella": "a8f6e9876b7f63b7",
+ "semilla": 2002,
+ "texto": "Hombre claro. Solo la guardería ya te cuesta un riñón ¿eh?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0264,
+  "oido": "Hombre claro, solo la guardería ya te cuesta un riñón, ¿eh?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.28,
+   0.9,
+   1.24,
+   1.4,
+   1.92,
+   2.08,
+   2.2,
+   2.5,
+   2.6,
+   3.0
+  ],
+  "t1": [
+   0.28,
+   0.54,
+   1.24,
+   1.4,
+   1.92,
+   2.08,
+   2.2,
+   2.5,
+   2.6,
+   3.0,
+   3.12
+  ],
+  "ritmo": 13.6,
+  "voz": 0.903,
+  "viveza": 3.98
+ }
+}

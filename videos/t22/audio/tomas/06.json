@@ -1,0 +1,45 @@
+{
+ "huella": "53ac4f1d5cf063b3",
+ "semilla": 6000,
+ "texto": "Bueno desde 2016 igual… y a tu hermano el de 22 le gano.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0415,
+  "oido": "Bueno, desde 2016 igual, y a tu hermano, el de 22 Legano.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.46,
+   0.56,
+   1.28,
+   2.44,
+   2.7,
+   2.82,
+   2.92,
+   3.5,
+   3.6,
+   3.72,
+   4.26,
+   4.46
+  ],
+  "t1": [
+   0.3,
+   0.56,
+   1.28,
+   1.9,
+   2.7,
+   2.82,
+   2.92,
+   3.48,
+   3.6,
+   3.72,
+   4.26,
+   4.46,
+   4.86
+  ],
+  "ritmo": 12.3,
+  "voz": 0.933,
+  "viveza": 4.57
+ }
+}

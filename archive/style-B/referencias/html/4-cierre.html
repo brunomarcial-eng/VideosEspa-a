@@ -1,0 +1,56 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
+@font-face{font-family:Fraunces;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/fraunces-latin-700-normal.woff2");font-weight:700}
+@font-face{font-family:Fraunces;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/fraunces-latin-900-normal.woff2");font-weight:900}
+@font-face{font-family:Fraunces;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/fraunces-latin-400-normal.woff2");font-weight:400}
+@font-face{font-family:Plex;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/ibm-plex-mono-latin-400-normal.woff2");font-weight:400}
+@font-face{font-family:Plex;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/ibm-plex-mono-latin-600-normal.woff2");font-weight:600}
+@font-face{font-family:Plex;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/ibm-plex-mono-latin-700-normal.woff2");font-weight:700}
+@font-face{font-family:Mano;src:url("file:///home/user/VideosEspa-a/diseno/fuentes/caveat-brush-latin-400-normal.woff2")}
+:root{--ocre:#C8902E;--azul:#1F5F8B;--papel:#F4EDE0;--pizarra:#23302B;--tp:#1E1E1E;
+--tz:#F4EDE0;--salvia:#7C9A7E;--gris:#8A8378;--rojo:#B3261E;--ocre-t:#86601F;
+--azul-tiza:#6AADDF;--gris-t:#6A645B;--gris-tiza:#B1AB9F;--salvia-tiza:#93B096;
+--papel2:#E7DCC8;--carton:#CDBB98}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden}
+.marco{position:relative;width:1080px;height:1920px;overflow:hidden}
+.abs{position:absolute}
+.sello{position:absolute;left:70px;width:860px;top:1385px;display:flex;gap:18px;align-items:center;
+  background:var(--papel);color:var(--rojo);border:4px solid var(--rojo);outline:2px solid var(--rojo);outline-offset:5px;
+  padding:14px 20px;font:600 30px/1.3 Plex;transform:rotate(-1.2deg)}
+.sello b{font-weight:700;letter-spacing:.04em}
+.sello svg{flex:none}
+.sello svg .l{stroke:var(--rojo);stroke-width:12;fill:none}
+.sello svg .f,.sello svg .f2,.sello svg .f3{fill:none}
+.ficha{display:inline-block;padding:6px 26px 10px;border-radius:14px;font-family:Plex;font-weight:700}
+.pasado.ficha{background:var(--ocre);color:var(--tp)}
+.hoy.ficha{background:var(--azul);color:var(--papel)}
+.obj{overflow:visible}
+.obj .l{stroke-linecap:round;stroke-linejoin:round}
+
+.estilo-B{color:var(--tp);font-family:Plex}
+.estilo-B h1{font:900 82px/1.04 Fraunces;letter-spacing:-.01em}
+.estilo-B .obj{filter:url(#carton)}
+.estilo-B .obj .l{stroke:var(--tp);stroke-width:5}
+.estilo-B .obj .f{fill:var(--papel2)} .estilo-B .obj .f2{fill:var(--salvia)} .estilo-B .obj .f3{fill:var(--carton)}
+.estilo-B .obj path.l:not(.f):not(.f2):not(.f3),.estilo-B .obj circle.l:not(.f):not(.f2):not(.f3){fill:none}
+.estilo-B .t-pasado{color:var(--ocre-t)} .estilo-B .t-hoy{color:var(--azul)} .estilo-B .tenue{color:var(--gris-t)}</style></head>
+<body><svg width="0" height="0" style="position:absolute">
+<filter id="grano" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4"/>
+  <feColorMatrix type="matrix" values="0 0 0 0 0.12 0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0.10 0"/></filter>
+<filter id="carton"><feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="2" seed="9" result="r"/>
+  <feColorMatrix in="r" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0" result="m"/>
+  <feComposite in="SourceGraphic" in2="m" operator="arithmetic" k1="0" k2="1" k3="-0.25" k4="0"/></filter></svg>
+<div class="marco estilo-B"><svg class="abs" width="1080" height="1920" style="left:0;top:0"><rect width="1080" height="1920" fill="#F4EDE0"/>
+<rect width="1080" height="1920" filter="url(#grano)"/></svg>
+<h1 class="abs" style="left:70px;top:230px;width:940px;text-align:center;font-size:96px">¿Mejora, empeora o depende?</h1>
+<div class="abs" style="left:250px;top:560px;width:580px;height:160px;
+background:#E7DCC8;border:4px solid #8A8378;border-radius:24px;
+display:flex;align-items:center;justify-content:center;font:900 80px Fraunces;color:#6A645B;
+transform:rotate(0deg);box-shadow:none;filter:url(#carton)">MEJORA</div><div class="abs" style="left:210px;top:780px;width:660px;height:200px;
+background:#F4EDE0;border:9px solid #1E1E1E;border-radius:24px;
+display:flex;align-items:center;justify-content:center;font:900 104px Fraunces;color:#1E1E1E;
+transform:rotate(-2deg);box-shadow:12px 14px 0 rgba(30,30,30,.25);filter:url(#carton)">EMPEORA</div><div class="abs" style="left:250px;top:1040px;width:580px;height:160px;
+background:#E7DCC8;border:4px solid #8A8378;border-radius:24px;
+display:flex;align-items:center;justify-content:center;font:900 80px Fraunces;color:#6A645B;
+transform:rotate(0deg);box-shadow:none;filter:url(#carton)">DEPENDE</div>
+<div class="abs tenue" style="left:110px;width:860px;text-align:center;top:1260px;font:600 38px/1.35 Plex">Con 2016, 2018 o 2019 como referencia, y con cualquier forma de medir el sueldo</div></div></body></html>

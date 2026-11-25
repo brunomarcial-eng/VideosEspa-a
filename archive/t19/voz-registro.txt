@@ -1,0 +1,18 @@
+plano 1: «¿Para cuánto te da hoy el Gordo? Porque mi padre dice que en 2007 te comprabas diez pisos…»
+    toma guardada (semilla 1000): BUENA · «¿Para cuánto te da hoy el gordo? Porque mi padre dice que en 2007 te comprabas 10 pisos.»
+plano 2: «Hombre claro… en 2007 te tocaban 300.000 euros por décimo y ni un duro para Hacienda.»
+    toma guardada (semilla 2004): BUENA · «Hombre claro, en 2007 te tocaban 300.000 euros por décimo y ni un duro para Hacienda.»
+plano 3: «Ya pero hoy son 400.000. Lo que pasa es que Hacienda se queda 72.000… y te quedan 328.000.»
+    toma guardada (semilla 3004): BUENA · «Ya pero hoy son 400.000, lo que pasa es que Hacienda se queda 72.000 y te quedan 328.000.»
+plano 4: «¿Ves? Más que en 2007. Diez pisos por lo menos.»
+    toma guardada (semilla 4001): BUENA · «¿Ves? Más que en 2007. 10 pisos por lo menos.»
+plano 5: «¿Diez pisos? Anda ya papá. En 2007 te daba para piso y medio… y hoy igual.»
+    toma guardada (semilla 5001): BUENA · «10 pisos? Anda ya, papá. En 2007 te daba para piso y medio. Y hoy igual.»
+plano 6: «Bueno… piso y medio. Pero es que antes los sueldos eran otros.»
+    toma guardada (semilla 6000): BUENA · «Bueno, piso y medio, pero es que antes los sueldos eran otros.»
+plano 7: «Eso sí. En 2007 eran 21 años de sueldo y hoy 16. Cinco años menos de vida resuelta.»
+    toma guardada (semilla 7001): BUENA · «Eso sí, en 2007 eran 21 años de sueldo y hoy 16, 5 años menos de vida resuelta.»
+plano 8: «Vamos que aquel Gordo hoy serían casi 430.000 euros.»
+    toma guardada (semilla 8000): BUENA · «Vamos que aquel gordo hoy serían casi 430 mil euros.»
+plano 9: «Total que para Hacienda más y para ti menos años. ¿Y tú con el Gordo de hoy dejarías el curro?»
+    toma guardada (semilla 9000): BUENA · «Total que para hacienda más y para ti menos años. ¿Y tú con el gordo de hoy dejarías el curro?»

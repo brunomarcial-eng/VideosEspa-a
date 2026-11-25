@@ -1,0 +1,244 @@
+{
+ "nota": "Momentos clave de T18 v2 (coches B, cuñados en el bar). La música se corta en seco con el BMW X1. Ambiente de bar solo con sonidos sueltos y música sin bajo grave (era el zumbido).",
+ "musica": {
+  "bpm": 104,
+  "corte": "c9-normalito",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "bar",
+   "desde": 1,
+   "hasta": 11,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-barato",
+   "beat": 1,
+   "palabra": "barato",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-anda",
+   "beat": 2,
+   "palabra": "Anda",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-2016",
+   "beat": 2,
+   "palabra": "2016",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-leon",
+   "beat": 2,
+   "palabra": "León",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-sandero",
+   "beat": 3,
+   "palabra": "Sandero",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-clio",
+   "beat": 3,
+   "palabra": "Clio",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.22
+  },
+  {
+   "id": "c3-mg",
+   "beat": 3,
+   "palabra": "MG",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.22
+  },
+  {
+   "id": "c4-sandero",
+   "beat": 4,
+   "palabra": "Sandero",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c4-medio",
+   "beat": 4,
+   "palabra": "medio",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c4-mitad",
+   "beat": 4,
+   "palabra": "mitad",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-barato",
+   "beat": 5,
+   "palabra": "barato",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-barato",
+   "beat": 6,
+   "palabra": "Barato",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-siete",
+   "beat": 6,
+   "palabra": "Siete",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-enterito",
+   "beat": 6,
+   "palabra": "enteritos",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-alemania",
+   "beat": 7,
+   "palabra": "Alemania",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c7-listo",
+   "beat": 7,
+   "palabra": "listo",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-35",
+   "beat": 8,
+   "palabra": "35",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-sandero",
+   "beat": 8,
+   "palabra": "Sandero",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.22
+  },
+  {
+   "id": "c8-cinco",
+   "beat": 8,
+   "palabra": "cinco",
+   "dt": -0.1
+  },
+  {
+   "id": "c9-bmw",
+   "beat": 9,
+   "palabra": "BMW",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c9-catorce",
+   "beat": 9,
+   "palabra": "catorce",
+   "dt": -0.1
+  },
+  {
+   "id": "c9-normalito",
+   "beat": 9,
+   "palabra": "normalito",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-2016",
+   "beat": 10,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c10-doce",
+   "beat": 10,
+   "palabra": "doce",
+   "dt": -0.1
+  },
+  {
+   "id": "c10-catorce",
+   "beat": 10,
+   "palabra": "catorce",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.22
+  },
+  {
+   "id": "c10-2007",
+   "beat": 10,
+   "palabra": "2007",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c11-bmw",
+   "beat": 11,
+   "palabra": "BMW",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-vamos",
+   "beat": 11,
+   "palabra": "Vamos",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-justos",
+   "beat": 11,
+   "palabra": "justos",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-apanados",
+   "beat": 11,
+   "palabra": "apañados",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  }
+ ]
+}

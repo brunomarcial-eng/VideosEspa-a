@@ -1,0 +1,542 @@
+{
+ "2025": {
+  "url": "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/mercado/2025/jrubik453a49b651404066e4a8d101991b5c45076040bf.html",
+  "smi": "16.576",
+  "filas": [
+   {
+    "tramo": "Total",
+    "asalariados": 21139690,
+    "salarios": 546027843900,
+    "salario_medio": 25830
+   },
+   {
+    "tramo": "De 0 a 0,5 SMI",
+    "asalariados": 4057647,
+    "salarios": 14208093512,
+    "salario_medio": 3502
+   },
+   {
+    "tramo": "De 0,5 a 1 SMI",
+    "asalariados": 3776952,
+    "salarios": 47822399762,
+    "salario_medio": 12662
+   },
+   {
+    "tramo": "De 1 a 1,5 SMI",
+    "asalariados": 5046291,
+    "salarios": 103127084591,
+    "salario_medio": 20436
+   },
+   {
+    "tramo": "De 1,5 a 2 SMI",
+    "asalariados": 2971575,
+    "salarios": 84850132571,
+    "salario_medio": 28554
+   },
+   {
+    "tramo": "De 2 a 2,5 SMI",
+    "asalariados": 1864497,
+    "salarios": 69148585147,
+    "salario_medio": 37087
+   },
+   {
+    "tramo": "De 2,5 a 3 SMI",
+    "asalariados": 1302671,
+    "salarios": 58883344462,
+    "salario_medio": 45202
+   },
+   {
+    "tramo": "De 3 a 3,5 SMI",
+    "asalariados": 734438,
+    "salarios": 39238125459,
+    "salario_medio": 53426
+   },
+   {
+    "tramo": "De 3,5 a 4 SMI",
+    "asalariados": 409208,
+    "salarios": 25300968444,
+    "salario_medio": 61829
+   },
+   {
+    "tramo": "De 4 a 4,5 SMI",
+    "asalariados": 273552,
+    "salarios": 19196496499,
+    "salario_medio": 70175
+   },
+   {
+    "tramo": "De 4,5 a 5 SMI",
+    "asalariados": 182109,
+    "salarios": 14294579106,
+    "salario_medio": 78495
+   },
+   {
+    "tramo": "De 5 a 7,5 SMI",
+    "asalariados": 368681,
+    "salarios": 36160434379,
+    "salario_medio": 98081
+   },
+   {
+    "tramo": "De 7,5 a 10 SMI",
+    "asalariados": 80301,
+    "salarios": 11312429222,
+    "salario_medio": 140875
+   },
+   {
+    "tramo": "Más de 10 SMI",
+    "asalariados": 71768,
+    "salarios": 22485170747,
+    "salario_medio": 313304
+   }
+  ]
+ },
+ "2024": {
+  "url": "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/mercado/2024/jrubikfd3ba377d194f23eb16b78f119e126b7f66239a7.html",
+  "smi": "15.876",
+  "filas": [
+   {
+    "tramo": "Total",
+    "asalariados": 20637992,
+    "salarios": 515167196684,
+    "salario_medio": 24962
+   },
+   {
+    "tramo": "De 0 a 0,5 SMI",
+    "asalariados": 3953694,
+    "salarios": 13269858253,
+    "salario_medio": 3356
+   },
+   {
+    "tramo": "De 0,5 a 1 SMI",
+    "asalariados": 3684544,
+    "salarios": 44782989191,
+    "salario_medio": 12154
+   },
+   {
+    "tramo": "De 1 a 1,5 SMI",
+    "asalariados": 4853887,
+    "salarios": 95178328914,
+    "salario_medio": 19609
+   },
+   {
+    "tramo": "De 1,5 a 2 SMI",
+    "asalariados": 2939939,
+    "salarios": 80522050319,
+    "salario_medio": 27389
+   },
+   {
+    "tramo": "De 2 a 2,5 SMI",
+    "asalariados": 1751522,
+    "salarios": 62299675963,
+    "salario_medio": 35569
+   },
+   {
+    "tramo": "De 2,5 a 3 SMI",
+    "asalariados": 1301782,
+    "salarios": 56350235380,
+    "salario_medio": 43287
+   },
+   {
+    "tramo": "De 3 a 3,5 SMI",
+    "asalariados": 756647,
+    "salarios": 38731196635,
+    "salario_medio": 51188
+   },
+   {
+    "tramo": "De 3,5 a 4 SMI",
+    "asalariados": 410841,
+    "salarios": 24326772772,
+    "salario_medio": 59212
+   },
+   {
+    "tramo": "De 4 a 4,5 SMI",
+    "asalariados": 274430,
+    "salarios": 18449043108,
+    "salario_medio": 67227
+   },
+   {
+    "tramo": "De 4,5 a 5 SMI",
+    "asalariados": 183426,
+    "salarios": 13784222914,
+    "salario_medio": 75149
+   },
+   {
+    "tramo": "De 5 a 7,5 SMI",
+    "asalariados": 373482,
+    "salarios": 35094974382,
+    "salario_medio": 93967
+   },
+   {
+    "tramo": "De 7,5 a 10 SMI",
+    "asalariados": 82173,
+    "salarios": 11085202541,
+    "salario_medio": 134901
+   },
+   {
+    "tramo": "Más de 10 SMI",
+    "asalariados": 71624,
+    "salarios": 21292646312,
+    "salario_medio": 297284
+   }
+  ]
+ },
+ "2019": {
+  "url": "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/mercado/2019/jrubikf2f65ea9d8fa77376f6066dcac14890a431cc068b.html",
+  "smi": null,
+  "filas": [
+   {
+    "tramo": "Total",
+    "asalariados": 19157767,
+    "salarios": 394004653900,
+    "salario_medio": 20566
+   },
+   {
+    "tramo": "De 0 a 0,5 SMI",
+    "asalariados": 3986921,
+    "salarios": 10608428902,
+    "salario_medio": 2661
+   },
+   {
+    "tramo": "De 0,5 a 1 SMI",
+    "asalariados": 3224971,
+    "salarios": 30692992672,
+    "salario_medio": 9517
+   },
+   {
+    "tramo": "De 1 a 1,5 SMI",
+    "asalariados": 3909371,
+    "salarios": 61406488427,
+    "salario_medio": 15708
+   },
+   {
+    "tramo": "De 1,5 a 2 SMI",
+    "asalariados": 2773588,
+    "salarios": 60362400080,
+    "salario_medio": 21763
+   },
+   {
+    "tramo": "De 2 a 2,5 SMI",
+    "asalariados": 1619670,
+    "salarios": 45535650470,
+    "salario_medio": 28114
+   },
+   {
+    "tramo": "De 2,5 a 3 SMI",
+    "asalariados": 1239164,
+    "salarios": 42720473902,
+    "salario_medio": 34475
+   },
+   {
+    "tramo": "De 3 a 3,5 SMI",
+    "asalariados": 833609,
+    "salarios": 33946325960,
+    "salario_medio": 40722
+   },
+   {
+    "tramo": "De 3,5 a 4 SMI",
+    "asalariados": 492582,
+    "salarios": 23120785045,
+    "salario_medio": 46938
+   },
+   {
+    "tramo": "De 4 a 4,5 SMI",
+    "asalariados": 295590,
+    "salarios": 15769205660,
+    "salario_medio": 53348
+   },
+   {
+    "tramo": "De 4,5 a 5 SMI",
+    "asalariados": 206058,
+    "salarios": 12296378323,
+    "salario_medio": 59674
+   },
+   {
+    "tramo": "De 5 a 7,5 SMI",
+    "asalariados": 414853,
+    "salarios": 30976533091,
+    "salario_medio": 74669
+   },
+   {
+    "tramo": "De 7,5 a 10 SMI",
+    "asalariados": 89086,
+    "salarios": 9520244455,
+    "salario_medio": 106866
+   },
+   {
+    "tramo": "Más de 10 SMI",
+    "asalariados": 72304,
+    "salarios": 17048746914,
+    "salario_medio": 235793
+   }
+  ]
+ },
+ "2016": {
+  "url": "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/mercado/2016/jrubikc696967c0781a5fedf26509b6403762005214b8.html",
+  "smi": "9.172,80",
+  "filas": [
+   {
+    "tramo": "Total",
+    "asalariados": 17888520,
+    "salarios": 336938113674,
+    "salario_medio": 18835
+   },
+   {
+    "tramo": "De 0 a 0,5 SMI",
+    "asalariados": 3744384,
+    "salarios": 6910433593,
+    "salario_medio": 1846
+   },
+   {
+    "tramo": "De 0,5 a 1 SMI",
+    "asalariados": 2339133,
+    "salarios": 16062121471,
+    "salario_medio": 6867
+   },
+   {
+    "tramo": "De 1 a 1,5 SMI",
+    "asalariados": 2334247,
+    "salarios": 26859793289,
+    "salario_medio": 11507
+   },
+   {
+    "tramo": "De 1,5 a 2 SMI",
+    "asalariados": 2439191,
+    "salarios": 39095492477,
+    "salario_medio": 16028
+   },
+   {
+    "tramo": "De 2 a 2,5 SMI",
+    "asalariados": 1856927,
+    "salarios": 38053993441,
+    "salario_medio": 20493
+   },
+   {
+    "tramo": "De 2,5 a 3 SMI",
+    "asalariados": 1285261,
+    "salarios": 32226507094,
+    "salario_medio": 25074
+   },
+   {
+    "tramo": "De 3 a 3,5 SMI",
+    "asalariados": 994722,
+    "salarios": 29579226576,
+    "salario_medio": 29736
+   },
+   {
+    "tramo": "De 3,5 a 4 SMI",
+    "asalariados": 771639,
+    "salarios": 26465738845,
+    "salario_medio": 34298
+   },
+   {
+    "tramo": "De 4 a 4,5 SMI",
+    "asalariados": 589756,
+    "salarios": 22928641709,
+    "salario_medio": 38878
+   },
+   {
+    "tramo": "De 4,5 a 5 SMI",
+    "asalariados": 404704,
+    "salarios": 17560729876,
+    "salario_medio": 43391
+   },
+   {
+    "tramo": "De 5 a 7,5 SMI",
+    "asalariados": 775037,
+    "salarios": 42399642059,
+    "salario_medio": 54707
+   },
+   {
+    "tramo": "De 7,5 a 10 SMI",
+    "asalariados": 213218,
+    "salarios": 16627796372,
+    "salario_medio": 77985
+   },
+   {
+    "tramo": "Más de 10 SMI",
+    "asalariados": 140301,
+    "salarios": 22167996869,
+    "salario_medio": 158003
+   }
+  ]
+ },
+ "2007": {
+  "url": "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/mercado/2007/jrubik24d6.html",
+  "smi": "7.988,40",
+  "filas": [
+   {
+    "tramo": "Total",
+    "asalariados": 19309032,
+    "salarios": 349235616960,
+    "salario_medio": 18087
+   },
+   {
+    "tramo": "De 0 a 0,5 SMI",
+    "asalariados": 2988181,
+    "salarios": 5221302903,
+    "salario_medio": 1747
+   },
+   {
+    "tramo": "De 0,5 a 1 SMI",
+    "asalariados": 2214084,
+    "salarios": 13319847572,
+    "salario_medio": 6016
+   },
+   {
+    "tramo": "De 1 a 1,5 SMI",
+    "asalariados": 2492418,
+    "salarios": 25084747126,
+    "salario_medio": 10064
+   },
+   {
+    "tramo": "De 1,5 a 2 SMI",
+    "asalariados": 3169274,
+    "salarios": 44330554083,
+    "salario_medio": 13988
+   },
+   {
+    "tramo": "De 2 a 2,5 SMI",
+    "asalariados": 2317613,
+    "salarios": 41291469345,
+    "salario_medio": 17816
+   },
+   {
+    "tramo": "De 2,5 a 3 SMI",
+    "asalariados": 1527810,
+    "salarios": 33337540859,
+    "salario_medio": 21820
+   },
+   {
+    "tramo": "De 3 a 3,5 SMI",
+    "asalariados": 1108566,
+    "salarios": 28720675201,
+    "salario_medio": 25908
+   },
+   {
+    "tramo": "De 3,5 a 4 SMI",
+    "asalariados": 874787,
+    "salarios": 26150698740,
+    "salario_medio": 29894
+   },
+   {
+    "tramo": "De 4 a 4,5 SMI",
+    "asalariados": 677170,
+    "salarios": 22942911342,
+    "salario_medio": 33881
+   },
+   {
+    "tramo": "De 4,5 a 5 SMI",
+    "asalariados": 511227,
+    "salarios": 19309896867,
+    "salario_medio": 37772
+   },
+   {
+    "tramo": "De 5 a 7,5 SMI",
+    "asalariados": 958288,
+    "salarios": 45574938177,
+    "salario_medio": 47559
+   },
+   {
+    "tramo": "De 7,5 a 10 SMI",
+    "asalariados": 275817,
+    "salarios": 18786298123,
+    "salario_medio": 68111
+   },
+   {
+    "tramo": "Más de 10 SMI",
+    "asalariados": 193796,
+    "salarios": 25164736622,
+    "salario_medio": 129852
+   }
+  ]
+ },
+ "2013": {
+  "url": "https://sede.agenciatributaria.gob.es/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Estadisticas/Publicaciones/sites/mercado/2013/jrubikf3805aaab8d8afc08552f86f74fda7900168f4943.html",
+  "smi": "9.034,20",
+  "filas": [
+   {
+    "tramo": "Total",
+    "asalariados": 16682061,
+    "salarios": 308695720646,
+    "salario_medio": 18505
+   },
+   {
+    "tramo": "De 0 a 0,5 SMI",
+    "asalariados": 3642236,
+    "salarios": 6586044424,
+    "salario_medio": 1808
+   },
+   {
+    "tramo": "De 0,5 a 1 SMI",
+    "asalariados": 2109804,
+    "salarios": 14216238189,
+    "salario_medio": 6738
+   },
+   {
+    "tramo": "De 1 a 1,5 SMI",
+    "asalariados": 1981641,
+    "salarios": 22464353240,
+    "salario_medio": 11336
+   },
+   {
+    "tramo": "De 1,5 a 2 SMI",
+    "asalariados": 2224493,
+    "salarios": 35190625871,
+    "salario_medio": 15820
+   },
+   {
+    "tramo": "De 2 a 2,5 SMI",
+    "asalariados": 1762320,
+    "salarios": 35558226832,
+    "salario_medio": 20177
+   },
+   {
+    "tramo": "De 2,5 a 3 SMI",
+    "asalariados": 1250515,
+    "salarios": 30925391161,
+    "salario_medio": 24730
+   },
+   {
+    "tramo": "De 3 a 3,5 SMI",
+    "asalariados": 984453,
+    "salarios": 28806759265,
+    "salario_medio": 29262
+   },
+   {
+    "tramo": "De 3,5 a 4 SMI",
+    "asalariados": 760957,
+    "salarios": 25710354914,
+    "salario_medio": 33787
+   },
+   {
+    "tramo": "De 4 a 4,5 SMI",
+    "asalariados": 566591,
+    "salarios": 21671203381,
+    "salario_medio": 38248
+   },
+   {
+    "tramo": "De 4,5 a 5 SMI",
+    "asalariados": 356983,
+    "salarios": 15258058561,
+    "salario_medio": 42742
+   },
+   {
+    "tramo": "De 5 a 7,5 SMI",
+    "asalariados": 721985,
+    "salarios": 38910760528,
+    "salario_medio": 53894
+   },
+   {
+    "tramo": "De 7,5 a 10 SMI",
+    "asalariados": 194892,
+    "salarios": 14954555013,
+    "salario_medio": 76733
+   },
+   {
+    "tramo": "Más de 10 SMI",
+    "asalariados": 125191,
+    "salarios": 18443149268,
+    "salario_medio": 147320
+   }
+  ]
+ }
+}

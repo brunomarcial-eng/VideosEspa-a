@@ -1,0 +1,49 @@
+{
+ "huella": "baee22ed181880d0",
+ "semilla": 7000,
+ "texto": "Y eso que Dani ahora cobra más, ¿eh? Un 23 % más por hora, ya limpio.",
+ "ev": {
+  "ok": true,
+  "nota": 0.9922,
+  "oido": "Y eso que Dani ahora cobra más e, un 23% más por hora, ya limpio.",
+  "parecido": 0.992,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.28,
+   0.42,
+   0.62,
+   0.92,
+   1.2,
+   1.42,
+   2.02,
+   2.16,
+   2.48,
+   2.88,
+   3.32,
+   3.52,
+   3.88,
+   3.96
+  ],
+  "t1": [
+   0.14,
+   0.28,
+   0.42,
+   0.62,
+   0.92,
+   1.2,
+   1.42,
+   1.72,
+   2.16,
+   2.48,
+   2.88,
+   3.32,
+   3.52,
+   3.7,
+   3.96,
+   4.34
+  ],
+  "ritmo": 14.6
+ }
+}

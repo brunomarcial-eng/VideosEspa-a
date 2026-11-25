@@ -1,0 +1,337 @@
+{
+ "nota": "Momentos clave de T13 (infraestructuras, 2016 frente a hoy). Cada uno se ancla a una palabra de la narración o al inicio del plano; los usan la imagen (videos/t13/escenas.mjs) y el sonido (scripts/sonido.py). Suena la megafonía del avión, la bocina del tren y el claxon del coche; la música se corta en seco con el sello de «récord». Debajo, el ambiente de cada escenario (Bruno, 21-11-2026): murmullo de terminal, motores en cabina, traqueteo en el andén y tráfico con bocinas en el peaje, y dos avisos por megafonía con voces del catálogo (se generan con «voces.py --muestra TEXTO FICHERO --perfil VOZ»).",
+ "musica": {
+  "bpm": 98,
+  "corte": "c11-record",
+  "silencio_s": 1.0
+ },
+ "cues": [
+  {
+   "id": "c1-impuestos",
+   "beat": 1,
+   "palabra": "impuestos",
+   "dt": -0.1
+  },
+  {
+   "id": "c1-tarde",
+   "beat": 1,
+   "palabra": "tarde",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.3
+  },
+  {
+   "id": "c1-avion",
+   "beat": 1,
+   "palabra": "avión",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c1-tren",
+   "beat": 1,
+   "palabra": "tren",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c1-coche",
+   "beat": 1,
+   "palabra": "coche",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c2-megafonia",
+   "beat": 2,
+   "en": "inicio",
+   "dt": -0.7,
+   "sfx": "megafonia",
+   "vol": 0.45
+  },
+  {
+   "id": "c2-comandante",
+   "beat": 2,
+   "palabra": "comandante",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-retraso",
+   "beat": 2,
+   "palabra": "retraso",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c3-diez",
+   "beat": 3,
+   "palabra": "diez",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-2016",
+   "beat": 3,
+   "palabra": "2016",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c3-cuarenta",
+   "beat": 3,
+   "palabra": "cuarenta",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-gente",
+   "beat": 4,
+   "palabra": "gente",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-36",
+   "beat": 5,
+   "palabra": "36",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-retrasados",
+   "beat": 5,
+   "palabra": "retrasados",
+   "dt": -0.05,
+   "sfx": "avion",
+   "vol": 0.35
+  },
+  {
+   "id": "c5-cinco",
+   "beat": 5,
+   "palabra": "cinco",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.35
+  },
+  {
+   "id": "c6-cinco",
+   "beat": 6,
+   "palabra": "cinco",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-impuestos",
+   "beat": 6,
+   "palabra": "impuestos",
+   "dt": -0.1,
+   "sfx": "rasgado",
+   "vol": 0.3
+  },
+  {
+   "id": "c6-tren",
+   "beat": 6,
+   "palabra": "tren",
+   "dt": -0.1,
+   "sfx": "fwip",
+   "vol": 0.4
+  },
+  {
+   "id": "c7-sueno",
+   "beat": 7,
+   "en": "inicio",
+   "dt": -0.6,
+   "sfx": "tren",
+   "vol": 0.4
+  },
+  {
+   "id": "c7-86",
+   "beat": 7,
+   "palabra": "86",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c7-2019",
+   "beat": 7,
+   "palabra": "2019",
+   "dt": -0.05
+  },
+  {
+   "id": "c7-95",
+   "beat": 7,
+   "palabra": "95",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c8-mitad",
+   "beat": 8,
+   "palabra": "mitad",
+   "dt": -0.05,
+   "sfx": "conteo",
+   "vol": 0.3
+  },
+  {
+   "id": "c8-cuatro",
+   "beat": 8,
+   "palabra": "cuatro",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c9-orientativo",
+   "beat": 9,
+   "palabra": "orientativo",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-sueno",
+   "beat": 10,
+   "en": "inicio",
+   "dt": -0.6,
+   "sfx": "sueno",
+   "vol": 0.3
+  },
+  {
+   "id": "c10-coche",
+   "beat": 10,
+   "palabra": "coche",
+   "dt": -0.1,
+   "sfx": "claxon",
+   "vol": 0.35
+  },
+  {
+   "id": "c10-nunca",
+   "beat": 10,
+   "palabra": "nunca",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c11-25",
+   "beat": 11,
+   "palabra": "25",
+   "dt": -0.05,
+   "sfx": "moneda",
+   "vol": 0.45
+  },
+  {
+   "id": "c11-record",
+   "beat": 11,
+   "palabra": "récord",
+   "dt": -0.05,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c12-38",
+   "beat": 12,
+   "palabra": "38",
+   "dt": -0.05,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c12-doble",
+   "beat": 12,
+   "palabra": "doble",
+   "dt": -0.05,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c13-pagamos",
+   "beat": 13,
+   "palabra": "pagamos",
+   "dt": -0.1
+  },
+  {
+   "id": "c13-tarde",
+   "beat": 13,
+   "palabra": "tarde",
+   "dt": -0.05,
+   "sfx": "golpe",
+   "vol": 0.4
+  },
+  {
+   "id": "c13-conformar",
+   "beat": 13,
+   "palabra": "conformar",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c13-tu",
+   "beat": 13,
+   "palabra": "tú",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  }
+ ],
+ "ambientes": [
+  {
+   "tipo": "aeropuerto",
+   "desde": 1,
+   "hasta": 1,
+   "vol": 1.0
+  },
+  {
+   "tipo": "cabina",
+   "desde": 2,
+   "hasta": 6,
+   "vol": 1.0
+  },
+  {
+   "tipo": "anden",
+   "desde": 7,
+   "hasta": 9,
+   "vol": 1.0
+  },
+  {
+   "tipo": "trafico",
+   "desde": 10,
+   "hasta": 13,
+   "vol": 1.0
+  }
+ ],
+ "avisos": [
+  {
+   "fichero": "audio/ambiente/aviso-aeropuerto.wav",
+   "texto": "Última llamada para los pasajeros del vuelo con destino Valencia. Embarque inmediato por la puerta B.",
+   "voz": "medica",
+   "beat": 1,
+   "en": "inicio",
+   "dt": -0.3,
+   "campana": "megafonia",
+   "vol": 1.0,
+   "pan": -0.2
+  },
+  {
+   "fichero": "audio/ambiente/aviso-estacion.wav",
+   "texto": "Tren con destino A Coruña: circula con retraso. Disculpen las molestias.",
+   "voz": "hostelera",
+   "beat": 9,
+   "en": "inicio",
+   "dt": -1.8,
+   "campana": "estacion",
+   "tras_campana_s": 1.4,
+   "vol": 1.0,
+   "pan": 0.2
+  }
+ ]
+}

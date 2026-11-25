@@ -1,0 +1,51 @@
+{
+ "huella": "f1ce07c6eab8a423",
+ "semilla": 3000,
+ "texto": "A ver… 50 litros hoy son unos 89 euros. Unas 6 horas y media de curro.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0164,
+  "oido": "A ver, 50 litros hoy son unos 89 euros. Una seis horas y media de curro.",
+  "parecido": 0.993,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.78,
+   1.18,
+   1.78,
+   1.94,
+   2.2,
+   2.4,
+   3.0,
+   3.94,
+   4.29,
+   4.44,
+   4.72,
+   4.9,
+   5.1,
+   5.26
+  ],
+  "t1": [
+   0.14,
+   0.3,
+   1.18,
+   1.78,
+   1.94,
+   2.2,
+   2.4,
+   3.0,
+   3.42,
+   4.29,
+   4.44,
+   4.72,
+   4.9,
+   5.1,
+   5.26,
+   5.58
+  ],
+  "ritmo": 12.9,
+  "voz": 0.897,
+  "viveza": 3.33
+ }
+}

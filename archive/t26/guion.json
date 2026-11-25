@@ -1,0 +1,156 @@
+{
+ "id": "t26",
+ "version": 1,
+ "titulo": "¿Somos más ricos o más pobres que los europeos?",
+ "titulo_alternativo": "España frente a Europa: riqueza por persona en 2007, la crisis, 2016, 2019 y hoy",
+ "pregunta": "¿Dónde está España frente a la media de la UE en riqueza por persona (PIB por habitante en paridad de poder adquisitivo), hoy y en 2007, 2013, 2016 y 2019? ¿Y qué puesto ocupa?",
+ "datos": "data/clean/t26_europa.json",
+ "aprobacion_datos": "Bruno, 24-11-2026: «Todos. 4 vídeos… Ponte con ellos uno por uno»; el segundo, España frente a Europa. Tabla en videos/t26/paso-1-datos.md.",
+ "formato": "Una hija (unos 35) que vuelve por Navidad de trabajar en Alemania y su padre (unos 60), que la recoge en la sala de llegadas del aeropuerto. Riqueza por persona frente a la media de la UE (Eurostat): 2007, 2013, 2016, 2019 y 2024; el puesto de España, y Polonia y Chequia. Pregunta final al espectador.",
+ "duracion_max_s": 85,
+ "personajes": {
+  "hija": {"anyo": "unos 35, trabaja en Alemania y vuelve por Navidad", "voz": "viajera"},
+  "padre": {"anyo": "unos 60, convencido de que como en España no se vive en ningún sitio", "voz": "comandante"}
+ },
+ "voz_pausas": {"pausa_turno_s": 0.3, "pausa_mismo_s": 0.3, "pausa_tras_dato_s": 0.5, "viveza_tomas": 3},
+ "sin_veredicto": "El veredicto lo da el padre en el plano 10: en 2007 España estaba por encima de la media europea (104) y hoy por debajo (92); la hija dice en el plano 6 que desde 2016 está igual (92) y la tarjeta enseña la crisis (90) y 2019 (91). Empeora frente a 2007; igual frente a 2016 y 2019 (91 → 92); algo mejor que en plena crisis. Acaba con la pregunta.",
+ "capitulos": [
+  {"nombre": "Hoy", "beats": [1, 2, 3, 4]},
+  {"nombre": "Antes", "beats": [5, 6]},
+  {"nombre": "Los demás", "beats": [7, 8, 9, 10]}
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "hija",
+   "funcion": "gancho",
+   "voz": "¿Somos más ricos o más pobres que los europeos? Porque mi padre dice que como en España no se vive en ningún sitio.",
+   "pantalla": "¿Somos más ricos o más pobres que los europeos?",
+   "sello": null,
+   "imagen": "La sala de llegadas de un aeropuerto en Navidad: cristalera con aviones, panel de llegadas con ciudades de Europa, guirnaldas. La hija, con la maleta en el suelo, habla a cámara; el padre la abraza de lado. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "padre",
+   "funcion": "lo que cree el padre",
+   "voz": "Hombre claro. Y encima somos la cuarta economía de Europa ¿o no?",
+   "pantalla": "España, 4.ª economía de la UE por tamaño",
+   "nota": "PIB de 2025: 1,69 billones de euros, detrás de Alemania, Francia e Italia (Eurostat)",
+   "sello": "EUROSTAT · CUENTAS NACIONALES",
+   "imagen": "Cuatro barras de tamaño de la economía: Alemania, Francia, Italia y España, la cuarta."
+  },
+  {
+   "n": 3,
+   "quien": "hija",
+   "funcion": "dato: el puesto por persona",
+   "voz": "La cuarta en tamaño sí… pero por persona y con lo que cuestan las cosas aquí estamos en el puesto 14 de 27.",
+   "pantalla": "Por persona: puesto 14 de 27",
+   "nota": "PIB por habitante ajustado a lo que cuestan las cosas en cada país (paridad de poder adquisitivo), 2024",
+   "sello": "EUROSTAT · PARIDAD DE PODER ADQUISITIVO",
+   "imagen": "Veintisiete casillas en fila; la de España se enciende en el puesto 14, justo en medio."
+  },
+  {
+   "n": 4,
+   "quien": "padre",
+   "funcion": "sorpresa",
+   "voz": "Anda ya… ¿y eso desde cuándo?",
+   "pantalla": "«¿Y eso desde cuándo?»",
+   "sello": null,
+   "imagen": "El padre suelta la maleta de la sorpresa (la maleta, en el suelo)."
+  },
+  {
+   "n": 5,
+   "quien": "hija",
+   "funcion": "dato: 2007 frente a hoy",
+   "voz": "En 2007 estábamos un 4 % por encima de la media europea. Hoy un 8 % por debajo.",
+   "pantalla": "Riqueza por persona: 104 en 2007, 92 hoy (media de la UE = 100)",
+   "nota": "En 2007, un 4 % por encima de la media; en 2024, un 8 % por debajo. Plena crisis (2013): 90; 2016: 92; 2019: 91",
+   "grafico": true,
+   "sello": "EUROSTAT · PARIDAD DE PODER ADQUISITIVO",
+   "imagen": "Una línea de la media europea; el marcador de España baja de encima a debajo de la línea."
+  },
+  {
+   "n": 6,
+   "quien": "hija",
+   "funcion": "dato: desde la crisis",
+   "voz": "Y desde la crisis estamos ahí parados… en 2016 igual que hoy.",
+   "pantalla": "Desde 2016, en el 92 % de la media",
+   "nota": "2007: 104 · 2013: 90 · 2016: 92 · 2019: 91 · 2024: 92",
+   "sello": "EUROSTAT · PARIDAD DE PODER ADQUISITIVO",
+   "imagen": "Columnas de España por año: 2007 por encima de la línea y el resto por debajo, casi iguales."
+  },
+  {
+   "n": 7,
+   "quien": "padre",
+   "funcion": "el padre se defiende",
+   "voz": "Bueno pero Italia y Francia también han bajado ¿no?",
+   "pantalla": "«Italia y Francia también han bajado»",
+   "nota": "Italia, de 109 a 98; Francia, de 109 a 99 (2007 y 2024; media de la UE = 100)",
+   "sello": "EUROSTAT · PARIDAD DE PODER ADQUISITIVO",
+   "imagen": "Barras de Italia y Francia que bajan hacia la línea de la media."
+  },
+  {
+   "n": 8,
+   "quien": "hija",
+   "funcion": "dato: los que suben",
+   "voz": "Sí… pero mira Polonia: en 2007 estaba al 54 % de la media y hoy al 79. Y Chequia ya está al 91… casi como nosotros.",
+   "pantalla": "Polonia: del 54 % al 79 % de la media",
+   "nota": "Chequia, del 84 % al 91 %; España, del 104 % al 92 % (2007 y 2024)",
+   "sello": "EUROSTAT · PARIDAD DE PODER ADQUISITIVO",
+   "imagen": "Una carrera de barras: Polonia y Chequia suben; la de España baja y casi la alcanzan."
+  },
+  {
+   "n": 9,
+   "quien": "padre",
+   "funcion": "el padre",
+   "voz": "Pues sí que nos están pillando…",
+   "pantalla": "«Pues sí que nos están pillando»",
+   "sello": null,
+   "imagen": "El padre se rasca la cabeza; en el panel, un avión de Varsovia «llegado»."
+  },
+  {
+   "n": 10,
+   "quien": "padre",
+   "funcion": "veredicto y pregunta",
+   "voz": "O sea que en 2007 éramos más ricos que la media y hoy estamos por debajo. ¿Y tú dónde crees que se vive mejor?",
+   "pantalla": "¿Dónde crees que se vive mejor?",
+   "sello": null,
+   "imagen": "Los dos con la maleta camino de la salida; el padre pregunta a cámara."
+  }
+ ],
+ "no_dato": ["100"],
+ "cifras": [
+  {"texto": "4", "ruta": "pib_total.2025.puesto_es", "decimales": 0, "estado": "V"},
+  {"texto": "1,69", "ruta": "pib_total.2025.es_meur", "escala": 1e-06, "decimales": 2, "estado": "V"},
+  {"texto": "14", "ruta": "filas.2024.pib_puesto_es", "decimales": 0, "estado": "C"},
+  {"texto": "27", "ruta": "filas.2024.pib_paises", "decimales": 0, "estado": "V"},
+  {"texto": "104", "ruta": "filas.2007.pib.ES", "decimales": 0, "estado": "V"},
+  {"texto": "92", "ruta": "filas.2024.pib.ES", "decimales": 0, "estado": "V"},
+  {"texto": "4", "ruta": "es_sobre_media_pct.2007", "decimales": 0, "estado": "C"},
+  {"texto": "8", "ruta": "es_sobre_media_pct.2024", "escala": -1, "decimales": 0, "estado": "C"},
+  {"texto": "90", "ruta": "filas.2013.pib.ES", "decimales": 0, "estado": "V"},
+  {"texto": "92", "ruta": "filas.2016.pib.ES", "decimales": 0, "estado": "V"},
+  {"texto": "91", "ruta": "filas.2019.pib.ES", "decimales": 0, "estado": "V"},
+  {"texto": "109", "ruta": "filas.2007.pib.IT", "decimales": 0, "estado": "V"},
+  {"texto": "98", "ruta": "filas.2024.pib.IT", "decimales": 0, "estado": "V"},
+  {"texto": "109", "ruta": "filas.2007.pib.FR", "decimales": 0, "estado": "V"},
+  {"texto": "99", "ruta": "filas.2024.pib.FR", "decimales": 0, "estado": "V"},
+  {"texto": "54", "ruta": "filas.2007.pib.PL", "decimales": 0, "estado": "V"},
+  {"texto": "79", "ruta": "filas.2024.pib.PL", "decimales": 0, "estado": "V"},
+  {"texto": "84", "ruta": "filas.2007.pib.CZ", "decimales": 0, "estado": "V"},
+  {"texto": "91", "ruta": "filas.2024.pib.CZ", "decimales": 0, "estado": "V"}
+ ],
+ "comprobaciones": [
+  "PIB por habitante en paridad de poder adquisitivo, índice de volumen, UE-27 = 100 (V): Eurostat, prc_ppp_ind (VI_PPS_EU27_2020_HAB, GDP). España: 104 (2007), 90 (2013), 92 (2016), 91 (2019), 92 (2024); 92 también en 2025 (tec00114).",
+  "Puesto de España entre los 27 (C): 13.º en 2007, 2013 y 2016; 15.º en 2019; 14.º en 2024 (empates contados en contra de España).",
+  "Otros países, 2007 → 2024 (V): Alemania 120 → 115; Francia 109 → 99; Italia 109 → 98; Portugal 82 → 82; Polonia 54 → 79; Chequia 84 → 91; Grecia 92 → 70.",
+  "PIB total a precios corrientes (V): Eurostat, nama_10_gdp: España, 4.ª de la UE en 2007, 2024 y 2025 (1.690.012 millones de euros en 2025), detrás de Alemania, Francia e Italia.",
+  "Consumo individual efectivo por habitante en PPA (contraste, V): España 102 (2007) → 92 (2024)."
+ ],
+ "cierre": {
+  "veredicto": "En riqueza por persona, ajustada a lo que cuestan las cosas, España empeora frente a 2007 (del 104 al 92 de la media de la UE), está igual que en 2016 (92) y casi igual que en 2019 (91), y algo mejor que en plena crisis (90). Es la 4.ª economía de la UE por tamaño, pero la 14.ª de 27 por persona",
+  "porque": "Desde 2007, otros países han crecido más por persona: Polonia del 54 al 79 y Chequia del 84 al 91, mientras España ha bajado del 104 al 92.",
+  "pregunta": "¿Dónde crees que se vive mejor?"
+ },
+ "aprobacion_guion": "pendiente (v1)"
+}

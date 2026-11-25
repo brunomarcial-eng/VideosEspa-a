@@ -1,0 +1,33 @@
+{
+ "huella": "2f77d230532456d4",
+ "semilla": 6001,
+ "texto": "Anda ya… ¿y eso cómo puede ser?",
+ "ev": {
+  "ok": true,
+  "nota": 1.0017,
+  "oido": "Anda ya, y eso como puede ser.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.18,
+   1.12,
+   1.36,
+   1.5,
+   1.68,
+   1.92
+  ],
+  "t1": [
+   0.18,
+   0.44,
+   1.36,
+   1.5,
+   1.68,
+   1.92,
+   2.16
+  ],
+  "ritmo": 9.4,
+  "voz": 0.853,
+  "viveza": 4.34
+ }
+}

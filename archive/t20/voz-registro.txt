@@ -1,0 +1,29 @@
+plano 1: «¿Cuánto llevas jugado a la lotería desde 2007? ¿Y si lo hubieras metido en bolsa?»
+    toma guardada (semilla 1000): BUENA · «¿Cuánto llevas jugado a la lotería desde 2007? ¿Y si lo hubieras metido en bolsa?»
+plano 2: «Venga hombre que es el décimo de la oficina… como toque y no estés te da algo.»
+    toma guardada (semilla 2001): BUENA · «Venga hombre que es el décimo de la oficina, como toque y no estés te da algo.»
+plano 3: «Un hogar medio se deja 104 euros al año en loterías y apuestas. En 2007 eran 186.»
+    toma guardada (semilla 3002): BUENA · «Un hogar medio se deja 104 euros al año en loterías y apuestas. En 2007 eran 186.»
+plano 4: «Y de cada diez décimos siete no cobran nada. Ni el reintegro.»
+    toma guardada (semilla 4004): BUENA · «y de cada 10 décimos 7 no cobran nada, ni el reintegro.»
+plano 5: «Ya majo pero la ilusión no tiene precio.»
+    toma guardada (semilla 5006): BUENA · «Yamajo, pero la ilusión no tiene precio.»
+plano 6: «Pues mira lo que cuesta. Si desde 2007 metes ese dinero en bolsa cada Navidad… casi tres mil euros hoy son trece mil.»
+    toma guardada (semilla 6006): mala · «Pues mira lo que cuesta, si desde 2007 metes ese dinero en bolsa, cada navidad, casi 3.000 euros hoy son 13.000.»
+plano 7: «¿Y lo de 2008 qué? Que la bolsa también se hunde.»
+    toma guardada (semilla 7001): BUENA · «Y lo de 2008 que, que la bolsa también se hunde.»
+plano 8: «Claro que se hunde… en 2008 un 36 %. Pero empieces cuando empieces gana. Desde 2016 más del doble y desde 2019 un 78 % más.»
+    toma 1 (semilla 8000): mala · 1.0 · voz 0.898 · 10.1 s · 15.7 l/s · «Claro que se hunde en 2008 un 36%, pero empieces cuando empieces gana, desde 2016 más del doble y desde 2019 un 78% más.» · sin pausa tras «hunde…» (0.00 s)
+    toma 2 (semilla 8001): mala · 1.0 · voz 0.907 · 10.3 s · 15.4 l/s · «Claro que se hunde, en 2008 un 36%, pero empieces cuando empieces gana. Desde 2016 más del doble y desde 2019 un 78% más.» · sin pausa tras «hunde…» (0.14 s)
+    toma 3 (semilla 8002): BUENA · 1.0 · voz 0.893 · 10.8 s · 14.8 l/s · viveza 3.92 st · «Claro que se hunde, en 2008 un 36% pero empieces cuando empieces gana. Desde 2016 más del doble y desde 2019 un 78% más.»
+    toma 4 (semilla 8003): mala · 1.0 · voz 0.901 · 10.2 s · 15.6 l/s · «Claro que se hunde, en 2008 un 36%, pero empieces cuando empieces gana. Desde 2016 más del doble y desde 2019 un 78% más.» · sin pausa tras «hunde…» (0.26 s)
+    toma 5 (semilla 8004): BUENA · 1.0 · voz 0.917 · 10.7 s · 14.8 l/s · viveza 3.16 st · «Claro que se hunde, en 2008 un 36%, pero empieces cuando empieces gana, desde 2016 más del doble y desde 2019 un 78% más.»
+    toma 6 (semilla 8005): mala · 1.0 · voz 0.918 · 11.7 s · 13.6 l/s · «Claro que se hunde en 2008 un 36%, pero empieces cuando empieces gana. Desde 2016 más del doble y desde 2019 un 78% más.» · sin pausa tras «hunde…» (0.06 s)
+    toma 7 (semilla 8006): mala · 1.0 · voz 0.915 · 10.4 s · 15.3 l/s · «Claro que se hunde, en 2008 un 36%, pero empieces cuando empieces gana. Desde 2016 más del doble y desde 2019 un 78% más.» · sin pausa tras «hunde…» (0.20 s)
+    elegida la toma con más entonación: semilla 8002 (3.92 st)
+plano 9: «¿Y si me toca el Gordo listo?»
+    toma guardada (semilla 9005): BUENA · «¿Y si me toca el gordo, listo?»
+plano 10: «Pues Hacienda se queda el 20 % de lo que pase de 40.000 euros. En 2007 nada.»
+    toma guardada (semilla 10000): mala · «Pues hacienda se queda el 20% de lo que pase de 40.000 euros, en 2007 nada.»
+plano 11: «¿Y tú qué haces este año décimo o bolsa? ¿Ilusión o impuesto voluntario?»
+    toma guardada (semilla 11001): BUENA · «¿Y tú qué haces este año décimo o bolsa? Ilusión o impuesto voluntario.»

@@ -1,0 +1,74 @@
+voces.log:plano 1: «¿Cuántos meses de tu vida trabajas para pagar un coche? Vengo a comprarme uno. A ver qué me cuentan.»
+voces.log:
+voces.log:********
+voces.log:********
+voces.log: 
+voces.log:/bin/sh: 1: sox: not found
+voces.log:SoX could not be found!
+voces.log:
+voces.log:    If you do not have SoX, proceed here:
+voces.log:     - - - http://sox.sourceforge.net/ - - -
+voces.log:
+voces.log:    If you do (or think that you should) have SoX, double-check your
+voces.log:    path variables.
+voces.log:    
+voces.log:    toma 1 (semilla 1000): BUENA · 1.0 · voz 0.921 · 5.9 s · 13.3 l/s · «¿Cuántos meses de tu vida trabajas para pagar un coche? Vengo a comprarme uno. A ver qué me cuentan.»
+voces.log:plano 2: «Yo cobro el sueldo mediano: 1.702 euros netos al mes. En 2016 eran 1.332.»
+voces.log:    toma 1 (semilla 2000): mala · 0.986 · voz 0.952 · 8.3 s · 13.0 l/s · «Yo cobro el sueldo mediano, 1.712 euros netos al mes, en 2016 eran 1.332.» · cifras no oídas: 702
+voces.log:    toma 2 (semilla 2001): mala · 0.986 · voz 0.94 · 7.6 s · 14.2 l/s · «Yo cobro el sueldo mediano, 1.712 euros netos al mes, en 2016 eran 1.332.» · cifras no oídas: 702
+voces.log:    toma 3 (semilla 2002): BUENA · 1.0 · voz 0.932 · 8.2 s · 13.2 l/s · «Yo cobro el sueldo mediano, 1.702 euros netos al mes, en 2016 eran 1.332.»
+voces.log:plano 3: «Bienvenida. El coche medio que se compra en España cuesta 28.661 euros. En 2016, 20.252.»
+voces.log:    toma 1 (semilla 3000): BUENA · 1.0 · voz 0.962 · 8.4 s · 16.4 l/s · «Bienvenida. El coche medio que se compra en España cuesta 28.661 euros. En 2016, 20.252.»
+voces.log:plano 4: «¿Y cuánto de eso son impuestos?»
+voces.log:    toma 1 (semilla 4000): BUENA · 0.98 · voz 0.889 · 1.8 s · 13.6 l/s · «¿Y cuánto de esos son impuestos?»
+voces.log:plano 5: «5.473 euros: el 19 % del precio. IVA y matriculación.»
+voces.log:    toma 1 (semilla 5000): BUENA · 0.971 · voz 0.935 · 6.1 s · 14.2 l/s · «5473 euros, el 19% del precio, IVA y matriculación.»
+voces.log:plano 6: «Si lo pagas al contado: casi diecisiete meses de tu sueldo entero. En 2016, quince.»
+voces.log:    toma 1 (semilla 6000): BUENA · 1.0 · voz 0.944 · 6.0 s · 12.7 l/s · «Si lo pagas al contado, casi 17 meses de tu sueldo entero, en 2016, 15.»
+voces.log:plano 7: «¿Financiado a cinco años, al tipo medio de los bancos? 5.780 euros de intereses: veinte meses de sueldo.»
+voces.log:    toma 1 (semilla 7000): BUENA · 1.0 · voz 0.949 · 7.5 s · 13.9 l/s · «¿Financiado a cinco años al tipo medio de los bancos? 5,780 euros de intereses, 20 meses de sueldo.»
+voces.log:plano 8: «La cuota: 574 euros al mes. Un tercio de tu sueldo, cinco años.»
+voces.log:    toma 1 (semilla 8000): BUENA · 1.0 · voz 0.912 · 5.6 s · 12.1 l/s · «La cuota, 574 euros al mes, un tercio de tu sueldo, 5 años.»
+voces.log:plano 9: «Vale. ¿Y las bicicletas, dónde las tienen?»
+voces.log:    toma 1 (semilla 9000): BUENA · 1.0 · voz 0.872 · 3.3 s · 9.8 l/s · «Vale. Y las bicicletas, ¿dónde las tienen?»
+voces.log:plano 10: «Eso sí: el dinero sale algo más barato que en 2016. Los préstamos, al 7,7 %; entonces, al 8,4.»
+voces.log:    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.957 · 9.3 s · 11.9 l/s · «Eso sí, el dinero sale algo más barato que en 2016. Los préstamos al 7,7%, entonces al 8,4.»
+voces.log:plano 11: «El coche medio: casi diecisiete meses de sueldo al contado y veinte financiado. Más que en 2016. ¿Cuántos meses trabajaste tú para pagar el tuyo?»
+voces.log:    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.935 · 10.2 s · 12.5 l/s · «El coche medio. Casi 17 meses de sueldo al contado y 20 financiado. Más que en 2016. ¿Cuántos meses trabajaste tú para pagar el tuyo?»
+voces.log:duración total 77.7 s · escrito videos/t16/audio/linea_tiempo.json
+voces2.log:plano 1: «¿Cuántos meses de tu vida trabajas para pagar un coche? Vengo a comprarme uno. A ver qué me cuentan.»
+voces2.log:    toma guardada (semilla 1000): BUENA · «¿Cuántos meses de tu vida trabajas para pagar un coche? Vengo a comprarme uno. A ver qué me cuentan.»
+voces2.log:plano 2: «Yo cobro el sueldo mediano: 1.702 euros netos al mes. En 2016 eran 1.332.»
+voces2.log:    toma guardada (semilla 2002): BUENA · «Yo cobro el sueldo mediano, 1.702 euros netos al mes, en 2016 eran 1.332.»
+voces2.log:plano 3: «Bienvenida. El coche medio que se compra en España cuesta 28.661 euros. En 2016, 20.252.»
+voces2.log:    toma guardada (semilla 3000): BUENA · «Bienvenida. El coche medio que se compra en España cuesta 28.661 euros. En 2016, 20.252.»
+voces2.log:plano 4: «¿Y cuánto de eso son impuestos?»
+voces2.log:    toma guardada (semilla 4000): BUENA · «¿Y cuánto de esos son impuestos?»
+voces2.log:plano 5: «5.473 euros: el 19 % del precio. IVA y matriculación.»
+voces2.log:    toma guardada (semilla 5000): BUENA · «5473 euros, el 19% del precio, IVA y matriculación.»
+voces2.log:plano 6: «Si lo pagas al contado: casi diecisiete meses de tu sueldo entero. En 2016, quince.»
+voces2.log:    toma guardada (semilla 6000): BUENA · «Si lo pagas al contado, casi 17 meses de tu sueldo entero, en 2016, 15.»
+voces2.log:plano 7: «¿Financiado a cinco años, al tipo medio de los bancos? 5.780 euros de intereses: veinte meses de sueldo.»
+voces2.log:    toma guardada (semilla 7000): BUENA · «¿Financiado a cinco años al tipo medio de los bancos? 5,780 euros de intereses, 20 meses de sueldo.»
+voces2.log:plano 8: «La cuota: 574 euros al mes. Un tercio de tu sueldo, cinco años.»
+voces2.log:    toma guardada (semilla 8000): BUENA · «La cuota, 574 euros al mes, un tercio de tu sueldo, 5 años.»
+voces2.log:plano 9: «Vale. ¿Y las bicicletas, dónde las tienen?»
+voces2.log:    toma guardada (semilla 9000): BUENA · «Vale. Y las bicicletas, ¿dónde las tienen?»
+voces2.log:plano 10: «Eso sí: en 2007, antes de la crisis, era peor. Casi dieciocho meses al contado, y los préstamos, casi al 10 %.»
+voces2.log:
+voces2.log:********
+voces2.log:********
+voces2.log: 
+voces2.log:/bin/sh: 1: sox: not found
+voces2.log:SoX could not be found!
+voces2.log:
+voces2.log:    If you do not have SoX, proceed here:
+voces2.log:     - - - http://sox.sourceforge.net/ - - -
+voces2.log:
+voces2.log:    If you do (or think that you should) have SoX, double-check your
+voces2.log:    path variables.
+voces2.log:    
+voces2.log:    toma 1 (semilla 10000): BUENA · 1.0 · voz 0.939 · 8.0 s · 12.4 l/s · «Eso sí, en 2007 antes de la crisis era peor, casi 18 meses al contado, y los préstamos casi al 10%.»
+voces2.log:plano 11: «El coche medio: casi diecisiete meses de sueldo al contado y veinte financiado. Más que en 2016, menos que en 2007. ¿Cuántos meses trabajaste tú para pagar el tuyo?»
+voces2.log:    toma 1 (semilla 11000): BUENA · 1.0 · voz 0.94 · 12.5 s · 11.9 l/s · «El coche medio. Casi 17 meses de sueldo al contado y veinte financiado. Más que en 2016, menos que en 2007. ¿Cuántos meses trabajaste tú para pagar el tuyo?»
+voces2.log:duración total 78.7 s · escrito videos/t16/audio/linea_tiempo.json

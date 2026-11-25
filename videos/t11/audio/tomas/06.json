@@ -1,0 +1,44 @@
+{
+ "huella": "0db90caf5c4b591e",
+ "semilla": 6000,
+ "texto": "Y en la lista para operarse hay 240.000 personas más que en 2016.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0465,
+  "oido": "Y en la lista para operarse hay 240.000 personas más que en 2016.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.12,
+   0.22,
+   0.3,
+   0.58,
+   0.9,
+   1.4,
+   1.54,
+   2.68,
+   3.06,
+   3.44,
+   3.7,
+   3.88
+  ],
+  "t1": [
+   0.12,
+   0.22,
+   0.3,
+   0.58,
+   0.9,
+   1.4,
+   1.54,
+   2.68,
+   3.06,
+   3.44,
+   3.7,
+   3.88,
+   4.5
+  ],
+  "ritmo": 17.9,
+  "voz": 0.943
+ }
+}

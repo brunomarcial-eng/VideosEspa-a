@@ -1,0 +1,186 @@
+{
+ "nota": "Momentos clave de T27 (la pobreza con la vara de 2008 y lo básico). La música se corta en seco con «lo básico». Todo en el almacén de un banco de alimentos de barrio, con sonidos sueltos (cajas, cinta de embalar, latas) y sin ruido continuo.",
+ "musica": {
+  "bpm": 90,
+  "corte": "c6-basico",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "almacen",
+   "desde": 1,
+   "hasta": 9,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-pobres",
+   "beat": 1,
+   "palabra": "pobres",
+   "dt": -0.1
+  },
+  {
+   "id": "c1-gente",
+   "beat": 1,
+   "palabra": "gente",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-claro",
+   "beat": 2,
+   "palabra": "claro",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-crisis",
+   "beat": 2,
+   "palabra": "crisis",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.2
+  },
+  {
+   "id": "c3-2008",
+   "beat": 3,
+   "palabra": "2008",
+   "dt": -0.1,
+   "sfx": "fwip",
+   "vol": 0.2
+  },
+  {
+   "id": "c3-17",
+   "beat": 3,
+   "palabra": "17,5",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-2016",
+   "beat": 3,
+   "palabra": "2016",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-30",
+   "beat": 3,
+   "palabra": "30",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c4-anda",
+   "beat": 4,
+   "palabra": "Anda",
+   "dt": -0.1,
+   "sfx": "fwip",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-aqui",
+   "beat": 4,
+   "palabra": "aquí",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-vara",
+   "beat": 5,
+   "palabra": "vara",
+   "dt": -0.1
+  },
+  {
+   "id": "c5-cinco",
+   "beat": 5,
+   "palabra": "cinco",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-basico",
+   "beat": 6,
+   "palabra": "básico",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-carne",
+   "beat": 6,
+   "palabra": "carne",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-doble",
+   "beat": 6,
+   "palabra": "doble",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c7-4",
+   "beat": 7,
+   "palabra": "4",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c7-imprevisto",
+   "beat": 7,
+   "palabra": "imprevisto",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c7-3",
+   "beat": 7,
+   "palabra": "3",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-ves",
+   "beat": 8,
+   "palabra": "Ves",
+   "dt": -0.1
+  },
+  {
+   "id": "c8-dias",
+   "beat": 8,
+   "palabra": "días",
+   "dt": -0.1
+  },
+  {
+   "id": "c9-estadistica",
+   "beat": 9,
+   "palabra": "estadística",
+   "dt": -0.1
+  },
+  {
+   "id": "c9-basico",
+   "beat": 9,
+   "palabra": "básico",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.2
+  },
+  {
+   "id": "c9-esperabas",
+   "beat": 9,
+   "palabra": "esperabas",
+   "dt": -0.1
+  }
+ ]
+}

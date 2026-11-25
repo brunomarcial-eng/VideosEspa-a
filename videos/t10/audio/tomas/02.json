@@ -1,0 +1,46 @@
+{
+ "huella": "439a6ea02ce776be",
+ "semilla": 2000,
+ "texto": "Yo abrí el mío en 1986: licencias, altas y a servir cañas. Tú, apunta.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0324,
+  "oido": "Yo abrí el mío en 1986, licencias altas y a servir cañas, tú apuntas.",
+  "parecido": 0.993,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.36,
+   0.46,
+   0.74,
+   0.84,
+   2.72,
+   3.78,
+   4.58,
+   4.7,
+   4.8,
+   4.98,
+   6.12,
+   6.48
+  ],
+  "t1": [
+   0.14,
+   0.36,
+   0.46,
+   0.74,
+   0.84,
+   2.14,
+   3.78,
+   4.58,
+   4.7,
+   4.8,
+   4.98,
+   5.5,
+   6.48,
+   7.062857142857143
+  ],
+  "ritmo": 10.1,
+  "voz": 0.928
+ }
+}

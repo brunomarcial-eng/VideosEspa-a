@@ -1,0 +1,391 @@
+{
+ "id": "t16",
+ "version": 1,
+ "titulo": "¿Cuántos meses trabajas para pagar tu coche?",
+ "titulo_alternativo": "El coche medio, en meses de sueldo: al contado y financiado, de 2007 a hoy",
+ "pregunta": "Una clienta y un vendedor en un concesionario. ¿Cuántos meses de sueldo cuesta hoy el coche medio, al contado y financiado, y cuánto de su precio son impuestos?",
+ "datos": "data/clean/t16_coche.json",
+ "aprobacion_datos": "Bruno, 22-11-2026: coches, vídeo A (cuánto cuesta el coche en horas de trabajo, cuánto te puedes permitir, intereses de la financiación, impuestos, al contado, meses de tu vida). Precio medio real de los coches matriculados (Agencia Tributaria), TAE media de los préstamos al consumo (Banco de España), sueldo mediano (INE). El Banco de España no da una cifra oficial de endeudamiento: el «tercio del sueldo» es un escenario propio y se dice",
+ "formato": "Una clienta entra en un concesionario. Enseña su sueldo; el vendedor le da el precio del coche medio y lo que son impuestos. Al contado y financiado, un calendario va pasando los meses y por los ventanales pasan las estaciones hasta pagar el coche. La cuota y cuánto coche te puedes permitir; la clienta, con sorna; cierra con el veredicto y la pregunta.",
+ "duracion_max_s": 90,
+ "personajes": {
+  "clienta": {
+   "anyo": "unos 35 años, viene a comprarse un coche",
+   "voz": "viajera"
+  },
+  "vendedor": {
+   "anyo": "unos 45 años, vendedor del concesionario, con traje",
+   "voz": "profesora"
+  }
+ },
+ "voz_pausas": {
+  "pausa_turno_s": 0.3,
+  "pausa_mismo_s": 0.3,
+  "pausa_tras_dato_s": 0.45
+ },
+ "sin_veredicto": "El veredicto lo dice la clienta en el plano 11 («casi diecisiete meses de sueldo al contado y veinte financiado: más que en 2016, menos que en 2007») y acaba con la pregunta.",
+ "capitulos": [
+  {
+   "nombre": "El concesionario",
+   "beats": [
+    1,
+    2
+   ]
+  },
+  {
+   "nombre": "El precio",
+   "beats": [
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "nombre": "Los meses",
+   "beats": [
+    6,
+    7
+   ]
+  },
+  {
+   "nombre": "La cuota",
+   "beats": [
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "nombre": "Te toca",
+   "beats": [
+    11
+   ]
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "quien": "clienta",
+   "funcion": "gancho",
+   "voz": "¿Cuántos meses de tu vida trabajas para pagar un coche? Vengo a comprarme uno. A ver qué me cuentan.",
+   "pantalla": "¿Cuántos meses trabajas para pagar tu coche?",
+   "sello": null,
+   "imagen": "Un concesionario: ventanales de suelo a techo, varios coches expuestos sin marca (un utilitario, un compacto y un todoterreno), suelo brillante y la mesa del vendedor. La clienta entra con su bolso. Cae el sello «SOLO DATOS OFICIALES»."
+  },
+  {
+   "n": 2,
+   "quien": "clienta",
+   "funcion": "el sueldo con el que se cuenta",
+   "voz": "Yo cobro el sueldo mediano: 1.702 euros netos al mes. En 2016 eran 1.332.",
+   "pantalla": "Sueldo neto mediano al mes (en 12 pagas) · 2016: 1.332 € · 2025: 1.702 €",
+   "nota": "Bruto al año: 19.433 € y 25.296 €. Neto al año: 15.987 € y 20.424 €. 2025, estimado: el último dato del INE es de 2024",
+   "sello": "CÁLCULO PROPIO · INE (Encuesta de Estructura Salarial y Encuesta Trimestral de Coste Laboral) · Eurostat (impuestos sobre el salario)",
+   "grafico": true,
+   "imagen": "La tabla del sueldo, grande, de un vistazo: bruto al año, neto al año y neto al mes, en 2016 y en 2025."
+  },
+  {
+   "n": 3,
+   "quien": "vendedor",
+   "funcion": "dato: precio del coche medio",
+   "voz": "Bienvenida. El coche medio que se compra en España cuesta 28.661 euros. En 2016, 20.252.",
+   "pantalla": "Precio medio de un coche, con IVA y matriculación · 2016: 20.252 € · 2025: 28.661 €",
+   "nota": "Lo que se paga de media por los turismos que se matriculan, con los extras que cada uno elige: uno básico, sin extras, sale más barato. Sube un 42 %; el sueldo neto, un 28 %",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria (estadística del impuesto de matriculación) · BOE (IVA del 21 %)",
+   "grafico": true,
+   "imagen": "El vendedor, con traje, presenta el coche del centro de la exposición; sobre el capó, la etiqueta del precio."
+  },
+  {
+   "n": 4,
+   "quien": "clienta",
+   "funcion": "pregunta",
+   "voz": "¿Y cuánto de eso son impuestos?",
+   "pantalla": "«¿Y cuánto son impuestos?»",
+   "sello": null,
+   "imagen": "La clienta mira la etiqueta del precio de cerca, con una ceja levantada."
+  },
+  {
+   "n": 5,
+   "quien": "vendedor",
+   "funcion": "dato: impuestos",
+   "voz": "5.473 euros: el 19 % del precio. IVA y matriculación.",
+   "pantalla": "Impuestos del coche medio (IVA y matriculación) · 5.473 € · 19,1 % del precio",
+   "nota": "IVA del 21 % sobre el precio sin impuestos y el impuesto de matriculación medio (604 €; según las emisiones de CO₂, del 0 al 14,75 %; más de la mitad de los coches no lo paga)",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria (estadística del impuesto de matriculación) · BOE (IVA del 21 %)",
+   "grafico": true,
+   "imagen": "El coche se divide en dos colores: casi una quinta parte es impuestos."
+  },
+  {
+   "n": 6,
+   "quien": "vendedor",
+   "funcion": "dato: al contado",
+   "voz": "Si lo pagas al contado: casi diecisiete meses de tu sueldo entero. En 2016, quince.",
+   "pantalla": "Meses de sueldo neto para pagar el coche medio al contado · 2016: 15,2 · 2019: 15,6 · 2025: 16,8",
+   "nota": "Todo el sueldo, sin gastar nada más",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria · INE",
+   "grafico": true,
+   "imagen": "Un calendario en la pared pasa las hojas de los meses y, por los ventanales del concesionario, pasan las estaciones: verano, otoño, invierno, primavera… hasta casi diecisiete meses."
+  },
+  {
+   "n": 7,
+   "quien": "vendedor",
+   "funcion": "dato: financiado",
+   "voz": "¿Financiado a cinco años, al tipo medio de los bancos? 5.780 euros de intereses: veinte meses de sueldo.",
+   "pantalla": "Meses de sueldo neto para pagar el coche medio financiado a cinco años · 2016: 18,5 · 2019: 19,0 · 2025: 20,2",
+   "nota": "Intereses: 5.780 €. Préstamo de todo el precio, a la TAE media del consumo: 7,74 % en 2025 y 8,43 % en 2016. En el concesionario suele salir más caro (se dice en la descripción)",
+   "sello": "CÁLCULO PROPIO · Banco de España · Agencia Tributaria · INE",
+   "grafico": true,
+   "imagen": "El calendario sigue pasando hojas y las estaciones siguen cambiando, ahora con monedas que se van a los intereses, hasta veinte meses."
+  },
+  {
+   "n": 8,
+   "quien": "vendedor",
+   "funcion": "dato: la cuota",
+   "voz": "La cuota: 574 euros al mes. Un tercio de tu sueldo, cinco años.",
+   "pantalla": "Cuota mensual del coche medio financiado a cinco años · 574 € · 33,7 % del sueldo neto",
+   "nota": "Un tercio del sueldo a la cuota durante cinco años da justo para el coche medio: unos 28.300 € (escenario propio, no es una recomendación oficial)",
+   "sello": "CÁLCULO PROPIO · Banco de España (tipos de interés) · Agencia Tributaria · INE",
+   "grafico": true,
+   "imagen": "Una tarta del sueldo del mes: un tercio se va a la cuota del coche."
+  },
+  {
+   "n": 9,
+   "quien": "clienta",
+   "funcion": "sarcasmo",
+   "voz": "Vale. ¿Y las bicicletas, dónde las tienen?",
+   "pantalla": "«¿Y las bicicletas?»",
+   "sello": null,
+   "imagen": "La clienta mira alrededor buscando las bicis; el vendedor se queda con la sonrisa congelada."
+  },
+  {
+   "n": 10,
+   "quien": "vendedor",
+   "funcion": "contrapunto: en 2007, antes de la crisis, era peor (la conclusión cambia con el año y se dice)",
+   "voz": "Eso sí: en 2007, antes de la crisis, era peor. Casi dieciocho meses al contado, y los préstamos, casi al 10 %.",
+   "pantalla": "Meses de sueldo neto para pagar el coche medio al contado · 2007: 17,6 · 2025: 16,8",
+   "nota": "Financiado a cinco años: 22,1 meses en 2007 y 20,2 en 2025. Préstamos al consumo (TAE media): 9,76 % en 2007 y 7,74 % en 2025. IVA del 16 % en 2007",
+   "sello": "CÁLCULO PROPIO · Agencia Tributaria · Banco de España · INE",
+   "grafico": true,
+   "imagen": "Dos carteles en la pared del concesionario: el de hoy (16,8 meses) y, al decir 2007, cae a su lado el de antes de la crisis, más alto (17,6 meses y préstamos al 9,76 %)."
+  },
+  {
+   "n": 11,
+   "quien": "clienta",
+   "funcion": "veredicto y pregunta",
+   "voz": "El coche medio: casi diecisiete meses de sueldo al contado y veinte financiado. Más que en 2016, menos que en 2007. ¿Cuántos meses trabajaste tú para pagar el tuyo?",
+   "pantalla": "Más meses de sueldo que en 2016 y en 2019; menos que en 2007. ¿Cuántos te costó el tuyo?",
+   "sello": null,
+   "imagen": "La clienta, apoyada en el coche, mira a cámara; detrás, el calendario con todas sus hojas arrancadas."
+  }
+ ],
+ "no_dato": [
+  "12",
+  "21",
+  "0",
+  "14,75"
+ ],
+ "cifras": [
+  {
+   "texto": "1.702",
+   "ruta": "sueldo.neto_mes.2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "1.332",
+   "ruta": "sueldo.neto_mes.2016",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "19.433",
+   "ruta": "sueldo.bruto_anual.2016",
+   "miles": true,
+   "estado": "V"
+  },
+  {
+   "texto": "25.296",
+   "ruta": "sueldo.bruto_anual.2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "15.987",
+   "ruta": "sueldo.neto_anual.2016",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "20.424",
+   "ruta": "sueldo.neto_anual.2025",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "28.661",
+   "ruta": "coche_medio.2025.precio_con_impuestos",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "20.252",
+   "ruta": "coche_medio.2016.precio_con_impuestos",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "42",
+   "ruta": "coche_medio_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "28",
+   "ruta": "sueldo_neto_sube_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "5.473",
+   "ruta": "coche_medio.2025.impuestos",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "19",
+   "ruta": "coche_medio.2025.impuestos_pct",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "19,1",
+   "ruta": "coche_medio.2025.impuestos_pct",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "604",
+   "ruta": "coche_medio.2025.matriculacion",
+   "decimales": 0,
+   "estado": "V"
+  },
+  {
+   "texto": "15,2",
+   "ruta": "coche_medio.2016.contado_meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "15,6",
+   "ruta": "coche_medio.2019.contado_meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "16,8",
+   "ruta": "coche_medio.2025.contado_meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "5.780",
+   "ruta": "coche_medio.2025.prestamo.intereses",
+   "miles": true,
+   "estado": "C"
+  },
+  {
+   "texto": "18,5",
+   "ruta": "coche_medio.2016.prestamo.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "19,0",
+   "ruta": "coche_medio.2019.prestamo.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "20,2",
+   "ruta": "coche_medio.2025.prestamo.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "7,74",
+   "ruta": "tae_consumo_media_anual.2025",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "8,43",
+   "ruta": "tae_consumo_media_anual.2016",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "574",
+   "ruta": "coche_medio.2025.prestamo.cuota",
+   "decimales": 0,
+   "estado": "C"
+  },
+  {
+   "texto": "33,7",
+   "ruta": "coche_medio.2025.prestamo.cuota_pct_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "28.300",
+   "ruta": "escenario_tercio.coche_maximo",
+   "aprox": 28300,
+   "tolerancia_pct": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "17,6",
+   "ruta": "coche_medio.2007.contado_meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "22,1",
+   "ruta": "coche_medio.2007.prestamo.meses_de_sueldo",
+   "decimales": 1,
+   "estado": "C"
+  },
+  {
+   "texto": "9,76",
+   "ruta": "tae_consumo_media_anual.2007",
+   "decimales": 2,
+   "estado": "V"
+  },
+  {
+   "texto": "10",
+   "ruta": "tae_consumo_media_anual.2007",
+   "aprox": 10,
+   "tolerancia_pct": 3,
+   "estado": "V"
+  },
+  {
+   "texto": "16",
+   "ruta": "coche_medio.2007.iva_tipo_pct",
+   "decimales": 0,
+   "estado": "V"
+  }
+ ],
+ "comprobaciones": [
+  "Precio (C): Agencia Tributaria, estadística anual del Impuesto sobre la Matriculación (modelo 576), turismos y todoterrenos: precio medio sin el impuesto de matriculación 16.505 € (2016), 17.588 € (2019) y 23.188 € (2025); con él, 16.786 €, 18.061 € y 23.792 €. Más el IVA del 21 % sobre el precio sin impuestos: 20.252 € y 28.661 €. Incluye los usados importados que se matriculan por primera vez y los extras que cada uno elige.",
+  "Impuestos (C): IVA 4.869 € + matriculación 604 € = 5.473 € (19,1 % del precio); en 2016, 3.747 € (18,5 %).",
+  "Sueldo (C): neto mediano anual de T1 y T14 (INE y Eurostat) / 12: 1.332 € (2016), 1.392 € (2019) y 1.702 € (2025) al mes.",
+  "Préstamo (C): todo el precio a cinco años (60 cuotas, sistema francés) a la TAE media anual de los préstamos al consumo de nuevas operaciones (Banco de España, BE_19_6.2): 8,43 % en 2016 y 7,74 % en 2025 (septiembre de 2026: 7,54 %). Cuota 574 € (33,7 % del sueldo), total 34.441 €, intereses 5.780 €: 20,2 meses de sueldo. En 2016: cuota 412 €, intereses 4.457 €, 18,5 meses.",
+  "Escenario propio (C): el Banco de España no publica una cifra oficial de endeudamiento máximo; con un tercio del sueldo neto mediano (567 €) a cinco años, a la TAE media de 2025, el préstamo máximo es de 28.327 €.",
+  "Tercer año (C): en 2019 el coche medio costaba 21.754 € con impuestos (19,2 % de impuestos): 15,6 meses de sueldo al contado y 19,0 financiado a la TAE media de 2019 (8,33 %). Frente a 2016 y 2019, empeora.",
+  "2007, antes de la crisis (C): el coche medio costaba 20.821 € con impuestos (16.815 € de base, 1.316 € de impuesto de matriculación, que entonces iba por cilindrada, y el IVA del 16 %): 17,6 meses del sueldo neto mediano de entonces (1.185 € al mes) al contado y 22,1 financiado a la TAE media de 2007 (9,76 %). Hoy cuesta menos meses que en 2007: la conclusión cambia con el año y se dice en el plano 10 y en el cierre."
+ ],
+ "cierre": {
+  "veredicto": "empeora frente a 2016 y 2019 y mejora frente a 2007: el coche medio sube un 42 % (de 20.252 € a 28.661 €, con impuestos) y el sueldo neto un 28 %; al contado pasa de 15,2 a 16,8 meses de sueldo y financiado a cinco años de 18,5 a 20,2 meses (5.780 € de intereses); el 19 % del precio son impuestos. Frente a 2007, antes de la crisis, cuesta menos: entonces eran 17,6 meses al contado y 22,1 financiado, con préstamos al 9,76 %. Los préstamos también salen algo más baratos que en 2016 (7,74 % frente a 8,43 %)",
+  "porque": "Precio medio de los coches matriculados (Agencia Tributaria), tipos de interés (Banco de España), IVA (BOE) y sueldo mediano (INE y Eurostat).",
+  "pregunta": "¿Cuántos meses trabajaste tú para pagar el tuyo?"
+ },
+ "aprobacion_guion": "Pendiente de Bruno"
+}

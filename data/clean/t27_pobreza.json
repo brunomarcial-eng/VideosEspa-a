@@ -1,0 +1,116 @@
+{
+ "nota": "Datos limpios de T27: ¿hay más pobres que antes? (Bruno, 24-11-2026: rescatar los temas del principio; el tercero,",
+ "anos": [
+  "2008",
+  "2013",
+  "2016",
+  "2019",
+  "2025"
+ ],
+ "hoy": "2025",
+ "filas": {
+  "2008": {
+   "pobreza_umbral_fijo_2008_pct": 19.8,
+   "pobreza_relativa_pct": 19.8,
+   "umbral_1_persona_eur": 8379,
+   "no_carne_pescado_pct": 2.2,
+   "no_imprevistos_pct": 29.9,
+   "no_vacaciones_pct": 36.2,
+   "fin_de_mes_mucha_dificultad_pct": 13.7,
+   "pobreza_fija_menores16_pct": 26.8,
+   "pobreza_fija_65_pct": 25.5
+  },
+  "2013": {
+   "pobreza_umbral_fijo_2008_pct": 28.1,
+   "pobreza_relativa_pct": 20.4,
+   "umbral_1_persona_eur": 8114,
+   "no_carne_pescado_pct": 3.5,
+   "no_imprevistos_pct": 42.1,
+   "no_vacaciones_pct": 48.0,
+   "fin_de_mes_mucha_dificultad_pct": 18.6,
+   "pobreza_fija_menores16_pct": 35.2,
+   "pobreza_fija_65_pct": 23.0
+  },
+  "2016": {
+   "pobreza_umbral_fijo_2008_pct": 29.2,
+   "pobreza_relativa_pct": 22.3,
+   "umbral_1_persona_eur": 8208,
+   "no_carne_pescado_pct": 2.9,
+   "no_imprevistos_pct": 38.7,
+   "no_vacaciones_pct": 40.3,
+   "fin_de_mes_mucha_dificultad_pct": 16.6,
+   "pobreza_fija_menores16_pct": 34.9,
+   "pobreza_fija_65_pct": 22.9
+  },
+  "2019": {
+   "pobreza_umbral_fijo_2008_pct": 24.9,
+   "pobreza_relativa_pct": 20.7,
+   "umbral_1_persona_eur": 9009,
+   "no_carne_pescado_pct": 3.8,
+   "no_imprevistos_pct": 33.9,
+   "no_vacaciones_pct": 33.4,
+   "fin_de_mes_mucha_dificultad_pct": 7.8,
+   "pobreza_fija_menores16_pct": 31.1,
+   "pobreza_fija_65_pct": 22.0
+  },
+  "2025": {
+   "pobreza_umbral_fijo_2008_pct": 17.5,
+   "pobreza_relativa_pct": 19.5,
+   "umbral_1_persona_eur": 12220,
+   "no_carne_pescado_pct": 5.4,
+   "no_imprevistos_pct": 36.4,
+   "no_vacaciones_pct": 32.2,
+   "fin_de_mes_mucha_dificultad_pct": 8.5,
+   "pobreza_fija_menores16_pct": 26.0,
+   "pobreza_fija_65_pct": 14.2
+  }
+ },
+ "serie_umbral_fijo": {
+  "2008": 19.8,
+  "2009": 19.7,
+  "2010": 20.6,
+  "2011": 23.7,
+  "2012": 25.9,
+  "2013": 28.1,
+  "2014": 30.9,
+  "2015": 29.9,
+  "2016": 29.2,
+  "2017": 26.5,
+  "2018": 25.5,
+  "2019": 24.9,
+  "2020": 21.8,
+  "2021": 22.8,
+  "2022": 20.5,
+  "2023": 20.1,
+  "2024": 18.7,
+  "2025": 17.5
+ },
+ "serie_relativa": {
+  "2008": 19.8,
+  "2009": 20.4,
+  "2010": 20.7,
+  "2011": 20.6,
+  "2012": 20.8,
+  "2013": 20.4,
+  "2014": 22.2,
+  "2015": 22.1,
+  "2016": 22.3,
+  "2017": 21.6,
+  "2018": 21.5,
+  "2019": 20.7,
+  "2020": 21.0,
+  "2021": 21.7,
+  "2022": 20.4,
+  "2023": 20.2,
+  "2024": 19.7,
+  "2025": 19.5
+ },
+ "minimo_umbral_fijo": [
+  "2025",
+  17.5
+ ],
+ "carne_veces_2008": 2.45,
+ "estado": {
+  "todo": "V (INE, Encuesta de Condiciones de Vida)"
+ }
+}

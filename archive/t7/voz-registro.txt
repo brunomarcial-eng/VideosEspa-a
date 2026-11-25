@@ -1,0 +1,32 @@
+plano 1: «¡Otro paquete! Ropa, cremas… ¡Yo con un chándal tenía para diez años!»
+    toma guardada (semilla 1002): BUENA · «Otro paquete, ropa, cremas, yo con un chándal tenía para 10 años.»
+plano 2: «La ropa pesa cada vez menos: de cada 100 euros, 11 en 1986 y hoy, 4.»
+    toma guardada (semilla 2003): BUENA · «La ropa pesa cada vez menos. De cada 100 euros, 11 en 1986 y hoy, 4.»
+plano 3: «¡Claro, como es de usar y tirar!»
+    toma guardada (semilla 3204): BUENA · «Claro, como es de usar y tirar.»
+plano 4: «Puede. Pero desde 2006 es un 22 % más barata, quitando la inflación.»
+    toma guardada (semilla 4000): BUENA · «Puede, pero desde 2006 es un 22% más barata quitando la inflación.»
+plano 5: «¿Y las cremas y la peluquería, qué?»
+    toma guardada (semilla 5202): BUENA · «¿Y las cremas y la peluquería qué?»
+plano 6: «Ahí tienes razón: es el doble que en 1986.»
+    toma guardada (semilla 6000): BUENA · «Ahí tienes razón, es el doble que en 1986.»
+plano 7: «¡Y pagando por hacer deporte! Yo jugaba al frontón gratis.»
+    toma guardada (semilla 7204): BUENA · «y pagando por hacer deporte, yo jugaba al frontón gratis.»
+plano 8: «Seis de cada diez hacen deporte. Y casi uno de cada tres paga gimnasio.»
+    toma guardada (semilla 8000): BUENA · «6 de cada 10 hacen deporte y casi uno de cada 3 paga gimnasio.»
+plano 9: «¡Y pagando la música cada mes! Yo me compraba mis vinilos.»
+    toma guardada (semilla 9000): BUENA · «y pagando la música cada mes, yo me compraba mis vinilos.»
+plano 10: «En 2006, cada hogar gastaba 72 euros al año en discos y DVD. Hoy, 10. Y casi uno de cada cinco paga por escuchar música.»
+    toma guardada (semilla 10000): BUENA · «En 2006, cada hogar gastaba 72 euros al año en discos y DVD, hoy, 10, y casi uno de cada cinco paga por escuchar música.»
+plano 11: «¿Y el cine? ¡Ahora es un lujo!»
+    toma guardada (semilla 11001): BUENA · «Y el cine ahora es un lujo.»
+plano 12: «Cuesta casi lo mismo: 23 minutos de trabajo en 1986. Hoy, 21.»
+    toma guardada (semilla 12000): BUENA · «Cuesta casi lo mismo, 23 minutos de trabajo en 1986. Hoy, 21.»
+plano 13: «Y a conciertos va uno de cada tres, más que hace diez años.»
+    toma guardada (semilla 13000): BUENA · «Y a conciertos va uno de cada tres, más que hace diez años.»
+plano 14: «¡Y todo a domicilio!»
+    toma guardada (semilla 14202): BUENA · «Y todo a domicilio.»
+plano 15: «Comprar por internet: en 2006, uno de cada diez; hoy, seis. Y uno de cada cuatro pide comida a casa.»
+    toma guardada (semilla 15000): BUENA · «Comprar por internet en 2006, uno de cada 10. Hoy, 6. Y uno de cada 4 pide comida a casa.»
+plano 16: «¿Somos más caprichosos ahora? ¿Tú qué opinas?»
+    toma 1 (semilla 16000): BUENA · 1.0 · voz 0.898 · 3.1 s · 11.4 l/s · «¿Somos más caprichosos ahora? ¿Tú qué opinas?»

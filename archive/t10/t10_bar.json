@@ -1,0 +1,157 @@
+{
+ "tema": "T10 — montar un bar en Madrid en 1986, 2006 y hoy: obligaciones, impuestos y costes",
+ "obligaciones": [
+  {
+   "obligacion": "Protección de datos personales",
+   "desde": 1993,
+   "norma": "Ley Orgánica 5/1992 (en vigor desde enero de 1993); hoy, Ley Orgánica 3/2018 y el Reglamento europeo",
+   "boe": "BOE-A-1992-24189",
+   "frase_comprobada": "La presente Ley Orgánica entrará en vigor a los tres meses de su publicación"
+  },
+  {
+   "obligacion": "Evaluación de riesgos laborales y plan de prevención",
+   "desde": 1996,
+   "norma": "Ley 31/1995 de Prevención de Riesgos Laborales",
+   "boe": "BOE-A-1995-24292",
+   "frase_comprobada": "la evaluación inicial de los riesgos inherentes al trabajo"
+  },
+  {
+   "obligacion": "Autocontrol de higiene de los alimentos (APPCC)",
+   "desde": 1996,
+   "norma": "Real Decreto 2207/1995 de higiene de los productos alimenticios",
+   "boe": "BOE-A-1996-4449",
+   "frase_comprobada": "dichas empresas deberán realizar actividades de autocontrol"
+  },
+  {
+   "obligacion": "Seguro obligatorio de incendio y responsabilidad civil",
+   "desde": 1998,
+   "norma": "Ley 17/1997 de Espectáculos Públicos y Actividades Recreativas de la Comunidad de Madrid",
+   "boe": "BOE-A-1998-9648",
+   "frase_comprobada": "Los locales y establecimientos deberán tener suscrito contrato de seguro"
+  },
+  {
+   "obligacion": "Medidas y procedimiento contra el acoso sexual",
+   "desde": 2007,
+   "norma": "Ley Orgánica 3/2007, artículo 48 (ampliado por la Ley Orgánica 10/2022)",
+   "boe": "BOE-A-2007-6115",
+   "frase_comprobada": "Las empresas deberán promover condiciones de trabajo que eviten el acoso sexual y el acoso por razón de sexo y arbitrar procedimientos específicos"
+  },
+  {
+   "obligacion": "Prohibido fumar en el local",
+   "desde": 2011,
+   "norma": "Ley 28/2005 (en parte) y Ley 42/2010 (en toda la hostelería)",
+   "boe": "BOE-A-2010-20138",
+   "frase_comprobada": "trabajadores del sector de la hostelería"
+  },
+  {
+   "obligacion": "Información de alérgenos de todo lo que se sirve",
+   "desde": 2015,
+   "norma": "Real Decreto 126/2015 (y Reglamento europeo 1169/2011)",
+   "boe": "BOE-A-2015-2293",
+   "frase_comprobada": "siempre debe facilitarse al consumidor la información sobre los alérgenos potenciales"
+  },
+  {
+   "obligacion": "Política interna de desconexión digital",
+   "desde": 2018,
+   "norma": "Ley Orgánica 3/2018, artículo 88",
+   "boe": "BOE-A-2018-16673",
+   "frase_comprobada": "El empleador, previa audiencia de los representantes de los trabajadores, elaborará una política interna"
+  },
+  {
+   "obligacion": "Registro diario de la jornada de cada empleado",
+   "desde": 2019,
+   "norma": "Real Decreto-ley 8/2019",
+   "boe": "BOE-A-2019-3481",
+   "frase_comprobada": "La empresa garantizará el registro diario de jornada"
+  },
+  {
+   "obligacion": "Registro de los sueldos de toda la plantilla",
+   "desde": 2021,
+   "norma": "Real Decreto 902/2020 de igualdad retributiva",
+   "boe": "BOE-A-2020-12215",
+   "frase_comprobada": "todas las empresas deben tener un registro retributivo de toda su plantilla"
+  },
+  {
+   "obligacion": "Ofrecer agua del grifo gratis",
+   "desde": 2022,
+   "norma": "Ley 7/2022 de residuos, artículo 18",
+   "boe": "BOE-A-2022-5809",
+   "frase_comprobada": "la posibilidad de consumo de agua no envasada de manera gratuita"
+  },
+  {
+   "obligacion": "Impuesto sobre los envases de plástico (se repercute en el precio)",
+   "desde": 2023,
+   "norma": "Ley 7/2022 de residuos",
+   "boe": "BOE-A-2022-5809",
+   "frase_comprobada": "los fabricantes deberán repercutir al adquirente el importe de las cuotas del impuesto"
+  },
+  {
+   "obligacion": "Cotización nueva de equidad intergeneracional (MEI)",
+   "desde": 2023,
+   "norma": "Real Decreto-ley 2/2023",
+   "boe": "BOE-A-2023-6967",
+   "frase_comprobada": "nuevo mecanismo para la preservación de la equidad intergeneracional"
+  },
+  {
+   "obligacion": "Cuota de autónomo según lo que ganes, con regularización",
+   "desde": 2023,
+   "norma": "Real Decreto-ley 13/2022",
+   "boe": "BOE-A-2022-12482",
+   "frase_comprobada": "nuevo sistema de cotización para los trabajadores por cuenta propia o autónomos"
+  },
+  {
+   "obligacion": "Dejar llevarse lo que no se come, sin cobrar",
+   "desde": 2025,
+   "norma": "Ley 1/2025 de prevención de las pérdidas y el desperdicio alimentario",
+   "boe": "BOE-A-2025-6597",
+   "frase_comprobada": "tendrán la obligación de facilitar al consumidor que pueda llevarse, sin coste adicional"
+  },
+  {
+   "obligacion": "Programa de facturación antifraude de Hacienda (VERI*FACTU), si se factura con ordenador o caja informática",
+   "desde": 2027,
+   "norma": "Real Decreto 1007/2023 y Real Decreto-ley 15/2025 (autónomos, desde el 1-7-2027)",
+   "boe": "BOE-A-2025-24446",
+   "frase_comprobada": "y para el resto de los obligados del artículo 3.1: 1 de julio de 2027"
+  }
+ ],
+ "cuantas": {
+  "1986": 0,
+  "2006": 4,
+  "2026": 15,
+  "2027": 16,
+  "nuevas_desde_1986": 16,
+  "nuevas_desde_2006": 12,
+  "nuevas_desde_2006_hoy": 11
+ },
+ "camarero_salario_minimo": {
+  "1986": {
+   "coste_empresa_en_euros_de_2026": 15233,
+   "al_estado_pct": 29.95
+  },
+  "2006": {
+   "coste_empresa_en_euros_de_2026": 15161,
+   "al_estado_pct": 29.43
+  },
+  "2026": {
+   "coste_empresa_en_euros_de_2026": 22615,
+   "al_estado_pct": 29.33
+  }
+ },
+ "iva_bar_pct": {
+  "1986": 6,
+  "2006": 7,
+  "2026": 10
+ },
+ "nota": "Cada obligación se comprueba contra el texto del BOE (data/raw/boe_t10_*.html). «desde» = primer año en que se exige a un bar (la ley de prevención de riesgos entró en vigor en 1996; la primera de protección de datos, en enero de 1993; el registro retributivo, en 2021; el programa de facturación, en 2027, para quien factura con ordenador o caja informática). Fuera de la lista, por prudencia: la tasa de basuras (la Ley 7/2022 la hace obligatoria en todos los ayuntamientos desde 2025, pero en Madrid los negocios ya podían pagar una antes). Camarero: salario mínimo de cada año y cotizaciones del BOE (motor de T8, tarifa de accidentes del comercio).",
+ "contador_por_plano": {
+  "4": 4,
+  "5": 8,
+  "6": 12,
+  "7": 15,
+  "8": 16
+ },
+ "camarero_sube_pct": {
+  "1986": 48.5,
+  "2006": 49.2
+ }
+}

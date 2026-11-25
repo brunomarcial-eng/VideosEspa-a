@@ -1,0 +1,342 @@
+{
+ "tema": "El coche más vendido, 2016 frente a hoy, y la segunda mano",
+ "nota": "Top de turismos y todoterrenos nuevos (DGT, microdatos); precio medio real de 2025 por modelo (Agencia Tributaria, ranking de ventas, solo desde 2022); coche nuevo medio (Agencia Tributaria); segunda mano (DGT y Agencia Tributaria); sueldo neto mediano al mes (T16).",
+ "sueldo_neto_mes": {
+  "2007": 1185,
+  "2016": 1332,
+  "2019": 1392,
+  "2025": 1702
+ },
+ "top_modelos": {
+  "2016": {
+   "nuevos_total": 1193498,
+   "top": [
+    {
+     "marca": "SEAT",
+     "modelo": "LEON",
+     "matriculados": 33657
+    },
+    {
+     "marca": "SEAT",
+     "modelo": "IBIZA",
+     "matriculados": 31832
+    },
+    {
+     "marca": "VOLKSWAGEN",
+     "modelo": "GOLF",
+     "matriculados": 28740
+    },
+    {
+     "marca": "OPEL",
+     "modelo": "CORSA",
+     "matriculados": 26892
+    },
+    {
+     "marca": "VOLKSWAGEN",
+     "modelo": "POLO",
+     "matriculados": 25429
+    },
+    {
+     "marca": "RENAULT",
+     "modelo": "CLIO",
+     "matriculados": 25363
+    },
+    {
+     "marca": "NISSAN",
+     "modelo": "QASHQAI",
+     "matriculados": 25203
+    },
+    {
+     "marca": "DACIA",
+     "modelo": "SANDERO",
+     "matriculados": 25073
+    },
+    {
+     "marca": "RENAULT",
+     "modelo": "MEGANE",
+     "matriculados": 24834
+    },
+    {
+     "marca": "PEUGEOT",
+     "modelo": "208",
+     "matriculados": 21538
+    }
+   ]
+  },
+  "2019": {
+   "nuevos_total": 1323896,
+   "top": [
+    {
+     "marca": "SEAT",
+     "modelo": "LEON",
+     "matriculados": 35851
+    },
+    {
+     "marca": "DACIA",
+     "modelo": "SANDERO",
+     "matriculados": 33880
+    },
+    {
+     "marca": "NISSAN",
+     "modelo": "QASHQAI",
+     "matriculados": 30162
+    },
+    {
+     "marca": "RENAULT",
+     "modelo": "CLIO",
+     "matriculados": 25539
+    },
+    {
+     "marca": "SEAT",
+     "modelo": "ARONA",
+     "matriculados": 25122
+    },
+    {
+     "marca": "SEAT",
+     "modelo": "IBIZA",
+     "matriculados": 25120
+    },
+    {
+     "marca": "VOLKSWAGEN",
+     "modelo": "GOLF",
+     "matriculados": 24384
+    },
+    {
+     "marca": "PEUGEOT",
+     "modelo": "3008",
+     "matriculados": 23321
+    },
+    {
+     "marca": "CITROEN",
+     "modelo": "C3",
+     "matriculados": 21659
+    },
+    {
+     "marca": "OPEL",
+     "modelo": "CORSA",
+     "matriculados": 20508
+    }
+   ]
+  },
+  "2025": {
+   "nuevos_total": 1173741,
+   "top": [
+    {
+     "marca": "DACIA",
+     "modelo": "SANDERO",
+     "matriculados": 38533,
+     "aeat": {
+      "marca_matriculados": 59697,
+      "marca_precio_medio": 15646,
+      "matriculados": 35857,
+      "precio_medio_sin_impuestos": 13018
+     },
+     "precio_con_iva": 15752,
+     "meses_de_sueldo": 9.3
+    },
+    {
+     "marca": "RENAULT",
+     "modelo": "CLIO",
+     "matriculados": 27102,
+     "aeat": {
+      "marca_matriculados": 79879,
+      "marca_precio_medio": 20780,
+      "matriculados": 26470,
+      "precio_medio_sin_impuestos": 14886
+     },
+     "precio_con_iva": 18012,
+     "meses_de_sueldo": 10.6
+    },
+    {
+     "marca": "MG",
+     "modelo": "ZS",
+     "matriculados": 23727,
+     "aeat": {
+      "marca_matriculados": 36579,
+      "marca_precio_medio": 19243,
+      "matriculados": 19666,
+      "precio_medio_sin_impuestos": 17454
+     },
+     "precio_con_iva": 21119,
+     "meses_de_sueldo": 12.4
+    },
+    {
+     "marca": "SEAT",
+     "modelo": "IBIZA",
+     "matriculados": 23202,
+     "aeat": {
+      "marca_matriculados": 56326,
+      "marca_precio_medio": 17055,
+      "matriculados": 22350,
+      "precio_medio_sin_impuestos": 14515
+     },
+     "precio_con_iva": 17563,
+     "meses_de_sueldo": 10.3
+    },
+    {
+     "marca": "HYUNDAI",
+     "modelo": "TUCSON",
+     "matriculados": 21577,
+     "aeat": {
+      "marca_matriculados": 57709,
+      "marca_precio_medio": 21913,
+      "matriculados": 17525,
+      "precio_medio_sin_impuestos": 26707
+     },
+     "precio_con_iva": 32315,
+     "meses_de_sueldo": 19.0
+    },
+    {
+     "marca": "TOYOTA",
+     "modelo": "COROLLA",
+     "matriculados": 21352
+    },
+    {
+     "marca": "SEAT",
+     "modelo": "ARONA",
+     "matriculados": 20290
+    },
+    {
+     "marca": "NISSAN",
+     "modelo": "QASHQAI",
+     "matriculados": 19557,
+     "aeat": {
+      "marca_matriculados": 28935,
+      "marca_precio_medio": 23937,
+      "matriculados": 16367,
+      "precio_medio_sin_impuestos": 24330
+     },
+     "precio_con_iva": 29439,
+     "meses_de_sueldo": 17.3
+    },
+    {
+     "marca": "TOYOTA",
+     "modelo": "C-HR",
+     "matriculados": 19521
+    },
+    {
+     "marca": "TOYOTA",
+     "modelo": "YARIS CROSS",
+     "matriculados": 19365
+    }
+   ]
+  }
+ },
+ "coche_nuevo_medio": {
+  "2007": {
+   "vehiculos": 957365,
+   "precio_sin_iedmt": 17508,
+   "precio_con_iedmt": 18834,
+   "iva_pct": 16,
+   "precio_con_impuestos": 21635,
+   "meses_de_sueldo": 18.3
+  },
+  "2016": {
+   "vehiculos": 979293,
+   "precio_sin_iedmt": 16930,
+   "precio_con_iedmt": 17186,
+   "iva_pct": 21,
+   "precio_con_impuestos": 20741,
+   "meses_de_sueldo": 15.6
+  },
+  "2019": {
+   "vehiculos": 1048403,
+   "precio_sin_iedmt": 18459,
+   "precio_con_iedmt": 18940,
+   "iva_pct": 21,
+   "precio_con_impuestos": 22816,
+   "meses_de_sueldo": 16.4
+  },
+  "2025": {
+   "vehiculos": 979595,
+   "precio_sin_iedmt": 25592,
+   "precio_con_iedmt": 26181,
+   "iva_pct": 21,
+   "precio_con_impuestos": 31555,
+   "meses_de_sueldo": 18.5
+  }
+ },
+ "coche_nuevo_medio_sube_pct": 51.2,
+ "sueldo_neto_sube_pct": 27.8,
+ "segunda_mano": {
+  "2007": {
+   "usados_importados": 235982,
+   "total_matriculados_aeat": 1469416,
+   "usados_importados_pct": 16.1,
+   "turismos_matriculados_dgt": 1633806,
+   "cambios_titularidad_turismos_dgt": 2527582,
+   "usados_por_cada_matriculado": 1.55,
+   "segunda_mano_pct": 60.7
+  },
+  "2016": {
+   "usados_importados": 106638,
+   "total_matriculados_aeat": 1167947,
+   "usados_importados_pct": 9.1,
+   "turismos_matriculados_dgt": 1230104,
+   "cambios_titularidad_turismos_dgt": 2499221,
+   "usados_por_cada_matriculado": 2.03,
+   "segunda_mano_pct": 67.0
+  },
+  "2019": {
+   "usados_importados": 153928,
+   "total_matriculados_aeat": 1301986,
+   "usados_importados_pct": 11.8,
+   "turismos_matriculados_dgt": 1375381,
+   "cambios_titularidad_turismos_dgt": 3014150,
+   "usados_por_cada_matriculado": 2.19,
+   "segunda_mano_pct": 68.7
+  },
+  "2025": {
+   "usados_importados": 230639,
+   "total_matriculados_aeat": 1237082,
+   "usados_importados_pct": 18.6,
+   "turismos_matriculados_dgt": 1304292,
+   "cambios_titularidad_turismos_dgt": 3230770,
+   "usados_por_cada_matriculado": 2.48,
+   "segunda_mano_pct": 71.2
+  }
+ },
+ "usados_por_cada_matriculado_serie": {
+  "1990": 0.94,
+  "1991": 1.06,
+  "1992": 1.06,
+  "1993": 1.44,
+  "1994": 1.18,
+  "1995": 1.33,
+  "1996": 1.33,
+  "1997": 1.31,
+  "1998": 1.18,
+  "1999": 1.1,
+  "2000": 1.19,
+  "2001": 1.15,
+  "2002": 1.28,
+  "2003": 1.33,
+  "2004": 1.31,
+  "2005": 1.43,
+  "2006": 1.49,
+  "2007": 1.55,
+  "2008": 1.88,
+  "2009": 2.18,
+  "2010": 2.13,
+  "2011": 2.54,
+  "2012": 2.88,
+  "2013": 2.83,
+  "2014": 2.47,
+  "2015": 2.08,
+  "2016": 2.03,
+  "2017": 2.08,
+  "2018": 2.09,
+  "2019": 2.19,
+  "2020": 2.71,
+  "2021": 2.99,
+  "2022": 2.93,
+  "2023": 2.67,
+  "2024": 2.68,
+  "2025": 2.48
+ },
+ "usados_por_cada_matriculado_maximo": {
+  "anyo": 2021,
+  "valor": 2.99,
+  "nota": "2021 es año de rebote; el máximo no es hoy"
+ }
+}

@@ -1,0 +1,297 @@
+{
+ "nota": "Datos limpios de T26: ¿somos más ricos o más pobres que los europeos? (Bruno, 24-11-2026: rescatar los temas del",
+ "anos": [
+  "2007",
+  "2013",
+  "2016",
+  "2019",
+  "2024"
+ ],
+ "hoy": "2024",
+ "filas": {
+  "2007": {
+   "pib": {
+    "ES": 104,
+    "DE": 120,
+    "FR": 109,
+    "IT": 109,
+    "PT": 82,
+    "PL": 54,
+    "CZ": 84,
+    "EL": 92,
+    "CY": 105,
+    "SI": 88,
+    "LT": 61,
+    "MT": 80
+   },
+   "pib_puesto_es": 13,
+   "pib_paises": 27,
+   "consumo": {
+    "ES": 102,
+    "DE": 119,
+    "FR": 114,
+    "IT": 110,
+    "PT": 90,
+    "PL": 60,
+    "CZ": 74,
+    "EL": 100,
+    "CY": 109,
+    "SI": 80,
+    "LT": 70,
+    "MT": 84
+   },
+   "consumo_puesto_es": 13,
+   "consumo_paises": 27
+  },
+  "2013": {
+   "pib": {
+    "ES": 90,
+    "DE": 126,
+    "FR": 109,
+    "IT": 100,
+    "PT": 77,
+    "PL": 67,
+    "CZ": 85,
+    "EL": 71,
+    "CY": 84,
+    "SI": 82,
+    "LT": 73,
+    "MT": 91
+   },
+   "pib_puesto_es": 13,
+   "pib_paises": 27,
+   "consumo": {
+    "ES": 88,
+    "DE": 125,
+    "FR": 115,
+    "IT": 102,
+    "PT": 82,
+    "PL": 75,
+    "CZ": 79,
+    "EL": 79,
+    "CY": 91,
+    "SI": 78,
+    "LT": 78,
+    "MT": 86
+   },
+   "consumo_puesto_es": 13,
+   "consumo_paises": 27
+  },
+  "2016": {
+   "pib": {
+    "ES": 92,
+    "DE": 126,
+    "FR": 105,
+    "IT": 99,
+    "PT": 77,
+    "PL": 69,
+    "CZ": 89,
+    "EL": 67,
+    "CY": 86,
+    "SI": 82,
+    "LT": 75,
+    "MT": 100
+   },
+   "pib_puesto_es": 13,
+   "pib_paises": 27,
+   "consumo": {
+    "ES": 91,
+    "DE": 126,
+    "FR": 112,
+    "IT": 100,
+    "PT": 83,
+    "PL": 77,
+    "CZ": 83,
+    "EL": 77,
+    "CY": 91,
+    "SI": 77,
+    "LT": 84,
+    "MT": 85
+   },
+   "consumo_puesto_es": 13,
+   "consumo_paises": 27
+  },
+  "2019": {
+   "pib": {
+    "ES": 91,
+    "DE": 122,
+    "FR": 105,
+    "IT": 96,
+    "PT": 77,
+    "PL": 74,
+    "CZ": 95,
+    "EL": 66,
+    "CY": 91,
+    "SI": 87,
+    "LT": 83,
+    "MT": 106
+   },
+   "pib_puesto_es": 15,
+   "pib_paises": 27,
+   "consumo": {
+    "ES": 90,
+    "DE": 124,
+    "FR": 109,
+    "IT": 99,
+    "PT": 84,
+    "PL": 80,
+    "CZ": 88,
+    "EL": 77,
+    "CY": 95,
+    "SI": 81,
+    "LT": 89,
+    "MT": 89
+   },
+   "consumo_puesto_es": 13,
+   "consumo_paises": 27
+  },
+  "2024": {
+   "pib": {
+    "ES": 92,
+    "DE": 115,
+    "FR": 99,
+    "IT": 98,
+    "PT": 82,
+    "PL": 79,
+    "CZ": 91,
+    "EL": 70,
+    "CY": 95,
+    "SI": 91,
+    "LT": 88,
+    "MT": 109
+   },
+   "pib_puesto_es": 14,
+   "pib_paises": 27,
+   "consumo": {
+    "ES": 92,
+    "DE": 118,
+    "FR": 106,
+    "IT": 98,
+    "PT": 85,
+    "PL": 84,
+    "CZ": 82,
+    "EL": 81,
+    "CY": 96,
+    "SI": 85,
+    "LT": 89,
+    "MT": 92
+   },
+   "consumo_puesto_es": 14,
+   "consumo_paises": 27
+  }
+ },
+ "es_pib_pc": {
+  "2007": 104,
+  "2013": 90,
+  "2016": 92,
+  "2019": 91,
+  "2024": 92
+ },
+ "es_sobre_media_pct": {
+  "2007": 4,
+  "2013": -10,
+  "2016": -8,
+  "2019": -9,
+  "2024": -8
+ },
+ "es_2025_tec00114": 92,
+ "cambio_desde_2007": {
+  "ES": -12,
+  "DE": -5,
+  "FR": -10,
+  "IT": -11,
+  "PT": 0,
+  "PL": 25,
+  "CZ": 7,
+  "EL": -22,
+  "CY": -10,
+  "SI": 3,
+  "LT": 27,
+  "MT": 29
+ },
+ "pib_total": {
+  "2007": {
+   "puesto_es": 4,
+   "es_meur": 1077541.0,
+   "primeros": [
+    [
+     "DE",
+     2542220
+    ],
+    [
+     "FR",
+     1937876
+    ],
+    [
+     "IT",
+     1621714
+    ],
+    [
+     "ES",
+     1077541
+    ],
+    [
+     "NL",
+     622775
+    ]
+   ]
+  },
+  "2024": {
+   "puesto_es": 4,
+   "es_meur": 1598588.0,
+   "primeros": [
+    [
+     "DE",
+     4386940
+    ],
+    [
+     "FR",
+     2935236
+    ],
+    [
+     "IT",
+     2210595
+    ],
+    [
+     "ES",
+     1598588
+    ],
+    [
+     "NL",
+     1115252
+    ]
+   ]
+  },
+  "2025": {
+   "puesto_es": 4,
+   "es_meur": 1690012.0,
+   "primeros": [
+    [
+     "DE",
+     4529710
+    ],
+    [
+     "FR",
+     2991056
+    ],
+    [
+     "IT",
+     2265002
+    ],
+    [
+     "ES",
+     1690012
+    ],
+    [
+     "NL",
+     1170579
+    ]
+   ]
+  }
+ },
+ "estado": {
+  "indices": "V (Eurostat)",
+  "puesto": "C (ordenando el índice; empates en contra de España)",
+  "pib_total": "V (Eurostat)"
+ }
+}

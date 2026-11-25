@@ -1,0 +1,30 @@
+{
+ "huella": "2bfac74e459d8a49",
+ "semilla": 9000,
+ "texto": "Anda, vámonos. Bienvenido al mundo real.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0269,
+  "oido": "¡Andá vámonos! ¡Bienvenido al mundo real!",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.4,
+   1.36,
+   2.0,
+   2.12,
+   2.3
+  ],
+  "t1": [
+   0.4,
+   0.92,
+   2.0,
+   2.12,
+   2.3,
+   2.64
+  ],
+  "ritmo": 11.1,
+  "voz": 0.904
+ }
+}

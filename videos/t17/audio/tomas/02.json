@@ -1,0 +1,32 @@
+{
+ "huella": "cfb567924df61cfb",
+ "semilla": 2000,
+ "texto": "¿Comprarte? Querrás decir pagarlo a medias, campeón.",
+ "ev": {
+  "ok": true,
+  "nota": 1.0382,
+  "oido": "Comprarte, querrás decir pagarlo a medias, campeón.",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   1.0,
+   1.58,
+   1.84,
+   2.34,
+   2.42,
+   3.08
+  ],
+  "t1": [
+   0.5,
+   1.58,
+   1.84,
+   2.34,
+   2.42,
+   2.88,
+   3.52
+  ],
+  "ritmo": 11.5,
+  "voz": 0.926
+ }
+}

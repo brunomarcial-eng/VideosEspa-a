@@ -1,0 +1,262 @@
+{
+ "nota": "Momentos clave de T17 v2 (coches B, padre e hijo). El sello «A MEDIAS» suena cada vez que sale el chiste. La música se corta en seco con el «51 %» del coche. Ambientes solo con sonidos sueltos: salón, concesionario y compraventa. Sin bajo grave en la música (era el zumbido).",
+ "musica": {
+  "bpm": 100,
+  "corte": "c8-51",
+  "silencio_s": 1.0
+ },
+ "ambientes": [
+  {
+   "tipo": "salon",
+   "desde": 1,
+   "hasta": 2,
+   "vol": 1.0
+  },
+  {
+   "tipo": "concesionario",
+   "desde": 3,
+   "hasta": 8,
+   "vol": 1.0
+  },
+  {
+   "tipo": "compraventa",
+   "desde": 9,
+   "hasta": 12,
+   "vol": 1.0
+  }
+ ],
+ "cues": [
+  {
+   "id": "c1-sello",
+   "beat": 1,
+   "en": "inicio",
+   "dt": 1.0,
+   "sfx": "sello",
+   "vol": 0.5
+  },
+  {
+   "id": "c1-aprobado",
+   "beat": 1,
+   "palabra": "Aprobado",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.3
+  },
+  {
+   "id": "c1-comprar",
+   "beat": 1,
+   "palabra": "comprar",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c2-comprarte",
+   "beat": 2,
+   "palabra": "Comprarte",
+   "dt": -0.1
+  },
+  {
+   "id": "c2-medias",
+   "beat": 2,
+   "palabra": "medias",
+   "dt": -0.1,
+   "sfx": "sello",
+   "vol": 0.45
+  },
+  {
+   "id": "c3-maravilla",
+   "beat": 3,
+   "palabra": "maravilla",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c3-este",
+   "beat": 3,
+   "palabra": "este",
+   "dt": -0.1
+  },
+  {
+   "id": "c3-nuevecito",
+   "beat": 3,
+   "palabra": "nuevecito",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.22
+  },
+  {
+   "id": "c4-31555",
+   "beat": 4,
+   "palabra": "31.555",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.3
+  },
+  {
+   "id": "c4-dieciocho",
+   "beat": 4,
+   "palabra": "Dieciocho",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c4-chaval",
+   "beat": 4,
+   "palabra": "chaval",
+   "dt": -0.1
+  },
+  {
+   "id": "c4-mitad",
+   "beat": 4,
+   "palabra": "mitad",
+   "dt": -0.1,
+   "sfx": "sello",
+   "vol": 0.45
+  },
+  {
+   "id": "c5-primo",
+   "beat": 5,
+   "palabra": "primo",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.3
+  },
+  {
+   "id": "c5-nuevo",
+   "beat": 5,
+   "palabra": "nuevo",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-2016",
+   "beat": 6,
+   "palabra": "2016",
+   "dt": -0.1,
+   "sfx": "papel",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-quince",
+   "beat": 6,
+   "palabra": "quince",
+   "dt": -0.1
+  },
+  {
+   "id": "c6-dieciocho",
+   "beat": 6,
+   "palabra": "dieciocho",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c6-tiempos",
+   "beat": 6,
+   "palabra": "tiempos",
+   "dt": -0.1
+  },
+  {
+   "id": "c7-sueldo",
+   "beat": 7,
+   "palabra": "sueldo",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-28",
+   "beat": 8,
+   "palabra": "28",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.25
+  },
+  {
+   "id": "c8-51",
+   "beat": 8,
+   "palabra": "51",
+   "dt": -0.1,
+   "sfx": "sube",
+   "vol": 0.3
+  },
+  {
+   "id": "c9-real",
+   "beat": 9,
+   "palabra": "real",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.22
+  },
+  {
+   "id": "c10-medio",
+   "beat": 10,
+   "palabra": "medio",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.25
+  },
+  {
+   "id": "c10-2007",
+   "beat": 10,
+   "palabra": "2007",
+   "dt": -0.1,
+   "sfx": "pop",
+   "vol": 0.2
+  },
+  {
+   "id": "c11-ese",
+   "beat": 11,
+   "palabra": "ese",
+   "dt": -0.1,
+   "sfx": "golpe",
+   "vol": 0.25
+  },
+  {
+   "id": "c11-ahi",
+   "beat": 11,
+   "palabra": "ahí",
+   "dt": -0.1
+  },
+  {
+   "id": "c11-bien",
+   "beat": 11,
+   "palabra": "bien",
+   "dt": -0.1
+  },
+  {
+   "id": "c12-ese",
+   "beat": 12,
+   "palabra": "Ese",
+   "dt": -0.05,
+   "sfx": "llaves",
+   "vol": 0.4
+  },
+  {
+   "id": "c12-mitad",
+   "beat": 12,
+   "palabra": "mitad",
+   "dt": -0.1,
+   "sfx": "sello",
+   "vol": 0.45
+  },
+  {
+   "id": "c12-primer",
+   "beat": 12,
+   "palabra": "primer",
+   "dt": -0.1,
+   "sfx": "ting",
+   "vol": 0.3
+  },
+  {
+   "id": "c12-mano",
+   "beat": 12,
+   "palabra": "mano",
+   "dt": -0.1,
+   "sfx": "ding",
+   "vol": 0.25
+  }
+ ]
+}

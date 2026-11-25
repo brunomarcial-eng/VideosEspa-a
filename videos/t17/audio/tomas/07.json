@@ -1,0 +1,40 @@
+{
+ "huella": "fc1b9c26d8119bd6",
+ "semilla": 7001,
+ "texto": "¿Y a ti no te han subido el sueldo, o qué?",
+ "ev": {
+  "ok": true,
+  "nota": 1.018,
+  "oido": "¿Y a ti no te han subido el sueldo o qué?",
+  "parecido": 1.0,
+  "problemas": [],
+  "t0": [
+   0.0,
+   0.14,
+   0.2,
+   0.3,
+   0.42,
+   0.56,
+   0.66,
+   0.98,
+   1.06,
+   1.46,
+   1.58
+  ],
+  "t1": [
+   0.14,
+   0.2,
+   0.3,
+   0.42,
+   0.56,
+   0.66,
+   0.98,
+   1.06,
+   1.46,
+   1.58,
+   1.64
+  ],
+  "ritmo": 16.7,
+  "voz": 0.886
+ }
+}

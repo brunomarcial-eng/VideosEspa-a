@@ -1,0 +1,357 @@
+{
+ "nota": "Datos limpios de T25: ¿en qué tramo de sueldo estás tú? (los tramos que propuso Bruno al principio; vídeo pedido",
+ "hoy": "2025",
+ "anos": [
+  "2007",
+  "2013",
+  "2016",
+  "2019",
+  "2025"
+ ],
+ "filas": {
+  "2007": {
+   "smi_anual": 7988.4,
+   "asalariados": 19309032,
+   "salario_medio": 18087,
+   "salario_medio_euros_2025": 25799,
+   "grupos": [
+    {
+     "grupo": "menos de 1 SMI",
+     "desde_eur": 0,
+     "hasta_eur": 7988,
+     "asalariados": 5202265,
+     "pct": 26.94
+    },
+    {
+     "grupo": "de 1 a 2 SMI",
+     "desde_eur": 7988,
+     "hasta_eur": 15977,
+     "asalariados": 5661692,
+     "pct": 29.32
+    },
+    {
+     "grupo": "de 2 a 3 SMI",
+     "desde_eur": 15977,
+     "hasta_eur": 23965,
+     "asalariados": 3845423,
+     "pct": 19.92
+    },
+    {
+     "grupo": "de 3 a 5 SMI",
+     "desde_eur": 23965,
+     "hasta_eur": 39942,
+     "asalariados": 3171750,
+     "pct": 16.43
+    },
+    {
+     "grupo": "de 5 a 7,5 SMI",
+     "desde_eur": 39942,
+     "hasta_eur": 59913,
+     "asalariados": 958288,
+     "pct": 4.96
+    },
+    {
+     "grupo": "más de 7,5 SMI",
+     "desde_eur": 59913,
+     "hasta_eur": null,
+     "asalariados": 469613,
+     "pct": 2.43
+    }
+   ],
+   "cobran_menos_que_la_media_pct_min": 56.3
+  },
+  "2013": {
+   "smi_anual": 9034.2,
+   "asalariados": 16682061,
+   "salario_medio": 18505,
+   "salario_medio_euros_2025": 23305,
+   "grupos": [
+    {
+     "grupo": "menos de 1 SMI",
+     "desde_eur": 0,
+     "hasta_eur": 9034,
+     "asalariados": 5752040,
+     "pct": 34.48
+    },
+    {
+     "grupo": "de 1 a 2 SMI",
+     "desde_eur": 9034,
+     "hasta_eur": 18068,
+     "asalariados": 4206134,
+     "pct": 25.21
+    },
+    {
+     "grupo": "de 2 a 3 SMI",
+     "desde_eur": 18068,
+     "hasta_eur": 27103,
+     "asalariados": 3012835,
+     "pct": 18.06
+    },
+    {
+     "grupo": "de 3 a 5 SMI",
+     "desde_eur": 27103,
+     "hasta_eur": 45171,
+     "asalariados": 2668984,
+     "pct": 16.0
+    },
+    {
+     "grupo": "de 5 a 7,5 SMI",
+     "desde_eur": 45171,
+     "hasta_eur": 67756,
+     "asalariados": 721985,
+     "pct": 4.33
+    },
+    {
+     "grupo": "más de 7,5 SMI",
+     "desde_eur": 67756,
+     "hasta_eur": null,
+     "asalariados": 320083,
+     "pct": 1.92
+    }
+   ],
+   "cobran_menos_que_la_media_pct_min": 59.7
+  },
+  "2016": {
+   "smi_anual": 9172.8,
+   "asalariados": 17888520,
+   "salario_medio": 18835,
+   "salario_medio_euros_2025": 23926,
+   "grupos": [
+    {
+     "grupo": "menos de 1 SMI",
+     "desde_eur": 0,
+     "hasta_eur": 9173,
+     "asalariados": 6083517,
+     "pct": 34.01
+    },
+    {
+     "grupo": "de 1 a 2 SMI",
+     "desde_eur": 9173,
+     "hasta_eur": 18346,
+     "asalariados": 4773438,
+     "pct": 26.68
+    },
+    {
+     "grupo": "de 2 a 3 SMI",
+     "desde_eur": 18346,
+     "hasta_eur": 27518,
+     "asalariados": 3142188,
+     "pct": 17.57
+    },
+    {
+     "grupo": "de 3 a 5 SMI",
+     "desde_eur": 27518,
+     "hasta_eur": 45864,
+     "asalariados": 2760821,
+     "pct": 15.43
+    },
+    {
+     "grupo": "de 5 a 7,5 SMI",
+     "desde_eur": 45864,
+     "hasta_eur": 68796,
+     "asalariados": 775037,
+     "pct": 4.33
+    },
+    {
+     "grupo": "más de 7,5 SMI",
+     "desde_eur": 68796,
+     "hasta_eur": null,
+     "asalariados": 353519,
+     "pct": 1.98
+    }
+   ],
+   "cobran_menos_que_la_media_pct_min": 60.7
+  },
+  "2019": {
+   "smi_anual": 12600,
+   "asalariados": 19157767,
+   "salario_medio": 20566,
+   "salario_medio_euros_2025": 25026,
+   "grupos": [
+    {
+     "grupo": "menos de 1 SMI",
+     "desde_eur": 0,
+     "hasta_eur": 12600,
+     "asalariados": 7211892,
+     "pct": 37.64
+    },
+    {
+     "grupo": "de 1 a 2 SMI",
+     "desde_eur": 12600,
+     "hasta_eur": 25200,
+     "asalariados": 6682959,
+     "pct": 34.88
+    },
+    {
+     "grupo": "de 2 a 3 SMI",
+     "desde_eur": 25200,
+     "hasta_eur": 37800,
+     "asalariados": 2858834,
+     "pct": 14.92
+    },
+    {
+     "grupo": "de 3 a 5 SMI",
+     "desde_eur": 37800,
+     "hasta_eur": 63000,
+     "asalariados": 1827839,
+     "pct": 9.54
+    },
+    {
+     "grupo": "de 5 a 7,5 SMI",
+     "desde_eur": 63000,
+     "hasta_eur": 94500,
+     "asalariados": 414853,
+     "pct": 2.17
+    },
+    {
+     "grupo": "más de 7,5 SMI",
+     "desde_eur": 94500,
+     "hasta_eur": null,
+     "asalariados": 161390,
+     "pct": 0.84
+    }
+   ],
+   "cobran_menos_que_la_media_pct_min": 58.1
+  },
+  "2025": {
+   "smi_anual": 16576.0,
+   "asalariados": 21139690,
+   "salario_medio": 25830,
+   "salario_medio_euros_2025": 25830,
+   "grupos": [
+    {
+     "grupo": "menos de 1 SMI",
+     "desde_eur": 0,
+     "hasta_eur": 16576,
+     "asalariados": 7834599,
+     "pct": 37.06
+    },
+    {
+     "grupo": "de 1 a 2 SMI",
+     "desde_eur": 16576,
+     "hasta_eur": 33152,
+     "asalariados": 8017866,
+     "pct": 37.93
+    },
+    {
+     "grupo": "de 2 a 3 SMI",
+     "desde_eur": 33152,
+     "hasta_eur": 49728,
+     "asalariados": 3167168,
+     "pct": 14.98
+    },
+    {
+     "grupo": "de 3 a 5 SMI",
+     "desde_eur": 49728,
+     "hasta_eur": 82880,
+     "asalariados": 1599307,
+     "pct": 7.57
+    },
+    {
+     "grupo": "de 5 a 7,5 SMI",
+     "desde_eur": 82880,
+     "hasta_eur": 124320,
+     "asalariados": 368681,
+     "pct": 1.74
+    },
+    {
+     "grupo": "más de 7,5 SMI",
+     "desde_eur": 124320,
+     "hasta_eur": null,
+     "asalariados": 152069,
+     "pct": 0.72
+    }
+   ],
+   "cobran_menos_que_la_media_pct_min": 60.9
+  },
+  "2024": {
+   "smi_anual": 15876.0,
+   "asalariados": 20637992,
+   "salario_medio": 24962,
+   "salario_medio_euros_2025": 25629,
+   "grupos": [
+    {
+     "grupo": "menos de 1 SMI",
+     "desde_eur": 0,
+     "hasta_eur": 15876,
+     "asalariados": 7638238,
+     "pct": 37.01
+    },
+    {
+     "grupo": "de 1 a 2 SMI",
+     "desde_eur": 15876,
+     "hasta_eur": 31752,
+     "asalariados": 7793826,
+     "pct": 37.76
+    },
+    {
+     "grupo": "de 2 a 3 SMI",
+     "desde_eur": 31752,
+     "hasta_eur": 47628,
+     "asalariados": 3053304,
+     "pct": 14.79
+    },
+    {
+     "grupo": "de 3 a 5 SMI",
+     "desde_eur": 47628,
+     "hasta_eur": 79380,
+     "asalariados": 1625344,
+     "pct": 7.88
+    },
+    {
+     "grupo": "de 5 a 7,5 SMI",
+     "desde_eur": 79380,
+     "hasta_eur": 119070,
+     "asalariados": 373482,
+     "pct": 1.81
+    },
+    {
+     "grupo": "más de 7,5 SMI",
+     "desde_eur": 119070,
+     "hasta_eur": null,
+     "asalariados": 153797,
+     "pct": 0.75
+    }
+   ],
+   "cobran_menos_que_la_media_pct_min": 60.5
+  }
+ },
+ "hoy_resumen": {
+  "menos_1smi_pct": 37.06,
+  "de1a2_pct": 37.93,
+  "menos_2smi_pct": 75.0,
+  "de2a3_pct": 14.98,
+  "de3a5_pct": 7.57,
+  "mas_5smi_pct": 2.46,
+  "mas_7_5smi_pct": 0.72,
+  "mas_7_5smi_personas": 152069,
+  "mas_3smi_pct": 10.0,
+  "mas_2smi_pct": 25.0,
+  "de5a7_5_pct": 1.74,
+  "limite_1smi": 16576,
+  "limite_2smi": 33152,
+  "limite_3smi": 49728,
+  "limite_5smi": 82880,
+  "limite_7_5smi": 124320
+ },
+ "salario_medio_real_vs_hoy_pct": {
+  "2007": 0.1,
+  "2013": 10.8,
+  "2016": 8.0,
+  "2019": 3.2
+ },
+ "ipc_media_anual": {
+  "2007": 70.105,
+  "2013": 79.401,
+  "2016": 78.725,
+  "2019": 82.18,
+  "2025": 100.0
+ },
+ "estado": {
+  "tramos": "V (Agencia Tributaria)",
+  "agrupacion_en_euros": "C (veces el SMI de cada año)",
+  "salario_medio": "V (Agencia Tributaria)",
+  "salario_medio_real": "C (IPC del INE)",
+  "cobran_menos_que_la_media": "C"
+ }
+}
